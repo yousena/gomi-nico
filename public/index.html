@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ごみ分別ガイド｜お住まいの地域のごみ収集日・分別方法を確認</title>
+<meta name="description" content="市区町村別のごみ収集日・分別方法を簡単に検索できる無料サービスです。可燃ごみ・不燃ごみ・資源ごみのカレンダー表示、分別方法の詳細をご確認いただけます。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gomi-nico.jp/">
+
+<meta property="og:type"        content="website">
+<meta property="og:site_name"   content="ごみ分別ガイド">
+<meta property="og:title"       content="ごみ分別ガイド｜お住まいの地域のごみ収集日・分別方法を確認">
+<meta property="og:description" content="市区町村別のごみ収集日・分別方法を簡単に検索できる無料サービスです。">
+<meta property="og:url"         content="https://gomi-nico.jp/">
+<meta property="og:locale"      content="ja_JP">
+<meta name="twitter:card"        content="summary">
+<meta name="twitter:title"       content="ごみ分別ガイド">
+<meta name="twitter:description" content="市区町村別のごみ収集日・分別方法を簡単に確認。">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://gomi-nico.jp/#website",
+  "name": "ごみ分別ガイド",
+  "url": "https://gomi-nico.jp/",
+  "description": "市区町村別ごみ収集日・分別方法検索サービス",
+  "inLanguage": "ja",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://gomi-nico.jp/{city}/",
+    "query-input": "required name=city"
+  }
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: -apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; background:#F7F6F3; color:#1C1C1E; }
+  a { text-decoration:none; }
+  .city-card { transition: transform .15s, box-shadow .15s; }
+  .city-card:active { transform: scale(.97); }
+  .section-heading { font-size:11px; font-weight:800; color:#8890A0; letter-spacing:.12em; text-transform:uppercase; margin-bottom:12px; }
+  .type-badge { display:inline-flex; align-items:center; gap:5px; padding:5px 10px; border-radius:20px; font-size:12px; font-weight:700; }
+</style>
+<!-- Material Symbols -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0" media="print" onload="this.media='all'">
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="bg-white border-b border-black/[0.07] sticky top-0 z-10">
+  <div class="max-w-2xl mx-auto px-5 py-4 flex items-center justify-between">
+    <div>
+      <div class="text-base font-extrabold text-[#1C1C1E] leading-none">ごみ分別ガイド</div>
+      <div class="text-[11px] text-[#AEAEB2] mt-[2px]">市区町村別ごみ出し情報</div>
+    </div>
+    <nav class="flex gap-4 text-[12px] text-[#636366]">
+      <a href="/about.html" class="hover:text-[#18A87A]">運営者情報</a>
+      <a href="/privacy.html" class="hover:text-[#18A87A]">プライバシー</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-2xl mx-auto px-4 pb-20">
+
+  <!-- ヒーロー -->
+  <section class="py-10 text-center">
+    <p class="text-[11px] font-bold text-[#18A87A] tracking-widest mb-3">無料 · 非公式情報サービス</p>
+    <h1 class="text-2xl font-extrabold text-[#1C1C1E] leading-tight mb-3">
+      お住まいの地域の<br>ごみ出し、すぐわかる
+    </h1>
+    <p class="text-sm text-[#636366] leading-relaxed max-w-xs mx-auto">
+      収集日カレンダー・分別方法・出し方の注意点を<br>地区別に確認できます。
+    </p>
+  </section>
+
+  <!-- 広告枠（ヘッダー下） -->
+  <div class="mb-6">
+    <!-- Google AdSense ここに挿入 -->
+    <div style="min-height:60px;background:#F0F2F5;border-radius:8px;display:flex;align-items:center;justify-content:center">
+      <span style="font-size:11px;color:#AEAEB2">広告</span>
+    </div>
+  </div>
+
+  <!-- 対応自治体 -->
+  <section class="mb-8">
+    <p class="section-heading">対応自治体</p>
+    <div class="grid grid-cols-2 gap-3">
+
+      <!-- 志木市 -->
+      <a href="/shiki/" class="city-card bg-white rounded-2xl border border-black/[0.07] shadow-sm p-4 flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <span class="text-lg" style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;color:#32b76e">location_city</span>
+          <div>
+            <div class="text-[13px] font-extrabold text-[#1C1C1E]">志木市</div>
+            <div class="text-[11px] text-[#8890A0]">埼玉県</div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1">
+          <span class="type-badge" style="background:rgba(232,81,42,.1);color:#E8512A">可燃</span>
+          <span class="type-badge" style="background:rgba(75,114,212,.1);color:#4B72D4">不燃</span>
+          <span class="type-badge" style="background:rgba(24,168,122,.1);color:#18A87A">資源</span>
+        </div>
+        <div class="text-[12px] font-bold text-[#18A87A] flex items-center gap-1 mt-auto">
+          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:15px">arrow_forward</span>
+          ごみ分別を確認する
+        </div>
+      </a>
+
+      <!-- 準備中カード -->
+      <div class="city-card bg-white rounded-2xl border border-black/[0.07] shadow-sm p-4 flex flex-col gap-2 opacity-50">
+        <div class="flex items-center gap-2">
+          <span class="text-lg" style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;color:#AEAEB2">location_city</span>
+          <div>
+            <div class="text-[13px] font-extrabold text-[#636366]">順次追加予定</div>
+            <div class="text-[11px] text-[#AEAEB2]">埼玉県・その他</div>
+          </div>
+        </div>
+        <div class="text-[12px] text-[#AEAEB2] mt-auto">準備中</div>
+      </div>
+    </div>
+
+    <!-- リクエスト -->
+    <div class="mt-3 bg-white rounded-2xl border border-black/[0.07] shadow-sm px-4 py-3 flex items-center justify-between">
+      <div>
+        <div class="text-[13px] font-bold text-[#1C1C1E]">お住まいの市区町村を追加してほしい方</div>
+        <div class="text-[11px] text-[#AEAEB2] mt-[2px]">リクエストをお送りください</div>
+      </div>
+      <a href="mailto:contact@gomi-nico.jp?subject=自治体追加リクエスト"
+         class="bg-[#18A87A] text-white text-[12px] font-bold px-4 py-2 rounded-xl whitespace-nowrap">
+        リクエスト
+      </a>
+    </div>
+  </section>
+
+  <!-- ごみ分別の基本（全国共通） -->
+  <section class="mb-8">
+    <p class="section-heading">ごみ分別の基本</p>
+    <p class="text-[12px] text-[#636366] mb-4 leading-relaxed">
+      家庭ごみは大きく4種類に分類されます。<strong>分別ルールは自治体によって異なります</strong>ので、お住まいの地域のルールをご確認ください。
+    </p>
+    <div class="flex flex-col gap-3">
+
+      <!-- 可燃ごみ -->
+      <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
+        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3"
+             style="background:rgba(232,81,42,.04)">
+          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:24px;color:#E8512A">local_fire_department</span>
+          <div>
+            <div class="text-[14px] font-extrabold" style="color:#E8512A">可燃ごみ（燃えるごみ）</div>
+            <div class="text-[11px] text-[#AEAEB2]">生ごみ・紙くず・木くず・革製品など</div>
+          </div>
+        </div>
+        <div class="px-4 py-3 text-[12px] text-[#636366] leading-relaxed">
+          週2回収集が多いです。<strong>生ごみは水気を切って</strong>から出すと臭いを防ぎ、焼却効率も上がります。ティッシュや汚れた紙類もこちらです。
+        </div>
+      </div>
+
+      <!-- 不燃ごみ -->
+      <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
+        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3"
+             style="background:rgba(75,114,212,.04)">
+          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:24px;color:#4B72D4">delete_sweep</span>
+          <div>
+            <div class="text-[14px] font-extrabold" style="color:#4B72D4">不燃ごみ（燃えないごみ）</div>
+            <div class="text-[11px] text-[#AEAEB2]">金属・ガラス・陶磁器・小型家電など</div>
+          </div>
+        </div>
+        <div class="px-4 py-3 text-[12px] text-[#636366] leading-relaxed">
+          月1〜2回収集が多いです。<strong>スプレー缶は必ず中身を使い切り</strong>、穴あけ不要の自治体が増えています。リチウムイオン電池は火災原因になるため、混入厳禁です。
+        </div>
+      </div>
+
+      <!-- 資源ごみ -->
+      <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
+        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3"
+             style="background:rgba(24,168,122,.04)">
+          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:24px;color:#18A87A">recycling</span>
+          <div>
+            <div class="text-[14px] font-extrabold" style="color:#18A87A">資源ごみ</div>
+            <div class="text-[11px] text-[#AEAEB2]">缶・ビン・ペットボトル・古紙・プラスチックなど</div>
+          </div>
+        </div>
+        <div class="px-4 py-3 text-[12px] text-[#636366] leading-relaxed">
+          <strong>ペットボトルはキャップを外してラベルを剥がし</strong>、軽くすすいで出しましょう。2022年のプラスチック資源循環法施行以降、容器包装プラスチックと製品プラスチックを資源として回収する自治体が増えています。
+        </div>
+      </div>
+
+      <!-- 粗大ごみ -->
+      <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
+        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3"
+             style="background:rgba(104,120,160,.04)">
+          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:24px;color:#6878A0">weekend</span>
+          <div>
+            <div class="text-[14px] font-extrabold" style="color:#6878A0">粗大ごみ</div>
+            <div class="text-[11px] text-[#AEAEB2]">家具・家電・自転車など大型ごみ</div>
+          </div>
+        </div>
+        <div class="px-4 py-3 text-[12px] text-[#636366] leading-relaxed">
+          <strong>事前の電話申込・処理券の購入が必要</strong>です。エアコン・テレビ・冷蔵庫・洗濯機は家電リサイクル法の対象で、自治体では回収しません。販売店等にご相談ください。
+        </div>
+      </div>
+    </div>
+
+    <!-- 知っておきたいポイント -->
+    <div class="mt-4 bg-[#F0FAF5] rounded-2xl border border-[#18A87A]/20 px-4 py-3">
+      <div class="text-[12px] font-bold text-[#1C6B4A] mb-2">💡 知っておきたい「9割ルール」</div>
+      <p class="text-[12px] text-[#3A5A44] leading-relaxed">
+        素材の9割が可燃ごみなら、1割の不燃部分が付いていても可燃ごみとして出せる、という考え方です。ただし自治体によってルールが異なります。お住まいの地域のルールを優先してください。
+      </p>
+    </div>
+  </section>
+
+  <!-- プラスチック新ルール -->
+  <section class="mb-8">
+    <p class="section-heading">プラスチックの分別（2022年法改正）</p>
+    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm px-4 py-4">
+      <p class="text-[13px] font-bold text-[#1C1C1E] mb-2">プラスチック資源循環促進法（2022年4月施行）</p>
+      <p class="text-[12px] text-[#636366] leading-relaxed mb-3">
+        これまで多くの自治体で「不燃ごみ」とされていた<strong>製品プラスチック（バケツ・ハンガー・保存容器など）</strong>を「資源ごみ」として回収できるよう、法律が整備されました。対応自治体は順次拡大しています。
+      </p>
+      <div class="flex flex-col gap-2 text-[12px]">
+        <div class="flex items-start gap-2">
+          <span class="text-[#18A87A] mt-[2px]">✓</span>
+          <span class="text-[#636366]">容器包装プラ：お菓子袋・シャンプーボトル・レジ袋など（プラマーク目印）</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-[#18A87A] mt-[2px]">✓</span>
+          <span class="text-[#636366]">製品プラ：バケツ・洗面器・CDケース・ハンガーなど</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-[#E8512A] mt-[2px]">✗</span>
+          <span class="text-[#636366]">汚れが落ちないもの・複合素材のものはリサイクル不可</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- リチウム電池注意 -->
+  <section class="mb-8">
+    <p class="section-heading">リチウム電池・モバイルバッテリーの注意</p>
+    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
+      <div class="px-4 py-3 border-b border-black/[0.05]" style="background:rgba(224,120,0,.06)">
+        <div class="flex items-center gap-2">
+          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:20px;color:#E07800">warning</span>
+          <span class="text-[13px] font-bold" style="color:#E07800">収集車・処理施設の火災原因になります</span>
+        </div>
+      </div>
+      <div class="px-4 py-3 text-[12px] text-[#636366] leading-relaxed">
+        モバイルバッテリー・スマートフォン・電動歯ブラシ・加熱式タバコなどに内蔵されているリチウムイオン電池は、<strong>ほかのごみと絶対に混ぜないでください</strong>。自治体の指定方法（小型家電回収ボックスなど）で廃棄してください。
+      </div>
+    </div>
+  </section>
+
+  <!-- 参考リンク -->
+  <section class="mb-8">
+    <p class="section-heading">参考・公式情報</p>
+    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden divide-y divide-black/[0.04]">
+      <a href="https://www.env.go.jp/guide/info/ecojin/action/20240221.html" target="_blank" rel="noopener"
+         class="flex items-center justify-between px-4 py-3 text-[13px] text-[#1C1C1E] hover:bg-black/[0.02]">
+        <div>
+          <div class="font-bold">ごみ出しのコツをつかんで楽しく分別しよう！</div>
+          <div class="text-[11px] text-[#AEAEB2] mt-[2px]">環境省 ecojin（エコジン）</div>
+        </div>
+        <span class="text-[#AEAEB2] ml-2">›</span>
+      </a>
+      <a href="https://plastic-circulation.env.go.jp/gov/bunbetsu" target="_blank" rel="noopener"
+         class="flex items-center justify-between px-4 py-3 text-[13px] text-[#1C1C1E] hover:bg-black/[0.02]">
+        <div>
+          <div class="font-bold">プラスチック分別収集自治体マップ</div>
+          <div class="text-[11px] text-[#AEAEB2] mt-[2px]">環境省 プラスチック資源循環</div>
+        </div>
+        <span class="text-[#AEAEB2] ml-2">›</span>
+      </a>
+      <a href="https://www.caa.go.jp/policies/policy/consumer_education/public_awareness/gekkan/2025/green/contents_018.html" target="_blank" rel="noopener"
+         class="flex items-center justify-between px-4 py-3 text-[13px] text-[#1C1C1E] hover:bg-black/[0.02]">
+        <div>
+          <div class="font-bold">グリーンコンシューマーになろう</div>
+          <div class="text-[11px] text-[#AEAEB2] mt-[2px]">消費者庁</div>
+        </div>
+        <span class="text-[#AEAEB2] ml-2">›</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 広告枠（フッター上） -->
+  <div class="mb-6">
+    <!-- Google AdSense ここに挿入 -->
+    <div style="min-height:90px;background:#F0F2F5;border-radius:8px;display:flex;align-items:center;justify-content:center">
+      <span style="font-size:11px;color:#AEAEB2">広告</span>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-center px-4 py-5 border-t border-black/[0.05]" style="background:#F7F6F3">
+  <p class="text-[11px] text-[#AEAEB2] leading-relaxed">
+    本サイトは各自治体の非公式情報サービスです。情報の正確性は保証しかねます。<br>
+    最新情報は各自治体の公式サイトでご確認ください。<br><br>
+    <a href="/about.html" class="text-[#AEAEB2] underline hover:text-[#636366]">運営者情報・免責事項</a>
+    <a href="/privacy.html" class="text-[#AEAEB2] underline hover:text-[#636366]">プライバシーポリシー</a>
+    <a href="/ads.html" class="text-[#AEAEB2] underline hover:text-[#636366]">広告について</a><br><br>
+    © 2026 株式会社ユウセナ
+  </p>
+</footer>
+
+</body>
+</html>

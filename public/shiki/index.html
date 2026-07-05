@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="city" content="shiki">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- ══ SEO基本（JS が自治体データから動的に上書き） ══ -->
+  <title>ごみ分別ガイド</title>
+  <meta name="description" content="ごみ収集日・分別方法を地区別に検索できます。">
+  <meta name="keywords" content="ごみ,分別,収集日,カレンダー,可燃,不燃,資源,粗大ごみ,ペットボトル,ごみ出し">
+  <meta name="robots" content="index, follow">
+  <link id="meta-canonical" rel="canonical" href="https://gomi-nico.jp/shiki/">
+
+  <!-- ══ OGP（SNSシェア用） ══ -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="ごみ分別ガイド">
+  <meta property="og:title"       content="ごみ分別ガイド">
+  <meta property="og:description" content="ごみ収集日・分別方法を地区別に検索できます。">
+  <meta property="og:url"         content="https://gomi-nico.jp/shiki/">
+  <meta property="og:locale"      content="ja_JP">
+
+  <!-- ══ Twitter Card ══ -->
+  <meta name="twitter:card"        content="summary">
+  <meta name="twitter:title"       content="ごみ分別ガイド">
+  <meta name="twitter:description" content="ごみ収集日・分別方法を地区別に検索できます。">
+
+  <!-- ══ JSON-LD 構造化データ（JS が自治体データから動的に生成） ══ -->
+  <script id="ld-json" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://gomi-nico.jp/#website",
+        "name": "ごみ分別ガイド",
+        "url": "https://gomi-nico.jp/",
+        "description": "自治体別ごみ収集日・分別方法検索サービス",
+        "inLanguage": "ja",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://gomi-nico.jp/?city=shiki&q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://gomi-nico.jp/?city=shiki",
+        "url": "https://gomi-nico.jp/?city=shiki",
+        "name": "志木市 ごみ分別ガイド｜収集日・分別方法を地区別に確認",
+        "description": "志木市のごみ収集日・分別方法を地区別に簡単検索できます。",
+        "inLanguage": "ja",
+        "isPartOf": { "@id": "https://gomi-nico.jp/#website" },
+        "about": {
+          "@type": "GovernmentService",
+          "name": "志木市 ごみ収集サービス",
+          "provider": {
+            "@type": "GovernmentOrganization",
+            "name": "志木市 環境推進課",
+            "telephone": "048-473-1492",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "志木市",
+              "addressRegion": "埼玉県",
+              "addressCountry": "JP"
+            }
+          }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "志木市の可燃ごみの収集日はいつですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "志木市の可燃ごみは地区によって週2回収集されます。地区を選択してカレンダーでご確認ください。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "志木市の粗大ごみはどうやって出しますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "粗大ごみは事前予約が必要です。粗大ごみ受付センター（048-473-5311）に電話で申し込んでください。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "志木市でリチウム電池・モバイルバッテリーはどうやって捨てますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "令和8年4月から「危険ごみ」として月1回収集されます。端子をテープで絶縁してから出してください。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "志木市のごみ袋は指定袋ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "志木市に指定袋はありません。透明または半透明の袋に入れて出してください。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Material Symbols（ナビ用：Outlined / 分別用：Rounded filled） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0"></noscript>
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT:'#32b76e', mid:'#267A4A', soft:'#F0F8F3', xsoft:'#E8F5EE' },
+          },
+          fontFamily: {
+            sans: ['-apple-system','BlinkMacSystemFont','Hiragino Kaku Gothic ProN',
+                   'Hiragino Sans','Yu Gothic UI','Meiryo','sans-serif'],
+          },
+          fontSize: { '2xs': ['10px', { lineHeight:'1.4' }] },
+          boxShadow: { top:'0 -2px 12px rgba(0,0,0,0.07)' },
+          keyframes: {
+            fadeUp: {
+              from: { opacity:'0', transform:'translateY(8px)' },
+              to:   { opacity:'1', transform:'none' },
+            },
+          },
+          animation: {
+            'fade-up':   'fadeUp 0.22s ease both',
+            'spin-slow': 'spin 1.5s linear infinite',
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Google AdSense -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <style>
+    /* ── CSS カスタムプロパティ（JS が var(--c-*) で参照） ── */
+    :root {
+      --c-moeru:   #E8512A; --c-moeru-bg:   #FFF1EC;
+      --c-moenai:  #4B72D4; --c-moenai-bg:  #F0EFEC;
+      --c-recycle: #18A87A; --c-recycle-bg: #E4FAF2;
+      --c-pla:     #78BE00; --c-pla-bg:     #EDFADA;
+      --c-kiken:   #E07800; --c-kiken-bg:   #FFF6E8;
+      --c-yugai:   #9160CC; --c-yugai-bg:   #F3EEFF;
+      --c-sodai:   #6878A0; --c-sodai-bg:   #EEF0F8;
+      --c-unknown: #8890A0; --c-unknown-bg: #F0F2F5;
+      /* 拡張型キー */
+      --c-fuku:     #5B84C4; --c-fuku-bg:     #EDF2FC;
+      --c-kami:     #B47828; --c-kami-bg:     #FDF3E0;
+      --c-cardboard:#9C6C30; --c-cardboard-bg:#F7EFE2;
+      --c-kami_pack:#5A9AC0; --c-kami_pack-bg:#E8F4FB;
+      --c-tree:     #5A8800; --c-tree-bg:     #EEF7DA;
+      --safe-b: env(safe-area-inset-bottom, 0px);
+    }
+    body {
+      padding-bottom: calc(64px + 56px + 24px + var(--safe-b));
+      background-color: #F7F6F3;
+    }
+    .is-hidden { display:none !important; }
+    :focus-visible { outline:2.5px solid #32b76e; outline-offset:2px; border-radius:6px; }
+    @media (prefers-reduced-motion:reduce) {
+      *,*::before,*::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; }
+    }
+
+    /* ── ナビ アクティブ（::after 疑似要素） ── */
+    .nav-item        { color:#AEAEB2; transition:color 0.15s; }
+    .nav-item.active { color:#32b76e; }
+    .nav-item.active::after {
+      content:''; position:absolute; top:0; left:25%; right:25%;
+      height:2px; background:#32b76e; border-radius:0 0 2px 2px;
+    }
+
+    /* ── 地区オプション（::after チェックマーク） ── */
+    .area-option:hover    { background:rgba(50,183,110,0.06); }
+    .area-option:active   { background:rgba(50,183,110,0.12); }
+    .area-option.selected { background:rgba(50,183,110,0.08); color:#32b76e; font-weight:700; }
+    .area-check-icon { display:inline; font-size:20px; color:rgba(0,0,0,0.15); }
+    .area-option.selected .area-check-icon { color:#32b76e; }
+
+    /* ── カレンダーセル（複合セレクタ必須） ── */
+    .cal-cell {
+      min-height:62px; border-radius:0;
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:flex-start;
+      padding:6px 0px 2px; cursor:pointer;
+      background:transparent;
+      border-right:1px solid rgba(0,0,0,0.08);
+      border-bottom:1px solid rgba(0,0,0,0.08);
+      border-top:none; border-left:none;
+      font-family:inherit;
+      gap:1px;
+    }
+    .cal-cell:hover    { background:rgba(0,0,0,0.05); }
+    .cal-cell.has-col  { background:rgba(26,92,56,0.05); }
+    .cal-cell.has-col:hover { background:rgba(26,92,56,0.09); }
+    .cal-cell.is-today { background:#E6F8F2; outline:2.5px solid #18A87A; outline-offset:-1px; }
+    .cal-cell.is-today:hover { background:#D4F4EA; }
+    .cal-cell.yearend  { opacity:0.18; pointer-events:none; }
+    .cal-day           { font-size:14px; font-weight:800; color:#1C1C1E; line-height:1; }
+    .cal-day-sun       { color:#C94B2A; }
+    .cal-day-sat       { color:#3A5BB8; }
+    .cal-cell.is-today .cal-day { color:#18A87A; }
+    /* アイコングリッド（2列で並べる） */
+    .cal-icons {
+      display:grid; grid-template-columns:repeat(2,1fr);
+      gap:0px; width:100%;
+      align-items:center; justify-items:center;
+      flex:1;
+    }
+    .cal-icon-wrap { display:flex; align-items:center; justify-content:center; }
+
+    /* ── Google 翻訳バー完全抑制 ── */
+    /* iframe バナー本体 */
+    .goog-te-banner-frame,
+    .goog-te-banner-frame.skiptranslate,
+    .goog-te-menu-frame,
+    .goog-te-gadget,
+    #goog-gt-tt,
+    #goog-gt-,
+    .VIpgJd-ZVi9od-aZ2wEe-wOHMyf { display:none !important; }
+    /* body が push-down される場合の打ち消し */
+    body        { top:0 !important; margin-top:0 !important; }
+    body.translated-ltr,
+    body.translated-rtl { margin-top:0 !important; top:0 !important; }
+    /* フォント変更やアンダーラインを抑制 */
+    font[face] { font-family:inherit !important; }
+    .notranslate { -webkit-user-select:none; }
+
+    /* ── Material Symbols ── */
+    /* ナビ/UI用：Outlined・細め */
+    .ms-nav {
+      font-family: 'Material Symbols Outlined', sans-serif;
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+      font-size: 22px; line-height: 1; display: inline-block;
+      user-select: none; vertical-align: middle;
+    }
+    .ms-nav-sm {
+      font-family: 'Material Symbols Outlined', sans-serif;
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+      font-size: 14px; line-height: 1; display: inline-block;
+      user-select: none; vertical-align: middle;
+    }
+    /* 分別カテゴリ用：Rounded・Filled・色はインラインで指定 */
+    .ms-cat {
+      font-family: 'Material Symbols Rounded', sans-serif;
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+      line-height: 1; display: inline-block;
+      user-select: none; vertical-align: middle;
+    }
+
+    /* ── ボトムシート共通 ── */
+    .bottom-sheet {
+      position:absolute; bottom:0; left:0; right:0;
+      max-width:430px; margin:0 auto;
+      background:#fff; border-radius:1.5rem 1.5rem 0 0;
+      box-shadow:0 -8px 40px rgba(0,0,0,0.15);
+      display:flex; flex-direction:column;
+      max-height:82dvh;
+    }
+    .sheet-handle {
+      width:2.25rem; height:0.25rem;
+      background:rgba(0,0,0,0.07); border-radius:9999px;
+      margin:0.75rem auto 1rem; flex-shrink:0;
+    }
+  </style>
+</head>
+
+<body class="text-[#1C1C1E] leading-normal min-h-dvh font-sans" style="background:#F7F6F3">
+
+<!-- ============================================================
+     LOADING OVERLAY
+============================================================ -->
+<div id="loading-overlay"
+     class="fixed inset-0 z-[500] bg-[#F7F6F3] flex items-center justify-center">
+  <div class="text-center">
+    <span class="ms-cat animate-spin-slow block mb-4" style="font-size:40px;color:#32b76e" aria-hidden="true">recycling</span>
+    <p class="text-sm text-[#AEAEB2]">データを読み込んでいます…</p>
+  </div>
+</div>
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header class="sticky top-0 z-[100] bg-white/90 backdrop-blur-xl border-b border-black/[0.07]"
+        role="banner">
+  <div class="max-w-[430px] mx-auto h-[52px] flex items-center justify-between px-4">
+
+    <!-- ブランド＋選択中の地区 -->
+    <div class="flex items-center gap-2 min-w-0">
+      <!-- 自治体ロゴ（非表示。JSON の cityLogo に URL を設定すると表示される） -->
+      <img id="city-logo"
+           class="is-hidden w-auto h-[30px] object-contain flex-shrink-0"
+           alt="" aria-hidden="true">
+      <div class="min-w-0 flex flex-col justify-center" style="padding-bottom:3px">
+        <!-- タイトル（志木市ごみ分別・JS が更新） -->
+        <div id="header-title"
+             class="text-base font-extrabold text-[#1C1C1E] tracking-tight leading-none truncate">
+          ごみ分別
+        </div>
+        <!-- 選択地区（タップで地域選択シートを開く） -->
+        <button id="header-area" onclick="openSheet()"
+                aria-label="地域を変更する"
+                class="is-hidden flex items-center gap-[3px] mt-[4px]
+                       bg-transparent border-none p-0 cursor-pointer active:opacity-60
+                       font-sans">
+          <span class="ms-cat" style="color:#32b76e;font-size:13px;line-height:1">location_on</span>
+          <span id="header-area-name"
+                class="text-[11px] text-[#32b76e] font-bold truncate max-w-[130px]"
+                style="text-decoration:underline;text-underline-offset:2px"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 言語インジケーター（翻訳中のみ表示） -->
+    <button id="lang-indicator" onclick="openLanguageSheet()"
+            class="is-hidden text-xl leading-none cursor-pointer border-none bg-transparent p-1"
+            aria-label="言語設定"></button>
+
+    <!-- ハンバーガーメニューボタン -->
+    <button onclick="openMenu()"
+            aria-label="メニューを開く" aria-haspopup="dialog"
+            class="w-10 h-10 flex flex-col items-center justify-center gap-[5px]
+                   rounded-lg border border-black/[0.07] bg-transparent
+                   cursor-pointer flex-shrink-0">
+      <span class="w-5 h-[2px] bg-[#1C1C1E] rounded-full block"></span>
+      <span class="w-5 h-[2px] bg-[#1C1C1E] rounded-full block"></span>
+      <span class="w-5 h-[2px] bg-[#1C1C1E] rounded-full block"></span>
+    </button>
+
+  </div>
+</header>
+
+<!-- ============================================================
+     ハンバーガーメニュー ボトムシート
+============================================================ -->
+<div id="menu-backdrop"
+     class="is-hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[200]"
+     role="dialog" aria-modal="true" aria-label="メニュー"
+     onclick="handleMenuBackdrop(event)">
+  <div class="bottom-sheet" onclick="event.stopPropagation()">
+    <div class="sheet-handle"></div>
+    <h2 class="text-xl font-extrabold tracking-tight px-6 pb-4 flex-shrink-0">メニュー</h2>
+    <div class="overflow-y-auto flex-1" style="padding-bottom:calc(24px + var(--safe-b))">
+
+      <button onclick="openSheet()"
+              class="flex items-center gap-4 w-full text-left px-6 py-4
+                     border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
+                     font-sans cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3]">
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">location_on</span></span>
+        <div class="flex-1">
+          <p class="text-base font-bold text-[#1C1C1E]">お住まいの地域設定</p>
+          <p class="text-xs text-[#AEAEB2] mt-[2px]">ごみ収集日を地区ごとに確認できます</p>
+        </div>
+        <span class="ms-nav" style="font-size:20px;color:#C7C7CC">chevron_right</span>
+      </button>
+
+      <button id="menu-faq" onclick="openFAQ()"
+              class="flex items-center gap-4 w-full text-left px-6 py-4
+                     border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
+                     font-sans cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3]">
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">help</span></span>
+        <div class="flex-1">
+          <p class="text-base font-bold text-[#1C1C1E]">よくあるご質問</p>
+          <p class="text-xs text-[#AEAEB2] mt-[2px]">ゴミ出しのルールや疑問を解決</p>
+        </div>
+        <span class="ms-nav" style="font-size:20px;color:#C7C7CC">chevron_right</span>
+      </button>
+
+      <button id="menu-vendor" onclick="openVendor()"
+              class="flex items-center gap-4 w-full text-left px-6 py-4
+                     border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
+                     font-sans cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3]">
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">storefront</span></span>
+        <div class="flex-1">
+          <p class="text-base font-bold text-[#1C1C1E]">関連業者</p>
+          <p class="text-xs text-[#AEAEB2] mt-[2px]">不用品回収・引越しなど便利なサービス</p>
+        </div>
+        <span class="ms-nav" style="font-size:20px;color:#C7C7CC">chevron_right</span>
+      </button>
+
+      <button id="menu-contact" onclick="openContact()"
+              class="flex items-center gap-4 w-full text-left px-6 py-4
+                     border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
+                     font-sans cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3]">
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">call</span></span>
+        <div class="flex-1">
+          <p class="text-base font-bold text-[#1C1C1E]">問い合わせ先</p>
+          <p class="text-xs text-[#AEAEB2] mt-[2px]">市役所・環境推進課へのご連絡</p>
+        </div>
+        <span class="ms-nav" style="font-size:20px;color:#C7C7CC">chevron_right</span>
+      </button>
+
+      <button id="menu-language" onclick="openLanguageSheet()"
+              class="flex items-center gap-4 w-full text-left px-6 py-4
+                     bg-transparent border-none
+                     font-sans cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3]">
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">translate</span></span>
+        <div class="flex-1">
+          <p class="text-base font-bold text-[#1C1C1E]">言語設定</p>
+          <p class="text-xs text-[#AEAEB2] mt-[2px]">Language / 语言 / 언어 / Ngôn ngữ</p>
+        </div>
+        <span class="ms-nav" style="font-size:20px;color:#C7C7CC">chevron_right</span>
+      </button>
+
+
+      <!-- 法的ページ -->
+      <div class="border-t border-black/[0.06] mt-2 pt-2 px-6 pb-4 flex flex-wrap gap-x-4 gap-y-1">
+        <a href="privacy.html" class="text-xs text-[#8890A0] hover:underline">プライバシーポリシー</a>
+        <a href="about.html"   class="text-xs text-[#8890A0] hover:underline">運営者情報</a>
+        <a href="ads.html"     class="text-xs text-[#8890A0] hover:underline">広告・アフィリエイトについて</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     地区選択 ボトムシート
+============================================================ -->
+<div id="sheet-backdrop"
+     class="is-hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[210]"
+     role="dialog" aria-modal="true" aria-labelledby="sheet-title"
+     onclick="handleBackdropClick(event)">
+  <div class="bottom-sheet" onclick="event.stopPropagation()">
+    <div class="sheet-handle"></div>
+    <h2 id="sheet-title" class="text-xl font-extrabold tracking-tight px-6 pb-4 flex-shrink-0">
+      お住まいの地区を選択
+    </h2>
+    <div id="sheet-scroll" class="overflow-y-auto flex-1 px-4"
+         style="padding-bottom:calc(32px + var(--safe-b))">
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     FAQ ボトムシート
+============================================================ -->
+<div id="faq-sheet"
+     class="is-hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[210]"
+     onclick="if(event.target===this){closeFAQ()}">
+  <div class="bottom-sheet" onclick="event.stopPropagation()">
+    <div class="sheet-handle"></div>
+    <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
+      <h2 class="text-xl font-extrabold tracking-tight">よくあるご質問</h2>
+      <button onclick="closeFAQ()" aria-label="閉じる"
+              class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
+                     border-none text-[#636366] text-sm cursor-pointer font-sans">✕</button>
+    </div>
+    <div id="faq-content" class="overflow-y-auto flex-1"
+         style="padding-bottom:calc(24px + var(--safe-b))">
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     関連業者 ボトムシート
+============================================================ -->
+<div id="vendor-sheet"
+     class="is-hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[210]"
+     onclick="if(event.target===this){closeVendor()}">
+  <div class="bottom-sheet" onclick="event.stopPropagation()">
+    <div class="sheet-handle"></div>
+    <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
+      <h2 class="text-xl font-extrabold tracking-tight">関連業者</h2>
+      <button onclick="closeVendor()" aria-label="閉じる"
+              class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
+                     border-none text-[#636366] text-sm cursor-pointer font-sans">✕</button>
+    </div>
+    <p class="text-2xs text-[#AEAEB2] px-6 pb-3 flex-shrink-0">不用品回収・引越し・便利屋などのサービスです</p>
+    <div class="overflow-y-auto flex-1 px-6" style="padding-bottom:calc(24px + var(--safe-b))">
+      <div id="vendor-grid" class="grid grid-cols-2 gap-3 pb-4"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     問い合わせ先 ボトムシート
+============================================================ -->
+<div id="contact-sheet"
+     class="is-hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[210]"
+     onclick="if(event.target===this){closeContact()}">
+  <div class="bottom-sheet" onclick="event.stopPropagation()">
+    <div class="sheet-handle"></div>
+    <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
+      <h2 class="text-xl font-extrabold tracking-tight flex items-center gap-2"><span class="ms-nav" style="color:#32b76e">call</span> 問い合わせ先</h2>
+      <button onclick="closeContact()" aria-label="閉じる"
+              class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
+                     border-none text-[#636366] text-sm cursor-pointer font-sans">✕</button>
+    </div>
+    <div id="contact-sheet-rows" class="overflow-y-auto flex-1"
+         style="padding-bottom:calc(24px + var(--safe-b))">
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     言語設定 ボトムシート
+============================================================ -->
+<div id="language-sheet"
+     class="is-hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[210]"
+     onclick="if(event.target===this){closeLanguageSheet()}">
+  <div class="bottom-sheet" onclick="event.stopPropagation()">
+    <div class="sheet-handle"></div>
+    <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
+      <div>
+        <h2 class="text-xl font-extrabold tracking-tight flex items-center gap-2"><span class="ms-nav" style="color:#5A8800">translate</span> 言語設定</h2>
+        <p class="text-2xs text-[#AEAEB2] mt-[3px]">Google 翻訳で自動翻訳します</p>
+      </div>
+      <button onclick="closeLanguageSheet()" aria-label="閉じる"
+              class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
+                     border-none text-[#636366] text-sm cursor-pointer font-sans">✕</button>
+    </div>
+    <div id="language-list" class="overflow-y-auto flex-1"
+         style="padding-bottom:calc(24px + var(--safe-b))">
+      <!-- JS が生成 -->
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     日付タップ → 収集詳細 ボトムシート
+============================================================ -->
+<!-- ============================================================
+     カテゴリ詳細 ボトムシート
+============================================================ -->
+<div id="category-detail-backdrop"
+     class="is-hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[210]"
+     onclick="if(event.target===this){closeCategoryDetail()}">
+  <div class="bottom-sheet" onclick="event.stopPropagation()">
+    <div class="sheet-handle"></div>
+    <div id="category-detail-header" class="px-5 pb-4 flex-shrink-0"></div>
+    <div id="category-detail-body"
+         class="overflow-y-auto flex-1 px-5"
+         style="padding-bottom:calc(32px + var(--safe-b))"></div>
+  </div>
+</div>
+
+<div id="day-detail-backdrop"
+     class="is-hidden fixed inset-0 bg-black/50 z-[210]"
+     onclick="if(event.target===this){closeDayDetail()}">
+  <div class="bottom-sheet" onclick="event.stopPropagation()">
+    <div class="sheet-handle"></div>
+    <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
+      <h2 id="day-detail-date" class="text-xl font-extrabold tracking-tight"></h2>
+      <button onclick="closeDayDetail()" aria-label="閉じる"
+              class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
+                     border-none text-[#636366] text-sm cursor-pointer font-sans">✕</button>
+    </div>
+    <div id="day-detail-content" class="overflow-y-auto flex-1 px-4"
+         style="padding-bottom:calc(24px + var(--safe-b))">
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     MAIN CONTENT
+============================================================ -->
+<main class="max-w-[430px] mx-auto px-4 pt-4 flex flex-col gap-4" role="main">
+
+  <!-- 上部広告 -->
+  <div id="ad-top"
+       class="w-full h-14 bg-black/[0.035] rounded-2xl
+              flex items-center justify-center text-2xs text-[#AEAEB2] tracking-widest"
+       role="complementary" aria-label="広告">広告（320×50）</div>
+
+  <!-- ==========================================================
+       お知らせ パネル
+  ========================================================== -->
+  <div id="panel-notice" class="is-hidden flex flex-col gap-4" aria-label="お知らせ">
+    <div id="rules-body"></div>
+  </div>
+
+  <!-- ==========================================================
+       カレンダー パネル（デフォルト）
+  ========================================================== -->
+  <div id="panel-calendar" class="is-hidden flex flex-col gap-4" aria-label="収集カレンダー">
+
+    <!-- ① 今日の収集バナー -->
+    <div id="today-strip"
+         class="bg-white rounded-2xl border border-black/[0.07] shadow-sm px-4 py-3
+                flex items-center gap-3 animate-fade-up">
+      <div class="flex-shrink-0">
+        <p class="text-[11px] font-extrabold text-[#AEAEB2] tracking-wider uppercase">TODAY</p>
+        <p id="today-strip-date" class="text-[18px] font-extrabold text-[#1C1C1E] mt-[1px] leading-tight"></p>
+      </div>
+      <div id="today-strip-types" class="flex-1 flex items-center gap-2 flex-wrap min-w-0"></div>
+    </div>
+
+    <!-- ② カレンダー -->
+    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm p-4 pb-5 animate-fade-up"
+         role="region" aria-label="月間カレンダー">
+
+      <!-- 月ナビ -->
+      <div class="flex items-center justify-between mb-4">
+        <button onclick="prevMonth()" aria-label="前の月"
+                class="w-10 h-10 rounded-lg border border-black/[0.07] bg-transparent
+                       text-[#636366] flex items-center justify-center
+                       cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3] font-sans">
+          <span class="ms-nav" style="font-size:24px">chevron_left</span>
+        </button>
+        <h2 id="cal-month-label" class="text-xl font-extrabold tracking-tight" aria-live="polite"></h2>
+        <button onclick="nextMonth()" aria-label="次の月"
+                class="w-10 h-10 rounded-lg border border-black/[0.07] bg-transparent
+                       text-[#636366] flex items-center justify-center
+                       cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3] font-sans">
+          <span class="ms-nav" style="font-size:24px">chevron_right</span>
+        </button>
+      </div>
+
+      <!-- 曜日ヘッダー -->
+      <div class="grid grid-cols-7 mb-2" aria-hidden="true">
+        <span class="text-center text-xs font-extrabold text-[#C94B2A] py-1">日</span>
+        <span class="text-center text-xs font-extrabold text-[#636366] py-1">月</span>
+        <span class="text-center text-xs font-extrabold text-[#636366] py-1">火</span>
+        <span class="text-center text-xs font-extrabold text-[#636366] py-1">水</span>
+        <span class="text-center text-xs font-extrabold text-[#636366] py-1">木</span>
+        <span class="text-center text-xs font-extrabold text-[#636366] py-1">金</span>
+        <span class="text-center text-xs font-extrabold text-[#3A5BB8] py-1">土</span>
+      </div>
+
+      <!-- グリッド（JS生成） -->
+      <div id="cal-grid" class="grid grid-cols-7 gap-[0px]" role="grid" style="border-left:1px solid rgba(0,0,0,0.08);border-top:1px solid rgba(0,0,0,0.08)"></div>
+
+      <!-- 地区未選択 -->
+      <div id="cal-no-area" class="is-hidden text-center py-10 px-6">
+        <span class="ms-nav block mb-3" style="font-size:40px;color:#AEAEB2" aria-hidden="true">location_off</span>
+        <p class="text-base font-bold text-[#636366]">地区を選択してください</p>
+        <p class="text-xs text-[#AEAEB2] mt-1">右上 ☰ メニューから設定できます</p>
+        <button onclick="openSheet()"
+                class="mt-4 inline-flex items-center gap-1 bg-[#32b76e] text-white
+                       border-none rounded-full px-5 h-11 font-sans text-sm font-bold
+                       cursor-pointer active:opacity-80" type="button">
+          地区を選択する
+        </button>
+      </div>
+
+    </div>
+
+    <!-- ── カレンダー下 広告枠 ── -->
+    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm px-4 py-3">
+      <!-- Google AdSense（審査通過後にコメントを解除してください）
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXX"
+           data-ad-slot="XXXXXXXXXX"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+      <div style="min-height:90px;background:#F0F2F5;border-radius:8px;
+                  display:flex;flex-direction:column;align-items:center;
+                  justify-content:center;gap:4px">
+        <span class="ms-nav" style="font-size:22px;color:#C8C8CC" aria-hidden="true">campaign</span>
+        <span style="font-size:11px;color:#C8C8CC">広告</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ==========================================================
+       ゴミ検索 パネル
+  ========================================================== -->
+  <div id="panel-search" class="is-hidden flex flex-col gap-4" aria-label="分別検索">
+
+    <!-- ① 検索ボックス + よく検索されるごみ（同一カード） -->
+    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden animate-fade-up flex-shrink-0"
+         role="search" aria-label="ごみ分別検索">
+      <!-- 検索入力行 -->
+      <div class="flex items-center gap-3 px-4 h-14 border-b border-black/[0.05]">
+        <span class="ms-nav flex-shrink-0 pointer-events-none" style="color:#AEAEB2;font-size:20px" aria-hidden="true">search</span>
+        <label for="search-input" class="sr-only">ごみの名前で検索</label>
+        <input type="search" id="search-input"
+               placeholder="例：ペットボトル、電池、布団…"
+               autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"
+               oninput="onSearch(this.value)"
+               class="flex-1 border-none outline-none text-base text-[#1C1C1E]
+                      bg-transparent font-sans caret-brand placeholder:text-[#AEAEB2]">
+        <button onclick="clearSearch()" type="button" aria-label="検索をクリア"
+                class="w-8 h-8 rounded-full border-none bg-black/[0.05] text-[#AEAEB2]
+                       text-sm flex items-center justify-center cursor-pointer flex-shrink-0 font-sans">✕</button>
+      </div>
+      <!-- よく検索されるごみ（JS が生成） -->
+      <div id="search-quick" class="px-4 pt-3 pb-4"></div>
+    </div>
+
+    <!-- ② 全ごみ項目 五十音順一覧（別カード） -->
+    <div id="search-body"
+         class="bg-white border border-black/[0.07] shadow-sm"
+         style="border-radius:1rem; overflow-x:hidden"></div>
+
+  </div>
+
+  <!-- ==========================================================
+       ガイド パネル
+  ========================================================== -->
+  <div id="panel-guide" class="is-hidden flex flex-col gap-4" aria-label="分別ガイド">
+    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden animate-fade-up">
+      <h2 class="text-base font-extrabold px-6 py-5 pb-4 border-b border-black/[0.04] tracking-tight">
+        ごみの分け方ガイド
+      </h2>
+      <div id="guide-rows"></div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============================================================
+     BOTTOM NAVIGATION（4タブ）
+============================================================ -->
+<nav class="fixed bottom-[56px] left-0 right-0 z-[90]
+            h-[64px] bg-white/95 backdrop-blur-xl
+            border-t border-black/[0.07] shadow-top
+            flex items-stretch justify-center"
+     role="navigation" aria-label="メインナビゲーション">
+  <div class="max-w-[430px] w-full flex items-stretch">
+
+    <button id="nav-notice" onclick="showPanel('notice')"
+            aria-label="お知らせ"
+            class="nav-item flex-1 flex flex-col items-center justify-center
+                   gap-[3px] border-none bg-transparent cursor-pointer
+                   font-sans p-0 relative min-h-[64px]">
+      <span class="ms-nav" aria-hidden="true">notifications</span>
+      <span class="text-2xs font-bold tracking-[0.03em]">お知らせ</span>
+    </button>
+
+    <button id="nav-calendar" onclick="showPanel('calendar')"
+            aria-label="カレンダー" aria-current="page"
+            class="nav-item active flex-1 flex flex-col items-center justify-center
+                   gap-[3px] border-none bg-transparent cursor-pointer
+                   font-sans p-0 relative min-h-[64px]">
+      <span class="ms-nav" aria-hidden="true">calendar_month</span>
+      <span class="text-2xs font-bold tracking-[0.03em]">カレンダー</span>
+    </button>
+
+    <button id="nav-search" onclick="showPanel('search')"
+            aria-label="ゴミ検索"
+            class="nav-item flex-1 flex flex-col items-center justify-center
+                   gap-[3px] border-none bg-transparent cursor-pointer
+                   font-sans p-0 relative min-h-[64px]">
+      <span class="ms-nav" aria-hidden="true">search</span>
+      <span class="text-2xs font-bold tracking-[0.03em]">ゴミ検索</span>
+    </button>
+
+    <button id="nav-guide" onclick="showPanel('guide')"
+            aria-label="分別ガイド"
+            class="nav-item flex-1 flex flex-col items-center justify-center
+                   gap-[3px] border-none bg-transparent cursor-pointer
+                   font-sans p-0 relative min-h-[64px]">
+      <span class="ms-nav" aria-hidden="true">menu_book</span>
+      <span class="text-2xs font-bold tracking-[0.03em]">ガイド</span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- ============================================================
+     出典フッター
+============================================================ -->
+<footer class="text-center px-4 py-5 border-t border-black/[0.05]"
+        style="background:#F7F6F3">
+  <p class="text-[11px] text-[#AEAEB2] leading-relaxed">
+    出典：
+    <a id="citation-link" href="#"
+       target="_blank" rel="noopener"
+       class="underline text-[#AEAEB2] hover:text-[#636366]">
+      公式ホームページ
+    </a><br>
+    <span id="citation-note">本サイトは非公式サイトです</span>
+  </p>
+</footer>
+
+<!-- ============================================================
+     ANCHOR AD（固定・最下部）
+============================================================ -->
+<aside id="anchor-ad"
+       class="fixed bottom-0 left-0 right-0 z-[80] h-[56px]
+              bg-[rgba(247,246,243,0.96)] backdrop-blur-sm
+              border-t border-black/[0.07] flex items-center justify-center"
+       style="padding-bottom:var(--safe-b)"
+       role="complementary" aria-label="広告">
+  <div id="anchor-ad-inner"
+       class="w-[320px] h-[50px] bg-black/[0.04] rounded-md
+              flex items-center justify-center text-[10px] text-[#AEAEB2]">
+    広告（320×50 アンカー広告）
+  </div>
+</aside>
+
+<script src="script.js"></script>
+
+<!-- ============================================================
+     Google 翻訳ウィジェット
+     非表示で埋め込み → JS から言語切替のみ操作
+============================================================ -->
+<div id="google_translate_element" class="is-hidden" aria-hidden="true"></div>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'ja',
+    includedLanguages: 'en,zh-CN,zh-TW,ko,vi,pt,es,tl,id',
+    autoDisplay: false,
+  }, 'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                 

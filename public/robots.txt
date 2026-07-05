@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# サイトマップ
+Sitemap: https://gomi-nico.jp/sitemap.xml
