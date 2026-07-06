@@ -410,7 +410,7 @@ function updateAreaDisplay() {
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
-    ['sheet-backdrop','menu-backdrop','day-detail-backdrop','contact-sheet','faq-sheet','vendor-sheet','language-sheet']
+    ['sheet-backdrop','menu-backdrop','day-detail-backdrop','item-detail-backdrop','contact-sheet','faq-sheet','vendor-sheet','language-sheet']
       .forEach(id => {
         const el = document.getElementById(id);
         if (el && !el.classList.contains('is-hidden')) {
@@ -745,7 +745,7 @@ function renderQuickTags() {
     '<p style="font-size:11px;font-weight:800;color:#8890A0;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;padding-left:4px">よく検索されるごみ</p>' +
     '<div style="display:flex;flex-wrap:wrap;gap:8px;padding:0 2px">' +
     QUICK_TAGS.map(function(q) {
-      return '<button style="padding:8px 16px;background:#fff;border:none;border-radius:20px;font-size:14px;font-weight:700;color:#1C1C1E;cursor:pointer;font-family:inherit;white-space:nowrap;min-height:40px;line-height:1.2;box-shadow:0 2px 8px rgba(0,0,0,0.08)" onclick="quickSearch(\'' + q + '\')">' + q + '</button>';
+      return '<button style="padding:8px 16px;background:#fff;border:none;border-radius:20px;font-size:14px;font-weight:700;color:#1C1C1E;cursor:pointer;font-family:inherit;white-space:nowrap;min-height:40px;line-height:1.2;box-shadow:0 2px 8px rgba(0,0,0,0.08)" onclick="openItemDetail(\'' + q + '\')">' + q + '</button>';
     }).join('') +
     '</div>';
 }
@@ -775,7 +775,7 @@ function renderSearchIndex() {
       var st  = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
       var cat = DATA.categories[item.category] ? DATA.categories[item.category].label : item.category;
       var safe = item.name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
-      html += '<button style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:14px 16px;border:none;border-bottom:1px solid rgba(0,0,0,0.04);background:#fff;font-family:inherit;cursor:pointer;min-height:54px" onclick="quickSearch(\'' + safe + '\')">' +
+      html += '<button style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:14px 16px;border:none;border-bottom:1px solid rgba(0,0,0,0.04);background:#fff;font-family:inherit;cursor:pointer;min-height:54px;-webkit-tap-highlight-color:transparent" onclick="openItemDetail(\'' + safe + '\')">' +
         '<span style="flex:1;font-size:16px;font-weight:400;color:#1C1C1E">' + item.name + '</span>' +
         '<span style="display:inline-flex;align-items:center;gap:3px;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;white-space:nowrap;background:' + st.bg + ';color:' + st.fg + '">' + catIcon(item.category, 14) + ' ' + cat + '</span>' +
         '<span class="ms-nav" style="color:#C7C7CC;font-size:20px;margin-left:2px">chevron_right</span></button>';
@@ -813,13 +813,14 @@ function onSearch(query) {
   }
 
   var itemsHtml = hits.slice(0,15).map(function(item) {
-    var st  = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
-    var cat = DATA.categories[item.category] ? DATA.categories[item.category].label : item.category;
-    return '<div style="display:flex;align-items:flex-start;gap:12px;padding:16px;border-radius:16px;background:' + st.bg + '">' +
+    var st      = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
+    var cat     = DATA.categories[item.category] ? DATA.categories[item.category].label : item.category;
+    var safeName = item.name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+    return '<button onclick="openItemDetail(\'' + safeName + '\')" style="display:flex;align-items:flex-start;gap:12px;padding:16px;border-radius:16px;background:' + st.bg + ';width:100%;text-align:left;border:none;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">' +
       '<span style="display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:999px;font-size:10px;font-weight:800;white-space:nowrap;flex-shrink:0;margin-top:2px;background:' + st.bg + ';color:' + st.fg + ';border:1.5px solid ' + st.fg + '33">' + catIcon(item.category, 13) + ' ' + cat + '</span>' +
       '<div style="flex:1;min-width:0"><p style="font-size:16px;font-weight:600;color:#1C1C1E">' + item.name + '</p>' +
       (item.note ? '<p style="font-size:12px;color:#636366;margin-top:3px;line-height:1.5"><span class="ms-nav" style="font-size:13px;color:#AEAEB2;vertical-align:-2px">lightbulb</span> ' + item.note + '</p>' : '') +
-      '</div></div>';
+      '</div><span class="ms-nav" style="color:#C7C7CC;font-size:18px;flex-shrink:0;margin-top:2px">chevron_right</span></button>';
   }).join('');
 
   var more = hits.length > 15 ? '<p style="text-align:center;font-size:12px;color:#AEAEB2;padding:12px">他 ' + (hits.length-15) + ' 件</p>' : '';
@@ -831,12 +832,82 @@ function quickSearch(q) {
   input.value = q;
   onSearch(q);
   showPanel('search');
+  window.scrollTo(0, 0);
   setTimeout(function(){ input.focus(); }, 100);
 }
 
 function clearSearch() {
   document.getElementById('search-input').value = '';
   onSearch('');
+}
+
+/* =====================================================
+   アイテム詳細ボトムシート
+===================================================== */
+function openItemDetail(name) {
+  if (!DATA) return;
+  // 名前で完全一致、なければタグで探す
+  var item = DATA.garbage_db.find(function(g){ return g.name === name; });
+  if (!item) {
+    item = DATA.garbage_db.find(function(g){
+      return (g.tags || []).indexOf(name) !== -1;
+    });
+  }
+  if (!item) return;
+
+  var st       = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
+  var catLabel = DATA.categories[item.category]
+    ? DATA.categories[item.category].label
+    : item.category;
+
+  // ── ヘッダー（アイコン＋名前＋種別バッジ）
+  document.getElementById('item-detail-header').innerHTML =
+    '<div style="display:flex;align-items:center;gap:14px">' +
+      '<div style="width:56px;height:56px;border-radius:14px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:' + st.iconBg + '">' +
+        catIcon(item.category, 30) +
+      '</div>' +
+      '<div style="flex:1;min-width:0">' +
+        '<p style="font-size:22px;font-weight:800;color:#1C1C1E;margin:0 0 7px;line-height:1.2">' + item.name + '</p>' +
+        '<span style="display:inline-flex;align-items:center;gap:4px;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:700;background:' + st.bg + ';color:' + st.fg + '">' +
+          catIcon(item.category, 14) + ' ' + catLabel +
+        '</span>' +
+      '</div>' +
+    '</div>';
+
+  // ── ボディ（出し方・タグ・カテゴリ一覧ボタン）
+  var html = '';
+
+  if (item.note) {
+    html += '<div style="background:' + st.bg + ';border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
+      '<p style="font-size:11px;font-weight:800;color:' + st.fg + ';margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
+      '<p style="font-size:14px;color:#1C1C1E;line-height:1.7;margin:0">' + item.note + '</p>' +
+    '</div>';
+  }
+
+  var otherTags = (item.tags || []).filter(function(t){ return t !== item.name; });
+  if (otherTags.length > 0) {
+    html += '<p style="font-size:11px;font-weight:800;color:#8890A0;letter-spacing:.1em;margin:0 0 8px">別名・関連ワード</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px">';
+    otherTags.forEach(function(t){
+      html += '<span style="padding:5px 12px;background:#F0F2F5;border-radius:999px;font-size:12px;color:#636366;font-weight:600">' + t + '</span>';
+    });
+    html += '</div>';
+  }
+
+  html +=
+    '<button onclick="closeItemDetail();openCategoryDetail(\'' + item.category + '\')"' +
+    ' style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:48px;' +
+    'background:' + st.bg + ';color:' + st.fg + ';border:none;border-radius:12px;' +
+    'font-size:14px;font-weight:800;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">' +
+      catIcon(item.category, 18) + '「' + catLabel + '」のごみ一覧を見る' +
+    '</button>';
+
+  document.getElementById('item-detail-body').innerHTML = html;
+  document.getElementById('item-detail-backdrop').classList.remove('is-hidden');
+}
+
+function closeItemDetail() {
+  document.getElementById('item-detail-backdrop').classList.add('is-hidden');
 }
 
 /* =====================================================
@@ -1265,7 +1336,7 @@ function closeCategoryDetail() {
 /* =====================================================
    パネル切替
 ===================================================== */
-var ALL_PANELS = ['calendar','today','search','guide','notice','faq','vendor','contact','language','affiliate'];
+var ALL_PANELS = ['calendar','today','search','guide','notice','faq','vendor','contact','language','affiliate','tokutoku'];
 
 function showPanel(p) {
   ALL_PANELS.forEach(function(id) {
