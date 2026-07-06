@@ -121,14 +121,14 @@
       theme: {
         extend: {
           colors: {
-            brand: { DEFAULT:'#32b76e', mid:'#267A4A', soft:'#F0F8F3', xsoft:'#E8F5EE' },
+            brand: { DEFAULT:'#00A86B', mid:'#007A4E', soft:'#E0FAF1', xsoft:'#C8F5E8' },
           },
           fontFamily: {
             sans: ['-apple-system','BlinkMacSystemFont','Hiragino Kaku Gothic ProN',
                    'Hiragino Sans','Yu Gothic UI','Meiryo','sans-serif'],
           },
           fontSize: { '2xs': ['10px', { lineHeight:'1.4' }] },
-          boxShadow: { top:'0 -2px 12px rgba(0,0,0,0.07)' },
+          boxShadow: { top:'0 -2px 12px rgba(0,0,0,0.07)', card:'0 2px 14px rgba(0,0,0,0.08)' },
           keyframes: {
             fadeUp: {
               from: { opacity:'0', transform:'translateY(8px)' },
@@ -150,46 +150,46 @@
   <style>
     /* ── CSS カスタムプロパティ（JS が var(--c-*) で参照） ── */
     :root {
-      --c-moeru:   #E8512A; --c-moeru-bg:   #FFF1EC;
-      --c-moenai:  #4B72D4; --c-moenai-bg:  #F0EFEC;
-      --c-recycle: #18A87A; --c-recycle-bg: #E4FAF2;
-      --c-pla:     #78BE00; --c-pla-bg:     #EDFADA;
-      --c-kiken:   #E07800; --c-kiken-bg:   #FFF6E8;
-      --c-yugai:   #9160CC; --c-yugai-bg:   #F3EEFF;
-      --c-sodai:   #6878A0; --c-sodai-bg:   #EEF0F8;
+      --c-moeru:   #E84A1F; --c-moeru-bg:   #FFF0EB;
+      --c-moenai:  #3B62CC; --c-moenai-bg:  #EEF2FF;
+      --c-recycle: #00A86B; --c-recycle-bg: #E0FAF1;
+      --c-pla:     #6AB000; --c-pla-bg:     #EDFADA;
+      --c-kiken:   #E06800; --c-kiken-bg:   #FFF5E6;
+      --c-yugai:   #8040CC; --c-yugai-bg:   #F2EEFF;
+      --c-sodai:   #5868A0; --c-sodai-bg:   #ECEEF8;
       --c-unknown: #8890A0; --c-unknown-bg: #F0F2F5;
       /* 拡張型キー */
-      --c-fuku:     #5B84C4; --c-fuku-bg:     #EDF2FC;
-      --c-kami:     #B47828; --c-kami-bg:     #FDF3E0;
-      --c-cardboard:#9C6C30; --c-cardboard-bg:#F7EFE2;
-      --c-kami_pack:#5A9AC0; --c-kami_pack-bg:#E8F4FB;
-      --c-tree:     #5A8800; --c-tree-bg:     #EEF7DA;
+      --c-fuku:     #4A74C4; --c-fuku-bg:     #EBF1FD;
+      --c-kami:     #A06820; --c-kami-bg:     #FDF2DE;
+      --c-cardboard:#8C5C20; --c-cardboard-bg:#F6EDD8;
+      --c-kami_pack:#4A8AB8; --c-kami_pack-bg:#E5F2FA;
+      --c-tree:     #4A7A00; --c-tree-bg:     #EAF6D0;
       --safe-b: env(safe-area-inset-bottom, 0px);
     }
     body {
-      padding-bottom: calc(64px + 56px + 24px + var(--safe-b));
-      background-color: #F7F6F3;
+      padding-bottom: calc(64px + 24px + var(--safe-b));
+      background-color: #FFFFFF;
     }
     .is-hidden { display:none !important; }
-    :focus-visible { outline:2.5px solid #32b76e; outline-offset:2px; border-radius:6px; }
+    :focus-visible { outline:2.5px solid #00A86B; outline-offset:2px; border-radius:6px; }
     @media (prefers-reduced-motion:reduce) {
       *,*::before,*::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; }
     }
 
     /* ── ナビ アクティブ（::after 疑似要素） ── */
     .nav-item        { color:#AEAEB2; transition:color 0.15s; }
-    .nav-item.active { color:#32b76e; }
+    .nav-item.active { color:#00A86B; }
     .nav-item.active::after {
       content:''; position:absolute; top:0; left:25%; right:25%;
-      height:2px; background:#32b76e; border-radius:0 0 2px 2px;
+      height:2px; background:#00A86B; border-radius:0 0 2px 2px;
     }
 
     /* ── 地区オプション（::after チェックマーク） ── */
     .area-option:hover    { background:rgba(50,183,110,0.06); }
     .area-option:active   { background:rgba(50,183,110,0.12); }
-    .area-option.selected { background:rgba(50,183,110,0.08); color:#32b76e; font-weight:700; }
+    .area-option.selected { background:rgba(50,183,110,0.08); color:#00A86B; font-weight:700; }
     .area-check-icon { display:inline; font-size:20px; color:rgba(0,0,0,0.15); }
-    .area-option.selected .area-check-icon { color:#32b76e; }
+    .area-option.selected .area-check-icon { color:#00A86B; }
 
     /* ── カレンダーセル（複合セレクタ必須） ── */
     .cal-cell {
@@ -207,13 +207,13 @@
     .cal-cell:hover    { background:rgba(0,0,0,0.05); }
     .cal-cell.has-col  { background:rgba(26,92,56,0.05); }
     .cal-cell.has-col:hover { background:rgba(26,92,56,0.09); }
-    .cal-cell.is-today { background:#E6F8F2; outline:2.5px solid #18A87A; outline-offset:-1px; }
+    .cal-cell.is-today { background:#E6F8F2; outline:2.5px solid #00A86B; outline-offset:-1px; }
     .cal-cell.is-today:hover { background:#D4F4EA; }
     .cal-cell.yearend  { opacity:0.18; pointer-events:none; }
     .cal-day           { font-size:14px; font-weight:800; color:#1C1C1E; line-height:1; }
     .cal-day-sun       { color:#C94B2A; }
     .cal-day-sat       { color:#3A5BB8; }
-    .cal-cell.is-today .cal-day { color:#18A87A; }
+    .cal-cell.is-today .cal-day { color:#00A86B; }
     /* アイコングリッド（2列で並べる） */
     .cal-icons {
       display:grid; grid-template-columns:repeat(2,1fr);
@@ -279,15 +279,15 @@
   </style>
 </head>
 
-<body class="text-[#1C1C1E] leading-normal min-h-dvh font-sans" style="background:#F7F6F3">
+<body class="text-[#1C1C1E] leading-normal min-h-dvh font-sans" style="background:#FFFFFF">
 
 <!-- ============================================================
      LOADING OVERLAY
 ============================================================ -->
 <div id="loading-overlay"
-     class="fixed inset-0 z-[500] bg-[#F7F6F3] flex items-center justify-center">
+     class="fixed inset-0 z-[500] bg-white flex items-center justify-center">
   <div class="text-center">
-    <span class="ms-cat animate-spin-slow block mb-4" style="font-size:40px;color:#32b76e" aria-hidden="true">recycling</span>
+    <span class="ms-cat animate-spin-slow block mb-4" style="font-size:40px;color:#00A86B" aria-hidden="true">recycling</span>
     <p class="text-sm text-[#AEAEB2]">データを読み込んでいます…</p>
   </div>
 </div>
@@ -317,9 +317,9 @@
                 class="is-hidden flex items-center gap-[3px] mt-[4px]
                        bg-transparent border-none p-0 cursor-pointer active:opacity-60
                        font-sans">
-          <span class="ms-cat" style="color:#32b76e;font-size:13px;line-height:1">location_on</span>
+          <span class="ms-cat" style="color:#00A86B;font-size:13px;line-height:1">location_on</span>
           <span id="header-area-name"
-                class="text-[11px] text-[#32b76e] font-bold truncate max-w-[130px]"
+                class="text-[11px] text-[#00A86B] font-bold truncate max-w-[130px]"
                 style="text-decoration:underline;text-underline-offset:2px"></span>
         </button>
       </div>
@@ -359,7 +359,7 @@
       <button onclick="openSheet()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
-                     font-sans cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3]">
+                     font-sans cursor-pointer hover:bg-white active:bg-white">
         <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">location_on</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">お住まいの地域設定</p>
@@ -371,7 +371,7 @@
       <button id="menu-faq" onclick="openFAQ()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
-                     font-sans cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3]">
+                     font-sans cursor-pointer hover:bg-white active:bg-white">
         <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">help</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">よくあるご質問</p>
@@ -383,7 +383,7 @@
       <button id="menu-vendor" onclick="openVendor()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
-                     font-sans cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3]">
+                     font-sans cursor-pointer hover:bg-white active:bg-white">
         <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">storefront</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">関連業者</p>
@@ -395,7 +395,7 @@
       <button id="menu-contact" onclick="openContact()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
-                     font-sans cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3]">
+                     font-sans cursor-pointer hover:bg-white active:bg-white">
         <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">call</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">問い合わせ先</p>
@@ -407,7 +407,7 @@
       <button id="menu-language" onclick="openLanguageSheet()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      bg-transparent border-none
-                     font-sans cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3]">
+                     font-sans cursor-pointer hover:bg-white active:bg-white">
         <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">translate</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">言語設定</p>
@@ -496,7 +496,7 @@
   <div class="bottom-sheet" onclick="event.stopPropagation()">
     <div class="sheet-handle"></div>
     <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
-      <h2 class="text-xl font-extrabold tracking-tight flex items-center gap-2"><span class="ms-nav" style="color:#32b76e">call</span> 問い合わせ先</h2>
+      <h2 class="text-xl font-extrabold tracking-tight flex items-center gap-2"><span class="ms-nav" style="color:#00A86B">call</span> 問い合わせ先</h2>
       <button onclick="closeContact()" aria-label="閉じる"
               class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
                      border-none text-[#636366] text-sm cursor-pointer font-sans">✕</button>
@@ -569,6 +569,7 @@
 <!-- ============================================================
      MAIN CONTENT
 ============================================================ -->
+<div id="content-wrap" style="background:#F2F2F7;min-height:100dvh">
 <main class="max-w-[430px] mx-auto px-4 pt-4 flex flex-col gap-4" role="main">
 
   <!-- 上部広告 -->
@@ -591,7 +592,7 @@
 
     <!-- ① 今日の収集バナー -->
     <div id="today-strip"
-         class="bg-white rounded-2xl border border-black/[0.07] shadow-sm px-4 py-3
+         class="bg-white rounded-2xl shadow-card px-4 py-3
                 flex items-center gap-3 animate-fade-up">
       <div class="flex-shrink-0">
         <p class="text-[11px] font-extrabold text-[#AEAEB2] tracking-wider uppercase">TODAY</p>
@@ -601,7 +602,7 @@
     </div>
 
     <!-- ② カレンダー -->
-    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm p-4 pb-5 animate-fade-up"
+    <div class="bg-white rounded-2xl shadow-card p-4 pb-5 animate-fade-up"
          role="region" aria-label="月間カレンダー">
 
       <!-- 月ナビ -->
@@ -609,14 +610,14 @@
         <button onclick="prevMonth()" aria-label="前の月"
                 class="w-10 h-10 rounded-lg border border-black/[0.07] bg-transparent
                        text-[#636366] flex items-center justify-center
-                       cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3] font-sans">
+                       cursor-pointer hover:bg-white active:bg-white font-sans">
           <span class="ms-nav" style="font-size:24px">chevron_left</span>
         </button>
         <h2 id="cal-month-label" class="text-xl font-extrabold tracking-tight" aria-live="polite"></h2>
         <button onclick="nextMonth()" aria-label="次の月"
                 class="w-10 h-10 rounded-lg border border-black/[0.07] bg-transparent
                        text-[#636366] flex items-center justify-center
-                       cursor-pointer hover:bg-[#F7F6F3] active:bg-[#F7F6F3] font-sans">
+                       cursor-pointer hover:bg-white active:bg-white font-sans">
           <span class="ms-nav" style="font-size:24px">chevron_right</span>
         </button>
       </div>
@@ -641,7 +642,7 @@
         <p class="text-base font-bold text-[#636366]">地区を選択してください</p>
         <p class="text-xs text-[#AEAEB2] mt-1">右上 ☰ メニューから設定できます</p>
         <button onclick="openSheet()"
-                class="mt-4 inline-flex items-center gap-1 bg-[#32b76e] text-white
+                class="mt-4 inline-flex items-center gap-1 bg-[#00A86B] text-white
                        border-none rounded-full px-5 h-11 font-sans text-sm font-bold
                        cursor-pointer active:opacity-80" type="button">
           地区を選択する
@@ -650,57 +651,39 @@
 
     </div>
 
-    <!-- ── カレンダー下 広告枠 ── -->
-    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm px-4 py-3">
-      <!-- Google AdSense（審査通過後にコメントを解除してください）
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-XXXXXXXXXX"
-           data-ad-slot="XXXXXXXXXX"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      -->
-      <div style="min-height:90px;background:#F0F2F5;border-radius:8px;
-                  display:flex;flex-direction:column;align-items:center;
-                  justify-content:center;gap:4px">
-        <span class="ms-nav" style="font-size:22px;color:#C8C8CC" aria-hidden="true">campaign</span>
-        <span style="font-size:11px;color:#C8C8CC">広告</span>
-      </div>
-    </div>
-
   </div>
 
   <!-- ==========================================================
        ゴミ検索 パネル
   ========================================================== -->
-  <div id="panel-search" class="is-hidden flex flex-col gap-4" aria-label="分別検索">
+  <div id="panel-search" class="is-hidden flex flex-col gap-3" aria-label="分別検索">
 
-    <!-- ① 検索ボックス + よく検索されるごみ（同一カード） -->
-    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden animate-fade-up flex-shrink-0"
+    <!-- ① 検索ボックス（独立・目立つ） -->
+    <div class="bg-white rounded-2xl shadow-md animate-fade-up flex-shrink-0"
+         style="box-shadow:0 4px 20px rgba(0,0,0,0.10)"
          role="search" aria-label="ごみ分別検索">
-      <!-- 検索入力行 -->
-      <div class="flex items-center gap-3 px-4 h-14 border-b border-black/[0.05]">
-        <span class="ms-nav flex-shrink-0 pointer-events-none" style="color:#AEAEB2;font-size:20px" aria-hidden="true">search</span>
+      <div class="flex items-center gap-3 px-4 h-16">
+        <span class="ms-nav flex-shrink-0 pointer-events-none" style="color:#00A86B;font-size:24px" aria-hidden="true">search</span>
         <label for="search-input" class="sr-only">ごみの名前で検索</label>
         <input type="search" id="search-input"
-               placeholder="例：ペットボトル、電池、布団…"
+               placeholder="ごみの名前で検索…"
                autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"
                oninput="onSearch(this.value)"
-               class="flex-1 border-none outline-none text-base text-[#1C1C1E]
-                      bg-transparent font-sans caret-brand placeholder:text-[#AEAEB2]">
+               class="flex-1 border-none outline-none text-[17px] font-bold text-[#1C1C1E]
+                      bg-transparent font-sans caret-brand placeholder:text-[#C7C7CC] placeholder:font-normal">
         <button onclick="clearSearch()" type="button" aria-label="検索をクリア"
-                class="w-8 h-8 rounded-full border-none bg-black/[0.05] text-[#AEAEB2]
+                class="w-9 h-9 rounded-full border-none bg-black/[0.05] text-[#AEAEB2]
                        text-sm flex items-center justify-center cursor-pointer flex-shrink-0 font-sans">✕</button>
       </div>
-      <!-- よく検索されるごみ（JS が生成） -->
-      <div id="search-quick" class="px-4 pt-3 pb-4"></div>
     </div>
 
-    <!-- ② 全ごみ項目 五十音順一覧（別カード） -->
+    <!-- ② よく検索されるタグ（枠なし・背景に直置き） -->
+    <div id="search-quick" class="px-1"></div>
+
+    <!-- ③ 全ごみ項目 五十音順一覧 -->
     <div id="search-body"
-         class="bg-white border border-black/[0.07] shadow-sm"
-         style="border-radius:1rem; overflow-x:hidden"></div>
+         class="bg-white mt-2"
+         style="border-radius:1rem; overflow-x:hidden; box-shadow:0 2px 14px rgba(0,0,0,0.08)"></div>
 
   </div>
 
@@ -708,7 +691,7 @@
        ガイド パネル
   ========================================================== -->
   <div id="panel-guide" class="is-hidden flex flex-col gap-4" aria-label="分別ガイド">
-    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden animate-fade-up">
+    <div class="bg-white rounded-2xl shadow-card overflow-hidden animate-fade-up">
       <h2 class="text-base font-extrabold px-6 py-5 pb-4 border-b border-black/[0.04] tracking-tight">
         ごみの分け方ガイド
       </h2>
@@ -716,12 +699,32 @@
     </div>
   </div>
 
+  <!-- ── インフィード広告枠（常時表示） ── -->
+  <div class="bg-white rounded-2xl shadow-card px-4 py-3" role="complementary" aria-label="広告">
+    <!-- Google AdSense（審査通過後にコメントを解除してください）
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXX"
+         data-ad-slot="XXXXXXXXXX"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <div style="min-height:90px;background:#F0F2F5;border-radius:8px;
+                display:flex;flex-direction:column;align-items:center;
+                justify-content:center;gap:4px">
+      <span class="ms-nav" style="font-size:22px;color:#C8C8CC" aria-hidden="true">campaign</span>
+      <span style="font-size:11px;color:#C8C8CC">広告</span>
+    </div>
+  </div>
+
 </main>
+</div>
 
 <!-- ============================================================
      BOTTOM NAVIGATION（4タブ）
 ============================================================ -->
-<nav class="fixed bottom-[56px] left-0 right-0 z-[90]
+<nav class="fixed bottom-0 left-0 right-0 z-[90]
             h-[64px] bg-white/95 backdrop-blur-xl
             border-t border-black/[0.07] shadow-top
             flex items-stretch justify-center"
@@ -770,8 +773,8 @@
 <!-- ============================================================
      出典フッター
 ============================================================ -->
-<footer class="text-center px-4 py-5 border-t border-black/[0.05]"
-        style="background:#F7F6F3">
+<footer class="text-center px-4 py-5"
+        style="background:#F2F2F7">
   <p class="text-[11px] text-[#AEAEB2] leading-relaxed">
     出典：
     <a id="citation-link" href="#"
@@ -786,18 +789,7 @@
 <!-- ============================================================
      ANCHOR AD（固定・最下部）
 ============================================================ -->
-<aside id="anchor-ad"
-       class="fixed bottom-0 left-0 right-0 z-[80] h-[56px]
-              bg-[rgba(247,246,243,0.96)] backdrop-blur-sm
-              border-t border-black/[0.07] flex items-center justify-center"
-       style="padding-bottom:var(--safe-b)"
-       role="complementary" aria-label="広告">
-  <div id="anchor-ad-inner"
-       class="w-[320px] h-[50px] bg-black/[0.04] rounded-md
-              flex items-center justify-center text-[10px] text-[#AEAEB2]">
-    広告（320×50 アンカー広告）
-  </div>
-</aside>
+<!-- アンカー広告削除済み（インフィード広告に変更） -->
 
 <script src="script.js"></script>
 

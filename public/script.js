@@ -550,11 +550,11 @@ function renderTodayStrip() {
       const diffLabel = diff === 1 ? '明日' : `${diff}日後`;
       typesEl.innerHTML = `
         <div style="display:flex;flex-direction:column;gap:2px">
-          <span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:#18A87A;vertical-align:-3px">check_circle</span>今日は収集なし</span>
+          <span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:#00A86B;vertical-align:-3px">check_circle</span>今日は収集なし</span>
           <span class="text-[12px] text-[#AEAEB2]">次の収集: ${diffLabel}（${nextTypes.map(t => t.label).join('・')}）</span>
         </div>`;
     } else {
-      typesEl.innerHTML = `<span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:#18A87A;vertical-align:-3px">check_circle</span>今日は収集なし</span>`;
+      typesEl.innerHTML = `<span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:#00A86B;vertical-align:-3px">check_circle</span>今日は収集なし</span>`;
     }
     return;
   }
@@ -591,7 +591,7 @@ function buildDayDetailHTML(areaKey, date) {
     return `<div class="text-center py-10 px-6">
       <p class="text-base font-bold text-[#636366]">地区を選択してください</p>
       <button onclick="closeDayDetail();openSheet();"
-              class="mt-4 inline-flex items-center gap-1 bg-[#32b76e] text-white
+              class="mt-4 inline-flex items-center gap-1 bg-[#00A86B] text-white
                      border-none rounded-full px-5 h-11 font-sans text-sm font-bold cursor-pointer"
               type="button">地区を選択する</button>
     </div>`;
@@ -635,7 +635,7 @@ function buildDayDetailHTML(areaKey, date) {
   const cutoff = DATA.collection_settings?.cutoff_note || '';
   return `
     <div class="flex flex-col gap-2">${items}</div>
-    ${cutoff ? `<p class="text-sm font-bold text-[#636366] flex items-center justify-center gap-[6px] mt-4 pt-4 border-t border-black/[0.04]"><span class="ms-nav" style="font-size:18px;color:#32b76e">alarm</span>${cutoff}</p>` : ''}`;
+    ${cutoff ? `<p class="text-sm font-bold text-[#636366] flex items-center justify-center gap-[6px] mt-4 pt-4 border-t border-black/[0.04]"><span class="ms-nav" style="font-size:18px;color:#00A86B">alarm</span>${cutoff}</p>` : ''}`;
 }
 
 /* =====================================================
@@ -742,10 +742,10 @@ function renderQuickTags() {
   var el = document.getElementById('search-quick');
   if (!el) return;
   el.innerHTML =
-    '<p style="font-size:11px;font-weight:800;color:#AEAEB2;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px">よく検索されるごみ</p>' +
-    '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+    '<p style="font-size:11px;font-weight:800;color:#8890A0;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;padding-left:4px">よく検索されるごみ</p>' +
+    '<div style="display:flex;flex-wrap:wrap;gap:8px;padding:0 2px">' +
     QUICK_TAGS.map(function(q) {
-      return '<button style="padding:7px 14px;background:#fff;border:1.5px solid rgba(0,0,0,0.1);border-radius:8px;font-size:13px;font-weight:500;color:#444;cursor:pointer;font-family:inherit;white-space:nowrap;min-height:40px;line-height:1.2" onclick="quickSearch(\'' + q + '\')">' + q + '</button>';
+      return '<button style="padding:8px 16px;background:#fff;border:none;border-radius:20px;font-size:14px;font-weight:700;color:#1C1C1E;cursor:pointer;font-family:inherit;white-space:nowrap;min-height:40px;line-height:1.2;box-shadow:0 2px 8px rgba(0,0,0,0.08)" onclick="quickSearch(\'' + q + '\')">' + q + '</button>';
     }).join('') +
     '</div>';
 }
@@ -891,7 +891,7 @@ function renderContact() {
       '<p style="font-size:12px;color:#636366"><span style="color:#8890A0">電話番号</span>　' + c.phone + (c.phone_note ? '（' + c.phone_note + '）' : '') + '</p>' +
       (c.hours ? '<p style="font-size:12px;color:#636366;margin-top:2px"><span style="color:#8890A0">受付時間</span>　' + c.hours + '</p>' : '') +
       '</div>' +
-      '<a href="tel:' + c.phone + '" style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:999px;background:#EBF7F2;color:#32b76e;font-size:13px;font-weight:700;text-decoration:none;border:1px solid rgba(26,92,56,0.15)">' +
+      '<a href="tel:' + c.phone + '" style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:999px;background:#EBF7F2;color:#00A86B;font-size:13px;font-weight:700;text-decoration:none;border:1px solid rgba(26,92,56,0.15)">' +
       '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">call</span>電話する</a>' +
       '</div></div>';
   }).join('');
@@ -915,14 +915,14 @@ function renderContact() {
     '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
     '<p style="font-size:11px;font-weight:700;color:#8890A0;margin-bottom:4px">情報について</p>' +
     '<p style="font-size:12px;color:#1C1C1E;line-height:1.7">志木市ホームページの公開情報を参考に作成されています。月1回程度で更新していますが、最新情報は公式サイトをご確認ください。</p>' +
-    '<p style="font-size:11px;margin-top:6px"><a href="https://www.city.shiki.lg.jp/life/1/12/" target="_blank" rel="noopener" style="color:#32b76e;text-decoration:underline">出典：志木市ホームページ（ごみ・リサイクル）</a></p>' +
+    '<p style="font-size:11px;margin-top:6px"><a href="https://www.city.shiki.lg.jp/life/1/12/" target="_blank" rel="noopener" style="color:#00A86B;text-decoration:underline">出典：志木市ホームページ（ごみ・リサイクル）</a></p>' +
     '</div>' +
 
     // 誤情報・不具合
     '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
     '<p style="font-size:11px;font-weight:700;color:#8890A0;margin-bottom:4px">サイトの誤情報・不具合のご報告</p>' +
     '<p style="font-size:12px;color:#1C1C1E;line-height:1.7;margin-bottom:4px">サイト運営者へお知らせください。</p>' +
-    '<a href="mailto:contact@gomi-nico.jp" style="font-size:13px;color:#32b76e;text-decoration:underline">contact@gomi-nico.jp</a>' +
+    '<a href="mailto:contact@gomi-nico.jp" style="font-size:13px;color:#00A86B;text-decoration:underline">contact@gomi-nico.jp</a>' +
     '<p style="font-size:11px;color:#AEAEB2;margin-top:4px">※返信にお時間をいただく場合があります</p>' +
     '</div>' +
 
@@ -934,7 +934,7 @@ function renderContact() {
 
     '</div>';
 
-  el.innerHTML = '<div style="background:#fff;border-radius:16px;margin:0 16px 8px;border:1px solid rgba(0,0,0,0.07);overflow:hidden">' + cardsHtml + '</div>' +
+  el.innerHTML = '<div style="background:#fff;border-radius:16px;margin:0 16px 8px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">' + cardsHtml + '</div>' +
     notice;
 }
 
@@ -956,7 +956,7 @@ function renderFAQ() {
   el.innerHTML = items.map(function(item, i) {
     var bc = i < items.length - 1 ? 'border-b border-black/[0.04]' : '';
     return '<div class="px-6 py-4 ' + bc + '">' +
-      '<p class="text-sm font-extrabold text-[#32b76e] mb-[6px]">Q. ' + item.q + '</p>' +
+      '<p class="text-sm font-extrabold text-[#00A86B] mb-[6px]">Q. ' + item.q + '</p>' +
       '<p class="text-sm text-[#636366] leading-relaxed">A. ' + item.a + '</p></div>';
   }).join('');
 }
@@ -997,8 +997,8 @@ function openLanguageSheet() {
         'background:' + (active ? '#F0F8F3' : 'transparent') + ';font-family:inherit;cursor:pointer">' +
         '<span style="font-size:24px">' + lang.flag + '</span>' +
         '<span style="flex:1;font-size:16px;font-weight:' + (active ? 800 : 500) + ';' +
-        'color:' + (active ? '#32b76e' : '#1C1C1E') + '">' + lang.label + '</span>' +
-        (active ? '<span style="font-size:18px;color:#32b76e;font-weight:800">✓</span>' : '<span class="ms-nav" style="font-size:20px;color:#C7C7CC">chevron_right</span>') +
+        'color:' + (active ? '#00A86B' : '#1C1C1E') + '">' + lang.label + '</span>' +
+        (active ? '<span style="font-size:18px;color:#00A86B;font-weight:800">✓</span>' : '<span class="ms-nav" style="font-size:20px;color:#C7C7CC">chevron_right</span>') +
         '</button>';
     }).join('');
     // イベント委任でクリックを処理
@@ -1091,7 +1091,7 @@ function renderRules() {
 
   // ── お知らせセクション（features.notice が true の場合のみ）
   if (features.notice !== false && notices.length > 0) {
-    html += '<div style="background:#fff;border-radius:16px;border:1px solid rgba(0,0,0,0.07);box-shadow:0 1px 4px rgba(0,0,0,0.06);overflow:hidden;margin-bottom:16px">' +
+    html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden;margin-bottom:16px">' +
       '<h2 style="font-size:16px;font-weight:800;color:#1C1C1E;padding:20px 24px 16px;border-bottom:1px solid rgba(0,0,0,0.04);margin:0">お知らせ</h2>';
     notices.forEach(function(n) {
       html += '<div style="padding:14px 24px;border-bottom:1px solid rgba(0,0,0,0.04)">' +
@@ -1105,12 +1105,12 @@ function renderRules() {
 
   // ── ゴミ出しルールセクション
   if (ruleItems.length > 0) {
-    html += '<div style="background:#fff;border-radius:16px;border:1px solid rgba(0,0,0,0.07);box-shadow:0 1px 4px rgba(0,0,0,0.06);overflow:hidden">' +
+    html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">' +
       '<h2 style="font-size:16px;font-weight:800;color:#1C1C1E;padding:20px 24px 16px;border-bottom:1px solid rgba(0,0,0,0.04);margin:0">ゴミ出しルール</h2>';
     ruleItems.forEach(function(item, i) {
       var last = i === ruleItems.length - 1;
       html += '<div style="display:flex;gap:14px;padding:14px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.04)') + '">' +
-        '<span class="ms-nav" style="font-size:22px;color:#18A87A;flex-shrink:0;margin-top:1px">' + item.icon + '</span>' +
+        '<span class="ms-nav" style="font-size:22px;color:#00A86B;flex-shrink:0;margin-top:1px">' + item.icon + '</span>' +
         '<div><p style="font-size:14px;font-weight:700;color:#1C1C1E;margin-bottom:4px">' + item.title + '</p>' +
         '<p style="font-size:13px;color:#636366;line-height:1.6">' + item.body + '</p></div>' +
         '</div>';
@@ -1175,7 +1175,7 @@ function renderProducts(typeKey, iconBg, fg) {
   var cards = products.map(function(p) {
     var url = 'https://search.rakuten.co.jp/search/mall/' + encodeURIComponent(p.kw) + '/';
     return '<a href="' + url + '" target="_blank" rel="noopener sponsored"' +
-      ' style="flex-shrink:0;width:114px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:10px;' +
+      ' style="flex-shrink:0;width:114px;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,0.08);border-radius:10px;' +
       'overflow:hidden;text-decoration:none;display:flex;flex-direction:column">' +
       '<div style="height:68px;background:' + iconBg + ';display:flex;align-items:center;justify-content:center">' +
       '<span class="ms-nav" style="font-size:30px;color:' + fg + '">shopping_bag</span></div>' +
@@ -1226,7 +1226,7 @@ function openCategoryDetail(typeKey) {
       '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">' +
       '<span class="ms-nav" style="font-size:18px;color:' + color + '">' + icon + '</span>' +
       '<p style="font-size:14px;font-weight:800;color:#1C1C1E">' + title + '</p></div>' +
-      '<div style="background:#F7F6F3;border-radius:12px;overflow:hidden">' +
+      '<div style="background:#FFFFFF;border-radius:12px;overflow:hidden">' +
       items.map(function(item, i) {
         var last = i === items.length - 1;
         return '<div style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;' +
@@ -1237,7 +1237,7 @@ function openCategoryDetail(typeKey) {
       '</div></div>';
   }
 
-  html += section('check_circle', '出せるもの',    cat.allowed,                               '#18A87A');
+  html += section('check_circle', '出せるもの',    cat.allowed,                               '#00A86B');
   html += section('close',        '出せないもの',   cat.not_allowed,                           '#E8512A');
   html += section('lightbulb',    '出し方・注意点', (cat.how_steps||[]).concat(cat.tips||[]), '#E07800');
 
