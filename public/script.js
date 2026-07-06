@@ -1265,7 +1265,7 @@ function closeCategoryDetail() {
 /* =====================================================
    パネル切替
 ===================================================== */
-var ALL_PANELS = ['calendar','today','search','guide','rules','faq','vendor','contact','language','affiliate'];
+var ALL_PANELS = ['calendar','today','search','guide','notice','faq','vendor','contact','language','affiliate'];
 
 function showPanel(p) {
   ALL_PANELS.forEach(function(id) {
