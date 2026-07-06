@@ -37,7 +37,7 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-  body { font-family: -apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; background:#F7F6F3; color:#1C1C1E; }
+  html, body { background:#fff; font-family: -apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; color:#1C1C1E; }
   a { text-decoration:none; }
   .city-card { transition: transform .15s, box-shadow .15s; }
   .city-card:active { transform: scale(.97); }
@@ -63,7 +63,7 @@
   </div>
 </header>
 
-<main class="max-w-2xl mx-auto px-4 pb-20">
+<main class="max-w-2xl mx-auto px-4 pb-20" style="background:#F7F6F3">
 
   <!-- ヒーロー -->
   <section class="py-10 text-center">
@@ -145,9 +145,10 @@
 
       <!-- 可燃ごみ -->
       <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
-        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3"
-             style="background:rgba(232,81,42,.04)">
-          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:24px;color:#E8512A">local_fire_department</span>
+        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3">
+          <div style="width:40px;height:40px;border-radius:8px;background:rgba(232,81,42,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:22px;color:#E8512A">local_fire_department</span>
+          </div>
           <div>
             <div class="text-[14px] font-extrabold" style="color:#E8512A">可燃ごみ（燃えるごみ）</div>
             <div class="text-[13px] text-[#AEAEB2]">生ごみ・紙くず・木くず・革製品など</div>
@@ -160,9 +161,10 @@
 
       <!-- 不燃ごみ -->
       <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
-        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3"
-             style="background:rgba(75,114,212,.04)">
-          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:24px;color:#4B72D4">delete_sweep</span>
+        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3">
+          <div style="width:40px;height:40px;border-radius:8px;background:rgba(75,114,212,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:22px;color:#4B72D4">delete_sweep</span>
+          </div>
           <div>
             <div class="text-[14px] font-extrabold" style="color:#4B72D4">不燃ごみ（燃えないごみ）</div>
             <div class="text-[13px] text-[#AEAEB2]">金属・ガラス・陶磁器・小型家電など</div>
@@ -175,9 +177,10 @@
 
       <!-- 資源ごみ -->
       <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
-        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3"
-             style="background:rgba(24,168,122,.04)">
-          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:24px;color:#00A86B">recycling</span>
+        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3">
+          <div style="width:40px;height:40px;border-radius:8px;background:rgba(24,168,122,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:22px;color:#00A86B">recycling</span>
+          </div>
           <div>
             <div class="text-[14px] font-extrabold" style="color:#00A86B">資源ごみ</div>
             <div class="text-[13px] text-[#AEAEB2]">缶・ビン・ペットボトル・古紙・プラスチックなど</div>
@@ -190,9 +193,10 @@
 
       <!-- 粗大ごみ -->
       <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
-        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3"
-             style="background:rgba(104,120,160,.04)">
-          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:24px;color:#6878A0">weekend</span>
+        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3">
+          <div style="width:40px;height:40px;border-radius:8px;background:rgba(104,120,160,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:22px;color:#6878A0">weekend</span>
+          </div>
           <div>
             <div class="text-[14px] font-extrabold" style="color:#6878A0">粗大ごみ</div>
             <div class="text-[13px] text-[#AEAEB2]">家具・家電・自転車など大型ごみ</div>
@@ -242,11 +246,11 @@
   <section class="mb-8">
     <p class="section-heading">リチウム電池・モバイルバッテリーの注意</p>
     <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
-      <div class="px-4 py-3 border-b border-black/[0.05]" style="background:rgba(224,120,0,.06)">
-        <div class="flex items-center gap-2">
+      <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3">
+        <div style="width:36px;height:36px;border-radius:8px;background:rgba(224,120,0,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0">
           <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:20px;color:#E07800">warning</span>
-          <span class="text-[13px] font-bold" style="color:#E07800">収集車・処理施設の火災原因になります</span>
         </div>
+        <span class="text-[13px] font-bold" style="color:#E07800">収集車・処理施設の火災原因になります</span>
       </div>
       <div class="px-4 py-3 text-[14px] text-[#636366] leading-relaxed">
         モバイルバッテリー・スマートフォン・電動歯ブラシ・加熱式タバコなどに内蔵されているリチウムイオン電池は、<strong>ほかのごみと絶対に混ぜないでください</strong>。自治体の指定方法（小型家電回収ボックスなど）で廃棄してください。
@@ -295,7 +299,7 @@
 
 </main>
 
-<footer class="text-center px-4 py-5 border-t border-black/[0.05]" style="background:#F7F6F3">
+<footer class="text-center px-4 py-5 border-t border-black/[0.05]">
   <p class="text-[13px] text-[#AEAEB2] leading-relaxed">
     本サイトは各自治体の非公式情報サービスです。情報の正確性は保証しかねます。<br>
     最新情報は各自治体の公式サイトでご確認ください。<br><br>

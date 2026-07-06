@@ -45,27 +45,27 @@ function isHoliday(date) {
 
 const TYPE_STYLE = {
   // ── 既存（志木市）
-  moeru:       { icon:'local_fire_department', bg:'var(--c-moeru-bg)',   iconBg:'rgba(232,81,42,0.14)',   fg:'var(--c-moeru)',   dotColor:'var(--c-moeru)'   },
-  moenai:      { icon:'delete_sweep',          bg:'var(--c-moenai-bg)',  iconBg:'rgba(75,114,212,0.14)',  fg:'var(--c-moenai)',  dotColor:'var(--c-moenai)'  },
-  recycle:     { icon:'recycling',             bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
-  'shigen-pla':{ icon:'water_bottle',          bg:'var(--c-pla-bg)',     iconBg:'rgba(120,190,0,0.14)',   fg:'var(--c-pla)',     dotColor:'var(--c-pla)'     },
-  kiken:       { icon:'warning',               bg:'var(--c-kiken-bg)',   iconBg:'rgba(224,120,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
-  yugai:       { icon:'science',               bg:'var(--c-yugai-bg)',   iconBg:'rgba(145,96,204,0.14)',  fg:'var(--c-yugai)',   dotColor:'var(--c-yugai)'   },
-  sodai:       { icon:'weekend',               bg:'var(--c-sodai-bg)',   iconBg:'rgba(104,120,160,0.14)', fg:'var(--c-sodai)',   dotColor:'var(--c-sodai)'   },
+  moeru:       { icon:'local_fire_department', img:'/icons/moeru.svg',   bg:'var(--c-moeru-bg)',   iconBg:'rgba(232,81,42,0.14)',   fg:'var(--c-moeru)',   dotColor:'var(--c-moeru)'   },
+  moenai:      { icon:'delete_sweep',          img:'/icons/moenai.svg',  bg:'var(--c-moenai-bg)',  iconBg:'rgba(75,114,212,0.14)',  fg:'var(--c-moenai)',  dotColor:'var(--c-moenai)'  },
+  recycle:     { icon:'recycling',             img:'/icons/recycle.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
+  'shigen-pla':{ icon:'water_bottle',          img:'/icons/plastic.svg', bg:'var(--c-pla-bg)',     iconBg:'rgba(120,190,0,0.14)',   fg:'var(--c-pla)',     dotColor:'var(--c-pla)'     },
+  kiken:       { icon:'warning',               img:'/icons/danger.svg',  selfBg:true, bg:'var(--c-kiken-bg)',   iconBg:'rgba(224,120,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
+  yugai:       { icon:'science',               img:'/icons/harmful.svg', selfBg:true, bg:'var(--c-yugai-bg)',   iconBg:'rgba(145,96,204,0.14)',  fg:'var(--c-yugai)',   dotColor:'var(--c-yugai)'   },
+  sodai:       { icon:'weekend',                                          bg:'var(--c-sodai-bg)',   iconBg:'rgba(104,120,160,0.14)', fg:'var(--c-sodai)',   dotColor:'var(--c-sodai)'   },
   // ── 拡張（マルチ自治体対応）
-  fuku:        { icon:'checkroom',             bg:'var(--c-fuku-bg)',    iconBg:'rgba(91,132,196,0.14)',  fg:'var(--c-fuku)',    dotColor:'var(--c-fuku)'    },
-  kami:        { icon:'newspaper',             bg:'var(--c-kami-bg)',    iconBg:'rgba(180,130,40,0.14)',  fg:'var(--c-kami)',    dotColor:'var(--c-kami)'    },
-  cardboard:   { icon:'inventory_2',           bg:'var(--c-cardboard-bg)',iconBg:'rgba(156,108,48,0.14)',fg:'var(--c-cardboard)',dotColor:'var(--c-cardboard)'},
-  kami_pack:   { icon:'coffee',                bg:'var(--c-kami_pack-bg)',iconBg:'rgba(100,160,200,0.14)',fg:'var(--c-kami_pack)',dotColor:'var(--c-kami_pack)'},
-  can:         { icon:'sports_bar',            bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
-  pet:         { icon:'water_bottle',          bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
-  bin:         { icon:'wine_bar',              bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
-  can_pet_bin: { icon:'recycling',             bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
-  can_pet:     { icon:'recycling',             bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
-  spraycan:    { icon:'propane',               bg:'var(--c-kiken-bg)',   iconBg:'rgba(224,120,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
-  kitchen:     { icon:'compost',               bg:'var(--c-moeru-bg)',   iconBg:'rgba(232,81,42,0.14)',   fg:'var(--c-moeru)',   dotColor:'var(--c-moeru)'   },
-  tree:        { icon:'forest',                bg:'var(--c-tree-bg)',    iconBg:'rgba(90,136,0,0.14)',    fg:'var(--c-tree)',    dotColor:'var(--c-tree)'    },
-  unknown:     { icon:'help',                  bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  },
+  fuku:        { icon:'checkroom',             img:'/icons/fuku.svg',    bg:'var(--c-fuku-bg)',    iconBg:'rgba(91,132,196,0.14)',  fg:'var(--c-fuku)',    dotColor:'var(--c-fuku)'    },
+  kami:        { icon:'newspaper',             img:'/icons/kami.svg',    bg:'var(--c-kami-bg)',    iconBg:'rgba(180,130,40,0.14)',  fg:'var(--c-kami)',    dotColor:'var(--c-kami)'    },
+  cardboard:   { icon:'inventory_2',                                      bg:'var(--c-cardboard-bg)',iconBg:'rgba(156,108,48,0.14)',fg:'var(--c-cardboard)',dotColor:'var(--c-cardboard)'},
+  kami_pack:   { icon:'coffee',                                           bg:'var(--c-kami_pack-bg)',iconBg:'rgba(100,160,200,0.14)',fg:'var(--c-kami_pack)',dotColor:'var(--c-kami_pack)'},
+  can:         { icon:'sports_bar',            img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
+  pet:         { icon:'water_bottle',          img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
+  bin:         { icon:'wine_bar',              img:'/icons/bin.svg',     bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
+  can_pet_bin: { icon:'recycling',             img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
+  can_pet:     { icon:'recycling',             img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
+  spraycan:    { icon:'propane',                                          bg:'var(--c-kiken-bg)',   iconBg:'rgba(224,120,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
+  kitchen:     { icon:'compost',                                          bg:'var(--c-moeru-bg)',   iconBg:'rgba(232,81,42,0.14)',   fg:'var(--c-moeru)',   dotColor:'var(--c-moeru)'   },
+  tree:        { icon:'forest',                                           bg:'var(--c-tree-bg)',    iconBg:'rgba(90,136,0,0.14)',    fg:'var(--c-tree)',    dotColor:'var(--c-tree)'    },
+  unknown:     { icon:'help',                                             bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  },
 };
 
 /**
@@ -77,6 +77,9 @@ const TYPE_STYLE = {
 function catIcon(typeKey, sizePx) {
   var st = TYPE_STYLE[typeKey] || TYPE_STYLE.unknown;
   var sz = sizePx || 20;
+  if (st.img && sz >= 20) {
+    return '<img src="' + st.img + '" width="' + sz + '" height="' + sz + '" alt="" aria-hidden="true" style="display:block;object-fit:cover;flex-shrink:0">';
+  }
   return '<span class="ms-cat" style="font-size:' + sz + 'px;color:' + st.fg + '" aria-hidden="true">' + st.icon + '</span>';
 }
 
@@ -619,11 +622,11 @@ function buildDayDetailHTML(areaKey, date) {
     const hasDetail = cat.allowed && cat.allowed.length > 0;
     const tag = hasDetail ? 'button' : 'div';
     const btnAttrs = hasDetail
-      ? ' onclick="closeDayDetail();openCategoryDetail(\'' + t.type + '\')" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:' + s.bg + ';width:100%;text-align:left;border:none;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent"'
-      : ' style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:' + s.bg + '"';
+      ? ' onclick="closeDayDetail();openCategoryDetail(\'' + t.type + '\')" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent"'
+      : ' style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07)"';
     return '<' + tag + btnAttrs + '>' +
-      '<div style="width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:' + s.iconBg + ';flex-shrink:0">' +
-      catIcon(t.type, 26) + '</div>' +
+      '<div style="width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (s.img ? (s.selfBg ? 'transparent' : '#fff') : s.iconBg) + ';flex-shrink:0">' +
+      catIcon(t.type, s.img ? (s.selfBg ? 48 : 40) : 26) + '</div>' +
       '<div style="flex:1">' +
       '<p style="font-size:18px;font-weight:800;color:' + s.fg + ';line-height:1.2">' + t.label + '</p>' +
       (t.how ? '<p style="font-size:12px;margin-top:4px;line-height:1.5;color:#636366">' + t.how + '</p>' : '') +
@@ -678,7 +681,7 @@ function renderCalendar() {
     let iconsHtml = '';
     if (types.length === 1) {
       iconsHtml = '<div style="display:flex;align-items:center;justify-content:center;width:100%;flex:1" aria-hidden="true">'
-        + catIcon(types[0].type, 26) + '</div>';
+        + catIcon(types[0].type, 32) + '</div>';
     } else if (types.length === 2) {
       iconsHtml = '<div style="display:flex;align-items:center;justify-content:center;gap:1px;width:100%;flex:1" aria-hidden="true">'
         + types.map(t => catIcon(t.type, 22)).join('') + '</div>';
@@ -792,7 +795,7 @@ function renderSearchIndex() {
         'background:#fff;font-family:inherit;cursor:pointer;min-height:54px;-webkit-tap-highlight-color:transparent" ' +
         'onclick="openItemDetail(\'' + safe + '\')">' +
         '<span style="flex:1;font-size:16px;font-weight:400;color:#1C1C1E">' + item.name + '</span>' +
-        '<span style="display:inline-flex;align-items:center;gap:3px;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;white-space:nowrap;background:' + st.bg + ';color:' + st.fg + '">' + catIcon(item.category, 14) + ' ' + cat + '</span>' +
+        '<span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:7px;flex-shrink:0;overflow:hidden;background:' + st.iconBg + '">' + catIcon(item.category, st.img ? 28 : 18) + '</span>' +
         '<span class="ms-nav" style="color:#C7C7CC;font-size:20px;margin-left:2px">chevron_right</span>' +
         '</button>';
     });
@@ -836,8 +839,8 @@ function onSearch(query) {
     var st      = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
     var cat     = DATA.categories[item.category] ? DATA.categories[item.category].label : item.category;
     var safeName = item.name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
-    return '<button onclick="openItemDetail(\'' + safeName + '\')" style="display:flex;align-items:flex-start;gap:12px;padding:16px;border-radius:16px;background:' + st.bg + ';width:100%;text-align:left;border:none;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">' +
-      '<span style="display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:999px;font-size:10px;font-weight:800;white-space:nowrap;flex-shrink:0;margin-top:2px;background:' + st.bg + ';color:' + st.fg + ';border:1.5px solid ' + st.fg + '33">' + catIcon(item.category, 13) + ' ' + cat + '</span>' +
+    return '<button onclick="openItemDetail(\'' + safeName + '\')" style="display:flex;align-items:flex-start;gap:12px;padding:16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">' +
+      '<span style="display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:999px;font-size:10px;font-weight:800;white-space:nowrap;flex-shrink:0;margin-top:2px;background:' + st.iconBg + ';color:' + st.fg + ';border:1.5px solid ' + st.fg + '33">' + catIcon(item.category, 13) + ' ' + cat + '</span>' +
       '<div style="flex:1;min-width:0"><p style="font-size:16px;font-weight:600;color:#1C1C1E">' + item.name + '</p>' +
       (item.note ? '<p style="font-size:12px;color:#636366;margin-top:3px;line-height:1.5"><span class="ms-nav" style="font-size:13px;color:#AEAEB2;vertical-align:-2px">lightbulb</span> ' + item.note + '</p>' : '') +
       '</div><span class="ms-nav" style="color:#C7C7CC;font-size:18px;flex-shrink:0;margin-top:2px">chevron_right</span></button>';
@@ -883,8 +886,8 @@ function openItemDetail(name) {
   // ── ヘッダー（アイコン＋名前＋種別バッジ）
   document.getElementById('item-detail-header').innerHTML =
     '<div style="display:flex;align-items:center;gap:14px">' +
-      '<div style="width:56px;height:56px;border-radius:14px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:' + st.iconBg + '">' +
-        catIcon(item.category, 30) +
+      '<div style="width:56px;height:56px;border-radius:14px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.img ? (st.selfBg ? 'transparent' : '#fff') : st.iconBg) + '">' +
+        catIcon(item.category, st.img ? (st.selfBg ? 56 : 48) : 30) +
       '</div>' +
       '<div style="flex:1;min-width:0">' +
         '<p style="font-size:18px;font-weight:800;color:#1C1C1E;margin:0 0 7px;line-height:1.2">' + item.name + '</p>' +
@@ -944,7 +947,7 @@ function renderGuide() {
     var last = i === CFG.length - 1;
     return '<button onclick="openCategoryDetail(\'' + cfg.key + '\')" style="display:block;width:100%;text-align:left;background:transparent;border:none;font-family:inherit;cursor:pointer" class="' + (last ? '' : 'border-b border-black/[0.04]') + ' px-5 py-4 hover:bg-black/[0.02] active:bg-black/[0.04]">' +
       '<div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">' +
-      '<div style="width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:' + st.iconBg + ';flex-shrink:0">' + catIcon(cfg.key, 24) + '</div>' +
+      '<div style="width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.img ? (st.selfBg ? 'transparent' : '#fff') : st.iconBg) + ';flex-shrink:0">' + catIcon(cfg.key, st.img ? (st.selfBg ? 44 : 36) : 24) + '</div>' +
       '<div style="flex:1"><p style="font-size:16px;font-weight:800;color:' + st.fg + '">' + (cat.label || cfg.title) + '</p></div>' +
       '<span class="ms-nav" style="color:#C7C7CC;font-size:20px">chevron_right</span></div>' +
       (cat.how  ? '<p style="font-size:13px;color:#1C1C1E;line-height:1.6;margin-bottom:4px"><span class="ms-nav" style="font-size:15px;vertical-align:-3px;color:#AEAEB2">brand_awareness</span> ' + cat.how  + '</p>' : '') +
@@ -1325,8 +1328,8 @@ function openCategoryDetail(typeKey) {
     headerEl.innerHTML =
       '<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;padding-bottom:4px">' +
         '<div style="display:flex;align-items:center;gap:14px;flex:1;min-width:0">' +
-          '<div style="width:52px;height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:' + st.iconBg + ';flex-shrink:0">' +
-          catIcon(typeKey, 28) + '</div>' +
+          '<div style="width:52px;height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.img ? (st.selfBg ? 'transparent' : '#fff') : st.iconBg) + ';flex-shrink:0">' +
+          catIcon(typeKey, st.img ? (st.selfBg ? 52 : 44) : 28) + '</div>' +
           '<div style="min-width:0"><h2 style="font-size:20px;font-weight:800;color:' + st.fg + '">' + (cat.label || typeKey) + '</h2>' +
           '</div>' +
         '</div>' +
@@ -1366,7 +1369,7 @@ function openCategoryDetail(typeKey) {
 
   // 関連する検索へのショートカット
   html += '<button onclick="closeCategoryDetail();showPanel(\'search\');quickSearch(this.getAttribute(\'data-q\'))" data-q="' + (cat.label || '') + '"' +
-    ' style="width:100%;padding:14px;background:' + st.bg + ';border:none;border-radius:12px;' +
+    ' style="width:100%;padding:14px;background:' + st.iconBg + ';border:none;border-radius:12px;' +
     'font-size:14px;font-weight:700;color:' + st.fg + ';cursor:pointer;font-family:inherit;margin-top:4px">' +
     catIcon(typeKey, 16) + ' 「' + (cat.label || typeKey) + '」でごみを検索</button>';
 

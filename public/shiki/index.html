@@ -168,8 +168,8 @@
       /* 自治体テーマ（JSON の theme.bgContent で上書き可能） */
       --bg-content: #fefefb;
     }
-    body {
-      background-color: #FFFFFF;
+    html, body {
+      background-color: #F7F6F3;
     }
     .is-hidden { display:none !important; }
     :focus-visible { outline:2.5px solid #00A86B; outline-offset:2px; border-radius:6px; }
@@ -197,7 +197,7 @@
       min-height:62px; border-radius:0;
       display:flex; flex-direction:column;
       align-items:center; justify-content:flex-start;
-      padding:6px 0px 2px; cursor:pointer;
+      padding:2px 0px 2px; cursor:pointer;
       background:transparent;
       border-right:1px solid rgba(0,0,0,0.08);
       border-bottom:1px solid rgba(0,0,0,0.08);
@@ -206,12 +206,11 @@
       gap:1px;
     }
     .cal-cell:hover    { background:rgba(0,0,0,0.05); }
-    .cal-cell.has-col  { background:rgba(26,92,56,0.05); }
-    .cal-cell.has-col:hover { background:rgba(26,92,56,0.09); }
+    .cal-cell.has-col:hover { background:rgba(0,0,0,0.04); }
     .cal-cell.is-today { background:#E6F8F2; outline:2px solid #00A86B; outline-offset:-1px; }
     .cal-cell.is-today:hover { background:#D4F4EA; }
     .cal-cell.yearend  { opacity:0.18; pointer-events:none; }
-    .cal-day           { font-size:14px; font-weight:800; color:#1C1C1E; line-height:1; }
+    .cal-day           { font-size:16px; font-weight:500; color:#1C1C1E; line-height:1; }
     .cal-day-sun       { color:#C94B2A; }
     .cal-day-sat       { color:#3A5BB8; }
     .cal-cell.is-today .cal-day { color:#00A86B; }
