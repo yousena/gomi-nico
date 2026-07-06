@@ -742,7 +742,7 @@ function renderQuickTags() {
   var el = document.getElementById('search-quick');
   if (!el) return;
   el.innerHTML =
-    '<p style="font-size:11px;font-weight:800;color:#8890A0;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;padding-left:4px">よく検索されるごみ</p>' +
+    '<p style="font-size:13px;font-weight:800;color:#8890A0;letter-spacing:.06em;margin-bottom:10px;padding-left:4px">よく検索されるごみ</p>' +
     '<div style="display:flex;flex-wrap:wrap;gap:8px;padding:0 2px">' +
     QUICK_TAGS.map(function(q) {
       return '<button style="padding:8px 16px;background:#fff;border:none;border-radius:20px;font-size:14px;font-weight:700;color:#1C1C1E;cursor:pointer;font-family:inherit;white-space:nowrap;min-height:40px;line-height:1.2;box-shadow:0 2px 8px rgba(0,0,0,0.08)" onclick="openItemDetail(\'' + q + '\')">' + q + '</button>';
@@ -759,27 +759,45 @@ function renderSearchIndex() {
   var groups = new Map(ROW_ORDER.map(function(r){ return [r, []]; }));
   sorted.forEach(function(item){ groups.get(getKanaRow(item.name)).push(item); });
 
-  // カード2ヘッダー
-  var html =
-    '<div style="padding:10px 16px 8px;background:#F4F5F7;border-bottom:1px solid rgba(0,0,0,0.06)">' +
-    '<p style="font-size:12px;font-weight:700;color:#8890A0;letter-spacing:.08em">全' + sorted.length + '件 — 五十音順</p>' +
-    '</div>';
+  // 枠外ラベルを更新
+  var labelEl = document.getElementById('search-index-label');
+  if (labelEl) {
+    labelEl.textContent = '全' + sorted.length + '件 — 五十音順';
+    labelEl.classList.remove('is-hidden');
+  }
+
+  var html = '';
 
   for (var _ref of groups) {
     var rowLabel = _ref[0], items = _ref[1];
     if (items.length === 0) continue;
-    html += '<div style="display:flex;align-items:center;gap:8px;padding:0 16px;height:44px;background:#F4F5F7;border-top:1px solid rgba(0,0,0,0.06);border-bottom:1px solid rgba(0,0,0,0.06)">' +
-      '<span style="font-size:13px;font-weight:800;color:#636366;min-width:2.8rem">' + rowLabel + '</span>' +
-      '<span style="font-size:11px;color:#AEAEB2">' + items.length + '件</span></div>';
-    items.forEach(function(item) {
-      var st  = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
-      var cat = DATA.categories[item.category] ? DATA.categories[item.category].label : item.category;
+
+    // グループごとに独立カード
+    html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">';
+
+    // 行見出し（白背景・ブランドカラーテキスト）
+    html += '<div style="padding:0 16px;height:54px;display:flex;align-items:center;gap:8px">' +
+      '<span style="font-size:16px;font-weight:800;color:#00A86B">' + rowLabel + '</span>' +
+      '<span style="font-size:12px;color:#AEAEB2">' + items.length + '件</span>' +
+      '</div>';
+
+    // アイテム一覧
+    items.forEach(function(item, idx) {
+      var st   = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
+      var cat  = DATA.categories[item.category] ? DATA.categories[item.category].label : item.category;
       var safe = item.name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
-      html += '<button style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:14px 16px;border:none;border-bottom:1px solid rgba(0,0,0,0.04);background:#fff;font-family:inherit;cursor:pointer;min-height:54px;-webkit-tap-highlight-color:transparent" onclick="openItemDetail(\'' + safe + '\')">' +
+      var isLast = idx === items.length - 1;
+      html += '<button style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;' +
+        'padding:14px 16px;border:none;border-top:1px solid rgba(0,0,0,0.04);' +
+        'background:#fff;font-family:inherit;cursor:pointer;min-height:54px;-webkit-tap-highlight-color:transparent" ' +
+        'onclick="openItemDetail(\'' + safe + '\')">' +
         '<span style="flex:1;font-size:16px;font-weight:400;color:#1C1C1E">' + item.name + '</span>' +
         '<span style="display:inline-flex;align-items:center;gap:3px;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;white-space:nowrap;background:' + st.bg + ';color:' + st.fg + '">' + catIcon(item.category, 14) + ' ' + cat + '</span>' +
-        '<span class="ms-nav" style="color:#C7C7CC;font-size:20px;margin-left:2px">chevron_right</span></button>';
+        '<span class="ms-nav" style="color:#C7C7CC;font-size:20px;margin-left:2px">chevron_right</span>' +
+        '</button>';
     });
+
+    html += '</div>';
   }
   return html;
 }
@@ -797,8 +815,10 @@ function onSearch(query) {
     return;
   }
 
-  // 入力中：クイックタグを折りたたんで結果を表示
+  // 入力中：クイックタグ・ラベルを折りたたんで結果を表示
   if (quickEl) quickEl.style.display = 'none';
+  var labelEl = document.getElementById('search-index-label');
+  if (labelEl) labelEl.classList.add('is-hidden');
 
   var lower = q.toLowerCase();
   var hits  = DATA.garbage_db.filter(function(item) {
@@ -867,7 +887,7 @@ function openItemDetail(name) {
         catIcon(item.category, 30) +
       '</div>' +
       '<div style="flex:1;min-width:0">' +
-        '<p style="font-size:22px;font-weight:800;color:#1C1C1E;margin:0 0 7px;line-height:1.2">' + item.name + '</p>' +
+        '<p style="font-size:18px;font-weight:800;color:#1C1C1E;margin:0 0 7px;line-height:1.2">' + item.name + '</p>' +
         '<span style="display:inline-flex;align-items:center;gap:4px;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:700;background:' + st.bg + ';color:' + st.fg + '">' +
           catIcon(item.category, 14) + ' ' + catLabel +
         '</span>' +
@@ -1043,7 +1063,7 @@ function renderNotice() {
     return '<div class="px-6 py-5 ' + bc + '">' +
       '<p class="text-[12px] text-[#AEAEB2] mb-2">' + (n.date || '') + '</p>' +
       '<p class="text-[16px] font-extrabold text-[#1C1C1E] mb-2 leading-snug">' + n.title + '</p>' +
-      '<p class="text-[16px] text-[#636366] leading-relaxed">' + n.body + '</p>' +
+      '<p class="text-[16px] text-[#636366] leading-[1.5]">' + n.body + '</p>' +
       link + '</div>';
   }).join('');
 }
@@ -1192,7 +1212,7 @@ function renderRules() {
       html += '<div style="padding:18px 24px;border-bottom:1px solid rgba(0,0,0,0.04)">' +
         '<p style="font-size:12px;color:#8890A0;margin-bottom:6px">' + n.date + '</p>' +
         '<p style="font-size:16px;font-weight:800;color:#1C1C1E;margin-bottom:8px;line-height:1.35">' + n.title + '</p>' +
-        '<p style="font-size:16px;color:#636366;line-height:1.75">' + n.body + '</p>' +
+        '<p style="font-size:16px;color:#636366;line-height:1.5">' + n.body + '</p>' +
         link +
         '</div>';
     });
@@ -1208,7 +1228,7 @@ function renderRules() {
       html += '<div style="display:flex;gap:14px;padding:14px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.04)') + '">' +
         '<span class="ms-nav" style="font-size:22px;color:#00A86B;flex-shrink:0;margin-top:1px">' + item.icon + '</span>' +
         '<div><p style="font-size:16px;font-weight:700;color:#1C1C1E;margin-bottom:6px">' + item.title + '</p>' +
-        '<p style="font-size:16px;color:#636366;line-height:1.7">' + item.body + '</p></div>' +
+        '<p style="font-size:16px;color:#636366;line-height:1.5">' + item.body + '</p></div>' +
         '</div>';
     });
     html += '</div>';
@@ -1303,12 +1323,19 @@ function openCategoryDetail(typeKey) {
   var headerEl = document.getElementById('category-detail-header');
   if (headerEl) {
     headerEl.innerHTML =
-      '<div style="display:flex;align-items:center;gap:14px;padding-bottom:4px">' +
-      '<div style="width:52px;height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:' + st.iconBg + ';flex-shrink:0">' +
-      catIcon(typeKey, 28) + '</div>' +
-      '<div><h2 style="font-size:20px;font-weight:800;color:' + st.fg + '">' + (cat.label || typeKey) + '</h2>' +
-      (cat.how ? '<p style="font-size:12px;color:#8890A0;margin-top:2px">' + cat.how + '</p>' : '') +
-      '</div></div>';
+      '<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;padding-bottom:4px">' +
+        '<div style="display:flex;align-items:center;gap:14px;flex:1;min-width:0">' +
+          '<div style="width:52px;height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:' + st.iconBg + ';flex-shrink:0">' +
+          catIcon(typeKey, 28) + '</div>' +
+          '<div style="min-width:0"><h2 style="font-size:20px;font-weight:800;color:' + st.fg + '">' + (cat.label || typeKey) + '</h2>' +
+          '</div>' +
+        '</div>' +
+        '<button onclick="closeCategoryDetail()" aria-label="閉じる" ' +
+          'style="width:40px;height:40px;border-radius:50%;border:none;background:rgba(0,0,0,0.07);' +
+          'display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;font-family:inherit">' +
+          '<span class="ms-nav" style="font-size:22px;color:#636366">close</span>' +
+        '</button>' +
+      '</div>';
   }
 
   // ボディ
@@ -1320,15 +1347,15 @@ function openCategoryDetail(typeKey) {
     if (!items || items.length === 0) return '';
     return '<div style="margin-bottom:20px">' +
       '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">' +
-      '<span class="ms-nav" style="font-size:18px;color:' + color + '">' + icon + '</span>' +
-      '<p style="font-size:14px;font-weight:800;color:#1C1C1E">' + title + '</p></div>' +
+      '<span class="ms-nav" style="font-size:20px;color:' + color + '">' + icon + '</span>' +
+      '<p style="font-size:18px;font-weight:800;color:#1C1C1E">' + title + '</p></div>' +
       '<div style="background:#FFFFFF;border-radius:12px;overflow:hidden">' +
       items.map(function(item, i) {
         var last = i === items.length - 1;
-        return '<div style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;' +
+        return '<div style="display:flex;align-items:flex-start;gap:10px;padding:12px 14px;' +
           (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.05)') + '">' +
-          '<span class="ms-nav" style="font-size:13px;color:' + color + ';flex-shrink:0;line-height:1.5">check</span>' +
-          '<p style="font-size:13px;color:#1C1C1E;line-height:1.5">' + item + '</p></div>';
+          '<span class="ms-nav" style="font-size:16px;color:' + color + ';flex-shrink:0;line-height:1.5">check</span>' +
+          '<p style="font-size:16px;color:#1C1C1E;line-height:1.5">' + item + '</p></div>';
       }).join('') +
       '</div></div>';
   }

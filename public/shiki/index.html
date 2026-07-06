@@ -208,7 +208,7 @@
     .cal-cell:hover    { background:rgba(0,0,0,0.05); }
     .cal-cell.has-col  { background:rgba(26,92,56,0.05); }
     .cal-cell.has-col:hover { background:rgba(26,92,56,0.09); }
-    .cal-cell.is-today { background:#E6F8F2; outline:2.5px solid #00A86B; outline-offset:-1px; }
+    .cal-cell.is-today { background:#E6F8F2; outline:2px solid #00A86B; outline-offset:-1px; }
     .cal-cell.is-today:hover { background:#D4F4EA; }
     .cal-cell.yearend  { opacity:0.18; pointer-events:none; }
     .cal-day           { font-size:14px; font-weight:800; color:#1C1C1E; line-height:1; }
@@ -247,6 +247,13 @@
       font-family: 'Material Symbols Outlined', sans-serif;
       font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
       font-size: 22px; line-height: 1; display: inline-block;
+      user-select: none; vertical-align: middle;
+    }
+    /* フッタータブ専用：塗りつぶし・Rounded */
+    .ms-nav-tab {
+      font-family: 'Material Symbols Rounded', sans-serif;
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+      font-size: 26px; line-height: 1; display: inline-block;
       user-select: none; vertical-align: middle;
     }
     .ms-nav-sm {
@@ -361,7 +368,7 @@
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">location_on</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">location_on</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">お住まいの地域設定</p>
           <p class="text-xs text-[#AEAEB2] mt-[2px]">ごみ収集日を地区ごとに確認できます</p>
@@ -373,7 +380,7 @@
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#E0FAF1] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#00A86B">menu_book</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#E0FAF1] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#00A86B">menu_book</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">分別ガイド</p>
           <p class="text-xs text-[#AEAEB2] mt-[2px]">ごみの分け方を種類別に確認</p>
@@ -385,7 +392,7 @@
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">help</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">help</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">よくあるご質問</p>
           <p class="text-xs text-[#AEAEB2] mt-[2px]">ゴミ出しのルールや疑問を解決</p>
@@ -397,7 +404,7 @@
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">storefront</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">storefront</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">関連業者</p>
           <p class="text-xs text-[#AEAEB2] mt-[2px]">不用品回収・引越しなど便利なサービス</p>
@@ -409,7 +416,7 @@
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">call</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">call</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">問い合わせ先</p>
           <p class="text-xs text-[#AEAEB2] mt-[2px]">市役所・環境推進課へのご連絡</p>
@@ -421,7 +428,7 @@
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      bg-transparent border-none
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav" style="color:#636366">translate</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">translate</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">言語設定</p>
           <p class="text-xs text-[#AEAEB2] mt-[2px]">Language / 语言 / 언어 / Ngôn ngữ</p>
@@ -470,8 +477,10 @@
     <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
       <h2 class="text-xl font-extrabold tracking-tight">よくあるご質問</h2>
       <button onclick="closeFAQ()" aria-label="閉じる"
-              class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
-                     border-none text-[#636366] text-sm cursor-pointer font-sans">✕</button>
+              class="w-10 h-10 rounded-full bg-black/[0.07] flex items-center justify-center
+                     border-none cursor-pointer font-sans flex-shrink-0">
+        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+      </button>
     </div>
     <div id="faq-content" class="overflow-y-auto flex-1"
          style="padding-bottom:calc(24px + var(--safe-b))">
@@ -490,8 +499,10 @@
     <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
       <h2 class="text-xl font-extrabold tracking-tight">関連業者</h2>
       <button onclick="closeVendor()" aria-label="閉じる"
-              class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
-                     border-none text-[#636366] text-sm cursor-pointer font-sans">✕</button>
+              class="w-10 h-10 rounded-full bg-black/[0.07] flex items-center justify-center
+                     border-none cursor-pointer font-sans flex-shrink-0">
+        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+      </button>
     </div>
     <p class="text-2xs text-[#AEAEB2] px-6 pb-3 flex-shrink-0">不用品回収・引越し・便利屋などのサービスです</p>
     <div class="overflow-y-auto flex-1 px-6" style="padding-bottom:calc(24px + var(--safe-b))">
@@ -511,8 +522,10 @@
     <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
       <h2 class="text-xl font-extrabold tracking-tight flex items-center gap-2"><span class="ms-nav" style="color:#00A86B">call</span> 問い合わせ先</h2>
       <button onclick="closeContact()" aria-label="閉じる"
-              class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
-                     border-none text-[#636366] text-sm cursor-pointer font-sans">✕</button>
+              class="w-10 h-10 rounded-full bg-black/[0.07] flex items-center justify-center
+                     border-none cursor-pointer font-sans flex-shrink-0">
+        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+      </button>
     </div>
     <div id="contact-sheet-rows" class="overflow-y-auto flex-1"
          style="padding-bottom:calc(24px + var(--safe-b))">
@@ -534,8 +547,10 @@
         <p class="text-2xs text-[#AEAEB2] mt-[3px]">Google 翻訳で自動翻訳します</p>
       </div>
       <button onclick="closeLanguageSheet()" aria-label="閉じる"
-              class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
-                     border-none text-[#636366] text-sm cursor-pointer font-sans">✕</button>
+              class="w-10 h-10 rounded-full bg-black/[0.07] flex items-center justify-center
+                     border-none cursor-pointer font-sans flex-shrink-0">
+        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+      </button>
     </div>
     <div id="language-list" class="overflow-y-auto flex-1"
          style="padding-bottom:calc(24px + var(--safe-b))">
@@ -570,8 +585,10 @@
     <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
       <h2 id="day-detail-date" class="text-xl font-extrabold tracking-tight"></h2>
       <button onclick="closeDayDetail()" aria-label="閉じる"
-              class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
-                     border-none text-[#636366] text-sm cursor-pointer font-sans">✕</button>
+              class="w-10 h-10 rounded-full bg-black/[0.07] flex items-center justify-center
+                     border-none cursor-pointer font-sans flex-shrink-0">
+        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+      </button>
     </div>
     <div id="day-detail-content" class="overflow-y-auto flex-1 px-4"
          style="padding-bottom:calc(24px + var(--safe-b))">
@@ -685,18 +702,24 @@
                class="flex-1 border-none outline-none text-[17px] font-bold text-[#1C1C1E]
                       bg-transparent font-sans caret-brand placeholder:text-[#C7C7CC] placeholder:font-normal">
         <button onclick="clearSearch()" type="button" aria-label="検索をクリア"
-                class="w-9 h-9 rounded-full border-none bg-black/[0.05] text-[#AEAEB2]
-                       text-sm flex items-center justify-center cursor-pointer flex-shrink-0 font-sans">✕</button>
+                class="w-10 h-10 rounded-full border-none bg-black/[0.07]
+                       flex items-center justify-center cursor-pointer flex-shrink-0 font-sans">
+          <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+        </button>
       </div>
     </div>
 
     <!-- ② よく検索されるタグ（枠なし・背景に直置き） -->
-    <div id="search-quick" class="px-1"></div>
+    <div id="search-quick" class="px-1 mt-2"></div>
 
-    <!-- ③ 全ごみ項目 五十音順一覧 -->
-    <div id="search-body"
-         class="bg-white mt-2"
-         style="border-radius:1rem; overflow-x:hidden; box-shadow:0 2px 14px rgba(0,0,0,0.08)"></div>
+    <!-- ③ 五十音一覧ラベル（枠の外） -->
+    <p id="search-index-label"
+       class="is-hidden"
+       style="font-size:13px;font-weight:800;color:#8890A0;letter-spacing:.06em;
+              padding-left:4px;margin-top:20px;margin-bottom:2px"></p>
+
+    <!-- ④ 全ごみ項目 五十音順一覧 -->
+    <div id="search-body" class="flex flex-col gap-2"></div>
 
   </div>
 
@@ -871,8 +894,10 @@
     <div class="flex items-start justify-between px-5 pb-4 flex-shrink-0">
       <div id="item-detail-header" class="flex-1 min-w-0 pr-3"></div>
       <button onclick="closeItemDetail()" aria-label="閉じる"
-              class="w-8 h-8 rounded-full bg-black/[0.05] flex items-center justify-center
-                     border-none text-[#636366] text-sm cursor-pointer font-sans flex-shrink-0 mt-1">✕</button>
+              class="w-10 h-10 rounded-full bg-black/[0.07] flex items-center justify-center
+                     border-none cursor-pointer font-sans flex-shrink-0">
+        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+      </button>
     </div>
     <div id="item-detail-body"
          class="overflow-y-auto flex-1 px-5"
@@ -893,37 +918,37 @@
     <button id="nav-notice" onclick="showPanel('notice')"
             aria-label="お知らせ"
             class="nav-item flex-1 flex flex-col items-center justify-center
-                   gap-[3px] border-none bg-transparent cursor-pointer
+                   gap-[1px] border-none bg-transparent cursor-pointer
                    font-sans p-0 relative min-h-[64px]">
-      <span class="ms-nav" aria-hidden="true">notifications</span>
+      <span class="ms-nav-tab" aria-hidden="true">notifications</span>
       <span class="text-[11px] font-bold tracking-[0.03em]">お知らせ</span>
     </button>
 
     <button id="nav-calendar" onclick="showPanel('calendar')"
             aria-label="カレンダー" aria-current="page"
             class="nav-item active flex-1 flex flex-col items-center justify-center
-                   gap-[3px] border-none bg-transparent cursor-pointer
+                   gap-[1px] border-none bg-transparent cursor-pointer
                    font-sans p-0 relative min-h-[64px]">
-      <span class="ms-nav" aria-hidden="true">calendar_month</span>
+      <span class="ms-nav-tab" aria-hidden="true">calendar_month</span>
       <span class="text-[11px] font-bold tracking-[0.03em]">カレンダー</span>
     </button>
 
     <button id="nav-search" onclick="showPanel('search')"
             aria-label="ゴミ検索"
             class="nav-item flex-1 flex flex-col items-center justify-center
-                   gap-[3px] border-none bg-transparent cursor-pointer
+                   gap-[1px] border-none bg-transparent cursor-pointer
                    font-sans p-0 relative min-h-[64px]">
-      <span class="ms-nav" aria-hidden="true">search</span>
+      <span class="ms-nav-tab" aria-hidden="true">search</span>
       <span class="text-[11px] font-bold tracking-[0.03em]">ゴミ検索</span>
     </button>
 
     <button id="nav-tokutoku" onclick="showPanel('tokutoku')"
             aria-label="お得情報"
             class="nav-item flex-1 flex flex-col items-center justify-center
-                   gap-[3px] border-none bg-transparent cursor-pointer
+                   gap-[1px] border-none bg-transparent cursor-pointer
                    font-sans p-0 relative min-h-[64px]">
       <span class="relative inline-flex items-center justify-center">
-        <span class="ms-nav" aria-hidden="true">local_offer</span>
+        <span class="ms-nav-tab" aria-hidden="true">local_offer</span>
         <span class="absolute -top-1 -right-1 w-[8px] h-[8px] bg-red-500 rounded-full"
               style="border:1.5px solid #fff"></span>
       </span>
