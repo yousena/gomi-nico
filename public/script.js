@@ -761,16 +761,16 @@ function renderSearchIndex() {
 
   // カード2ヘッダー
   var html =
-    '<div style="padding:10px 16px 8px;background:#F0EFEC;border-bottom:1px solid rgba(75,114,212,0.1)">' +
-    '<p style="font-size:12px;font-weight:800;color:#8890A0;letter-spacing:.08em">全' + sorted.length + '件 — 五十音順</p>' +
+    '<div style="padding:10px 16px 8px;background:#F4F5F7;border-bottom:1px solid rgba(0,0,0,0.06)">' +
+    '<p style="font-size:12px;font-weight:700;color:#8890A0;letter-spacing:.08em">全' + sorted.length + '件 — 五十音順</p>' +
     '</div>';
 
   for (var _ref of groups) {
     var rowLabel = _ref[0], items = _ref[1];
     if (items.length === 0) continue;
-    html += '<div style="display:flex;align-items:center;gap:8px;padding:0 16px;height:54px;background:#F0EFEC;border-top:1px solid rgba(75,114,212,0.1);border-bottom:1px solid rgba(75,114,212,0.1)">' +
-      '<span style="font-size:15px;font-weight:900;color:#1C1C1E;min-width:2.8rem">' + rowLabel + '</span>' +
-      '<span style="font-size:12px;color:#8890A0">' + items.length + '件</span></div>';
+    html += '<div style="display:flex;align-items:center;gap:8px;padding:0 16px;height:44px;background:#F4F5F7;border-top:1px solid rgba(0,0,0,0.06);border-bottom:1px solid rgba(0,0,0,0.06)">' +
+      '<span style="font-size:13px;font-weight:800;color:#636366;min-width:2.8rem">' + rowLabel + '</span>' +
+      '<span style="font-size:11px;color:#AEAEB2">' + items.length + '件</span></div>';
     items.forEach(function(item) {
       var st  = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
       var cat = DATA.categories[item.category] ? DATA.categories[item.category].label : item.category;
@@ -878,27 +878,18 @@ function openItemDetail(name) {
   var html = '';
 
   if (item.note) {
-    html += '<div style="background:' + st.bg + ';border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
-      '<p style="font-size:11px;font-weight:800;color:' + st.fg + ';margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
+    html += '<div style="background:#F4F5F7;border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
+      '<p style="font-size:11px;font-weight:800;color:#8890A0;margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
       '<p style="font-size:14px;color:#1C1C1E;line-height:1.7;margin:0">' + item.note + '</p>' +
     '</div>';
   }
 
-  var otherTags = (item.tags || []).filter(function(t){ return t !== item.name; });
-  if (otherTags.length > 0) {
-    html += '<p style="font-size:11px;font-weight:800;color:#8890A0;letter-spacing:.1em;margin:0 0 8px">別名・関連ワード</p>' +
-      '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px">';
-    otherTags.forEach(function(t){
-      html += '<span style="padding:5px 12px;background:#F0F2F5;border-radius:999px;font-size:12px;color:#636366;font-weight:600">' + t + '</span>';
-    });
-    html += '</div>';
-  }
-
   html +=
     '<button onclick="closeItemDetail();openCategoryDetail(\'' + item.category + '\')"' +
-    ' style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:48px;' +
-    'background:' + st.bg + ';color:' + st.fg + ';border:none;border-radius:12px;' +
-    'font-size:14px;font-weight:800;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">' +
+    ' style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:52px;' +
+    'background:' + st.fg + ';color:#fff;border:none;border-radius:14px;' +
+    'font-size:15px;font-weight:800;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;' +
+    'box-shadow:0 4px 14px ' + st.fg + '44">' +
       catIcon(item.category, 18) + '「' + catLabel + '」のごみ一覧を見る' +
     '</button>';
 
@@ -1042,10 +1033,18 @@ function renderNotice() {
   }
   el.innerHTML = notices.map(function(n, i) {
     var bc = i < notices.length - 1 ? 'border-b border-black/[0.04]' : '';
-    return '<div class="px-6 py-4 ' + bc + '">' +
-      '<p class="text-[10px] text-[#AEAEB2] mb-1">' + (n.date || '') + '</p>' +
-      '<p class="text-sm font-extrabold text-[#1C1C1E] mb-1">' + n.title + '</p>' +
-      '<p class="text-xs text-[#636366] leading-relaxed">' + n.body + '</p></div>';
+    var link = n.url
+      ? '<a href="' + n.url + '" target="_blank" rel="noopener" ' +
+        'style="display:inline-flex;align-items:center;gap:4px;margin-top:12px;' +
+        'font-size:13px;font-weight:700;color:#00A86B;text-decoration:none">' +
+        '公式サイトで詳細を確認' +
+        '<span class="ms-nav" style="font-size:15px">open_in_new</span></a>'
+      : '';
+    return '<div class="px-6 py-5 ' + bc + '">' +
+      '<p class="text-[12px] text-[#AEAEB2] mb-2">' + (n.date || '') + '</p>' +
+      '<p class="text-[16px] font-extrabold text-[#1C1C1E] mb-2 leading-snug">' + n.title + '</p>' +
+      '<p class="text-[16px] text-[#636366] leading-relaxed">' + n.body + '</p>' +
+      link + '</div>';
   }).join('');
 }
 
@@ -1146,6 +1145,24 @@ function applyFeatures() {
     var el = document.getElementById(id);
     if (el) el.classList.toggle('is-hidden', !items[id]);
   });
+
+  // ── 自治体テーマカラー（JSON の theme オブジェクトで指定）
+  // 例: "theme": { "bgContent": "#f7f7f1", "brand": "#38a546" }
+  var theme = (DATA && DATA.theme) || {};
+  if (theme.bgContent) {
+    document.documentElement.style.setProperty('--bg-content', theme.bgContent);
+  }
+  if (theme.brand) {
+    var b = theme.brand;
+    document.documentElement.style.setProperty('--c-recycle', b);
+    // ナビ・フォーカスリングにも反映
+    var style = document.createElement('style');
+    style.textContent =
+      '.nav-item.active{color:' + b + '}' +
+      '.nav-item.active::after{background:' + b + '}' +
+      ':focus-visible{outline-color:' + b + '}';
+    document.head.appendChild(style);
+  }
 }
 
 /* =====================================================
@@ -1163,12 +1180,20 @@ function renderRules() {
   // ── お知らせセクション（features.notice が true の場合のみ）
   if (features.notice !== false && notices.length > 0) {
     html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden;margin-bottom:16px">' +
-      '<h2 style="font-size:16px;font-weight:800;color:#1C1C1E;padding:20px 24px 16px;border-bottom:1px solid rgba(0,0,0,0.04);margin:0">お知らせ</h2>';
+      '<h2 style="font-size:18px;font-weight:800;color:#1C1C1E;padding:20px 24px 16px;border-bottom:1px solid rgba(0,0,0,0.04);margin:0">お知らせ</h2>';
     notices.forEach(function(n) {
-      html += '<div style="padding:14px 24px;border-bottom:1px solid rgba(0,0,0,0.04)">' +
-        '<p style="font-size:11px;color:#8890A0;margin-bottom:4px">' + n.date + '</p>' +
-        '<p style="font-size:14px;font-weight:700;color:#1C1C1E;margin-bottom:6px">' + n.title + '</p>' +
-        '<p style="font-size:13px;color:#636366;line-height:1.6">' + n.body + '</p>' +
+      var link = n.url
+        ? '<a href="' + n.url + '" target="_blank" rel="noopener" ' +
+          'style="display:inline-flex;align-items:center;gap:4px;margin-top:12px;' +
+          'font-size:13px;font-weight:700;color:#00A86B;text-decoration:none">' +
+          '公式サイトで詳細を確認' +
+          '<span class="ms-nav" style="font-size:15px">open_in_new</span></a>'
+        : '';
+      html += '<div style="padding:18px 24px;border-bottom:1px solid rgba(0,0,0,0.04)">' +
+        '<p style="font-size:12px;color:#8890A0;margin-bottom:6px">' + n.date + '</p>' +
+        '<p style="font-size:16px;font-weight:800;color:#1C1C1E;margin-bottom:8px;line-height:1.35">' + n.title + '</p>' +
+        '<p style="font-size:16px;color:#636366;line-height:1.75">' + n.body + '</p>' +
+        link +
         '</div>';
     });
     html += '</div>';
@@ -1177,13 +1202,13 @@ function renderRules() {
   // ── ゴミ出しルールセクション
   if (ruleItems.length > 0) {
     html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">' +
-      '<h2 style="font-size:16px;font-weight:800;color:#1C1C1E;padding:20px 24px 16px;border-bottom:1px solid rgba(0,0,0,0.04);margin:0">ゴミ出しルール</h2>';
+      '<h2 style="font-size:18px;font-weight:800;color:#1C1C1E;padding:20px 24px 16px;border-bottom:1px solid rgba(0,0,0,0.04);margin:0">ゴミ出しルール</h2>';
     ruleItems.forEach(function(item, i) {
       var last = i === ruleItems.length - 1;
       html += '<div style="display:flex;gap:14px;padding:14px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.04)') + '">' +
         '<span class="ms-nav" style="font-size:22px;color:#00A86B;flex-shrink:0;margin-top:1px">' + item.icon + '</span>' +
-        '<div><p style="font-size:14px;font-weight:700;color:#1C1C1E;margin-bottom:4px">' + item.title + '</p>' +
-        '<p style="font-size:13px;color:#636366;line-height:1.6">' + item.body + '</p></div>' +
+        '<div><p style="font-size:16px;font-weight:700;color:#1C1C1E;margin-bottom:6px">' + item.title + '</p>' +
+        '<p style="font-size:16px;color:#636366;line-height:1.7">' + item.body + '</p></div>' +
         '</div>';
     });
     html += '</div>';

@@ -165,6 +165,8 @@
       --c-kami_pack:#4A8AB8; --c-kami_pack-bg:#E5F2FA;
       --c-tree:     #4A7A00; --c-tree-bg:     #EAF6D0;
       --safe-b: env(safe-area-inset-bottom, 0px);
+      /* 自治体テーマ（JSON の theme.bgContent で上書き可能） */
+      --bg-content: #fefefb;
     }
     body {
       background-color: #FFFFFF;
@@ -580,7 +582,7 @@
 <!-- ============================================================
      MAIN CONTENT
 ============================================================ -->
-<div id="content-wrap" style="background:#F2F2F7;min-height:100dvh">
+<div id="content-wrap" style="background:var(--bg-content);min-height:100dvh">
 <main class="max-w-[430px] mx-auto px-4 pt-4 flex flex-col gap-4" role="main">
 
   <!-- 上部広告 -->
@@ -894,7 +896,7 @@
                    gap-[3px] border-none bg-transparent cursor-pointer
                    font-sans p-0 relative min-h-[64px]">
       <span class="ms-nav" aria-hidden="true">notifications</span>
-      <span class="text-2xs font-bold tracking-[0.03em]">お知らせ</span>
+      <span class="text-[11px] font-bold tracking-[0.03em]">お知らせ</span>
     </button>
 
     <button id="nav-calendar" onclick="showPanel('calendar')"
@@ -903,7 +905,7 @@
                    gap-[3px] border-none bg-transparent cursor-pointer
                    font-sans p-0 relative min-h-[64px]">
       <span class="ms-nav" aria-hidden="true">calendar_month</span>
-      <span class="text-2xs font-bold tracking-[0.03em]">カレンダー</span>
+      <span class="text-[11px] font-bold tracking-[0.03em]">カレンダー</span>
     </button>
 
     <button id="nav-search" onclick="showPanel('search')"
@@ -912,7 +914,7 @@
                    gap-[3px] border-none bg-transparent cursor-pointer
                    font-sans p-0 relative min-h-[64px]">
       <span class="ms-nav" aria-hidden="true">search</span>
-      <span class="text-2xs font-bold tracking-[0.03em]">ゴミ検索</span>
+      <span class="text-[11px] font-bold tracking-[0.03em]">ゴミ検索</span>
     </button>
 
     <button id="nav-tokutoku" onclick="showPanel('tokutoku')"
@@ -925,7 +927,7 @@
         <span class="absolute -top-1 -right-1 w-[8px] h-[8px] bg-red-500 rounded-full"
               style="border:1.5px solid #fff"></span>
       </span>
-      <span class="text-2xs font-bold tracking-[0.03em]">お得情報</span>
+      <span class="text-[11px] font-bold tracking-[0.03em]">お得情報</span>
     </button>
 
   </div>
@@ -935,7 +937,7 @@
      出典フッター
 ============================================================ -->
 <footer class="text-center px-4"
-        style="background:#F2F2F7;padding-top:20px;padding-bottom:calc(64px + 24px + var(--safe-b))">
+        style="background:var(--bg-content);padding-top:20px;padding-bottom:calc(64px + 24px + var(--safe-b))">
   <p class="text-[11px] text-[#AEAEB2] leading-relaxed">
     出典：
     <a id="citation-link" href="#"
