@@ -217,11 +217,14 @@
     /* アイコングリッド（2列で並べる） */
     .cal-icons {
       display:grid; grid-template-columns:repeat(2,1fr);
-      gap:0px; width:100%;
+      gap:2px; width:100%;
       align-items:center; justify-items:center;
       flex:1;
     }
-    .cal-icon-wrap { display:flex; align-items:center; justify-content:center; }
+    .cal-icon-wrap {
+      width:20px; height:20px; border-radius:4px; overflow:hidden;
+      display:flex; align-items:center; justify-content:center;
+    }
 
     /* ── Google 翻訳バー完全抑制 ── */
     /* iframe バナー本体 */

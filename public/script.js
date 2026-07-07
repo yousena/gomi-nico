@@ -65,7 +65,7 @@ const TYPE_STYLE = {
   spraycan:    { icon:'propane',                                          bg:'var(--c-kiken-bg)',   iconBg:'rgba(224,120,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
   kitchen:     { icon:'compost',                                          bg:'var(--c-moeru-bg)',   iconBg:'rgba(232,81,42,0.14)',   fg:'var(--c-moeru)',   dotColor:'var(--c-moeru)'   },
   tree:        { icon:'forest',                                           bg:'var(--c-tree-bg)',    iconBg:'rgba(90,136,0,0.14)',    fg:'var(--c-tree)',    dotColor:'var(--c-tree)'    },
-  unknown:     { icon:'help',                                             bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  },
+  unknown:     { icon:'help',               img:'/icons/none.svg',        bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  },
 };
 
 /**
@@ -681,13 +681,14 @@ function renderCalendar() {
     let iconsHtml = '';
     if (types.length === 1) {
       iconsHtml = '<div style="display:flex;align-items:center;justify-content:center;width:100%;flex:1" aria-hidden="true">'
-        + catIcon(types[0].type, 32) + '</div>';
+        + '<div style="width:30px;height:30px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center">'
+        + catIcon(types[0].type, 30) + '</div></div>';
     } else if (types.length === 2) {
-      iconsHtml = '<div style="display:flex;align-items:center;justify-content:center;gap:1px;width:100%;flex:1" aria-hidden="true">'
-        + types.map(t => catIcon(t.type, 22)).join('') + '</div>';
+      iconsHtml = '<div style="display:flex;align-items:center;justify-content:center;gap:2px;width:100%;flex:1" aria-hidden="true">'
+        + types.map(t => '<div style="width:20px;height:20px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center">' + catIcon(t.type, 20) + '</div>').join('') + '</div>';
     } else if (types.length >= 3) {
       iconsHtml = '<div class="cal-icons" aria-hidden="true">'
-        + types.slice(0,4).map(t => '<span class="cal-icon-wrap">' + catIcon(t.type, 22) + '</span>').join('')
+        + types.slice(0,4).map(t => '<span class="cal-icon-wrap">' + catIcon(t.type, 20) + '</span>').join('')
         + '</div>';
     }
 
@@ -795,7 +796,7 @@ function renderSearchIndex() {
         'background:#fff;font-family:inherit;cursor:pointer;min-height:54px;-webkit-tap-highlight-color:transparent" ' +
         'onclick="openItemDetail(\'' + safe + '\')">' +
         '<span style="flex:1;font-size:16px;font-weight:400;color:#1C1C1E">' + item.name + '</span>' +
-        '<span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:7px;flex-shrink:0;overflow:hidden;background:' + st.iconBg + '">' + catIcon(item.category, st.img ? 28 : 18) + '</span>' +
+        '<span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:4px;flex-shrink:0;overflow:hidden;background:' + st.iconBg + '">' + catIcon(item.category, st.img ? 28 : 18) + '</span>' +
         '<span class="ms-nav" style="color:#C7C7CC;font-size:20px;margin-left:2px">chevron_right</span>' +
         '</button>';
     });
