@@ -1421,28 +1421,4 @@ function closeCategoryDetail() {
   document.body.style.overflow = '';
 }
 
-/* =====================================================
-   パネル切替
-===================================================== */
-var ALL_PANELS = ['calendar','today','search','guide','notice','faq','vendor','contact','language','affiliate','tokutoku'];
-
-function showPanel(p) {
-  ALL_PANELS.forEach(function(id) {
-    var panel = document.getElementById('panel-' + id);
-    if (panel) panel.classList.toggle('is-hidden', id !== p);
-    var nav = document.getElementById('nav-' + id);
-    if (nav) {
-      nav.classList.toggle('active', id === p);
-      nav.setAttribute('aria-current', id === p ? 'page' : 'false');
-    }
-  });
-  if (p === 'search') {
-    var input = document.getElementById('search-input');
-    if (input && !input.value.trim()) {
-      var qEl = document.getElementById('search-quick');
-      if (qEl) qEl.style.display = '';
-      var bodyEl = document.getElementById('search-body');
-      if (bodyEl) bodyEl.innerHTML = renderSearchIndex();
-    }
-  }
-}
+/* ========================
