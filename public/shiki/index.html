@@ -151,12 +151,12 @@
     /* ── CSS カスタムプロパティ（JS が var(--c-*) で参照） ── */
     :root {
       --c-moeru:   #E84A1F; --c-moeru-bg:   #FFF0EB;
-      --c-moenai:  #3B62CC; --c-moenai-bg:  #EEF2FF;
+      --c-moenai:  #8040CC; --c-moenai-bg:  #F2EEFF;
       --c-recycle: #00A86B; --c-recycle-bg: #E0FAF1;
       --c-pla:     #6AB000; --c-pla-bg:     #EDFADA;
-      --c-kiken:   #E06800; --c-kiken-bg:   #FFF5E6;
+      --c-kiken:   #F07A00; --c-kiken-bg:   #FFF8EE;
       --c-yugai:   #8040CC; --c-yugai-bg:   #F2EEFF;
-      --c-sodai:   #5868A0; --c-sodai-bg:   #ECEEF8;
+      --c-sodai:   #7A5230; --c-sodai-bg:   #F5EDE0;
       --c-unknown: #8890A0; --c-unknown-bg: #F0F2F5;
       /* 拡張型キー */
       --c-fuku:     #4A74C4; --c-fuku-bg:     #EBF1FD;
@@ -307,7 +307,7 @@
 ============================================================ -->
 <header class="sticky top-0 z-[100] bg-white/90 backdrop-blur-xl border-b border-black/[0.07]"
         role="banner">
-  <div class="max-w-[430px] mx-auto h-[52px] flex items-center justify-between px-4">
+  <div class="max-w-[430px] mx-auto h-[60px] flex items-center justify-between px-4">
 
     <!-- ブランド＋選択中の地区 -->
     <div class="flex items-center gap-2 min-w-0">
@@ -318,7 +318,7 @@
       <div class="min-w-0 flex flex-col justify-center" style="padding-bottom:3px">
         <!-- タイトル（志木市ごみ分別・JS が更新） -->
         <div id="header-title"
-             class="text-base font-extrabold text-[#1C1C1E] tracking-tight leading-none truncate">
+             class="text-[18px] font-extrabold text-[#1C1C1E] tracking-tight leading-none truncate">
           ごみ分別
         </div>
         <!-- 選択地区（タップで地域選択シートを開く） -->
@@ -329,7 +329,7 @@
                        font-sans">
           <span class="ms-cat" style="color:#00A86B;font-size:13px;line-height:1">location_on</span>
           <span id="header-area-name"
-                class="text-[11px] text-[#00A86B] font-bold truncate max-w-[130px]"
+                class="text-[12px] text-[#00A86B] font-bold truncate max-w-[130px]"
                 style="text-decoration:underline;text-underline-offset:2px"></span>
         </button>
       </div>
@@ -397,7 +397,7 @@
         <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">help</span></span>
         <div class="flex-1">
           <p class="text-base font-bold text-[#1C1C1E]">よくあるご質問</p>
-          <p class="text-xs text-[#AEAEB2] mt-[2px]">ゴミ出しのルールや疑問を解決</p>
+          <p class="text-xs text-[#AEAEB2] mt-[2px]">ごみ出しのルールや疑問を解決</p>
         </div>
         <span class="ms-nav" style="font-size:20px;color:#C7C7CC">chevron_right</span>
       </button>
@@ -686,7 +686,7 @@
   </div>
 
   <!-- ==========================================================
-       ゴミ検索 パネル
+       ごみ検索 パネル
   ========================================================== -->
   <div id="panel-search" class="is-hidden flex flex-col gap-3" aria-label="分別検索">
 
@@ -697,7 +697,7 @@
       <div class="flex items-center gap-3 px-4 h-16">
         <span class="ms-nav flex-shrink-0 pointer-events-none" style="color:#00A86B;font-size:24px" aria-hidden="true">search</span>
         <label for="search-input" class="sr-only">ごみの名前で検索</label>
-        <input type="search" id="search-input"
+        <input type="text" id="search-input"
                placeholder="ごみの名前で検索…"
                autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"
                oninput="onSearch(this.value)"
@@ -797,7 +797,7 @@
           <div style="height:100px;background:#E0FAF1;border-radius:12px;display:flex;align-items:center;justify-content:center">
             <span class="ms-cat" style="font-size:42px;color:#00A86B">delete_sweep</span>
           </div>
-          <p style="font-size:12px;font-weight:700;color:#1C1C1E;line-height:1.4;margin:0">分別ゴミ箱</p>
+          <p style="font-size:12px;font-weight:700;color:#1C1C1E;line-height:1.4;margin:0">分別ごみ箱</p>
           <p style="font-size:11px;color:#BF0000;font-weight:700;margin:0">楽天で見る →</p>
         </a>
         <a href="https://search.rakuten.co.jp/search/mall/ゴミ袋+半透明+45L/" target="_blank" rel="noopener sponsored"
@@ -805,7 +805,7 @@
           <div style="height:100px;background:#EEF2FF;border-radius:12px;display:flex;align-items:center;justify-content:center">
             <span class="ms-cat" style="font-size:42px;color:#3B62CC">shopping_bag</span>
           </div>
-          <p style="font-size:12px;font-weight:700;color:#1C1C1E;line-height:1.4;margin:0">ゴミ袋（半透明）</p>
+          <p style="font-size:12px;font-weight:700;color:#1C1C1E;line-height:1.4;margin:0">ごみ袋（半透明）</p>
           <p style="font-size:11px;color:#BF0000;font-weight:700;margin:0">楽天で見る →</p>
         </a>
         <a href="https://search.rakuten.co.jp/search/mall/エコバッグ+折りたたみ/" target="_blank" rel="noopener sponsored"
@@ -886,7 +886,7 @@
 </div>
 
 <!-- ============================================================
-     アイテム詳細 ボトムシート（ゴミ検索）
+     アイテム詳細 ボトムシート（ごみ検索）
 ============================================================ -->
 <div id="item-detail-backdrop"
      class="is-hidden fixed inset-0 bg-black/50 z-[210]"
@@ -936,12 +936,12 @@
     </button>
 
     <button id="nav-search" onclick="showPanel('search')"
-            aria-label="ゴミ検索"
+            aria-label="ごみ検索"
             class="nav-item flex-1 flex flex-col items-center justify-center
                    gap-[1px] border-none bg-transparent cursor-pointer
                    font-sans p-0 relative min-h-[64px]">
       <span class="ms-nav-tab" aria-hidden="true">search</span>
-      <span class="text-[11px] font-bold tracking-[0.03em]">ゴミ検索</span>
+      <span class="text-[11px] font-bold tracking-[0.03em]">ごみ検索</span>
     </button>
 
     <button id="nav-tokutoku" onclick="showPanel('tokutoku')"
@@ -1001,4 +1001,4 @@ function googleTranslateElementInit() {
 
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                               

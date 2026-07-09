@@ -1,5 +1,5 @@
 /**
- * ゴミ分別プラットフォーム — script.js
+ * ごみ分別プラットフォーム — script.js
  * マルチテナントSaaS版 / さんあーるスタイル
  *
  * 使い方:
@@ -46,12 +46,12 @@ function isHoliday(date) {
 const TYPE_STYLE = {
   // ── 既存（志木市）
   moeru:       { icon:'local_fire_department', img:'/icons/moeru.svg',   bg:'var(--c-moeru-bg)',   iconBg:'rgba(232,81,42,0.14)',   fg:'var(--c-moeru)',   dotColor:'var(--c-moeru)'   },
-  moenai:      { icon:'delete_sweep',          img:'/icons/moenai.svg',  bg:'var(--c-moenai-bg)',  iconBg:'rgba(75,114,212,0.14)',  fg:'var(--c-moenai)',  dotColor:'var(--c-moenai)'  },
+  moenai:      { icon:'delete_sweep',          img:'/icons/moenai.svg',  bg:'var(--c-moenai-bg)',  iconBg:'rgba(128,64,204,0.14)', fg:'var(--c-moenai)',  dotColor:'var(--c-moenai)'  },
   recycle:     { icon:'recycling',             img:'/icons/recycle.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
   'shigen-pla':{ icon:'water_bottle',          img:'/icons/plastic.svg', bg:'var(--c-pla-bg)',     iconBg:'rgba(120,190,0,0.14)',   fg:'var(--c-pla)',     dotColor:'var(--c-pla)'     },
-  kiken:       { icon:'warning',               img:'/icons/danger.svg',  selfBg:true, bg:'var(--c-kiken-bg)',   iconBg:'rgba(224,120,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
+  kiken:       { icon:'warning',               img:'/icons/danger.svg',  selfBg:true, bg:'var(--c-kiken-bg)',   iconBg:'rgba(240,122,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
   yugai:       { icon:'science',               img:'/icons/harmful.svg', selfBg:true, bg:'var(--c-yugai-bg)',   iconBg:'rgba(145,96,204,0.14)',  fg:'var(--c-yugai)',   dotColor:'var(--c-yugai)'   },
-  sodai:       { icon:'weekend',                                          bg:'var(--c-sodai-bg)',   iconBg:'rgba(104,120,160,0.14)', fg:'var(--c-sodai)',   dotColor:'var(--c-sodai)'   },
+  sodai:       { icon:'weekend',               img:'/icons/sodai.svg',   selfBg:true, bg:'var(--c-sodai-bg)',   iconBg:'rgba(122,82,48,0.14)',   fg:'var(--c-sodai)',   dotColor:'var(--c-sodai)'   },
   // ── 拡張（マルチ自治体対応）
   fuku:        { icon:'checkroom',             img:'/icons/fuku.svg',    bg:'var(--c-fuku-bg)',    iconBg:'rgba(91,132,196,0.14)',  fg:'var(--c-fuku)',    dotColor:'var(--c-fuku)'    },
   kami:        { icon:'newspaper',             img:'/icons/kami.svg',    bg:'var(--c-kami-bg)',    iconBg:'rgba(180,130,40,0.14)',  fg:'var(--c-kami)',    dotColor:'var(--c-kami)'    },
@@ -65,7 +65,7 @@ const TYPE_STYLE = {
   spraycan:    { icon:'propane',                                          bg:'var(--c-kiken-bg)',   iconBg:'rgba(224,120,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
   kitchen:     { icon:'compost',                                          bg:'var(--c-moeru-bg)',   iconBg:'rgba(232,81,42,0.14)',   fg:'var(--c-moeru)',   dotColor:'var(--c-moeru)'   },
   tree:        { icon:'forest',                                           bg:'var(--c-tree-bg)',    iconBg:'rgba(90,136,0,0.14)',    fg:'var(--c-tree)',    dotColor:'var(--c-tree)'    },
-  unknown:     { icon:'help',               img:'/icons/none.svg',        bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  },
+  unknown:     { icon:'help',               img:'/icons/none.svg',        keepBg:true, bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  },
 };
 
 /**
@@ -101,7 +101,7 @@ const LANGUAGES = [
 ];
 
 const DEFAULT_FAQ = [
-  { q:'ゴミ出しの時間は？',        a:'朝8時までに指定の集積所へ出してください。前日夜の持ち出しは不可です。' },
+  { q:'ごみ出しの時間は？',        a:'朝8時までに指定の集積所へ出してください。前日夜の持ち出しは不可です。' },
   { q:'指定袋はありますか？',       a:'指定袋の指定はありません。透明または半透明の袋で出してください。' },
   { q:'収集日が祝日と重なったら？', a:'年末年始（12/31〜1/3）を除き、祝日でも通常通り収集します。' },
   { q:'粗大ごみの出し方は？',       a:'一斗缶（24×24×35cm）を超えるものは粗大ごみです。環境推進課へ事前申込が必要です。' },
@@ -625,8 +625,8 @@ function buildDayDetailHTML(areaKey, date) {
       ? ' onclick="closeDayDetail();openCategoryDetail(\'' + t.type + '\')" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent"'
       : ' style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07)"';
     return '<' + tag + btnAttrs + '>' +
-      '<div style="width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (s.img ? (s.selfBg ? 'transparent' : '#fff') : s.iconBg) + ';flex-shrink:0">' +
-      catIcon(t.type, s.img ? (s.selfBg ? 48 : 40) : 26) + '</div>' +
+      '<div style="width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (s.keepBg ? s.iconBg : 'transparent') + ';flex-shrink:0">' +
+      catIcon(t.type, s.img ? 56 : 30) + '</div>' +
       '<div style="flex:1">' +
       '<p style="font-size:18px;font-weight:800;color:' + s.fg + ';line-height:1.2">' + t.label + '</p>' +
       (t.how ? '<p style="font-size:12px;margin-top:4px;line-height:1.5;color:#636366">' + t.how + '</p>' : '') +
@@ -796,7 +796,7 @@ function renderSearchIndex() {
         'background:#fff;font-family:inherit;cursor:pointer;min-height:54px;-webkit-tap-highlight-color:transparent" ' +
         'onclick="openItemDetail(\'' + safe + '\')">' +
         '<span style="flex:1;font-size:16px;font-weight:400;color:#1C1C1E">' + item.name + '</span>' +
-        '<span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:4px;flex-shrink:0;overflow:hidden;background:' + st.iconBg + '">' + catIcon(item.category, st.img ? 28 : 18) + '</span>' +
+        '<span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:4px;flex-shrink:0;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + '">' + catIcon(item.category, st.img ? 28 : 18) + '</span>' +
         '<span class="ms-nav" style="color:#C7C7CC;font-size:20px;margin-left:2px">chevron_right</span>' +
         '</button>';
     });
@@ -836,19 +836,47 @@ function onSearch(query) {
     return;
   }
 
-  var itemsHtml = hits.slice(0,15).map(function(item) {
-    var st      = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
-    var cat     = DATA.categories[item.category] ? DATA.categories[item.category].label : item.category;
-    var safeName = item.name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
-    return '<button onclick="openItemDetail(\'' + safeName + '\')" style="display:flex;align-items:flex-start;gap:12px;padding:16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">' +
-      '<span style="display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:999px;font-size:10px;font-weight:800;white-space:nowrap;flex-shrink:0;margin-top:2px;background:' + st.iconBg + ';color:' + st.fg + ';border:1.5px solid ' + st.fg + '33">' + catIcon(item.category, 13) + ' ' + cat + '</span>' +
-      '<div style="flex:1;min-width:0"><p style="font-size:16px;font-weight:600;color:#1C1C1E">' + item.name + '</p>' +
-      (item.note ? '<p style="font-size:12px;color:#636366;margin-top:3px;line-height:1.5"><span class="ms-nav" style="font-size:13px;color:#AEAEB2;vertical-align:-2px">lightbulb</span> ' + item.note + '</p>' : '') +
-      '</div><span class="ms-nav" style="color:#C7C7CC;font-size:18px;flex-shrink:0;margin-top:2px">chevron_right</span></button>';
-  }).join('');
+  // 検索結果をグローバルに保持してページング
+  window._searchHits = hits;
+  window._searchPage = 0;
+  renderSearchPage(bodyEl);
+}
 
-  var more = hits.length > 15 ? '<p style="text-align:center;font-size:12px;color:#AEAEB2;padding:12px">他 ' + (hits.length-15) + ' 件</p>' : '';
-  bodyEl.innerHTML = '<div style="display:flex;flex-direction:column;gap:8px;padding:12px">' + itemsHtml + '</div>' + more;
+var SEARCH_PAGE_SIZE = 10;
+
+function renderSearchItemHtml(item) {
+  var st      = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
+  var cat     = DATA.categories[item.category] ? DATA.categories[item.category].label : item.category;
+  var safeName = item.name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+  return '<button onclick="openItemDetail(\'' + safeName + '\')" style="display:block;padding:14px 16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">' +
+    '<div style="display:flex;align-items:center;gap:8px">' +
+    '<p style="font-size:16px;font-weight:700;color:#1C1C1E;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + item.name + '</p>' +
+    '<span style="display:inline-flex;align-items:center;padding:3px 9px;border-radius:999px;font-size:10px;font-weight:800;white-space:nowrap;flex-shrink:0;background:' + st.iconBg + ';color:' + st.fg + ';border:1.5px solid ' + st.fg + '33">' + cat + '</span>' +
+    '<span class="ms-nav" style="color:#C7C7CC;font-size:18px;flex-shrink:0">chevron_right</span></div>' +
+    (item.note ? '<p style="font-size:12px;color:#636366;margin-top:5px;line-height:1.5">※ ' + item.note + '</p>' : '') +
+    '</button>';
+}
+
+function renderSearchPage(bodyEl) {
+  var hits  = window._searchHits || [];
+  var page  = window._searchPage || 0;
+  var shown = (page + 1) * SEARCH_PAGE_SIZE;
+  var slice = hits.slice(0, shown);
+  var rest  = hits.length - shown;
+
+  var itemsHtml = slice.map(renderSearchItemHtml).join('');
+  var moreBtn   = rest > 0
+    ? '<button onclick="loadMoreSearch()" style="display:block;width:100%;margin-top:4px;padding:14px;border-radius:16px;background:#fff;border:1.5px solid rgba(0,0,0,0.10);font-size:14px;font-weight:700;color:#636366;cursor:pointer;font-family:inherit">もっと' + Math.min(rest, SEARCH_PAGE_SIZE) + '件見る（残り' + rest + '件）</button>'
+    : '';
+
+  if (!bodyEl) bodyEl = document.getElementById('search-body');
+  bodyEl.innerHTML = '<div style="display:flex;flex-direction:column;gap:8px;padding:12px">' + itemsHtml + moreBtn + '</div>';
+}
+
+function loadMoreSearch() {
+  window._searchPage = (window._searchPage || 0) + 1;
+  var bodyEl = document.getElementById('search-body');
+  renderSearchPage(bodyEl);
 }
 
 function quickSearch(q) {
@@ -887,8 +915,8 @@ function openItemDetail(name) {
   // ── ヘッダー（アイコン＋名前＋種別バッジ）
   document.getElementById('item-detail-header').innerHTML =
     '<div style="display:flex;align-items:center;gap:14px">' +
-      '<div style="width:56px;height:56px;border-radius:14px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.img ? (st.selfBg ? 'transparent' : '#fff') : st.iconBg) + '">' +
-        catIcon(item.category, st.img ? (st.selfBg ? 56 : 48) : 30) +
+      '<div style="width:56px;height:56px;border-radius:14px;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + '">' +
+        catIcon(item.category, st.img ? 56 : 30) +
       '</div>' +
       '<div style="flex:1;min-width:0">' +
         '<p style="font-size:18px;font-weight:800;color:#1C1C1E;margin:0 0 7px;line-height:1.2">' + item.name + '</p>' +
@@ -919,6 +947,9 @@ function openItemDetail(name) {
 
   document.getElementById('item-detail-body').innerHTML = html;
   document.getElementById('item-detail-backdrop').classList.remove('is-hidden');
+  requestAnimationFrame(function() {
+    document.getElementById('item-detail-body').scrollTop = 0;
+  });
 }
 
 function closeItemDetail() {
@@ -948,11 +979,11 @@ function renderGuide() {
     var last = i === CFG.length - 1;
     return '<button onclick="openCategoryDetail(\'' + cfg.key + '\')" style="display:block;width:100%;text-align:left;background:transparent;border:none;font-family:inherit;cursor:pointer" class="' + (last ? '' : 'border-b border-black/[0.04]') + ' px-5 py-4 hover:bg-black/[0.02] active:bg-black/[0.04]">' +
       '<div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">' +
-      '<div style="width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.img ? (st.selfBg ? 'transparent' : '#fff') : st.iconBg) + ';flex-shrink:0">' + catIcon(cfg.key, st.img ? (st.selfBg ? 44 : 36) : 24) + '</div>' +
+      '<div style="width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + ';flex-shrink:0">' + catIcon(cfg.key, st.img ? 44 : 24) + '</div>' +
       '<div style="flex:1"><p style="font-size:16px;font-weight:800;color:' + st.fg + '">' + (cat.label || cfg.title) + '</p></div>' +
       '<span class="ms-nav" style="color:#C7C7CC;font-size:20px">chevron_right</span></div>' +
       (cat.how  ? '<p style="font-size:13px;color:#1C1C1E;line-height:1.6;margin-bottom:4px"><span class="ms-nav" style="font-size:15px;vertical-align:-3px;color:#AEAEB2">brand_awareness</span> ' + cat.how  + '</p>' : '') +
-      (cat.note ? '<p style="font-size:13px;color:#636366;line-height:1.6"><span class="ms-nav" style="font-size:16px;vertical-align:-3px;color:#AEAEB2">lightbulb</span> ' + cat.note + '</p>' : '') +
+      (cat.note ? '<p style="font-size:13px;color:#636366;line-height:1.6">※ ' + cat.note + '</p>' : '') +
       '</button>';
   }).join('');
 }
@@ -1223,10 +1254,10 @@ function renderRules() {
     html += '</div>';
   }
 
-  // ── ゴミ出しルールセクション
+  // ── ごみ出しルールセクション
   if (ruleItems.length > 0) {
     html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">' +
-      '<h2 style="font-size:18px;font-weight:800;color:#1C1C1E;padding:20px 24px 16px;border-bottom:1px solid rgba(0,0,0,0.04);margin:0">ゴミ出しルール</h2>';
+      '<h2 style="font-size:18px;font-weight:800;color:#1C1C1E;padding:20px 24px 16px;border-bottom:1px solid rgba(0,0,0,0.04);margin:0">ごみ出しルール</h2>';
     ruleItems.forEach(function(item, i) {
       var last = i === ruleItems.length - 1;
       html += '<div style="display:flex;gap:14px;padding:14px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.04)') + '">' +
@@ -1246,44 +1277,44 @@ function renderRules() {
    カテゴリ別おすすめグッズ（楽天アフィリエイト）
 ===================================================== */
 var CAT_PRODUCTS = {
-  moeru:       [{ name:'半透明ゴミ袋（45L）', kw:'ゴミ袋 半透明 45L' },
-                { name:'防臭ゴミ袋',          kw:'防臭袋 ゴミ 生ごみ' },
-                { name:'生ゴミポット',         kw:'生ゴミ ポット 蓋つき' }],
-  moenai:      [{ name:'不燃ゴミ袋',         kw:'不燃ゴミ袋 半透明' },
-                { name:'分別ゴミ箱',          kw:'分別 ゴミ箱 スリム' }],
-  recycle:     [{ name:'3分別ゴミ箱',        kw:'分別 ゴミ箱 3分別' },
+  moeru:       [{ name:'半透明ごみ袋（45L）', kw:'ごみ袋 半透明 45L' },
+                { name:'防臭ごみ袋',          kw:'防臭袋 ごみ 生ごみ' },
+                { name:'生ごみポット',         kw:'生ごみ ポット 蓋つき' }],
+  moenai:      [{ name:'不燃ごみ袋',         kw:'不燃ごみ袋 半透明' },
+                { name:'分別ごみ箱',          kw:'分別 ごみ箱 スリム' }],
+  recycle:     [{ name:'3分別ごみ箱',        kw:'分別 ごみ箱 3分別' },
                 { name:'缶クラッシャー',       kw:'缶クラッシャー 家庭用' },
                 { name:'ペットボトルつぶし',   kw:'ペットボトル クラッシャー' }],
-  'shigen-pla':[{ name:'プラ分別ボックス',   kw:'プラスチック ゴミ箱 分別' },
-                { name:'洗いやすいゴミ箱',    kw:'ゴミ箱 洗いやすい キッチン' }],
+  'shigen-pla':[{ name:'プラ分別ボックス',   kw:'プラスチック ごみ箱 分別' },
+                { name:'洗いやすいごみ箱',    kw:'ごみ箱 洗いやすい キッチン' }],
   can:         [{ name:'缶クラッシャー',       kw:'缶クラッシャー 家庭用' },
-                { name:'缶専用ゴミ箱',         kw:'缶 ゴミ箱 分別' }],
+                { name:'缶専用ごみ箱',         kw:'缶 ごみ箱 分別' }],
   pet:         [{ name:'ペットボトルつぶし',   kw:'ペットボトル クラッシャー' },
-                { name:'ペット専用ゴミ箱',     kw:'ペットボトル ゴミ箱 分別' }],
-  bin:         [{ name:'瓶専用ゴミ箱',        kw:'瓶 ゴミ箱 分別' },
-                { name:'分別ゴミ箱',           kw:'分別 ゴミ箱 スリム' }],
-  can_pet_bin: [{ name:'3分別ゴミ箱',         kw:'分別 ゴミ箱 3分別' },
+                { name:'ペット専用ごみ箱',     kw:'ペットボトル ごみ箱 分別' }],
+  bin:         [{ name:'瓶専用ごみ箱',        kw:'瓶 ごみ箱 分別' },
+                { name:'分別ごみ箱',           kw:'分別 ごみ箱 スリム' }],
+  can_pet_bin: [{ name:'3分別ごみ箱',         kw:'分別 ごみ箱 3分別' },
                 { name:'缶クラッシャー',        kw:'缶クラッシャー 家庭用' },
                 { name:'ペットボトルつぶし',    kw:'ペットボトル クラッシャー' }],
   can_pet:     [{ name:'缶クラッシャー',        kw:'缶クラッシャー 家庭用' },
                 { name:'ペットボトルつぶし',    kw:'ペットボトル クラッシャー' }],
-  sodai:       [{ name:'大型ゴミ袋',           kw:'粗大ごみ袋 大型 透明' },
+  sodai:       [{ name:'大型ごみ袋',           kw:'粗大ごみ袋 大型 透明' },
                 { name:'養生テープ',            kw:'養生テープ 梱包 搬出' }],
   kami:        [{ name:'古紙ストッカー',        kw:'古紙 ストッカー 縛らない' },
-                { name:'紙ひも',                kw:'紙ひも ゴミ 縛る' }],
+                { name:'紙ひも',                kw:'紙ひも ごみ 縛る' }],
   cardboard:   [{ name:'段ボールストッカー',   kw:'段ボール ストッカー 収納' },
                 { name:'段ボールカッター',       kw:'段ボール カッター 開梱' },
-                { name:'紙ひも',                 kw:'紙ひも ゴミ 縛る' }],
+                { name:'紙ひも',                 kw:'紙ひも ごみ 縛る' }],
   kami_pack:   [{ name:'古紙ストッカー',        kw:'古紙 ストッカー 縛らない' },
-                { name:'分別ゴミ箱',             kw:'分別 ゴミ箱 スリム' }],
+                { name:'分別ごみ箱',             kw:'分別 ごみ箱 スリム' }],
   kiken:       [{ name:'廃電池収納ボックス',   kw:'廃電池 収納 ボックス' },
                 { name:'絶縁テープ',             kw:'絶縁テープ 電気 安全' }],
   yugai:       [{ name:'蛍光灯収納ケース',     kw:'蛍光灯 収納 ケース 廃棄' }],
   fuku:        [{ name:'衣類圧縮袋',            kw:'衣類 圧縮袋 収納' },
                 { name:'古着まとめ袋',           kw:'古着 回収 袋 まとめ' }],
-  kitchen:     [{ name:'生ゴミ処理機',          kw:'生ゴミ処理機 家庭用' },
+  kitchen:     [{ name:'生ごみ処理機',          kw:'生ごみ処理機 家庭用' },
                 { name:'三角コーナー',           kw:'三角コーナー キッチン' },
-                { name:'防臭ゴミ袋',             kw:'防臭袋 ゴミ 生ごみ' }],
+                { name:'防臭ごみ袋',             kw:'防臭袋 ごみ 生ごみ' }],
   tree:        [{ name:'剪定バサミ',            kw:'剪定バサミ 庭 手入れ' },
                 { name:'落ち葉収集バッグ',       kw:'落ち葉 収集 バッグ 庭' }],
   spraycan:    [{ name:'スプレー缶穴あけ器',   kw:'スプレー缶 穴あけ 処理 安全' }],
@@ -1329,8 +1360,8 @@ function openCategoryDetail(typeKey) {
     headerEl.innerHTML =
       '<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;padding-bottom:4px">' +
         '<div style="display:flex;align-items:center;gap:14px;flex:1;min-width:0">' +
-          '<div style="width:52px;height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.img ? (st.selfBg ? 'transparent' : '#fff') : st.iconBg) + ';flex-shrink:0">' +
-          catIcon(typeKey, st.img ? (st.selfBg ? 52 : 44) : 28) + '</div>' +
+          '<div style="width:52px;height:52px;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + ';flex-shrink:0">' +
+          catIcon(typeKey, st.img ? 52 : 28) + '</div>' +
           '<div style="min-width:0"><h2 style="font-size:20px;font-weight:800;color:' + st.fg + '">' + (cat.label || typeKey) + '</h2>' +
           '</div>' +
         '</div>' +
@@ -1366,20 +1397,21 @@ function openCategoryDetail(typeKey) {
 
   html += section('check_circle', '出せるもの',    cat.allowed,                               '#00A86B');
   html += section('close',        '出せないもの',   cat.not_allowed,                           '#E8512A');
-  html += section('lightbulb',    '出し方・注意点', (cat.how_steps||[]).concat(cat.tips||[]), '#E07800');
+  html += section('info',         '出し方・注意点', (cat.how_steps||[]).concat(cat.tips||[]), '#E07800');
 
   // 関連する検索へのショートカット
   html += '<button onclick="closeCategoryDetail();showPanel(\'search\');quickSearch(this.getAttribute(\'data-q\'))" data-q="' + (cat.label || '') + '"' +
-    ' style="width:100%;padding:14px;background:' + st.iconBg + ';border:none;border-radius:12px;' +
-    'font-size:14px;font-weight:700;color:' + st.fg + ';cursor:pointer;font-family:inherit;margin-top:4px">' +
-    catIcon(typeKey, 16) + ' 「' + (cat.label || typeKey) + '」でごみを検索</button>';
+    ' style="width:100%;padding:14px;background:#fff;border:1.5px solid rgba(0,0,0,0.10);border-radius:12px;' +
+    'font-size:14px;font-weight:700;color:#1C1C1E;cursor:pointer;font-family:inherit;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:6px">' +
+    '<span class="ms-nav" style="font-size:18px;color:#636366">search</span>' +
+    '「' + (cat.label || typeKey) + '」でごみを検索</button>';
 
   // 関連グッズ（アフィリエイト）
   html += renderProducts(typeKey, st.iconBg, st.fg);
 
   bodyEl.innerHTML = html;
-
   document.getElementById('category-detail-backdrop').classList.remove('is-hidden');
+  requestAnimationFrame(function() { bodyEl.scrollTop = 0; });
   document.body.style.overflow = 'hidden';
 }
 
