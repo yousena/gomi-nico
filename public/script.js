@@ -1232,6 +1232,27 @@ function renderRules() {
   var features  = (DATA && DATA.features) || {};
   var html = '';
 
+  // ── ホーム画面追加カード（インストール済み・却下済みの場合は非表示）
+  var isStandalone = window.navigator.standalone === true ||
+    window.matchMedia('(display-mode: standalone)').matches;
+  if (!isStandalone && !localStorage.getItem('a2hs_dismissed')) {
+    var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+    var installBtnHtml = window._deferredPrompt
+      ? '<button onclick="installA2hs()" style="margin-top:12px;padding:9px 18px;background:#00A86B;color:#fff;border:none;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">ホーム画面に追加する</button>'
+      : isIOS
+        ? '<p style="font-size:12px;color:#636366;margin-top:10px;line-height:1.7">画面下の <strong>共有ボタン（↑）</strong> をタップし、「<strong>ホーム画面に追加</strong>」を選んでください</p>'
+        : '<p style="font-size:12px;color:#AEAEB2;margin-top:10px">お使いのブラウザで対応していません</p>';
+    html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);padding:18px 20px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start">' +
+      '<img src="/icons/icon-192.png" style="width:44px;height:44px;border-radius:10px;flex-shrink:0" alt="">' +
+      '<div style="flex:1;min-width:0">' +
+        '<p style="font-size:15px;font-weight:800;color:#1C1C1E;margin-bottom:4px">ホーム画面に追加</p>' +
+        '<p style="font-size:13px;color:#636366;line-height:1.5">アプリのようにすぐ起動できます</p>' +
+        installBtnHtml +
+      '</div>' +
+      '<button onclick="dismissA2hs();renderRules()" style="background:none;border:none;color:#AEAEB2;font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">×</button>' +
+    '</div>';
+  }
+
   // ── お知らせセクション（features.notice が true の場合のみ）
   if (features.notice !== false && notices.length > 0) {
     html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden;margin-bottom:16px">' +

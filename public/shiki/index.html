@@ -299,25 +299,6 @@
 
 <body class="text-[#1C1C1E] leading-normal min-h-dvh font-sans" style="background:#FFFFFF">
 
-<!-- ============================================================
-     A2HS バナー（ホーム画面追加を誘導）
-============================================================ -->
-<div id="a2hs-banner" style="display:none;position:fixed;bottom:64px;left:0;right:0;z-index:300;padding:0 12px 8px">
-  <div style="background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.13);padding:16px;display:flex;align-items:flex-start;gap:12px;max-width:430px;margin:0 auto">
-    <img src="/icons/icon-192.png" style="width:48px;height:48px;border-radius:10px;flex-shrink:0" alt="">
-    <div style="flex:1;min-width:0">
-      <p style="font-size:14px;font-weight:800;color:#1C1C1E;margin-bottom:2px">ホーム画面に追加</p>
-      <p id="a2hs-desc" style="font-size:12px;color:#636366;line-height:1.5">ごみ出し前日に素早く確認できます</p>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end;flex-shrink:0">
-      <button id="a2hs-install-btn" style="display:none;padding:7px 14px;background:#00A86B;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap">追加する</button>
-      <button onclick="dismissA2hs()" style="padding:4px 8px;background:transparent;color:#AEAEB2;border:none;font-size:12px;cursor:pointer;font-family:inherit">閉じる</button>
-    </div>
-  </div>
-  <div id="a2hs-ios-tip" style="display:none;background:#1C1C1E;color:#fff;border-radius:12px;padding:12px 16px;margin-top:8px;max-width:430px;margin-left:auto;margin-right:auto">
-    <p style="font-size:13px;line-height:1.7">画面下の <strong style="color:#00A86B">共有ボタン（↑）</strong> をタップし、<br>「<strong style="color:#fff">ホーム画面に追加</strong>」を選んでください</p>
-  </div>
-</div>
 
 <!-- ============================================================
      LOADING OVERLAY
@@ -1037,48 +1018,24 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-/* ── A2HS バナー制御 ── */
-(function() {
-  if (localStorage.getItem('a2hs_dismissed')) return;
+/* ── A2HS: インストールプロンプトを保持するだけ ── */
+window._deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', function(e) {
+  e.preventDefault();
+  window._deferredPrompt = e;
+});
 
-  var deferredPrompt = null;
-  var banner      = document.getElementById('a2hs-banner');
-  var installBtn  = document.getElementById('a2hs-install-btn');
-  var desc        = document.getElementById('a2hs-desc');
-  var iosTip      = document.getElementById('a2hs-ios-tip');
-  var isIOS       = /iphone|ipad|ipod/i.test(navigator.userAgent);
-  var isStandalone = window.navigator.standalone === true;
-
-  if (isStandalone) return;
-
-  window.addEventListener('beforeinstallprompt', function(e) {
-    e.preventDefault();
-    deferredPrompt = e;
-    installBtn.style.display = 'block';
-    setTimeout(function() { banner.style.display = 'block'; }, 3000);
+function installA2hs() {
+  if (!window._deferredPrompt) return;
+  window._deferredPrompt.prompt();
+  window._deferredPrompt.userChoice.then(function() {
+    window._deferredPrompt = null;
+    localStorage.setItem('a2hs_dismissed', '1');
+    renderRules();
   });
-
-  if (installBtn) {
-    installBtn.addEventListener('click', function() {
-      if (!deferredPrompt) return;
-      deferredPrompt.prompt();
-      deferredPrompt.userChoice.then(function() {
-        deferredPrompt = null;
-        banner.style.display = 'none';
-        localStorage.setItem('a2hs_dismissed', '1');
-      });
-    });
-  }
-
-  if (isIOS) {
-    desc.textContent = '「共有→ホーム画面に追加」でアプリとして使えます';
-    iosTip.style.display = 'block';
-    setTimeout(function() { banner.style.display = 'block'; }, 4000);
-  }
-})();
+}
 
 function dismissA2hs() {
-  document.getElementById('a2hs-banner').style.display = 'none';
   localStorage.setItem('a2hs_dismissed', '1');
 }
 </script>
