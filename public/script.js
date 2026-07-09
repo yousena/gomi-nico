@@ -920,8 +920,8 @@ function openItemDetail(name) {
       '</div>' +
       '<div style="flex:1;min-width:0">' +
         '<p style="font-size:18px;font-weight:800;color:#1C1C1E;margin:0 0 7px;line-height:1.2">' + item.name + '</p>' +
-        '<span style="display:inline-flex;align-items:center;gap:4px;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:700;background:' + st.bg + ';color:' + st.fg + '">' +
-          catIcon(item.category, 14) + ' ' + catLabel +
+        '<span style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:700;background:' + st.bg + ';color:' + st.fg + '">' +
+          catLabel +
         '</span>' +
       '</div>' +
     '</div>';
@@ -1421,4 +1421,28 @@ function closeCategoryDetail() {
   document.body.style.overflow = '';
 }
 
-/* ========================
+/* =====================================================
+   パネル切替
+===================================================== */
+var ALL_PANELS = ['calendar','today','search','guide','notice','faq','vendor','contact','language','affiliate','tokutoku'];
+
+function showPanel(p) {
+  ALL_PANELS.forEach(function(id) {
+    var panel = document.getElementById('panel-' + id);
+    if (panel) panel.classList.toggle('is-hidden', id !== p);
+    var nav = document.getElementById('nav-' + id);
+    if (nav) {
+      nav.classList.toggle('active', id === p);
+      nav.setAttribute('aria-current', id === p ? 'page' : 'false');
+    }
+  });
+  if (p === 'search') {
+    var input = document.getElementById('search-input');
+    if (input && !input.value.trim()) {
+      var qEl = document.getElementById('search-quick');
+      if (qEl) qEl.style.display = '';
+      var bodyEl = document.getElementById('search-body');
+      if (bodyEl) bodyEl.innerHTML = renderSearchIndex();
+    }
+  }
+}
