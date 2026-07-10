@@ -758,129 +758,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <!-- ==========================================================
-       お得情報 パネル
+       お得情報 パネル（近日公開）
+       ※本実装は楽天アフィリエイト等の審査通過後に行う。
+         旧コンテンツはgit履歴（コミット7d1b8df以前）を参照。
   ========================================================== -->
   <div id="panel-tokutoku" class="is-hidden flex flex-col gap-4" aria-label="お得情報">
-
-    <!-- ① 引越し一括見積もり -->
     <div class="bg-white rounded-2xl shadow-card overflow-hidden animate-fade-up">
-      <div style="background:linear-gradient(135deg,#FF7043 0%,#FFA000 100%);padding:20px 20px 16px">
-        <p style="font-size:10px;font-weight:800;color:rgba(255,255,255,0.75);letter-spacing:.12em;margin-bottom:4px">MOVING</p>
-        <h2 style="font-size:20px;font-weight:800;color:#fff;line-height:1.3;margin:0 0 6px">引越しを<br>お得に済ませよう</h2>
-        <p style="font-size:12px;color:rgba(255,255,255,0.88);margin:0;line-height:1.6">複数社に一括見積もりで比較。<br>平均50,000円以上の節約実績あり。</p>
-      </div>
-      <div style="padding:16px 20px 20px;display:flex;flex-direction:column;gap:10px">
-        <p style="font-size:12px;color:#636366;line-height:1.7;margin:0">志木市への引越し・志木市からの引越しを検討中の方に。一度の申し込みで最大10社に見積もり依頼できます。</p>
-        <!-- ↓ アフィリエイトリンクをここに挿入 -->
-        <a href="https://www.hikkoshi-samurai.jp/" target="_blank" rel="noopener sponsored"
-           style="display:flex;align-items:center;justify-content:center;gap:8px;
-                  background:#FF7043;color:#fff;border-radius:12px;height:48px;
-                  font-weight:800;font-size:14px;text-decoration:none;font-family:inherit">
-          <span class="ms-nav" style="font-size:20px;color:#fff">local_shipping</span>
-          無料で一括見積もりを依頼する
-        </a>
-      </div>
-    </div>
-
-    <!-- ② 不用品・粗大ごみ回収 -->
-    <div class="bg-white rounded-2xl shadow-card overflow-hidden animate-fade-up">
-      <div style="background:linear-gradient(135deg,#2E7D32 0%,#00A86B 100%);padding:20px 20px 16px">
-        <p style="font-size:10px;font-weight:800;color:rgba(255,255,255,0.75);letter-spacing:.12em;margin-bottom:4px">RECYCLE</p>
-        <h2 style="font-size:20px;font-weight:800;color:#fff;line-height:1.3;margin:0 0 6px">不用品・粗大ごみを<br>まとめて回収</h2>
-        <p style="font-size:12px;color:rgba(255,255,255,0.88);margin:0;line-height:1.6">市の粗大ごみ回収で対応しにくい品目も<br>民間業者なら柔軟に対応。</p>
-      </div>
-      <div style="padding:16px 20px 20px;display:flex;flex-direction:column;gap:10px">
-        <p style="font-size:12px;color:#636366;line-height:1.7;margin:0">家具・家電・大量の不用品など、粗大ごみで出せないものは不用品回収業者が便利です。複数社を比較してお得に処分しましょう。</p>
-        <!-- ↓ アフィリエイトリンクをここに挿入 -->
-        <a href="https://curama.jp/" target="_blank" rel="noopener sponsored"
-           style="display:flex;align-items:center;justify-content:center;gap:8px;
-                  background:#00A86B;color:#fff;border-radius:12px;height:48px;
-                  font-weight:800;font-size:14px;text-decoration:none;font-family:inherit">
-          <span class="ms-nav" style="font-size:20px;color:#fff">delete_sweep</span>
-          不用品回収業者を探す
-        </a>
-      </div>
-    </div>
-
-    <!-- ③ 分別グッズ おすすめ（楽天アフィリエイト） -->
-    <div class="bg-white rounded-2xl shadow-card overflow-hidden animate-fade-up">
-      <div style="padding:20px 20px 12px;display:flex;align-items:center;justify-content:space-between">
-        <div>
-          <h2 style="font-size:16px;font-weight:800;color:#1C1C1E;margin:0 0 2px">分別グッズ おすすめ</h2>
-          <p style="font-size:11px;color:#AEAEB2;margin:0">楽天市場の人気商品</p>
+      <div style="padding:40px 24px 36px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
+        <div style="width:64px;height:64px;background:#E0FAF1;border-radius:50%;display:flex;align-items:center;justify-content:center">
+          <span class="ms-cat" style="font-size:32px;color:#00A86B" aria-hidden="true">redeem</span>
         </div>
-        <span style="font-size:11px;font-weight:800;color:#BF0000;background:#FFF0F0;padding:4px 10px;border-radius:99px">楽天市場</span>
-      </div>
-      <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;padding:0 20px 20px;display:flex;gap:12px;scrollbar-width:none;-ms-overflow-style:none">
-        <a href="https://search.rakuten.co.jp/search/mall/分別ゴミ箱/" target="_blank" rel="noopener sponsored"
-           style="flex-shrink:0;width:120px;text-decoration:none;display:flex;flex-direction:column;gap:6px">
-          <div style="height:100px;background:#E0FAF1;border-radius:12px;display:flex;align-items:center;justify-content:center">
-            <span class="ms-cat" style="font-size:42px;color:#00A86B">delete_sweep</span>
-          </div>
-          <p style="font-size:12px;font-weight:700;color:#1C1C1E;line-height:1.4;margin:0">分別ごみ箱</p>
-          <p style="font-size:11px;color:#BF0000;font-weight:700;margin:0">楽天で見る →</p>
-        </a>
-        <a href="https://search.rakuten.co.jp/search/mall/ゴミ袋+半透明+45L/" target="_blank" rel="noopener sponsored"
-           style="flex-shrink:0;width:120px;text-decoration:none;display:flex;flex-direction:column;gap:6px">
-          <div style="height:100px;background:#EEF2FF;border-radius:12px;display:flex;align-items:center;justify-content:center">
-            <span class="ms-cat" style="font-size:42px;color:#3B62CC">shopping_bag</span>
-          </div>
-          <p style="font-size:12px;font-weight:700;color:#1C1C1E;line-height:1.4;margin:0">ごみ袋（半透明）</p>
-          <p style="font-size:11px;color:#BF0000;font-weight:700;margin:0">楽天で見る →</p>
-        </a>
-        <a href="https://search.rakuten.co.jp/search/mall/エコバッグ+折りたたみ/" target="_blank" rel="noopener sponsored"
-           style="flex-shrink:0;width:120px;text-decoration:none;display:flex;flex-direction:column;gap:6px">
-          <div style="height:100px;background:#EDFADA;border-radius:12px;display:flex;align-items:center;justify-content:center">
-            <span class="ms-cat" style="font-size:42px;color:#6AB000">eco</span>
-          </div>
-          <p style="font-size:12px;font-weight:700;color:#1C1C1E;line-height:1.4;margin:0">エコバッグ</p>
-          <p style="font-size:11px;color:#BF0000;font-weight:700;margin:0">楽天で見る →</p>
-        </a>
-        <a href="https://search.rakuten.co.jp/search/mall/段ボールストッカー/" target="_blank" rel="noopener sponsored"
-           style="flex-shrink:0;width:120px;text-decoration:none;display:flex;flex-direction:column;gap:6px">
-          <div style="height:100px;background:#F6EDD8;border-radius:12px;display:flex;align-items:center;justify-content:center">
-            <span class="ms-cat" style="font-size:42px;color:#8C5C20">inventory_2</span>
-          </div>
-          <p style="font-size:12px;font-weight:700;color:#1C1C1E;line-height:1.4;margin:0">段ボールストッカー</p>
-          <p style="font-size:11px;color:#BF0000;font-weight:700;margin:0">楽天で見る →</p>
-        </a>
+        <h2 style="font-size:18px;font-weight:800;color:#1C1C1E;margin:0">お得情報は準備中です</h2>
+        <p style="font-size:14px;color:#636366;line-height:1.8;margin:0">
+          引越しの一括見積もりや不用品回収、<br>
+          ごみ出しに役立つグッズの紹介など、<br>
+          くらしに役立つ情報を近日公開予定です。
+        </p>
+        <span style="display:inline-flex;align-items:center;gap:6px;background:#F0F2F5;color:#636366;font-size:12px;font-weight:700;padding:6px 14px;border-radius:99px;margin-top:4px">
+          <span class="ms-nav" style="font-size:15px;color:#8890A0" aria-hidden="true">schedule</span>
+          近日公開
+        </span>
       </div>
     </div>
-
-    <!-- ④ 楽天セール情報 -->
-    <div class="bg-white rounded-2xl shadow-card overflow-hidden animate-fade-up">
-      <div style="padding:20px 20px 16px">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
-          <span class="ms-cat" style="font-size:22px;color:#BF0000">local_offer</span>
-          <h2 style="font-size:16px;font-weight:800;color:#1C1C1E;margin:0">楽天セール情報</h2>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <a href="https://event.rakuten.co.jp/campaign/point-up/marathon/" target="_blank" rel="noopener sponsored"
-             style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:#FFF5F0;border-radius:12px;text-decoration:none">
-            <div style="width:44px;height:44px;background:#FF4F00;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-              <span class="ms-cat" style="font-size:22px;color:#fff">directions_run</span>
-            </div>
-            <div style="flex:1">
-              <p style="font-size:14px;font-weight:800;color:#1C1C1E;margin:0;line-height:1.3">お買い物マラソン</p>
-              <p style="font-size:11px;color:#FF4F00;font-weight:700;margin:3px 0 0">毎月開催 ・ 日程を確認する</p>
-            </div>
-            <span class="ms-nav" style="font-size:18px;color:#C7C7CC">chevron_right</span>
-          </a>
-          <a href="https://event.rakuten.co.jp/campaign/supersale/" target="_blank" rel="noopener sponsored"
-             style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:#FFF0F0;border-radius:12px;text-decoration:none">
-            <div style="width:44px;height:44px;background:#BF0000;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-              <span class="ms-cat" style="font-size:22px;color:#fff">star</span>
-            </div>
-            <div style="flex:1">
-              <p style="font-size:14px;font-weight:800;color:#1C1C1E;margin:0;line-height:1.3">楽天スーパーSALE</p>
-              <p style="font-size:11px;color:#BF0000;font-weight:700;margin:3px 0 0">年2回（6月・12月）開催</p>
-            </div>
-            <span class="ms-nav" style="font-size:18px;color:#C7C7CC">chevron_right</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
   </div>
 
   <!-- ── インフィード広告枠（常時表示） ── -->
@@ -1053,4 +952,3 @@ function dismissA2hs() {
 
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                               

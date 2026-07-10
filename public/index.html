@@ -48,8 +48,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   a { text-decoration:none; }
   .city-card { transition: transform .15s, box-shadow .15s; }
   .city-card:active { transform: scale(.97); }
-  .section-heading { font-size:11px; font-weight:800; color:#8890A0; letter-spacing:.12em; text-transform:uppercase; margin-bottom:12px; }
-  .type-badge { display:inline-flex; align-items:center; gap:5px; padding:5px 10px; border-radius:20px; font-size:12px; font-weight:700; }
+
+  /* ── LP セクション共通 ── */
+  .sec       { padding:64px 24px; }
+  .sec-tight { padding:56px 24px; }
+  .eyebrow   { font-size:13px; font-weight:800; color:#00A86B; letter-spacing:.16em; margin-bottom:10px; }
+  .sec-title { font-size:24px; font-weight:900; color:#1C1C1E; line-height:1.4; letter-spacing:-.01em; margin-bottom:12px; }
+  .sec-lead  { font-size:15px; color:#636366; line-height:1.9; }
+  .ms  { font-family:'Material Symbols Rounded'; font-variation-settings:'FILL' 1,'wght' 500; }
+  .ms-o{ font-family:'Material Symbols Rounded'; font-variation-settings:'FILL' 0,'wght' 400; }
+  .icon-tile { border-radius:14px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
 </style>
 <!-- Material Symbols -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0" media="print" onload="this.media='all'">
@@ -61,247 +69,570 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <!-- ヘッダー -->
-<header class="bg-white border-b border-black/[0.07] sticky top-0 z-10">
-  <div class="max-w-2xl mx-auto px-5 py-4 flex items-center justify-between">
-    <div>
-      <div class="text-base font-extrabold text-[#1C1C1E] leading-none">ごみ分別ガイド</div>
-      <div class="text-[13px] text-[#AEAEB2] mt-[2px]">市区町村別ごみ出し情報</div>
+<header class="sticky top-0 z-[100] bg-white/90 backdrop-blur-xl border-b border-black/[0.07]" role="banner">
+  <div class="max-w-2xl mx-auto h-[60px] flex items-center justify-between px-5">
+    <div class="flex flex-col justify-center" style="padding-bottom:3px">
+      <div class="text-[18px] font-extrabold text-[#1C1C1E] tracking-tight leading-none">ごみ分別ガイド</div>
+      <div class="text-[13px] text-[#AEAEB2] mt-[3px]">市区町村別ごみ出し情報</div>
     </div>
-    <nav class="flex gap-4 text-[12px] text-[#636366]">
-      <a href="/about.html" class="hover:text-[#00A86B]">運営者情報</a>
-      <a href="/privacy.html" class="hover:text-[#00A86B]">プライバシー</a>
-    </nav>
+    <a href="#cities" class="bg-[#00A86B] text-white text-[14px] font-bold px-4 rounded-xl whitespace-nowrap inline-flex items-center" style="height:44px">
+      使ってみる
+    </a>
   </div>
 </header>
 
-<main class="max-w-2xl mx-auto px-4 pb-20" style="background:#F7F6F3">
+<main class="max-w-2xl mx-auto">
 
-  <!-- ヒーロー -->
-  <section class="py-10 text-center">
-    <p class="text-[13px] font-bold text-[#00A86B] tracking-widest mb-3">無料 · 非公式情報サービス</p>
-    <h1 class="text-3xl font-extrabold text-[#1C1C1E] leading-tight mb-4">
-      お住まいの地域の<br>ごみ出し、すぐわかる
+  <!-- ══════════════ ヒーロー ══════════════ -->
+  <section style="background:linear-gradient(170deg,#fff 0%,#EAF7F0 90%);padding:56px 24px 48px;text-align:center">
+
+    <!-- 対応状況バッジ -->
+    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(0,168,107,0.1);border:1px solid rgba(0,168,107,0.25);border-radius:999px;padding:6px 14px;margin-bottom:24px">
+      <span style="width:7px;height:7px;border-radius:50%;background:#00A86B;display:inline-block;flex-shrink:0"></span>
+      <span style="font-size:13px;font-weight:700;color:#00885A">現在1自治体対応 ／ 順次追加予定</span>
+    </div>
+
+    <h1 style="font-size:30px;font-weight:900;color:#1C1C1E;line-height:1.4;margin-bottom:16px;letter-spacing:-.02em">
+      ごみ出し日も、分け方も、<br>すぐわかる。
     </h1>
-    <p class="text-base text-[#636366] leading-relaxed max-w-xs mx-auto">
-      収集日カレンダー・分別方法・出し方の注意点を<br>地区別に確認できます。
+    <p style="font-size:16px;color:#636366;line-height:1.8;margin-bottom:32px">
+      地区別の収集カレンダーと分別検索。<br>無料・登録不要で今すぐ使えます。
     </p>
+
+    <!-- ヒーローイラスト（自作フラットSVG） -->
+    <svg viewBox="0 0 360 210" role="img" aria-label="収集日カレンダーと分別されたごみ袋のイラスト" style="width:100%;max-width:400px;height:auto;margin:0 auto 32px;display:block">
+      <!-- 地面 -->
+      <ellipse cx="180" cy="192" rx="158" ry="14" fill="#D8EFE3"/>
+      <!-- 太陽 -->
+      <circle cx="322" cy="34" r="16" fill="#FFD666"/>
+      <circle cx="322" cy="34" r="9" fill="#FFE49A"/>
+      <!-- 葉っぱ -->
+      <g transform="translate(24,150)">
+        <path d="M0 40 Q2 8 22 0 Q22 26 6 40 Z" fill="#7BC896"/>
+        <path d="M14 42 Q24 20 40 18 Q34 40 18 44 Z" fill="#A5DBBA"/>
+      </g>
+      <!-- カレンダー -->
+      <g>
+        <rect x="46" y="44" width="128" height="122" rx="14" fill="#fff" stroke="#E1E7E3" stroke-width="2"/>
+        <path d="M46 58 q0 -14 14 -14 h100 q14 0 14 14 v18 h-128 Z" fill="#00A86B"/>
+        <rect x="72" y="34" width="8" height="18" rx="4" fill="#00885A"/>
+        <rect x="140" y="34" width="8" height="18" rx="4" fill="#00885A"/>
+        <!-- 日付ドット -->
+        <g fill="#D9DEDB">
+          <circle cx="70" cy="94" r="5"/><circle cx="96" cy="94" r="5"/><circle cx="122" cy="94" r="5"/><circle cx="148" cy="94" r="5"/>
+          <circle cx="70" cy="118" r="5"/><circle cx="122" cy="118" r="5"/><circle cx="148" cy="118" r="5"/>
+          <circle cx="70" cy="142" r="5"/><circle cx="96" cy="142" r="5"/><circle cx="148" cy="142" r="5"/>
+        </g>
+        <!-- 今日（ハイライト） -->
+        <circle cx="96" cy="118" r="11" fill="#FF8A5C"/>
+        <path d="M91 118 l4 4 l7 -8" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="122" cy="142" r="8" fill="#EAF7F0" stroke="#00A86B" stroke-width="2"/>
+      </g>
+      <!-- ごみ袋（可燃・オレンジ） -->
+      <g transform="translate(196,96)">
+        <path d="M14 18 Q-6 38 -6 62 Q-6 88 26 88 Q58 88 58 62 Q58 38 38 18 Z" fill="#FF8A5C"/>
+        <path d="M14 18 Q10 6 2 2 Q16 4 20 12 Q24 2 36 0 Q30 8 32 16 Z" fill="#E86A3C"/>
+        <circle cx="17" cy="52" r="3.5" fill="#7A3418"/>
+        <circle cx="37" cy="52" r="3.5" fill="#7A3418"/>
+        <path d="M21 63 q6 5 12 0" stroke="#7A3418" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- ごみ袋（不燃・ブルー 小） -->
+      <g transform="translate(258,116)">
+        <path d="M11 14 Q-5 30 -5 49 Q-5 70 21 70 Q47 70 47 49 Q47 30 31 14 Z" fill="#7CA1E8"/>
+        <path d="M11 14 Q8 5 2 2 Q13 3 16 9 Q19 2 29 0 Q24 6 26 12 Z" fill="#5C81C8"/>
+        <circle cx="14" cy="41" r="3" fill="#28406E"/>
+        <circle cx="30" cy="41" r="3" fill="#28406E"/>
+        <path d="M17 50 q5 4 10 0" stroke="#28406E" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- 資源（緑バケツ＋リサイクルマーク） -->
+      <g transform="translate(306,138)">
+        <path d="M0 8 h44 l-5 44 q-1 6 -7 6 h-20 q-6 0 -7 -6 Z" fill="#38B57E"/>
+        <rect x="-3" y="0" width="50" height="10" rx="5" fill="#2A9367"/>
+        <g transform="translate(22,32)" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round">
+          <path d="M-7 5 a9 9 0 0 1 3 -10"/>
+          <path d="M6 -6 a9 9 0 0 1 4 9"/>
+          <path d="M3 11 a9 9 0 0 1 -10 -1"/>
+          <path d="M-4 -5 l0 -4 l-4 1" stroke-width="2"/>
+          <path d="M10 3 l3 3 l1 -4" stroke-width="2"/>
+          <path d="M-1 11 l-3 3 l4 1" stroke-width="2"/>
+        </g>
+      </g>
+      <!-- キラキラ -->
+      <g fill="#8FD9B6">
+        <path d="M186 40 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z"/>
+        <path d="M282 84 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 Z"/>
+      </g>
+    </svg>
+
+    <!-- CTA -->
+    <a href="#cities"
+       style="display:flex;align-items:center;justify-content:center;gap:8px;background:#00A86B;color:#fff;border-radius:14px;height:52px;max-width:320px;margin:0 auto 14px;font-size:16px;font-weight:800;box-shadow:0 4px 14px rgba(0,168,107,0.3)">
+      対応自治体をみる
+      <span class="ms" style="font-size:18px">arrow_downward</span>
+    </a>
+    <a href="mailto:contact@gomi-nico.jp?subject=自治体追加リクエスト"
+       style="display:inline-flex;align-items:center;justify-content:center;gap:6px;color:#00885A;font-size:14px;font-weight:700;padding:12px 16px;min-height:44px">
+      <span class="ms" style="font-size:16px">add_location_alt</span>
+      お住まいの市区町村をリクエスト
+    </a>
+
+    <div style="display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:20px">
+      <span style="font-size:14px;color:#636366;display:flex;align-items:center;gap:4px">
+        <span class="ms" style="font-size:16px;color:#00A86B">check_circle</span>無料
+      </span>
+      <span style="font-size:14px;color:#636366;display:flex;align-items:center;gap:4px">
+        <span class="ms" style="font-size:16px;color:#00A86B">check_circle</span>登録不要
+      </span>
+      <span style="font-size:14px;color:#636366;display:flex;align-items:center;gap:4px">
+        <span class="ms" style="font-size:16px;color:#00A86B">check_circle</span>アプリ不要
+      </span>
+    </div>
   </section>
 
-  <!-- 広告枠（ヘッダー下） -->
-  <div class="mb-6">
-    <!-- Google AdSense ここに挿入 -->
-    <div style="min-height:60px;background:#F0F2F5;border-radius:8px;display:flex;align-items:center;justify-content:center">
-      <span style="font-size:11px;color:#AEAEB2">広告</span>
+  <!-- ══════════════ 3つの特徴 ══════════════ -->
+  <section class="sec" style="background:#fff">
+    <div style="text-align:center;margin-bottom:36px">
+      <p class="eyebrow">FEATURES</p>
+      <h2 class="sec-title">見る・調べるが、<br>これひとつで。</h2>
     </div>
-  </div>
 
-  <!-- 対応自治体 -->
-  <section class="mb-8">
-    <p class="section-heading">対応自治体</p>
-    <div class="grid grid-cols-2 gap-3">
+    <div class="flex flex-col gap-4">
+      <div class="bg-[#F7F9F8] rounded-2xl px-6 py-6 flex items-start gap-5">
+        <div class="icon-tile" style="width:56px;height:56px;background:rgba(0,168,107,0.12)">
+          <span class="ms" style="font-size:30px;color:#00A86B">calendar_month</span>
+        </div>
+        <div>
+          <p class="text-[19px] font-extrabold text-[#1C1C1E] mb-1">収集日カレンダー</p>
+          <p class="text-[15px] text-[#636366] leading-relaxed">今日・明日のごみが、開いた瞬間にわかります。</p>
+        </div>
+      </div>
+      <div class="bg-[#F7F9F8] rounded-2xl px-6 py-6 flex items-start gap-5">
+        <div class="icon-tile" style="width:56px;height:56px;background:rgba(75,114,212,0.12)">
+          <span class="ms" style="font-size:30px;color:#4B72D4">search</span>
+        </div>
+        <div>
+          <p class="text-[19px] font-extrabold text-[#1C1C1E] mb-1">ごみ名で即検索</p>
+          <p class="text-[15px] text-[#636366] leading-relaxed">「これ、何ごみ？」を数秒で解決します。</p>
+        </div>
+      </div>
+      <div class="bg-[#F7F9F8] rounded-2xl px-6 py-6 flex items-start gap-5">
+        <div class="icon-tile" style="width:56px;height:56px;background:rgba(232,81,42,0.12)">
+          <span class="ms" style="font-size:30px;color:#E8512A">location_on</span>
+        </div>
+        <div>
+          <p class="text-[19px] font-extrabold text-[#1C1C1E] mb-1">丁目別に対応</p>
+          <p class="text-[15px] text-[#636366] leading-relaxed">お住まいの丁目を選ぶだけで、正確な収集日を表示。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ 使い方 ══════════════ -->
+  <section class="sec" style="background:#F4F8F5">
+    <div style="text-align:center;margin-bottom:36px">
+      <p class="eyebrow">HOW TO USE</p>
+      <h2 class="sec-title">使い方は、3ステップ。</h2>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <div class="bg-white rounded-2xl px-6 py-6 flex items-center gap-5 shadow-sm">
+        <div style="width:40px;height:40px;border-radius:50%;background:#00A86B;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <span style="font-size:17px;font-weight:900;color:#fff">1</span>
+        </div>
+        <div>
+          <p class="text-[18px] font-extrabold text-[#1C1C1E]">地域を選ぶ</p>
+          <p class="text-[15px] text-[#636366] mt-1 leading-relaxed">市区町村と丁目を選択。次回から自動で表示されます。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl px-6 py-6 flex items-center gap-5 shadow-sm">
+        <div style="width:40px;height:40px;border-radius:50%;background:#00A86B;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <span style="font-size:17px;font-weight:900;color:#fff">2</span>
+        </div>
+        <div>
+          <p class="text-[18px] font-extrabold text-[#1C1C1E]">確認する</p>
+          <p class="text-[15px] text-[#636366] mt-1 leading-relaxed">収集日カレンダーと分別方法をチェック。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl px-6 py-6 flex items-center gap-5 shadow-sm">
+        <div style="width:40px;height:40px;border-radius:50%;background:#00A86B;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <span style="font-size:17px;font-weight:900;color:#fff">3</span>
+        </div>
+        <div>
+          <p class="text-[18px] font-extrabold text-[#1C1C1E]">ごみを出す</p>
+          <p class="text-[15px] text-[#636366] mt-1 leading-relaxed">正しく分別して、収集日の朝に出すだけ。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ 対応自治体 ══════════════ -->
+  <section id="cities" class="sec" style="background:#fff">
+    <div style="text-align:center;margin-bottom:36px">
+      <p class="eyebrow">AREAS</p>
+      <h2 class="sec-title">対応自治体</h2>
+      <p class="sec-lead">お住まいの自治体を選んでスタート。</p>
+    </div>
+
+    <!-- カルーセル（横スクロール） -->
+    <div style="display:flex;gap:14px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0 -24px;padding-left:24px;padding-right:24px">
 
       <!-- 志木市 -->
-      <a href="/shiki/" class="city-card bg-white rounded-2xl border border-black/[0.07] shadow-sm p-4 flex flex-col gap-2">
-        <div class="flex items-center gap-2">
-          <span class="text-lg" style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;color:#00A86B">location_city</span>
+      <a href="/shiki/" class="city-card" style="background:#fff;border-radius:20px;border:1px solid rgba(0,0,0,0.08);box-shadow:0 2px 10px rgba(0,0,0,0.07);padding:20px;display:flex;flex-direction:column;gap:12px;min-width:200px;flex-shrink:0">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span class="ms" style="font-size:24px;color:#00A86B">location_city</span>
           <div>
-            <div class="text-[15px] font-extrabold text-[#1C1C1E]">志木市</div>
-            <div class="text-[13px] text-[#8890A0]">埼玉県</div>
+            <div style="font-size:19px;font-weight:900;color:#1C1C1E">志木市</div>
+            <div style="font-size:14px;color:#8890A0">埼玉県</div>
           </div>
         </div>
-        <div class="flex flex-wrap gap-1">
-          <span class="type-badge" style="background:rgba(232,81,42,.1);color:#E8512A">可燃</span>
-          <span class="type-badge" style="background:rgba(75,114,212,.1);color:#4B72D4">不燃</span>
-          <span class="type-badge" style="background:rgba(24,168,122,.1);color:#00A86B">資源</span>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span style="display:inline-flex;align-items:center;background:rgba(232,81,42,.1);color:#E8512A;font-size:13px;font-weight:700;padding:4px 10px;border-radius:20px">可燃</span>
+          <span style="display:inline-flex;align-items:center;background:rgba(75,114,212,.1);color:#4B72D4;font-size:13px;font-weight:700;padding:4px 10px;border-radius:20px">不燃</span>
+          <span style="display:inline-flex;align-items:center;background:rgba(24,168,122,.1);color:#00A86B;font-size:13px;font-weight:700;padding:4px 10px;border-radius:20px">資源</span>
         </div>
-        <div class="text-[12px] font-bold text-[#00A86B] flex items-center gap-1 mt-auto">
-          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:15px">arrow_forward</span>
+        <div style="font-size:14px;font-weight:800;color:#00A86B;display:flex;align-items:center;gap:4px;margin-top:auto;min-height:24px">
           ごみ分別を確認する
+          <span class="ms" style="font-size:15px">arrow_forward</span>
         </div>
       </a>
 
       <!-- 準備中カード -->
-      <div class="city-card bg-white rounded-2xl border border-black/[0.07] shadow-sm p-4 flex flex-col gap-2 opacity-50">
-        <div class="flex items-center gap-2">
-          <span class="text-lg" style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;color:#AEAEB2">location_city</span>
+      <div style="background:#fff;border-radius:20px;border:1.5px dashed rgba(0,0,0,0.14);padding:20px;display:flex;flex-direction:column;gap:12px;min-width:200px;flex-shrink:0;opacity:0.6">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span class="ms-o" style="font-size:24px;color:#AEAEB2">add_location_alt</span>
           <div>
-            <div class="text-[13px] font-extrabold text-[#636366]">順次追加予定</div>
-            <div class="text-[13px] text-[#AEAEB2]">埼玉県・その他</div>
+            <div style="font-size:17px;font-weight:800;color:#636366">順次追加予定</div>
+            <div style="font-size:14px;color:#AEAEB2">埼玉県・その他</div>
           </div>
         </div>
-        <div class="text-[12px] text-[#AEAEB2] mt-auto">準備中</div>
+        <div style="font-size:13px;color:#AEAEB2;margin-top:auto">準備中</div>
       </div>
+
+      <div style="min-width:8px;flex-shrink:0"></div>
     </div>
 
     <!-- リクエスト -->
-    <div class="mt-3 bg-white rounded-2xl border border-black/[0.07] shadow-sm px-4 py-3 flex items-center justify-between">
+    <div class="mt-5 bg-[#F7F9F8] rounded-2xl px-5 py-4 flex items-center justify-between gap-3">
       <div>
-        <div class="text-[13px] font-bold text-[#1C1C1E]">お住まいの市区町村を追加してほしい方</div>
-        <div class="text-[13px] text-[#AEAEB2] mt-[2px]">リクエストをお送りください</div>
+        <div class="text-[15px] font-bold text-[#1C1C1E]">お住まいの街がまだない方へ</div>
+        <div class="text-[13px] text-[#8890A0] mt-[2px]">リクエストをお送りください</div>
       </div>
       <a href="mailto:contact@gomi-nico.jp?subject=自治体追加リクエスト"
-         class="bg-[#00A86B] text-white text-[12px] font-bold px-4 py-2 rounded-xl whitespace-nowrap">
+         class="bg-[#00A86B] text-white text-[14px] font-bold px-5 rounded-xl whitespace-nowrap inline-flex items-center" style="height:44px">
         リクエスト
       </a>
     </div>
   </section>
 
-  <!-- ごみ分別の基本（全国共通） -->
-  <section class="mb-8">
-    <p class="section-heading">ごみ分別の基本</p>
-    <p class="text-[12px] text-[#636366] mb-4 leading-relaxed">
-      家庭ごみは大きく4種類に分類されます。<strong>分別ルールは自治体によって異なります</strong>ので、お住まいの地域のルールをご確認ください。
-    </p>
-    <div class="flex flex-col gap-3">
+  <!-- ══════════════ ごみ分別の基本 ══════════════ -->
+  <section class="sec" style="background:#F4F8F5">
+    <div style="text-align:center;margin-bottom:12px">
+      <p class="eyebrow">BASICS</p>
+      <h2 class="sec-title">ごみ分別の基本、<br>4種類だけ覚えよう。</h2>
+      <p class="sec-lead">細かいルールは自治体ごとに違います。<br>まずはこの4つから。</p>
+    </div>
+
+    <div class="grid grid-cols-2 gap-3 mt-8">
 
       <!-- 可燃ごみ -->
-      <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
-        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3">
-          <div style="width:40px;height:40px;border-radius:8px;background:rgba(232,81,42,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0">
-            <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:22px;color:#E8512A">local_fire_department</span>
-          </div>
-          <div>
-            <div class="text-[14px] font-extrabold" style="color:#E8512A">可燃ごみ（燃えるごみ）</div>
-            <div class="text-[13px] text-[#AEAEB2]">生ごみ・紙くず・木くず・革製品など</div>
-          </div>
+      <div class="bg-white rounded-2xl px-4 py-5 shadow-sm" style="text-align:center">
+        <div class="icon-tile mx-auto mb-3" style="width:60px;height:60px;background:rgba(232,81,42,0.12)">
+          <img src="/icons/moeru.svg" alt="" width="44" height="44" loading="lazy">
         </div>
-        <div class="px-4 py-3 text-[14px] text-[#636366] leading-relaxed">
-          週2回収集が多いです。<strong>生ごみは水気を切って</strong>から出すと臭いを防ぎ、焼却効率も上がります。ティッシュや汚れた紙類もこちらです。
-        </div>
+        <p class="text-[17px] font-extrabold mb-1" style="color:#E8512A">可燃ごみ</p>
+        <p class="text-[13px] text-[#636366] leading-relaxed">生ごみ・紙くずなど。<br>生ごみは水切りが鉄則。</p>
       </div>
 
       <!-- 不燃ごみ -->
-      <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
-        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3">
-          <div style="width:40px;height:40px;border-radius:8px;background:rgba(75,114,212,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0">
-            <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:22px;color:#4B72D4">delete_sweep</span>
-          </div>
-          <div>
-            <div class="text-[14px] font-extrabold" style="color:#4B72D4">不燃ごみ（燃えないごみ）</div>
-            <div class="text-[13px] text-[#AEAEB2]">金属・ガラス・陶磁器・小型家電など</div>
-          </div>
+      <div class="bg-white rounded-2xl px-4 py-5 shadow-sm" style="text-align:center">
+        <div class="icon-tile mx-auto mb-3" style="width:60px;height:60px;background:rgba(75,114,212,0.12)">
+          <img src="/icons/moenai.svg" alt="" width="44" height="44" loading="lazy">
         </div>
-        <div class="px-4 py-3 text-[14px] text-[#636366] leading-relaxed">
-          月1〜2回収集が多いです。<strong>スプレー缶は必ず中身を使い切り</strong>、穴あけ不要の自治体が増えています。リチウムイオン電池は火災原因になるため、混入厳禁です。
-        </div>
+        <p class="text-[17px] font-extrabold mb-1" style="color:#4B72D4">不燃ごみ</p>
+        <p class="text-[13px] text-[#636366] leading-relaxed">金属・ガラス・陶器など。<br>電池類は混ぜない。</p>
       </div>
 
       <!-- 資源ごみ -->
-      <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
-        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3">
-          <div style="width:40px;height:40px;border-radius:8px;background:rgba(24,168,122,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0">
-            <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:22px;color:#00A86B">recycling</span>
-          </div>
-          <div>
-            <div class="text-[14px] font-extrabold" style="color:#00A86B">資源ごみ</div>
-            <div class="text-[13px] text-[#AEAEB2]">缶・ビン・ペットボトル・古紙・プラスチックなど</div>
-          </div>
+      <div class="bg-white rounded-2xl px-4 py-5 shadow-sm" style="text-align:center">
+        <div class="icon-tile mx-auto mb-3" style="width:60px;height:60px;background:rgba(24,168,122,0.12)">
+          <img src="/icons/recycle.svg" alt="" width="44" height="44" loading="lazy">
         </div>
-        <div class="px-4 py-3 text-[14px] text-[#636366] leading-relaxed">
-          <strong>ペットボトルはキャップを外してラベルを剥がし</strong>、軽くすすいで出しましょう。2022年のプラスチック資源循環法施行以降、容器包装プラスチックと製品プラスチックを資源として回収する自治体が増えています。
-        </div>
+        <p class="text-[17px] font-extrabold mb-1" style="color:#00A86B">資源ごみ</p>
+        <p class="text-[13px] text-[#636366] leading-relaxed">缶・ビン・ペット・古紙。<br>すすいで、つぶして。</p>
       </div>
 
       <!-- 粗大ごみ -->
-      <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
-        <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3">
-          <div style="width:40px;height:40px;border-radius:8px;background:rgba(104,120,160,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0">
-            <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:22px;color:#6878A0">weekend</span>
-          </div>
-          <div>
-            <div class="text-[14px] font-extrabold" style="color:#6878A0">粗大ごみ</div>
-            <div class="text-[13px] text-[#AEAEB2]">家具・家電・自転車など大型ごみ</div>
-          </div>
+      <div class="bg-white rounded-2xl px-4 py-5 shadow-sm" style="text-align:center">
+        <div class="icon-tile mx-auto mb-3" style="width:60px;height:60px;background:rgba(104,120,160,0.12)">
+          <img src="/icons/sodai.svg" alt="" width="44" height="44" loading="lazy">
         </div>
-        <div class="px-4 py-3 text-[14px] text-[#636366] leading-relaxed">
-          <strong>事前の電話申込・処理券の購入が必要</strong>です。エアコン・テレビ・冷蔵庫・洗濯機は家電リサイクル法の対象で、自治体では回収しません。販売店等にご相談ください。
-        </div>
+        <p class="text-[17px] font-extrabold mb-1" style="color:#6878A0">粗大ごみ</p>
+        <p class="text-[13px] text-[#636366] leading-relaxed">家具や自転車など。<br>事前申込＋処理券が必要。</p>
       </div>
     </div>
 
-    <!-- 知っておきたいポイント -->
-    <div class="mt-4 bg-[#F0FAF5] rounded-2xl border border-[#00A86B]/20 px-4 py-3">
-      <div class="text-[12px] font-bold text-[#1C6B4A] mb-2">💡 知っておきたい「9割ルール」</div>
-      <p class="text-[12px] text-[#3A5A44] leading-relaxed">
-        素材の9割が可燃ごみなら、1割の不燃部分が付いていても可燃ごみとして出せる、という考え方です。ただし自治体によってルールが異なります。お住まいの地域のルールを優先してください。
+    <!-- 9割ルール -->
+    <div class="mt-5 bg-white rounded-2xl px-5 py-4 shadow-sm" style="border-left:4px solid #00A86B">
+      <div class="text-[15px] font-bold text-[#1C6B4A] mb-1">💡 知っておきたい「9割ルール」</div>
+      <p class="text-[14px] text-[#636366] leading-relaxed">
+        素材の9割が可燃なら可燃ごみでOK、という考え方。ただし最終判断はお住まいの自治体ルールで。
       </p>
     </div>
   </section>
 
-  <!-- プラスチック新ルール -->
-  <section class="mb-8">
-    <p class="section-heading">プラスチックの分別（2022年法改正）</p>
-    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm px-4 py-4">
-      <p class="text-[13px] font-bold text-[#1C1C1E] mb-2">プラスチック資源循環促進法（2022年4月施行）</p>
-      <p class="text-[14px] text-[#636366] leading-relaxed mb-3">
-        これまで多くの自治体で「不燃ごみ」とされていた<strong>製品プラスチック（バケツ・ハンガー・保存容器など）</strong>を「資源ごみ」として回収できるよう、法律が整備されました。対応自治体は順次拡大しています。
+  <!-- ══════════════ プラスチック新ルール ══════════════ -->
+  <section class="sec" style="background:#fff">
+    <div style="text-align:center;margin-bottom:32px">
+      <p class="eyebrow">NEW RULE</p>
+      <h2 class="sec-title">プラスチックの分別が<br>変わりました。</h2>
+      <p class="sec-lead">2022年の法改正で、製品プラスチックも<br>資源として回収する自治体が増えています。</p>
+    </div>
+
+    <div class="bg-[#F7F9F8] rounded-2xl px-6 py-6 flex items-start gap-5">
+      <div class="icon-tile" style="width:56px;height:56px;background:rgba(24,168,122,0.12)">
+        <img src="/icons/plastic.svg" alt="" width="40" height="40" loading="lazy">
+      </div>
+      <div class="flex flex-col gap-3 text-[14px]">
+        <div class="flex items-start gap-2">
+          <span class="text-[#00A86B] font-bold mt-[1px]">✓</span>
+          <span class="text-[#636366] leading-relaxed"><strong class="text-[#1C1C1E]">容器包装プラ</strong>：お菓子袋・ボトル類（プラマークが目印）</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-[#00A86B] font-bold mt-[1px]">✓</span>
+          <span class="text-[#636366] leading-relaxed"><strong class="text-[#1C1C1E]">製品プラ</strong>：バケツ・ハンガー・CDケースなど</span>
+        </div>
+        <div class="flex items-start gap-2">
+          <span class="text-[#E8512A] font-bold mt-[1px]">✗</span>
+          <span class="text-[#636366] leading-relaxed">汚れが落ちないもの・複合素材はリサイクル不可</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ リチウム電池注意 ══════════════ -->
+  <section class="sec-tight" style="background:#FFF7F0">
+    <div class="flex items-start gap-5">
+      <div class="icon-tile" style="width:56px;height:56px;background:transparent">
+        <img src="/icons/danger.svg" alt="" width="56" height="56" loading="lazy">
+      </div>
+      <div>
+        <p class="text-[19px] font-extrabold mb-2" style="color:#D96A00">リチウム電池は、<br>混ぜないで。</p>
+        <p class="text-[14px] text-[#8A5A30] leading-relaxed">
+          モバイルバッテリーや加熱式タバコの電池は収集車の火災原因に。自治体の指定方法（回収ボックス等）で出しましょう。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FAQ ══════════════ -->
+  <section class="sec" style="background:#fff">
+    <div style="text-align:center;margin-bottom:32px">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="sec-title">よくある質問</h2>
+    </div>
+
+    <div class="flex flex-col gap-3">
+
+      <details class="bg-[#F7F9F8] rounded-2xl overflow-hidden">
+        <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none" style="min-height:56px">
+          <span class="text-[16px] font-bold text-[#1C1C1E]">無料で使えますか？</span>
+          <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
+        </summary>
+        <div class="px-5 pb-5 text-[15px] text-[#636366] leading-relaxed">
+          はい、完全無料です。会員登録・ログインも不要です。
+        </div>
+      </details>
+
+      <details class="bg-[#F7F9F8] rounded-2xl overflow-hidden">
+        <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none" style="min-height:56px">
+          <span class="text-[16px] font-bold text-[#1C1C1E]">アプリのインストールは必要ですか？</span>
+          <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
+        </summary>
+        <div class="px-5 pb-5 text-[15px] text-[#636366] leading-relaxed">
+          不要です。ブラウザからそのまま使えます。ホーム画面に追加するとアプリのように使えます。
+        </div>
+      </details>
+
+      <details class="bg-[#F7F9F8] rounded-2xl overflow-hidden">
+        <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none" style="min-height:56px">
+          <span class="text-[16px] font-bold text-[#1C1C1E]">志木市以外にも対応していますか？</span>
+          <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
+        </summary>
+        <div class="px-5 pb-5 text-[15px] text-[#636366] leading-relaxed">
+          現在は埼玉県志木市のみです。順次拡大予定です。ご希望の自治体は<a href="mailto:contact@gomi-nico.jp?subject=自治体追加リクエスト" class="text-[#00A86B] underline">リクエスト</a>からどうぞ。
+        </div>
+      </details>
+
+      <details class="bg-[#F7F9F8] rounded-2xl overflow-hidden">
+        <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none" style="min-height:56px">
+          <span class="text-[16px] font-bold text-[#1C1C1E]">情報の更新頻度は？</span>
+          <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
+        </summary>
+        <div class="px-5 pb-5 text-[15px] text-[#636366] leading-relaxed">
+          月1回程度を目安に更新しています。最新情報は必ず自治体公式サイトでご確認ください。
+        </div>
+      </details>
+
+      <details class="bg-[#F7F9F8] rounded-2xl overflow-hidden">
+        <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none" style="min-height:56px">
+          <span class="text-[16px] font-bold text-[#1C1C1E]">公式サービスですか？</span>
+          <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
+        </summary>
+        <div class="px-5 pb-5 text-[15px] text-[#636366] leading-relaxed">
+          自治体の公式サービスではありません。株式会社ユウセナが運営する非公式の情報サイトです。重要な情報は公式サイトをご確認ください。
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ══════════════ もっと知りたい ══════════════ -->
+  <section class="sec" style="background:#F4F8F5">
+    <div style="text-align:center;margin-bottom:32px">
+      <p class="eyebrow">LEARN MORE</p>
+      <h2 class="sec-title">もっと知りたい？<br>ごみのこと。</h2>
+      <p class="sec-lead">分別のギモン、公式情報でスッキリ解決。</p>
+    </div>
+
+    <!-- なぜ分別するの？ -->
+    <div class="mb-5">
+      <p class="text-[14px] font-bold mb-2" style="color:#00A86B;letter-spacing:.04em">
+        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>なぜ分別するの？
       </p>
-      <div class="flex flex-col gap-2 text-[12px]">
-        <div class="flex items-start gap-2">
-          <span class="text-[#00A86B] mt-[2px]">✓</span>
-          <span class="text-[#636366]">容器包装プラ：お菓子袋・シャンプーボトル・レジ袋など（プラマーク目印）</span>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden divide-y divide-black/[0.04]">
+        <div class="px-5 pt-4 pb-4">
+          <p class="text-[16px] font-bold text-[#1C1C1E] mb-[3px]">どうして分別するの？</p>
+          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">埋立地が満杯になる問題を解決するため、容器包装ごみのリサイクルが法律で定められた。</p>
+          <a href="https://www.jcpra.or.jp/law/wakaru/" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
+            詳しく読む → JCPRA「容リ制度ができた理由」
+            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+          </a>
         </div>
-        <div class="flex items-start gap-2">
-          <span class="text-[#00A86B] mt-[2px]">✓</span>
-          <span class="text-[#636366]">製品プラ：バケツ・洗面器・CDケース・ハンガーなど</span>
+        <div class="px-5 pt-4 pb-4">
+          <p class="text-[16px] font-bold text-[#1C1C1E] mb-[3px]">ちゃんと分別すると誰のため？</p>
+          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">収集作業員・自治体・未来の子どもたち、すべての人のため。</p>
+          <a href="https://www.jcpra.or.jp/law/wakaru/" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
+            詳しく読む → JCPRA
+            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+          </a>
         </div>
-        <div class="flex items-start gap-2">
-          <span class="text-[#E8512A] mt-[2px]">✗</span>
-          <span class="text-[#636366]">汚れが落ちないもの・複合素材のものはリサイクル不可</span>
+        <div class="px-5 pt-4 pb-4">
+          <p class="text-[16px] font-bold text-[#1C1C1E] mb-[3px]">分別しても本当にリサイクルされているの？</p>
+          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">ガラスびん・PETボトル・プラ等、素材ごとのフロー図と実績データで確認できる。</p>
+          <a href="https://www.jcpra.or.jp/law/goals/" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
+            詳しく読む → JCPRA「数字で見るリサイクルのゆくえ」
+            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- マーク・表示 -->
+    <div class="mb-5">
+      <p class="text-[14px] font-bold mb-2" style="color:#4B72D4;letter-spacing:.04em">
+        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#4B72D4;margin-right:5px;vertical-align:middle"></span>マーク・表示（読み方）
+      </p>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <div class="px-5 pt-4 pb-4">
+          <p class="text-[16px] font-bold text-[#1C1C1E] mb-[3px]">このマーク、何の意味？</p>
+          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">容器・包装の素材を示すリサイクル識別マーク。分別の目印になる。</p>
+          <a href="https://www.jcpra.or.jp/law/display.html" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#4B72D4;min-height:32px">
+            詳しく読む → JCPRA
+            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ごみのゆくえ -->
+    <div class="mb-5">
+      <p class="text-[14px] font-bold mb-2" style="color:#636366;letter-spacing:.04em">
+        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#636366;margin-right:5px;vertical-align:middle"></span>ごみのゆくえ（処理のしくみ）
+      </p>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <div class="px-5 pt-4 pb-4">
+          <p class="text-[16px] font-bold text-[#1C1C1E] mb-[3px]">分別したごみはどこへいくの？</p>
+          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">収集後、素材ごとの施設で選別・処理され、新製品の原料として生まれ変わる。</p>
+          <a href="https://www.jcpra.or.jp/law/wakaru/" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#636366;min-height:32px">
+            詳しく読む → JCPRA「リサイクルの流れ」
+            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 品目別・困ったとき -->
+    <div class="mb-5">
+      <p class="text-[14px] font-bold mb-2" style="color:#E07800;letter-spacing:.04em">
+        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#E07800;margin-right:5px;vertical-align:middle"></span>品目別・困ったとき
+      </p>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <div class="px-5 pt-4 pb-4">
+          <p class="text-[16px] font-bold text-[#1C1C1E] mb-[3px]">テレビ・冷蔵庫などの家電の捨て方は？</p>
+          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">家電リサイクル法により、小売店・市区町村窓口への持ち込みで有料回収。</p>
+          <a href="https://www.meti.go.jp/policy/it_policy/kaden/index.html" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#E07800;min-height:32px">
+            詳しく読む → 経済産業省「家電リサイクル」
+            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 食品ロス -->
+    <div class="mb-5">
+      <p class="text-[14px] font-bold mb-2" style="color:#E8512A;letter-spacing:.04em">
+        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#E8512A;margin-right:5px;vertical-align:middle"></span>食品ロス
+      </p>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <div class="px-5 pt-4 pb-4">
+          <p class="text-[16px] font-bold text-[#1C1C1E] mb-[3px]">食品ロスってなに？</p>
+          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">まだ食べられるのに捨てられる食品のこと。日本では年間472万トン。</p>
+          <a href="https://www.maff.go.jp/j/shokusan/recycle/syoku_loss/161227_4.html" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#E8512A;min-height:32px">
+            詳しく読む → 農林水産省「食品ロスとは」
+            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3R・取り組み -->
+    <div>
+      <p class="text-[14px] font-bold mb-2" style="color:#00897B;letter-spacing:.04em">
+        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00897B;margin-right:5px;vertical-align:middle"></span>3R・取り組み
+      </p>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <div class="px-5 pt-4 pb-4">
+          <p class="text-[16px] font-bold text-[#1C1C1E] mb-[3px]">3Rってなに？（Reduce・Reuse・Recycle）</p>
+          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">まず「減らす」、次に「繰り返し使う」、それから「資源にする」。</p>
+          <a href="https://kids.yahoo.co.jp/study/integrated/environment/env007.html" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00897B;min-height:32px">
+            詳しく読む → Yahoo!きっず「3Rとは」
+            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- リチウム電池注意 -->
-  <section class="mb-8">
-    <p class="section-heading">リチウム電池・モバイルバッテリーの注意</p>
-    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
-      <div class="px-4 py-3 border-b border-black/[0.05] flex items-center gap-3">
-        <div style="width:36px;height:36px;border-radius:8px;background:rgba(224,120,0,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0">
-          <span style="font-family:'Material Symbols Rounded';font-variation-settings:'FILL' 1,'wght' 500;font-size:20px;color:#E07800">warning</span>
-        </div>
-        <span class="text-[13px] font-bold" style="color:#E07800">収集車・処理施設の火災原因になります</span>
-      </div>
-      <div class="px-4 py-3 text-[14px] text-[#636366] leading-relaxed">
-        モバイルバッテリー・スマートフォン・電動歯ブラシ・加熱式タバコなどに内蔵されているリチウムイオン電池は、<strong>ほかのごみと絶対に混ぜないでください</strong>。自治体の指定方法（小型家電回収ボックスなど）で廃棄してください。
-      </div>
-    </div>
-  </section>
-
-  <!-- 参考リンク -->
-  <section class="mb-8">
-    <p class="section-heading">参考・公式情報</p>
-    <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden divide-y divide-black/[0.04]">
-      <a href="https://www.env.go.jp/guide/info/ecojin/action/20240221.html" target="_blank" rel="noopener"
-         class="flex items-center justify-between px-4 py-3 text-[13px] text-[#1C1C1E] hover:bg-black/[0.02]">
-        <div>
-          <div class="font-bold">ごみ出しのコツをつかんで楽しく分別しよう！</div>
-          <div class="text-[13px] text-[#AEAEB2] mt-[2px]">環境省 ecojin（エコジン）</div>
-        </div>
-        <span class="text-[#AEAEB2] ml-2">›</span>
-      </a>
-      <a href="https://plastic-circulation.env.go.jp/gov/bunbetsu" target="_blank" rel="noopener"
-         class="flex items-center justify-between px-4 py-3 text-[13px] text-[#1C1C1E] hover:bg-black/[0.02]">
-        <div>
-          <div class="font-bold">プラスチック分別収集自治体マップ</div>
-          <div class="text-[13px] text-[#AEAEB2] mt-[2px]">環境省 プラスチック資源循環</div>
-        </div>
-        <span class="text-[#AEAEB2] ml-2">›</span>
-      </a>
-      <a href="https://www.caa.go.jp/policies/policy/consumer_education/public_awareness/gekkan/2025/green/contents_018.html" target="_blank" rel="noopener"
-         class="flex items-center justify-between px-4 py-3 text-[13px] text-[#1C1C1E] hover:bg-black/[0.02]">
-        <div>
-          <div class="font-bold">グリーンコンシューマーになろう</div>
-          <div class="text-[13px] text-[#AEAEB2] mt-[2px]">消費者庁</div>
-        </div>
-        <span class="text-[#AEAEB2] ml-2">›</span>
-      </a>
-    </div>
+  <!-- ══════════════ 締めCTA ══════════════ -->
+  <section class="sec" style="background:linear-gradient(170deg,#EAF7F0 0%,#fff 100%);text-align:center">
+    <h2 class="sec-title">さあ、今日のごみを<br>確認してみよう。</h2>
+    <a href="#cities"
+       style="display:flex;align-items:center;justify-content:center;gap:8px;background:#00A86B;color:#fff;border-radius:14px;height:52px;max-width:320px;margin:20px auto 0;font-size:16px;font-weight:800;box-shadow:0 4px 14px rgba(0,168,107,0.3)">
+      対応自治体をみる
+      <span class="ms" style="font-size:18px">arrow_upward</span>
+    </a>
   </section>
 
   <!-- 広告枠（フッター上） -->
-  <div class="mb-6">
+  <div class="px-6 pb-8" style="background:#fff">
     <!-- Google AdSense ここに挿入 -->
     <div style="min-height:90px;background:#F0F2F5;border-radius:8px;display:flex;align-items:center;justify-content:center">
       <span style="font-size:11px;color:#AEAEB2">広告</span>
@@ -310,15 +641,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </main>
 
-<footer class="text-center px-4 py-5 border-t border-black/[0.05]">
+<footer class="max-w-2xl mx-auto text-center px-6 py-8 border-t border-black/[0.05]">
   <p class="text-[13px] text-[#AEAEB2] leading-relaxed">
     本サイトは各自治体の非公式情報サービスです。情報の正確性は保証しかねます。<br>
-    最新情報は各自治体の公式サイトでご確認ください。<br><br>
-    <a href="/about.html" class="text-[#AEAEB2] underline hover:text-[#636366]">運営者情報・免責事項</a>
-    <a href="/privacy.html" class="text-[#AEAEB2] underline hover:text-[#636366]">プライバシーポリシー</a>
-    <a href="/ads.html" class="text-[#AEAEB2] underline hover:text-[#636366]">広告について</a><br><br>
-    © 2026 株式会社ユウセナ
+    最新情報は各自治体の公式サイトでご確認ください。
   </p>
+  <p class="mt-4 flex items-center justify-center gap-4 flex-wrap">
+    <a href="/about.html" class="text-[13px] text-[#AEAEB2] underline hover:text-[#636366] inline-flex items-center" style="min-height:44px">運営者情報・免責事項</a>
+    <a href="/privacy.html" class="text-[13px] text-[#AEAEB2] underline hover:text-[#636366] inline-flex items-center" style="min-height:44px">プライバシーポリシー</a>
+    <a href="/ads.html" class="text-[13px] text-[#AEAEB2] underline hover:text-[#636366] inline-flex items-center" style="min-height:44px">広告について</a>
+  </p>
+  <p class="text-[13px] text-[#AEAEB2] mt-2">© 2026 株式会社ユウセナ</p>
 </footer>
 
 </body>
