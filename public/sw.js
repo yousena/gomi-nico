@@ -1,9 +1,9 @@
 /* =====================================================
-   志木市ごみ分別ガイド Service Worker
+   ごみニコ Service Worker
    戦略: アプリシェル → キャッシュ優先 / データ → ネットワーク優先
 ===================================================== */
 
-const CACHE_NAME   = 'gomi-nico-v1';
+const CACHE_NAME   = 'gomi-nico-v2';
 const SHELL_ASSETS = [
   '/shiki/',
   '/shiki/index.html',

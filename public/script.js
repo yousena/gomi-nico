@@ -193,9 +193,9 @@ function applyMunicipalityMeta() {
   const city  = DATA.name;          // 志木市
   const pref  = DATA.prefecture;    // 埼玉県
   const id    = DATA.municipality_id; // shiki
-  const pageUrl = `https://gomi-nico.jp/?city=${id}`;
-  const pageTitle = `${city} ごみ分別ガイド｜収集日・分別方法を地区別に確認`;
-  const pageDesc  = `${pref}${city}のごみ収集日・分別方法を地区別に簡単検索。可燃ごみ・不燃ごみ・資源ごみのカレンダー表示、分別検索、ごみ出しルールをまとめた非公式情報サイトです。`;
+  const pageUrl = `https://gomi-nico.jp/${id}/`;
+  const pageTitle = `${city}のごみ収集日・ごみ分別検索｜ごみニコ`;
+  const pageDesc  = `${pref}${city}のごみ収集日・分別方法を地区別に簡単検索。可燃ごみ・不燃ごみ・資源ごみのカレンダー表示、分別検索、ごみ出しルールをまとめた非公式情報サイト「ごみニコ」です。`;
 
   // ── タイトル ──
   document.title = pageTitle;
@@ -216,7 +216,7 @@ function applyMunicipalityMeta() {
   setMeta('meta[property="og:url"]',         pageUrl);
 
   // ── Twitter Card ──
-  setMeta('meta[name="twitter:title"]',       `${city} ごみ分別ガイド`);
+  setMeta('meta[name="twitter:title"]',       `${city}のごみ収集日・ごみ分別検索｜ごみニコ`);
   setMeta('meta[name="twitter:description"]', `${pref}${city}のごみ収集日・分別方法を地区別に検索できます。`);
 
   // ── JSON-LD ──
@@ -232,13 +232,14 @@ function applyMunicipalityMeta() {
       {
         '@type': 'WebSite',
         '@id': 'https://gomi-nico.jp/#website',
-        'name': 'ごみ分別ガイド',
+        'name': 'ごみニコ',
+        'alternateName': 'ごみ分別ガイド',
         'url': 'https://gomi-nico.jp/',
-        'description': '自治体別ごみ収集日・分別方法検索サービス',
+        'description': '自治体別ごみ収集日・分別方法検索サービス「ごみニコ」',
         'inLanguage': 'ja',
         'potentialAction': {
           '@type': 'SearchAction',
-          'target': `https://gomi-nico.jp/?city=${id}&q={search_term_string}`,
+          'target': `https://gomi-nico.jp/${id}/?q={search_term_string}`,
           'query-input': 'required name=search_term_string'
         }
       },

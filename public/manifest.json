@@ -1,7 +1,7 @@
 {
-  "name": "志木市ごみ分別ガイド",
-  "short_name": "ごみ分別",
-  "description": "志木市のごみ収集日・分別方法を地区別に検索できます",
+  "name": "ごみニコ｜ごみ収集日・分別ガイド",
+  "short_name": "ごみニコ",
+  "description": "ごみ収集日・分別方法を地区別に検索できます",
   "start_url": "/shiki/",
   "scope": "/",
   "display": "standalone",
