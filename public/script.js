@@ -807,6 +807,26 @@ function renderSearchIndex() {
   return html;
 }
 
+/* ── 検索0件クエリをGA4へ記録（GTM経由）──
+   打鍵途中のノイズを避けるため1.2秒静止後に送信。同一クエリはセッション中1回のみ */
+var _noResultTimer = null;
+var _noResultSent  = {};
+function trackNoResult(q) {
+  if (_noResultTimer) clearTimeout(_noResultTimer);
+  _noResultTimer = setTimeout(function () {
+    var input   = document.getElementById('search-input');
+    var current = input ? input.value.trim() : '';
+    if (current !== q || q.length < 2 || _noResultSent[q]) return;
+    _noResultSent[q] = true;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'search_no_result',
+      search_term: q,
+      municipality: (DATA && DATA.municipality_id) || 'unknown'
+    });
+  }, 1200);
+}
+
 function onSearch(query) {
   if (!DATA) return;
   var q       = (query || '').trim();
@@ -833,6 +853,7 @@ function onSearch(query) {
   });
 
   if (hits.length === 0) {
+    trackNoResult(q);
     bodyEl.innerHTML = '<div style="text-align:center;padding:40px 16px"><span style="font-size:36px;display:block;margin-bottom:12px">🤔</span><p style="font-size:14px;font-weight:700;color:#636366">「' + q + '」は見つかりませんでした</p><p style="font-size:12px;color:#AEAEB2;margin-top:8px">市の公式サイトでご確認ください</p></div>';
     return;
   }
