@@ -1339,7 +1339,7 @@ var CAT_PRODUCTS = {
                 { name:'防臭ごみ袋',             kw:'防臭袋 ごみ 生ごみ' }],
   tree:        [{ name:'剪定バサミ',            kw:'剪定バサミ 庭 手入れ' },
                 { name:'落ち葉収集バッグ',       kw:'落ち葉 収集 バッグ 庭' }],
-  spraycan:    [{ name:'スプレー缶穴あけ器',   kw:'スプレー缶 穴あけ 処理 安全' }],
+  spraycan:    [{ name:'ガス抜きキャップ',     kw:'スプレー缶 ガス抜き キャップ' }],
 };
 
 function renderProducts(typeKey, iconBg, fg) {
