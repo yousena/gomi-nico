@@ -56,7 +56,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .eyebrow   { font-size:13px; font-weight:800; color:#00A86B; letter-spacing:.16em; margin-bottom:10px; }
   .sec-title { font-size:24px; font-weight:900; color:#1C1C1E; line-height:1.4; letter-spacing:-.01em; margin-bottom:12px; }
   .sec-lead  { font-size:15px; color:#636366; line-height:1.9; }
-  h1, .sec-title, .font-round { font-family:'Zen Maru Gothic','Hiragino Maru Gothic ProN',-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; }
+  /* 見出しフォント: Zen Kaku Gothic New（300/400/500/700/900フル対応） */
+  h1, .sec-title, .font-round { font-family:'Zen Kaku Gothic New',-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; }
   .ms  { font-family:'Material Symbols Rounded'; font-variation-settings:'FILL' 1,'wght' 500; }
   .ms-o{ font-family:'Material Symbols Rounded'; font-variation-settings:'FILL' 0,'wght' 400; }
   .icon-tile { border-radius:14px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
@@ -73,10 +74,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </style>
 <!-- Material Symbols -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0" media="print" onload="this.media='all'">
-<!-- 見出しフォント（Zen Maru Gothic・見出しと特大数字のみ） -->
+<!-- 見出しフォント（Zen Kaku Gothic New・見出しと特大数字のみ） -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -109,7 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <h1 style="font-size:30px;font-weight:900;color:#1C1C1E;line-height:1.4;margin-bottom:16px;letter-spacing:-.02em">
-      ごみ出し日も、分け方も、<br>すぐわかる。
+      <span style="white-space:nowrap">ごみ出し日も、</span><wbr><span style="white-space:nowrap">分け方も、</span><wbr><span style="white-space:nowrap">すぐわかる。</span>
     </h1>
     <p style="font-size:16px;color:#636366;line-height:1.8;margin-bottom:32px">
       地区別の収集カレンダーと分別検索。<br>無料・登録不要で今すぐ使えます。
@@ -216,37 +217,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="sec-title" style="color:#fff">数字で見る、<br>ごみのはなし。</h2>
 
     <div class="flex flex-col gap-3 mt-8">
-      <div style="background:rgba(0,0,0,0.18);border-radius:16px;padding:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;box-shadow:0 10px 24px rgba(0,0,0,0.28)">
+      <div style="background:rgba(0,0,0,0.18);border-radius:16px;padding:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left">
         <div>
           <div class="font-round" style="font-size:44px;font-weight:900;color:#fff;line-height:1;letter-spacing:-.02em">466<span style="font-size:20px;font-weight:800;margin-left:2px">g</span></div>
           <p style="font-size:14px;color:rgba(255,255,255,0.92);margin-top:8px">1人が1日に出す家庭ごみの量</p>
-          <p style="font-size:12px;font-weight:700;color:#A9E7C9;margin-top:4px">＝ おにぎり 約4個分</p>
+          <p style="font-size:12px;font-weight:700;color:#A9E7C9;margin-top:4px">＝ 文庫本 3冊分の重さ</p>
         </div>
         <svg viewBox="0 0 56 56" width="52" height="52" aria-hidden="true" style="flex-shrink:0">
-          <path d="M28 8 c10 0 20 14 20 26 q0 8 -8 8 h-24 q-8 0 -8 -8 c0 -12 10 -26 20 -26 z" fill="rgba(255,255,255,0.92)"/>
-          <rect x="20" y="30" width="16" height="12" rx="2" fill="#0F3D2B"/>
+          <rect x="9" y="32" width="38" height="9" rx="1.5" fill="rgba(255,255,255,0.92)"/>
+          <rect x="12" y="21" width="32" height="9" rx="1.5" fill="rgba(255,255,255,0.92)"/>
+          <rect x="10" y="10" width="36" height="9" rx="1.5" fill="rgba(255,255,255,0.92)"/>
+          <rect x="9" y="32" width="6" height="9" fill="#0F3D2B"/>
+          <rect x="12" y="21" width="6" height="9" fill="#0F3D2B"/>
+          <rect x="10" y="10" width="6" height="9" fill="#0F3D2B"/>
         </svg>
       </div>
-      <div style="background:rgba(0,0,0,0.18);border-radius:16px;padding:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;box-shadow:0 10px 24px rgba(0,0,0,0.28)">
+      <div style="background:rgba(0,0,0,0.18);border-radius:16px;padding:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left">
         <div>
-          <div class="font-round" style="font-size:44px;font-weight:900;color:#fff;line-height:1;letter-spacing:-.02em">約1.9<span style="font-size:20px;font-weight:800;margin-left:2px">kg</span></div>
+          <div class="font-round" style="font-size:44px;font-weight:900;color:#fff;line-height:1;letter-spacing:-.02em"><span style="font-size:18px;font-weight:800;margin-right:2px">約</span>1.9<span style="font-size:20px;font-weight:800;margin-left:2px">kg</span></div>
           <p style="font-size:14px;color:rgba(255,255,255,0.92);margin-top:8px">4人家族なら、毎日これだけ</p>
           <p style="font-size:12px;font-weight:700;color:#A9E7C9;margin-top:4px">＝ 2Lペットボトル 約1本分の重さ</p>
         </div>
         <svg viewBox="0 0 56 56" width="52" height="52" aria-hidden="true" style="flex-shrink:0">
-          <rect x="24" y="4" width="8" height="7" rx="2" fill="#A9E7C9"/>
-          <path d="M22 11 h12 v4 q7 5 7 12 v17 q0 5 -5 5 h-16 q-5 0 -5 -5 v-17 q0 -7 7 -12 z" fill="rgba(255,255,255,0.92)"/>
+          <rect x="23" y="2" width="10" height="6" rx="2" fill="#A9E7C9"/>
+          <rect x="25" y="8" width="6" height="5" fill="rgba(255,255,255,0.92)"/>
+          <path d="M25 13 h6 q9 6 9 15 v20 q0 4 -4 4 h-16 q-4 0 -4 -4 v-20 q0 -9 9 -15 z" fill="rgba(255,255,255,0.92)"/>
+          <rect x="14" y="36" width="28" height="10" fill="#0F3D2B" opacity="0.85"/>
+          <path d="M16 40 h24 M16 43 h24" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
         </svg>
       </div>
-      <div style="background:rgba(0,0,0,0.18);border-radius:16px;padding:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;box-shadow:0 10px 24px rgba(0,0,0,0.28)">
+      <div style="background:rgba(0,0,0,0.18);border-radius:16px;padding:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left">
         <div>
           <div class="font-round" style="font-size:44px;font-weight:900;color:#fff;line-height:1;letter-spacing:-.02em">6.4<span style="font-size:20px;font-weight:800;margin-left:2px">日</span></div>
           <p style="font-size:14px;color:rgba(255,255,255,0.92);margin-top:8px">日本中の家庭ごみで、東京ドームが満杯に</p>
           <p style="font-size:12px;font-weight:700;color:#A9E7C9;margin-top:4px">＝ 1週間もかからない速さ</p>
         </div>
-        <svg viewBox="0 0 56 56" width="52" height="52" aria-hidden="true" style="flex-shrink:0">
+        <svg viewBox="0 0 84 56" width="76" height="50" aria-hidden="true" style="flex-shrink:0">
           <path d="M7 40 q21 -25 42 0 z" fill="rgba(255,255,255,0.92)"/>
           <rect x="5" y="40" width="46" height="5" rx="2.5" fill="#A9E7C9"/>
+          <path d="M67 6 L70 16 L75 30 L80 50 L54 50 L59 30 L64 16 Z" fill="rgba(255,255,255,0.92)"/>
+          <path d="M67 6 v-6" stroke="rgba(255,255,255,0.92)" stroke-width="2" stroke-linecap="round"/>
+          <rect x="64" y="14" width="6" height="4" fill="#E8512A"/>
+          <rect x="59" y="29" width="16" height="4" fill="#E8512A"/>
+          <rect x="56" y="42" width="22" height="4" fill="#E8512A"/>
         </svg>
       </div>
     </div>
