@@ -18,6 +18,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- 記事コンテンツ -->
+  <url>
+    <loc>https://gomi-nico.jp/school/kaden.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- 法的ページ -->
   <url>
     <loc>https://gomi-nico.jp/about.html</loc>
