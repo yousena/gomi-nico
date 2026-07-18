@@ -69,7 +69,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  text-align:left; cursor:pointer; font-family:inherit; }
   .quiz-choice:disabled { cursor:default; }
   .quiz-correct { background:#00A86B !important; border-color:#00A86B !important; color:#fff !important; }
-  .quiz-wrong   { background:#F0F2F5 !important; border-color:#D9DEDB !important; color:#8890A0 !important; }
+  .quiz-wrong   { background:#F0F2F5 !important; border-color:#D9DEDB !important; color:#6B7280 !important; }
   .quiz-answer  { margin-top:14px; background:#F0FAF5; border-radius:12px; padding:12px 16px; font-size:14px; color:#1C6B4A; line-height:1.7; }
 </style>
 <!-- Material Symbols -->
@@ -188,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="ms" style="font-size:18px">mail</span>
       メールで自治体を追加リクエスト
     </a>
-    <p style="font-size:12px;color:#8890A0;margin-top:8px">タップするとメールアプリが開きます（件名・本文は入力済み）</p>
+    <p style="font-size:12px;color:#6B7280;margin-top:8px">タップするとメールアプリが開きます（件名・本文は入力済み）</p>
 
     <div style="display:flex;align-items:center;justify-content:center;gap:14px 18px;flex-wrap:wrap;margin-top:20px">
       <span style="font-size:14px;color:#636366;display:flex;align-items:center;gap:4px">
@@ -207,7 +207,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <div style="background:#EAF7F0;line-height:0" aria-hidden="true">
-    <svg viewBox="0 0 375 36" preserveAspectRatio="none" style="width:100%;height:36px;display:block">
+    <svg viewBox="0 0 375 36" preserveAspectRatio="none" style="width:100%;height:38px;display:block;margin-bottom:-2px">
       <path d="M0 18 C62 0 125 36 187 18 C250 0 313 36 375 18 L375 36 L0 36 Z" fill="#0F5C40"/>
     </svg>
   </div>
@@ -269,7 +269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <div style="background:#0C6B4A;line-height:0" aria-hidden="true">
-    <svg viewBox="0 0 375 36" preserveAspectRatio="none" style="width:100%;height:36px;display:block">
+    <svg viewBox="0 0 375 36" preserveAspectRatio="none" style="width:100%;height:38px;display:block;margin-bottom:-2px">
       <path d="M0 18 C62 36 125 0 187 18 C250 36 313 0 375 18 L375 36 L0 36 Z" fill="#FBFAF4"/>
     </svg>
   </div>
@@ -291,7 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="icon-tile mx-auto" style="width:48px;height:48px;background:rgba(75,114,212,0.12)">
           <span class="ms" style="font-size:26px;color:#4B72D4">search</span>
         </div>
-        <p class="text-[13px] font-extrabold text-[#1C1C1E] mt-3 leading-snug">「これ何ごみ？」<br>を即検索</p>
+        <p class="text-[13px] font-extrabold text-[#1C1C1E] mt-3 leading-snug">ごみの名前で<br>すぐ検索</p>
       </div>
       <div class="bg-white shadow-sm rounded-2xl px-2 py-5" style="text-align:center">
         <div class="icon-tile mx-auto" style="width:48px;height:48px;background:rgba(232,81,42,0.12)">
@@ -309,18 +309,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="sec-title">使い方は、3ステップ。</h2>
     </div>
 
-    <div class="grid grid-cols-3 gap-3">
-      <div class="bg-white rounded-2xl px-2 py-4 shadow-sm" style="text-align:center">
-        <svg viewBox="0 0 96 72" style="width:100%;max-width:110px;height:auto" aria-hidden="true">
+    <div class="flex items-center gap-1">
+      <div class="flex-1 min-w-0 bg-white rounded-2xl px-2 py-4 shadow-sm" style="text-align:center">
+        <svg viewBox="0 0 96 72" style="width:100%;max-width:110px;height:auto;margin:0 auto;display:block" aria-hidden="true">
           <rect x="10" y="16" width="76" height="46" rx="10" fill="#EAF7F0"/>
           <path d="M10 36 l25 -8 26 8 25 -8" stroke="#BFE6D2" stroke-width="3" fill="none"/>
           <path d="M48 18 c-8 0 -14 6 -14 13 c0 10 14 22 14 22 c0 0 14 -12 14 -22 c0 -7 -6 -13 -14 -13 z" fill="#00A86B"/>
           <circle cx="48" cy="32" r="5" fill="#fff"/>
         </svg>
-        <p class="text-[14px] font-extrabold text-[#1C1C1E] mt-2"><span style="color:#00A86B;margin-right:4px">1</span>地域を選ぶ</p>
+        <p class="text-[14px] font-extrabold text-[#1C1C1E] mt-2"><span style="color:#00A86B;margin-right:4px">1</span>地域選択</p>
       </div>
-      <div class="bg-white rounded-2xl px-2 py-4 shadow-sm" style="text-align:center">
-        <svg viewBox="0 0 96 72" style="width:100%;max-width:110px;height:auto" aria-hidden="true">
+      <div aria-hidden="true" style="width:28px;height:28px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin:0 -10px;position:relative;z-index:2">
+        <span class="ms" style="font-size:15px;color:#00A86B">arrow_forward_ios</span>
+      </div>
+      <div class="flex-1 min-w-0 bg-white rounded-2xl px-2 py-4 shadow-sm" style="text-align:center">
+        <svg viewBox="0 0 96 72" style="width:100%;max-width:110px;height:auto;margin:0 auto;display:block" aria-hidden="true">
           <rect x="31" y="4" width="34" height="64" rx="8" fill="#fff" stroke="#BFE6D2" stroke-width="3"/>
           <rect x="38" y="12" width="20" height="6" rx="3" fill="#00A86B"/>
           <g fill="#D9DEDB">
@@ -333,8 +336,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </svg>
         <p class="text-[14px] font-extrabold text-[#1C1C1E] mt-2"><span style="color:#00A86B;margin-right:4px">2</span>確認する</p>
       </div>
-      <div class="bg-white rounded-2xl px-2 py-4 shadow-sm" style="text-align:center">
-        <svg viewBox="0 0 96 72" style="width:100%;max-width:110px;height:auto" aria-hidden="true">
+      <div aria-hidden="true" style="width:28px;height:28px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin:0 -10px;position:relative;z-index:2">
+        <span class="ms" style="font-size:15px;color:#00A86B">arrow_forward_ios</span>
+      </div>
+      <div class="flex-1 min-w-0 bg-white rounded-2xl px-2 py-4 shadow-sm" style="text-align:center">
+        <svg viewBox="0 0 96 72" style="width:100%;max-width:110px;height:auto;margin:0 auto;display:block" aria-hidden="true">
           <ellipse cx="48" cy="63" rx="34" ry="5" fill="#D8EFE3"/>
           <g transform="translate(30,10)">
             <path d="M10 12 Q-4 26 -4 42 Q-4 58 18 58 Q40 58 40 42 Q40 26 26 12 Z" fill="#FF8A5C"/>
@@ -366,7 +372,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="ms" style="font-size:24px;color:#00A86B">location_city</span>
           <div>
             <div style="font-size:19px;font-weight:900;color:#1C1C1E">志木市</div>
-            <div style="font-size:14px;color:#8890A0">埼玉県</div>
+            <div style="font-size:14px;color:#6B7280">埼玉県</div>
           </div>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:5px">
@@ -396,11 +402,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- リクエスト -->
-    <div class="mt-5 bg-white shadow-sm rounded-2xl px-5 py-4 flex items-center justify-between gap-3">
-      <div>
-        <div class="text-[15px] font-bold text-[#1C1C1E]">お住まいの街がまだない方へ</div>
-        <div class="text-[13px] text-[#8890A0] mt-[2px]">タップするとメールアプリが開きます</div>
-      </div>
+    <div class="mt-5 bg-white shadow-sm rounded-2xl px-5 py-5" style="text-align:center">
+      <div class="text-[15px] font-bold text-[#1C1C1E] mb-1">お住まいの街がまだない方へ</div>
+      <div class="text-[13px] text-[#6B7280] mb-4">タップするとメールアプリが開きます</div>
       <a href="mailto:contact@gomi-nico.jp?subject=%E8%87%AA%E6%B2%BB%E4%BD%93%E8%BF%BD%E5%8A%A0%E3%81%AE%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88&amp;body=%E3%81%94%E3%81%BF%E3%83%8B%E3%82%B3%20%E3%81%94%E6%8B%85%E5%BD%93%E8%80%85%E3%81%95%E3%81%BE%0A%0A%E3%80%8C%E3%81%94%E3%81%BF%E3%83%8B%E3%82%B3%E3%80%8D%E3%81%B8%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%82%92%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E8%87%AA%E6%B2%BB%E4%BD%93%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%0A%0A%E2%96%A0%20%E8%BF%BD%E5%8A%A0%E3%82%92%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E8%87%AA%E6%B2%BB%E4%BD%93%EF%BC%9A%E3%80%87%E3%80%87%E7%9C%8C%E3%80%87%E3%80%87%E5%B8%82%0A%E2%96%A0%20%E3%81%94%E6%84%8F%E8%A6%8B%E3%83%BB%E3%81%94%E8%A6%81%E6%9C%9B%EF%BC%88%E4%BB%BB%E6%84%8F%EF%BC%89%EF%BC%9A%0A%0A"
          class="bg-[#00A86B] text-white text-[14px] font-bold px-5 rounded-full whitespace-nowrap inline-flex items-center gap-1" style="height:44px">
         <span class="ms" style="font-size:16px">mail</span>メールでリクエスト
@@ -422,37 +426,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="bg-white rounded-2xl px-4 py-5 shadow-sm" style="text-align:center">
         <img src="/icons/moeru.svg" alt="" width="60" height="60" loading="lazy" class="mx-auto mb-3" style="border-radius:14px">
         <p class="text-[17px] font-extrabold mb-1" style="color:#E8512A">可燃ごみ</p>
-        <p class="text-[13px] text-[#636366] leading-relaxed">生ごみは水切りが鉄則。</p>
+        <p class="text-[13px] text-[#636366] leading-relaxed">生ごみは<br>水切りが鉄則。</p>
       </div>
 
       <!-- 不燃ごみ -->
       <div class="bg-white rounded-2xl px-4 py-5 shadow-sm" style="text-align:center">
         <img src="/icons/moenai.svg" alt="" width="60" height="60" loading="lazy" class="mx-auto mb-3" style="border-radius:14px">
         <p class="text-[17px] font-extrabold mb-1" style="color:#4B72D4">不燃ごみ</p>
-        <p class="text-[13px] text-[#636366] leading-relaxed">金属・ガラス・陶器など。</p>
+        <p class="text-[13px] text-[#636366] leading-relaxed">金属・ガラス・<br>陶器など。</p>
       </div>
 
       <!-- 資源ごみ -->
       <div class="bg-white rounded-2xl px-4 py-5 shadow-sm" style="text-align:center">
         <img src="/icons/recycle.svg" alt="" width="60" height="60" loading="lazy" class="mx-auto mb-3" style="border-radius:14px">
         <p class="text-[17px] font-extrabold mb-1" style="color:#00A86B">資源ごみ</p>
-        <p class="text-[13px] text-[#636366] leading-relaxed">すすいで、つぶして。</p>
+        <p class="text-[13px] text-[#636366] leading-relaxed">すすいで、<br>つぶして。</p>
       </div>
 
       <!-- 粗大ごみ -->
       <div class="bg-white rounded-2xl px-4 py-5 shadow-sm" style="text-align:center">
         <img src="/icons/sodai.svg" alt="" width="60" height="60" loading="lazy" class="mx-auto mb-3" style="border-radius:14px">
         <p class="text-[17px] font-extrabold mb-1" style="color:#6878A0">粗大ごみ</p>
-        <p class="text-[13px] text-[#636366] leading-relaxed">事前の申込が必要。</p>
+        <p class="text-[13px] text-[#636366] leading-relaxed">事前の申込が<br>必要。</p>
       </div>
     </div>
 
     <!-- 9割ルール -->
-    <div class="mt-5 bg-white rounded-2xl px-5 py-4 shadow-sm" style="border-left:4px solid #00A86B">
-      <div class="text-[15px] font-bold text-[#1C6B4A] mb-1">💡 知っておきたい「9割ルール」</div>
-      <p class="text-[14px] text-[#636366] leading-relaxed">
-        素材の9割が可燃なら可燃ごみでOK、という考え方。ただし最終判断はお住まいの自治体ルールで。
-      </p>
+    <div class="mt-5 bg-white rounded-2xl px-5 py-4 shadow-sm flex items-center gap-4">
+      <svg viewBox="0 0 56 56" width="48" height="48" aria-hidden="true" style="flex-shrink:0">
+        <circle cx="28" cy="28" r="20" fill="none" stroke="#EAF7F0" stroke-width="7"/>
+        <circle cx="28" cy="28" r="20" fill="none" stroke="#00A86B" stroke-width="7" stroke-linecap="round"
+                stroke-dasharray="113.1 12.6" transform="rotate(-90 28 28)"/>
+        <text x="28" y="32" text-anchor="middle" font-size="13" font-weight="900" fill="#0F5C40" font-family="'Zen Kaku Gothic New',sans-serif">9割</text>
+      </svg>
+      <div>
+        <p class="text-[14px] font-extrabold text-[#1C1C1E] mb-1">知っておきたい「9割ルール」</p>
+        <p class="text-[13px] text-[#636366] leading-relaxed">素材の9割が可燃なら、可燃ごみでOK。最終判断はお住まいの自治体ルールで。</p>
+      </div>
     </div>
   </section>
 
@@ -538,12 +548,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <div style="background:#E8F1E6;line-height:0" aria-hidden="true">
-    <svg viewBox="0 0 375 36" preserveAspectRatio="none" style="width:100%;height:36px;display:block">
-      <path d="M0 18 C62 0 125 36 187 18 C250 0 313 36 375 18 L375 36 L0 36 Z" fill="#FDF0E4"/>
+    <svg viewBox="0 0 375 36" preserveAspectRatio="none" style="width:100%;height:38px;display:block;margin-bottom:-2px">
+      <path d="M0 18 C62 0 125 36 187 18 C250 0 313 36 375 18 L375 36 L0 36 Z" fill="#F9DFBC"/>
     </svg>
   </div>
   <!-- ══════════════ 混ぜると危ないもの ══════════════ -->
-  <section class="sec-tight" style="background:#FDF0E4;padding-top:40px">
+  <section class="sec-tight" style="background:#F9DFBC;padding-top:40px;border-top:3px solid #D96A00">
     <div style="text-align:center;margin-bottom:28px">
       <p class="eyebrow" style="color:#D96A00">DANGER</p>
       <h2 class="sec-title">混ぜると、危ない。</h2>
@@ -568,8 +578,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <div style="background:#FDF0E4;line-height:0" aria-hidden="true">
-    <svg viewBox="0 0 375 36" preserveAspectRatio="none" style="width:100%;height:36px;display:block">
+  <div style="background:#F9DFBC;line-height:0" aria-hidden="true">
+    <svg viewBox="0 0 375 36" preserveAspectRatio="none" style="width:100%;height:38px;display:block;margin-bottom:-2px">
       <path d="M0 18 C62 36 125 0 187 18 C250 36 313 0 375 18 L375 36 L0 36 Z" fill="#E8F1E6"/>
     </svg>
   </div>
@@ -615,7 +625,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <p style="font-size:12px;color:#8890A0;margin-top:16px;text-align:center">※答えは埼玉県志木市の例です。分別ルールは自治体によって異なります。</p>
+    <p style="font-size:12px;color:#6B7280;margin-top:16px;text-align:center">※答えは埼玉県志木市の例です。分別ルールは自治体によって異なります。</p>
   </section>
 
   <!-- ══════════════ FAQ ══════════════ -->
@@ -685,18 +695,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div style="text-align:center;margin-bottom:32px">
       <p class="eyebrow">LEARN MORE</p>
       <h2 class="sec-title">もっと知りたい？<br>ごみのこと。</h2>
-      <p class="sec-lead">分別の基本は上のBASICSで紹介済み。<br>ここでは、もう一歩踏み込んだギモンにお答えします。</p>
+      <p class="sec-lead">なんとなく気になるごみのこと。<br>もう一歩踏み込んで知りたい方へ。</p>
     </div>
 
-    <!-- なぜ分別するの？誰のため？ -->
-    <div class="mb-5">
+    <!-- なぜ分別するの？どこへ行くの？ -->
+    <div class="mb-7">
       <p class="text-[14px] font-bold mb-2" style="color:#00A86B;letter-spacing:.04em">
-        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>なぜ分別するの？誰のため？
+        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>なぜ分別するの？どこへ行くの？
       </p>
       <div class="flex flex-col gap-2">
         <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
           <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
-            <span class="text-[16px] font-bold text-[#1C1C1E]">分別、正直めんどう…なぜ必要なの？</span>
+            <span class="text-[16px] font-bold text-[#1C1C1E]">なぜごみの分別が必要なの？</span>
             <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
           </summary>
           <div class="px-5 pb-5">
@@ -710,11 +720,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </details>
         <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
           <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
-            <span class="text-[16px] font-bold text-[#1C1C1E]">分けると、結局だれが助かるの？</span>
+            <span class="text-[16px] font-bold text-[#1C1C1E]">ごみを分別すると、だれが助かるの？</span>
             <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
           </summary>
           <div class="px-5 pb-5">
-            <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">収集してくれる作業員さん、処理費用を払う自治体、そしてこれから街に住む子どもたち。めぐりめぐって、自分の暮らしにも返ってきます。</p>
+            <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">まずは収集巡回してくれる作業員さん、処理費用を払う自治体、街に住む自分達、そして子どもたちの未来の問題。めぐりめぐって、すべての人の暮らしに返ってきます。</p>
             <a href="https://www.jcpra.or.jp/law/wakaru/" target="_blank" rel="noopener"
                class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
               詳しく読む → JCPRA
@@ -724,7 +734,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </details>
         <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
           <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
-            <span class="text-[16px] font-bold text-[#1C1C1E]">分けたごみ、本当にリサイクルされてるの？</span>
+            <span class="text-[16px] font-bold text-[#1C1C1E]">分けたごみ、どうリサイクルされてるの？</span>
             <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
           </summary>
           <div class="px-5 pb-5">
@@ -736,123 +746,67 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
           </div>
         </details>
+        <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
+          <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
+            <span class="text-[16px] font-bold text-[#1C1C1E]">分別したごみは、何に生まれ変わるの？</span>
+            <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
+          </summary>
+          <div class="px-5 pb-5">
+            <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">収集後、素材ごとの施設で選別・加工され、新しい容器や製品の原料として生まれ変わります。</p>
+            <a href="https://www.jcpra.or.jp/law/wakaru/" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
+              詳しく読む → JCPRA「リサイクルの流れ」
+              <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+            </a>
+          </div>
+        </details>
       </div>
     </div>
 
-    <!-- 自治体ごとに違うのはなぜ？ -->
-    <div class="mb-5">
+    <!-- 出し方・ルールのギモン -->
+    <div class="mb-7">
       <p class="text-[14px] font-bold mb-2" style="color:#00A86B;letter-spacing:.04em">
-        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>自治体ごとに違うのはなぜ？
-      </p>
-      <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
-        <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
-          <span class="text-[16px] font-bold text-[#1C1C1E]">引っ越したらルールが変わった…なんで？</span>
-          <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
-        </summary>
-        <div class="px-5 pb-5">
-          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">ごみの処理は法律で市区町村の仕事と決められています。焼却施設の性能や財政事情が自治体ごとに違うため、分け方も地域によって変わるんです。</p>
-          <a href="https://www.env.go.jp/recycle/waste/laws.html" target="_blank" rel="noopener"
-             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
-            詳しく読む → 環境省「廃棄物処理法」
-            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
-          </a>
-        </div>
-      </details>
-    </div>
-
-    <!-- ごみ出しのマナー -->
-    <div class="mb-5">
-      <p class="text-[14px] font-bold mb-2" style="color:#00A86B;letter-spacing:.04em">
-        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>ごみ出しのマナー
-      </p>
-      <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
-        <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
-          <span class="text-[16px] font-bold text-[#1C1C1E]">前の晩に出しておいても平気？</span>
-          <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
-        </summary>
-        <div class="px-5 pb-5">
-          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">できれば収集日の朝、決められた時間までに。前夜に出すと、カラスに荒らされたり、他の人のごみと混ざってトラブルの原因になったりします。</p>
-          <a href="https://www.env.go.jp/guide/info/ecojin/action/20240221.html" target="_blank" rel="noopener"
-             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
-            関連情報 → 環境省「ごみ出しのコツ」
-            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
-          </a>
-        </div>
-      </details>
-    </div>
-
-    <!-- マーク・表示 -->
-    <div class="mb-5">
-      <p class="text-[14px] font-bold mb-2" style="color:#00A86B;letter-spacing:.04em">
-        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>マーク・表示（読み方）
-      </p>
-      <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
-        <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
-          <span class="text-[16px] font-bold text-[#1C1C1E]">このマーク、何の意味？</span>
-          <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
-        </summary>
-        <div class="px-5 pb-5">
-          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">容器や包装についている、素材を示すリサイクル識別マーク。迷ったときの分別のヒントになります。</p>
-          <a href="https://www.jcpra.or.jp/law/display.html" target="_blank" rel="noopener"
-             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
-            詳しく読む → JCPRA
-            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
-          </a>
-        </div>
-      </details>
-    </div>
-
-    <!-- ごみのゆくえ -->
-    <div class="mb-5">
-      <p class="text-[14px] font-bold mb-2" style="color:#00A86B;letter-spacing:.04em">
-        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>ごみのゆくえ（処理のしくみ）
-      </p>
-      <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
-        <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
-          <span class="text-[16px] font-bold text-[#1C1C1E]">分別したごみは、何に生まれ変わるの？</span>
-          <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
-        </summary>
-        <div class="px-5 pb-5">
-          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">収集後、素材ごとの施設で選別・加工され、新しい容器や製品の原料として生まれ変わります。</p>
-          <a href="https://www.jcpra.or.jp/law/wakaru/" target="_blank" rel="noopener"
-             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
-            詳しく読む → JCPRA「リサイクルの流れ」
-            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
-          </a>
-        </div>
-      </details>
-    </div>
-
-    <!-- 品目別・困ったとき -->
-    <div class="mb-5">
-      <p class="text-[14px] font-bold mb-2" style="color:#00A86B;letter-spacing:.04em">
-        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>品目別・困ったとき
+        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>出し方・ルールのギモン
       </p>
       <div class="flex flex-col gap-2">
         <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
           <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
-            <span class="text-[16px] font-bold text-[#1C1C1E]">テレビ・冷蔵庫などの家電の捨て方は？</span>
+            <span class="text-[16px] font-bold text-[#1C1C1E]">自治体ごとにごみの分別ルールが違うのはなぜ？</span>
             <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
           </summary>
           <div class="px-5 pb-5">
-            <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">家電リサイクル法により、小売店・市区町村窓口への持ち込みで有料回収。</p>
-            <a href="https://www.meti.go.jp/policy/it_policy/kaden/index.html" target="_blank" rel="noopener"
+            <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">ごみの処理は法律で市区町村の仕事と決められています。焼却施設の性能や財政事情が自治体ごとに違うため、分け方も地域によって変わるんです。</p>
+            <a href="https://www.env.go.jp/recycle/waste/laws.html" target="_blank" rel="noopener"
                class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
-              詳しく読む → 経済産業省「家電リサイクル」
+              詳しく読む → 環境省「廃棄物処理法」
               <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
             </a>
           </div>
         </details>
         <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
           <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
-            <span class="text-[16px] font-bold text-[#1C1C1E]">消火器やピアノ…自治体で拾ってもらえないごみもあるの？</span>
+            <span class="text-[16px] font-bold text-[#1C1C1E]">前の晩に出しておいても平気？</span>
             <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
           </summary>
           <div class="px-5 pb-5">
-            <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">タイヤ・消火器・ピアノ・バイクなど、処理が難しいものは回収対象外のことも。購入したお店や、自治体が案内する専門業者に相談しましょう。</p>
-            <a href="https://www.env.go.jp/hourei/11/000258.html" target="_blank" rel="noopener"
+            <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">できれば収集日の朝、決められた時間までに。前夜に出すと、カラスに荒らされたり、他の人のごみと混ざってトラブルの原因になったりします。</p>
+            <a href="https://www.env.go.jp/guide/info/ecojin/action/20240221.html" target="_blank" rel="noopener"
                class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
-              詳しく読む → 環境省「処理が困難な廃棄物対策」
+              関連情報 → 環境省「ごみ出しのコツ」
+              <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+            </a>
+          </div>
+        </details>
+        <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
+          <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
+            <span class="text-[16px] font-bold text-[#1C1C1E]">このマーク、何の意味？</span>
+            <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
+          </summary>
+          <div class="px-5 pb-5">
+            <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">容器や包装についている、素材を示すリサイクル識別マーク。迷ったときの分別のヒントになります。</p>
+            <a href="https://www.jcpra.or.jp/law/display.html" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
+              詳しく読む → JCPRA
               <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
             </a>
           </div>
@@ -860,46 +814,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <!-- 食品ロス -->
-    <div class="mb-5">
-      <p class="text-[14px] font-bold mb-2" style="color:#00A86B;letter-spacing:.04em">
-        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>食品ロス
-      </p>
-      <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
-        <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
-          <span class="text-[16px] font-bold text-[#1C1C1E]">食品ロスってなに？</span>
-          <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
-        </summary>
-        <div class="px-5 pb-5">
-          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">まだ食べられるのに捨てられる食品のこと。日本では年間約461万トン（2024年度推計）。</p>
-          <a href="https://www.maff.go.jp/j/shokusan/recycle/syoku_loss/161227_4.html" target="_blank" rel="noopener"
-             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
-            詳しく読む → 農林水産省「食品ロスとは」
-            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
-          </a>
-        </div>
-      </details>
-    </div>
-
-    <!-- 3R・取り組み -->
+    <!-- もっと知っておきたいこと -->
     <div>
       <p class="text-[14px] font-bold mb-2" style="color:#00A86B;letter-spacing:.04em">
-        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>3R・取り組み
+        <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#00A86B;margin-right:5px;vertical-align:middle"></span>もっと知っておきたいこと
       </p>
-      <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
-        <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
-          <span class="text-[16px] font-bold text-[#1C1C1E]">3Rってなに？（Reduce・Reuse・Recycle）</span>
-          <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
-        </summary>
-        <div class="px-5 pb-5">
-          <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">まず「減らす」、次に「繰り返し使う」、それから「資源にする」。</p>
-          <a href="https://kids.yahoo.co.jp/study/integrated/environment/env007.html" target="_blank" rel="noopener"
-             class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
-            詳しく読む → Yahoo!きっず「3Rとは」
-            <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
-          </a>
-        </div>
-      </details>
+      <div class="flex flex-col gap-2">
+        <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
+          <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
+            <span class="text-[16px] font-bold text-[#1C1C1E]">食品ロスってなに？</span>
+            <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
+          </summary>
+          <div class="px-5 pb-5">
+            <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">まだ食べられるのに捨てられる食品のこと。日本では年間約461万トン（2024年度推計）。</p>
+            <a href="https://www.maff.go.jp/j/shokusan/recycle/syoku_loss/161227_4.html" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
+              詳しく読む → 農林水産省「食品ロスとは」
+              <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+            </a>
+          </div>
+        </details>
+        <details class="bg-white shadow-sm rounded-2xl overflow-hidden">
+          <summary class="px-5 py-4 flex items-center justify-between cursor-pointer list-none gap-3" style="min-height:56px">
+            <span class="text-[16px] font-bold text-[#1C1C1E]">3Rってなに？（Reduce・Reuse・Recycle）</span>
+            <span class="ms-o" style="font-size:20px;color:#AEAEB2;flex-shrink:0">expand_more</span>
+          </summary>
+          <div class="px-5 pb-5">
+            <p class="text-[14px] text-[#636366] leading-relaxed mb-[6px]">まず「減らす」、次に「繰り返し使う」、それから「資源にする」。</p>
+            <a href="https://kids.yahoo.co.jp/study/integrated/environment/env007.html" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-[3px] text-[13px] font-bold" style="color:#00A86B;min-height:32px">
+              詳しく読む → Yahoo!きっず「3Rとは」
+              <span class="ms-o" style="font-size:12px;color:#AEAEB2">open_in_new</span>
+            </a>
+          </div>
+        </details>
+      </div>
     </div>
   </section>
 
