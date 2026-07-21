@@ -186,7 +186,7 @@ function showError(msg) {
       <div class="mb-4"><span class="ms-nav" style="font-size:48px;color:#E07800">warning</span></div>
       <p class="font-bold text-[#1C1C1E] mb-2">データを読み込めませんでした</p>
       <p class="text-xs text-[#636366]">${msg}</p>
-      <p class="text-[11px] text-[#AEAEB2] mt-2 leading-relaxed">
+      <p class="text-[11px] text-[#6B7280] mt-2 leading-relaxed">
         ローカルサーバーが必要です:<br>
         <code class="bg-black/[0.06] px-[6px] py-[2px] rounded">Live Server で開いてください</code>
       </p>
@@ -303,6 +303,7 @@ function applyMunicipalityMeta() {
     if (DATA.cityLogo) {
       logoEl.src = DATA.cityLogo;
       logoEl.alt = city + ' ロゴ';
+      logoEl.removeAttribute('aria-hidden');
       logoEl.classList.remove('is-hidden');
     } else {
       logoEl.classList.add('is-hidden');
@@ -324,7 +325,7 @@ function applyAdType() {
     return;
   }
   if (type === 'official') {
-    if (anchor) anchor.innerHTML = `<div class="text-[10px] text-[#AEAEB2]">${DATA.name} 公式情報</div>`;
+    if (anchor) anchor.innerHTML = `<div class="text-[10px] text-[#6B7280]">${DATA.name} 公式情報</div>`;
   }
 }
 
@@ -351,7 +352,7 @@ function handleMenuBackdrop(e) {
 function buildAreaSheet() {
   const scroll = document.getElementById('sheet-scroll');
   scroll.innerHTML = DATA.area_groups.map(g => `
-    <p class="text-[10px] font-extrabold text-[#AEAEB2] tracking-[0.12em] uppercase pt-4 px-2 pb-2">${g.label}</p>
+    <p class="text-[10px] font-extrabold text-[#6B7280] tracking-[0.12em] uppercase pt-4 px-2 pb-2">${g.label}</p>
     ${g.keys.map(k => {
       const area = DATA.areas[k];
       if (!area) return '';
@@ -363,7 +364,7 @@ function buildAreaSheet() {
                 data-key="${k}" onclick="selectArea('${k}')" type="button">
           <span>
             ${area.name}
-            ${area.note ? `<span class="text-xs text-[#AEAEB2] block mt-[1px] font-normal">${area.note}</span>` : ''}
+            ${area.note ? `<span class="text-xs text-[#6B7280] block mt-[1px] font-normal">${area.note}</span>` : ''}
           </span>
           <span class="ms-nav area-check-icon" aria-hidden="true">check_circle</span>
         </button>`;
@@ -554,7 +555,7 @@ function renderTodayStrip() {
 
   const typesEl = document.getElementById('today-strip-types');
   if (!areaKey) {
-    typesEl.innerHTML = `<span class="text-sm text-[#AEAEB2]">地区を選択してください</span>`;
+    typesEl.innerHTML = `<span class="text-sm text-[#6B7280]">地区を選択してください</span>`;
     return;
   }
 
@@ -573,7 +574,7 @@ function renderTodayStrip() {
       typesEl.innerHTML = `
         <div style="display:flex;flex-direction:column;gap:2px">
           <span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:#00A86B;vertical-align:-3px">check_circle</span>今日は収集なし</span>
-          <span class="text-[12px] text-[#AEAEB2]">次の収集: ${diffLabel}（${nextTypes.map(t => t.label).join('・')}）</span>
+          <span class="text-[12px] text-[#6B7280]">次の収集: ${diffLabel}（${nextTypes.map(t => t.label).join('・')}）</span>
         </div>`;
     } else {
       typesEl.innerHTML = `<span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:#00A86B;vertical-align:-3px">check_circle</span>今日は収集なし</span>`;
@@ -644,7 +645,7 @@ function buildDayDetailHTML(areaKey, date) {
     return `<div class="text-center py-10 px-6">
       <span class="text-[48px] block mb-3">🎍</span>
       <p class="text-base font-bold text-[#636366]">年末年始休止</p>
-      <p class="text-xs text-[#AEAEB2] mt-1">${DATA.collection_settings.yearend_ranges
+      <p class="text-xs text-[#6B7280] mt-1">${DATA.collection_settings.yearend_ranges
         .map(r => `${r.month === 11 ? 12 : 1}/${r.days.join('・')}`).join('〜')}は収集お休みです</p>
     </div>`;
   }
@@ -843,7 +844,7 @@ function renderSearchIndex() {
     // 行見出し（白背景・ブランドカラーテキスト）
     html += '<div style="padding:0 16px;height:54px;display:flex;align-items:center;gap:8px">' +
       '<span style="font-size:16px;font-weight:800;color:#00A86B">' + rowLabel + '</span>' +
-      '<span style="font-size:12px;color:#AEAEB2">' + items.length + '件</span>' +
+      '<span style="font-size:12px;color:#6B7280">' + items.length + '件</span>' +
       '</div>';
 
     // アイテム一覧
@@ -858,7 +859,7 @@ function renderSearchIndex() {
         'onclick="openItemDetail(\'' + safe + '\')">' +
         '<span style="flex:1;font-size:16px;font-weight:400;color:#1C1C1E">' + item.name + '</span>' +
         '<span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:4px;flex-shrink:0;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + '">' + catIcon(item.category, st.img ? 28 : 18) + '</span>' +
-        '<span class="ms-nav" style="color:#C7C7CC;font-size:20px;margin-left:2px">chevron_right</span>' +
+        '<span class="ms-nav" style="color:#6B7280;font-size:20px;margin-left:2px">chevron_right</span>' +
         '</button>';
     });
 
@@ -914,7 +915,7 @@ function onSearch(query) {
 
   if (hits.length === 0) {
     trackNoResult(q);
-    bodyEl.innerHTML = '<div style="text-align:center;padding:40px 16px"><span style="font-size:36px;display:block;margin-bottom:12px">🤔</span><p style="font-size:14px;font-weight:700;color:#636366">「' + q + '」は見つかりませんでした</p><p style="font-size:12px;color:#AEAEB2;margin-top:8px">市の公式サイトでご確認ください</p></div>';
+    bodyEl.innerHTML = '<div style="text-align:center;padding:40px 16px"><span style="font-size:36px;display:block;margin-bottom:12px">🤔</span><p style="font-size:14px;font-weight:700;color:#636366">「' + q + '」は見つかりませんでした</p><p style="font-size:12px;color:#6B7280;margin-top:8px">市の公式サイトでご確認ください</p></div>';
     return;
   }
 
@@ -934,7 +935,7 @@ function renderSearchItemHtml(item) {
     '<div style="display:flex;align-items:center;gap:8px">' +
     '<p style="font-size:16px;font-weight:700;color:#1C1C1E;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + item.name + '</p>' +
     '<span style="display:inline-flex;align-items:center;padding:3px 9px;border-radius:999px;font-size:10px;font-weight:800;white-space:nowrap;flex-shrink:0;background:' + st.iconBg + ';color:' + st.fg + ';border:1.5px solid ' + st.fg + '33">' + cat + '</span>' +
-    '<span class="ms-nav" style="color:#C7C7CC;font-size:18px;flex-shrink:0">chevron_right</span></div>' +
+    '<span class="ms-nav" style="color:#6B7280;font-size:18px;flex-shrink:0">chevron_right</span></div>' +
     (item.note ? '<p style="font-size:12px;color:#636366;margin-top:5px;line-height:1.5">※ ' + item.note + '</p>' : '') +
     '</button>';
 }
@@ -1063,8 +1064,8 @@ function renderGuide() {
       '<div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">' +
       '<div style="width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + ';flex-shrink:0">' + catIcon(cfg.key, st.img ? 44 : 24) + '</div>' +
       '<div style="flex:1"><p style="font-size:16px;font-weight:800;color:' + st.fg + '">' + (cat.label || cfg.title) + '</p></div>' +
-      '<span class="ms-nav" style="color:#C7C7CC;font-size:20px">chevron_right</span></div>' +
-      (cat.how  ? '<p style="font-size:13px;color:#1C1C1E;line-height:1.6;margin-bottom:4px"><span class="ms-nav" style="font-size:15px;vertical-align:-3px;color:#AEAEB2">brand_awareness</span> ' + cat.how  + '</p>' : '') +
+      '<span class="ms-nav" style="color:#6B7280;font-size:20px">chevron_right</span></div>' +
+      (cat.how  ? '<p style="font-size:13px;color:#1C1C1E;line-height:1.6;margin-bottom:4px"><span class="ms-nav" style="font-size:15px;vertical-align:-3px;color:#6B7280">brand_awareness</span> ' + cat.how  + '</p>' : '') +
       (cat.note ? '<p style="font-size:13px;color:#636366;line-height:1.6">※ ' + cat.note + '</p>' : '') +
       '</button>';
   }).join('');
@@ -1122,7 +1123,7 @@ function renderContact() {
     '<p style="font-size:11px;font-weight:700;color:#8890A0;margin-bottom:4px">サイトの誤情報・不具合のご報告</p>' +
     '<p style="font-size:12px;color:#1C1C1E;line-height:1.7;margin-bottom:4px">サイト運営者へお知らせください。</p>' +
     '<a href="mailto:contact@gomi-nico.jp" style="font-size:13px;color:#00A86B;text-decoration:underline">contact@gomi-nico.jp</a>' +
-    '<p style="font-size:11px;color:#AEAEB2;margin-top:4px">※返信にお時間をいただく場合があります</p>' +
+    '<p style="font-size:11px;color:#6B7280;margin-top:4px">※返信にお時間をいただく場合があります</p>' +
     '</div>' +
 
     // 免責事項
@@ -1144,7 +1145,7 @@ function renderAffiliate() {
     return '<a href="' + item.url + '" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-4 px-3 bg-black/[0.025] rounded-[20px] no-underline text-[#1C1C1E] active:scale-[0.97] transition-transform">' +
       '<span class="text-[28px]">' + item.icon + '</span>' +
       '<span class="text-xs font-extrabold text-center">' + item.name + '</span>' +
-      '<span class="text-[10px] text-[#AEAEB2]">' + (item.sub || '楽天で探す →') + '</span></a>';
+      '<span class="text-[10px] text-[#6B7280]">' + (item.sub || '楽天で探す →') + '</span></a>';
   }).join('');
 }
 
@@ -1186,7 +1187,7 @@ function renderNotice() {
         '<span class="ms-nav" style="font-size:15px">open_in_new</span></a>'
       : '';
     return '<div class="px-6 py-5 ' + bc + '">' +
-      '<p class="text-[12px] text-[#AEAEB2] mb-2">' + (n.date || '') + '</p>' +
+      '<p class="text-[12px] text-[#6B7280] mb-2">' + (n.date || '') + '</p>' +
       '<p class="text-[16px] font-extrabold text-[#1C1C1E] mb-2 leading-snug">' + n.title + '</p>' +
       '<p class="text-[16px] text-[#636366] leading-[1.5]">' + n.body + '</p>' +
       link + '</div>';
@@ -1213,7 +1214,7 @@ function openLanguageSheet() {
         '<span style="font-size:24px">' + lang.flag + '</span>' +
         '<span style="flex:1;font-size:16px;font-weight:' + (active ? 800 : 500) + ';' +
         'color:' + (active ? '#00A86B' : '#1C1C1E') + '">' + lang.label + '</span>' +
-        (active ? '<span style="font-size:18px;color:#00A86B;font-weight:800">✓</span>' : '<span class="ms-nav" style="font-size:20px;color:#C7C7CC">chevron_right</span>') +
+        (active ? '<span style="font-size:18px;color:#00A86B;font-weight:800">✓</span>' : '<span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>') +
         '</button>';
     }).join('');
     // イベント委任でクリックを処理
@@ -1331,7 +1332,7 @@ function renderRules() {
       ? '<button onclick="installA2hs()" style="margin-top:12px;padding:9px 18px;background:#00A86B;color:#fff;border:none;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">ホーム画面に追加する</button>'
       : isIOS
         ? '<p style="font-size:12px;color:#636366;margin-top:10px;line-height:1.7">画面下の <strong>共有ボタン（↑）</strong> をタップし、「<strong>ホーム画面に追加</strong>」を選んでください</p>'
-        : '<p style="font-size:12px;color:#AEAEB2;margin-top:10px">お使いのブラウザで対応していません</p>';
+        : '<p style="font-size:12px;color:#6B7280;margin-top:10px">お使いのブラウザで対応していません</p>';
     html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);padding:18px 20px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start">' +
       '<img src="/icons/icon-192.png" style="width:44px;height:44px;border-radius:10px;flex-shrink:0" alt="">' +
       '<div style="flex:1;min-width:0">' +
@@ -1339,7 +1340,7 @@ function renderRules() {
         '<p style="font-size:13px;color:#636366;line-height:1.5">アプリのようにすぐ起動できます</p>' +
         installBtnHtml +
       '</div>' +
-      '<button onclick="dismissA2hs();renderRules()" style="background:none;border:none;color:#AEAEB2;font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">×</button>' +
+      '<button onclick="dismissA2hs();renderRules()" style="background:none;border:none;color:#6B7280;font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">×</button>' +
     '</div>';
   }
 
@@ -1455,7 +1456,7 @@ function renderProducts(typeKey, iconBg, fg) {
     '<div style="display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;' +
     '-webkit-overflow-scrolling:touch;scrollbar-width:none">' +
     cards + '</div>' +
-    '<p style="font-size:10px;color:#AEAEB2;margin-top:8px">※広告・アフィリエイトリンクを含みます</p>' +
+    '<p style="font-size:10px;color:#6B7280;margin-top:8px">※広告・アフィリエイトリンクを含みます</p>' +
     '</div>';
 }
 
@@ -1477,7 +1478,7 @@ function openCategoryDetail(typeKey, year, month, day) {
           '<div style="width:52px;height:52px;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + ';flex-shrink:0">' +
           catIcon(typeKey, st.img ? 52 : 28) + '</div>' +
           '<div style="min-width:0">' +
-          (dateLabel ? '<p style="font-size:12px;font-weight:800;color:#AEAEB2;margin-bottom:1px">' + dateLabel + '</p>' : '') +
+          (dateLabel ? '<p style="font-size:12px;font-weight:800;color:#6B7280;margin-bottom:1px">' + dateLabel + '</p>' : '') +
           '<h2 style="font-size:20px;font-weight:800;color:' + st.fg + '">' + (cat.label || typeKey) + '</h2>' +
           '</div>' +
         '</div>' +
