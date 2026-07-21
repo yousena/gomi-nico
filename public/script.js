@@ -585,7 +585,7 @@ function renderTodayStrip() {
   typesEl.innerHTML = types.map(t => {
     const s = TYPE_STYLE[t.type] || TYPE_STYLE.unknown;
     return '<span style="display:inline-flex;align-items:center;gap:5px;padding:5px 13px;border-radius:999px;font-size:14px;font-weight:700;background:' + s.bg + ';color:' + s.fg + '">' +
-      catIcon(t.type, 17) + ' ' + t.label + '</span>';
+      '<span style="width:20px;height:20px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0">' + catIcon(t.type, 20) + '</span> ' + t.label + '</span>';
   }).join('');
 }
 
@@ -808,7 +808,7 @@ function renderQuickTags() {
   var el = document.getElementById('search-quick');
   if (!el) return;
   el.innerHTML =
-    '<p style="font-size:13px;font-weight:800;color:#8890A0;letter-spacing:.06em;margin-bottom:10px;padding-left:4px">よく検索されるごみ</p>' +
+    '<p style="font-size:13px;font-weight:800;color:#6B7280;letter-spacing:.06em;margin-bottom:10px;padding-left:4px">よく検索されるごみ</p>' +
     '<div style="display:flex;flex-wrap:wrap;gap:8px;padding:0 2px">' +
     QUICK_TAGS.map(function(q) {
       return '<button style="padding:8px 16px;background:#fff;border:none;border-radius:20px;font-size:14px;font-weight:700;color:#1C1C1E;cursor:pointer;font-family:inherit;white-space:nowrap;min-height:40px;line-height:1.2;box-shadow:0 2px 8px rgba(0,0,0,0.08)" onclick="openItemDetail(\'' + q + '\')">' + q + '</button>';
@@ -1014,7 +1014,7 @@ function openItemDetail(name) {
 
   if (item.note) {
     html += '<div style="background:#F4F5F7;border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
-      '<p style="font-size:11px;font-weight:800;color:#8890A0;margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
+      '<p style="font-size:11px;font-weight:800;color:#6B7280;margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
       '<p style="font-size:14px;color:#1C1C1E;line-height:1.7;margin:0">' + item.note + '</p>' +
     '</div>';
   }
@@ -1025,7 +1025,7 @@ function openItemDetail(name) {
     'background:' + st.fg + ';color:#fff;border:none;border-radius:14px;' +
     'font-size:15px;font-weight:800;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;' +
     'box-shadow:0 4px 14px ' + st.fg + '44">' +
-      catIcon(item.category, 18) + '「' + catLabel + '」のごみ一覧を見る' +
+      '<span style="width:20px;height:20px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0">' + catIcon(item.category, 20) + '</span>「' + catLabel + '」のごみ一覧を見る' +
     '</button>';
 
   document.getElementById('item-detail-body').innerHTML = html;
@@ -1084,12 +1084,12 @@ function renderContact() {
   var cardsHtml = contacts.map(function(c, i) {
     var last = i === contacts.length - 1;
     return '<div style="padding:16px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.05)') + '">' +
-      (c.desc ? '<p style="font-size:11px;color:#8890A0;margin-bottom:4px">' + c.desc + '</p>' : '') +
+      (c.desc ? '<p style="font-size:11px;color:#6B7280;margin-bottom:4px">' + c.desc + '</p>' : '') +
       '<p style="font-size:15px;font-weight:800;color:#1C1C1E;margin-bottom:8px">' + c.name + '</p>' +
       '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px">' +
       '<div>' +
-      '<p style="font-size:12px;color:#636366"><span style="color:#8890A0">電話番号</span>　' + c.phone + (c.phone_note ? '（' + c.phone_note + '）' : '') + '</p>' +
-      (c.hours ? '<p style="font-size:12px;color:#636366;margin-top:2px"><span style="color:#8890A0">受付時間</span>　' + c.hours + '</p>' : '') +
+      '<p style="font-size:12px;color:#636366"><span style="color:#6B7280">電話番号</span>　' + c.phone + (c.phone_note ? '（' + c.phone_note + '）' : '') + '</p>' +
+      (c.hours ? '<p style="font-size:12px;color:#636366;margin-top:2px"><span style="color:#6B7280">受付時間</span>　' + c.hours + '</p>' : '') +
       '</div>' +
       '<a href="tel:' + c.phone + '" style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:999px;background:#EBF7F2;color:#00A86B;font-size:13px;font-weight:700;text-decoration:none;border:1px solid rgba(26,92,56,0.15)">' +
       '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">call</span>電話する</a>' +
@@ -1107,20 +1107,20 @@ function renderContact() {
 
     // 本サイトについて
     '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
-    '<p style="font-size:11px;font-weight:700;color:#8890A0;margin-bottom:4px">本サイトについて</p>' +
+    '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">本サイトについて</p>' +
     '<p style="font-size:12px;color:#1C1C1E;line-height:1.7">本サイト「gomi-nico.jp」は、志木市が運営する<strong>公式サイトではありません</strong>。市民のための非公式の情報サイトです。</p>' +
     '</div>' +
 
     // 情報について
     '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
-    '<p style="font-size:11px;font-weight:700;color:#8890A0;margin-bottom:4px">情報について</p>' +
+    '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">情報について</p>' +
     '<p style="font-size:12px;color:#1C1C1E;line-height:1.7">志木市ホームページの公開情報を参考に作成されています。月1回程度で更新していますが、最新情報は公式サイトをご確認ください。</p>' +
     '<p style="font-size:11px;margin-top:6px"><a href="https://www.city.shiki.lg.jp/life/1/12/" target="_blank" rel="noopener" style="color:#00A86B;text-decoration:underline">出典：志木市ホームページ（ごみ・リサイクル）</a></p>' +
     '</div>' +
 
     // 誤情報・不具合
     '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
-    '<p style="font-size:11px;font-weight:700;color:#8890A0;margin-bottom:4px">サイトの誤情報・不具合のご報告</p>' +
+    '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">サイトの誤情報・不具合のご報告</p>' +
     '<p style="font-size:12px;color:#1C1C1E;line-height:1.7;margin-bottom:4px">サイト運営者へお知らせください。</p>' +
     '<a href="mailto:contact@gomi-nico.jp" style="font-size:13px;color:#00A86B;text-decoration:underline">contact@gomi-nico.jp</a>' +
     '<p style="font-size:11px;color:#6B7280;margin-top:4px">※返信にお時間をいただく場合があります</p>' +
@@ -1128,7 +1128,7 @@ function renderContact() {
 
     // 免責事項
     '<div style="padding:12px 16px">' +
-    '<p style="font-size:11px;font-weight:700;color:#8890A0;margin-bottom:4px">免責事項</p>' +
+    '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">免責事項</p>' +
     '<p style="font-size:12px;color:#636366;line-height:1.7">当サイトの情報に基づいて行った行為により損害が発生した場合、当サイト運営者は責任を負いかねます。</p>' +
     '</div>' +
 
@@ -1357,7 +1357,7 @@ function renderRules() {
           '<span class="ms-nav" style="font-size:15px">open_in_new</span></a>'
         : '';
       html += '<div style="padding:18px 24px;border-bottom:1px solid rgba(0,0,0,0.04)">' +
-        '<p style="font-size:12px;color:#8890A0;margin-bottom:6px">' + n.date + '</p>' +
+        '<p style="font-size:12px;color:#6B7280;margin-bottom:6px">' + n.date + '</p>' +
         '<p style="font-size:16px;font-weight:800;color:#1C1C1E;margin-bottom:8px;line-height:1.35">' + n.title + '</p>' +
         '<p style="font-size:16px;color:#636366;line-height:1.5">' + n.body + '</p>' +
         link +
@@ -1381,7 +1381,7 @@ function renderRules() {
     html += '</div>';
   }
 
-  el.innerHTML = html || '<p style="text-align:center;color:#8890A0;padding:40px 20px;font-size:14px">情報はありません</p>';
+  el.innerHTML = html || '<p style="text-align:center;color:#6B7280;padding:40px 20px;font-size:14px">情報はありません</p>';
 }
 
 
@@ -1451,7 +1451,7 @@ function renderProducts(typeKey, iconBg, fg) {
   }).join('');
   return '<div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(0,0,0,0.07)">' +
     '<div style="display:flex;align-items:center;gap:6px;margin-bottom:12px">' +
-    '<span class="ms-nav" style="font-size:15px;color:#8890A0">shopping_bag</span>' +
+    '<span class="ms-nav" style="font-size:15px;color:#6B7280">shopping_bag</span>' +
     '<p style="font-size:13px;font-weight:800;color:#636366">関連グッズ</p></div>' +
     '<div style="display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;' +
     '-webkit-overflow-scrolling:touch;scrollbar-width:none">' +
