@@ -534,6 +534,17 @@ function renderTodayStrip() {
 
   document.getElementById('today-strip-date').textContent = formatDateJP(today);
 
+  const cutoffEl = document.getElementById('today-strip-cutoff');
+  const cutoffNote = DATA && DATA.collection_settings && DATA.collection_settings.cutoff_note;
+  if (cutoffEl) {
+    if (areaKey && cutoffNote) {
+      cutoffEl.innerHTML = '<span class="ms-nav" style="font-size:16px;color:#00A86B">alarm</span>' + cutoffNote;
+      cutoffEl.classList.remove('is-hidden');
+    } else {
+      cutoffEl.classList.add('is-hidden');
+    }
+  }
+
   const typesEl = document.getElementById('today-strip-types');
   if (!areaKey) {
     typesEl.innerHTML = `<span class="text-sm text-[#AEAEB2]">地区を選択してください</span>`;
@@ -568,6 +579,28 @@ function renderTodayStrip() {
     return '<span style="display:inline-flex;align-items:center;gap:5px;padding:5px 13px;border-radius:999px;font-size:14px;font-weight:700;background:' + s.bg + ';color:' + s.fg + '">' +
       catIcon(t.type, 17) + ' ' + t.label + '</span>';
   }).join('');
+}
+
+/* =====================================================
+   日付タップの振り分け
+   収集が1種類だけ・かつ詳細情報がある場合は、
+   日別シートを飛ばして直接カテゴリ詳細へ遷移する（2タップ→1タップ）
+===================================================== */
+function handleDayTap(year, month, day) {
+  const date    = new Date(year, month, day);
+  const areaKey = localStorage.getItem('gc_area');
+
+  if (!areaKey || isYearEnd(date)) { showDayDetail(year, month, day); return; }
+
+  const types = getGarbageForDate(areaKey, date);
+  if (types.length === 1) {
+    const cat = (DATA && DATA.categories && DATA.categories[types[0].type]) || {};
+    if (cat.allowed && cat.allowed.length > 0) {
+      openCategoryDetail(types[0].type);
+      return;
+    }
+  }
+  showDayDetail(year, month, day);
 }
 
 /* =====================================================
@@ -636,10 +669,7 @@ function buildDayDetailHTML(areaKey, date) {
       '</' + tag + '>';
   }).join('');
 
-  const cutoff = DATA.collection_settings?.cutoff_note || '';
-  return `
-    <div class="flex flex-col gap-2">${items}</div>
-    ${cutoff ? `<p class="text-sm font-bold text-[#636366] flex items-center justify-center gap-[6px] mt-4 pt-4 border-t border-black/[0.04]"><span class="ms-nav" style="font-size:18px;color:#00A86B">alarm</span>${cutoff}</p>` : ''}`;
+  return `<div class="flex flex-col gap-2">${items}</div>`;
 }
 
 /* =====================================================
@@ -706,7 +736,7 @@ function renderCalendar() {
     html += `
       <button class="${cellCls}" role="gridcell"
               aria-label="${calMonth+1}月${d}日 ${labelText}"
-              onclick="showDayDetail(${calYear},${calMonth},${d})"
+              onclick="handleDayTap(${calYear},${calMonth},${d})"
               type="button">
         <span class="${dayCls}">${d}</span>
         ${iconsHtml}

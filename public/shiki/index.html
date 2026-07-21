@@ -646,12 +646,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ① 今日の収集バナー -->
     <div id="today-strip"
          class="bg-white rounded-2xl shadow-card px-4 py-3
-                flex items-center gap-3 animate-fade-up">
-      <div class="flex-shrink-0">
-        <p class="text-[11px] font-extrabold text-[#AEAEB2] tracking-wider uppercase">TODAY</p>
-        <p id="today-strip-date" class="text-[18px] font-extrabold text-[#1C1C1E] mt-[1px] leading-tight"></p>
+                flex flex-col gap-2 animate-fade-up">
+      <div class="flex items-center gap-3">
+        <div class="flex-shrink-0">
+          <p class="text-[11px] font-extrabold text-[#AEAEB2] tracking-wider uppercase">TODAY</p>
+          <p id="today-strip-date" class="text-[18px] font-extrabold text-[#1C1C1E] mt-[1px] leading-tight"></p>
+        </div>
+        <div id="today-strip-types" class="flex-1 flex items-center gap-2 flex-wrap min-w-0"></div>
       </div>
-      <div id="today-strip-types" class="flex-1 flex items-center gap-2 flex-wrap min-w-0"></div>
+      <p id="today-strip-cutoff" class="text-[12px] font-bold text-[#6B7280] flex items-center gap-[6px] pt-2 border-t border-black/[0.04] is-hidden"></p>
     </div>
 
     <!-- ② カレンダー -->
