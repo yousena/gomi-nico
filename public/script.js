@@ -768,8 +768,9 @@ function renderCategoryLegend(seenTypes) {
   let chips = '';
   seenTypes.forEach((label, typeKey) => {
     const s = TYPE_STYLE[typeKey] || TYPE_STYLE.unknown;
-    chips += '<span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:' + s.bg + ';font-size:12px;font-weight:700;color:' + s.fg + '">' +
-      catIcon(typeKey, 16) + label + '</span>';
+    chips += '<span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px 5px 6px;border-radius:999px;background:' + s.bg + ';font-size:12px;font-weight:700;color:' + s.fg + '">' +
+      '<span style="width:20px;height:20px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0">' + catIcon(typeKey, 20) + '</span>' +
+      label + '</span>';
   });
   el.innerHTML = chips;
 }
@@ -1151,12 +1152,20 @@ function renderFAQ() {
   var el = document.getElementById('faq-content');
   if (!el) return;
   var items = (DATA && DATA.faq) || DEFAULT_FAQ;
-  el.innerHTML = items.map(function(item, i) {
+  var html = items.map(function(item, i) {
     var bc = i < items.length - 1 ? 'border-b border-black/[0.04]' : '';
     return '<div class="px-6 py-4 ' + bc + '">' +
       '<p class="text-sm font-extrabold text-[#00A86B] mb-[6px]">Q. ' + item.q + '</p>' +
       '<p class="text-sm text-[#636366] leading-relaxed">A. ' + item.a + '</p></div>';
   }).join('');
+  // 記事への内部リンク（テレビ・パソコン等、収集に出せない品目の詳しい記事）
+  html += '<div class="px-6 pt-2 pb-5">' +
+    '<a href="/school/kaden.html" style="display:flex;align-items:center;gap:10px;background:#EAF7F0;border-radius:12px;padding:12px 14px;text-decoration:none">' +
+    '<span class="ms-nav" style="font-size:20px;color:#00A86B;flex-shrink:0">menu_book</span>' +
+    '<span style="font-size:13px;font-weight:700;color:#00885A;flex:1">テレビ・パソコンなど、出せないごみの処分方法</span>' +
+    '<span class="ms-nav" style="font-size:18px;color:#00A86B;flex-shrink:0">chevron_right</span>' +
+    '</a></div>';
+  el.innerHTML = html;
 }
 
 function renderNotice() {
