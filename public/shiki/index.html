@@ -337,11 +337,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
            class="is-hidden w-auto h-[30px] object-contain flex-shrink-0"
            alt="" aria-hidden="true">
       <div class="min-w-0 flex flex-col justify-center" style="padding-bottom:3px">
-        <!-- タイトル（志木市ごみ分別・JS が更新） -->
-        <div id="header-title"
+        <!-- タイトル（志木市ごみ分別・JS が更新。ページ全体の唯一のh1） -->
+        <h1 id="header-title"
              class="text-[18px] font-extrabold text-[#1C1C1E] tracking-tight leading-none truncate">
-          ごみ分別
-        </div>
+          志木市のごみ分別
+        </h1>
         <!-- 選択地区（タップで地域選択シートを開く） -->
         <button id="header-area" onclick="openSheet()"
                 aria-label="地域を変更する"
@@ -706,6 +706,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
     </div>
+
+    <!-- カテゴリ凡例（DS.md §2-4-1・その月のカレンダーに実在する種類のみ動的表示） -->
+    <div id="cal-legend" class="flex flex-wrap gap-2 px-1" aria-label="ごみ種類の凡例"></div>
 
   </div>
 

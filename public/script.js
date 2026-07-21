@@ -705,6 +705,7 @@ function renderCalendar() {
   const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
   const today       = new Date();
   let html = '';
+  const seenTypes = new Map(); // その月に実在するカテゴリのみ凡例に出す（DS.md 2-4-1）
 
   for (let i = 0; i < firstDay; i++) html += '<div class="cal-cell" aria-hidden="true"></div>';
 
@@ -714,6 +715,8 @@ function renderCalendar() {
     const isToday = date.toDateString() === today.toDateString();
     const isYE    = isYearEnd(date);
     const dow     = date.getDay();
+
+    types.forEach(t => { if (!seenTypes.has(t.type)) seenTypes.set(t.type, t.label); });
 
     // アイコン（件数に応じてサイズ・レイアウト変更）
     let iconsHtml = '';
@@ -750,6 +753,25 @@ function renderCalendar() {
       </button>`;
   }
   grid.innerHTML = html;
+  renderCategoryLegend(seenTypes);
+}
+
+/* =====================================================
+   カテゴリ凡例（DS.md 2-4-1）
+   その月のカレンダーに実在する種類だけを動的にチップ表示する
+===================================================== */
+function renderCategoryLegend(seenTypes) {
+  const el = document.getElementById('cal-legend');
+  if (!el) return;
+  if (!seenTypes || seenTypes.size === 0) { el.innerHTML = ''; return; }
+
+  let chips = '';
+  seenTypes.forEach((label, typeKey) => {
+    const s = TYPE_STYLE[typeKey] || TYPE_STYLE.unknown;
+    chips += '<span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:' + s.bg + ';font-size:12px;font-weight:700;color:' + s.fg + '">' +
+      catIcon(typeKey, 16) + label + '</span>';
+  });
+  el.innerHTML = chips;
 }
 
 /* =====================================================
