@@ -1432,6 +1432,8 @@ var CAT_PRODUCTS = {
 };
 
 function renderProducts(typeKey, iconBg, fg) {
+  // アフィリエイトは当面停止中のため非表示（data_{city}.jsonのad_typeで一括制御。復活時はこの分岐を外す）
+  if (!DATA || DATA.ad_type === 'none') return '';
   var products = CAT_PRODUCTS[typeKey];
   if (!products || products.length === 0) return '';
   var cards = products.map(function(p) {
