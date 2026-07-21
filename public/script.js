@@ -1025,7 +1025,7 @@ function openItemDetail(name) {
     'background:' + st.fg + ';color:#fff;border:none;border-radius:14px;' +
     'font-size:15px;font-weight:800;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;' +
     'box-shadow:0 4px 14px ' + st.fg + '44">' +
-      '<span style="width:20px;height:20px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0">' + catIcon(item.category, 20) + '</span>「' + catLabel + '」のごみ一覧を見る' +
+      '「' + catLabel + '」のごみ一覧を見る' +
     '</button>';
 
   document.getElementById('item-detail-body').innerHTML = html;
