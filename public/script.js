@@ -1019,6 +1019,13 @@ function openItemDetail(name) {
     '</div>';
   }
 
+  if (item.source === 'estimated') {
+    html += '<div style="display:flex;align-items:flex-start;gap:6px;margin-bottom:16px;padding:10px 12px;background:#F4F5F7;border-radius:10px;border:1px dashed rgba(0,0,0,0.15)">' +
+      '<span class="ms-nav" style="font-size:16px;color:#6B7280;flex-shrink:0;line-height:1.4">info</span>' +
+      '<p style="font-size:12px;color:#6B7280;line-height:1.6;margin:0">志木市の公式資料に記載がないため、一般的な分別ルールをもとにした参考情報です。正式な確認は環境推進課（☎048-473-1492）へ</p>' +
+    '</div>';
+  }
+
   html +=
     '<button onclick="closeItemDetail();openCategoryDetail(\'' + item.category + '\')"' +
     ' style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:52px;' +
