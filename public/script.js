@@ -596,7 +596,7 @@ function handleDayTap(year, month, day) {
   if (types.length === 1) {
     const cat = (DATA && DATA.categories && DATA.categories[types[0].type]) || {};
     if (cat.allowed && cat.allowed.length > 0) {
-      openCategoryDetail(types[0].type);
+      openCategoryDetail(types[0].type, year, month, day);
       return;
     }
   }
@@ -656,7 +656,7 @@ function buildDayDetailHTML(areaKey, date) {
     const hasDetail = cat.allowed && cat.allowed.length > 0;
     const tag = hasDetail ? 'button' : 'div';
     const btnAttrs = hasDetail
-      ? ' onclick="closeDayDetail();openCategoryDetail(\'' + t.type + '\')" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent"'
+      ? ' onclick="closeDayDetail();openCategoryDetail(\'' + t.type + '\',' + date.getFullYear() + ',' + date.getMonth() + ',' + date.getDate() + ')" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent"'
       : ' style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07)"';
     return '<' + tag + btnAttrs + '>' +
       '<div style="width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (s.keepBg ? s.iconBg : 'transparent') + ';flex-shrink:0">' +
@@ -1422,10 +1422,11 @@ function renderProducts(typeKey, iconBg, fg) {
 /* =====================================================
    カテゴリ詳細シート
 ===================================================== */
-function openCategoryDetail(typeKey) {
+function openCategoryDetail(typeKey, year, month, day) {
   var cats = (DATA && DATA.categories) || {};
   var cat  = cats[typeKey] || {};
   var st   = TYPE_STYLE[typeKey] || TYPE_STYLE.unknown;
+  var dateLabel = (year !== undefined) ? formatDateJP(new Date(year, month, day)) : '';
 
   // ヘッダー
   var headerEl = document.getElementById('category-detail-header');
@@ -1435,7 +1436,9 @@ function openCategoryDetail(typeKey) {
         '<div style="display:flex;align-items:center;gap:14px;flex:1;min-width:0">' +
           '<div style="width:52px;height:52px;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + ';flex-shrink:0">' +
           catIcon(typeKey, st.img ? 52 : 28) + '</div>' +
-          '<div style="min-width:0"><h2 style="font-size:20px;font-weight:800;color:' + st.fg + '">' + (cat.label || typeKey) + '</h2>' +
+          '<div style="min-width:0">' +
+          (dateLabel ? '<p style="font-size:12px;font-weight:800;color:#AEAEB2;margin-bottom:1px">' + dateLabel + '</p>' : '') +
+          '<h2 style="font-size:20px;font-weight:800;color:' + st.fg + '">' + (cat.label || typeKey) + '</h2>' +
           '</div>' +
         '</div>' +
         '<button onclick="closeCategoryDetail()" aria-label="閉じる" ' +
