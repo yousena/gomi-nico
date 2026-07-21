@@ -161,6 +161,13 @@ let calYear, calMonth;
   updateLangIndicator(getCurrentLangCode());
 
   showPanel('calendar'); // デフォルト表示
+
+  // 記事等からの深いリンク: /shiki/?open=sodai のようにカテゴリキーを指定すると
+  // 該当カテゴリの詳細シートを自動で開く
+  const openParam = new URLSearchParams(location.search).get('open');
+  if (openParam && DATA.categories && DATA.categories[openParam]) {
+    openCategoryDetail(openParam);
+  }
 })();
 
 /* =====================================================
@@ -1474,6 +1481,16 @@ function openCategoryDetail(typeKey, year, month, day) {
   html += section('check_circle', '出せるもの',    cat.allowed,                               '#00A86B');
   html += section('close',        '出せないもの',   cat.not_allowed,                           '#E8512A');
   html += section('info',         '出し方・注意点', (cat.how_steps||[]).concat(cat.tips||[]), '#E07800');
+
+  // 関連記事への導線（cat.article_urlが設定されている場合のみ表示。記事公開までは非表示のまま）
+  if (cat.article_url) {
+    html += '<a href="' + cat.article_url + '" style="display:flex;align-items:center;justify-content:center;gap:6px;width:100%;padding:14px;background:#EAF7F0;border-radius:12px;' +
+      'font-size:14px;font-weight:700;color:#00885A;text-decoration:none;margin-top:4px;margin-bottom:4px">' +
+      '<span class="ms-nav" style="font-size:18px">menu_book</span>' +
+      (cat.article_label || (cat.label || typeKey) + 'について詳しく読む') +
+      '<span class="ms-nav" style="font-size:16px">arrow_forward</span>' +
+    '</a>';
+  }
 
   // 関連する検索へのショートカット
   html += '<button onclick="closeCategoryDetail();showPanel(\'search\');quickSearch(this.getAttribute(\'data-q\'))" data-q="' + (cat.label || '') + '"' +
