@@ -312,7 +312,7 @@ function applyAdType() {
   const anchor = document.getElementById('anchor-ad-inner');
 
   if (type === 'none') {
-    [topAd, document.getElementById('anchor-ad')].forEach(el => { if (el) el.classList.add('is-hidden'); });
+    [topAd, document.getElementById('ad-infeed'), document.getElementById('anchor-ad')].forEach(el => { if (el) el.classList.add('is-hidden'); });
     document.body.style.paddingBottom = 'calc(64px + var(--safe-b))';
     return;
   }
