@@ -888,6 +888,19 @@ function trackNoResult(q) {
   }, 1200);
 }
 
+/**
+ * カタカナ→ひらがな正規化（検索でカナ・かなの表記ゆれを吸収するため）
+ * カタカナ(U+30A1-U+30F6)はひらがな(U+3041-U+3096)からの固定オフセット(+0x60)なので、
+ * カタカナだけをひらがなへ変換すれば、入力側がどちらの表記でも同じ形に揃えられる。
+ * @param {string} str
+ * @returns {string}
+ */
+function toHiragana(str) {
+  return (str || '').replace(/[ァ-ヶ]/g, function(ch) {
+    return String.fromCharCode(ch.charCodeAt(0) - 0x60);
+  });
+}
+
 function onSearch(query) {
   if (!DATA) return;
   var q       = (query || '').trim();
@@ -906,10 +919,13 @@ function onSearch(query) {
   var labelEl = document.getElementById('search-index-label');
   if (labelEl) labelEl.classList.add('is-hidden');
 
-  var lower = q.toLowerCase();
+  var lower  = q.toLowerCase();
+  var qHira  = toHiragana(q);
   var hits  = DATA.garbage_db.filter(function(item) {
-    return item.name.includes(q) ||
-      (item.tags || []).some(function(t){ return t.includes(q) || t.toLowerCase().includes(lower); }) ||
+    return item.name.includes(q) || toHiragana(item.name).includes(qHira) ||
+      (item.tags || []).some(function(t){
+        return t.includes(q) || t.toLowerCase().includes(lower) || toHiragana(t).includes(qHira);
+      }) ||
       (DATA.categories[item.category] ? DATA.categories[item.category].label : '').includes(q);
   });
 
