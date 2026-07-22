@@ -59,6 +59,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .tag-chip { display:inline-flex;align-items:center;background:#F0F2F5;color:#4B4B4D;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700; }
   mark { background:#EAF6F0; color:#1C1C1E; padding:1px 4px; border-radius:4px; font-weight:700; }
   .ad-slot { background:#F0F2F5;border-radius:8px;padding:24px 16px;text-align:center;font-size:12px;color:#6B7280;margin:32px 0; }
+
+  /* ── h2装飾（吹き出しの丸2つ・v1.12で確定） ── */
+  .h2-decor { position:relative; background:#00885A; color:#fff; border-radius:10px; font-size:20px; padding:12px 20px; font-weight:700; margin-bottom:48px; }
+  .h2-decor:before { content:""; position:absolute; top:calc(100% + 3px); left:10px; width:10px; height:10px; border-radius:50%; background:#3eb98f; }
+  .h2-decor:after  { content:""; position:absolute; top:calc(100% + 13px); left:22px; width:6px; height:6px; border-radius:50%; background:#88cdb6; }
 </style>
 <!-- Material Symbols -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0" media="print" onload="this.media='all'">
@@ -139,7 +144,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ══════════════ 1. 家電4品目 ══════════════ -->
     <section id="kaden4" class="mb-[80px]" style="scroll-margin-top:72px">
-      <h2 class="sec-title mb-6" style="font-size:20px;background:#00885A;color:#ffffff;padding:12px 16px;border-radius:10px;font-weight:700">テレビ・冷蔵庫、そのまま出せる？</h2>
+      <h2 class="sec-title h2-decor">テレビ・冷蔵庫、そのまま出せる？</h2>
 
       <div>
         <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
@@ -161,7 +166,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ══════════════ 2. パソコン ══════════════ -->
     <section id="pc" class="mb-[80px]" style="scroll-margin-top:72px">
-      <h2 class="sec-title mb-6" style="font-size:20px;background:#00885A;color:#ffffff;padding:12px 16px;border-radius:10px;font-weight:700">パソコンは、どこに持っていく？</h2>
+      <h2 class="sec-title h2-decor">パソコンは、どこに持っていく？</h2>
 
       <div>
         <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
@@ -183,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ══════════════ 3. 小型家電 ══════════════ -->
     <section id="kogata" class="mb-[80px]" style="scroll-margin-top:72px">
-      <h2 class="sec-title mb-6" style="font-size:20px;background:#00885A;color:#ffffff;padding:12px 16px;border-radius:10px;font-weight:700">スマホや古いカメラ、燃えないごみでいい？</h2>
+      <h2 class="sec-title h2-decor">スマホや古いカメラ、燃えないごみでいい？</h2>
 
       <div>
         <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
@@ -208,7 +213,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ══════════════ 4. 消火器 ══════════════ -->
     <section id="shoukaki" class="mb-[80px]" style="scroll-margin-top:72px">
-      <h2 class="sec-title mb-6" style="font-size:20px;background:#00885A;color:#ffffff;padding:12px 16px;border-radius:10px;font-weight:700">消火器、うっかり出していない？</h2>
+      <h2 class="sec-title h2-decor">消火器、うっかり出していない？</h2>
 
       <div>
         <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
@@ -230,7 +235,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ══════════════ 5. ピアノ ══════════════ -->
     <section id="piano" class="mb-[80px]" style="scroll-margin-top:72px">
-      <h2 class="sec-title mb-6" style="font-size:20px;background:#00885A;color:#ffffff;padding:12px 16px;border-radius:10px;font-weight:700">大きなピアノ、どう手放す？</h2>
+      <h2 class="sec-title h2-decor">大きなピアノ、どう手放す？</h2>
 
       <div>
         <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
@@ -251,7 +256,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ══════════════ 6. タイヤ・バイク ══════════════ -->
     <section id="tire" class="mb-[80px]" style="scroll-margin-top:72px">
-      <h2 class="sec-title mb-6" style="font-size:20px;background:#00885A;color:#ffffff;padding:12px 16px;border-radius:10px;font-weight:700">タイヤやバイクは、どこへ？</h2>
+      <h2 class="sec-title h2-decor">タイヤやバイクは、どこへ？</h2>
 
       <div>
         <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
@@ -272,7 +277,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ══════════════ 7. 根拠法まとめ ══════════════ -->
     <section id="houritsu" class="mb-[80px]" style="scroll-margin-top:72px">
-      <h2 class="sec-title mb-6" style="font-size:20px;background:#00885A;color:#ffffff;padding:12px 16px;border-radius:10px;font-weight:700">結局、何の法律が関係してるの？</h2>
+      <h2 class="sec-title h2-decor">結局、何の法律が関係してるの？</h2>
       <p class="body-p mb-4">「市区町村では収集できないごみ」は、根拠となる法律・区分によって処分ルートが変わります。ここまで紹介した品目を整理すると、こうなります。</p>
 
       <div class="flex flex-col gap-3">
