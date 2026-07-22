@@ -1184,7 +1184,7 @@ function renderFAQ() {
   }).join('');
   // 記事への内部リンク（テレビ・パソコン等、収集に出せない品目の詳しい記事）
   html += '<div class="px-6 pt-2 pb-5">' +
-    '<a href="/school/kaden.html" style="display:flex;align-items:center;gap:10px;background:#EAF7F0;border-radius:12px;padding:12px 14px;text-decoration:none">' +
+    '<a href="/articles/kaden.html" style="display:flex;align-items:center;gap:10px;background:#EAF7F0;border-radius:12px;padding:12px 14px;text-decoration:none">' +
     '<span class="ms-nav" style="font-size:20px;color:#00A86B;flex-shrink:0">menu_book</span>' +
     '<span style="font-size:13px;font-weight:700;color:#00885A;flex:1">テレビ・パソコンなど、出せないごみの処分方法</span>' +
     '<span class="ms-nav" style="font-size:18px;color:#00A86B;flex-shrink:0">chevron_right</span>' +

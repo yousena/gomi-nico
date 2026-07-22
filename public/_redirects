@@ -1,0 +1,4 @@
+# /school/ → /articles/ へのフォルダ改名（2026-07-22）
+# 本番公開後の改名のため、既にインデックス・共有されている可能性のあるURLを保護する
+/school/kaden.html /articles/kaden.html 301
+/school/* /articles/:splat 301
