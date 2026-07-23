@@ -1586,6 +1586,7 @@ function showPanel(p) {
       nav.setAttribute('aria-current', id === p ? 'page' : 'false');
     }
   });
+  window.scrollTo(0, 0);
   if (p === 'search') {
     var input = document.getElementById('search-input');
     if (input && !input.value.trim()) {
