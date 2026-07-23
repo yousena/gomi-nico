@@ -10,11 +10,26 @@
   "official_url_label": "蕨市ホームページ（ごみの出し方）",
   "citation_date": "2026年7月",
   "faq": [
-    { "q": "蕨市のもやすごみの収集日はいつですか？", "a": "地区によって曜日が異なり、週2回収集されます。地区を選択してカレンダーでご確認ください。" },
-    { "q": "蕨市の粗大ごみはどうやって出しますか？", "a": "事前申し込みが必要です。生活環境係（048-443-3706）に電話または電子申請で申し込み、1点550円の粗大ごみ収集券を購入して品物に貼って出してください。" },
-    { "q": "蕨市でリチウムイオン電池・小型家電はどうやって捨てますか？", "a": "令和8年4月から、電池の有無にかかわらずすべての小型家電製品を「リチウムイオン電池等・小型家電」としてまとめ、透明の袋に入れてだいだい色のカゴに出します。古紙類・布類・ペットボトルと同じ日に収集されます。" },
-    { "q": "蕨市の乾電池はどこに出せばいいですか？", "a": "市役所・各公民館・図書館・自治会館・生活環境係の窓口にある赤い箱へ、開館時間内にいつでも持ち込めます。セロハンテープで電極を絶縁してから入れてください。" },
-    { "q": "蕨市のごみ袋は指定袋ですか？", "a": "もやすごみは白色半透明袋、その他は無色透明袋が基本です。市指定袋はありませんが、色の指定があるので確認してください。" }
+    {
+      "q": "蕨市のもやすごみの収集日はいつですか？",
+      "a": "地区によって曜日が異なり、週2回収集されます。地区を選択してカレンダーでご確認ください。"
+    },
+    {
+      "q": "蕨市の粗大ごみはどうやって出しますか？",
+      "a": "事前申し込みが必要です。生活環境係（048-443-3706）に電話または電子申請で申し込み、1点550円の粗大ごみ収集券を購入して品物に貼って出してください。"
+    },
+    {
+      "q": "蕨市でリチウムイオン電池・小型家電はどうやって捨てますか？",
+      "a": "令和8年4月から、電池の有無にかかわらずすべての小型家電製品を「リチウムイオン電池等・小型家電」としてまとめ、透明の袋に入れてだいだい色のカゴに出します。古紙類・布類・ペットボトルと同じ日に収集されます。"
+    },
+    {
+      "q": "蕨市の乾電池はどこに出せばいいですか？",
+      "a": "市役所・各公民館・図書館・自治会館・生活環境係の窓口にある赤い箱へ、開館時間内にいつでも持ち込めます。セロハンテープで電極を絶縁してから入れてください。"
+    },
+    {
+      "q": "蕨市のごみ袋は指定袋ですか？",
+      "a": "もやすごみは白色半透明袋、その他は無色透明袋が基本です。市指定袋はありませんが、色の指定があるので確認してください。"
+    }
   ],
   "contact": [
     {
@@ -26,8 +41,20 @@
   "collection_settings": {
     "yearend_enabled": true,
     "yearend_ranges": [
-      { "month": 11, "days": [31] },
-      { "month": 0, "days": [1, 2, 3] }
+      {
+        "month": 11,
+        "days": [
+          31
+        ]
+      },
+      {
+        "month": 0,
+        "days": [
+          1,
+          2,
+          3
+        ]
+      }
     ],
     "cutoff_note": "朝8時までに決められた場所（クリーン・リサイクルステーション）へ出しましょう。勤労感謝の日（振替休日を含む）と年末年始（12/31〜1/3）は収集がお休みです"
   },
@@ -314,218 +341,4514 @@
     }
   },
   "area_groups": [
-    { "label": "中央・南町4丁目", "keys": ["chuo_minami4"] },
-    { "label": "南町1〜3丁目", "keys": ["minami123"] },
-    { "label": "塚越", "keys": ["tsukagoshi"] },
-    { "label": "錦町・北町", "keys": ["nishiki_kita"] }
+    {
+      "label": "中央・南町4丁目",
+      "keys": [
+        "chuo_minami4"
+      ]
+    },
+    {
+      "label": "南町1〜3丁目",
+      "keys": [
+        "minami123"
+      ]
+    },
+    {
+      "label": "塚越",
+      "keys": [
+        "tsukagoshi"
+      ]
+    },
+    {
+      "label": "錦町・北町",
+      "keys": [
+        "nishiki_kita"
+      ]
+    }
   ],
   "areas": {
     "chuo_minami4": {
       "name": "中央全域・南町4丁目",
       "note": "南町1丁目33〜35番を含む",
-      "moeru": [1, 4],
-      "can": [1],
-      "bin": [1],
-      "shigen-pla": [1],
-      "kami": [4],
-      "fuku": [4],
-      "pet": [4],
-      "kiken": [4],
-      "moenai": [4]
+      "moeru": [
+        1,
+        4
+      ],
+      "can": [
+        1
+      ],
+      "bin": [
+        1
+      ],
+      "shigen-pla": [
+        1
+      ],
+      "kami": [
+        4
+      ],
+      "fuku": [
+        4
+      ],
+      "pet": [
+        4
+      ],
+      "kiken": [
+        4
+      ],
+      "moenai": [
+        4
+      ]
     },
     "minami123": {
       "name": "南町1〜3丁目",
       "note": "南町1丁目33〜35番を除く",
-      "moeru": [2, 5],
-      "can": [2],
-      "bin": [2],
-      "shigen-pla": [2],
-      "kami": [5],
-      "fuku": [5],
-      "pet": [5],
-      "kiken": [5],
-      "moenai": [5]
+      "moeru": [
+        2,
+        5
+      ],
+      "can": [
+        2
+      ],
+      "bin": [
+        2
+      ],
+      "shigen-pla": [
+        2
+      ],
+      "kami": [
+        5
+      ],
+      "fuku": [
+        5
+      ],
+      "pet": [
+        5
+      ],
+      "kiken": [
+        5
+      ],
+      "moenai": [
+        5
+      ]
     },
     "tsukagoshi": {
       "name": "塚越全域",
       "note": "",
-      "moeru": [2, 5],
-      "kami": [2],
-      "fuku": [2],
-      "pet": [2],
-      "kiken": [2],
-      "moenai": [2],
-      "can": [5],
-      "bin": [5],
-      "shigen-pla": [5]
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": [
+        2
+      ],
+      "fuku": [
+        2
+      ],
+      "pet": [
+        2
+      ],
+      "kiken": [
+        2
+      ],
+      "moenai": [
+        2
+      ],
+      "can": [
+        5
+      ],
+      "bin": [
+        5
+      ],
+      "shigen-pla": [
+        5
+      ]
     },
     "nishiki_kita": {
       "name": "錦町全域・北町全域",
       "note": "",
-      "moeru": [3, 6],
-      "can": [3],
-      "bin": [3],
-      "shigen-pla": [3],
-      "kami": [6],
-      "fuku": [6],
-      "pet": [6],
-      "kiken": [6],
-      "moenai": [6]
+      "moeru": [
+        3,
+        6
+      ],
+      "can": [
+        3
+      ],
+      "bin": [
+        3
+      ],
+      "shigen-pla": [
+        3
+      ],
+      "kami": [
+        6
+      ],
+      "fuku": [
+        6
+      ],
+      "pet": [
+        6
+      ],
+      "kiken": [
+        6
+      ],
+      "moenai": [
+        6
+      ]
     }
   },
   "garbage_db": [
-    { "name": "IHコンロ", "category": "sodai", "tags": ["いーえいちこんろ"] },
-    { "name": "アイスノン（氷枕）", "category": "moeru", "tags": ["あいすのん", "こおりまくら"] },
-    { "name": "アイパッド", "category": "kiken", "tags": ["たぶれっと"] },
-    { "name": "アイロン", "category": "kiken", "tags": ["あいろん"] },
-    { "name": "アイロン台", "category": "sodai", "tags": ["あいろんだい"] },
-    { "name": "麻のひも", "category": "moeru", "tags": ["あさのひも"] },
-    { "name": "足つぼマッサージ器", "category": "moeru", "tags": ["あしつぼまっさーじき"] },
-    { "name": "アダプター", "category": "kiken", "tags": ["あだぷたー"] },
-    { "name": "厚紙", "category": "kami", "tags": ["あつがみ"] },
-    { "name": "圧力鍋", "category": "moenai", "tags": ["あつりょくなべ"] },
-    { "name": "油（食品用）", "category": "moeru", "tags": ["あぶら"] },
-    { "name": "油の容器（かん）", "category": "moenai", "tags": ["あぶらのようき"] },
-    { "name": "雨合羽（レインコート）", "category": "moeru", "tags": ["あまがっぱ", "れいんこーと"] },
-    { "name": "雨戸", "category": "sodai", "tags": ["あまど"] },
-    { "name": "網戸", "category": "sodai", "tags": ["あみど"] },
-    { "name": "アルバム（写真含む）", "category": "moeru", "tags": ["あるばむ"] },
-    { "name": "アルミ缶", "category": "can", "tags": ["あるみかん"] },
-    { "name": "アルミホイル", "category": "moeru", "tags": ["あるみほいる"] },
-    { "name": "あんか", "category": "kiken", "tags": ["あんか"] },
-    { "name": "アンテナ（TV）", "category": "sodai", "tags": ["あんてな"] },
-    { "name": "生きびん", "category": "bin", "tags": ["いきびん"] },
-    { "name": "衣装ケース（プラスチック製）", "category": "sodai", "tags": ["いしょうけーす"] },
-    { "name": "いす（金属製）", "category": "sodai", "tags": ["いす"] },
-    { "name": "いす（木製・プラスチック製）", "category": "sodai", "tags": ["いす"] },
-    { "name": "一斗缶", "category": "moenai", "tags": ["いっとかん"] },
-    { "name": "糸", "category": "moeru", "tags": ["いと"] },
-    { "name": "衣類", "category": "fuku", "tags": ["いるい"] },
-    { "name": "衣類（綿入り等）", "category": "moeru", "tags": ["いるい", "わたいり"] },
-    { "name": "衣類乾燥機", "category": "unknown", "tags": ["いるいかんそうき"] },
-    { "name": "入れ歯", "category": "moenai", "tags": ["いれば"] },
-    { "name": "色付きペットボトル", "category": "moeru", "tags": ["いろつきぺっとぼとる"] },
-    { "name": "インクカートリッジ", "category": "moeru", "tags": ["いんくかーとりっじ"] },
-    { "name": "ウィンドファン", "category": "sodai", "tags": ["ういんどふぁん"] },
-    { "name": "植木鉢（セトモノ・素焼）", "category": "moenai", "tags": ["うえきばち"] },
-    { "name": "植木鉢（プラスチック製）", "category": "moeru", "tags": ["うえきばち"] },
-    { "name": "ウォーターサーバー", "category": "sodai", "tags": ["うぉーたーさーばー"] },
-    { "name": "ウォシュレット（便座）", "category": "sodai", "tags": ["うぉしゅれっと", "べんざ"] },
-    { "name": "うきわ", "category": "moeru", "tags": ["うきわ"] },
-    { "name": "乳母車", "category": "sodai", "tags": ["うばぐるま"] },
-    { "name": "エアコン", "category": "unknown", "tags": ["えあこん"] },
-    { "name": "液晶テレビ", "category": "unknown", "tags": ["えきしょうてれび"] },
-    { "name": "枝（直径5cm以下・長さ40〜120cm）", "category": "sodai", "tags": ["えだ"] },
-    { "name": "絵本", "category": "kami", "tags": ["えほん"] },
-    { "name": "延長コード", "category": "kiken", "tags": ["えんちょうこーど"] },
-    { "name": "鉛筆", "category": "moeru", "tags": ["えんぴつ"] },
-    { "name": "オーブントースター", "category": "kiken", "tags": ["おーぶんとーすたー"] },
-    { "name": "オーブンレンジ", "category": "sodai", "tags": ["おーぶんれんじ"] },
-    { "name": "オートバイ", "category": "unknown", "tags": ["おーとばい"] },
-    { "name": "桶（金属製）", "category": "can", "tags": ["おけ"] },
-    { "name": "桶（プラスチック製・木製）", "category": "moeru", "tags": ["おけ"] },
-    { "name": "お雛様（台座）", "category": "moeru", "tags": ["おひなさま"] },
-    { "name": "おまる", "category": "sodai", "tags": ["おまる"] },
-    { "name": "おむつ（紙製・布製）", "category": "moeru", "tags": ["おむつ"] },
-    { "name": "おもちゃ（プラスチック製）", "category": "moeru", "tags": ["おもちゃ"] },
-    { "name": "おもちゃ（金属製・金属混合製）", "category": "moenai", "tags": ["おもちゃ"] },
-    { "name": "折込チラシ", "category": "kami", "tags": ["おりこみちらし"] },
-    { "name": "温度計（水銀使用）", "category": "kiken", "tags": ["おんどけい", "すいぎん"] },
-    { "name": "カーテン（布製）", "category": "fuku", "tags": ["かーてん"] },
-    { "name": "カーテンレール", "category": "sodai", "tags": ["かーてんれーる"] },
-    { "name": "カーペット", "category": "sodai", "tags": ["かーぺっと"] },
-    { "name": "貝殻", "category": "moeru", "tags": ["かいがら"] },
-    { "name": "懐中電灯", "category": "kiken", "tags": ["かいちゅうでんとう"] },
-    { "name": "買い物袋（レジ袋）", "category": "shigen-pla", "tags": ["かいものぶくろ", "れじぶくろ"] },
-    { "name": "カイロ（使い捨て）", "category": "moeru", "tags": ["かいろ"] },
-    { "name": "鏡", "category": "sodai", "tags": ["かがみ"] },
-    { "name": "学習机", "category": "sodai", "tags": ["がくしゅうづくえ"] },
-    { "name": "傘", "category": "moenai", "tags": ["かさ"] },
-    { "name": "菓子箱（紙）", "category": "kami", "tags": ["かしばこ"] },
-    { "name": "ガスコンロ", "category": "sodai", "tags": ["がすこんろ"] },
-    { "name": "ガスボンベ", "category": "unknown", "tags": ["がすぼんべ"] },
-    { "name": "カセットコンロ（卓上）", "category": "moenai", "tags": ["かせっとこんろ"] },
-    { "name": "カセットテープ", "category": "moeru", "tags": ["かせっとてーぷ"] },
-    { "name": "カセットボンベ（スプレー缶）", "category": "can", "tags": ["かせっとぼんべ", "すぷれーかん"] },
-    { "name": "カッター・カッターの刃", "category": "moenai", "tags": ["かったー"] },
-    { "name": "かばん（皮製・布製・ビニール）", "category": "moeru", "tags": ["かばん"] },
-    { "name": "画びょう", "category": "moenai", "tags": ["がびょう"] },
-    { "name": "花びん（陶器・ガラス）", "category": "moenai", "tags": ["かびん"] },
-    { "name": "壁紙", "category": "unknown", "tags": ["かべがみ"] },
-    { "name": "紙オムツ", "category": "moeru", "tags": ["かみおむつ"] },
-    { "name": "紙コップ", "category": "kami", "tags": ["かみこっぷ"] },
-    { "name": "カミソリ（刃物）", "category": "moenai", "tags": ["かみそり"] },
-    { "name": "紙パック", "category": "kami", "tags": ["かみぱっく"] },
-    { "name": "紙袋", "category": "kami", "tags": ["かみぶくろ"] },
-    { "name": "カメラ", "category": "kiken", "tags": ["かめら"] },
-    { "name": "ガラス（食器類含む）", "category": "moenai", "tags": ["がらす"] },
-    { "name": "軽石（風呂用）", "category": "moenai", "tags": ["かるいし"] },
-    { "name": "カレンダー", "category": "kami", "tags": ["かれんだー"] },
-    { "name": "革製品", "category": "moeru", "tags": ["かわせいひん"] },
-    { "name": "瓦", "category": "unknown", "tags": ["かわら"] },
-    { "name": "換気扇（羽部分）", "category": "moenai", "tags": ["かんきせん"] },
-    { "name": "乾電池", "category": "yugai", "tags": ["かんでんち"] },
-    { "name": "観葉植物（観賞用）", "category": "sodai", "tags": ["かんようしょくぶつ"] },
-    { "name": "木くず", "category": "moeru", "tags": ["きくず"] },
-    { "name": "ギター", "category": "sodai", "tags": ["ぎたー"] },
-    { "name": "着物", "category": "fuku", "tags": ["きもの"] },
-    { "name": "キャリーバッグ", "category": "sodai", "tags": ["きゃりーばっぐ"] },
-    { "name": "牛乳パック", "category": "kami", "tags": ["ぎゅうにゅうぱっく"] },
-    { "name": "教科書", "category": "kami", "tags": ["きょうかしょ"] },
-    { "name": "金庫（手提げ）", "category": "moenai", "tags": ["きんこ"] },
-    { "name": "金属類", "category": "can", "tags": ["きんぞくるい"] },
-    { "name": "空気清浄機", "category": "sodai", "tags": ["くうきせいじょうき"] },
-    { "name": "釘", "category": "moenai", "tags": ["くぎ"] },
-    { "name": "草", "category": "moeru", "tags": ["くさ"] },
-    { "name": "薬のびん", "category": "bin", "tags": ["くすりのびん"] },
-    { "name": "くつ（革靴・運動靴・長くつ）", "category": "moeru", "tags": ["くつ"] },
-    { "name": "靴下", "category": "fuku", "tags": ["くつした"] },
-    { "name": "クッション", "category": "sodai", "tags": ["くっしょん"] },
-    { "name": "車いす", "category": "sodai", "tags": ["くるまいす"] },
-    { "name": "クレヨン", "category": "moeru", "tags": ["くれよん"] },
-    { "name": "蛍光管", "category": "kiken", "tags": ["けいこうかん"] },
-    { "name": "携帯電話（スマートフォン）", "category": "kiken", "tags": ["けいたいでんわ", "すまーとふぉん"] },
-    { "name": "毛糸", "category": "moeru", "tags": ["けいと"] },
-    { "name": "ゲーム機械（家庭用・携帯用）", "category": "kiken", "tags": ["げーむきかい"] },
-    { "name": "血圧計", "category": "kiken", "tags": ["けつあつけい"] },
-    { "name": "剣道用防具", "category": "moenai", "tags": ["けんどうようぼうぐ"] },
-    { "name": "高圧洗浄機", "category": "sodai", "tags": ["こうあつせんじょうき"] },
-    { "name": "工具", "category": "moenai", "tags": ["こうぐ"] },
-    { "name": "広告（チラシ）", "category": "kami", "tags": ["こうこく", "ちらし"] },
-    { "name": "コート", "category": "fuku", "tags": ["こーと"] },
-    { "name": "コード", "category": "kiken", "tags": ["こーど"] },
-    { "name": "コーヒーびん", "category": "bin", "tags": ["こーひーびん"] },
-    { "name": "コーヒーメーカー", "category": "kiken", "tags": ["こーひーめーかー"] },
-    { "name": "古紙類", "category": "kami", "tags": ["こしるい"] },
-    { "name": "こたつ", "category": "sodai", "tags": ["こたつ"] },
-    { "name": "コップ（ガラス製）", "category": "moenai", "tags": ["こっぷ"] },
-    { "name": "コップ（紙製）", "category": "kami", "tags": ["こっぷ"] },
-    { "name": "コピー機（小型・家庭用）", "category": "sodai", "tags": ["こぴーき"] },
-    { "name": "コピー用紙", "category": "kami", "tags": ["こぴーようし"] },
-    { "name": "ゴム手袋", "category": "moeru", "tags": ["ごむてぶくろ"] },
-    { "name": "米びつ", "category": "sodai", "tags": ["こめびつ"] },
-    { "name": "ゴルフクラブ（セット）", "category": "sodai", "tags": ["ごるふくらぶ"] },
-    { "name": "コンパクトディスク（CD）", "category": "moeru", "tags": ["しーでぃー"] },
-    { "name": "コンポ", "category": "sodai", "tags": ["こんぽ"] },
-    { "name": "サーフボード", "category": "sodai", "tags": ["さーふぼーど"] },
-    { "name": "座いす", "category": "sodai", "tags": ["ざいす"] },
-    { "name": "財布", "category": "moeru", "tags": ["さいふ"] },
-    { "name": "使い捨てライター", "category": "moeru", "tags": ["つかいすてらいたー"] },
-    { "name": "スプレー缶", "category": "can", "tags": ["すぷれーかん"] },
-    { "name": "テレビ", "category": "unknown", "tags": ["てれび"] },
-    { "name": "冷蔵庫・冷凍庫", "category": "unknown", "tags": ["れいぞうこ", "れいとうこ"] },
-    { "name": "洗濯機", "category": "unknown", "tags": ["せんたくき"] },
-    { "name": "パソコン（デスクトップ）", "category": "unknown", "tags": ["ぱそこん"] },
-    { "name": "ノートパソコン", "category": "unknown", "tags": ["のーとぱそこん"] },
-    { "name": "パソコン用ディスプレイ", "category": "unknown", "tags": ["でぃすぷれい"] },
-    { "name": "プリンター（周辺機器）", "category": "moenai", "tags": ["ぷりんたー"] },
-    { "name": "布団", "category": "sodai", "tags": ["ふとん"] },
-    { "name": "毛布", "category": "fuku", "tags": ["もうふ"] },
-    { "name": "自転車", "category": "sodai", "tags": ["じてんしゃ"] },
-    { "name": "ピアノ（電子ピアノ）", "category": "sodai", "tags": ["でんしぴあの"] },
-    { "name": "ピアノ（アコースティック）", "category": "unknown", "tags": ["ぴあの"] },
-    { "name": "消火器", "category": "unknown", "tags": ["しょうかき"] },
-    { "name": "灯油", "category": "unknown", "tags": ["とうゆ"] },
-    { "name": "タイヤ（車・バイク）", "category": "unknown", "tags": ["たいや"] }
+    {
+      "name": "IHコンロ",
+      "category": "sodai",
+      "tags": [
+        "いーえいちこんろ"
+      ]
+    },
+    {
+      "name": "アイスノン（氷枕）",
+      "category": "moeru",
+      "tags": [
+        "あいすのん",
+        "こおりまくら"
+      ]
+    },
+    {
+      "name": "アイパッド",
+      "category": "kiken",
+      "tags": [
+        "たぶれっと"
+      ]
+    },
+    {
+      "name": "アイロン",
+      "category": "kiken",
+      "tags": [
+        "あいろん"
+      ]
+    },
+    {
+      "name": "アイロン台",
+      "category": "sodai",
+      "tags": [
+        "あいろんだい"
+      ]
+    },
+    {
+      "name": "麻のひも",
+      "category": "moeru",
+      "tags": [
+        "あさのひも"
+      ]
+    },
+    {
+      "name": "足つぼマッサージ器",
+      "category": "moeru",
+      "tags": [
+        "あしつぼまっさーじき"
+      ]
+    },
+    {
+      "name": "アダプター",
+      "category": "kiken",
+      "tags": [
+        "あだぷたー"
+      ]
+    },
+    {
+      "name": "厚紙",
+      "category": "kami",
+      "tags": [
+        "あつがみ"
+      ]
+    },
+    {
+      "name": "圧力鍋",
+      "category": "moenai",
+      "tags": [
+        "あつりょくなべ"
+      ]
+    },
+    {
+      "name": "油（食品用）",
+      "category": "moeru",
+      "tags": [
+        "あぶら"
+      ]
+    },
+    {
+      "name": "油の容器（かん）",
+      "category": "moenai",
+      "tags": [
+        "あぶらのようき"
+      ]
+    },
+    {
+      "name": "雨合羽（レインコート）",
+      "category": "moeru",
+      "tags": [
+        "あまがっぱ",
+        "れいんこーと"
+      ]
+    },
+    {
+      "name": "雨戸",
+      "category": "sodai",
+      "tags": [
+        "あまど"
+      ]
+    },
+    {
+      "name": "網戸",
+      "category": "sodai",
+      "tags": [
+        "あみど"
+      ]
+    },
+    {
+      "name": "アルバム（写真含む）",
+      "category": "moeru",
+      "tags": [
+        "あるばむ"
+      ]
+    },
+    {
+      "name": "アルミ缶",
+      "category": "can",
+      "tags": [
+        "あるみかん"
+      ]
+    },
+    {
+      "name": "アルミホイル",
+      "category": "moeru",
+      "tags": [
+        "あるみほいる"
+      ]
+    },
+    {
+      "name": "あんか",
+      "category": "kiken",
+      "tags": [
+        "あんか"
+      ]
+    },
+    {
+      "name": "アンテナ（TV）",
+      "category": "sodai",
+      "tags": [
+        "あんてな"
+      ]
+    },
+    {
+      "name": "生きびん",
+      "category": "bin",
+      "tags": [
+        "いきびん"
+      ]
+    },
+    {
+      "name": "衣装ケース（プラスチック製）",
+      "category": "sodai",
+      "tags": [
+        "いしょうけーす"
+      ]
+    },
+    {
+      "name": "いす（金属製）",
+      "category": "sodai",
+      "tags": [
+        "いす"
+      ]
+    },
+    {
+      "name": "いす（木製・プラスチック製）",
+      "category": "sodai",
+      "tags": [
+        "いす"
+      ]
+    },
+    {
+      "name": "一斗缶",
+      "category": "moenai",
+      "tags": [
+        "いっとかん"
+      ]
+    },
+    {
+      "name": "糸",
+      "category": "moeru",
+      "tags": [
+        "いと"
+      ]
+    },
+    {
+      "name": "衣類",
+      "category": "fuku",
+      "tags": [
+        "いるい"
+      ]
+    },
+    {
+      "name": "衣類（綿入り等）",
+      "category": "moeru",
+      "tags": [
+        "いるい",
+        "わたいり"
+      ]
+    },
+    {
+      "name": "衣類乾燥機",
+      "category": "unknown",
+      "tags": [
+        "いるいかんそうき"
+      ]
+    },
+    {
+      "name": "入れ歯",
+      "category": "moenai",
+      "tags": [
+        "いれば"
+      ]
+    },
+    {
+      "name": "色付きペットボトル",
+      "category": "moeru",
+      "tags": [
+        "いろつきぺっとぼとる"
+      ]
+    },
+    {
+      "name": "インクカートリッジ",
+      "category": "moeru",
+      "tags": [
+        "いんくかーとりっじ"
+      ]
+    },
+    {
+      "name": "ウィンドファン",
+      "category": "sodai",
+      "tags": [
+        "ういんどふぁん"
+      ]
+    },
+    {
+      "name": "植木鉢（セトモノ・素焼）",
+      "category": "moenai",
+      "tags": [
+        "うえきばち"
+      ]
+    },
+    {
+      "name": "植木鉢（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "うえきばち"
+      ]
+    },
+    {
+      "name": "ウォーターサーバー",
+      "category": "sodai",
+      "tags": [
+        "うぉーたーさーばー"
+      ]
+    },
+    {
+      "name": "ウォシュレット（便座）",
+      "category": "sodai",
+      "tags": [
+        "うぉしゅれっと",
+        "べんざ"
+      ]
+    },
+    {
+      "name": "うきわ",
+      "category": "moeru",
+      "tags": [
+        "うきわ"
+      ]
+    },
+    {
+      "name": "乳母車",
+      "category": "sodai",
+      "tags": [
+        "うばぐるま"
+      ]
+    },
+    {
+      "name": "エアコン",
+      "category": "unknown",
+      "tags": [
+        "えあこん"
+      ]
+    },
+    {
+      "name": "液晶テレビ",
+      "category": "unknown",
+      "tags": [
+        "えきしょうてれび"
+      ]
+    },
+    {
+      "name": "枝（直径5cm以下・長さ40〜120cm）",
+      "category": "sodai",
+      "tags": [
+        "えだ"
+      ]
+    },
+    {
+      "name": "絵本",
+      "category": "kami",
+      "tags": [
+        "えほん"
+      ]
+    },
+    {
+      "name": "延長コード",
+      "category": "kiken",
+      "tags": [
+        "えんちょうこーど"
+      ]
+    },
+    {
+      "name": "鉛筆",
+      "category": "moeru",
+      "tags": [
+        "えんぴつ"
+      ]
+    },
+    {
+      "name": "オーブントースター",
+      "category": "kiken",
+      "tags": [
+        "おーぶんとーすたー"
+      ]
+    },
+    {
+      "name": "オーブンレンジ",
+      "category": "sodai",
+      "tags": [
+        "おーぶんれんじ"
+      ]
+    },
+    {
+      "name": "オートバイ",
+      "category": "unknown",
+      "tags": [
+        "おーとばい"
+      ]
+    },
+    {
+      "name": "桶（金属製）",
+      "category": "can",
+      "tags": [
+        "おけ"
+      ]
+    },
+    {
+      "name": "桶（プラスチック製・木製）",
+      "category": "moeru",
+      "tags": [
+        "おけ"
+      ]
+    },
+    {
+      "name": "お雛様（台座）",
+      "category": "moeru",
+      "tags": [
+        "おひなさま"
+      ]
+    },
+    {
+      "name": "おまる",
+      "category": "sodai",
+      "tags": [
+        "おまる"
+      ]
+    },
+    {
+      "name": "おむつ（紙製・布製）",
+      "category": "moeru",
+      "tags": [
+        "おむつ"
+      ]
+    },
+    {
+      "name": "おもちゃ（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "おもちゃ"
+      ]
+    },
+    {
+      "name": "おもちゃ（金属製・金属混合製）",
+      "category": "moenai",
+      "tags": [
+        "おもちゃ"
+      ]
+    },
+    {
+      "name": "折込チラシ",
+      "category": "kami",
+      "tags": [
+        "おりこみちらし"
+      ]
+    },
+    {
+      "name": "温度計（水銀使用）",
+      "category": "kiken",
+      "tags": [
+        "おんどけい",
+        "すいぎん"
+      ]
+    },
+    {
+      "name": "カーテン（布製）",
+      "category": "fuku",
+      "tags": [
+        "かーてん"
+      ]
+    },
+    {
+      "name": "カーテンレール",
+      "category": "sodai",
+      "tags": [
+        "かーてんれーる"
+      ]
+    },
+    {
+      "name": "カーペット",
+      "category": "sodai",
+      "tags": [
+        "かーぺっと"
+      ]
+    },
+    {
+      "name": "貝殻",
+      "category": "moeru",
+      "tags": [
+        "かいがら"
+      ]
+    },
+    {
+      "name": "懐中電灯",
+      "category": "kiken",
+      "tags": [
+        "かいちゅうでんとう"
+      ]
+    },
+    {
+      "name": "買い物袋（レジ袋）",
+      "category": "shigen-pla",
+      "tags": [
+        "かいものぶくろ",
+        "れじぶくろ"
+      ]
+    },
+    {
+      "name": "カイロ（使い捨て）",
+      "category": "moeru",
+      "tags": [
+        "かいろ"
+      ]
+    },
+    {
+      "name": "鏡",
+      "category": "sodai",
+      "tags": [
+        "かがみ"
+      ]
+    },
+    {
+      "name": "学習机",
+      "category": "sodai",
+      "tags": [
+        "がくしゅうづくえ"
+      ]
+    },
+    {
+      "name": "傘",
+      "category": "moenai",
+      "tags": [
+        "かさ"
+      ]
+    },
+    {
+      "name": "菓子箱（紙）",
+      "category": "kami",
+      "tags": [
+        "かしばこ"
+      ]
+    },
+    {
+      "name": "ガスコンロ",
+      "category": "sodai",
+      "tags": [
+        "がすこんろ"
+      ]
+    },
+    {
+      "name": "ガスボンベ",
+      "category": "unknown",
+      "tags": [
+        "がすぼんべ"
+      ]
+    },
+    {
+      "name": "カセットコンロ（卓上）",
+      "category": "moenai",
+      "tags": [
+        "かせっとこんろ"
+      ]
+    },
+    {
+      "name": "カセットテープ",
+      "category": "moeru",
+      "tags": [
+        "かせっとてーぷ"
+      ]
+    },
+    {
+      "name": "カセットボンベ（スプレー缶）",
+      "category": "can",
+      "tags": [
+        "かせっとぼんべ",
+        "すぷれーかん"
+      ]
+    },
+    {
+      "name": "カッター・カッターの刃",
+      "category": "moenai",
+      "tags": [
+        "かったー"
+      ]
+    },
+    {
+      "name": "かばん（皮製・布製・ビニール）",
+      "category": "moeru",
+      "tags": [
+        "かばん"
+      ]
+    },
+    {
+      "name": "画びょう",
+      "category": "moenai",
+      "tags": [
+        "がびょう"
+      ]
+    },
+    {
+      "name": "花びん（陶器・ガラス）",
+      "category": "moenai",
+      "tags": [
+        "かびん"
+      ]
+    },
+    {
+      "name": "壁紙",
+      "category": "unknown",
+      "tags": [
+        "かべがみ"
+      ]
+    },
+    {
+      "name": "紙オムツ",
+      "category": "moeru",
+      "tags": [
+        "かみおむつ"
+      ]
+    },
+    {
+      "name": "紙コップ",
+      "category": "kami",
+      "tags": [
+        "かみこっぷ"
+      ]
+    },
+    {
+      "name": "カミソリ（刃物）",
+      "category": "moenai",
+      "tags": [
+        "かみそり"
+      ]
+    },
+    {
+      "name": "紙パック",
+      "category": "kami",
+      "tags": [
+        "かみぱっく"
+      ]
+    },
+    {
+      "name": "紙袋",
+      "category": "kami",
+      "tags": [
+        "かみぶくろ"
+      ]
+    },
+    {
+      "name": "カメラ",
+      "category": "kiken",
+      "tags": [
+        "かめら"
+      ]
+    },
+    {
+      "name": "ガラス（食器類含む）",
+      "category": "moenai",
+      "tags": [
+        "がらす"
+      ]
+    },
+    {
+      "name": "軽石（風呂用）",
+      "category": "moenai",
+      "tags": [
+        "かるいし"
+      ]
+    },
+    {
+      "name": "カレンダー",
+      "category": "kami",
+      "tags": [
+        "かれんだー"
+      ]
+    },
+    {
+      "name": "革製品",
+      "category": "moeru",
+      "tags": [
+        "かわせいひん"
+      ]
+    },
+    {
+      "name": "瓦",
+      "category": "unknown",
+      "tags": [
+        "かわら"
+      ]
+    },
+    {
+      "name": "換気扇（羽部分）",
+      "category": "moenai",
+      "tags": [
+        "かんきせん"
+      ]
+    },
+    {
+      "name": "乾電池",
+      "category": "yugai",
+      "tags": [
+        "かんでんち"
+      ]
+    },
+    {
+      "name": "観葉植物（観賞用）",
+      "category": "sodai",
+      "tags": [
+        "かんようしょくぶつ"
+      ]
+    },
+    {
+      "name": "木くず",
+      "category": "moeru",
+      "tags": [
+        "きくず"
+      ]
+    },
+    {
+      "name": "ギター",
+      "category": "sodai",
+      "tags": [
+        "ぎたー"
+      ]
+    },
+    {
+      "name": "着物",
+      "category": "fuku",
+      "tags": [
+        "きもの"
+      ]
+    },
+    {
+      "name": "キャリーバッグ",
+      "category": "sodai",
+      "tags": [
+        "きゃりーばっぐ"
+      ]
+    },
+    {
+      "name": "牛乳パック",
+      "category": "kami",
+      "tags": [
+        "ぎゅうにゅうぱっく"
+      ]
+    },
+    {
+      "name": "教科書",
+      "category": "kami",
+      "tags": [
+        "きょうかしょ"
+      ]
+    },
+    {
+      "name": "金庫（手提げ）",
+      "category": "moenai",
+      "tags": [
+        "きんこ"
+      ]
+    },
+    {
+      "name": "金属類",
+      "category": "can",
+      "tags": [
+        "きんぞくるい"
+      ]
+    },
+    {
+      "name": "空気清浄機",
+      "category": "sodai",
+      "tags": [
+        "くうきせいじょうき"
+      ]
+    },
+    {
+      "name": "釘",
+      "category": "moenai",
+      "tags": [
+        "くぎ"
+      ]
+    },
+    {
+      "name": "草",
+      "category": "moeru",
+      "tags": [
+        "くさ"
+      ]
+    },
+    {
+      "name": "薬のびん",
+      "category": "bin",
+      "tags": [
+        "くすりのびん"
+      ]
+    },
+    {
+      "name": "くつ（革靴・運動靴・長くつ）",
+      "category": "moeru",
+      "tags": [
+        "くつ"
+      ]
+    },
+    {
+      "name": "靴下",
+      "category": "fuku",
+      "tags": [
+        "くつした"
+      ]
+    },
+    {
+      "name": "クッション",
+      "category": "sodai",
+      "tags": [
+        "くっしょん"
+      ]
+    },
+    {
+      "name": "車いす",
+      "category": "sodai",
+      "tags": [
+        "くるまいす"
+      ]
+    },
+    {
+      "name": "クレヨン",
+      "category": "moeru",
+      "tags": [
+        "くれよん"
+      ]
+    },
+    {
+      "name": "蛍光管",
+      "category": "kiken",
+      "tags": [
+        "けいこうかん"
+      ]
+    },
+    {
+      "name": "携帯電話（スマートフォン）",
+      "category": "kiken",
+      "tags": [
+        "けいたいでんわ",
+        "すまーとふぉん"
+      ]
+    },
+    {
+      "name": "毛糸",
+      "category": "moeru",
+      "tags": [
+        "けいと"
+      ]
+    },
+    {
+      "name": "ゲーム機械（家庭用・携帯用）",
+      "category": "kiken",
+      "tags": [
+        "げーむきかい"
+      ]
+    },
+    {
+      "name": "血圧計",
+      "category": "kiken",
+      "tags": [
+        "けつあつけい"
+      ]
+    },
+    {
+      "name": "剣道用防具",
+      "category": "moenai",
+      "tags": [
+        "けんどうようぼうぐ"
+      ]
+    },
+    {
+      "name": "高圧洗浄機",
+      "category": "sodai",
+      "tags": [
+        "こうあつせんじょうき"
+      ]
+    },
+    {
+      "name": "工具",
+      "category": "moenai",
+      "tags": [
+        "こうぐ"
+      ]
+    },
+    {
+      "name": "広告（チラシ）",
+      "category": "kami",
+      "tags": [
+        "こうこく",
+        "ちらし"
+      ]
+    },
+    {
+      "name": "コート",
+      "category": "fuku",
+      "tags": [
+        "こーと"
+      ]
+    },
+    {
+      "name": "コード",
+      "category": "kiken",
+      "tags": [
+        "こーど"
+      ]
+    },
+    {
+      "name": "コーヒーびん",
+      "category": "bin",
+      "tags": [
+        "こーひーびん"
+      ]
+    },
+    {
+      "name": "コーヒーメーカー",
+      "category": "kiken",
+      "tags": [
+        "こーひーめーかー"
+      ]
+    },
+    {
+      "name": "古紙類",
+      "category": "kami",
+      "tags": [
+        "こしるい"
+      ]
+    },
+    {
+      "name": "こたつ",
+      "category": "sodai",
+      "tags": [
+        "こたつ"
+      ]
+    },
+    {
+      "name": "コップ（ガラス製）",
+      "category": "moenai",
+      "tags": [
+        "こっぷ"
+      ]
+    },
+    {
+      "name": "コップ（紙製）",
+      "category": "kami",
+      "tags": [
+        "こっぷ"
+      ]
+    },
+    {
+      "name": "コピー機（小型・家庭用）",
+      "category": "sodai",
+      "tags": [
+        "こぴーき"
+      ]
+    },
+    {
+      "name": "コピー用紙",
+      "category": "kami",
+      "tags": [
+        "こぴーようし"
+      ]
+    },
+    {
+      "name": "ゴム手袋",
+      "category": "moeru",
+      "tags": [
+        "ごむてぶくろ"
+      ]
+    },
+    {
+      "name": "米びつ",
+      "category": "sodai",
+      "tags": [
+        "こめびつ"
+      ]
+    },
+    {
+      "name": "ゴルフクラブ（セット）",
+      "category": "sodai",
+      "tags": [
+        "ごるふくらぶ"
+      ]
+    },
+    {
+      "name": "コンパクトディスク（CD）",
+      "category": "moeru",
+      "tags": [
+        "しーでぃー"
+      ]
+    },
+    {
+      "name": "コンポ",
+      "category": "sodai",
+      "tags": [
+        "こんぽ"
+      ]
+    },
+    {
+      "name": "サーフボード",
+      "category": "sodai",
+      "tags": [
+        "さーふぼーど"
+      ]
+    },
+    {
+      "name": "座いす",
+      "category": "sodai",
+      "tags": [
+        "ざいす"
+      ]
+    },
+    {
+      "name": "財布",
+      "category": "moeru",
+      "tags": [
+        "さいふ"
+      ]
+    },
+    {
+      "name": "使い捨てライター",
+      "category": "moenai",
+      "tags": [
+        "つかいすてらいたー"
+      ]
+    },
+    {
+      "name": "スプレー缶",
+      "category": "can",
+      "tags": [
+        "すぷれーかん"
+      ]
+    },
+    {
+      "name": "テレビ",
+      "category": "unknown",
+      "tags": [
+        "てれび"
+      ]
+    },
+    {
+      "name": "冷蔵庫・冷凍庫",
+      "category": "unknown",
+      "tags": [
+        "れいぞうこ",
+        "れいとうこ"
+      ]
+    },
+    {
+      "name": "洗濯機",
+      "category": "unknown",
+      "tags": [
+        "せんたくき"
+      ]
+    },
+    {
+      "name": "パソコン（デスクトップ）",
+      "category": "unknown",
+      "tags": [
+        "ぱそこん"
+      ]
+    },
+    {
+      "name": "ノートパソコン",
+      "category": "unknown",
+      "tags": [
+        "のーとぱそこん"
+      ]
+    },
+    {
+      "name": "パソコン用ディスプレイ",
+      "category": "unknown",
+      "tags": [
+        "でぃすぷれい"
+      ]
+    },
+    {
+      "name": "プリンター（周辺機器）",
+      "category": "moenai",
+      "tags": [
+        "ぷりんたー"
+      ]
+    },
+    {
+      "name": "布団",
+      "category": "sodai",
+      "tags": [
+        "ふとん"
+      ]
+    },
+    {
+      "name": "毛布",
+      "category": "fuku",
+      "tags": [
+        "もうふ"
+      ]
+    },
+    {
+      "name": "自転車",
+      "category": "sodai",
+      "tags": [
+        "じてんしゃ"
+      ]
+    },
+    {
+      "name": "ピアノ（電子ピアノ）",
+      "category": "sodai",
+      "tags": [
+        "でんしぴあの"
+      ]
+    },
+    {
+      "name": "ピアノ（アコースティック）",
+      "category": "unknown",
+      "tags": [
+        "ぴあの"
+      ]
+    },
+    {
+      "name": "消火器",
+      "category": "kiken",
+      "tags": [
+        "しょうかき"
+      ]
+    },
+    {
+      "name": "灯油",
+      "category": "unknown",
+      "tags": [
+        "とうゆ"
+      ]
+    },
+    {
+      "name": "タイヤ（車・バイク）",
+      "category": "unknown",
+      "tags": [
+        "たいや"
+      ]
+    },
+    {
+      "name": "アイスクリーム類の容器（紙類）",
+      "category": "kami",
+      "tags": [
+        "あいすくりーむるいのようき"
+      ]
+    },
+    {
+      "name": "アイスクリーム類の容器（プラスチック製）",
+      "category": "shigen-pla",
+      "tags": [
+        "あいすくりーむるいのようき"
+      ]
+    },
+    {
+      "name": "アコーデオンカーテン",
+      "category": "sodai"
+    },
+    {
+      "name": "足拭きマット",
+      "category": "moeru",
+      "tags": [
+        "あしふきまっと"
+      ]
+    },
+    {
+      "name": "足踏み健康器",
+      "category": "sodai",
+      "tags": [
+        "あしふみけんこうき"
+      ]
+    },
+    {
+      "name": "油（自動車・機械用・判別不能燃料）",
+      "category": "unknown",
+      "tags": [
+        "あぶら"
+      ]
+    },
+    {
+      "name": "油かみ",
+      "category": "moeru",
+      "tags": [
+        "あぶらかみ"
+      ]
+    },
+    {
+      "name": "油の容器（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "あぶらのようき"
+      ]
+    },
+    {
+      "name": "編み機",
+      "category": "sodai",
+      "tags": [
+        "あみき"
+      ]
+    },
+    {
+      "name": "アルミサッシ",
+      "category": "sodai"
+    },
+    {
+      "name": "アルミはく",
+      "category": "moeru"
+    },
+    {
+      "name": "アルミホイル（キッチン用）",
+      "category": "moeru",
+      "tags": [
+        "あるみほいる"
+      ]
+    },
+    {
+      "name": "アンテナ（BS）",
+      "category": "sodai"
+    },
+    {
+      "name": "あんま機（いす・ベッド式）",
+      "category": "sodai",
+      "tags": [
+        "あんまき"
+      ]
+    },
+    {
+      "name": "あんま機（ハンディタイプ）",
+      "category": "kiken",
+      "tags": [
+        "あんまき"
+      ]
+    },
+    {
+      "name": "いけす（樹脂製・樹脂以外のもの）",
+      "category": "unknown",
+      "tags": [
+        "いけす"
+      ]
+    },
+    {
+      "name": "囲碁・将棋盤",
+      "category": "unknown",
+      "tags": [
+        "いごしょうぎばん"
+      ]
+    },
+    {
+      "name": "石",
+      "category": "unknown",
+      "tags": [
+        "いし"
+      ]
+    },
+    {
+      "name": "衣装ケース（箱型・引き出し型）（1）",
+      "category": "sodai",
+      "tags": [
+        "いしょうけーす"
+      ]
+    },
+    {
+      "name": "衣装ケース（箱型・引き出し型）（2）",
+      "category": "sodai",
+      "tags": [
+        "いしょうけーす"
+      ]
+    },
+    {
+      "name": "衣装ケース（1段・2段引き出し型プラスチック製）",
+      "category": "sodai",
+      "tags": [
+        "いしょうけーす"
+      ]
+    },
+    {
+      "name": "衣装ケース（3段引き出し型プラスチック製）",
+      "category": "sodai",
+      "tags": [
+        "いしょうけーす"
+      ]
+    },
+    {
+      "name": "衣装ケース（箱型金属製・木製）",
+      "category": "sodai",
+      "tags": [
+        "いしょうけーす"
+      ]
+    },
+    {
+      "name": "衣装ケース（箱型プラスチック製）",
+      "category": "sodai",
+      "tags": [
+        "いしょうけーす"
+      ]
+    },
+    {
+      "name": "板切れ",
+      "category": "sodai",
+      "tags": [
+        "いたきれ"
+      ]
+    },
+    {
+      "name": "一輪車（運搬用・乗り物用）",
+      "category": "sodai",
+      "tags": [
+        "いちりんくるま"
+      ]
+    },
+    {
+      "name": "一輪車（乗り物用・砂・砂利運搬用）",
+      "category": "sodai",
+      "tags": [
+        "いちりんくるま"
+      ]
+    },
+    {
+      "name": "犬小屋（木製・プラスチック製）",
+      "category": "sodai",
+      "tags": [
+        "いぬこや"
+      ]
+    },
+    {
+      "name": "イヤホン",
+      "category": "kiken"
+    },
+    {
+      "name": "医療廃棄物",
+      "category": "unknown",
+      "tags": [
+        "いりょうはいきぶつ"
+      ]
+    },
+    {
+      "name": "色紙",
+      "category": "kami",
+      "tags": [
+        "しきし"
+      ]
+    },
+    {
+      "name": "衣類（布地のみ）",
+      "category": "fuku",
+      "tags": [
+        "いるい"
+      ]
+    },
+    {
+      "name": "インクリボン",
+      "category": "moeru"
+    },
+    {
+      "name": "ウイスキーびん",
+      "category": "bin"
+    },
+    {
+      "name": "ウィンドブレーカー",
+      "category": "moeru"
+    },
+    {
+      "name": "植木棚",
+      "category": "sodai",
+      "tags": [
+        "うえきたな"
+      ]
+    },
+    {
+      "name": "ウェットスーツ",
+      "category": "sodai"
+    },
+    {
+      "name": "ウォーキングマシン",
+      "category": "sodai"
+    },
+    {
+      "name": "臼と杵",
+      "category": "sodai",
+      "tags": [
+        "うすときね"
+      ]
+    },
+    {
+      "name": "羽毛入り衣料",
+      "category": "moeru",
+      "tags": [
+        "うもういりいりょう"
+      ]
+    },
+    {
+      "name": "ウレタン（クッションなどの中身）",
+      "category": "moeru",
+      "tags": [
+        "うれたん"
+      ]
+    },
+    {
+      "name": "エアーキャップ（梱包材）",
+      "category": "shigen-pla",
+      "tags": [
+        "えあーきゃっぷ"
+      ]
+    },
+    {
+      "name": "エアーショック吸収材（梱包材）",
+      "category": "shigen-pla",
+      "tags": [
+        "えあーしょっくきゅうしゅうざい"
+      ]
+    },
+    {
+      "name": "エアウォシャー",
+      "category": "sodai"
+    },
+    {
+      "name": "エアポンプ（プラスチック製足踏み式）",
+      "category": "moeru",
+      "tags": [
+        "えあぽんぷ"
+      ]
+    },
+    {
+      "name": "映写機（家庭用）",
+      "category": "sodai",
+      "tags": [
+        "えいしゃき"
+      ]
+    },
+    {
+      "name": "栄養ドリンクびん",
+      "category": "bin",
+      "tags": [
+        "えいようどりんくびん"
+      ]
+    },
+    {
+      "name": "枝（直径が5cm以下長さ40～120cm)",
+      "category": "moeru",
+      "tags": [
+        "えだ"
+      ]
+    },
+    {
+      "name": "絵の具のチューブ（金属製）",
+      "category": "moenai",
+      "tags": [
+        "えのぐのちゅーぶ"
+      ]
+    },
+    {
+      "name": "絵の具のチューブ（ラミネート）",
+      "category": "moeru",
+      "tags": [
+        "えのぐのちゅーぶ"
+      ]
+    },
+    {
+      "name": "MD・MDケース",
+      "category": "moeru"
+    },
+    {
+      "name": "えもんかけ（ハンガー）木製",
+      "category": "moeru",
+      "tags": [
+        "えもんかけもくせい"
+      ]
+    },
+    {
+      "name": "LED照明",
+      "category": "kiken",
+      "tags": [
+        "LEDしょうめい"
+      ]
+    },
+    {
+      "name": "LPガスボンベ",
+      "category": "unknown"
+    },
+    {
+      "name": "エレキギター",
+      "category": "sodai"
+    },
+    {
+      "name": "エレクトーン",
+      "category": "sodai"
+    },
+    {
+      "name": "園芸用の支柱",
+      "category": "sodai",
+      "tags": [
+        "えんげいようのしちゅう"
+      ]
+    },
+    {
+      "name": "遠赤外線石盤マット（健康マット）",
+      "category": "sodai",
+      "tags": [
+        "えんせきがいせんせきばんまっと"
+      ]
+    },
+    {
+      "name": "縁台",
+      "category": "sodai",
+      "tags": [
+        "えんだい"
+      ]
+    },
+    {
+      "name": "鉛筆削り器",
+      "category": "kiken",
+      "tags": [
+        "えんぴつけずりき"
+      ]
+    },
+    {
+      "name": "オイル（機械用）",
+      "category": "unknown",
+      "tags": [
+        "おいる"
+      ]
+    },
+    {
+      "name": "オイル（自動車用・機械用）",
+      "category": "unknown",
+      "tags": [
+        "おいる"
+      ]
+    },
+    {
+      "name": "オイル缶",
+      "category": "sodai",
+      "tags": [
+        "おいるかん"
+      ]
+    },
+    {
+      "name": "オイルヒーター",
+      "category": "sodai"
+    },
+    {
+      "name": "応接セット",
+      "category": "sodai",
+      "tags": [
+        "おうせつせっと"
+      ]
+    },
+    {
+      "name": "オーディオラック",
+      "category": "sodai"
+    },
+    {
+      "name": "オーブン（システムキッチン）",
+      "category": "unknown"
+    },
+    {
+      "name": "押入れタンス",
+      "category": "sodai",
+      "tags": [
+        "おしいれれたんす"
+      ]
+    },
+    {
+      "name": "落ち葉",
+      "category": "moeru",
+      "tags": [
+        "おちば"
+      ]
+    },
+    {
+      "name": "オットマン",
+      "category": "sodai"
+    },
+    {
+      "name": "汚泥（U字溝）",
+      "category": "moeru",
+      "tags": [
+        "おでい"
+      ]
+    },
+    {
+      "name": "おむつカバー",
+      "category": "moeru"
+    },
+    {
+      "name": "オルガン",
+      "category": "sodai"
+    },
+    {
+      "name": "オルゴール",
+      "category": "moenai"
+    },
+    {
+      "name": "おろしがね（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "おろしがね"
+      ]
+    },
+    {
+      "name": "おろしがね（金属）",
+      "category": "can",
+      "tags": [
+        "おろしがね"
+      ]
+    },
+    {
+      "name": "温水器（電気式・ソーラー式）",
+      "category": "unknown",
+      "tags": [
+        "おんすいき"
+      ]
+    },
+    {
+      "name": "ガーデニング用作業台付き流し台",
+      "category": "unknown",
+      "tags": [
+        "がーでにんぐようさくぎょうだいつきながしだい"
+      ]
+    },
+    {
+      "name": "カード（テレホンカード等）",
+      "category": "moeru",
+      "tags": [
+        "かーど"
+      ]
+    },
+    {
+      "name": "カーボン紙",
+      "category": "moeru",
+      "tags": [
+        "かーぼんかみ"
+      ]
+    },
+    {
+      "name": "介護スロープ（車イス用）",
+      "category": "sodai",
+      "tags": [
+        "かいごすろーぷ"
+      ]
+    },
+    {
+      "name": "介護手すり",
+      "category": "sodai",
+      "tags": [
+        "かいごてすり"
+      ]
+    },
+    {
+      "name": "介護用簡易トイレ（プラスチック・陶器）",
+      "category": "sodai",
+      "tags": [
+        "かいごようかんいといれ"
+      ]
+    },
+    {
+      "name": "かいまき",
+      "category": "sodai"
+    },
+    {
+      "name": "買い物袋（通称・レジ袋）",
+      "category": "shigen-pla",
+      "tags": [
+        "かいものふくろ"
+      ]
+    },
+    {
+      "name": "カウンターテーブル",
+      "category": "sodai"
+    },
+    {
+      "name": "角ハンガー（金属製・金属混合製）",
+      "category": "moenai",
+      "tags": [
+        "かくはんがー"
+      ]
+    },
+    {
+      "name": "角ハンガー（プラ製）",
+      "category": "moeru",
+      "tags": [
+        "かくはんがー"
+      ]
+    },
+    {
+      "name": "額ぶち（木製・金属製）",
+      "category": "sodai",
+      "tags": [
+        "ひたいぶち"
+      ]
+    },
+    {
+      "name": "家具類（木製・スチール製）",
+      "category": "sodai",
+      "tags": [
+        "かぐるい"
+      ]
+    },
+    {
+      "name": "火災報知器",
+      "category": "kiken",
+      "tags": [
+        "かさいほうちき"
+      ]
+    },
+    {
+      "name": "傘立て（陶器・金属製・木製）",
+      "category": "sodai",
+      "tags": [
+        "かさたてて"
+      ]
+    },
+    {
+      "name": "加湿器",
+      "category": "kiken",
+      "tags": [
+        "かしつき"
+      ]
+    },
+    {
+      "name": "菓子箱（金属製）",
+      "category": "can",
+      "tags": [
+        "かしはこ"
+      ]
+    },
+    {
+      "name": "菓子箱（プラスチック）",
+      "category": "shigen-pla",
+      "tags": [
+        "かしはこ"
+      ]
+    },
+    {
+      "name": "ガス釜（浴室等）",
+      "category": "unknown",
+      "tags": [
+        "がすかま"
+      ]
+    },
+    {
+      "name": "ガスストーブ",
+      "category": "sodai"
+    },
+    {
+      "name": "ガス台",
+      "category": "sodai",
+      "tags": [
+        "がすだい"
+      ]
+    },
+    {
+      "name": "ガステーブル",
+      "category": "sodai"
+    },
+    {
+      "name": "ガス湯沸器（台所用・取り付け式）",
+      "category": "sodai",
+      "tags": [
+        "がすゆわかしき"
+      ]
+    },
+    {
+      "name": "ガス湯沸器（浴室等）",
+      "category": "unknown",
+      "tags": [
+        "がすゆわかしき"
+      ]
+    },
+    {
+      "name": "ガスレンジ",
+      "category": "sodai"
+    },
+    {
+      "name": "カセットテープケース",
+      "category": "moeru"
+    },
+    {
+      "name": "カセットデッキ",
+      "category": "sodai"
+    },
+    {
+      "name": "ガソリン",
+      "category": "unknown"
+    },
+    {
+      "name": "ガソリンタンク",
+      "category": "sodai"
+    },
+    {
+      "name": "かつら",
+      "category": "moeru"
+    },
+    {
+      "name": "かばん（金属製）",
+      "category": "sodai",
+      "tags": [
+        "かばん"
+      ]
+    },
+    {
+      "name": "壁",
+      "category": "unknown",
+      "tags": [
+        "かべ"
+      ]
+    },
+    {
+      "name": "かま（鎌）（刃物）",
+      "category": "moenai",
+      "tags": [
+        "かま"
+      ]
+    },
+    {
+      "name": "かまど（陶器）",
+      "category": "sodai",
+      "tags": [
+        "かまど"
+      ]
+    },
+    {
+      "name": "紙くず",
+      "category": "moeru",
+      "tags": [
+        "かみくず"
+      ]
+    },
+    {
+      "name": "紙箱（食用油で汚れたもの）",
+      "category": "moeru",
+      "tags": [
+        "かみばこ"
+      ]
+    },
+    {
+      "name": "カラーボックス",
+      "category": "sodai"
+    },
+    {
+      "name": "カラオケ機器",
+      "category": "sodai",
+      "tags": [
+        "からおけきき"
+      ]
+    },
+    {
+      "name": "ガラス板（サッシ付40cm以上）",
+      "category": "unknown",
+      "tags": [
+        "がらすいた"
+      ]
+    },
+    {
+      "name": "ガラス板（サッシなし40cm以上）",
+      "category": "sodai",
+      "tags": [
+        "がらすいた"
+      ]
+    },
+    {
+      "name": "革ジャンパー",
+      "category": "fuku",
+      "tags": [
+        "かわじゃんぱー"
+      ]
+    },
+    {
+      "name": "かん（一斗缶）",
+      "category": "moenai",
+      "tags": [
+        "かん"
+      ]
+    },
+    {
+      "name": "かん（スプレー缶）",
+      "category": "can",
+      "tags": [
+        "かん"
+      ]
+    },
+    {
+      "name": "かん（飲食用・粉ミルク・菓子・調味料・ペットフード・油分の強いもの）",
+      "category": "can",
+      "tags": [
+        "かん"
+      ]
+    },
+    {
+      "name": "乾燥剤（食品用）",
+      "category": "moeru",
+      "tags": [
+        "かんそうざい"
+      ]
+    },
+    {
+      "name": "乾燥剤の容器（押入れ用）",
+      "category": "shigen-pla",
+      "tags": [
+        "かんそうざいのようき"
+      ]
+    },
+    {
+      "name": "感熱紙",
+      "category": "moeru",
+      "tags": [
+        "かんねつし"
+      ]
+    },
+    {
+      "name": "観葉植物（生きている木）",
+      "category": "unknown",
+      "tags": [
+        "かんようしょくぶつ"
+      ]
+    },
+    {
+      "name": "木（枝・直径が5cm以下長さ40～120cm)",
+      "category": "moeru",
+      "tags": [
+        "き"
+      ]
+    },
+    {
+      "name": "木（幹）",
+      "category": "unknown",
+      "tags": [
+        "き"
+      ]
+    },
+    {
+      "name": "キーボード（楽器）",
+      "category": "sodai",
+      "tags": [
+        "きーぼーど"
+      ]
+    },
+    {
+      "name": "キーボード（パソコン用）",
+      "category": "kiken",
+      "tags": [
+        "きーぼーど"
+      ]
+    },
+    {
+      "name": "木箱",
+      "category": "sodai",
+      "tags": [
+        "きばこ"
+      ]
+    },
+    {
+      "name": "木彫りの人形（熊など）",
+      "category": "unknown",
+      "tags": [
+        "きぼりのにんぎょう"
+      ]
+    },
+    {
+      "name": "脚立（金属製・木製）",
+      "category": "sodai",
+      "tags": [
+        "きゃたつ"
+      ]
+    },
+    {
+      "name": "キャップ（ふたプラスチック製）",
+      "category": "shigen-pla",
+      "tags": [
+        "きゃっぷ"
+      ]
+    },
+    {
+      "name": "キャリーバック",
+      "category": "sodai"
+    },
+    {
+      "name": "急須",
+      "category": "moenai",
+      "tags": [
+        "きゅうす"
+      ]
+    },
+    {
+      "name": "鏡台",
+      "category": "sodai",
+      "tags": [
+        "きょうだい"
+      ]
+    },
+    {
+      "name": "空気入れ（金属製足踏み式）",
+      "category": "moenai",
+      "tags": [
+        "くうきいれ"
+      ]
+    },
+    {
+      "name": "空気入れ（金属製自転車用）",
+      "category": "sodai",
+      "tags": [
+        "くうきいれ"
+      ]
+    },
+    {
+      "name": "クーラー",
+      "category": "unknown"
+    },
+    {
+      "name": "クーラーボックス",
+      "category": "sodai"
+    },
+    {
+      "name": "草刈り機",
+      "category": "sodai",
+      "tags": [
+        "くさかりき"
+      ]
+    },
+    {
+      "name": "薬（劇物等）",
+      "category": "unknown",
+      "tags": [
+        "くすり"
+      ]
+    },
+    {
+      "name": "薬（処方薬服用・軟膏・シップ・絆創膏）",
+      "category": "moeru",
+      "tags": [
+        "くすり"
+      ]
+    },
+    {
+      "name": "果物ネット",
+      "category": "moeru",
+      "tags": [
+        "くだものねっと"
+      ]
+    },
+    {
+      "name": "くつ（革靴・ハイヒール・運動靴・長くつ）",
+      "category": "moeru",
+      "tags": [
+        "くつ"
+      ]
+    },
+    {
+      "name": "くつ（スケート・スキー・安全靴・スパイク）",
+      "category": "moenai",
+      "tags": [
+        "くつ"
+      ]
+    },
+    {
+      "name": "ゲームソフト",
+      "category": "moeru"
+    },
+    {
+      "name": "原動機付自転車（50cc以下）",
+      "category": "sodai",
+      "tags": [
+        "げんどうきつきじてんしゃ"
+      ]
+    },
+    {
+      "name": "小型扇風機（手持ち）",
+      "category": "kiken",
+      "tags": [
+        "こがたせんぷうき"
+      ]
+    },
+    {
+      "name": "ゴムホース",
+      "category": "sodai"
+    },
+    {
+      "name": "米袋（紙）",
+      "category": "kami",
+      "tags": [
+        "こめぶくろ"
+      ]
+    },
+    {
+      "name": "米袋（ビニール）",
+      "category": "shigen-pla",
+      "tags": [
+        "こめぶくろ"
+      ]
+    },
+    {
+      "name": "ゴルフバッグ",
+      "category": "sodai"
+    },
+    {
+      "name": "ゴルフボール",
+      "category": "moeru"
+    },
+    {
+      "name": "コンクリート",
+      "category": "unknown"
+    },
+    {
+      "name": "コンパクトディスク（CD）・CDケース",
+      "category": "moeru"
+    },
+    {
+      "name": "婚礼ダンス",
+      "category": "sodai",
+      "tags": [
+        "こんれいだんす"
+      ]
+    },
+    {
+      "name": "サイドボード",
+      "category": "sodai"
+    },
+    {
+      "name": "材木（日曜大工材料）",
+      "category": "sodai",
+      "tags": [
+        "ざいもく"
+      ]
+    },
+    {
+      "name": "サウナ（室内用小部屋タイプ）",
+      "category": "unknown",
+      "tags": [
+        "さうな"
+      ]
+    },
+    {
+      "name": "柵（室内用）（赤ちゃん・ペット・暖房）",
+      "category": "sodai",
+      "tags": [
+        "さく"
+      ]
+    },
+    {
+      "name": "柵（屋外）（侵入防止・外壁）",
+      "category": "unknown",
+      "tags": [
+        "さく"
+      ]
+    },
+    {
+      "name": "酒びん",
+      "category": "bin",
+      "tags": [
+        "さけびん"
+      ]
+    },
+    {
+      "name": "座卓",
+      "category": "sodai",
+      "tags": [
+        "ざたく"
+      ]
+    },
+    {
+      "name": "サッカーボール",
+      "category": "moeru"
+    },
+    {
+      "name": "雑誌",
+      "category": "kami",
+      "tags": [
+        "ざっし"
+      ]
+    },
+    {
+      "name": "サッシ（網戸など）",
+      "category": "sodai",
+      "tags": [
+        "さっし"
+      ]
+    },
+    {
+      "name": "殺虫剤（スプレー缶）",
+      "category": "can",
+      "tags": [
+        "さっちゅうざい"
+      ]
+    },
+    {
+      "name": "座布団",
+      "category": "sodai",
+      "tags": [
+        "ざぶとん"
+      ]
+    },
+    {
+      "name": "座布団（長座布団）",
+      "category": "sodai",
+      "tags": [
+        "ざぶとん"
+      ]
+    },
+    {
+      "name": "皿（ガラス製）",
+      "category": "moenai",
+      "tags": [
+        "さら"
+      ]
+    },
+    {
+      "name": "皿（金属製）",
+      "category": "can",
+      "tags": [
+        "さら"
+      ]
+    },
+    {
+      "name": "皿（陶磁器）",
+      "category": "moenai",
+      "tags": [
+        "さら"
+      ]
+    },
+    {
+      "name": "三脚（金属製、木製）",
+      "category": "sodai",
+      "tags": [
+        "さんきゃく"
+      ]
+    },
+    {
+      "name": "サンダル",
+      "category": "moeru"
+    },
+    {
+      "name": "三輪車",
+      "category": "sodai",
+      "tags": [
+        "さんりんしゃ"
+      ]
+    },
+    {
+      "name": "シーツ",
+      "category": "fuku"
+    },
+    {
+      "name": "CD・CDケース",
+      "category": "moeru"
+    },
+    {
+      "name": "CDコンポ",
+      "category": "sodai"
+    },
+    {
+      "name": "ジーパン・ジーンズ",
+      "category": "fuku"
+    },
+    {
+      "name": "シーリングライト",
+      "category": "sodai"
+    },
+    {
+      "name": "敷きパット",
+      "category": "sodai",
+      "tags": [
+        "しきぱっと"
+      ]
+    },
+    {
+      "name": "自作のパソコン",
+      "category": "unknown",
+      "tags": [
+        "じさくのぱそこん"
+      ]
+    },
+    {
+      "name": "自作のパソコン（解体済）",
+      "category": "kiken",
+      "tags": [
+        "じさくのぱそこん"
+      ]
+    },
+    {
+      "name": "磁石",
+      "category": "moenai",
+      "tags": [
+        "じしゃく"
+      ]
+    },
+    {
+      "name": "システムベッド",
+      "category": "sodai"
+    },
+    {
+      "name": "下敷き（ノート用・書道用）",
+      "category": "moeru",
+      "tags": [
+        "したじき"
+      ]
+    },
+    {
+      "name": "湿気取りの容器（プラスチック製、押入れタンス用）",
+      "category": "shigen-pla",
+      "tags": [
+        "しっけとりのようき"
+      ]
+    },
+    {
+      "name": "自動車用部品",
+      "category": "unknown",
+      "tags": [
+        "じどうしゃようぶひん"
+      ]
+    },
+    {
+      "name": "竹刀",
+      "category": "sodai",
+      "tags": [
+        "しない"
+      ]
+    },
+    {
+      "name": "シニアカー",
+      "category": "sodai"
+    },
+    {
+      "name": "芝刈り機",
+      "category": "sodai",
+      "tags": [
+        "しばかりりき"
+      ]
+    },
+    {
+      "name": "ジャージ",
+      "category": "fuku"
+    },
+    {
+      "name": "シャープペンシル",
+      "category": "moenai"
+    },
+    {
+      "name": "写真",
+      "category": "moeru",
+      "tags": [
+        "しゃしん"
+      ]
+    },
+    {
+      "name": "写真集",
+      "category": "kami",
+      "tags": [
+        "しゃしんしゅう"
+      ]
+    },
+    {
+      "name": "シャツ",
+      "category": "fuku"
+    },
+    {
+      "name": "ジャッキ（車用小型）",
+      "category": "moenai",
+      "tags": [
+        "じゃっき"
+      ]
+    },
+    {
+      "name": "三味線",
+      "category": "sodai",
+      "tags": [
+        "しゃみせん"
+      ]
+    },
+    {
+      "name": "シャンデリア",
+      "category": "sodai"
+    },
+    {
+      "name": "ジャンパー（防寒具）",
+      "category": "moeru",
+      "tags": [
+        "じゃんぱー"
+      ]
+    },
+    {
+      "name": "シャンプー容器",
+      "category": "shigen-pla",
+      "tags": [
+        "しゃんぷーようき"
+      ]
+    },
+    {
+      "name": "ジューサー（ミキサー）",
+      "category": "kiken"
+    },
+    {
+      "name": "ジュースびん",
+      "category": "bin"
+    },
+    {
+      "name": "絨毯",
+      "category": "sodai",
+      "tags": [
+        "じゅうたん"
+      ]
+    },
+    {
+      "name": "充電池（乾電池以外）",
+      "category": "kiken",
+      "tags": [
+        "じゅうでんち"
+      ]
+    },
+    {
+      "name": "充電式湯たんぽ",
+      "category": "kiken",
+      "tags": [
+        "じゅうでんしきゆたんぽ"
+      ]
+    },
+    {
+      "name": "柔道着",
+      "category": "fuku",
+      "tags": [
+        "じゅうどうちゃく"
+      ]
+    },
+    {
+      "name": "シュノーケル（水泳）",
+      "category": "moenai",
+      "tags": [
+        "しゅのーける"
+      ]
+    },
+    {
+      "name": "シュレッダーごみ",
+      "category": "moeru"
+    },
+    {
+      "name": "定規",
+      "category": "moeru",
+      "tags": [
+        "じょうぎ"
+      ]
+    },
+    {
+      "name": "障子",
+      "category": "unknown",
+      "tags": [
+        "しょうじ"
+      ]
+    },
+    {
+      "name": "浄水器（蛇口用）",
+      "category": "moenai",
+      "tags": [
+        "じょうすいき"
+      ]
+    },
+    {
+      "name": "じょうろ（金属製）",
+      "category": "can",
+      "tags": [
+        "じょうろ"
+      ]
+    },
+    {
+      "name": "じょうろ（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "じょうろ"
+      ]
+    },
+    {
+      "name": "食品びん",
+      "category": "bin",
+      "tags": [
+        "しょくひんびん"
+      ]
+    },
+    {
+      "name": "食用油",
+      "category": "moeru",
+      "tags": [
+        "しょくようあぶら"
+      ]
+    },
+    {
+      "name": "除湿機",
+      "category": "sodai",
+      "tags": [
+        "じょしつき"
+      ]
+    },
+    {
+      "name": "食器（金属製）",
+      "category": "can",
+      "tags": [
+        "しょっき"
+      ]
+    },
+    {
+      "name": "食器（発泡スチロール製）（おわん等）",
+      "category": "shigen-pla",
+      "tags": [
+        "しょっき"
+      ]
+    },
+    {
+      "name": "食器（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "しょっき"
+      ]
+    },
+    {
+      "name": "食器（木製）（スプーン・はし等）",
+      "category": "moeru",
+      "tags": [
+        "しょっき"
+      ]
+    },
+    {
+      "name": "食器（せともの製・ガラス製）",
+      "category": "moenai",
+      "tags": [
+        "しょっき"
+      ]
+    },
+    {
+      "name": "食器乾燥機",
+      "category": "sodai",
+      "tags": [
+        "しょっきかんそうき"
+      ]
+    },
+    {
+      "name": "食器洗浄機",
+      "category": "sodai",
+      "tags": [
+        "しょっきせんじょうき"
+      ]
+    },
+    {
+      "name": "食器棚",
+      "category": "sodai",
+      "tags": [
+        "しょっきだな"
+      ]
+    },
+    {
+      "name": "人工芝",
+      "category": "sodai",
+      "tags": [
+        "じんこうしば"
+      ]
+    },
+    {
+      "name": "シンセサイザー",
+      "category": "sodai"
+    },
+    {
+      "name": "新聞紙",
+      "category": "kami",
+      "tags": [
+        "しんぶんし"
+      ]
+    },
+    {
+      "name": "水槽（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "すいそう"
+      ]
+    },
+    {
+      "name": "水槽（ガラス製）",
+      "category": "moenai",
+      "tags": [
+        "すいそう"
+      ]
+    },
+    {
+      "name": "水筒（金属製・ステンレス製）",
+      "category": "can",
+      "tags": [
+        "すいとう"
+      ]
+    },
+    {
+      "name": "水筒（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "すいとう"
+      ]
+    },
+    {
+      "name": "炊飯器",
+      "category": "kiken",
+      "tags": [
+        "すいはんき"
+      ]
+    },
+    {
+      "name": "スーツ",
+      "category": "fuku"
+    },
+    {
+      "name": "スーツケース",
+      "category": "sodai"
+    },
+    {
+      "name": "スキー板",
+      "category": "sodai",
+      "tags": [
+        "すきーいた"
+      ]
+    },
+    {
+      "name": "スキーウェア",
+      "category": "moeru"
+    },
+    {
+      "name": "スキー靴（プラスチック製）",
+      "category": "moenai",
+      "tags": [
+        "すきーくつ"
+      ]
+    },
+    {
+      "name": "スキーストック",
+      "category": "sodai"
+    },
+    {
+      "name": "スキャナー（家庭用）",
+      "category": "sodai",
+      "tags": [
+        "すきゃなー"
+      ]
+    },
+    {
+      "name": "スケートボード",
+      "category": "sodai"
+    },
+    {
+      "name": "すだれ",
+      "category": "sodai"
+    },
+    {
+      "name": "スチール缶",
+      "category": "can",
+      "tags": [
+        "すちーるかん"
+      ]
+    },
+    {
+      "name": "スチールたわし",
+      "category": "moeru"
+    },
+    {
+      "name": "ステレオ",
+      "category": "sodai"
+    },
+    {
+      "name": "ストーブ（電気・灯油・ガス）",
+      "category": "sodai",
+      "tags": [
+        "すとーぶ"
+      ]
+    },
+    {
+      "name": "ストッキング",
+      "category": "moeru"
+    },
+    {
+      "name": "砂・砂利",
+      "category": "unknown",
+      "tags": [
+        "すなじゃり"
+      ]
+    },
+    {
+      "name": "スニーカー",
+      "category": "moeru"
+    },
+    {
+      "name": "スノーボード",
+      "category": "sodai"
+    },
+    {
+      "name": "すのこ",
+      "category": "sodai"
+    },
+    {
+      "name": "スパイク（金具付）",
+      "category": "moenai",
+      "tags": [
+        "すぱいく"
+      ]
+    },
+    {
+      "name": "スピーカー",
+      "category": "sodai"
+    },
+    {
+      "name": "スプーン",
+      "category": "moenai"
+    },
+    {
+      "name": "スポンジ",
+      "category": "moeru"
+    },
+    {
+      "name": "スマートフォン",
+      "category": "kiken"
+    },
+    {
+      "name": "炭",
+      "category": "moeru",
+      "tags": [
+        "すみ"
+      ]
+    },
+    {
+      "name": "スリッパ",
+      "category": "moeru"
+    },
+    {
+      "name": "セーター",
+      "category": "fuku"
+    },
+    {
+      "name": "石油ポンプ",
+      "category": "moeru",
+      "tags": [
+        "せきゆぽんぷ"
+      ]
+    },
+    {
+      "name": "石こうボード",
+      "category": "unknown",
+      "tags": [
+        "いしこうぼーど"
+      ]
+    },
+    {
+      "name": "セトモノ",
+      "category": "moenai"
+    },
+    {
+      "name": "洗剤容器（プラスチック）",
+      "category": "shigen-pla",
+      "tags": [
+        "せんざいようき"
+      ]
+    },
+    {
+      "name": "洗濯ばさみ",
+      "category": "moeru",
+      "tags": [
+        "せんたくばさみ"
+      ]
+    },
+    {
+      "name": "洗濯ばさみハンガー",
+      "category": "moenai",
+      "tags": [
+        "せんたくばさみはんがー"
+      ]
+    },
+    {
+      "name": "扇風機",
+      "category": "sodai",
+      "tags": [
+        "せんぷうき"
+      ]
+    },
+    {
+      "name": "洗面器（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "せんめんき"
+      ]
+    },
+    {
+      "name": "洗面器（金属製）",
+      "category": "moenai",
+      "tags": [
+        "せんめんき"
+      ]
+    },
+    {
+      "name": "洗面台",
+      "category": "unknown",
+      "tags": [
+        "せんめんだい"
+      ]
+    },
+    {
+      "name": "双眼鏡",
+      "category": "moenai",
+      "tags": [
+        "そうがんきょう"
+      ]
+    },
+    {
+      "name": "雑巾",
+      "category": "moeru",
+      "tags": [
+        "ぞうきん"
+      ]
+    },
+    {
+      "name": "掃除機",
+      "category": "sodai",
+      "tags": [
+        "そうじき"
+      ]
+    },
+    {
+      "name": "ソファー（ローソファー含む）",
+      "category": "sodai",
+      "tags": [
+        "そふぁー"
+      ]
+    },
+    {
+      "name": "ソファーベッド",
+      "category": "sodai"
+    },
+    {
+      "name": "体温計（電子式）",
+      "category": "kiken",
+      "tags": [
+        "たいおんけい"
+      ]
+    },
+    {
+      "name": "太鼓",
+      "category": "sodai",
+      "tags": [
+        "たいこ"
+      ]
+    },
+    {
+      "name": "台車（家庭用運搬）",
+      "category": "sodai",
+      "tags": [
+        "だいしゃ"
+      ]
+    },
+    {
+      "name": "体重計",
+      "category": "kiken",
+      "tags": [
+        "たいじゅうけい"
+      ]
+    },
+    {
+      "name": "耐熱食器（ガラス製）",
+      "category": "moenai",
+      "tags": [
+        "たいねつしょっき"
+      ]
+    },
+    {
+      "name": "タイヤ",
+      "category": "unknown"
+    },
+    {
+      "name": "タイヤチェーン",
+      "category": "sodai"
+    },
+    {
+      "name": "ダウンジャケット",
+      "category": "moeru"
+    },
+    {
+      "name": "卓上コンロ",
+      "category": "kiken",
+      "tags": [
+        "たくじょうこんろ"
+      ]
+    },
+    {
+      "name": "竹馬",
+      "category": "sodai",
+      "tags": [
+        "たけうま"
+      ]
+    },
+    {
+      "name": "畳",
+      "category": "unknown",
+      "tags": [
+        "たたみ"
+      ]
+    },
+    {
+      "name": "卓球のラケット",
+      "category": "moeru",
+      "tags": [
+        "たっきゅうのらけっと"
+      ]
+    },
+    {
+      "name": "タッパー（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "たっぱー"
+      ]
+    },
+    {
+      "name": "棚（木製・スチール製）",
+      "category": "sodai",
+      "tags": [
+        "たな"
+      ]
+    },
+    {
+      "name": "卵のパック（紙製）",
+      "category": "kami",
+      "tags": [
+        "たまごのぱっく"
+      ]
+    },
+    {
+      "name": "タバコの吸殻",
+      "category": "moeru",
+      "tags": [
+        "たばこのすいがら"
+      ]
+    },
+    {
+      "name": "タブレット",
+      "category": "kiken"
+    },
+    {
+      "name": "卵のパック（プラスチック製）",
+      "category": "shigen-pla",
+      "tags": [
+        "たまごのぱっく"
+      ]
+    },
+    {
+      "name": "たわし",
+      "category": "moeru"
+    },
+    {
+      "name": "たんす（木製・金属製）",
+      "category": "sodai",
+      "tags": [
+        "たんす"
+      ]
+    },
+    {
+      "name": "ダンベル（金属製）",
+      "category": "sodai",
+      "tags": [
+        "だんべる"
+      ]
+    },
+    {
+      "name": "ダンベル（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "だんべる"
+      ]
+    },
+    {
+      "name": "ダンボール",
+      "category": "kami"
+    },
+    {
+      "name": "チェーンソー",
+      "category": "sodai"
+    },
+    {
+      "name": "チェスト",
+      "category": "sodai"
+    },
+    {
+      "name": "チャイルドシート",
+      "category": "sodai"
+    },
+    {
+      "name": "茶筒",
+      "category": "can",
+      "tags": [
+        "ちゃづつ"
+      ]
+    },
+    {
+      "name": "茶碗（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "ちゃわん"
+      ]
+    },
+    {
+      "name": "茶碗（セトモノ）",
+      "category": "moenai",
+      "tags": [
+        "ちゃわん"
+      ]
+    },
+    {
+      "name": "注射針",
+      "category": "moeru",
+      "tags": [
+        "ちゅうしゃばり"
+      ]
+    },
+    {
+      "name": "チューブ（自転車用）",
+      "category": "moeru",
+      "tags": [
+        "ちゅーぶ"
+      ]
+    },
+    {
+      "name": "チューブ（プラスチック製・ラミネート製）",
+      "category": "moeru",
+      "tags": [
+        "ちゅーぶ"
+      ]
+    },
+    {
+      "name": "チラシ（新聞広告）",
+      "category": "kami",
+      "tags": [
+        "ちらし"
+      ]
+    },
+    {
+      "name": "ちりとり（金属製）",
+      "category": "can",
+      "tags": [
+        "ちりとり"
+      ]
+    },
+    {
+      "name": "ちりとり（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "ちりとり"
+      ]
+    },
+    {
+      "name": "使い捨てカイロ",
+      "category": "moeru",
+      "tags": [
+        "つかいすてかいろ"
+      ]
+    },
+    {
+      "name": "机（木製・スチール製）",
+      "category": "sodai",
+      "tags": [
+        "つくえ"
+      ]
+    },
+    {
+      "name": "漬物石（重石）",
+      "category": "unknown",
+      "tags": [
+        "つけものいし"
+      ]
+    },
+    {
+      "name": "土",
+      "category": "unknown",
+      "tags": [
+        "つち"
+      ]
+    },
+    {
+      "name": "釣り糸（金属ワイヤー含有）",
+      "category": "moenai",
+      "tags": [
+        "つりいと"
+      ]
+    },
+    {
+      "name": "釣り糸（プラスチック製・合成繊維製）",
+      "category": "moeru",
+      "tags": [
+        "つりいと"
+      ]
+    },
+    {
+      "name": "釣りざお（金属製・木製・プラスチック製・カーボン製）",
+      "category": "sodai",
+      "tags": [
+        "つりざお"
+      ]
+    },
+    {
+      "name": "釣りざおのリール",
+      "category": "moenai",
+      "tags": [
+        "つりざおのりーる"
+      ]
+    },
+    {
+      "name": "釣り針",
+      "category": "moenai",
+      "tags": [
+        "つりはり"
+      ]
+    },
+    {
+      "name": "Tシャツ",
+      "category": "fuku"
+    },
+    {
+      "name": "ディスプレイ（パソコン）(ブラウン管・液晶)",
+      "category": "unknown",
+      "tags": [
+        "でぃすぷれい"
+      ]
+    },
+    {
+      "name": "ティッシュの箱",
+      "category": "kami",
+      "tags": [
+        "てぃっしゅのはこ"
+      ]
+    },
+    {
+      "name": "DVD・DVDケース",
+      "category": "moeru"
+    },
+    {
+      "name": "テーブル",
+      "category": "sodai"
+    },
+    {
+      "name": "デジタルカメラ",
+      "category": "kiken"
+    },
+    {
+      "name": "手帳",
+      "category": "kami",
+      "tags": [
+        "てちょう"
+      ]
+    },
+    {
+      "name": "テニスボール",
+      "category": "moeru"
+    },
+    {
+      "name": "テニスラケット（木製・金属製）",
+      "category": "moenai",
+      "tags": [
+        "てにすらけっと"
+      ]
+    },
+    {
+      "name": "手ぬぐい",
+      "category": "fuku",
+      "tags": [
+        "てぬぐい"
+      ]
+    },
+    {
+      "name": "手袋（ゴム・ビニール）",
+      "category": "moeru",
+      "tags": [
+        "てぶくろ"
+      ]
+    },
+    {
+      "name": "テレビアンテナ",
+      "category": "sodai"
+    },
+    {
+      "name": "テレビゲーム機",
+      "category": "kiken",
+      "tags": [
+        "てれびげーむき"
+      ]
+    },
+    {
+      "name": "テレビ台",
+      "category": "sodai",
+      "tags": [
+        "てれびだい"
+      ]
+    },
+    {
+      "name": "電気コード",
+      "category": "kiken",
+      "tags": [
+        "でんきこーど"
+      ]
+    },
+    {
+      "name": "電気スタンド",
+      "category": "kiken",
+      "tags": [
+        "でんきすたんど"
+      ]
+    },
+    {
+      "name": "電気ポット",
+      "category": "sodai",
+      "tags": [
+        "でんきぽっと"
+      ]
+    },
+    {
+      "name": "電球",
+      "category": "kiken",
+      "tags": [
+        "でんきゅう"
+      ]
+    },
+    {
+      "name": "電子レンジ",
+      "category": "sodai",
+      "tags": [
+        "でんしれんじ"
+      ]
+    },
+    {
+      "name": "電卓",
+      "category": "kiken",
+      "tags": [
+        "でんたく"
+      ]
+    },
+    {
+      "name": "電池（乾電池・コイン型電池）",
+      "category": "yugai",
+      "tags": [
+        "でんち"
+      ]
+    },
+    {
+      "name": "電池（ボタン型電池）",
+      "category": "yugai",
+      "tags": [
+        "でんち"
+      ]
+    },
+    {
+      "name": "電池（リチウムイオン電池・ニッケル水素電池・ニカド電池などの充電式電池）",
+      "category": "kiken",
+      "tags": [
+        "でんち"
+      ]
+    },
+    {
+      "name": "テント",
+      "category": "sodai"
+    },
+    {
+      "name": "電動自転車",
+      "category": "sodai",
+      "tags": [
+        "でんどうじてんしゃ"
+      ]
+    },
+    {
+      "name": "電動歯ブラシ",
+      "category": "kiken",
+      "tags": [
+        "でんどうはぶらし"
+      ]
+    },
+    {
+      "name": "電話機",
+      "category": "kiken",
+      "tags": [
+        "でんわき"
+      ]
+    },
+    {
+      "name": "トイレットペーパーの芯",
+      "category": "moeru",
+      "tags": [
+        "といれっとぺーぱーのしん"
+      ]
+    },
+    {
+      "name": "豆腐パック",
+      "category": "shigen-pla",
+      "tags": [
+        "とうふぱっく"
+      ]
+    },
+    {
+      "name": "灯油缶（金属製）",
+      "category": "moenai",
+      "tags": [
+        "とうゆかん"
+      ]
+    },
+    {
+      "name": "トースター",
+      "category": "kiken"
+    },
+    {
+      "name": "時計（腕・目覚まし・飾り・壁掛け）",
+      "category": "kiken",
+      "tags": [
+        "とけい"
+      ]
+    },
+    {
+      "name": "どてら",
+      "category": "moeru"
+    },
+    {
+      "name": "土鍋",
+      "category": "moenai",
+      "tags": [
+        "どなべ"
+      ]
+    },
+    {
+      "name": "ドライバー（工具）",
+      "category": "moenai",
+      "tags": [
+        "どらいばー"
+      ]
+    },
+    {
+      "name": "ドライヤー",
+      "category": "kiken"
+    },
+    {
+      "name": "ドラム缶",
+      "category": "unknown",
+      "tags": [
+        "どらむかん"
+      ]
+    },
+    {
+      "name": "トランク",
+      "category": "sodai"
+    },
+    {
+      "name": "鳥かご",
+      "category": "sodai",
+      "tags": [
+        "とりかご"
+      ]
+    },
+    {
+      "name": "トレイ（紙製）",
+      "category": "kami",
+      "tags": [
+        "とれい"
+      ]
+    },
+    {
+      "name": "トレイ（プラスチック製）",
+      "category": "shigen-pla",
+      "tags": [
+        "とれい"
+      ]
+    },
+    {
+      "name": "ナイフ（刃物）",
+      "category": "moenai",
+      "tags": [
+        "ないふ"
+      ]
+    },
+    {
+      "name": "長くつ（ゴム）",
+      "category": "moeru",
+      "tags": [
+        "ながくつ"
+      ]
+    },
+    {
+      "name": "流し台",
+      "category": "unknown",
+      "tags": [
+        "ながしだい"
+      ]
+    },
+    {
+      "name": "なべ（金属製）",
+      "category": "can",
+      "tags": [
+        "なべ"
+      ]
+    },
+    {
+      "name": "なべ（陶器製）",
+      "category": "moenai",
+      "tags": [
+        "なべ"
+      ]
+    },
+    {
+      "name": "生ごみ",
+      "category": "moeru",
+      "tags": [
+        "なまごみ"
+      ]
+    },
+    {
+      "name": "人形（木製・プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "にんぎょう"
+      ]
+    },
+    {
+      "name": "ぬいぐるみ",
+      "category": "moeru"
+    },
+    {
+      "name": "布切れ",
+      "category": "moeru",
+      "tags": [
+        "ぬのきれ"
+      ]
+    },
+    {
+      "name": "ネクタイ",
+      "category": "fuku"
+    },
+    {
+      "name": "ねじ",
+      "category": "moenai"
+    },
+    {
+      "name": "寝袋",
+      "category": "moeru",
+      "tags": [
+        "ねぶくろ"
+      ]
+    },
+    {
+      "name": "農薬",
+      "category": "unknown",
+      "tags": [
+        "のうやく"
+      ]
+    },
+    {
+      "name": "ノート",
+      "category": "kami"
+    },
+    {
+      "name": "のこぎり",
+      "category": "moenai"
+    },
+    {
+      "name": "ハードディスクドライブ（パソコン・テレビ）",
+      "category": "kiken"
+    },
+    {
+      "name": "バーベル",
+      "category": "sodai"
+    },
+    {
+      "name": "灰",
+      "category": "unknown",
+      "tags": [
+        "はい"
+      ]
+    },
+    {
+      "name": "バイク",
+      "category": "unknown"
+    },
+    {
+      "name": "バインダー（紙製）",
+      "category": "kami",
+      "tags": [
+        "ばいんだー"
+      ]
+    },
+    {
+      "name": "はがき",
+      "category": "kami"
+    },
+    {
+      "name": "白熱球",
+      "category": "kiken",
+      "tags": [
+        "はくねつたま"
+      ]
+    },
+    {
+      "name": "バケツ（金属製）",
+      "category": "can",
+      "tags": [
+        "ばけつ"
+      ]
+    },
+    {
+      "name": "バケツ（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "ばけつ"
+      ]
+    },
+    {
+      "name": "ハサミ",
+      "category": "moenai"
+    },
+    {
+      "name": "はしご（木製・金属製）",
+      "category": "sodai",
+      "tags": [
+        "はしご"
+      ]
+    },
+    {
+      "name": "パソコン",
+      "category": "unknown"
+    },
+    {
+      "name": "パソコンの周辺機器",
+      "category": "kiken",
+      "tags": [
+        "ぱそこんのしゅうへんきき"
+      ]
+    },
+    {
+      "name": "パソコンラック",
+      "category": "sodai"
+    },
+    {
+      "name": "発煙筒（使用済）",
+      "category": "moeru",
+      "tags": [
+        "はつえんとう"
+      ]
+    },
+    {
+      "name": "バッグ（皮製・布製）",
+      "category": "moeru",
+      "tags": [
+        "ばっぐ"
+      ]
+    },
+    {
+      "name": "バッテリー",
+      "category": "kiken"
+    },
+    {
+      "name": "発電機",
+      "category": "sodai",
+      "tags": [
+        "はつでんき"
+      ]
+    },
+    {
+      "name": "バット（木製・金属製）",
+      "category": "sodai",
+      "tags": [
+        "ばっと"
+      ]
+    },
+    {
+      "name": "発泡スチロール（プラマークあり）",
+      "category": "shigen-pla",
+      "tags": [
+        "はっぽうすちろーる"
+      ]
+    },
+    {
+      "name": "発泡スチロール（プラマークなし）",
+      "category": "moeru",
+      "tags": [
+        "はっぽうすちろーる"
+      ]
+    },
+    {
+      "name": "花",
+      "category": "moeru",
+      "tags": [
+        "はな"
+      ]
+    },
+    {
+      "name": "花火",
+      "category": "moeru",
+      "tags": [
+        "はなび"
+      ]
+    },
+    {
+      "name": "歯ブラシ",
+      "category": "moeru",
+      "tags": [
+        "はぶらし"
+      ]
+    },
+    {
+      "name": "刃物",
+      "category": "moenai",
+      "tags": [
+        "はもの"
+      ]
+    },
+    {
+      "name": "針（縫い針・マチ針など）",
+      "category": "moenai",
+      "tags": [
+        "はり"
+      ]
+    },
+    {
+      "name": "針金",
+      "category": "moenai",
+      "tags": [
+        "はりがね"
+      ]
+    },
+    {
+      "name": "ハンガー（針金製）",
+      "category": "moenai",
+      "tags": [
+        "はんがー"
+      ]
+    },
+    {
+      "name": "ハンガー（木製・プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "はんがー"
+      ]
+    },
+    {
+      "name": "ハンディファン",
+      "category": "kiken"
+    },
+    {
+      "name": "はんてん",
+      "category": "moeru"
+    },
+    {
+      "name": "ピアノ",
+      "category": "unknown"
+    },
+    {
+      "name": "BSアンテナ",
+      "category": "sodai"
+    },
+    {
+      "name": "ビーチサンダル",
+      "category": "moeru"
+    },
+    {
+      "name": "ビールびん",
+      "category": "bin"
+    },
+    {
+      "name": "ひげそり（手動）",
+      "category": "moenai",
+      "tags": [
+        "ひげそり"
+      ]
+    },
+    {
+      "name": "ひげそり（電動）",
+      "category": "kiken",
+      "tags": [
+        "ひげそり"
+      ]
+    },
+    {
+      "name": "ビデオカメラ",
+      "category": "kiken"
+    },
+    {
+      "name": "ビデオテープ・ケース",
+      "category": "moeru"
+    },
+    {
+      "name": "ビデオデッキ",
+      "category": "sodai"
+    },
+    {
+      "name": "ひな人形・五月人形",
+      "category": "sodai",
+      "tags": [
+        "ひなにんぎょうごがつにんぎょう"
+      ]
+    },
+    {
+      "name": "ビニールシート",
+      "category": "moeru"
+    },
+    {
+      "name": "ビニールプール",
+      "category": "sodai"
+    },
+    {
+      "name": "ビニール袋（商品を包んでいたもの）",
+      "category": "shigen-pla",
+      "tags": [
+        "びにーるふくろ"
+      ]
+    },
+    {
+      "name": "百科事典",
+      "category": "kami",
+      "tags": [
+        "ひゃっかじてん"
+      ]
+    },
+    {
+      "name": "ファイル（紙製）",
+      "category": "kami",
+      "tags": [
+        "ふぁいる"
+      ]
+    },
+    {
+      "name": "ファクシミリ（ファクス）",
+      "category": "sodai"
+    },
+    {
+      "name": "ファンヒーター",
+      "category": "sodai"
+    },
+    {
+      "name": "フィルムケース",
+      "category": "moeru"
+    },
+    {
+      "name": "封筒",
+      "category": "kami",
+      "tags": [
+        "ふうとう"
+      ]
+    },
+    {
+      "name": "フォーク（金属製）",
+      "category": "moenai",
+      "tags": [
+        "ふぉーく"
+      ]
+    },
+    {
+      "name": "ふすま",
+      "category": "unknown"
+    },
+    {
+      "name": "仏壇",
+      "category": "sodai",
+      "tags": [
+        "ぶつだん"
+      ]
+    },
+    {
+      "name": "ふとん",
+      "category": "sodai"
+    },
+    {
+      "name": "布団カバー",
+      "category": "fuku",
+      "tags": [
+        "ふとんかばー"
+      ]
+    },
+    {
+      "name": "ふとん乾燥機",
+      "category": "sodai",
+      "tags": [
+        "ふとんかんそうき"
+      ]
+    },
+    {
+      "name": "フライパン",
+      "category": "can"
+    },
+    {
+      "name": "ブラインド",
+      "category": "sodai"
+    },
+    {
+      "name": "プラスチック板",
+      "category": "sodai",
+      "tags": [
+        "ぷらすちっくいた"
+      ]
+    },
+    {
+      "name": "フラッシュメモリ",
+      "category": "kiken"
+    },
+    {
+      "name": "プランター（植木鉢）",
+      "category": "sodai",
+      "tags": [
+        "ぷらんたー"
+      ]
+    },
+    {
+      "name": "プリンター",
+      "category": "sodai"
+    },
+    {
+      "name": "プリンのケース",
+      "category": "shigen-pla"
+    },
+    {
+      "name": "ブルーシート",
+      "category": "sodai"
+    },
+    {
+      "name": "プレーヤー（レコード・MD・CD・DVD）",
+      "category": "sodai"
+    },
+    {
+      "name": "風呂釜",
+      "category": "unknown",
+      "tags": [
+        "ふろがま"
+      ]
+    },
+    {
+      "name": "ブロック",
+      "category": "unknown"
+    },
+    {
+      "name": "フロッピーディスク",
+      "category": "moeru"
+    },
+    {
+      "name": "風呂のイス",
+      "category": "moeru",
+      "tags": [
+        "ふろのいす"
+      ]
+    },
+    {
+      "name": "プロパンガスボンベ",
+      "category": "unknown"
+    },
+    {
+      "name": "ブロンズ像",
+      "category": "moenai",
+      "tags": [
+        "ぶろんずぞう"
+      ]
+    },
+    {
+      "name": "ベッド（木製・パイプ・介護用）",
+      "category": "sodai",
+      "tags": [
+        "べっど"
+      ]
+    },
+    {
+      "name": "ペットのトイレ用砂",
+      "category": "moeru",
+      "tags": [
+        "ぺっとのといれようすな"
+      ]
+    },
+    {
+      "name": "ペットのふん",
+      "category": "moeru"
+    },
+    {
+      "name": "ペットフードの缶",
+      "category": "can",
+      "tags": [
+        "ぺっとふーどのかん"
+      ]
+    },
+    {
+      "name": "ペットボトル",
+      "category": "pet"
+    },
+    {
+      "name": "ヘッドホン",
+      "category": "kiken"
+    },
+    {
+      "name": "ベッドマット",
+      "category": "sodai"
+    },
+    {
+      "name": "ベニヤ板",
+      "category": "sodai",
+      "tags": [
+        "べにやいた"
+      ]
+    },
+    {
+      "name": "ベビーカー",
+      "category": "sodai"
+    },
+    {
+      "name": "ベビーバス",
+      "category": "sodai"
+    },
+    {
+      "name": "ベルト類（衣料用）",
+      "category": "moeru",
+      "tags": [
+        "べるとるい"
+      ]
+    },
+    {
+      "name": "ヘルメット",
+      "category": "moenai"
+    },
+    {
+      "name": "便器",
+      "category": "unknown",
+      "tags": [
+        "べんき"
+      ]
+    },
+    {
+      "name": "ペンキの缶",
+      "category": "moenai",
+      "tags": [
+        "ぺんきのかん"
+      ]
+    },
+    {
+      "name": "便座（ウォシュレット便座含む）",
+      "category": "sodai",
+      "tags": [
+        "べんざ"
+      ]
+    },
+    {
+      "name": "弁当箱（金属製）",
+      "category": "can",
+      "tags": [
+        "べんとうばこ"
+      ]
+    },
+    {
+      "name": "弁当箱（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "べんとうばこ"
+      ]
+    },
+    {
+      "name": "ホース（ゴム製・プラスチック製・家庭用）",
+      "category": "sodai",
+      "tags": [
+        "ほーす"
+      ]
+    },
+    {
+      "name": "ボード",
+      "category": "sodai"
+    },
+    {
+      "name": "ボール（ゴルフ、野球、サッカー等）",
+      "category": "moeru",
+      "tags": [
+        "ぼーる"
+      ]
+    },
+    {
+      "name": "ボールペン（金属製）",
+      "category": "moenai",
+      "tags": [
+        "ぼーるぺん"
+      ]
+    },
+    {
+      "name": "ボールペン（プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "ぼーるぺん"
+      ]
+    },
+    {
+      "name": "ホーロー鍋",
+      "category": "moenai",
+      "tags": [
+        "ほーろーなべ"
+      ]
+    },
+    {
+      "name": "歩行器（ベビー用・大人用）",
+      "category": "sodai",
+      "tags": [
+        "ほこうき"
+      ]
+    },
+    {
+      "name": "ホチキス",
+      "category": "moenai"
+    },
+    {
+      "name": "補聴器",
+      "category": "kiken",
+      "tags": [
+        "ほちょうき"
+      ]
+    },
+    {
+      "name": "ポット（保温・電気）",
+      "category": "sodai",
+      "tags": [
+        "ぽっと"
+      ]
+    },
+    {
+      "name": "ホットカーペット",
+      "category": "sodai"
+    },
+    {
+      "name": "ホットプレート",
+      "category": "sodai"
+    },
+    {
+      "name": "ポリタンク（ガソリン・灯油など）（18リットル以下）",
+      "category": "moenai",
+      "tags": [
+        "ぽりたんく"
+      ]
+    },
+    {
+      "name": "ポリ袋（ゴミ袋など）",
+      "category": "shigen-pla",
+      "tags": [
+        "ぽりふくろ"
+      ]
+    },
+    {
+      "name": "ボルト",
+      "category": "moenai"
+    },
+    {
+      "name": "保冷剤（食べ物を冷やすもの）",
+      "category": "moeru",
+      "tags": [
+        "ほれいざい"
+      ]
+    },
+    {
+      "name": "本",
+      "category": "kami",
+      "tags": [
+        "ほん"
+      ]
+    },
+    {
+      "name": "本棚",
+      "category": "sodai",
+      "tags": [
+        "ほんだな"
+      ]
+    },
+    {
+      "name": "マージャン牌",
+      "category": "moeru",
+      "tags": [
+        "まーじゃんぱい"
+      ]
+    },
+    {
+      "name": "マウス（パソコン）",
+      "category": "kiken"
+    },
+    {
+      "name": "まくら（そばがら・ビース）",
+      "category": "moeru"
+    },
+    {
+      "name": "マッサージ機（いす型・ベッド型）",
+      "category": "sodai",
+      "tags": [
+        "まっさーじき"
+      ]
+    },
+    {
+      "name": "マットレス（寝具）",
+      "category": "sodai",
+      "tags": [
+        "まっとれす"
+      ]
+    },
+    {
+      "name": "まな板（木製・プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "まないた"
+      ]
+    },
+    {
+      "name": "マネキン",
+      "category": "unknown"
+    },
+    {
+      "name": "まんが本",
+      "category": "kami",
+      "tags": [
+        "まんがほん"
+      ]
+    },
+    {
+      "name": "万年筆",
+      "category": "moenai",
+      "tags": [
+        "まんねんひつ"
+      ]
+    },
+    {
+      "name": "ミキサー（ジューサー）",
+      "category": "kiken"
+    },
+    {
+      "name": "ミシン（卓上式、足踏み式、コンパクト）",
+      "category": "sodai",
+      "tags": [
+        "みしん"
+      ]
+    },
+    {
+      "name": "ミニカー",
+      "category": "moeru"
+    },
+    {
+      "name": "虫かご（金属製）",
+      "category": "moenai",
+      "tags": [
+        "むしかご"
+      ]
+    },
+    {
+      "name": "虫かご（竹製・木製・プラスチック製）",
+      "category": "moeru",
+      "tags": [
+        "むしかご"
+      ]
+    },
+    {
+      "name": "虫めがね",
+      "category": "moenai",
+      "tags": [
+        "むしめがね"
+      ]
+    },
+    {
+      "name": "名刺",
+      "category": "kami",
+      "tags": [
+        "めいし"
+      ]
+    },
+    {
+      "name": "めがね",
+      "category": "moenai"
+    },
+    {
+      "name": "メモ用紙",
+      "category": "kami",
+      "tags": [
+        "めもようし"
+      ]
+    },
+    {
+      "name": "メモリースティック・メモリーフラッシュ",
+      "category": "kiken"
+    },
+    {
+      "name": "木材",
+      "category": "sodai",
+      "tags": [
+        "もくざい"
+      ]
+    },
+    {
+      "name": "物置（棚型）",
+      "category": "sodai",
+      "tags": [
+        "ものおき"
+      ]
+    },
+    {
+      "name": "物干し竿（金属製・木製・プラスチック製）",
+      "category": "sodai",
+      "tags": [
+        "ものほしさお"
+      ]
+    },
+    {
+      "name": "モバイルバッテリー",
+      "category": "kiken"
+    },
+    {
+      "name": "やかん",
+      "category": "can"
+    },
+    {
+      "name": "野球ボール",
+      "category": "moeru",
+      "tags": [
+        "やきゅうぼーる"
+      ]
+    },
+    {
+      "name": "野菜クズ",
+      "category": "moeru",
+      "tags": [
+        "やさいくず"
+      ]
+    },
+    {
+      "name": "ゆかた",
+      "category": "fuku"
+    },
+    {
+      "name": "ゆたんぽ（金属製）",
+      "category": "can",
+      "tags": [
+        "ゆたんぽ"
+      ]
+    },
+    {
+      "name": "ゆたんぽ（充電式）",
+      "category": "kiken",
+      "tags": [
+        "ゆたんぽ"
+      ]
+    },
+    {
+      "name": "浴槽",
+      "category": "unknown",
+      "tags": [
+        "よくそう"
+      ]
+    },
+    {
+      "name": "ライター（金属製）",
+      "category": "moenai",
+      "tags": [
+        "らいたー"
+      ]
+    },
+    {
+      "name": "ラケット（金属製・木製）",
+      "category": "moenai",
+      "tags": [
+        "らけっと"
+      ]
+    },
+    {
+      "name": "ラジオ",
+      "category": "kiken"
+    },
+    {
+      "name": "ラジコン",
+      "category": "kiken"
+    },
+    {
+      "name": "ラック",
+      "category": "sodai"
+    },
+    {
+      "name": "ラップ（食品用透明フィルム）",
+      "category": "moeru",
+      "tags": [
+        "らっぷ"
+      ]
+    },
+    {
+      "name": "ランドセル",
+      "category": "moeru"
+    },
+    {
+      "name": "リール（釣り用）",
+      "category": "moenai",
+      "tags": [
+        "りーる"
+      ]
+    },
+    {
+      "name": "リチウムイオン電池",
+      "category": "kiken",
+      "tags": [
+        "りちうむいおんでんち"
+      ]
+    },
+    {
+      "name": "リモコン（テレビ・音響機器用）",
+      "category": "kiken",
+      "tags": [
+        "りもこん"
+      ]
+    },
+    {
+      "name": "リュックサック",
+      "category": "moeru"
+    },
+    {
+      "name": "ルームランナー",
+      "category": "sodai"
+    },
+    {
+      "name": "冷蔵庫",
+      "category": "unknown",
+      "tags": [
+        "れいぞうこ"
+      ]
+    },
+    {
+      "name": "冷凍庫",
+      "category": "unknown",
+      "tags": [
+        "れいとうこ"
+      ]
+    },
+    {
+      "name": "レコード",
+      "category": "moeru"
+    },
+    {
+      "name": "レコードプレーヤー",
+      "category": "sodai"
+    },
+    {
+      "name": "レシート",
+      "category": "moeru"
+    },
+    {
+      "name": "レジ袋",
+      "category": "shigen-pla",
+      "tags": [
+        "れじふくろ"
+      ]
+    },
+    {
+      "name": "レジャーシート",
+      "category": "moeru"
+    },
+    {
+      "name": "レトルトパック",
+      "category": "shigen-pla"
+    },
+    {
+      "name": "レンガ",
+      "category": "unknown"
+    },
+    {
+      "name": "レンジ（電子・ガス）",
+      "category": "sodai",
+      "tags": [
+        "れんじ"
+      ]
+    },
+    {
+      "name": "レンズ",
+      "category": "moenai"
+    },
+    {
+      "name": "ろうそく",
+      "category": "moeru"
+    },
+    {
+      "name": "ロープ",
+      "category": "moeru"
+    },
+    {
+      "name": "ローラースケート・ローラーブレード",
+      "category": "moenai"
+    },
+    {
+      "name": "ワープロ",
+      "category": "sodai"
+    },
+    {
+      "name": "ワイシャツ",
+      "category": "fuku"
+    },
+    {
+      "name": "ワイヤレスイヤホン",
+      "category": "kiken"
+    },
+    {
+      "name": "ワインびん",
+      "category": "bin"
+    },
+    {
+      "name": "輪ゴム",
+      "category": "moeru",
+      "tags": [
+        "わごむ"
+      ]
+    },
+    {
+      "name": "ワゴン（家庭用）",
+      "category": "sodai",
+      "tags": [
+        "わごん"
+      ]
+    },
+    {
+      "name": "綿入れ衣装",
+      "category": "moeru",
+      "tags": [
+        "わたいれれいしょう"
+      ]
+    },
+    {
+      "name": "割り箸",
+      "category": "moeru",
+      "tags": [
+        "わりばし"
+      ]
+    }
   ]
 }
