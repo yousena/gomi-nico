@@ -114,17 +114,35 @@ const DEFAULT_FAQ = [
 let DATA = null;
 let calYear, calMonth;
 
+/**
+ * 都市検出: metaタグ(/shiki/) → URLパス(/shiki/) → クエリパラメータ(?city=shiki) → デフォルト
+ * init()と地域選択(gc_area)保存キーの両方で同じ判定ロジックを使うための共通関数。
+ */
+function getCityId() {
+  const cityMeta = document.querySelector('meta[name="city"]');
+  const pathMatch = location.pathname.match(/^\/([a-z0-9-]+)\//);
+  return cityMeta?.content
+      || (pathMatch ? pathMatch[1] : null)
+      || new URLSearchParams(location.search).get('city')
+      || 'shiki';
+}
+
+/**
+ * 選択地区を保存するlocalStorageキー。自治体ごとに分離する（'gc_area_' + city）。
+ * 志木市・蕨市は同一origin（gomi-nico.jp）のためlocalStorageを共有しており、
+ * 自治体非依存の単一キー'gc_area'のままだと、片方の自治体で選んだ地区キーが
+ * もう片方のDATA.areasに存在せず、restoreArea()のガードに弾かれて
+ * 「地域設定バッジが表示されない」症状になっていた（2026-07-23発見・修正）。
+ */
+function getAreaKey() {
+  return 'gc_area_' + getCityId();
+}
+
 /* =====================================================
    ENTRY POINT
 ===================================================== */
 (async function init() {
-  // 都市検出: metaタグ(/shiki/) → URLパス(/shiki/) → クエリパラメータ(?city=shiki) → デフォルト
-  const cityMeta = document.querySelector('meta[name="city"]');
-  const pathMatch = location.pathname.match(/^\/([a-z0-9-]+)\//);
-  const city = cityMeta?.content
-            || (pathMatch ? pathMatch[1] : null)
-            || new URLSearchParams(location.search).get('city')
-            || 'shiki';
+  const city = getCityId();
   showLoading(true);
 
   try {
@@ -400,7 +418,7 @@ function buildAreaSheet() {
 
 function openSheet() {
   closeMenu();
-  const saved = localStorage.getItem('gc_area');
+  const saved = localStorage.getItem(getAreaKey());
   document.querySelectorAll('.area-option').forEach(btn => {
     const isSelected = btn.dataset.key === saved;
     btn.classList.toggle('selected', isSelected);
@@ -421,20 +439,33 @@ function handleBackdropClick(e) {
 }
 
 function selectArea(key) {
-  localStorage.setItem('gc_area', key);
+  localStorage.setItem(getAreaKey(), key);
   updateAreaDisplay();
   renderTodayStrip();
   renderCalendar();
   closeSheet();
 }
 
+/**
+ * 自治体非依存だった旧キー'gc_area'からの一度きりの移行。
+ * 新キーが未設定で、かつ旧キーの値が「今開いている自治体」のareasに実在する場合のみコピーする
+ * （他自治体の地区キーをそのまま持ち込んで誤爆させないための安全ガード）。
+ */
+function migrateLegacyAreaKey() {
+  const newKey = getAreaKey();
+  if (localStorage.getItem(newKey)) return;
+  const legacy = localStorage.getItem('gc_area');
+  if (legacy && DATA.areas[legacy]) localStorage.setItem(newKey, legacy);
+}
+
 function restoreArea() {
-  const saved = localStorage.getItem('gc_area');
+  migrateLegacyAreaKey();
+  const saved = localStorage.getItem(getAreaKey());
   if (saved && DATA.areas[saved]) updateAreaDisplay();
 }
 
 function updateAreaDisplay() {
-  const key    = localStorage.getItem('gc_area');
+  const key    = localStorage.getItem(getAreaKey());
   const nameEl = document.getElementById('header-area-name');
   if (!nameEl) return;
   if (key && DATA.areas[key]) {
@@ -595,7 +626,7 @@ function renderTodayStrip() {
   if (!stripEl) return;
 
   const today   = new Date();
-  const areaKey = localStorage.getItem('gc_area');
+  const areaKey = localStorage.getItem(getAreaKey());
 
   document.getElementById('today-strip-date').textContent = formatDateJP(today);
 
@@ -653,7 +684,7 @@ function renderTodayStrip() {
 ===================================================== */
 function handleDayTap(year, month, day) {
   const date    = new Date(year, month, day);
-  const areaKey = localStorage.getItem('gc_area');
+  const areaKey = localStorage.getItem(getAreaKey());
 
   if (!areaKey || isYearEnd(date)) { showDayDetail(year, month, day); return; }
 
@@ -674,7 +705,7 @@ function handleDayTap(year, month, day) {
 ===================================================== */
 function showDayDetail(year, month, day) {
   const date    = new Date(year, month, day);
-  const areaKey = localStorage.getItem('gc_area');
+  const areaKey = localStorage.getItem(getAreaKey());
 
   document.getElementById('day-detail-date').textContent = formatDateJP(date);
   document.getElementById('day-detail-content').innerHTML = buildDayDetailHTML(areaKey, date);
@@ -746,7 +777,7 @@ function nextMonth() { calMonth++; if (calMonth > 11) { calMonth=0;  calYear++; 
 function renderCalendar() {
   if (!DATA) return;
   document.getElementById('cal-month-label').textContent = `${calYear}年${calMonth+1}月`;
-  const areaKey = localStorage.getItem('gc_area');
+  const areaKey = localStorage.getItem(getAreaKey());
   const grid    = document.getElementById('cal-grid');
   const noArea  = document.getElementById('cal-no-area');
 
