@@ -128,9 +128,6 @@
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            brand: { DEFAULT:'#00A86B', mid:'#007A4E', soft:'#E0FAF1', xsoft:'#C8F5E8' },
-          },
           fontFamily: {
             sans: ['-apple-system','BlinkMacSystemFont','Hiragino Kaku Gothic ProN',
                    'Hiragino Sans','Yu Gothic UI','Meiryo','sans-serif'],
@@ -173,32 +170,36 @@
       --c-kami_pack:#4A8AB8; --c-kami_pack-bg:#E5F2FA;
       --c-tree:     #4A7A00; --c-tree-bg:     #EAF6D0;
       --safe-b: env(safe-area-inset-bottom, 0px);
-      /* 自治体テーマ（JSON の theme.bgContent で上書き可能） */
+      /* 自治体テーマカラー（data_{city}.json の brand_color から script.js が上書き。DS.md §1-1-1参照） */
+      --brand: #00A86B;
+      --brand-strong: #00885A;
+      --brand-soft: rgba(0,168,107,0.08);
+      --brand-soft-strong: rgba(0,168,107,0.15);
       --bg-content: #fefefb;
     }
     html, body {
       background-color: #F7F6F3;
     }
     .is-hidden { display:none !important; }
-    :focus-visible { outline:2.5px solid #00A86B; outline-offset:2px; border-radius:6px; }
+    :focus-visible { outline:2.5px solid var(--brand); outline-offset:2px; border-radius:6px; }
     @media (prefers-reduced-motion:reduce) {
       *,*::before,*::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; }
     }
 
     /* ── ナビ アクティブ（::after 疑似要素） ── */
     .nav-item        { color:#6B7280; transition:color 0.15s; }
-    .nav-item.active { color:#00A86B; }
+    .nav-item.active { color:var(--brand); }
     .nav-item.active::after {
       content:''; position:absolute; top:0; left:25%; right:25%;
-      height:2px; background:#00A86B; border-radius:0 0 2px 2px;
+      height:2px; background:var(--brand); border-radius:0 0 2px 2px;
     }
 
     /* ── 地区オプション（::after チェックマーク） ── */
-    .area-option:hover    { background:rgba(50,183,110,0.06); }
-    .area-option:active   { background:rgba(50,183,110,0.12); }
-    .area-option.selected { background:rgba(50,183,110,0.08); color:#00A86B; font-weight:700; }
+    .area-option:hover    { background:var(--brand-soft); }
+    .area-option:active   { background:var(--brand-soft-strong); }
+    .area-option.selected { background:var(--brand-soft); color:var(--brand); font-weight:700; }
     .area-check-icon { display:inline; font-size:20px; color:rgba(0,0,0,0.15); }
-    .area-option.selected .area-check-icon { color:#00A86B; }
+    .area-option.selected .area-check-icon { color:var(--brand); }
 
     /* ── カレンダーセル（複合セレクタ必須） ── */
     .cal-cell {
@@ -215,13 +216,13 @@
     }
     .cal-cell:hover    { background:rgba(0,0,0,0.05); }
     .cal-cell.has-col:hover { background:rgba(0,0,0,0.04); }
-    .cal-cell.is-today { background:#E6F8F2; outline:2px solid #00A86B; outline-offset:-1px; }
-    .cal-cell.is-today:hover { background:#D4F4EA; }
+    .cal-cell.is-today { background:var(--brand-soft); outline:2px solid var(--brand); outline-offset:-1px; }
+    .cal-cell.is-today:hover { background:var(--brand-soft-strong); }
     .cal-cell.yearend  { opacity:0.18; pointer-events:none; }
     .cal-day           { font-size:16px; font-weight:500; color:#1C1C1E; line-height:1; }
     .cal-day-sun       { color:#C94B2A; }
     .cal-day-sat       { color:#3A5BB8; }
-    .cal-cell.is-today .cal-day { color:#00A86B; }
+    .cal-cell.is-today .cal-day { color:var(--brand); }
     /* アイコングリッド（2列で並べる） */
     .cal-icons {
       display:grid; grid-template-columns:repeat(2,1fr);
@@ -318,7 +319,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="loading-overlay"
      class="fixed inset-0 z-[500] bg-white flex items-center justify-center">
   <div class="text-center">
-    <span class="ms-cat animate-spin-slow block mb-4" style="font-size:40px;color:#00A86B" aria-hidden="true">recycling</span>
+    <span class="ms-cat animate-spin-slow block mb-4" style="font-size:40px;color:var(--brand)" aria-hidden="true">recycling</span>
     <p class="text-sm text-[#6B7280]">データを読み込んでいます…</p>
   </div>
 </div>
@@ -348,9 +349,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 class="is-hidden flex items-center gap-[3px] mt-[4px]
                        bg-transparent border-none p-0 cursor-pointer active:opacity-60
                        font-sans">
-          <span class="ms-cat" style="color:#00A86B;font-size:13px;line-height:1">location_on</span>
+          <span class="ms-cat" style="color:var(--brand);font-size:13px;line-height:1">location_on</span>
           <span id="header-area-name"
-                class="text-[12px] text-[#00A86B] font-bold truncate max-w-[130px]"
+                class="text-[12px] text-[var(--brand)] font-bold truncate max-w-[130px]"
                 style="text-decoration:underline;text-underline-offset:2px"></span>
         </button>
       </div>
@@ -557,7 +558,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="bottom-sheet" onclick="event.stopPropagation()">
     <div class="sheet-handle"></div>
     <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
-      <h2 class="text-xl font-extrabold tracking-tight flex items-center gap-2"><span class="ms-nav" style="color:#00A86B">call</span> 問い合わせ先</h2>
+      <h2 class="text-xl font-extrabold tracking-tight flex items-center gap-2"><span class="ms-nav" style="color:var(--brand)">call</span> 問い合わせ先</h2>
       <button onclick="closeContact()" aria-label="閉じる"
               class="w-11 h-11 rounded-full bg-black/[0.07] flex items-center justify-center
                      border-none cursor-pointer font-sans flex-shrink-0">
@@ -715,7 +716,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="text-base font-bold text-[#636366]">地区を選択してください</p>
         <p class="text-xs text-[#6B7280] mt-1">右上 ☰ メニューから設定できます</p>
         <button onclick="openSheet()"
-                class="mt-4 inline-flex items-center gap-1 bg-[#00A86B] text-white
+                class="mt-4 inline-flex items-center gap-1 bg-[var(--brand)] text-white
                        border-none rounded-full px-5 h-11 font-sans text-sm font-bold
                        cursor-pointer active:opacity-80" type="button">
           地区を選択する
@@ -739,7 +740,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          style="box-shadow:0 4px 20px rgba(0,0,0,0.10)"
          role="search" aria-label="ごみ分別検索">
       <div class="flex items-center gap-3 px-4 h-16">
-        <span class="ms-nav flex-shrink-0 pointer-events-none" style="color:#00A86B;font-size:24px" aria-hidden="true">search</span>
+        <span class="ms-nav flex-shrink-0 pointer-events-none" style="color:var(--brand);font-size:24px" aria-hidden="true">search</span>
         <label for="search-input" class="sr-only">ごみの名前で検索</label>
         <input type="text" id="search-input"
                placeholder="ごみの名前で検索…"
@@ -790,7 +791,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="bg-white rounded-2xl shadow-card overflow-hidden animate-fade-up">
       <div style="padding:40px 24px 36px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
         <div style="width:64px;height:64px;background:#E0FAF1;border-radius:50%;display:flex;align-items:center;justify-content:center">
-          <span class="ms-cat" style="font-size:32px;color:#00A86B" aria-hidden="true">redeem</span>
+          <span class="ms-cat" style="font-size:32px;color:var(--brand)" aria-hidden="true">redeem</span>
         </div>
         <h2 style="font-size:18px;font-weight:800;color:#1C1C1E;margin:0">お得情報は準備中です</h2>
         <p style="font-size:14px;color:#636366;line-height:1.8;margin:0">

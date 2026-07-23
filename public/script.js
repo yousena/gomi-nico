@@ -196,6 +196,27 @@ function showError(msg) {
 /* =====================================================
    自治体メタ情報
 ===================================================== */
+/* =====================================================
+   自治体テーマカラー: brand_color から --brand系トークンを計算
+   （詳細: docs/ごみニコDS.md §1-1-1）
+===================================================== */
+function shadeHex(hex, factor) {
+  // factor: 1.0=そのまま、0.82のように1未満で暗色化
+  var num = parseInt(hex.replace('#', ''), 16);
+  var r = Math.max(0, Math.min(255, Math.round(((num >> 16) & 0xFF) * factor)));
+  var g = Math.max(0, Math.min(255, Math.round(((num >> 8) & 0xFF) * factor)));
+  var b = Math.max(0, Math.min(255, Math.round((num & 0xFF) * factor)));
+  return '#' + (0x1000000 + r * 0x10000 + g * 0x100 + b).toString(16).slice(1);
+}
+
+function hexToRgba(hex, alpha) {
+  var num = parseInt(hex.replace('#', ''), 16);
+  var r = (num >> 16) & 0xFF;
+  var g = (num >> 8) & 0xFF;
+  var b = num & 0xFF;
+  return 'rgba(' + r + ',' + g + ',' + b + ',' + alpha + ')';
+}
+
 function applyMunicipalityMeta() {
   const city  = DATA.name;          // 志木市
   const pref  = DATA.prefecture;    // 埼玉県
@@ -292,9 +313,14 @@ function applyMunicipalityMeta() {
     citationNote.textContent = `参照日：${dateStr}${dateStr ? ' ／ ' : ''}本サイトは${city}の非公式サイトです`;
   }
 
-  // ── ブランドカラー ──
+  // ── ブランドカラー ── brand_colorから--brand系3トークンを自動生成（DS.md §1-1-1）
   if (DATA.brand_color) {
-    document.documentElement.style.setProperty('--brand', DATA.brand_color);
+    var brand = DATA.brand_color;
+    document.documentElement.style.setProperty('--brand', brand);
+    document.documentElement.style.setProperty('--brand-strong', shadeHex(brand, 0.82));
+    document.documentElement.style.setProperty('--brand-soft', hexToRgba(brand, 0.08));
+    document.documentElement.style.setProperty('--brand-soft-strong', hexToRgba(brand, 0.15));
+    setMeta('meta[name="theme-color"]', brand);
   }
 
   // ── 自治体ロゴ ──
@@ -546,7 +572,7 @@ function renderTodayStrip() {
   const cutoffNote = DATA && DATA.collection_settings && DATA.collection_settings.cutoff_note;
   if (cutoffEl) {
     if (areaKey && cutoffNote) {
-      cutoffEl.innerHTML = '<span class="ms-nav" style="font-size:16px;color:#00A86B">alarm</span>' + cutoffNote;
+      cutoffEl.innerHTML = '<span class="ms-nav" style="font-size:16px;color:var(--brand)">alarm</span>' + cutoffNote;
       cutoffEl.classList.remove('is-hidden');
     } else {
       cutoffEl.classList.add('is-hidden');
@@ -573,11 +599,11 @@ function renderTodayStrip() {
       const diffLabel = diff === 1 ? '明日' : `${diff}日後`;
       typesEl.innerHTML = `
         <div style="display:flex;flex-direction:column;gap:2px">
-          <span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:#00A86B;vertical-align:-3px">check_circle</span>今日は収集なし</span>
+          <span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:var(--brand);vertical-align:-3px">check_circle</span>今日は収集なし</span>
           <span class="text-[12px] text-[#6B7280]">次の収集: ${diffLabel}（${nextTypes.map(t => t.label).join('・')}）</span>
         </div>`;
     } else {
-      typesEl.innerHTML = `<span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:#00A86B;vertical-align:-3px">check_circle</span>今日は収集なし</span>`;
+      typesEl.innerHTML = `<span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:var(--brand);vertical-align:-3px">check_circle</span>今日は収集なし</span>`;
     }
     return;
   }
@@ -636,7 +662,7 @@ function buildDayDetailHTML(areaKey, date) {
     return `<div class="text-center py-10 px-6">
       <p class="text-base font-bold text-[#636366]">地区を選択してください</p>
       <button onclick="closeDayDetail();openSheet();"
-              class="mt-4 inline-flex items-center gap-1 bg-[#00A86B] text-white
+              class="mt-4 inline-flex items-center gap-1 bg-[var(--brand)] text-white
                      border-none rounded-full px-5 h-11 font-sans text-sm font-bold cursor-pointer"
               type="button">地区を選択する</button>
     </div>`;
@@ -843,7 +869,7 @@ function renderSearchIndex() {
 
     // 行見出し（白背景・ブランドカラーテキスト）
     html += '<div style="padding:0 16px;height:54px;display:flex;align-items:center;gap:8px">' +
-      '<span style="font-size:16px;font-weight:800;color:#00A86B">' + rowLabel + '</span>' +
+      '<span style="font-size:16px;font-weight:800;color:var(--brand)">' + rowLabel + '</span>' +
       '<span style="font-size:12px;color:#6B7280">' + items.length + '件</span>' +
       '</div>';
 
@@ -1114,7 +1140,7 @@ function renderContact() {
       '<p style="font-size:12px;color:#636366"><span style="color:#6B7280">電話番号</span>　' + c.phone + (c.phone_note ? '（' + c.phone_note + '）' : '') + '</p>' +
       (c.hours ? '<p style="font-size:12px;color:#636366;margin-top:2px"><span style="color:#6B7280">受付時間</span>　' + c.hours + '</p>' : '') +
       '</div>' +
-      '<a href="tel:' + c.phone + '" style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:999px;background:#EBF7F2;color:#00A86B;font-size:13px;font-weight:700;text-decoration:none;border:1px solid rgba(26,92,56,0.15)">' +
+      '<a href="tel:' + c.phone + '" style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid rgba(26,92,56,0.15)">' +
       '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">call</span>電話する</a>' +
       '</div></div>';
   }).join('');
@@ -1138,14 +1164,14 @@ function renderContact() {
     '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
     '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">情報について</p>' +
     '<p style="font-size:12px;color:#1C1C1E;line-height:1.7">志木市ホームページの公開情報を参考に作成されています。月1回程度で更新していますが、最新情報は公式サイトをご確認ください。</p>' +
-    '<p style="font-size:11px;margin-top:6px"><a href="https://www.city.shiki.lg.jp/life/1/12/" target="_blank" rel="noopener" style="color:#00A86B;text-decoration:underline">出典：志木市ホームページ（ごみ・リサイクル）</a></p>' +
+    '<p style="font-size:11px;margin-top:6px"><a href="https://www.city.shiki.lg.jp/life/1/12/" target="_blank" rel="noopener" style="color:var(--brand);text-decoration:underline">出典：志木市ホームページ（ごみ・リサイクル）</a></p>' +
     '</div>' +
 
     // 誤情報・不具合
     '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
     '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">サイトの誤情報・不具合のご報告</p>' +
     '<p style="font-size:12px;color:#1C1C1E;line-height:1.7;margin-bottom:4px">サイト運営者へお知らせください。</p>' +
-    '<a href="mailto:contact@gomi-nico.jp" style="font-size:13px;color:#00A86B;text-decoration:underline">contact@gomi-nico.jp</a>' +
+    '<a href="mailto:contact@gomi-nico.jp" style="font-size:13px;color:var(--brand);text-decoration:underline">contact@gomi-nico.jp</a>' +
     '<p style="font-size:11px;color:#6B7280;margin-top:4px">※返信にお時間をいただく場合があります</p>' +
     '</div>' +
 
@@ -1179,15 +1205,15 @@ function renderFAQ() {
   var html = items.map(function(item, i) {
     var bc = i < items.length - 1 ? 'border-b border-black/[0.04]' : '';
     return '<div class="px-6 py-4 ' + bc + '">' +
-      '<p class="text-sm font-extrabold text-[#00A86B] mb-[6px]">Q. ' + item.q + '</p>' +
+      '<p class="text-sm font-extrabold mb-[6px]" style="color:var(--brand)">Q. ' + item.q + '</p>' +
       '<p class="text-sm text-[#636366] leading-relaxed">A. ' + item.a + '</p></div>';
   }).join('');
   // 記事への内部リンク（テレビ・パソコン等、収集に出せない品目の詳しい記事）
   html += '<div class="px-6 pt-2 pb-5">' +
-    '<a href="/articles/kaden.html" style="display:flex;align-items:center;gap:10px;background:#EAF7F0;border-radius:12px;padding:12px 14px;text-decoration:none">' +
-    '<span class="ms-nav" style="font-size:20px;color:#00A86B;flex-shrink:0">menu_book</span>' +
-    '<span style="font-size:13px;font-weight:700;color:#00885A;flex:1">テレビ・パソコンなど、出せないごみの処分方法</span>' +
-    '<span class="ms-nav" style="font-size:18px;color:#00A86B;flex-shrink:0">chevron_right</span>' +
+    '<a href="/articles/kaden.html" style="display:flex;align-items:center;gap:10px;background:var(--brand-soft);border-radius:12px;padding:12px 14px;text-decoration:none">' +
+    '<span class="ms-nav" style="font-size:20px;color:var(--brand);flex-shrink:0">menu_book</span>' +
+    '<span style="font-size:13px;font-weight:700;color:var(--brand-strong);flex:1">テレビ・パソコンなど、出せないごみの処分方法</span>' +
+    '<span class="ms-nav" style="font-size:18px;color:var(--brand);flex-shrink:0">chevron_right</span>' +
     '</a></div>';
   el.innerHTML = html;
 }
@@ -1205,7 +1231,7 @@ function renderNotice() {
     var link = n.url
       ? '<a href="' + n.url + '" target="_blank" rel="noopener" ' +
         'style="display:inline-flex;align-items:center;gap:4px;margin-top:12px;' +
-        'font-size:13px;font-weight:700;color:#00A86B;text-decoration:none">' +
+        'font-size:13px;font-weight:700;color:var(--brand);text-decoration:none">' +
         '公式サイトで詳細を確認' +
         '<span class="ms-nav" style="font-size:15px">open_in_new</span></a>'
       : '';
@@ -1233,11 +1259,11 @@ function openLanguageSheet() {
       return '<button data-lang="' + lang.code + '" ' +
         'style="display:flex;align-items:center;gap:16px;width:100%;text-align:left;' +
         'padding:16px 24px;border:none;border-bottom:1px solid rgba(0,0,0,0.04);' +
-        'background:' + (active ? '#F0F8F3' : 'transparent') + ';font-family:inherit;cursor:pointer">' +
+        'background:' + (active ? 'var(--brand-soft)' : 'transparent') + ';font-family:inherit;cursor:pointer">' +
         '<span style="font-size:24px">' + lang.flag + '</span>' +
         '<span style="flex:1;font-size:16px;font-weight:' + (active ? 800 : 500) + ';' +
-        'color:' + (active ? '#00A86B' : '#1C1C1E') + '">' + lang.label + '</span>' +
-        (active ? '<span style="font-size:18px;color:#00A86B;font-weight:800">✓</span>' : '<span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>') +
+        'color:' + (active ? 'var(--brand)' : '#1C1C1E') + '">' + lang.label + '</span>' +
+        (active ? '<span style="font-size:18px;color:var(--brand);font-weight:800">✓</span>' : '<span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>') +
         '</button>';
     }).join('');
     // イベント委任でクリックを処理
@@ -1315,23 +1341,6 @@ function applyFeatures() {
     if (el) el.classList.toggle('is-hidden', !items[id]);
   });
 
-  // ── 自治体テーマカラー（JSON の theme オブジェクトで指定）
-  // 例: "theme": { "bgContent": "#f7f7f1", "brand": "#38a546" }
-  var theme = (DATA && DATA.theme) || {};
-  if (theme.bgContent) {
-    document.documentElement.style.setProperty('--bg-content', theme.bgContent);
-  }
-  if (theme.brand) {
-    var b = theme.brand;
-    document.documentElement.style.setProperty('--c-recycle', b);
-    // ナビ・フォーカスリングにも反映
-    var style = document.createElement('style');
-    style.textContent =
-      '.nav-item.active{color:' + b + '}' +
-      '.nav-item.active::after{background:' + b + '}' +
-      ':focus-visible{outline-color:' + b + '}';
-    document.head.appendChild(style);
-  }
 }
 
 /* =====================================================
@@ -1352,7 +1361,7 @@ function renderRules() {
   if (!isStandalone && !localStorage.getItem('a2hs_dismissed')) {
     var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
     var installBtnHtml = window._deferredPrompt
-      ? '<button onclick="installA2hs()" style="margin-top:12px;padding:9px 18px;background:#00A86B;color:#fff;border:none;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">ホーム画面に追加する</button>'
+      ? '<button onclick="installA2hs()" style="margin-top:12px;padding:9px 18px;background:var(--brand);color:#fff;border:none;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">ホーム画面に追加する</button>'
       : isIOS
         ? '<p style="font-size:12px;color:#636366;margin-top:10px;line-height:1.7">画面下の <strong>共有ボタン（↑）</strong> をタップし、「<strong>ホーム画面に追加</strong>」を選んでください</p>'
         : '<p style="font-size:12px;color:#6B7280;margin-top:10px">お使いのブラウザで対応していません</p>';
@@ -1375,7 +1384,7 @@ function renderRules() {
       var link = n.url
         ? '<a href="' + n.url + '" target="_blank" rel="noopener" ' +
           'style="display:inline-flex;align-items:center;gap:4px;margin-top:12px;' +
-          'font-size:13px;font-weight:700;color:#00A86B;text-decoration:none">' +
+          'font-size:13px;font-weight:700;color:var(--brand);text-decoration:none">' +
           '公式サイトで詳細を確認' +
           '<span class="ms-nav" style="font-size:15px">open_in_new</span></a>'
         : '';
@@ -1396,7 +1405,7 @@ function renderRules() {
     ruleItems.forEach(function(item, i) {
       var last = i === ruleItems.length - 1;
       html += '<div style="display:flex;gap:14px;padding:14px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.04)') + '">' +
-        '<span class="ms-nav" style="font-size:22px;color:#00A86B;flex-shrink:0;margin-top:1px">' + item.icon + '</span>' +
+        '<span class="ms-nav" style="font-size:22px;color:var(--brand);flex-shrink:0;margin-top:1px">' + item.icon + '</span>' +
         '<div><p style="font-size:16px;font-weight:700;color:#1C1C1E;margin-bottom:6px">' + item.title + '</p>' +
         '<p style="font-size:16px;color:#636366;line-height:1.5">' + item.body + '</p></div>' +
         '</div>';
@@ -1541,8 +1550,8 @@ function openCategoryDetail(typeKey, year, month, day) {
 
   // 関連記事への導線（cat.article_urlが設定されている場合のみ表示。記事公開までは非表示のまま）
   if (cat.article_url) {
-    html += '<a href="' + cat.article_url + '" style="display:flex;align-items:center;justify-content:center;gap:6px;width:100%;padding:14px;background:#EAF7F0;border-radius:12px;' +
-      'font-size:14px;font-weight:700;color:#00885A;text-decoration:none;margin-top:4px;margin-bottom:4px">' +
+    html += '<a href="' + cat.article_url + '" style="display:flex;align-items:center;justify-content:center;gap:6px;width:100%;padding:14px;background:var(--brand-soft);border-radius:12px;' +
+      'font-size:14px;font-weight:700;color:var(--brand-strong);text-decoration:none;margin-top:4px;margin-bottom:4px">' +
       '<span class="ms-nav" style="font-size:18px">menu_book</span>' +
       (cat.article_label || (cat.label || typeKey) + 'について詳しく読む') +
       '<span class="ms-nav" style="font-size:16px">arrow_forward</span>' +
