@@ -182,6 +182,17 @@
     }
     .is-hidden { display:none !important; }
     :focus-visible { outline:2.5px solid var(--brand); outline-offset:2px; border-radius:6px; }
+
+    /* ── 検索パネル: sticky検索ボックス＋五十音ジャンプナビ（DS.md 2-4-3） ── */
+    #search-box-card { position:sticky; top:60px; z-index:80; background:var(--bg-content); }
+    #kana-jump-nav { position:sticky; top:124px; z-index:79; background:var(--bg-content); }
+    .kana-chip {
+      flex-shrink:0; min-width:44px; height:44px; padding:0 14px;
+      border:none; border-radius:999px; background:#fff; color:#6B7280;
+      font-family:inherit; font-size:14px; font-weight:800; cursor:pointer;
+      box-shadow:0 2px 8px rgba(0,0,0,0.08); -webkit-tap-highlight-color:transparent;
+    }
+    .kana-chip.active { background:var(--brand); color:#fff; }
     @media (prefers-reduced-motion:reduce) {
       *,*::before,*::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; }
     }
@@ -735,8 +746,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   ========================================================== -->
   <div id="panel-search" class="is-hidden flex flex-col gap-3" aria-label="分別検索">
 
-    <!-- ① 検索ボックス（独立・目立つ） -->
-    <div class="bg-white rounded-2xl shadow-md animate-fade-up flex-shrink-0"
+    <!-- ① 検索ボックス（独立・目立つ・sticky固定。DS.md 2-4-3） -->
+    <div id="search-box-card" class="bg-white rounded-2xl shadow-md animate-fade-up flex-shrink-0"
          style="box-shadow:0 4px 20px rgba(0,0,0,0.10)"
          role="search" aria-label="ごみ分別検索">
       <div class="flex items-center gap-3 px-4 h-16">
@@ -759,14 +770,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ② よく検索されるタグ（枠なし・背景に直置き） -->
     <div id="search-quick" class="px-1 mt-2"></div>
 
-    <!-- ③ 五十音一覧ラベル（枠の外） -->
+    <!-- ③ 五十音ジャンプナビ（sticky固定・JSが動的に描画。DS.md 2-4-3） -->
+    <div id="kana-jump-nav" class="is-hidden"></div>
+
+    <!-- ④ 五十音一覧ラベル（枠の外） -->
     <p id="search-index-label"
        class="is-hidden"
        style="font-size:13px;font-weight:800;color:#6B7280;letter-spacing:.06em;
               padding-left:4px;margin-top:20px;margin-bottom:2px"></p>
 
-    <!-- ④ 全ごみ項目 五十音順一覧 -->
-    <div id="search-body" class="flex flex-col gap-2"></div>
+    <!-- ⑤ 全ごみ項目 五十音順一覧 -->
+    <div id="search-body" class="flex flex-col gap-4"></div>
 
   </div>
 

@@ -837,24 +837,43 @@ function renderCategoryLegend(seenTypes) {
    検索 — あいうえお順一覧
 ===================================================== */
 
-/* 五十音行の判定テーブル */
+/* 五十音行の判定テーブル（keyはジャンプナビのアンカーID用・asciiで固定） */
 const KANA_ROWS = [
-  { label:'あ行', re:/^[あいうえおアイウエオぁぃぅぇぉァィゥェォ]/ },
-  { label:'か行', re:/^[かきくけこがぎぐげごカキクケコガギグゲゴ]/ },
-  { label:'さ行', re:/^[さしすせそざじずぜぞサシスセソザジズゼゾ]/ },
-  { label:'た行', re:/^[たちつてとだぢづでどタチツテトダヂヅデド]/ },
-  { label:'な行', re:/^[なにぬねのナニヌネノ]/ },
-  { label:'は行', re:/^[はひふへほばびぶべぼぱぴぷぺぽハヒフヘホバビブベボパピプペポ]/ },
-  { label:'ま行', re:/^[まみむめもマミムメモ]/ },
-  { label:'や行', re:/^[やゆよヤユヨ]/ },
-  { label:'ら行', re:/^[らりるれろラリルレロ]/ },
-  { label:'わ行', re:/^[わをんワヲン]/ },
+  { key:'a',  label:'あ行', re:/^[あいうえおアイウエオぁぃぅぇぉァィゥェォ]/ },
+  { key:'ka', label:'か行', re:/^[かきくけこがぎぐげごカキクケコガギグゲゴ]/ },
+  { key:'sa', label:'さ行', re:/^[さしすせそざじずぜぞサシスセソザジズゼゾ]/ },
+  { key:'ta', label:'た行', re:/^[たちつてとだぢづでどタチツテトダヂヅデド]/ },
+  { key:'na', label:'な行', re:/^[なにぬねのナニヌネノ]/ },
+  { key:'ha', label:'は行', re:/^[はひふへほばびぶべぼぱぴぷぺぽハヒフヘホバビブベボパピプペポ]/ },
+  { key:'ma', label:'ま行', re:/^[まみむめもマミムメモ]/ },
+  { key:'ya', label:'や行', re:/^[やゆよヤユヨ]/ },
+  { key:'ra', label:'ら行', re:/^[らりるれろラリルレロ]/ },
+  { key:'wa', label:'わ行', re:/^[わをんワヲン]/ },
 ];
 const ROW_ORDER = [...KANA_ROWS.map(r => r.label), 'その他'];
 
-function getKanaRow(name) {
+/**
+ * 品目を五十音行に分類する。
+ * 品目名の先頭が漢字の場合（例: 「額ぶち」「石こうボード」等）は名前だけでは判定できないため、
+ * garbage_db登録ルール（CLAUDE.md「漢字を含む品目名はひらがな読みをtagsに追加」）で
+ * 既に付与されているひらがな読みタグを次点の判定材料として使う。
+ * @param {string} name 品目名
+ * @param {string[]} [tags] 品目のtags配列（あれば渡す。無ければ名前のみで判定＝従来動作）
+ */
+function getKanaRow(name, tags) {
   for (const r of KANA_ROWS) { if (r.re.test(name)) return r.label; }
+  if (tags && tags.length) {
+    var hiraganaTag = tags.find(function(t){ return /^[ぁ-ん]/.test(t); });
+    if (hiraganaTag) {
+      for (const r of KANA_ROWS) { if (r.re.test(hiraganaTag)) return r.label; }
+    }
+  }
   return 'その他';
+}
+
+function getKanaKey(label) {
+  var row = KANA_ROWS.find(function(r){ return r.label === label; });
+  return row ? row.key : 'other';
 }
 
 
@@ -880,7 +899,7 @@ function renderSearchIndex() {
   if (!DATA) return '';
   var sorted = DATA.garbage_db.slice().sort(function(a,b){ return a.name.localeCompare(b.name,'ja'); });
   var groups = new Map(ROW_ORDER.map(function(r){ return [r, []]; }));
-  sorted.forEach(function(item){ groups.get(getKanaRow(item.name)).push(item); });
+  sorted.forEach(function(item){ groups.get(getKanaRow(item.name, item.tags)).push(item); });
 
   // 枠外ラベルを更新
   var labelEl = document.getElementById('search-index-label');
@@ -889,14 +908,19 @@ function renderSearchIndex() {
     labelEl.classList.remove('is-hidden');
   }
 
+  // 五十音ジャンプナビ（実在する行のみ表示。DS.md 2-4-3参照）
+  renderKanaJumpNav(groups);
+
   var html = '';
 
   for (var _ref of groups) {
     var rowLabel = _ref[0], items = _ref[1];
     if (items.length === 0) continue;
+    var rowKey = getKanaKey(rowLabel);
 
-    // グループごとに独立カード
-    html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">';
+    // グループごとに独立カード（id・scroll-margin-topはジャンプナビからのスクロール着地位置用）
+    html += '<div id="kana-sec-' + rowKey + '" class="kana-section" ' +
+      'style="scroll-margin-top:190px;background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">';
 
     // 行見出し（白背景・ブランドカラーテキスト）
     html += '<div style="padding:0 16px;height:54px;display:flex;align-items:center;gap:8px">' +
@@ -923,6 +947,58 @@ function renderSearchIndex() {
     html += '</div>';
   }
   return html;
+}
+
+/* =====================================================
+   検索 — 五十音ジャンプナビ（sticky・DS.md 2-4-3）
+===================================================== */
+function renderKanaJumpNav(groups) {
+  var el = document.getElementById('kana-jump-nav');
+  if (!el) return;
+
+  var chips = KANA_ROWS.map(function(row) {
+    var items = groups.get(row.label) || [];
+    if (items.length === 0) return ''; // 実在しない行は出さない（2-4-1と同じ方針）
+    return '<button type="button" class="kana-chip" data-kana-key="' + row.key + '" ' +
+      'onclick="jumpToKana(\'' + row.key + '\')" aria-label="' + row.label + 'へ移動">' +
+      row.label.charAt(0) + '</button>';
+  }).join('');
+
+  if (!chips) {
+    el.innerHTML = '';
+    el.classList.add('is-hidden');
+    return;
+  }
+
+  el.innerHTML = '<div style="display:flex;gap:6px;overflow-x:auto;padding:8px 4px;-webkit-overflow-scrolling:touch">' + chips + '</div>';
+  el.classList.remove('is-hidden');
+  setupKanaJumpObserver();
+}
+
+function jumpToKana(key) {
+  var target = document.getElementById('kana-sec-' + key);
+  if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+var _kanaObserver = null;
+function setupKanaJumpObserver() {
+  if (!('IntersectionObserver' in window)) return;
+  if (_kanaObserver) _kanaObserver.disconnect();
+
+  var sections = Array.prototype.slice.call(document.querySelectorAll('.kana-section'));
+  if (!sections.length) return;
+
+  _kanaObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      var key = entry.target.id.replace('kana-sec-', '');
+      document.querySelectorAll('.kana-chip').forEach(function(chip) {
+        chip.classList.toggle('active', chip.getAttribute('data-kana-key') === key);
+      });
+    });
+  }, { root: null, rootMargin: '-190px 0px -70% 0px', threshold: 0 });
+
+  sections.forEach(function(sec) { _kanaObserver.observe(sec); });
 }
 
 /* ── 検索0件クエリをGA4へ記録（GTM経由）──
