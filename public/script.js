@@ -548,6 +548,37 @@ function getGarbageForDate(areaKey, date) {
     if (d && d.getDate() === date.getDate())
       result.push({ type:'kiken', label: cats.kiken?.label || '危険ごみ', how: cats.kiken?.how || '' });
   }
+
+  // ── 汎用スキーマ対応（蕨市など・カテゴリキーそのものをareasのプロパティ名として使う自治体向け）
+  // 上記の志木市方式（burnable/recycle/plasticRec/nonBurnable/dangerous固定フィールド名）を
+  // 変更せず維持しつつ、area[カテゴリキー] が直接存在する自治体データにも対応する。
+  // 値が曜日番号の配列なら毎週パターン、{day, week} または {day, weeks} オブジェクトなら
+  // 第n○曜日パターンとして扱う。既に上記で追加済みのtypeは二重追加しない。
+  const addedTypes = new Set(result.map(r => r.type));
+  Object.keys(cats).forEach(catKey => {
+    if (addedTypes.has(catKey)) return;
+    const val = area[catKey];
+    if (val == null) return;
+    if (Array.isArray(val)) {
+      if (val.includes(day)) {
+        result.push({ type: catKey, label: cats[catKey]?.label || catKey, how: cats[catKey]?.how || '' });
+        addedTypes.add(catKey);
+      }
+    } else if (typeof val === 'object' && typeof val.day === 'number') {
+      if (day === val.day) {
+        const weeksArr = val.weeks || (val.week != null ? [val.week] : []);
+        for (const wk of weeksArr) {
+          const d = getNthWeekday(year, month, day, wk);
+          if (d && d.getDate() === date.getDate()) {
+            result.push({ type: catKey, label: cats[catKey]?.label || catKey, how: cats[catKey]?.how || '' });
+            addedTypes.add(catKey);
+            break;
+          }
+        }
+      }
+    }
+  });
+
   return result;
 }
 
