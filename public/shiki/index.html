@@ -170,6 +170,7 @@
       --c-kami_pack:#4A8AB8; --c-kami_pack-bg:#E5F2FA;
       --c-tree:     #4A7A00; --c-tree-bg:     #EAF6D0;
       --safe-b: env(safe-area-inset-bottom, 0px);
+      --safe-t: env(safe-area-inset-top, 0px);
       /* 自治体テーマカラー（data_{city}.json の brand_color から script.js が上書き。DS.md §1-1-1参照） */
       --brand: #00A86B;
       --brand-strong: #00885A;
@@ -184,8 +185,8 @@
     :focus-visible { outline:2.5px solid var(--brand); outline-offset:2px; border-radius:6px; }
 
     /* ── 検索パネル: sticky検索ボックス＋五十音ジャンプナビ（DS.md 2-4-3） ── */
-    #search-box-card { position:sticky; top:60px; z-index:80; background:var(--bg-content); }
-    #kana-jump-nav { position:sticky; top:124px; z-index:79; background:var(--bg-content); }
+    #search-box-card { position:sticky; top:calc(60px + var(--safe-t)); z-index:80; background:var(--bg-content); }
+    #kana-jump-nav { position:sticky; top:calc(124px + var(--safe-t)); z-index:79; background:var(--bg-content); }
     .kana-chip {
       flex-shrink:0; min-width:44px; height:44px; padding:0 14px;
       border:none; border-radius:999px; background:#fff; color:#6B7280;
@@ -339,6 +340,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      HEADER
 ============================================================ -->
 <header class="sticky top-0 z-[100] bg-white/90 backdrop-blur-xl border-b border-black/[0.07]"
+        style="padding-top:var(--safe-t)"
         role="banner">
   <div class="max-w-[430px] mx-auto h-[60px] flex items-center justify-between px-4">
 
@@ -770,14 +772,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ② よく検索されるタグ（枠なし・背景に直置き） -->
     <div id="search-quick" class="px-1 mt-2"></div>
 
-    <!-- ③ 五十音ジャンプナビ（sticky固定・JSが動的に描画。DS.md 2-4-3） -->
-    <div id="kana-jump-nav" class="is-hidden"></div>
-
-    <!-- ④ 五十音一覧ラベル（枠の外） -->
+    <!-- ③ 五十音一覧ラベル（枠の外） -->
     <p id="search-index-label"
        class="is-hidden"
        style="font-size:13px;font-weight:800;color:#6B7280;letter-spacing:.06em;
               padding-left:4px;margin-top:20px;margin-bottom:2px"></p>
+
+    <!-- ④ 五十音ジャンプナビ（sticky固定・JSが動的に描画。DS.md 2-4-3。ラベルの直下＝情報の並び順として自然な位置） -->
+    <div id="kana-jump-nav" class="is-hidden" style="margin-top:6px"></div>
 
     <!-- ⑤ 全ごみ項目 五十音順一覧 -->
     <div id="search-body" class="flex flex-col gap-4"></div>
@@ -870,9 +872,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      BOTTOM NAVIGATION（4タブ）
 ============================================================ -->
 <nav class="fixed bottom-0 left-0 right-0 z-[90]
-            h-[64px] bg-white/95 backdrop-blur-xl
+            min-h-[64px] bg-white/95 backdrop-blur-xl
             border-t border-black/[0.07] shadow-top
-            flex items-stretch justify-center"
+            flex items-start justify-center"
+     style="padding-bottom:var(--safe-b)"
      role="navigation" aria-label="メインナビゲーション">
   <div class="max-w-[430px] w-full flex items-stretch">
 

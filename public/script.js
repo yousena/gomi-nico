@@ -951,7 +951,7 @@ function renderSearchIndex() {
 
     // グループごとに独立カード（id・scroll-margin-topはジャンプナビからのスクロール着地位置用）
     html += '<div id="kana-sec-' + rowKey + '" class="kana-section" ' +
-      'style="scroll-margin-top:190px;background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">';
+      'style="scroll-margin-top:calc(200px + env(safe-area-inset-top, 0px));background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">';
 
     // 行見出し（白背景・ブランドカラーテキスト）
     html += '<div style="padding:0 16px;height:54px;display:flex;align-items:center;gap:8px">' +
@@ -1011,6 +1011,23 @@ function jumpToKana(key) {
   if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+/**
+ * env(safe-area-inset-top) の実際のpx値を取得する。
+ * IntersectionObserverのrootMarginはCSSのenv()/calc()を解釈しないため、
+ * 高さ0・envのみを指定したprobe要素をDOMに挿入して実測する定番手法。
+ * ノッチ機種でヘッダーがsafe-area分だけ伸びる分、sticky検索バー群のスタック高さもその分ずれるため必要。
+ */
+function getSafeAreaTopPx() {
+  if (typeof getSafeAreaTopPx._cached === 'number') return getSafeAreaTopPx._cached;
+  var probe = document.createElement('div');
+  probe.style.cssText = 'position:fixed;top:0;left:0;width:0;height:env(safe-area-inset-top, 0px);visibility:hidden;pointer-events:none;';
+  document.body.appendChild(probe);
+  var px = probe.getBoundingClientRect().height || 0;
+  document.body.removeChild(probe);
+  getSafeAreaTopPx._cached = px;
+  return px;
+}
+
 var _kanaObserver = null;
 function setupKanaJumpObserver() {
   if (!('IntersectionObserver' in window)) return;
@@ -1018,6 +1035,9 @@ function setupKanaJumpObserver() {
 
   var sections = Array.prototype.slice.call(document.querySelectorAll('.kana-section'));
   if (!sections.length) return;
+
+  // sticky stack実測: ヘッダー60px + safe-area-inset-top + 検索ボックス64px + ジャンプナビ約60px
+  var stackHeight = Math.round(60 + getSafeAreaTopPx() + 64 + 60);
 
   _kanaObserver = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
@@ -1027,7 +1047,7 @@ function setupKanaJumpObserver() {
         chip.classList.toggle('active', chip.getAttribute('data-kana-key') === key);
       });
     });
-  }, { root: null, rootMargin: '-190px 0px -70% 0px', threshold: 0 });
+  }, { root: null, rootMargin: '-' + stackHeight + 'px 0px -70% 0px', threshold: 0 });
 
   sections.forEach(function(sec) { _kanaObserver.observe(sec); });
 }
