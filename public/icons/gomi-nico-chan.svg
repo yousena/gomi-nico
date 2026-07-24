@@ -1,0 +1,16 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（ブランドグリーンの角丸スクエア。icon-192.png等と同じ配色） -->
+  <rect x="0" y="0" width="192" height="192" rx="42" fill="#00A86B"/>
+
+  <!-- ごみニコちゃん（顔つきごみ袋キャラ・モノトーン版）
+       index.htmlヒーローの袋シルエットを流用しつつ、favicon/アプリアイコン用途に
+       合わせて白1色（耳飾りのみ半透明で濃淡）+ 背景色の目鼻口という
+       2色構成に単純化。多色版（青系）はコントラストが弱かったための調整。 -->
+  <g transform="translate(56.1,30) scale(1.9)">
+    <path d="M11 14 Q-5 30 -5 49 Q-5 70 21 70 Q47 70 47 49 Q47 30 31 14 Z" fill="#FFFFFF"/>
+    <path d="M11 14 Q8 5 2 2 Q13 3 16 9 Q19 2 29 0 Q24 6 26 12 Z" fill="#FFFFFF" opacity="0.75"/>
+    <circle cx="14" cy="41" r="3" fill="#00A86B"/>
+    <circle cx="30" cy="41" r="3" fill="#00A86B"/>
+    <path d="M17 50 q5 4 10 0" stroke="#00A86B" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
