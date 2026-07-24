@@ -56,7 +56,15 @@
         ]
       }
     ],
-    "cutoff_note": "朝8時までに決められた場所（クリーン・リサイクルステーション）へ出しましょう。勤労感謝の日（振替休日を含む）と年末年始（12/31〜1/3）は収集がお休みです"
+    "fixed_holidays_no_collection": [
+      {
+        "month": 10,
+        "day": 23,
+        "label": "勤労感謝の日",
+        "observe_substitute": true
+      }
+    ],
+    "cutoff_note": "朝8時までに指定のクリーン・リサイクルステーションへ出しましょう"
   },
   "categories": {
     "moeru": {

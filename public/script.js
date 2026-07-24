@@ -548,13 +548,40 @@ function isYearEnd(date) {
   return DATA.collection_settings.yearend_ranges.some(r => r.month === m && r.days.includes(dd));
 }
 
+/**
+ * 特定の祝日（月・日固定）のみ収集をお休みにする自治体向けの判定
+ * （蕨市: 「勤労感謝の日（振替休日を含む）」だけ収集なし。他の祝日は通常通り収集する
+ *  という公式ルールのため、祝日全般を扱うisHoliday()/JAPAN_HOLIDAYSとは別に、
+ *  data_{city}.jsonのcollection_settings.fixed_holidays_no_collectionで
+ *  自治体ごとに個別指定できるようにした。フィールドが無い自治体は従来通り影響なし）
+ * @param {Date} date
+ * @returns {object|null} 該当する祝日ルール（{month,day,label,observe_substitute}）。無ければnull
+ */
+function getFixedHolidayClosure(date) {
+  const rules = DATA?.collection_settings?.fixed_holidays_no_collection;
+  if (!rules || !rules.length) return null;
+  const year = date.getFullYear();
+  const isSameDay = (a, b) => a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+  for (const rule of rules) {
+    const holidayDate = new Date(year, rule.month, rule.day);
+    if (isSameDay(date, holidayDate)) return rule;
+    // 振替休日: 祝日が日曜なら翌月曜も収集お休み（国民の祝日に関する法律の振替休日ルール）
+    if (rule.observe_substitute && holidayDate.getDay() === 0) {
+      const substitute = new Date(holidayDate);
+      substitute.setDate(substitute.getDate() + 1);
+      if (isSameDay(date, substitute)) return rule;
+    }
+  }
+  return null;
+}
+
 function getGarbageForDate(areaKey, date) {
   if (!areaKey || !DATA?.areas[areaKey]) return [];
   const area  = DATA.areas[areaKey];
   const day   = date.getDay();
   const year  = date.getFullYear();
   const month = date.getMonth();
-  if (isYearEnd(date)) return [];
+  if (isYearEnd(date) || getFixedHolidayClosure(date)) return [];
 
   const result = [];
   const cats   = DATA.categories;
@@ -737,6 +764,14 @@ function buildDayDetailHTML(areaKey, date) {
         .map(r => `${r.month === 11 ? 12 : 1}/${r.days.join('・')}`).join('〜')}は収集お休みです</p>
     </div>`;
   }
+  const fixedHoliday = getFixedHolidayClosure(date);
+  if (fixedHoliday) {
+    return `<div class="text-center py-10 px-6">
+      <span class="text-[48px] block mb-3">🎌</span>
+      <p class="text-base font-bold text-[#636366]">${fixedHoliday.label}のため収集お休み</p>
+      <p class="text-xs text-[#6B7280] mt-1">この日は通常の収集日でも収集がありません</p>
+    </div>`;
+  }
 
   const types = getGarbageForDate(areaKey, date);
   if (types.length === 0) {
@@ -802,7 +837,7 @@ function renderCalendar() {
     const date    = new Date(calYear, calMonth, d);
     const types   = getGarbageForDate(areaKey, date);
     const isToday = date.toDateString() === today.toDateString();
-    const isYE    = isYearEnd(date);
+    const isYE    = isYearEnd(date) || !!getFixedHolidayClosure(date);
     const dow     = date.getDay();
 
     types.forEach(t => { if (!seenTypes.has(t.type)) seenTypes.set(t.type, t.label); });
