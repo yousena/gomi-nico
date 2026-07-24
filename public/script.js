@@ -112,7 +112,7 @@ const DEFAULT_FAQ = [
    グローバル状態
 ===================================================== */
 let DATA = null;
-let calYear, calMonth;
+let calYear, calMonth; // 表示中の年・月（月間グリッド表示）
 
 /**
  * 都市検出: metaタグ(/shiki/) → URLパス(/shiki/) → クエリパラメータ(?city=shiki) → デフォルト
@@ -644,6 +644,15 @@ function formatDateJP(date) {
   return `${date.getMonth()+1}月${date.getDate()}日（${WD_JP[date.getDay()]}）`;
 }
 
+// タイポグラフィ差別化版（DS.md 2-4-5・v1.29で「M月D日（曜）」表記に戻す）
+// 数字は大きく太く、月/日の漢字・曜日の括弧書きは小さく表示する
+// 「今日の収集」バナー・日別詳細シート見出しなど、主要な日付表示に共通使用する
+function formatDateJPHtml(date) {
+  return `<span class="jpdate-num">${date.getMonth()+1}</span><span class="jpdate-kanji">月</span>` +
+         `<span class="jpdate-num">${date.getDate()}</span><span class="jpdate-kanji">日</span>` +
+         `<span class="jpdate-wd">（${WD_JP[date.getDay()]}）</span>`;
+}
+
 /* =====================================================
    【独自提案①】今日の収集バナー
    カレンダー上部に今日の収集種別をひと目で表示
@@ -655,7 +664,7 @@ function renderTodayStrip() {
   const today   = new Date();
   const areaKey = localStorage.getItem(getAreaKey());
 
-  document.getElementById('today-strip-date').textContent = formatDateJP(today);
+  document.getElementById('today-strip-date').innerHTML = formatDateJPHtml(today);
 
   const cutoffEl = document.getElementById('today-strip-cutoff');
   const cutoffNote = DATA && DATA.collection_settings && DATA.collection_settings.cutoff_note;
@@ -734,7 +743,7 @@ function showDayDetail(year, month, day) {
   const date    = new Date(year, month, day);
   const areaKey = localStorage.getItem(getAreaKey());
 
-  document.getElementById('day-detail-date').textContent = formatDateJP(date);
+  document.getElementById('day-detail-date').innerHTML = formatDateJPHtml(date);
   document.getElementById('day-detail-content').innerHTML = buildDayDetailHTML(areaKey, date);
 
   document.getElementById('day-detail-backdrop').classList.remove('is-hidden');
@@ -804,17 +813,26 @@ function buildDayDetailHTML(areaKey, date) {
 }
 
 /* =====================================================
-   カレンダー
+   カレンダー（月間グリッド・DS.md 2-4-4・v1.29）
+   2026-07-24: 一時的に「日〜土固定の週間リスト」を試したが、太平さんの実機確認で
+   「1か月グリッドの方が見やすい」との最終判断により月間グリッドに戻した。
+   蕨市のように1日に収集カテゴリが3〜6種類重なる地区への対策は、小セルを拡張する
+   のではなく「アイコン最大4枠・超過分は+Nバッジ」で表現する方式にした（後述）。
 ===================================================== */
-function prevMonth() { calMonth--; if (calMonth < 0)  { calMonth=11; calYear--;  } renderCalendar(); }
-function nextMonth() { calMonth++; if (calMonth > 11) { calMonth=0;  calYear++;  } renderCalendar(); }
+function prevMonth() { calMonth--; if (calMonth < 0) { calMonth = 11; calYear--; } renderCalendar(); }
+function nextMonth() { calMonth++; if (calMonth > 11) { calMonth = 0; calYear++; } renderCalendar(); }
+
+const WD_SHORT = ['日','月','火','水','木','金','土'];
+const CAL_MAX_ICONS = 4; // 1セルに表示するアイコンの上限（2列×2行）。超過時は3枠+「+Nバッジ」に切り替える
 
 function renderCalendar() {
   if (!DATA) return;
-  document.getElementById('cal-month-label').textContent = `${calYear}年${calMonth+1}月`;
   const areaKey = localStorage.getItem(getAreaKey());
   const grid    = document.getElementById('cal-grid');
   const noArea  = document.getElementById('cal-no-area');
+
+  const labelEl = document.getElementById('cal-month-label');
+  if (labelEl) labelEl.textContent = `${calYear}年${calMonth + 1}月`;
 
   if (!areaKey) {
     grid.innerHTML = '';
@@ -825,47 +843,54 @@ function renderCalendar() {
   noArea.classList.add('is-hidden');
   grid.classList.remove('is-hidden');
 
-  const firstDay    = new Date(calYear, calMonth, 1).getDay();
-  const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
-  const today       = new Date();
-  let html = '';
-  const seenTypes = new Map(); // その月に実在するカテゴリのみ凡例に出す（DS.md 2-4-1）
+  const today0      = new Date(); today0.setHours(0,0,0,0);
+  const firstOfMonth = new Date(calYear, calMonth, 1);
+  const startDow      = firstOfMonth.getDay();
+  const daysInMonth    = new Date(calYear, calMonth + 1, 0).getDate();
 
-  for (let i = 0; i < firstDay; i++) html += '<div class="cal-cell" aria-hidden="true"></div>';
+  let html = '';
+  const seenTypes = new Map(); // 表示中の月に実在するカテゴリのみ凡例に出す（DS.md 2-4-1）
+
+  // 月初の曜日オフセット分は空セルで埋める（列位置合わせ）
+  for (let i = 0; i < startDow; i++) {
+    html += '<div class="cal-cell cal-cell-empty" aria-hidden="true"></div>';
+  }
 
   for (let d = 1; d <= daysInMonth; d++) {
     const date    = new Date(calYear, calMonth, d);
     const types   = getGarbageForDate(areaKey, date);
-    const isToday = date.toDateString() === today.toDateString();
+    const isToday = date.getTime() === today0.getTime();
     const isYE    = isYearEnd(date) || !!getFixedHolidayClosure(date);
+    const isHol   = isHoliday(date);
     const dow     = date.getDay();
 
     types.forEach(t => { if (!seenTypes.has(t.type)) seenTypes.set(t.type, t.label); });
 
-    // アイコン（件数に応じてサイズ・レイアウト変更）
+    const dayCls    = (dow === 0 || isHol) ? 'cal-day cal-day-sun' : dow === 6 ? 'cal-day cal-day-sat' : 'cal-day';
+    const labelText = types.map(t => t.label).join('・') || '収集なし';
+
     let iconsHtml = '';
-    if (types.length === 1) {
-      iconsHtml = '<div style="display:flex;align-items:center;justify-content:center;width:100%;flex:1" aria-hidden="true">'
-        + '<div style="width:30px;height:30px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center">'
-        + catIcon(types[0].type, 30) + '</div></div>';
-    } else if (types.length === 2) {
-      iconsHtml = '<div style="display:flex;align-items:center;justify-content:center;gap:2px;width:100%;flex:1" aria-hidden="true">'
-        + types.map(t => '<div style="width:20px;height:20px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center">' + catIcon(t.type, 20) + '</div>').join('') + '</div>';
-    } else if (types.length >= 3) {
-      iconsHtml = '<div class="cal-icons" aria-hidden="true">'
-        + types.slice(0,4).map(t => '<span class="cal-icon-wrap">' + catIcon(t.type, 20) + '</span>').join('')
-        + '</div>';
+    if (!isYE && types.length > 0) {
+      if (types.length <= CAL_MAX_ICONS) {
+        iconsHtml = '<div class="cal-icons">' + types.map(t =>
+          '<span class="cal-icon-wrap">' + catIcon(t.type, 20) + '</span>'
+        ).join('') + '</div>';
+      } else {
+        // 4種類を超える日は、3枠+「+Nバッジ」（残り件数）にまとめる。全件はタップ後の日別詳細で確認できる
+        const shown    = types.slice(0, CAL_MAX_ICONS - 1);
+        const overflow = types.length - shown.length;
+        iconsHtml = '<div class="cal-icons">' +
+          shown.map(t => '<span class="cal-icon-wrap">' + catIcon(t.type, 20) + '</span>').join('') +
+          '<span class="cal-icon-wrap cal-icon-more">+' + overflow + '</span>' +
+          '</div>';
+      }
     }
 
-    const isHol   = isHoliday(new Date(calYear, calMonth, d));
-    const dayCls  = (dow === 0 || isHol) ? 'cal-day cal-day-sun' : dow === 6 ? 'cal-day cal-day-sat' : 'cal-day';
     const cellCls = ['cal-cell',
-      isToday ? 'is-today' : '',
-      isYE    ? 'yearend'  : '',
-      (types.length > 0 && !isYE) ? 'has-col' : '',
+      types.length > 0 ? 'has-col' : '',
+      isToday          ? 'is-today' : '',
+      isYE             ? 'yearend'  : '',
     ].filter(Boolean).join(' ');
-
-    const labelText = types.map(t => t.label).join('・') || '収集なし';
 
     html += `
       <button class="${cellCls}" role="gridcell"
