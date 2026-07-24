@@ -666,16 +666,8 @@ function renderTodayStrip() {
 
   document.getElementById('today-strip-date').innerHTML = formatDateJPHtml(today);
 
-  const cutoffEl = document.getElementById('today-strip-cutoff');
-  const cutoffNote = DATA && DATA.collection_settings && DATA.collection_settings.cutoff_note;
-  if (cutoffEl) {
-    if (areaKey && cutoffNote) {
-      cutoffEl.innerHTML = '<span class="ms-nav" style="font-size:16px;color:var(--brand)">alarm</span>' + cutoffNote;
-      cutoffEl.classList.remove('is-hidden');
-    } else {
-      cutoffEl.classList.add('is-hidden');
-    }
-  }
+  // 「朝8時までに〜出しましょう」の注記行は2026-07-24に廃止（太平さんの指摘でカードの文字量を整理）。
+  // 同内容はFAQ「ごみは何時までに出せばいいですか？」に集約し、情報自体は失われないようにした
 
   const typesEl = document.getElementById('today-strip-types');
   if (!areaKey) {
@@ -686,19 +678,20 @@ function renderTodayStrip() {
   const types = getGarbageForDate(areaKey, today);
   if (types.length === 0) {
     // 収集なし → 次の収集日を探す（最大14日先まで）
-    let nextDate = null, nextTypes = [];
+    let nextDate = null;
     for (let i = 1; i <= 14; i++) {
       const d = new Date(today); d.setDate(today.getDate() + i);
       const t = getGarbageForDate(areaKey, d);
-      if (t.length > 0) { nextDate = d; nextTypes = t; break; }
+      if (t.length > 0) { nextDate = d; break; }
     }
     if (nextDate) {
       const diff = Math.round((nextDate - today) / 86400000);
       const diffLabel = diff === 1 ? '明日' : `${diff}日後`;
+      // カテゴリ名の列挙は括弧の入れ子で読みにくいとの指摘（2026-07-24）を受け削除。日数のみ表示する
       typesEl.innerHTML = `
         <div style="display:flex;flex-direction:column;gap:2px">
           <span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:var(--brand);vertical-align:-3px">check_circle</span>今日は収集なし</span>
-          <span class="text-[12px] text-[#6B7280]">次の収集: ${diffLabel}（${nextTypes.map(t => t.label).join('・')}）</span>
+          <span class="text-[12px] text-[#6B7280]">次の収集: ${diffLabel}</span>
         </div>`;
     } else {
       typesEl.innerHTML = `<span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:var(--brand);vertical-align:-3px">check_circle</span>今日は収集なし</span>`;
@@ -706,11 +699,23 @@ function renderTodayStrip() {
     return;
   }
 
+  // チップの文言は短縮表示（categoryShortLabel）を使う。「紙類（古紙類・その他の紙類）」のような
+  // 括弧書きの補足はここでは省略し、詳細は品目検索・カテゴリ詳細シート側で確認する運用（2026-07-24）
   typesEl.innerHTML = types.map(t => {
     const s = TYPE_STYLE[t.type] || TYPE_STYLE.unknown;
     return '<span style="display:inline-flex;align-items:center;gap:5px;padding:5px 13px;border-radius:999px;font-size:14px;font-weight:700;background:' + s.bg + ';color:' + s.fg + '">' +
-      '<span style="width:20px;height:20px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0">' + catIcon(t.type, 20) + '</span> ' + t.label + '</span>';
+      '<span style="width:20px;height:20px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0">' + catIcon(t.type, 20) + '</span> ' + categoryShortLabel(t.type) + '</span>';
   }).join('');
+}
+
+/**
+ * カテゴリの短縮表示名（DS.md 2-4-1・v1.30）。data_{city}.jsonのcategories[key].shortLabelを優先し、
+ * 無ければ通常のlabelにフォールバックする。「紙類（古紙類・その他の紙類）」のような括弧書きの補足を
+ * 省いた短い名前を、today-stripのチップやカレンダー凡例など一覧性を優先する箇所で使う。
+ */
+function categoryShortLabel(typeKey) {
+  const cat = (DATA && DATA.categories && DATA.categories[typeKey]) || {};
+  return cat.shortLabel || cat.label || typeKey;
 }
 
 /* =====================================================
@@ -831,8 +836,12 @@ function renderCalendar() {
   const grid    = document.getElementById('cal-grid');
   const noArea  = document.getElementById('cal-no-area');
 
+  // 見出し「2026年7月」も、数字を大きく・年/月の漢字を小さくするタイポグラフィで統一（DS.md 2-4-5・v1.30）
   const labelEl = document.getElementById('cal-month-label');
-  if (labelEl) labelEl.textContent = `${calYear}年${calMonth + 1}月`;
+  if (labelEl) {
+    labelEl.innerHTML = `<span class="jpdate-num">${calYear}</span><span class="jpdate-kanji">年</span>` +
+                         `<span class="jpdate-num">${calMonth + 1}</span><span class="jpdate-kanji">月</span>`;
+  }
 
   if (!areaKey) {
     grid.innerHTML = '';
@@ -914,14 +923,17 @@ function renderCategoryLegend(seenTypes) {
   if (!el) return;
   if (!seenTypes || seenTypes.size === 0) { el.innerHTML = ''; return; }
 
-  let chips = '';
+  // 色付きピルは「カラフルすぎる」との指摘（2026-07-24）を受け廃止。
+  // アイコン＋三点リーダー＋カテゴリ名（短縮表記）を1行ずつ並べる、色のないリスト表示に変更（DS.md 2-4-1・v1.30）
+  let rows = '';
   seenTypes.forEach((label, typeKey) => {
-    const s = TYPE_STYLE[typeKey] || TYPE_STYLE.unknown;
-    chips += '<span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px 5px 6px;border-radius:999px;background:' + s.bg + ';font-size:12px;font-weight:700;color:' + s.fg + '">' +
-      '<span style="width:20px;height:20px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0">' + catIcon(typeKey, 20) + '</span>' +
-      label + '</span>';
+    rows += '<div style="display:flex;align-items:center;gap:8px;padding:4px 0">' +
+      '<span style="width:20px;height:20px;display:flex;align-items:center;justify-content:center;flex-shrink:0">' + catIcon(typeKey, 20) + '</span>' +
+      '<span style="color:#6B7280;font-size:13px">…</span>' +
+      '<span style="font-size:13px;font-weight:700;color:#1C1C1E">' + categoryShortLabel(typeKey) + '</span>' +
+      '</div>';
   });
-  el.innerHTML = chips;
+  el.innerHTML = rows;
 }
 
 /* =====================================================
