@@ -1257,7 +1257,7 @@ function openItemDetail(name) {
   if (item.source === 'estimated') {
     html += '<div style="display:flex;align-items:flex-start;gap:6px;margin-bottom:16px;padding:10px 12px;background:#F4F5F7;border-radius:10px;border:1px dashed rgba(0,0,0,0.15)">' +
       '<span class="ms-nav" style="font-size:16px;color:#6B7280;flex-shrink:0;line-height:1.4">info</span>' +
-      '<p style="font-size:12px;color:#6B7280;line-height:1.6;margin:0">志木市の公式資料に記載がないため、一般的な分別ルールをもとにした参考情報です。正式な確認は環境推進課（☎048-473-1492）へ</p>' +
+      '<p style="font-size:12px;color:#6B7280;line-height:1.6;margin:0">' + DATA.name + 'の公式資料に記載がないため、一般的な分別ルールをもとにした参考情報です。正式な確認は<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="color:var(--brand);text-decoration:underline;font-weight:700">問い合わせ先</a>へ</p>' +
     '</div>';
   }
 
@@ -1319,28 +1319,39 @@ function renderGuide() {
 function renderContact() {
   var el = document.getElementById('contact-sheet-rows');
   if (!el) return;
-  var contacts = (DATA && DATA.contacts) || [
-    { name:'志木市 環境推進課', phone:'048-473-1492', hours:'月〜金 8:45〜16:30' }
-  ];
+  var contacts = (DATA && DATA.contact) || [];
 
-  var cardsHtml = contacts.map(function(c, i) {
+  var cardsHtml = contacts.length === 0
+    ? '<div style="padding:24px;text-align:center"><p style="font-size:13px;color:#6B7280">問い合わせ先情報が見つかりませんでした。</p></div>'
+    : contacts.map(function(c, i) {
     var last = i === contacts.length - 1;
     return '<div style="padding:16px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.05)') + '">' +
-      (c.desc ? '<p style="font-size:11px;color:#6B7280;margin-bottom:4px">' + c.desc + '</p>' : '') +
+      (c.note ? '<p style="font-size:11px;color:#6B7280;margin-bottom:4px">' + c.note + '</p>' : '') +
       '<p style="font-size:15px;font-weight:800;color:#1C1C1E;margin-bottom:8px">' + c.name + '</p>' +
       '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px">' +
       '<div>' +
-      '<p style="font-size:12px;color:#636366"><span style="color:#6B7280">電話番号</span>　' + c.phone + (c.phone_note ? '（' + c.phone_note + '）' : '') + '</p>' +
+      '<p style="font-size:12px;color:#636366"><span style="color:#6B7280">電話番号</span>　' + c.tel + '</p>' +
       (c.hours ? '<p style="font-size:12px;color:#636366;margin-top:2px"><span style="color:#6B7280">受付時間</span>　' + c.hours + '</p>' : '') +
       '</div>' +
-      '<a href="tel:' + c.phone + '" style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid rgba(26,92,56,0.15)">' +
+      '<a href="tel:' + c.tel + '" style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid rgba(26,92,56,0.15)">' +
       '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">call</span>電話する</a>' +
       '</div></div>';
   }).join('');
 
-  // 免責・運営者情報
-  var S = 'style="';
-  var notice = '<div style="margin:16px 16px 0;background:#FFF8EC;border-radius:12px;border:1px solid rgba(224,120,0,0.15);overflow:hidden">' +
+  // セクション見出し（ごみに関するお問い合わせ）
+  var sectionHeadGomi = '<p style="font-size:12px;font-weight:800;color:#6B7280;padding:16px 20px 8px">ごみの分別・収集について（' + DATA.name + '）</p>';
+
+  // サイトについてのお問い合わせ（ユウセナ・運営者マター）
+  var sectionHeadSite = '<p style="font-size:12px;font-weight:800;color:#6B7280;padding:20px 20px 8px">サイトの内容・不具合について（運営者）</p>';
+  var siteContact = '<div style="background:#fff;border-radius:16px;margin:0 16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden;padding:16px 20px">' +
+    '<p style="font-size:12px;color:#1C1C1E;line-height:1.7;margin-bottom:12px">掲載情報の誤り・古い情報や、画面表示の不具合などはこちらからお知らせください。</p>' +
+    '<a href="mailto:contact@gomi-nico.jp" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid rgba(26,92,56,0.15)">' +
+    '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">mail</span>メールする</a>' +
+    '<p style="font-size:11px;color:#6B7280;margin-top:8px">contact@gomi-nico.jp　※返信にお時間をいただく場合があります</p>' +
+    '</div>';
+
+  // 免責・出典（サイト全般についての注記）
+  var notice = '<div style="margin:12px 16px 0;background:#FFF8EC;border-radius:12px;border:1px solid rgba(224,120,0,0.15);overflow:hidden">' +
 
     // ヘッダー
     '<div style="padding:12px 16px 10px;border-bottom:1px solid rgba(224,120,0,0.12)">' +
@@ -1350,22 +1361,14 @@ function renderContact() {
     // 本サイトについて
     '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
     '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">本サイトについて</p>' +
-    '<p style="font-size:12px;color:#1C1C1E;line-height:1.7">本サイト「gomi-nico.jp」は、志木市が運営する<strong>公式サイトではありません</strong>。市民のための非公式の情報サイトです。</p>' +
+    '<p style="font-size:12px;color:#1C1C1E;line-height:1.7">本サイト「gomi-nico.jp」は、' + DATA.name + 'が運営する<strong>公式サイトではありません</strong>。市民のための非公式の情報サイトです。</p>' +
     '</div>' +
 
     // 情報について
     '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
     '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">情報について</p>' +
-    '<p style="font-size:12px;color:#1C1C1E;line-height:1.7">志木市ホームページの公開情報を参考に作成されています。月1回程度で更新していますが、最新情報は公式サイトをご確認ください。</p>' +
-    '<p style="font-size:11px;margin-top:6px"><a href="https://www.city.shiki.lg.jp/life/1/12/" target="_blank" rel="noopener" style="color:var(--brand);text-decoration:underline">出典：志木市ホームページ（ごみ・リサイクル）</a></p>' +
-    '</div>' +
-
-    // 誤情報・不具合
-    '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
-    '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">サイトの誤情報・不具合のご報告</p>' +
-    '<p style="font-size:12px;color:#1C1C1E;line-height:1.7;margin-bottom:4px">サイト運営者へお知らせください。</p>' +
-    '<a href="mailto:contact@gomi-nico.jp" style="font-size:13px;color:var(--brand);text-decoration:underline">contact@gomi-nico.jp</a>' +
-    '<p style="font-size:11px;color:#6B7280;margin-top:4px">※返信にお時間をいただく場合があります</p>' +
+    '<p style="font-size:12px;color:#1C1C1E;line-height:1.7">' + DATA.name + 'ホームページの公開情報を参考に作成されています。月1回程度で更新していますが、最新情報は公式サイトをご確認ください。</p>' +
+    '<p style="font-size:11px;margin-top:6px"><a href="' + (DATA.official_url || '#') + '" target="_blank" rel="noopener" style="color:var(--brand);text-decoration:underline">出典：' + DATA.name + 'ホームページ（ごみ・リサイクル）</a></p>' +
     '</div>' +
 
     // 免責事項
@@ -1376,7 +1379,9 @@ function renderContact() {
 
     '</div>';
 
-  el.innerHTML = '<div style="background:#fff;border-radius:16px;margin:0 16px 8px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">' + cardsHtml + '</div>' +
+  el.innerHTML = sectionHeadGomi +
+    '<div style="background:#fff;border-radius:16px;margin:0 16px 8px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">' + cardsHtml + '</div>' +
+    sectionHeadSite + siteContact +
     notice;
 }
 

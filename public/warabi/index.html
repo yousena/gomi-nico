@@ -409,6 +409,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="text-xl font-extrabold tracking-tight px-6 pb-4 flex-shrink-0">メニュー</h2>
     <div class="overflow-y-auto flex-1" style="padding-bottom:calc(24px + var(--safe-b))">
 
+      <!-- ▼ 自治体固有 -->
       <button onclick="openSheet()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
@@ -445,14 +446,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
       </button>
 
-      <button id="menu-vendor" onclick="openVendor()"
+      <button id="menu-contact" onclick="openContact()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">storefront</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">call</span></span>
         <div class="flex-1">
-          <p class="text-base font-bold text-[#1C1C1E]">関連業者</p>
-          <p class="text-xs text-[#6B7280] mt-[2px]">不用品回収・引越しなど便利なサービス</p>
+          <p class="text-base font-bold text-[#1C1C1E]">問い合わせ先</p>
+          <p class="text-xs text-[#6B7280] mt-[2px]">市役所・安全安心課へのご連絡</p>
+        </div>
+        <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
+      </button>
+
+      <!-- ▼ 全自治体共通 -->
+      <button id="menu-language" onclick="openLanguageSheet()"
+              class="flex items-center gap-4 w-full text-left px-6 py-4
+                     border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
+                     font-sans cursor-pointer hover:bg-white active:bg-white">
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">translate</span></span>
+        <div class="flex-1">
+          <p class="text-base font-bold text-[#1C1C1E]">言語設定</p>
+          <p class="text-xs text-[#6B7280] mt-[2px]">Language / 语言 / 언어 / Ngôn ngữ</p>
         </div>
         <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
       </button>
@@ -468,26 +482,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
       </a>
 
-      <button id="menu-contact" onclick="openContact()"
-              class="flex items-center gap-4 w-full text-left px-6 py-4
-                     border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
-                     font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">call</span></span>
-        <div class="flex-1">
-          <p class="text-base font-bold text-[#1C1C1E]">問い合わせ先</p>
-          <p class="text-xs text-[#6B7280] mt-[2px]">市役所・安全安心課へのご連絡</p>
-        </div>
-        <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
-      </button>
-
-      <button id="menu-language" onclick="openLanguageSheet()"
+      <button id="menu-vendor" onclick="openVendor()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      bg-transparent border-none
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">translate</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">storefront</span></span>
         <div class="flex-1">
-          <p class="text-base font-bold text-[#1C1C1E]">言語設定</p>
-          <p class="text-xs text-[#6B7280] mt-[2px]">Language / 语言 / 언어 / Ngôn ngữ</p>
+          <p class="text-base font-bold text-[#1C1C1E]">関連業者</p>
+          <p class="text-xs text-[#6B7280] mt-[2px]">不用品回収・引越しなど便利なサービス</p>
         </div>
         <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
       </button>
