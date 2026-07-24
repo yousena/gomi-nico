@@ -265,6 +265,13 @@
       background:rgba(0,0,0,0.06); color:#6B7280;
       font-size:10px; font-weight:800;
     }
+    /* 1種類のみの日は2列グリッドを使わず、アイコンを大きく1つだけ表示する */
+    .cal-icons-single {
+      display:flex; align-items:center; justify-content:center;
+    }
+    .cal-icon-wrap-lg {
+      width:28px; height:28px;
+    }
 
     /* ── 日付表示「M月D日（曜）」のタイポグラフィ（DS.md §2-4-5・v1.29） ── */
     .jpdate-num   { font-size:1.15em; font-weight:800; }

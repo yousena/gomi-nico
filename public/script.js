@@ -880,7 +880,11 @@ function renderCalendar() {
 
     let iconsHtml = '';
     if (!isYE && types.length > 0) {
-      if (types.length <= CAL_MAX_ICONS) {
+      if (types.length === 1) {
+        // 1種類のみの日はアイコンを大きく1つだけ表示（従来の挙動を踏襲。複数種類のときの2列グリッドとは別扱い）
+        iconsHtml = '<div class="cal-icons cal-icons-single"><span class="cal-icon-wrap cal-icon-wrap-lg">' +
+          catIcon(types[0].type, 28) + '</span></div>';
+      } else if (types.length <= CAL_MAX_ICONS) {
         iconsHtml = '<div class="cal-icons">' + types.map(t =>
           '<span class="cal-icon-wrap">' + catIcon(t.type, 20) + '</span>'
         ).join('') + '</div>';
