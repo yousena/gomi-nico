@@ -440,14 +440,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
       </button>
 
-      <button onclick="closeMenu();showPanel('guide')"
+      <button onclick="openRulesSheet()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">menu_book</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">checklist</span></span>
         <div class="flex-1">
-          <p class="text-base font-bold text-[#1C1C1E]">分別ガイド</p>
-          <p class="text-xs text-[#6B7280] mt-[2px]">ごみの分け方を種類別に確認</p>
+          <p class="text-base font-bold text-[#1C1C1E]">ごみ出しルール</p>
+          <p class="text-xs text-[#6B7280] mt-[2px]">収集時間・袋のルールなど基本の決まり</p>
         </div>
         <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
       </button>
@@ -560,6 +560,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </button>
     </div>
     <div id="faq-content" class="overflow-y-auto flex-1"
+         style="padding-bottom:calc(24px + var(--safe-b))">
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     ごみ出しルール ボトムシート（v1.33・メニューから独立表示）
+============================================================ -->
+<div id="rules-sheet"
+     class="is-hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[210]"
+     role="dialog" aria-modal="true" aria-label="ごみ出しルール"
+     onclick="if(event.target===this){closeRulesSheet()}">
+  <div class="bottom-sheet" onclick="event.stopPropagation()">
+    <div class="sheet-handle"></div>
+    <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
+      <h2 class="text-xl font-extrabold tracking-tight">ごみ出しルール</h2>
+      <button onclick="closeRulesSheet()" aria-label="閉じる"
+              class="w-11 h-11 rounded-full bg-black/[0.07] flex items-center justify-center
+                     border-none cursor-pointer font-sans flex-shrink-0">
+        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+      </button>
+    </div>
+    <div id="rules-sheet-body" class="overflow-y-auto flex-1"
          style="padding-bottom:calc(24px + var(--safe-b))">
     </div>
   </div>
@@ -812,18 +835,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <!-- ==========================================================
-       ガイド パネル
-  ========================================================== -->
-  <div id="panel-guide" class="is-hidden flex flex-col gap-4" aria-label="分別ガイド">
-    <div class="bg-white rounded-2xl shadow-card overflow-hidden animate-fade-up">
-      <h2 class="text-base font-extrabold px-6 py-5 pb-4 border-b border-black/[0.04] tracking-tight">
-        ごみの分け方ガイド
-      </h2>
-      <div id="guide-rows"></div>
-    </div>
-  </div>
-
-  <!-- ==========================================================
        お得情報 パネル（近日公開）
        ※本実装は楽天アフィリエイト等の審査通過後に行う。
          旧コンテンツはgit履歴（コミット7d1b8df以前）を参照。
@@ -1010,7 +1021,7 @@ function installA2hs() {
   window._deferredPrompt.userChoice.then(function() {
     window._deferredPrompt = null;
     localStorage.setItem('a2hs_dismissed', '1');
-    renderRules();
+    renderNoticePanel();
   });
 }
 

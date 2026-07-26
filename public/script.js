@@ -167,8 +167,8 @@ function getAreaKey() {
   applyFeatures();
   renderCalendar();
   renderTodayStrip();
-  renderRules();
-  renderGuide();
+  renderNoticePanel();
+  renderRulesSheet();
   renderContact();
   renderAffiliate();
   renderFAQ();
@@ -1325,52 +1325,6 @@ function closeItemDetail() {
 /* =====================================================
    ガイドパネル
 ===================================================== */
-function renderGuide() {
-  if (!DATA) return;
-  var cats = DATA.categories;
-  // カテゴリ構成は自治体によって異なる（志木市＝「リサイクル資源」に統合、蕨市＝缶・びん・ペット・紙・布に分割）。
-  // 「recycle」キーがあればそれを使い、無ければ内訳の各カテゴリを個別に表示する（v1.32・#43修正）。
-  var CFG = [
-    { key:'moeru',  title:'可燃ごみ'          },
-    { key:'moenai', title:'不燃ごみ・有害ごみ' },
-  ];
-  if (cats['recycle']) {
-    CFG.push({ key:'recycle', title:'リサイクル資源' });
-  } else {
-    [
-      { key:'can',  title:'缶類'          },
-      { key:'bin',  title:'びん類'        },
-      { key:'pet',  title:'ペットボトル'   },
-      { key:'kami', title:'紙類'          },
-      { key:'fuku', title:'布類'          },
-    ].forEach(function(c) { if (cats[c.key]) CFG.push(c); });
-  }
-  CFG.push(
-    { key:'shigen-pla', title:'資源プラスチック' },
-    { key:'kiken',      title:'危険ごみ'         },
-    { key:'yugai',      title:'有害ごみ'         },
-    { key:'sodai',      title:'粗大ごみ'         }
-  );
-  // 万一データにキー自体が存在しないカテゴリは、空の行を出さないよう除外する
-  CFG = CFG.filter(function(cfg) { return !!cats[cfg.key]; });
-
-  var el = document.getElementById('guide-rows');
-  if (!el) return;
-  el.innerHTML = CFG.map(function(cfg, i) {
-    var cat  = cats[cfg.key] || {};
-    var st   = TYPE_STYLE[cfg.key] || TYPE_STYLE.unknown;
-    var last = i === CFG.length - 1;
-    return '<button onclick="openCategoryDetail(\'' + cfg.key + '\')" style="display:block;width:100%;text-align:left;background:transparent;border:none;font-family:inherit;cursor:pointer" class="' + (last ? '' : 'border-b border-black/[0.04]') + ' px-5 py-4 hover:bg-black/[0.02] active:bg-black/[0.04]">' +
-      '<div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">' +
-      '<div style="width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + ';flex-shrink:0">' + catIcon(cfg.key, st.img ? 44 : 24) + '</div>' +
-      '<div style="flex:1"><p style="font-size:16px;font-weight:800;color:' + st.fg + '">' + (cat.label || cfg.title) + '</p></div>' +
-      '<span class="ms-nav" style="color:#6B7280;font-size:20px">chevron_right</span></div>' +
-      (cat.how  ? '<p style="font-size:13px;color:#1C1C1E;line-height:1.6;margin-bottom:4px"><span class="ms-nav" style="font-size:15px;vertical-align:-3px;color:#6B7280">brand_awareness</span> ' + cat.how  + '</p>' : '') +
-      (cat.note ? '<p style="font-size:13px;color:#636366;line-height:1.6">※ ' + cat.note + '</p>' : '') +
-      '</button>';
-  }).join('');
-}
-
 /* =====================================================
    問い合わせ先 / 業者 / FAQ / お知らせ
 ===================================================== */
@@ -1474,30 +1428,6 @@ function renderFAQ() {
   el.innerHTML = html;
 }
 
-function renderNotice() {
-  var el = document.getElementById('notice-body');
-  if (!el) return;
-  var notices = DATA && DATA.notices;
-  if (!notices || notices.length === 0) {
-    el.innerHTML = '<div style="text-align:center;padding:40px 24px"><span style="font-size:40px;display:block;margin-bottom:12px">📭</span><p style="font-size:16px;font-weight:700;color:#636366">お知らせはありません</p></div>';
-    return;
-  }
-  el.innerHTML = notices.map(function(n, i) {
-    var bc = i < notices.length - 1 ? 'border-b border-black/[0.04]' : '';
-    var link = n.url
-      ? '<a href="' + n.url + '" target="_blank" rel="noopener" ' +
-        'style="display:inline-flex;align-items:center;gap:4px;margin-top:12px;' +
-        'font-size:13px;font-weight:700;color:var(--brand);text-decoration:none">' +
-        '公式サイトで詳細を確認' +
-        '<span class="ms-nav" style="font-size:15px">open_in_new</span></a>'
-      : '';
-    return '<div class="px-6 py-5 ' + bc + '">' +
-      '<p class="text-[12px] text-[#6B7280] mb-2">' + (n.date || '') + '</p>' +
-      '<p class="text-[16px] font-extrabold text-[#1C1C1E] mb-2 leading-snug">' + n.title + '</p>' +
-      '<p class="text-[16px] text-[#636366] leading-[1.5]">' + n.body + '</p>' +
-      link + '</div>';
-  }).join('');
-}
 
 /* =====================================================
    言語設定（Google 翻訳）
@@ -1600,15 +1530,13 @@ function applyFeatures() {
 }
 
 /* =====================================================
-   ルールパネル（お知らせ + 共通ルール）
+   お知らせパネル（下部タブ「お知らせ」・panel-notice）
 ===================================================== */
-function renderRules() {
+function renderNoticePanel() {
   var el = document.getElementById('rules-body');
   if (!el) return;
-  var notices   = (DATA && DATA.notices) || [];
-  var rules     = (DATA && DATA.rules)   || {};
-  var ruleItems = rules.items || [];
-  var features  = (DATA && DATA.features) || {};
+  var notices  = (DATA && DATA.notices) || [];
+  var features = (DATA && DATA.features) || {};
   var html = '';
 
   // ── ホーム画面追加カード（インストール済み・却下済みの場合は非表示）
@@ -1628,13 +1556,13 @@ function renderRules() {
         '<p style="font-size:13px;color:#636366;line-height:1.5">アプリのようにすぐ起動できます</p>' +
         installBtnHtml +
       '</div>' +
-      '<button onclick="dismissA2hs();renderRules()" style="background:none;border:none;color:#6B7280;font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">×</button>' +
+      '<button onclick="dismissA2hs();renderNoticePanel()" style="background:none;border:none;color:#6B7280;font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">×</button>' +
     '</div>';
   }
 
   // ── お知らせセクション（features.notice が true の場合のみ）
   if (features.notice !== false && notices.length > 0) {
-    html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden;margin-bottom:16px">' +
+    html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">' +
       '<h2 style="font-size:18px;font-weight:800;color:#1C1C1E;padding:20px 24px 16px;border-bottom:1px solid rgba(0,0,0,0.04);margin:0">お知らせ</h2>';
     notices.forEach(function(n) {
       var link = n.url
@@ -1654,22 +1582,46 @@ function renderRules() {
     html += '</div>';
   }
 
-  // ── ごみ出しルールセクション
-  if (ruleItems.length > 0) {
-    html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">' +
-      '<h2 style="font-size:18px;font-weight:800;color:#1C1C1E;padding:20px 24px 16px;border-bottom:1px solid rgba(0,0,0,0.04);margin:0">ごみ出しルール</h2>';
-    ruleItems.forEach(function(item, i) {
-      var last = i === ruleItems.length - 1;
-      html += '<div style="display:flex;gap:14px;padding:14px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.04)') + '">' +
-        '<span class="ms-nav" style="font-size:22px;color:var(--brand);flex-shrink:0;margin-top:1px">' + item.icon + '</span>' +
-        '<div><p style="font-size:16px;font-weight:700;color:#1C1C1E;margin-bottom:6px">' + item.title + '</p>' +
-        '<p style="font-size:16px;color:#636366;line-height:1.5">' + item.body + '</p></div>' +
-        '</div>';
-    });
-    html += '</div>';
+  el.innerHTML = html || '<p style="text-align:center;color:#6B7280;padding:40px 20px;font-size:14px">お知らせはありません</p>';
+}
+
+/* =====================================================
+   ごみ出しルール ボトムシート（ハンバーガーメニューから・v1.33で新設）
+   従来は「お知らせ」パネルの末尾に同居していたが、お知らせが増えると
+   スクロールしないと辿り着けず埋もれてしまうため、独立したメニュー項目
+   ＋ボトムシートに分離した（DS.md v1.33参照）。
+===================================================== */
+function renderRulesSheet() {
+  var el = document.getElementById('rules-sheet-body');
+  if (!el) return;
+  var rules     = (DATA && DATA.rules) || {};
+  var ruleItems = rules.items || [];
+
+  if (ruleItems.length === 0) {
+    el.innerHTML = '<p style="text-align:center;color:#6B7280;padding:40px 24px;font-size:14px">ルール情報はありません</p>';
+    return;
   }
 
-  el.innerHTML = html || '<p style="text-align:center;color:#6B7280;padding:40px 20px;font-size:14px">情報はありません</p>';
+  el.innerHTML = ruleItems.map(function(item, i) {
+    var last = i === ruleItems.length - 1;
+    return '<div style="display:flex;gap:14px;padding:16px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.04)') + '">' +
+      '<span class="ms-nav" style="font-size:22px;color:var(--brand);flex-shrink:0;margin-top:1px">' + item.icon + '</span>' +
+      '<div><p style="font-size:16px;font-weight:700;color:#1C1C1E;margin-bottom:6px">' + item.title + '</p>' +
+      '<p style="font-size:16px;color:#636366;line-height:1.5">' + item.body + '</p></div>' +
+      '</div>';
+  }).join('');
+}
+
+function openRulesSheet() {
+  closeMenu();
+  var el = document.getElementById('rules-sheet');
+  if (el) el.classList.remove('is-hidden');
+  document.body.style.overflow = 'hidden';
+}
+function closeRulesSheet() {
+  var el = document.getElementById('rules-sheet');
+  if (el) el.classList.add('is-hidden');
+  document.body.style.overflow = '';
 }
 
 
@@ -1839,7 +1791,7 @@ function closeCategoryDetail() {
 /* =====================================================
    パネル切替
 ===================================================== */
-var ALL_PANELS = ['calendar','today','search','guide','notice','faq','vendor','contact','language','affiliate','tokutoku'];
+var ALL_PANELS = ['calendar','today','search','notice','faq','vendor','contact','language','affiliate','tokutoku'];
 
 function showPanel(p) {
   ALL_PANELS.forEach(function(id) {
