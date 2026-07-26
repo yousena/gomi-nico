@@ -67,6 +67,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <main class="max-w-2xl mx-auto px-5 pt-8 pb-20">
 
+  <!-- ══════════════ パンくずリスト ══════════════ -->
+  <nav aria-label="パンくずリスト" class="mb-4">
+    <ol class="flex flex-wrap items-center gap-1" style="font-size:12px;color:#6B7280;list-style:none;padding:0;margin:0">
+      <li><a href="/" class="no-underline" style="color:#6B7280">ごみニコ</a></li>
+      <li aria-hidden="true">›</li>
+      <li aria-current="page" style="color:#1C1C1E;font-weight:700">記事一覧</li>
+    </ol>
+  </nav>
+
   <div class="flex items-center gap-2 mb-3">
     <span class="tag-chip" style="background:rgba(0,168,107,0.12);color:#00885A">記事一覧</span>
   </div>
@@ -93,10 +102,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <div class="text-center mt-10">
-    <a href="/" onclick="if(document.referrer.indexOf(location.origin)===0){history.back();return false;}"
+    <a href="/"
        style="display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#00A86B;color:#fff;border-radius:999px;height:52px;padding:0 28px;font-size:15px;font-weight:800;text-decoration:none;box-shadow:0 4px 14px rgba(0,168,107,0.3)">
-      <span class="ms" style="font-size:18px">arrow_back</span>
-      前の画面に戻る
+      <span class="ms" style="font-size:18px">home</span>
+      ごみニコ トップ
     </a>
   </div>
 
