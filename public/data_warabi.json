@@ -318,8 +318,7 @@
         "建築廃材・タイヤ・ガスボンベ等（収集不可）"
       ],
       "tips": [
-        "生活環境係（<a href=\"javascript:void(0)\" onclick=\"closeFAQ();closeCategoryDetail();closeItemDetail();openContact()\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">お問い合わせ先</a>）へ電話、または電子申請サービスで申し込みます",
-        "1点につき550円の粗大ごみ収集券が必要（払い戻し不可）",
+        "粗大ごみ収集券は購入後の払い戻しができません",
         "月曜日・祝日の翌日午前中は電話が混み合います。お急ぎでなければ電子申請が便利です",
         "戸別収集のみで、蕨戸田衛生センターへの直接持ち込みは原則できません"
       ],

@@ -1328,15 +1328,32 @@ function closeItemDetail() {
 function renderGuide() {
   if (!DATA) return;
   var cats = DATA.categories;
+  // カテゴリ構成は自治体によって異なる（志木市＝「リサイクル資源」に統合、蕨市＝缶・びん・ペット・紙・布に分割）。
+  // 「recycle」キーがあればそれを使い、無ければ内訳の各カテゴリを個別に表示する（v1.32・#43修正）。
   var CFG = [
-    { key:'moeru',      title:'可燃ごみ'          },
-    { key:'moenai',     title:'不燃ごみ・有害ごみ' },
-    { key:'recycle',    title:'リサイクル資源'      },
-    { key:'shigen-pla', title:'資源プラスチック'    },
-    { key:'kiken',      title:'危険ごみ'            },
-    { key:'yugai',      title:'有害ごみ'            },
-    { key:'sodai',      title:'粗大ごみ'            },
+    { key:'moeru',  title:'可燃ごみ'          },
+    { key:'moenai', title:'不燃ごみ・有害ごみ' },
   ];
+  if (cats['recycle']) {
+    CFG.push({ key:'recycle', title:'リサイクル資源' });
+  } else {
+    [
+      { key:'can',  title:'缶類'          },
+      { key:'bin',  title:'びん類'        },
+      { key:'pet',  title:'ペットボトル'   },
+      { key:'kami', title:'紙類'          },
+      { key:'fuku', title:'布類'          },
+    ].forEach(function(c) { if (cats[c.key]) CFG.push(c); });
+  }
+  CFG.push(
+    { key:'shigen-pla', title:'資源プラスチック' },
+    { key:'kiken',      title:'危険ごみ'         },
+    { key:'yugai',      title:'有害ごみ'         },
+    { key:'sodai',      title:'粗大ごみ'         }
+  );
+  // 万一データにキー自体が存在しないカテゴリは、空の行を出さないよう除外する
+  CFG = CFG.filter(function(cfg) { return !!cats[cfg.key]; });
+
   var el = document.getElementById('guide-rows');
   if (!el) return;
   el.innerHTML = CFG.map(function(cfg, i) {
