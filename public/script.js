@@ -440,7 +440,7 @@ function handleMenuBackdrop(e) {
 function buildAreaSheet() {
   const scroll = document.getElementById('sheet-scroll');
   scroll.innerHTML = DATA.area_groups.map(g => `
-    <p class="text-[10px] font-extrabold text-[#6B7280] tracking-[0.12em] uppercase pt-4 px-2 pb-2">${g.label}</p>
+    ${g.keys.length > 1 ? `<p class="text-[10px] font-extrabold text-[#6B7280] tracking-[0.12em] uppercase pt-4 px-2 pb-2">${g.label}</p>` : ''}
     ${g.keys.map(k => {
       const area = DATA.areas[k];
       if (!area) return '';
