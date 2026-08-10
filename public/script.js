@@ -55,16 +55,12 @@ const TYPE_STYLE = {
   // ── 拡張（マルチ自治体対応）
   fuku:        { icon:'checkroom',             img:'/icons/fuku.svg',    bg:'var(--c-fuku-bg)',    iconBg:'rgba(91,132,196,0.14)',  fg:'var(--c-fuku)',    dotColor:'var(--c-fuku)'    },
   kami:        { icon:'newspaper',             img:'/icons/kami.svg',    bg:'var(--c-kami-bg)',    iconBg:'rgba(180,130,40,0.14)',  fg:'var(--c-kami)',    dotColor:'var(--c-kami)'    },
-  cardboard:   { icon:'inventory_2',                                      bg:'var(--c-cardboard-bg)',iconBg:'rgba(156,108,48,0.14)',fg:'var(--c-cardboard)',dotColor:'var(--c-cardboard)'},
-  kami_pack:   { icon:'coffee',                                           bg:'var(--c-kami_pack-bg)',iconBg:'rgba(100,160,200,0.14)',fg:'var(--c-kami_pack)',dotColor:'var(--c-kami_pack)'},
   can:         { icon:'sports_bar',            img:'/icons/can.svg',     bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
   pet:         { icon:'water_bottle',          img:'/icons/pet.svg',     bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
   bin:         { icon:'wine_bar',              img:'/icons/bin.svg',     bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
   can_pet_bin: { icon:'recycling',             img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
   can_pet:     { icon:'recycling',             img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
   spraycan:    { icon:'propane',                                          bg:'var(--c-kiken-bg)',   iconBg:'rgba(224,120,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
-  kitchen:     { icon:'compost',                                          bg:'var(--c-moeru-bg)',   iconBg:'rgba(232,81,42,0.14)',   fg:'var(--c-moeru)',   dotColor:'var(--c-moeru)'   },
-  tree:        { icon:'forest',                                           bg:'var(--c-tree-bg)',    iconBg:'rgba(90,136,0,0.14)',    fg:'var(--c-tree)',    dotColor:'var(--c-tree)'    },
   unknown:     { icon:'help',               img:'/icons/none.svg',        keepBg:true, bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  },
 };
 
@@ -1719,21 +1715,11 @@ var CAT_PRODUCTS = {
                 { name:'養生テープ',            kw:'養生テープ 梱包 搬出' }],
   kami:        [{ name:'古紙ストッカー',        kw:'古紙 ストッカー 縛らない' },
                 { name:'紙ひも',                kw:'紙ひも ごみ 縛る' }],
-  cardboard:   [{ name:'段ボールストッカー',   kw:'段ボール ストッカー 収納' },
-                { name:'段ボールカッター',       kw:'段ボール カッター 開梱' },
-                { name:'紙ひも',                 kw:'紙ひも ごみ 縛る' }],
-  kami_pack:   [{ name:'古紙ストッカー',        kw:'古紙 ストッカー 縛らない' },
-                { name:'分別ごみ箱',             kw:'分別 ごみ箱 スリム' }],
   kiken:       [{ name:'廃電池収納ボックス',   kw:'廃電池 収納 ボックス' },
                 { name:'絶縁テープ',             kw:'絶縁テープ 電気 安全' }],
   yugai:       [{ name:'蛍光灯収納ケース',     kw:'蛍光灯 収納 ケース 廃棄' }],
   fuku:        [{ name:'衣類圧縮袋',            kw:'衣類 圧縮袋 収納' },
                 { name:'古着まとめ袋',           kw:'古着 回収 袋 まとめ' }],
-  kitchen:     [{ name:'生ごみ処理機',          kw:'生ごみ処理機 家庭用' },
-                { name:'三角コーナー',           kw:'三角コーナー キッチン' },
-                { name:'防臭ごみ袋',             kw:'防臭袋 ごみ 生ごみ' }],
-  tree:        [{ name:'剪定バサミ',            kw:'剪定バサミ 庭 手入れ' },
-                { name:'落ち葉収集バッグ',       kw:'落ち葉 収集 バッグ 庭' }],
   spraycan:    [{ name:'ガス抜きキャップ',     kw:'スプレー缶 ガス抜き キャップ' }],
 };
 
