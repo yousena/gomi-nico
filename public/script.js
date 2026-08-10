@@ -83,6 +83,50 @@ function catIcon(typeKey, sizePx) {
   return '<span class="ms-cat" style="font-size:' + sz + 'px;color:' + st.fg + '" aria-hidden="true">' + st.icon + '</span>';
 }
 
+/**
+ * 「ごみ出し不可」（category:'unknown'）品目の処分方法ガイド
+ * 品目名から自動判定し、/articles/kaden.html の該当セクションへ誘導する。
+ * 太平さんの整理（2026-07-27相談）に基づく6分類＋デフォルト。
+ */
+const UNKNOWN_GUIDE_RULES = [
+  { test: /テレビ|エアコン|クーラー|冷蔵庫|冷凍庫|洗濯機|衣類乾燥機/, key: 'kaden4'   },
+  { test: /パソコン|ディスプレイ/,                                    key: 'pc'       },
+  { test: /スマートフォン|スマホ|デジタルカメラ|ゲーム機/,             key: 'kogata'   },
+  { test: /消火器/,                                                    key: 'shoukaki' },
+  { test: /ピアノ/,                                                    key: 'piano'    },
+  { test: /タイヤ|バイク|オートバイ/,                                  key: 'tire'     },
+  { test: /事業ごみ|事業系/,                                           key: 'gyomu'    },
+];
+
+const UNKNOWN_GUIDE = {
+  kaden4:   { body: '購入した店に引き取ってもらうか、お住まいの自治体が案内する方法で処分しましょう。',
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#kaden4' }], sellable: true },
+  pc:       { body: 'メーカーに回収を依頼するか、パソコン3R推進協会（pc3r.jp）に相談しましょう。',
+              links: [{ label:'pc3r.jpで相談する', href:'https://www.pc3r.jp/', external:true, icon:'open_in_new' },
+                       { label:'この記事で詳しく見る', href:'/articles/kaden.html#pc' }], sellable: true },
+  kogata:   { body: 'お住まいの自治体の「小型家電回収ボックス」へ入れましょう。',
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#kogata' }], sellable: true },
+  shoukaki: { body: 'リサイクルシールを貼って、特定窓口や指定引取場所へ持ち込みましょう。',
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#shoukaki' }], sellable: false },
+  piano:    { body: 'ピアノ専門の買取・回収業者、または購入した販売店に相談しましょう。',
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#piano' }], sellable: true },
+  tire:     { body: '購入店・カー用品店・バイク販売店など、専門業者に相談しましょう。',
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#tire' }], sellable: true },
+  gyomu:    { body: '家庭ごみとしては出せません。許可を受けた収集運搬業者に有料で依頼しましょう。',
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#houritsu' }], sellable: false },
+  default:  { body: '処分方法は品目によって異なります。購入店・専門業者に相談するか、お住まいの自治体のごみ担当窓口にご確認ください。',
+              links: [{ label:'処理が難しいごみについて見る', href:'/articles/kaden.html#houritsu' }], sellable: false },
+};
+
+function unknownItemGuide(name) {
+  for (var i = 0; i < UNKNOWN_GUIDE_RULES.length; i++) {
+    if (UNKNOWN_GUIDE_RULES[i].test.test(name)) {
+      return UNKNOWN_GUIDE[UNKNOWN_GUIDE_RULES[i].key];
+    }
+  }
+  return UNKNOWN_GUIDE.default;
+}
+
 const WD_JP    = ['日','月','火','水','木','金','土'];
 const QUICK_TAGS = ['ペットボトル','乾電池','スプレー缶','蛍光灯','段ボール','衣類','布団','自転車','リチウム電池','食用油'];
 
@@ -1302,6 +1346,27 @@ function openItemDetail(name) {
     '</div>';
   }
 
+  if (item.category === 'unknown') {
+    var guide = unknownItemGuide(item.name);
+    var linkChips = guide.links.map(function(l) {
+      return '<a href="' + l.href + '"' + (l.external ? ' target="_blank" rel="noopener"' : '') +
+        ' style="display:inline-flex;align-items:center;gap:4px;background:#fff;color:#00885A;border:1px solid rgba(0,168,107,0.35);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:700;text-decoration:none">' +
+        (l.icon ? '<span class="ms-nav" style="font-size:14px">' + l.icon + '</span>' : '') + l.label +
+      '</a>';
+    }).join('');
+    html += '<div style="background:#F3FAF6;border-left:4px solid #00A86B;border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
+      '<p style="font-size:11px;font-weight:800;color:#00885A;margin:0 0 6px;letter-spacing:.06em">どうすればいい？</p>' +
+      '<p style="font-size:14px;color:#1C1C1E;line-height:1.7;margin:0 0 12px">' + guide.body + '</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
+        linkChips +
+        '<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="display:inline-flex;align-items:center;gap:4px;background:#fff;color:#00885A;border:1px solid rgba(0,168,107,0.35);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:700;text-decoration:none">' +
+          '<span class="ms-nav" style="font-size:14px">call</span>問い合わせ先' +
+        '</a>' +
+      '</div>' +
+      (guide.sellable ? '<p style="font-size:12px;color:#6B7280;margin:10px 0 0;line-height:1.6">動作するものは<a href="/articles/kaden.html#uru-yuzuru" style="color:#00885A;text-decoration:underline;font-weight:700">売る・譲るという選択肢</a>もあります</p>' : '') +
+    '</div>';
+  }
+
   html +=
     '<button onclick="closeItemDetail();openCategoryDetail(\'' + item.category + '\')"' +
     ' style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:52px;' +
@@ -1547,7 +1612,7 @@ function renderNoticePanel() {
     var installBtnHtml = window._deferredPrompt
       ? '<button onclick="installA2hs()" style="margin-top:12px;padding:9px 18px;background:var(--brand);color:#fff;border:none;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">ホーム画面に追加する</button>'
       : isIOS
-        ? '<p style="font-size:12px;color:#636366;margin-top:10px;line-height:1.7">画面下の <strong>共有ボタン（↑）</strong> をタップし、「<strong>ホーム画面に追加</strong>」を選んでください</p>'
+        ? '<p style="font-size:12px;color:#636366;margin-top:10px;line-height:1.7">画面下の<strong style="">共有ボタン<img src="/icons/share.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:-5px"></strong>をタップし、「<strong>ホーム画面に追加</strong>」を選んでください</p>'
         : '<p style="font-size:12px;color:#6B7280;margin-top:10px">お使いのブラウザで対応していません</p>';
     html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);padding:18px 20px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start">' +
       '<img src="/icons/icon-192.png" style="width:44px;height:44px;border-radius:10px;flex-shrink:0" alt="">' +
