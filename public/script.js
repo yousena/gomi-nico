@@ -81,7 +81,7 @@ function catIcon(typeKey, sizePx) {
 
 /**
  * 「ごみ出し不可」（category:'unknown'）品目の処分方法ガイド
- * 品目名から自動判定し、/articles/kaden.html の該当セクションへ誘導する。
+ * 品目名から自動判定し、/articles/kaden の該当セクションへ誘導する。
  * 太平さんの整理（2026-07-27相談）に基づく6分類＋デフォルト。
  */
 const UNKNOWN_GUIDE_RULES = [
@@ -96,22 +96,22 @@ const UNKNOWN_GUIDE_RULES = [
 
 const UNKNOWN_GUIDE = {
   kaden4:   { body: '購入した店に引き取ってもらうか、お住まいの自治体が案内する方法で処分しましょう。',
-              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#kaden4' }], sellable: true },
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden#kaden4' }], sellable: true },
   pc:       { body: 'メーカーに回収を依頼するか、パソコン3R推進協会（pc3r.jp）に相談しましょう。',
               links: [{ label:'pc3r.jpで相談する', href:'https://www.pc3r.jp/', external:true, icon:'open_in_new' },
-                       { label:'この記事で詳しく見る', href:'/articles/kaden.html#pc' }], sellable: true },
+                       { label:'この記事で詳しく見る', href:'/articles/kaden#pc' }], sellable: true },
   kogata:   { body: 'お住まいの自治体の「小型家電回収ボックス」へ入れましょう。',
-              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#kogata' }], sellable: true },
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden#kogata' }], sellable: true },
   shoukaki: { body: 'リサイクルシールを貼って、特定窓口や指定引取場所へ持ち込みましょう。',
-              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#shoukaki' }], sellable: false },
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden#shoukaki' }], sellable: false },
   piano:    { body: 'ピアノ専門の買取・回収業者、または購入した販売店に相談しましょう。',
-              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#piano' }], sellable: true },
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden#piano' }], sellable: true },
   tire:     { body: '購入店・カー用品店・バイク販売店など、専門業者に相談しましょう。',
-              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#tire' }], sellable: true },
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden#tire' }], sellable: true },
   gyomu:    { body: '家庭ごみとしては出せません。許可を受けた収集運搬業者に有料で依頼しましょう。',
-              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden.html#houritsu' }], sellable: false },
+              links: [{ label:'この記事で詳しく見る', href:'/articles/kaden#houritsu' }], sellable: false },
   default:  { body: '処分方法は品目によって異なります。購入店・専門業者に相談するか、お住まいの自治体のごみ担当窓口にご確認ください。',
-              links: [{ label:'処理が難しいごみについて見る', href:'/articles/kaden.html#houritsu' }], sellable: false },
+              links: [{ label:'処理が難しいごみについて見る', href:'/articles/kaden#houritsu' }], sellable: false },
 };
 
 function unknownItemGuide(name) {
@@ -1359,7 +1359,7 @@ function openItemDetail(name) {
           '<span class="ms-nav" style="font-size:14px">call</span>問い合わせ先' +
         '</a>' +
       '</div>' +
-      (guide.sellable ? '<p style="font-size:12px;color:#6B7280;margin:10px 0 0;line-height:1.6">動作するものは<a href="/articles/kaden.html#uru-yuzuru" style="color:#00885A;text-decoration:underline;font-weight:700">売る・譲るという選択肢</a>もあります</p>' : '') +
+      (guide.sellable ? '<p style="font-size:12px;color:#6B7280;margin:10px 0 0;line-height:1.6">動作するものは<a href="/articles/kaden#uru-yuzuru" style="color:#00885A;text-decoration:underline;font-weight:700">売る・譲るという選択肢</a>もあります</p>' : '') +
     '</div>';
   }
 
@@ -1481,7 +1481,7 @@ function renderFAQ() {
   }).join('');
   // 記事への内部リンク（テレビ・パソコン等、収集に出せない品目の詳しい記事）
   html += '<div class="px-6 pt-2 pb-5">' +
-    '<a href="/articles/kaden.html" style="display:flex;align-items:center;gap:10px;background:var(--brand-soft);border-radius:12px;padding:12px 14px;text-decoration:none">' +
+    '<a href="/articles/kaden" style="display:flex;align-items:center;gap:10px;background:var(--brand-soft);border-radius:12px;padding:12px 14px;text-decoration:none">' +
     '<span class="ms-nav" style="font-size:20px;color:var(--brand);flex-shrink:0">menu_book</span>' +
     '<span style="font-size:13px;font-weight:700;color:var(--brand-strong);flex:1">テレビ・パソコンなど、出せないごみの処分方法</span>' +
     '<span class="ms-nav" style="font-size:18px;color:var(--brand);flex-shrink:0">chevron_right</span>' +

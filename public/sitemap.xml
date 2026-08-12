@@ -34,7 +34,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://gomi-nico.jp/articles/kaden.html</loc>
+    <loc>https://gomi-nico.jp/articles/kaden</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -42,19 +42,19 @@
 
   <!-- 法的ページ -->
   <url>
-    <loc>https://gomi-nico.jp/about.html</loc>
+    <loc>https://gomi-nico.jp/about</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://gomi-nico.jp/privacy.html</loc>
+    <loc>https://gomi-nico.jp/privacy</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://gomi-nico.jp/ads.html</loc>
+    <loc>https://gomi-nico.jp/ads</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
