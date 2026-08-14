@@ -122,6 +122,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,1,0"></noscript>
 
+  <!-- Zen Kaku Gothic New（試験導入・本文フォント。v1.48） -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap">
+
   <!-- Tailwind CSS Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -129,11 +132,12 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['-apple-system','BlinkMacSystemFont','Hiragino Kaku Gothic ProN',
+            sans: ["'Zen Kaku Gothic New'",'-apple-system','BlinkMacSystemFont','Hiragino Kaku Gothic ProN',
                    'Hiragino Sans','Yu Gothic UI','Meiryo','sans-serif'],
           },
           fontSize: { '2xs': ['10px', { lineHeight:'1.4' }] },
-          boxShadow: { top:'0 -2px 12px rgba(0,0,0,0.07)', card:'0 2px 14px rgba(0,0,0,0.08)' },
+          boxShadow: { top:'0 -2px 12px rgba(0,0,0,0.07)', card:'0 1px 3px rgba(0,0,0,0.16)' },
+          borderRadius: { '2xl': '20px' },
           keyframes: {
             fadeUp: {
               from: { opacity:'0', transform:'translateY(8px)' },
@@ -174,10 +178,12 @@
       --brand-strong: #00885A;
       --brand-soft: rgba(0,168,107,0.08);
       --brand-soft-strong: rgba(0,168,107,0.15);
-      --bg-content: #fefefb;
+      --bg-content: #F7FBF8;
+      --card-border: rgba(0,0,0,0.09);
     }
     html, body {
-      background-color: #F7F6F3;
+      background-color: #F7FBF8;
+      font-weight: 400;
     }
     .is-hidden { display:none !important; }
     :focus-visible { outline:2.5px solid var(--brand); outline-offset:2px; border-radius:6px; }
@@ -188,7 +194,7 @@
     .kana-chip {
       flex-shrink:0; min-width:44px; height:44px; padding:0 14px;
       border:none; border-radius:999px; background:#fff; color:#6B7280;
-      font-family:inherit; font-size:14px; font-weight:800; cursor:pointer;
+      font-family:inherit; font-size:14px; font-weight:700; cursor:pointer;
       box-shadow:0 2px 8px rgba(0,0,0,0.08); -webkit-tap-highlight-color:transparent;
     }
     .kana-chip.active { background:var(--brand); color:#fff; }
@@ -253,7 +259,7 @@
     }
     .cal-icon-more {
       background:rgba(0,0,0,0.06); color:#6B7280;
-      font-size:10px; font-weight:800;
+      font-size:10px; font-weight:700;
     }
     /* 1種類のみの日は2列グリッドを使わず、アイコンを大きく1つだけ表示する */
     .cal-icons-single {
@@ -377,7 +383,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="min-w-0 flex flex-col justify-center" style="padding-bottom:3px">
         <!-- タイトル（志木市ごみ分別・JS が更新。ページ全体の唯一のh1） -->
         <h1 id="header-title"
-             class="text-[18px] font-extrabold text-[#1C1C1E] tracking-tight leading-none truncate">
+             class="text-[16px] font-bold text-[#1C1C1E] tracking-tight leading-none truncate">
           志木市のごみ分別
         </h1>
         <!-- 選択地区（タップで地域選択シートを開く） -->
@@ -403,7 +409,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <button onclick="openMenu()"
             aria-label="メニューを開く" aria-haspopup="dialog"
             class="w-11 h-11 flex flex-col items-center justify-center gap-[5px]
-                   rounded-lg border border-black/[0.07] bg-transparent
+                   rounded-[14px] border border-black/[0.09] bg-transparent
                    cursor-pointer flex-shrink-0">
       <span class="w-5 h-[2px] bg-[#1C1C1E] rounded-full block"></span>
       <span class="w-5 h-[2px] bg-[#1C1C1E] rounded-full block"></span>
@@ -725,11 +731,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ① 今日の収集バナー -->
     <div id="today-strip"
-         class="bg-white rounded-2xl shadow-card px-4 py-3
-                flex flex-col gap-2 animate-fade-up">
+         class="bg-white rounded-2xl shadow-card p-4
+                flex flex-col gap-2 animate-fade-up" style="border:2px solid var(--brand);">
       <div class="flex items-center gap-3">
         <div class="flex-shrink-0">
-          <p class="text-[11px] font-extrabold text-[#6B7280] tracking-wider uppercase">TODAY</p>
+          <p class="text-[11px] font-extrabold text-[#6B7280] tracking-wider uppercase">今日のごみ</p>
           <p id="today-strip-date" class="text-[18px] font-extrabold text-[#1C1C1E] mt-[1px] leading-tight"></p>
         </div>
         <div id="today-strip-types" class="flex-1 flex items-center gap-2 flex-wrap min-w-0"></div>
@@ -743,17 +749,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- 月ナビ -->
       <div class="flex items-center justify-between mb-4">
         <button onclick="prevMonth()" aria-label="前の月"
-                class="w-11 h-11 rounded-lg border border-black/[0.07] bg-transparent
+                class="w-11 h-11 rounded-[10px] bg-white
                        text-[#636366] flex items-center justify-center
-                       cursor-pointer hover:bg-white active:bg-white font-sans">
+                       cursor-pointer hover:bg-white active:bg-white font-sans" style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24);">
           <span class="ms-nav" style="font-size:24px">chevron_left</span>
         </button>
         <h2 id="cal-month-label" class="text-xl font-extrabold tracking-tight whitespace-nowrap" aria-live="polite"></h2>
         <button onclick="nextMonth()" aria-label="次の月"
-                class="w-11 h-11 rounded-lg border border-black/[0.07] bg-transparent
+                class="w-11 h-11 rounded-[10px] bg-white
                        text-[#636366] flex items-center justify-center
-                       cursor-pointer hover:bg-white active:bg-white font-sans">
-          <span class="ms-nav" style="font-size:24px">chevron_right</span>
+                       cursor-pointer hover:bg-white active:bg-white font-sans" style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24);">
+          <span class="ms-nav" style="font-size:24px;">chevron_right</span>
         </button>
       </div>
 
@@ -792,19 +798,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="panel-search" class="is-hidden flex flex-col gap-3" aria-label="分別検索">
 
     <!-- ① 検索ボックス（独立・目立つ・sticky固定。DS.md 2-4-3） -->
-    <div id="search-box-card" class="bg-white rounded-2xl shadow-md animate-fade-up flex-shrink-0"
-         style="box-shadow:0 4px 20px rgba(0,0,0,0.10)"
+    <div id="search-box-card" class="bg-white rounded-2xl animate-fade-up flex-shrink-0"
+         style="border:2px solid var(--brand);box-shadow:0 8px 20px -12px var(--brand)"
          role="search" aria-label="ごみ分別検索">
-      <div class="flex items-center gap-3 px-4 h-16">
+      <div class="flex items-center gap-3 px-4 h-16 bg-white rounded-2xl">
         <span class="ms-nav flex-shrink-0 pointer-events-none" style="color:var(--brand);font-size:24px" aria-hidden="true">search</span>
         <label for="search-input" class="sr-only">ごみの名前で検索</label>
         <input type="text" id="search-input"
                placeholder="ごみの名前で検索…"
                autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"
                oninput="onSearch(this.value)"
-               class="flex-1 border-none outline-none text-[17px] font-bold text-[#1C1C1E]
-                      bg-transparent font-sans caret-brand placeholder:text-[#6B7280] placeholder:font-normal">
-        <button onclick="clearSearch()" type="button" aria-label="検索をクリア"
+               class="flex-1 min-w-0 border-none outline-none text-[17px] font-bold text-[#1C1C1E]
+                      bg-transparent font-sans caret-brand placeholder:text-[#6B7280] placeholder:font-bold">
+        <button id="search-clear-btn" onclick="clearSearch()" type="button" aria-label="検索をクリア"
+                style="display:none"
                 class="w-11 h-11 rounded-full border-none bg-black/[0.07]
                        flex items-center justify-center cursor-pointer flex-shrink-0 font-sans">
           <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
@@ -817,7 +824,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ③ 五十音一覧ラベル（枠の外） -->
     <p id="search-index-label"
        class="is-hidden"
-       style="font-size:13px;font-weight:800;color:#6B7280;letter-spacing:.06em;
+       style="font-size:13px;font-weight:700;color:#6B7280;letter-spacing:.06em;
               padding-left:4px;margin-top:20px"></p>
 
     <!-- ④ 五十音ジャンプナビ（sticky固定・JSが動的に描画。DS.md 2-4-3。
@@ -843,7 +850,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="width:64px;height:64px;background:#E0FAF1;border-radius:50%;display:flex;align-items:center;justify-content:center">
           <span class="ms-cat" style="font-size:32px;color:var(--brand)" aria-hidden="true">redeem</span>
         </div>
-        <h2 style="font-size:18px;font-weight:800;color:#1C1C1E;margin:0">お得情報は準備中です</h2>
+        <h2 style="font-size:18px;font-weight:700;color:#1C1C1E;margin:0">お得情報は準備中です</h2>
         <p style="font-size:14px;color:#636366;line-height:1.8;margin:0">
           引越しの一括見積もりや不用品回収、<br>
           ごみ出しに役立つグッズの紹介など、<br>

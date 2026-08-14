@@ -124,7 +124,7 @@ function unknownItemGuide(name) {
 }
 
 const WD_JP    = ['日','月','火','水','木','金','土'];
-const QUICK_TAGS = ['ペットボトル','乾電池','スプレー缶','蛍光灯','段ボール','衣類','布団','自転車','リチウム電池','食用油'];
+const QUICK_TAGS = ['乾電池','スプレー缶','ライター','傘','衣類','モバイルバッテリー'];
 
 /* 対応言語（Google 翻訳コード） */
 const LANGUAGES = [
@@ -782,7 +782,6 @@ function handleDayTap(year, month, day) {
 
 /* =====================================================
    【独自提案②】日付タップ → 収集詳細ポップアップ
-   さんあーる と同様の核心機能
 ===================================================== */
 function showDayDetail(year, month, day) {
   const date    = new Date(year, month, day);
@@ -841,13 +840,13 @@ function buildDayDetailHTML(areaKey, date) {
     const hasDetail = cat.allowed && cat.allowed.length > 0;
     const tag = hasDetail ? 'button' : 'div';
     const btnAttrs = hasDetail
-      ? ' onclick="closeDayDetail();openCategoryDetail(\'' + t.type + '\',' + date.getFullYear() + ',' + date.getMonth() + ',' + date.getDate() + ')" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent"'
-      : ' style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07)"';
+      ? ' onclick="closeDayDetail();openCategoryDetail(\'' + t.type + '\',' + date.getFullYear() + ',' + date.getMonth() + ',' + date.getDate() + ')" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:20px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent"'
+      : ' style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:20px;background:#fff;border:1px solid rgba(0,0,0,0.07)"';
     return '<' + tag + btnAttrs + '>' +
       '<div style="width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (s.keepBg ? s.iconBg : 'transparent') + ';flex-shrink:0">' +
       catIcon(t.type, s.img ? 56 : 30) + '</div>' +
       '<div style="flex:1">' +
-      '<p style="font-size:18px;font-weight:800;color:' + s.fg + ';line-height:1.2">' + t.label + '</p>' +
+      '<p style="font-size:18px;font-weight:700;color:' + s.fg + ';line-height:1.2">' + t.label + '</p>' +
       (t.how ? '<p style="font-size:12px;margin-top:4px;line-height:1.5;color:#636366">' + t.how + '</p>' : '') +
       '</div>' +
       (hasDetail ? '<span class="ms-nav" style="color:' + s.fg + ';opacity:0.5;font-size:20px;flex-shrink:0">chevron_right</span>' : '') +
@@ -1031,10 +1030,10 @@ function renderQuickTags() {
   var el = document.getElementById('search-quick');
   if (!el) return;
   el.innerHTML =
-    '<p style="font-size:13px;font-weight:800;color:#6B7280;letter-spacing:.06em;margin-bottom:10px;padding-left:4px">よく検索されるごみ</p>' +
+    '<p style="font-size:13px;font-weight:700;color:#6B7280;letter-spacing:.06em;margin-bottom:10px;padding-left:4px">よく検索されるごみ</p>' +
     '<div style="display:flex;flex-wrap:wrap;gap:8px;padding:0 2px">' +
     QUICK_TAGS.map(function(q) {
-      return '<button style="padding:8px 16px;background:#fff;border:none;border-radius:20px;font-size:14px;font-weight:700;color:#1C1C1E;cursor:pointer;font-family:inherit;white-space:nowrap;min-height:40px;line-height:1.2;box-shadow:0 2px 8px rgba(0,0,0,0.08)" onclick="openItemDetail(\'' + q + '\')">' + q + '</button>';
+      return '<button style="padding:8px 16px;background:#fff;border:none;border-radius:20px;font-size:14px;font-weight:700;color:#1C1C1E;cursor:pointer;font-family:inherit;white-space:nowrap;min-height:40px;line-height:1.2;" class="shadow-card" onclick="openItemDetail(\'' + q + '\')">' + q + '</button>';
     }).join('') +
     '</div>';
 }
@@ -1066,12 +1065,12 @@ function renderSearchIndex() {
     var rowKey = getKanaKey(rowLabel);
 
     // グループごとに独立カード（id・scroll-margin-topはジャンプナビからのスクロール着地位置用）
-    html += '<div id="kana-sec-' + rowKey + '" class="kana-section" ' +
-      'style="scroll-margin-top:calc(200px + env(safe-area-inset-top, 0px));background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">';
+    html += '<div id="kana-sec-' + rowKey + '" class="kana-section shadow-card" ' +
+      'style="scroll-margin-top:calc(200px + env(safe-area-inset-top, 0px));background:#fff;border-radius:20px;overflow:hidden">';
 
     // 行見出し（白背景・ブランドカラーテキスト）
     html += '<div style="padding:0 16px;height:54px;display:flex;align-items:center;gap:8px">' +
-      '<span style="font-size:16px;font-weight:800;color:var(--brand)">' + rowLabel + '</span>' +
+      '<span style="font-size:16px;font-weight:700;color:var(--brand)">' + rowLabel + '</span>' +
       '<span style="font-size:12px;color:#6B7280">' + items.length + '件</span>' +
       '</div>';
 
@@ -1085,7 +1084,7 @@ function renderSearchIndex() {
         'padding:14px 16px;border:none;border-top:1px solid rgba(0,0,0,0.04);' +
         'background:#fff;font-family:inherit;cursor:pointer;min-height:54px;-webkit-tap-highlight-color:transparent" ' +
         'onclick="openItemDetail(\'' + safe + '\')">' +
-        '<span style="flex:1;font-size:16px;font-weight:400;color:#1C1C1E">' + item.name + '</span>' +
+        '<span style="flex:1;font-size:16px;font-weight:500;color:#1C1C1E">' + item.name + '</span>' +
         '<span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:4px;flex-shrink:0;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + '">' + catIcon(item.category, st.img ? 28 : 18) + '</span>' +
         '<span class="ms-nav" style="color:#6B7280;font-size:20px;margin-left:2px">chevron_right</span>' +
         '</button>';
@@ -1106,7 +1105,7 @@ function renderKanaJumpNav(groups) {
   var chips = KANA_ROWS.map(function(row) {
     var items = groups.get(row.label) || [];
     if (items.length === 0) return ''; // 実在しない行は出さない（2-4-1と同じ方針）
-    return '<button type="button" class="kana-chip" data-kana-key="' + row.key + '" ' +
+    return '<button type="button" class="kana-chip shadow-card" data-kana-key="' + row.key + '" ' +
       'onclick="jumpToKana(\'' + row.key + '\')" aria-label="' + row.label + 'へ移動">' +
       row.label.charAt(0) + '</button>';
   }).join('');
@@ -1203,19 +1202,22 @@ function toHiragana(str) {
 
 function onSearch(query) {
   if (!DATA) return;
-  var q       = (query || '').trim();
-  var bodyEl  = document.getElementById('search-body');
-  var quickEl = document.getElementById('search-quick');
+  var q        = (query || '').trim();
+  var bodyEl   = document.getElementById('search-body');
+  var quickEl  = document.getElementById('search-quick');
+  var clearBtn = document.getElementById('search-clear-btn');
 
   if (!q) {
-    // 空：クイックタグ表示 ＋ あいうえお一覧
+    // 空：クイックタグ表示 ＋ あいうえお一覧（クリアボタンは何も消すものがないため非表示）
     if (quickEl) quickEl.style.display = '';
+    if (clearBtn) clearBtn.style.display = 'none';
     bodyEl.innerHTML = renderSearchIndex();
     return;
   }
 
-  // 入力中：クイックタグ・ラベルを折りたたんで結果を表示
+  // 入力中：クイックタグ・ラベルを折りたたんで結果を表示。クリアボタンを表示
   if (quickEl) quickEl.style.display = 'none';
+  if (clearBtn) clearBtn.style.display = '';
   var labelEl = document.getElementById('search-index-label');
   if (labelEl) labelEl.classList.add('is-hidden');
 
@@ -1247,10 +1249,10 @@ function renderSearchItemHtml(item) {
   var st      = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
   var cat     = DATA.categories[item.category] ? DATA.categories[item.category].label : item.category;
   var safeName = item.name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
-  return '<button onclick="openItemDetail(\'' + safeName + '\')" style="display:block;padding:14px 16px;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">' +
+  return '<button onclick="openItemDetail(\'' + safeName + '\')" style="display:block;padding:14px 16px;border-radius:20px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">' +
     '<div style="display:flex;align-items:center;gap:8px">' +
     '<p style="font-size:16px;font-weight:700;color:#1C1C1E;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + item.name + '</p>' +
-    '<span style="display:inline-flex;align-items:center;padding:3px 9px;border-radius:999px;font-size:10px;font-weight:800;white-space:nowrap;flex-shrink:0;background:' + st.iconBg + ';color:' + st.fg + ';border:1.5px solid ' + st.fg + '33">' + cat + '</span>' +
+    '<span style="display:inline-flex;align-items:center;padding:3px 9px;border-radius:999px;font-size:10px;font-weight:700;white-space:nowrap;flex-shrink:0;background:' + st.iconBg + ';color:' + st.fg + ';border:1.5px solid ' + st.fg + '33">' + cat + '</span>' +
     '<span class="ms-nav" style="color:#6B7280;font-size:18px;flex-shrink:0">chevron_right</span></div>' +
     (item.note ? '<p style="font-size:12px;color:#636366;margin-top:5px;line-height:1.5">※ ' + item.note + '</p>' : '') +
     '</button>';
@@ -1265,7 +1267,7 @@ function renderSearchPage(bodyEl) {
 
   var itemsHtml = slice.map(renderSearchItemHtml).join('');
   var moreBtn   = rest > 0
-    ? '<button onclick="loadMoreSearch()" style="display:block;width:100%;margin-top:4px;padding:14px;border-radius:16px;background:#fff;border:1.5px solid rgba(0,0,0,0.10);font-size:14px;font-weight:700;color:#636366;cursor:pointer;font-family:inherit">もっと' + Math.min(rest, SEARCH_PAGE_SIZE) + '件見る（残り' + rest + '件）</button>'
+    ? '<button onclick="loadMoreSearch()" style="display:block;width:100%;margin-top:4px;padding:14px;border-radius:20px;background:#fff;border:1.5px solid rgba(0,0,0,0.10);font-size:14px;font-weight:700;color:#636366;cursor:pointer;font-family:inherit">もっと' + Math.min(rest, SEARCH_PAGE_SIZE) + '件見る（残り' + rest + '件）</button>'
     : '';
 
   if (!bodyEl) bodyEl = document.getElementById('search-body');
@@ -1318,7 +1320,7 @@ function openItemDetail(name) {
         catIcon(item.category, st.img ? 56 : 30) +
       '</div>' +
       '<div style="flex:1;min-width:0">' +
-        '<p style="font-size:18px;font-weight:800;color:#1C1C1E;margin:0 0 7px;line-height:1.2">' + item.name + '</p>' +
+        '<p style="font-size:18px;font-weight:700;color:#1C1C1E;margin:0 0 7px;line-height:1.2">' + item.name + '</p>' +
         '<span style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:700;background:' + st.bg + ';color:' + st.fg + '">' +
           catLabel +
         '</span>' +
@@ -1330,7 +1332,7 @@ function openItemDetail(name) {
 
   if (item.note) {
     html += '<div style="background:#F4F5F7;border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
-      '<p style="font-size:11px;font-weight:800;color:#6B7280;margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
+      '<p style="font-size:11px;font-weight:700;color:#6B7280;margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
       '<p style="font-size:14px;color:#1C1C1E;line-height:1.7;margin:0">' + item.note + '</p>' +
     '</div>';
   }
@@ -1351,7 +1353,7 @@ function openItemDetail(name) {
       '</a>';
     }).join('');
     html += '<div style="background:#F3FAF6;border-left:4px solid #00A86B;border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
-      '<p style="font-size:11px;font-weight:800;color:#00885A;margin:0 0 6px;letter-spacing:.06em">どうすればいい？</p>' +
+      '<p style="font-size:11px;font-weight:700;color:#00885A;margin:0 0 6px;letter-spacing:.06em">どうすればいい？</p>' +
       '<p style="font-size:14px;color:#1C1C1E;line-height:1.7;margin:0 0 12px">' + guide.body + '</p>' +
       '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
         linkChips +
@@ -1367,7 +1369,7 @@ function openItemDetail(name) {
     '<button onclick="closeItemDetail();openCategoryDetail(\'' + item.category + '\')"' +
     ' style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:52px;' +
     'background:' + st.fg + ';color:#fff;border:none;border-radius:14px;' +
-    'font-size:15px;font-weight:800;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;' +
+    'font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;' +
     'box-shadow:0 4px 14px ' + st.fg + '44">' +
       '「' + catLabel + '」のごみ一覧を見る' +
     '</button>';
@@ -1400,7 +1402,7 @@ function renderContact() {
     var last = i === contacts.length - 1;
     return '<div style="padding:16px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.05)') + '">' +
       (c.note ? '<p style="font-size:11px;color:#6B7280;margin-bottom:4px">' + c.note + '</p>' : '') +
-      '<p style="font-size:15px;font-weight:800;color:#1C1C1E;margin-bottom:8px">' + c.name + '</p>' +
+      '<p style="font-size:15px;font-weight:700;color:#1C1C1E;margin-bottom:8px">' + c.name + '</p>' +
       '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px">' +
       '<div>' +
       '<p style="font-size:12px;color:#636366"><span style="color:#6B7280">電話番号</span>　' + c.tel + '</p>' +
@@ -1412,11 +1414,11 @@ function renderContact() {
   }).join('');
 
   // セクション見出し（ごみに関するお問い合わせ）
-  var sectionHeadGomi = '<p style="font-size:12px;font-weight:800;color:#6B7280;padding:16px 20px 8px">ごみの分別・収集について（' + DATA.name + '）</p>';
+  var sectionHeadGomi = '<p style="font-size:12px;font-weight:700;color:#6B7280;padding:16px 20px 8px">ごみの分別・収集について（' + DATA.name + '）</p>';
 
   // サイトについてのお問い合わせ（ユウセナ・運営者マター）
-  var sectionHeadSite = '<p style="font-size:12px;font-weight:800;color:#6B7280;padding:20px 20px 8px">サイトの内容・不具合について（運営者）</p>';
-  var siteContact = '<div style="background:#fff;border-radius:16px;margin:0 16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden;padding:16px 20px">' +
+  var sectionHeadSite = '<p style="font-size:12px;font-weight:700;color:#6B7280;padding:20px 20px 8px">サイトの内容・不具合について（運営者）</p>';
+  var siteContact = '<div style="background:#fff;border-radius:20px;margin:0 16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden;padding:16px 20px">' +
     '<p style="font-size:12px;color:#1C1C1E;line-height:1.7;margin-bottom:12px">掲載情報の誤り・古い情報や、画面表示の不具合などはこちらからお知らせください。</p>' +
     '<a href="mailto:contact@gomi-nico.jp" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid rgba(26,92,56,0.15)">' +
     '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">mail</span>メールする</a>' +
@@ -1428,7 +1430,7 @@ function renderContact() {
 
     // ヘッダー
     '<div style="padding:12px 16px 10px;border-bottom:1px solid rgba(224,120,0,0.12)">' +
-    '<p style="font-size:13px;font-weight:800;color:#E07800">⚠ 本サイトについてのご注意</p>' +
+    '<p style="font-size:13px;font-weight:700;color:#E07800">⚠ 本サイトについてのご注意</p>' +
     '</div>' +
 
     // 本サイトについて
@@ -1453,7 +1455,7 @@ function renderContact() {
     '</div>';
 
   el.innerHTML = sectionHeadGomi +
-    '<div style="background:#fff;border-radius:16px;margin:0 16px 8px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">' + cardsHtml + '</div>' +
+    '<div style="background:#fff;border-radius:20px;margin:0 16px 8px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">' + cardsHtml + '</div>' +
     sectionHeadSite + siteContact +
     notice;
 }
@@ -1510,7 +1512,7 @@ function openLanguageSheet() {
         '<span style="font-size:24px">' + lang.flag + '</span>' +
         '<span style="flex:1;font-size:16px;font-weight:' + (active ? 800 : 500) + ';' +
         'color:' + (active ? 'var(--brand)' : '#1C1C1E') + '">' + lang.label + '</span>' +
-        (active ? '<span style="font-size:18px;color:var(--brand);font-weight:800">✓</span>' : '<span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>') +
+        (active ? '<span style="font-size:18px;color:var(--brand);font-weight:700">✓</span>' : '<span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>') +
         '</button>';
     }).join('');
     // イベント委任でクリックを処理
@@ -1608,23 +1610,25 @@ function renderNoticePanel() {
     var installBtnHtml = window._deferredPrompt
       ? '<button onclick="installA2hs()" style="margin-top:12px;padding:9px 18px;background:var(--brand);color:#fff;border:none;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">ホーム画面に追加する</button>'
       : isIOS
-        ? '<p style="font-size:12px;color:#636366;margin-top:10px;line-height:1.7">画面下の<strong style="">共有ボタン<img src="/icons/share.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:-5px"></strong>をタップし、「<strong>ホーム画面に追加</strong>」を選んでください</p>'
-        : '<p style="font-size:12px;color:#6B7280;margin-top:10px">お使いのブラウザで対応していません</p>';
-    html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);padding:18px 20px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start">' +
+        ? '<p style="font-size:13px;color:#1C1C1E;line-height:1.75;">画面下の<strong style="">共有ボタン<img src="/icons/share.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:-5px"></strong>をタップし、<br><strong>ホーム画面に追加</strong>を選んでください。</p>'
+        : '<p style="font-size:13px;color:#1C1C1E;line-height:1.75;">お使いのブラウザで対応していません</p>';
+    html += '<div style="position:relative;background:#ebf7db;border-radius:20px;padding:18px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start" class="shadow-card">' +
       '<img src="/icons/icon-192.png" style="width:44px;height:44px;border-radius:10px;flex-shrink:0" alt="">' +
       '<div style="flex:1;min-width:0">' +
-        '<p style="font-size:15px;font-weight:800;color:#1C1C1E;margin-bottom:4px">ホーム画面に追加</p>' +
-        '<p style="font-size:13px;color:#636366;line-height:1.5">アプリのようにすぐ起動できます</p>' +
+        '<p style="font-size:18px;font-weight:700;color:#1C1C1E;margin-bottom:4px">ホーム画面に追加</p>' +
+        '<p style="font-size:13px;color:#1C1C1E;line-height:1.75">アプリのようにすぐ起動できます。</p>' +
         installBtnHtml +
       '</div>' +
-      '<button onclick="dismissA2hs();renderNoticePanel()" style="background:none;border:none;color:#6B7280;font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">×</button>' +
+      '<button onclick="dismissA2hs();renderNoticePanel()" style="position:absolute;top:18px;right:20px;background:none;border:none;color:#6B7280;font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">×</button>' +
     '</div>';
   }
 
   // ── お知らせセクション（features.notice が true の場合のみ）
+  // v1.46: 全件を1つの枠にまとめず、1件=1枚の独立したカードにする（境目が薄くて
+  // わかりにくいとの指摘。DS.md 1-4節参照）
   if (features.notice !== false && notices.length > 0) {
-    html += '<div style="background:#fff;border-radius:16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden">' +
-      '<h2 style="font-size:18px;font-weight:800;color:#1C1C1E;padding:20px 24px 16px;border-bottom:1px solid rgba(0,0,0,0.04);margin:0">お知らせ</h2>';
+    html += '<h2 style="font-size:16px;font-weight:700;color:#1C1C1E;margin:0 0 8px">お知らせ</h2>' +
+      '<div style="display:flex;flex-direction:column;gap:14px">';
     notices.forEach(function(n) {
       var link = n.url
         ? '<a href="' + n.url + '" target="_blank" rel="noopener" ' +
@@ -1633,10 +1637,10 @@ function renderNoticePanel() {
           '公式サイトで詳細を確認' +
           '<span class="ms-nav" style="font-size:15px">open_in_new</span></a>'
         : '';
-      html += '<div style="padding:18px 24px;border-bottom:1px solid rgba(0,0,0,0.04)">' +
-        '<p style="font-size:12px;color:#6B7280;margin-bottom:6px">' + n.date + '</p>' +
-        '<p style="font-size:16px;font-weight:800;color:#1C1C1E;margin-bottom:8px;line-height:1.35">' + n.title + '</p>' +
-        '<p style="font-size:16px;color:#636366;line-height:1.5">' + n.body + '</p>' +
+      html += '<div style="background:#fff;border-radius:20px;padding:18px;" class="shadow-card">' +
+        '<p style="font-size:12px;font-weight:700;color:#6B7280;line-height:1.5;margin-bottom:6px">' + n.date + '</p>' +
+        '<p style="font-size:18px;font-weight:700;color:#1C1C1E;line-height:1.5;margin-bottom:8px">' + n.title + '</p>' +
+        '<p style="font-size:14px;color:#1C1C1E;line-height:1.75">' + n.body + '</p>' +
         link +
         '</div>';
     });
@@ -1743,7 +1747,7 @@ function renderProducts(typeKey, iconBg, fg) {
   return '<div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(0,0,0,0.07)">' +
     '<div style="display:flex;align-items:center;gap:6px;margin-bottom:12px">' +
     '<span class="ms-nav" style="font-size:15px;color:#6B7280">shopping_bag</span>' +
-    '<p style="font-size:13px;font-weight:800;color:#636366">関連グッズ</p></div>' +
+    '<p style="font-size:13px;font-weight:700;color:#636366">関連グッズ</p></div>' +
     '<div style="display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;' +
     '-webkit-overflow-scrolling:touch;scrollbar-width:none">' +
     cards + '</div>' +
@@ -1769,8 +1773,8 @@ function openCategoryDetail(typeKey, year, month, day) {
           '<div style="width:52px;height:52px;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + ';flex-shrink:0">' +
           catIcon(typeKey, st.img ? 52 : 28) + '</div>' +
           '<div style="min-width:0">' +
-          (dateLabel ? '<p style="font-size:12px;font-weight:800;color:#6B7280;margin-bottom:1px">' + dateLabel + '</p>' : '') +
-          '<h2 style="font-size:20px;font-weight:800;color:' + st.fg + '">' + (cat.label || typeKey) + '</h2>' +
+          (dateLabel ? '<p style="font-size:12px;font-weight:700;color:#6B7280;margin-bottom:1px">' + dateLabel + '</p>' : '') +
+          '<h2 style="font-size:20px;font-weight:700;color:' + st.fg + '">' + (cat.label || typeKey) + '</h2>' +
           '</div>' +
         '</div>' +
         '<button onclick="closeCategoryDetail()" aria-label="閉じる" ' +
@@ -1791,7 +1795,7 @@ function openCategoryDetail(typeKey, year, month, day) {
     return '<div style="margin-bottom:20px">' +
       '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">' +
       '<span class="ms-nav" style="font-size:20px;color:' + color + '">' + icon + '</span>' +
-      '<p style="font-size:18px;font-weight:800;color:#1C1C1E">' + title + '</p></div>' +
+      '<p style="font-size:18px;font-weight:700;color:#1C1C1E">' + title + '</p></div>' +
       '<div style="background:#FFFFFF;border-radius:12px;overflow:hidden">' +
       items.map(function(item, i) {
         var last = i === items.length - 1;
