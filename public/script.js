@@ -241,7 +241,7 @@ function showError(msg) {
   if (!el) return;
   el.innerHTML = `
     <div class="text-center px-6 py-12">
-      <div class="mb-4"><span class="ms-nav" style="font-size:48px;color:#E07800">warning</span></div>
+      <div class="mb-4"><span class="ms-nav" style="font-size:48px;color:var(--c-status-warn)">warning</span></div>
       <p class="font-bold text-[#1C1C1E] mb-2">データを読み込めませんでした</p>
       <p class="text-xs text-[#636366]">${msg}</p>
       <p class="text-[11px] text-[#6B7280] mt-2 leading-relaxed">
@@ -371,13 +371,14 @@ function applyMunicipalityMeta() {
     citationNote.textContent = `参照日：${dateStr}${dateStr ? ' ／ ' : ''}本サイトは${city}の非公式サイトです`;
   }
 
-  // ── ブランドカラー ── brand_colorから--brand系3トークンを自動生成（DS.md §1-1-1）
+  // ── ブランドカラー ── brand_colorから--brand系4トークンを自動生成（DS.md §1-1-1）
   if (DATA.brand_color) {
     var brand = DATA.brand_color;
     document.documentElement.style.setProperty('--brand', brand);
     document.documentElement.style.setProperty('--brand-strong', shadeHex(brand, 0.82));
     document.documentElement.style.setProperty('--brand-soft', hexToRgba(brand, 0.08));
     document.documentElement.style.setProperty('--brand-soft-strong', hexToRgba(brand, 0.15));
+    document.documentElement.style.setProperty('--brand-border', hexToRgba(brand, 0.35));
     setMeta('meta[name="theme-color"]', brand);
   }
 
@@ -1342,14 +1343,14 @@ function openItemDetail(name) {
   var html = '';
 
   if (item.note) {
-    html += '<div style="background:#F4F5F7;border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
+    html += '<div style="background:var(--bg-neutral-soft);border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
       '<p style="font-size:11px;font-weight:700;color:#6B7280;margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
       '<p style="font-size:14px;color:#1C1C1E;line-height:1.7;margin:0">' + item.note + '</p>' +
     '</div>';
   }
 
   if (item.source === 'estimated') {
-    html += '<div style="display:flex;align-items:flex-start;gap:6px;margin-bottom:16px;padding:10px 12px;background:#F4F5F7;border-radius:10px;border:1px dashed rgba(0,0,0,0.15)">' +
+    html += '<div style="display:flex;align-items:flex-start;gap:6px;margin-bottom:16px;padding:10px 12px;background:var(--bg-neutral-soft);border-radius:10px;border:1px dashed rgba(0,0,0,0.15)">' +
       '<span class="ms-nav" style="font-size:16px;color:#6B7280;flex-shrink:0;line-height:1.4">info</span>' +
       '<p style="font-size:12px;color:#6B7280;line-height:1.6;margin:0">' + DATA.name + 'の公式資料に記載がないため、一般的な分別ルールをもとにした参考情報です。正式な確認は<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="color:var(--brand);text-decoration:underline;font-weight:700">問い合わせ先</a>へ</p>' +
     '</div>';
@@ -1359,20 +1360,20 @@ function openItemDetail(name) {
     var guide = unknownItemGuide(item.name);
     var linkChips = guide.links.map(function(l) {
       return '<a href="' + l.href + '"' + (l.external ? ' target="_blank" rel="noopener"' : '') +
-        ' style="display:inline-flex;align-items:center;gap:4px;background:#fff;color:#00885A;border:1px solid rgba(0,168,107,0.35);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:700;text-decoration:none">' +
+        ' style="display:inline-flex;align-items:center;gap:4px;background:#fff;color:var(--brand-strong);border:1px solid var(--brand-border);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:700;text-decoration:none">' +
         (l.icon ? '<span class="ms-nav" style="font-size:14px">' + l.icon + '</span>' : '') + l.label +
       '</a>';
     }).join('');
-    html += '<div style="background:#F3FAF6;border-left:4px solid #00A86B;border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
-      '<p style="font-size:11px;font-weight:700;color:#00885A;margin:0 0 6px;letter-spacing:.06em">どうすればいい？</p>' +
+    html += '<div style="background:var(--brand-soft);border-left:4px solid var(--brand);border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
+      '<p style="font-size:11px;font-weight:700;color:var(--brand-strong);margin:0 0 6px;letter-spacing:.06em">どうすればいい？</p>' +
       '<p style="font-size:14px;color:#1C1C1E;line-height:1.7;margin:0 0 12px">' + guide.body + '</p>' +
       '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
         linkChips +
-        '<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="display:inline-flex;align-items:center;gap:4px;background:#fff;color:#00885A;border:1px solid rgba(0,168,107,0.35);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:700;text-decoration:none">' +
+        '<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="display:inline-flex;align-items:center;gap:4px;background:#fff;color:var(--brand-strong);border:1px solid var(--brand-border);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:700;text-decoration:none">' +
           '<span class="ms-nav" style="font-size:14px">call</span>問い合わせ先' +
         '</a>' +
       '</div>' +
-      (guide.sellable ? '<p style="font-size:12px;color:#6B7280;margin:10px 0 0;line-height:1.6">動作するものは<a href="/articles/kaden#uru-yuzuru" style="color:#00885A;text-decoration:underline;font-weight:700">売る・譲るという選択肢</a>もあります</p>' : '') +
+      (guide.sellable ? '<p style="font-size:12px;color:#6B7280;margin:10px 0 0;line-height:1.6">動作するものは<a href="/articles/kaden#uru-yuzuru" style="color:var(--brand-strong);text-decoration:underline;font-weight:700">売る・譲るという選択肢</a>もあります</p>' : '') +
     '</div>';
   }
 
@@ -1419,7 +1420,7 @@ function renderContact() {
       '<p style="font-size:12px;color:#636366"><span style="color:#6B7280">電話番号</span>　' + c.tel + '</p>' +
       (c.hours ? '<p style="font-size:12px;color:#636366;margin-top:2px"><span style="color:#6B7280">受付時間</span>　' + c.hours + '</p>' : '') +
       '</div>' +
-      '<a href="tel:' + c.tel + '" style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid rgba(26,92,56,0.15)">' +
+      '<a href="tel:' + c.tel + '" style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid var(--brand-soft-strong)">' +
       '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">call</span>電話する</a>' +
       '</div></div>';
   }).join('');
@@ -1431,17 +1432,17 @@ function renderContact() {
   var sectionHeadSite = '<p style="font-size:12px;font-weight:700;color:#6B7280;padding:20px 20px 8px">サイトの内容・不具合について（運営者）</p>';
   var siteContact = '<div style="background:#fff;border-radius:20px;margin:0 16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden;padding:16px 20px">' +
     '<p style="font-size:12px;color:#1C1C1E;line-height:1.7;margin-bottom:12px">掲載情報の誤り・古い情報や、画面表示の不具合などはこちらからお知らせください。</p>' +
-    '<a href="mailto:contact@gomi-nico.jp" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid rgba(26,92,56,0.15)">' +
+    '<a href="mailto:contact@gomi-nico.jp" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid var(--brand-soft-strong)">' +
     '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">mail</span>メールする</a>' +
     '<p style="font-size:11px;color:#6B7280;margin-top:8px">contact@gomi-nico.jp　※返信にお時間をいただく場合があります</p>' +
     '</div>';
 
   // 免責・出典（サイト全般についての注記）
-  var notice = '<div style="margin:12px 16px 0;background:#FFF8EC;border-radius:12px;border:1px solid rgba(224,120,0,0.15);overflow:hidden">' +
+  var notice = '<div style="margin:12px 16px 0;background:var(--bg-warn-soft);border-radius:12px;border:1px solid rgba(224,120,0,0.15);overflow:hidden">' +
 
     // ヘッダー
     '<div style="padding:12px 16px 10px;border-bottom:1px solid rgba(224,120,0,0.12)">' +
-    '<p style="font-size:13px;font-weight:700;color:#E07800">⚠ 本サイトについてのご注意</p>' +
+    '<p style="font-size:13px;font-weight:700;color:var(--c-status-warn)">⚠ 本サイトについてのご注意</p>' +
     '</div>' +
 
     // 本サイトについて
@@ -1623,7 +1624,7 @@ function renderNoticePanel() {
       : isIOS
         ? '<p style="font-size:13px;color:#1C1C1E;line-height:1.75;">画面下の<strong style="">共有ボタン<img src="/icons/share.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:-5px"></strong>をタップし、<br><strong>ホーム画面に追加</strong>を選んでください。</p>'
         : '<p style="font-size:13px;color:#1C1C1E;line-height:1.75;">お使いのブラウザで対応していません</p>';
-    html += '<div style="position:relative;background:#ebf7db;border-radius:20px;padding:18px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start" class="shadow-card">' +
+    html += '<div style="position:relative;background:var(--brand-soft);border-radius:20px;padding:18px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start" class="shadow-card">' +
       '<img src="/icons/icon-192.png" style="width:44px;height:44px;border-radius:10px;flex-shrink:0" alt="">' +
       '<div style="flex:1;min-width:0">' +
         '<p style="font-size:18px;font-weight:700;color:#1C1C1E;margin-bottom:4px">ホーム画面に追加</p>' +
@@ -1818,9 +1819,9 @@ function openCategoryDetail(typeKey, year, month, day) {
       '</div></div>';
   }
 
-  html += section('check_circle', '出せるもの',    cat.allowed,                               '#00A86B');
-  html += section('close',        '出せないもの',   cat.not_allowed,                           '#E8512A');
-  html += section('info',         '出し方・注意点', (cat.how_steps||[]).concat(cat.tips||[]), '#E07800');
+  html += section('check_circle', '出せるもの',    cat.allowed,                               'var(--c-status-ok)');
+  html += section('close',        '出せないもの',   cat.not_allowed,                           'var(--c-status-ng)');
+  html += section('info',         '出し方・注意点', (cat.how_steps||[]).concat(cat.tips||[]), 'var(--c-status-warn)');
 
   // 関連記事への導線（cat.article_urlが設定されている場合のみ表示。記事公開までは非表示のまま）
   if (cat.article_url) {

@@ -186,11 +186,20 @@
       --brand-strong: #00885A;
       --brand-soft: rgba(0,168,107,0.08);
       --brand-soft-strong: rgba(0,168,107,0.15);
-      --bg-content: #F7FBF8;
-      --card-border: rgba(0,0,0,0.09);
+      --brand-border: rgba(0,168,107,0.35);
+      /* 基本背景（生成り）。LP・記事ページの--gn-bgと同じ#FBFAF4に統一（v1.57・DS.md §1-1参照） */
+      --bg-content: #FBFAF4;
+      /* 固定シグナルカラー（OK/NG/注意の3色）。自治体のbrand_colorを何色に変えても
+         この3色は変わらない（DS.md §1-1-1「対象外」参照。v1.57で専用トークン化） */
+      --c-status-ok:   #00A86B;
+      --c-status-ng:   #E8512A;
+      --c-status-warn: #E07800;
+      /* 中立・注意喚起の淡背景（ブランド非依存の汎用トークン。v1.57で新設） */
+      --bg-neutral-soft: #F4F5F7;
+      --bg-warn-soft: #FFF8EC;
     }
     html, body {
-      background-color: #F7FBF8;
+      background-color: #FBFAF4;
       font-weight: 400;
     }
     .is-hidden { display:none !important; }
@@ -204,13 +213,13 @@
        画面幅いっぱいまでブリードさせる（#kana-jump-navと同じ手法） */
     #search-box-card {
       position:sticky; top:calc(60px + var(--safe-t)); z-index:80;
-      background:rgba(247,251,248,0.75);
+      background:rgba(251,250,244,0.75);
       -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
       margin: -16px -16px -8px; padding: 16px;
     }
     #kana-jump-nav {
       position:sticky; top:calc(152px + var(--safe-t)); z-index:79;
-      background:rgba(247,251,248,0.75);
+      background:rgba(251,250,244,0.75);
       -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
       margin:-8px -16px 0;
     }
