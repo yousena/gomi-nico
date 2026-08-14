@@ -1,6 +1,6 @@
 # ごみニコ デザインシステム（ごみニコDS）
 
-**Version 1.55** ｜ 最終更新: 2026-08-14 ｜ 管理: Uちゃん（UI/UX担当）
+**Version 1.56** ｜ 最終更新: 2026-08-14 ｜ 管理: Uちゃん（UI/UX担当）
 
 > ごみニコ（gomi-nico.jp）の見た目と振る舞いの「唯一の正」。
 > 実装・検品・新自治体追加は、すべて本書を基準に行う。
@@ -266,6 +266,7 @@ v1.54では、太平さんから改めて「`#search-box-card`を別のdivで囲
 - **「朝8時までに〜出しましょう」の注記行は廃止**: 当初は`collection_settings.cutoff_note`をバナー下部に常時表示していたが、太平さんから「文字が多すぎる」との指摘を受け削除。ただし収集時間の締切は実際に行動に関わる情報のため、単に消すのではなく各自治体の`faq`に「ごみは何時までに出せばいいですか？」を新設し、情報自体は失わないようにした（`cutoff_note`はデータとしては残置。将来的な再利用に備える）
 - **「次の収集」の文言は日数のみ**: 収集が無い日は「次の収集: 3日後」のように日数だけを表示し、対象カテゴリの列挙（`（もやすごみ・金属類・びん類（生きびん・その他のびん）...）`）は行わない。括弧が入れ子になり読みにくいとの指摘を受けた対応
 - **チップの文言は短縮表記（`categoryShortLabel()`）を使う**: 2-4-1の凡例と同じ考え方で、括弧書きの補足を省いた短い名前を使う
+- **タップでカレンダー「今日」セルと同じ挙動（v1.56）**: 太平さんから「今日のごみ（今日の収集バナー）をタップすると、カレンダーの当日をクリックしたのと同じ挙動でボトムシートが出るように」との依頼。実装は`<div>`だったバナーを`<button>`化し、`handleTodayStripTap()`（今日の日付で`handleDayTap()`を呼ぶだけの薄いラッパー）をonclickに設定。ロジックを複製せず`handleDayTap()`に委譲しているため、カレンダー側の挙動（収集が1種類のみ・詳細情報ありの日は日別シートを飛ばして直接カテゴリ詳細へ遷移するショートカット含む）が完全に同じになる
 `<details>/<summary>` を使用（JS不要・a11y確保）。summaryはmin-height 56px、右にexpand_moreアイコン。
 
 ### 2-4-7. 「ごみ出し不可」品目の処分方法ガイド（`openItemDetail()`・v1.35で新設）
@@ -435,6 +436,7 @@ v1.9では「ブランド緑は操作可能要素にのみ使う」というル�
 
 ## 更新履歴
 
+- **v1.56（2026-08-14）**: 太平さんから「今日のごみ（今日の収集バナー）をタップすると、カレンダーの当日をクリックしたのと同じ挙動でボトムシートが出るようにしてください」との依頼。従来`#today-strip`はタップ不可の静的な`<div>`だったため、カレンダー日別セル（`<button onclick="handleDayTap(...)">`）と同じ`<button>`要素に変更し、`onclick="handleTodayStripTap()"`を追加。`handleTodayStripTap()`は今日の年月日で既存の`handleDayTap()`をそのまま呼ぶだけの薄いラッパーとして`script.js`に新設し、ロジックを複製しないことで、カレンダー側の挙動（収集が1種類のみ・詳細情報ありの日は日別シートを飛ばして直接カテゴリ詳細へ遷移するショートカットを含む）と完全に一致させた。ボタン化に伴い、Tailwind/ブラウザ既定のボタンスタイルを打ち消すため`width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent`を追加し、見た目は変更前と同一。`aria-label="今日の収集の詳細を見る"`も付与。`shiki/index.html`・`warabi/index.html`・`script.js`を変更。タグバランス確認済み（shiki div 93/93・button 25/25、warabi div 93/93・button 25/25）、`node -c script.js`確認済み。sw.js CACHE_NAME v105→v106
 - **v1.55（2026-08-14）**: 太平さんから「もう少し背景がすけていてほしい。blurを10px、backgroundを0.75の透過に」との依頼。`#search-box-card`・`#kana-jump-nav`の背景を`rgba(247,251,248,0.85)`→`0.75`、`backdrop-filter`を`blur(20px)`→`blur(10px)`に変更し、下を通過する一覧がより透けて見えるよう調整。`shiki/index.html`・`warabi/index.html`を変更。タグバランス確認済み（shiki 94/94・warabi 94/94）。sw.js CACHE_NAME v104→v105
 - **v1.54（2026-08-14）**: 太平さんから「`#search-box-card`を別のdivで囲って、それにstickyを設定すれば？」との具体的な設計指示。v1.52の疑似要素方式（同日中にrevert済み）に代わり、`#search-box-card`をsticky帯（外枠）に転用し、実際に見える検索ピル本体は新設の`#search-box-pill`に分離する構造に変更。帯側に`padding:12px 16px 16px`＋`margin:0 -16px`を持たせ、ヘッダー〜検索ボックス間・検索ボックス〜五十音ナビ間の余白そのものをすりガラス背景でカバーしつつ、帯の下端がジャンプナビの`top`値とちょうど接続するよう計算した（詳細は2-4-3節参照）。既知の「小さい親divでsticky要素を包むとcontaining blockが縮小する」不具合とは、sticky要素とラップ対象の入れ子関係が逆であるため抵触しないと判断。`shiki/index.html`・`warabi/index.html`を変更（`script.js`は無変更、`search-box-card`のidに依存するJSは元々無し）。タグバランス確認済み（shiki 94/94・warabi 94/94、ラップdiv追加分で従来比+1）、`node -c script.js`確認済み。実機での見た目・スクロール挙動は太平さんに確認をお願いしたい。sw.js CACHE_NAME v103→v104
 - **v1.53（2026-08-14）**: v1.52で実装した検索ボックス周りの隙間カバー（`::before`/`::after`疑似要素）について、太平さんから「検索窓がひどくおかしな状態」との報告があり、即座に該当CSSを丸ごとrevert。v1.51の状態（半透明+ぼかし背景のみ、隙間から下が透ける問題は残ったまま）に戻した。太平さんからは、原因の仮説として①`main`共通paddingが影響しているのでは、②`#search-box-card`を別divで囲みsticky時`top:0;left:0;padding:16px`にする案、の2つが出ており、次の対応時にスクリーンショットで実際の崩れ方を確認してから再検討する。`shiki/index.html`・`warabi/index.html`を変更（`script.js`は無変更）。タグバランス確認済み（shiki 93/93・warabi 93/93）。sw.js CACHE_NAME v102→v103
