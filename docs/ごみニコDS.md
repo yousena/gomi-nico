@@ -1,6 +1,6 @@
 # ごみニコ デザインシステム（ごみニコDS）
 
-**Version 1.57** ｜ 最終更新: 2026-08-14 ｜ 管理: Uちゃん（UI/UX担当）
+**Version 1.58** ｜ 最終更新: 2026-08-14 ｜ 管理: Uちゃん（UI/UX担当）
 
 > ごみニコ（gomi-nico.jp）の見た目と振る舞いの「唯一の正」。
 > 実装・検品・新自治体追加は、すべて本書を基準に行う。
@@ -451,6 +451,7 @@ v1.9では「ブランド緑は操作可能要素にのみ使う」というル�
 
 ## 更新履歴
 
+- **v1.58（2026-08-14）**: 太平さんから「フッターメニューですが、ごみ検索より分別検索とかの方がよいですかね？」と相談。まず「ごみ分別」単体への変更案には慎重な見解を伝えた——本サイトには過去に「分別ガイド」という名称がわかりにくく「ごみ出しルール」へ改名した前例があり（v1.33）、同じく「分別」だけだと検索ツールなのか静的な解説ページなのか伝わりにくくなる懸念があったため。代わりに「検索」の機能性を保ちつつサイトのtitle/meta（「ごみ分別検索」）と表記を揃えられる案として「分別検索」（他タブと同じ4文字）を提案し、太平さんの了承を得て採用。フッタータブの`aria-label`・表示テキスト、`#panel-search`の`aria-label`、関連コメントを「ごみ検索」→「分別検索」に統一（ページtitle/meta等が使う「ごみ分別検索」表記とは別物として、そのまま維持）。`shiki/index.html`・`warabi/index.html`を変更。タグバランス確認済み（shiki div 93/93、warabi div 93/93）。sw.js CACHE_NAME v107→v108
 - **v1.57（2026-08-14）**: 太平さんから、`--bg-content`を`#FBFAF4`に変更した上で「自治体テーマカラー、デフォルト設定を再検討・設定してください。またjs内などで直指定しているstyleなどもあわせて整備して、デザインシステムが構築できるようにしたい（SEO・メンテナンス性を鑑みて）」との依頼。調査の結果、`#FBFAF4`はLP・記事ページの基本背景`--gn-bg`（1-1節冒頭の表）と完全に同じ値で、太平さんの意図はアプリ本体の背景をLP・記事側の「生成り」基準色に統一することだったと判断。①`html,body`の背景色・検索ボックス/五十音ナビのすりガラス背景（旧背景色をrgba分解して直書きしていた箇所）を新しい値に追随させた（詳細は1-1節）②ブランド緑`#00A86B`は元々`--gn-brand`と同一値のため変更不要と判断し据え置いた③`script.js`内でブランド色を直書きしていた箇所（品目詳細の「どうすればいい？」案内ボックス・PWA案内カード・問い合わせボタンの枠線）を`var(--brand)`系トークンに置換し、自治体ごとの`brand_color`差し替えが正しく全箇所に効くようにした（1-1-1節）④品目詳細シートのOK/NG/注意の固定信号色（`#00A86B`/`#E8512A`/`#E07800`）を`--c-status-ok`/`--c-status-ng`/`--c-status-warn`として専用トークン化し、ブランド色とは無関係に固定という既存のDS.md規定をコード上でも自己文書化した⑤枠線用の新トークン`--brand-border`（アルファ35%）を追加し、ピル型ボタンの縁取りに使う⑤ブランド非依存の中立トークン`--bg-neutral-soft`・`--bg-warn-soft`を新設し、`script.js`内で重複していた`#F4F5F7`・`#FFF8EC`を集約⑥v1.47の枠線→影の差し戻し以降、実質未使用のまま残っていた`--card-border`カスタムプロパティを削除（死んだトークンの整理）⑦`manifest.json`の`background_color`を`#FFFFFF`→`#FBFAF4`に変更し、PWA起動時のスプラッシュ画面もアプリ本体と同じ生成りにした。`shiki/index.html`・`warabi/index.html`・`script.js`・`manifest.json`を変更。タグバランス確認済み（shiki div 93/93・button 25/25、warabi div 93/93・button 25/25）、`node -c script.js`・`manifest.json`のJSON妥当性を確認済み。sw.js CACHE_NAME v106→v107
 - **v1.56（2026-08-14）**: 太平さんから「今日のごみ（今日の収集バナー）をタップすると、カレンダーの当日をクリックしたのと同じ挙動でボトムシートが出るようにしてください」との依頼。従来`#today-strip`はタップ不可の静的な`<div>`だったため、カレンダー日別セル（`<button onclick="handleDayTap(...)">`）と同じ`<button>`要素に変更し、`onclick="handleTodayStripTap()"`を追加。`handleTodayStripTap()`は今日の年月日で既存の`handleDayTap()`をそのまま呼ぶだけの薄いラッパーとして`script.js`に新設し、ロジックを複製しないことで、カレンダー側の挙動（収集が1種類のみ・詳細情報ありの日は日別シートを飛ばして直接カテゴリ詳細へ遷移するショートカットを含む）と完全に一致させた。ボタン化に伴い、Tailwind/ブラウザ既定のボタンスタイルを打ち消すため`width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent`を追加し、見た目は変更前と同一。`aria-label="今日の収集の詳細を見る"`も付与。`shiki/index.html`・`warabi/index.html`・`script.js`を変更。タグバランス確認済み（shiki div 93/93・button 25/25、warabi div 93/93・button 25/25）、`node -c script.js`確認済み。sw.js CACHE_NAME v105→v106
 - **v1.55（2026-08-14）**: 太平さんから「もう少し背景がすけていてほしい。blurを10px、backgroundを0.75の透過に」との依頼。`#search-box-card`・`#kana-jump-nav`の背景を`rgba(247,251,248,0.85)`→`0.75`、`backdrop-filter`を`blur(20px)`→`blur(10px)`に変更し、下を通過する一覧がより透けて見えるよう調整。`shiki/index.html`・`warabi/index.html`を変更。タグバランス確認済み（shiki 94/94・warabi 94/94）。sw.js CACHE_NAME v104→v105
