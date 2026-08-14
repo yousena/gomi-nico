@@ -707,17 +707,22 @@ function renderTodayStrip() {
 
   document.getElementById('today-strip-date').innerHTML = formatDateJPHtml(today);
 
-  // 「朝8時までに〜出しましょう」の注記行は2026-07-24に廃止（太平さんの指摘でカードの文字量を整理）。
-  // 同内容はFAQ「ごみは何時までに出せばいいですか？」に集約し、情報自体は失われないようにした
+  // 「朝8時までに〜出しましょう」の注記行は2026-07-24に一度廃止（太平さんの指摘でカードの文字量を整理し、
+  // FAQ「ごみは何時までに出せばいいですか？」に集約）したが、2026-08-14に太平さんの実機検証（DevToolsで
+  // 13px/font-weight:500/border-top区切り線のスタイルを確認済み）を経て、控えめな1行の注記として復活させた。
+  // 収集がある日のみ表示し、cutoff_note自体はdata_{city}.jsonの値をそのまま使う（自治体ごとの文言差を保持）
 
-  const typesEl = document.getElementById('today-strip-types');
+  const typesEl  = document.getElementById('today-strip-types');
+  const cutoffEl = document.getElementById('today-strip-cutoff');
   if (!areaKey) {
     typesEl.innerHTML = `<span class="text-sm text-[#6B7280]">地区を選択してください</span>`;
+    if (cutoffEl) cutoffEl.classList.add('is-hidden');
     return;
   }
 
   const types = getGarbageForDate(areaKey, today);
   if (types.length === 0) {
+    if (cutoffEl) cutoffEl.classList.add('is-hidden');
     // 収集なし → 次の収集日を探す（最大14日先まで）
     let nextDate = null;
     for (let i = 1; i <= 14; i++) {
@@ -747,6 +752,16 @@ function renderTodayStrip() {
     return '<span style="display:inline-flex;align-items:center;gap:5px;padding:5px 13px;border-radius:999px;font-size:14px;font-weight:700;background:' + s.bg + ';color:' + s.fg + '">' +
       '<span style="width:20px;height:20px;border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0">' + catIcon(t.type, 20) + '</span> ' + categoryShortLabel(t.type) + '</span>';
   }).join('');
+
+  if (cutoffEl) {
+    const note = (DATA.collection_settings && DATA.collection_settings.cutoff_note) || '';
+    if (note) {
+      cutoffEl.textContent = note;
+      cutoffEl.classList.remove('is-hidden');
+    } else {
+      cutoffEl.classList.add('is-hidden');
+    }
+  }
 }
 
 /**
@@ -1042,7 +1057,7 @@ function renderQuickTags() {
   var el = document.getElementById('search-quick');
   if (!el) return;
   el.innerHTML =
-    '<p style="font-size:13px;font-weight:700;color:#6B7280;letter-spacing:.06em;margin-bottom:10px;padding-left:4px">よく検索されるごみ</p>' +
+    '<p style="font-size:13px;font-weight:700;color:#6B7280;letter-spacing:.06em;margin-bottom:10px;">よく検索されるごみ</p>' +
     '<div style="display:flex;flex-wrap:wrap;gap:8px;padding:0 2px">' +
     QUICK_TAGS.map(function(q) {
       return '<button style="padding:8px 16px;background:#fff;border:none;border-radius:20px;font-size:14px;font-weight:700;color:#1C1C1E;cursor:pointer;font-family:inherit;white-space:nowrap;min-height:40px;line-height:1.2;" class="shadow-card" onclick="openItemDetail(\'' + q + '\')">' + q + '</button>';
