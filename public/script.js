@@ -1116,7 +1116,7 @@ function renderKanaJumpNav(groups) {
     return;
   }
 
-  el.innerHTML = '<div style="display:flex;gap:6px;overflow-x:auto;padding:8px 4px;-webkit-overflow-scrolling:touch">' + chips + '</div>';
+  el.innerHTML = '<div style="display:flex;gap:6px;overflow-x:auto;padding:8px 16px;-webkit-overflow-scrolling:touch">' + chips + '</div>';
   el.classList.remove('is-hidden');
   setupKanaJumpObserver();
 }
