@@ -197,6 +197,14 @@
       /* 中立・注意喚起の淡背景（ブランド非依存の汎用トークン。v1.57で新設） */
       --bg-neutral-soft: #F4F5F7;
       --bg-warn-soft: #FFF8EC;
+      /* 本文の基本テキスト色（v1.61で新設・CSS変数化）。従来は3色とも色相が青寄り
+         （H≈220〜240°）だったのを、生成り背景（--bg-content）と馴染む暖色系の
+         ニュートラルグレー（H≈30°）に統一。明度（コントラスト比）は旧値をほぼ維持しており、
+         白・生成り背景いずれに対しても本文は4.5:1、補足文言は4.5:1以上を確保している
+         （算出根拠はDS.md §1-1参照）。 */
+      --ink:   #1E1D1C; /* 見出し・本文の主要テキスト */
+      --text:  #686461; /* 説明文・セカンダリテキスト */
+      --muted: #76706B; /* 補足・ラベル・アイコン系の控えめな文字色 */
     }
     html, body {
       background-color: #FBFAF4;
@@ -225,7 +233,7 @@
     }
     .kana-chip {
       flex-shrink:0; min-width:44px; height:44px; padding:0 14px;
-      border:none; border-radius:999px; background:#fff; color:#6B7280;
+      border:none; border-radius:999px; background:#fff; color:var(--muted);
       font-family:inherit; font-size:14px; font-weight:700; cursor:pointer;
       box-shadow:0 2px 8px rgba(0,0,0,0.08); -webkit-tap-highlight-color:transparent;
     }
@@ -235,7 +243,7 @@
     }
 
     /* ── ナビ アクティブ（::after 疑似要素） ── */
-    .nav-item        { color:#6B7280; transition:color 0.15s; }
+    .nav-item        { color:var(--muted); transition:color 0.15s; }
     .nav-item.active { color:var(--brand); }
     .nav-item.active::after {
       content:''; position:absolute; top:0; left:25%; right:25%;
@@ -274,7 +282,7 @@
     }
     .cal-cell.is-today { background:var(--brand-soft); outline:2px solid var(--brand); outline-offset:-1px; }
     .cal-cell.yearend  { opacity:0.18; pointer-events:none; }
-    .cal-day           { font-size:13px; font-weight:700; color:#1C1C1E; line-height:1; }
+    .cal-day           { font-size:13px; font-weight:700; color:var(--ink); line-height:1; }
     .cal-day-sun       { color:#C94B2A; }
     .cal-day-sat       { color:#3A5BB8; }
     .cal-cell.is-today .cal-day { color:var(--brand); }
@@ -290,7 +298,7 @@
       display:flex; align-items:center; justify-content:center;
     }
     .cal-icon-more {
-      background:rgba(0,0,0,0.06); color:#6B7280;
+      background:rgba(0,0,0,0.06); color:var(--muted);
       font-size:10px; font-weight:700;
     }
     /* 1種類のみの日は2列グリッドを使わず、アイコンを大きく1つだけ表示する */
@@ -380,7 +388,7 @@
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 </head>
 
-<body class="text-[#1C1C1E] leading-normal min-h-dvh font-sans" style="background:#FFFFFF">
+<body class="text-[var(--ink)] leading-normal min-h-dvh font-sans" style="background:#FFFFFF">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNH8H4L2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -394,14 +402,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      class="fixed inset-0 z-[500] bg-white flex items-center justify-center">
   <div class="text-center">
     <span class="ms-cat animate-spin-slow block mb-4" style="font-size:40px;color:var(--brand)" aria-hidden="true">recycling</span>
-    <p class="text-sm text-[#6B7280]">データを読み込んでいます…</p>
+    <p class="text-sm text-[var(--muted)]">データを読み込んでいます…</p>
   </div>
 </div>
 
 <!-- ============================================================
      HEADER
 ============================================================ -->
-<header class="sticky top-0 z-[100] bg-white/90 backdrop-blur-xl border-b border-black/[0.07]"
+<header class="sticky top-0 z-[100] bg-[rgba(251,250,244,0.9)] backdrop-blur-xl border-b border-black/[0.07]"
         style="padding-top:var(--safe-t)"
         role="banner">
   <div class="max-w-[430px] mx-auto h-[60px] flex items-center justify-between px-4">
@@ -415,7 +423,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="min-w-0 flex flex-col justify-center" style="padding-bottom:3px">
         <!-- タイトル（蕨市ごみ分別・JS が更新。ページ全体の唯一のh1） -->
         <h1 id="header-title"
-             class="text-[16px] font-bold text-[#1C1C1E] tracking-tight leading-none truncate">
+             class="text-[16px] font-bold text-[var(--ink)] tracking-tight leading-none truncate">
           蕨市のごみ分別
         </h1>
         <!-- 選択地区（タップで地域選択シートを開く） -->
@@ -441,11 +449,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <button onclick="openMenu()"
             aria-label="メニューを開く" aria-haspopup="dialog"
             class="w-11 h-11 flex flex-col items-center justify-center gap-[5px]
-                   rounded-[14px] border border-black/[0.09] bg-transparent
-                   cursor-pointer flex-shrink-0">
-      <span class="w-5 h-[2px] bg-[#1C1C1E] rounded-full block"></span>
-      <span class="w-5 h-[2px] bg-[#1C1C1E] rounded-full block"></span>
-      <span class="w-5 h-[2px] bg-[#1C1C1E] rounded-full block"></span>
+                   rounded-[14px] bg-white
+                   cursor-pointer flex-shrink-0"
+            style="box-shadow:0 1px 3px rgba(0,0,0,0.16)">
+      <span class="w-5 h-[2px] bg-[var(--ink)] rounded-full block"></span>
+      <span class="w-5 h-[2px] bg-[var(--ink)] rounded-full block"></span>
+      <span class="w-5 h-[2px] bg-[var(--ink)] rounded-full block"></span>
     </button>
 
   </div>
@@ -468,48 +477,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">location_on</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:var(--text)">location_on</span></span>
         <div class="flex-1">
-          <p class="text-base font-bold text-[#1C1C1E]">お住まいの地域設定</p>
-          <p class="text-xs text-[#6B7280] mt-[2px]">ごみ収集日を地区ごとに確認できます</p>
+          <p class="text-base font-bold text-[var(--ink)]">お住まいの地域設定</p>
+          <p class="text-xs text-[var(--muted)] mt-[2px]">ごみ収集日を地区ごとに確認できます</p>
         </div>
-        <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
+        <span class="ms-nav" style="font-size:20px;color:var(--muted)">chevron_right</span>
       </button>
 
       <button onclick="openRulesSheet()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">checklist</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:var(--text)">checklist</span></span>
         <div class="flex-1">
-          <p class="text-base font-bold text-[#1C1C1E]">ごみ出しルール</p>
-          <p class="text-xs text-[#6B7280] mt-[2px]">収集時間・袋のルールなど基本の決まり</p>
+          <p class="text-base font-bold text-[var(--ink)]">ごみ出しルール</p>
+          <p class="text-xs text-[var(--muted)] mt-[2px]">収集時間・袋のルールなど基本の決まり</p>
         </div>
-        <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
+        <span class="ms-nav" style="font-size:20px;color:var(--muted)">chevron_right</span>
       </button>
 
       <button id="menu-faq" onclick="openFAQ()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">help</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:var(--text)">help</span></span>
         <div class="flex-1">
-          <p class="text-base font-bold text-[#1C1C1E]">よくあるご質問</p>
-          <p class="text-xs text-[#6B7280] mt-[2px]">ごみ出しのルールや疑問を解決</p>
+          <p class="text-base font-bold text-[var(--ink)]">よくあるご質問</p>
+          <p class="text-xs text-[var(--muted)] mt-[2px]">ごみ出しのルールや疑問を解決</p>
         </div>
-        <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
+        <span class="ms-nav" style="font-size:20px;color:var(--muted)">chevron_right</span>
       </button>
 
       <button id="menu-contact" onclick="openContact()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">call</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:var(--text)">call</span></span>
         <div class="flex-1">
-          <p class="text-base font-bold text-[#1C1C1E]">問い合わせ先</p>
-          <p class="text-xs text-[#6B7280] mt-[2px]">市役所・安全安心課へのご連絡</p>
+          <p class="text-base font-bold text-[var(--ink)]">問い合わせ先</p>
+          <p class="text-xs text-[var(--muted)] mt-[2px]">市役所・安全安心課へのご連絡</p>
         </div>
-        <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
+        <span class="ms-nav" style="font-size:20px;color:var(--muted)">chevron_right</span>
       </button>
 
       <!-- ▼ 全自治体共通 -->
@@ -517,43 +526,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      border-b border-black/[0.04] bg-transparent border-x-0 border-t-0
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">translate</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:var(--text)">translate</span></span>
         <div class="flex-1">
-          <p class="text-base font-bold text-[#1C1C1E]">言語設定</p>
-          <p class="text-xs text-[#6B7280] mt-[2px]">Language / 语言 / 언어 / Ngôn ngữ</p>
+          <p class="text-base font-bold text-[var(--ink)]">言語設定</p>
+          <p class="text-xs text-[var(--muted)] mt-[2px]">Language / 语言 / 언어 / Ngôn ngữ</p>
         </div>
-        <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
+        <span class="ms-nav" style="font-size:20px;color:var(--muted)">chevron_right</span>
       </button>
 
       <a href="/articles/"
          class="flex items-center gap-4 w-full text-left px-6 py-4
                 border-b border-black/[0.04] no-underline">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">menu_book</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:var(--text)">menu_book</span></span>
         <div class="flex-1">
-          <p class="text-base font-bold text-[#1C1C1E]">コラム</p>
-          <p class="text-xs text-[#6B7280] mt-[2px]">ごみの困りごとを解決する記事</p>
+          <p class="text-base font-bold text-[var(--ink)]">コラム</p>
+          <p class="text-xs text-[var(--muted)] mt-[2px]">ごみの困りごとを解決する記事</p>
         </div>
-        <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
+        <span class="ms-nav" style="font-size:20px;color:var(--muted)">chevron_right</span>
       </a>
 
       <button id="menu-vendor" onclick="openVendor()"
               class="flex items-center gap-4 w-full text-left px-6 py-4
                      bg-transparent border-none
                      font-sans cursor-pointer hover:bg-white active:bg-white">
-        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:#636366">storefront</span></span>
+        <span class="w-10 h-10 rounded-lg bg-[#EFEFED] flex items-center justify-center flex-shrink-0"><span class="ms-nav-tab" style="color:var(--text)">storefront</span></span>
         <div class="flex-1">
-          <p class="text-base font-bold text-[#1C1C1E]">関連業者</p>
-          <p class="text-xs text-[#6B7280] mt-[2px]">不用品回収・引越しなど便利なサービス</p>
+          <p class="text-base font-bold text-[var(--ink)]">関連業者</p>
+          <p class="text-xs text-[var(--muted)] mt-[2px]">不用品回収・引越しなど便利なサービス</p>
         </div>
-        <span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>
+        <span class="ms-nav" style="font-size:20px;color:var(--muted)">chevron_right</span>
       </button>
 
 
       <!-- 法的ページ -->
       <div class="border-t border-black/[0.06] mt-2 pt-2 px-6 pb-4 flex flex-wrap gap-x-4 gap-y-1">
-        <a href="/privacy" class="text-xs text-[#6B7280] hover:underline">プライバシーポリシー</a>
-        <a href="/about"   class="text-xs text-[#6B7280] hover:underline">運営者情報</a>
-        <a href="/ads"     class="text-xs text-[#6B7280] hover:underline">広告・アフィリエイトについて</a>
+        <a href="/privacy" class="text-xs text-[var(--muted)] hover:underline">プライバシーポリシー</a>
+        <a href="/about"   class="text-xs text-[var(--muted)] hover:underline">運営者情報</a>
+        <a href="/ads"     class="text-xs text-[var(--muted)] hover:underline">広告・アフィリエイトについて</a>
       </div>
 
     </div>
@@ -592,7 +601,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button onclick="closeFAQ()" aria-label="閉じる"
               class="w-11 h-11 rounded-full bg-black/[0.07] flex items-center justify-center
                      border-none cursor-pointer font-sans flex-shrink-0">
-        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+        <span class="ms-nav" style="font-size:22px;color:var(--text)">close</span>
       </button>
     </div>
     <div id="faq-content" class="overflow-y-auto flex-1"
@@ -615,7 +624,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button onclick="closeRulesSheet()" aria-label="閉じる"
               class="w-11 h-11 rounded-full bg-black/[0.07] flex items-center justify-center
                      border-none cursor-pointer font-sans flex-shrink-0">
-        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+        <span class="ms-nav" style="font-size:22px;color:var(--text)">close</span>
       </button>
     </div>
     <div id="rules-sheet-body" class="overflow-y-auto flex-1"
@@ -638,10 +647,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button onclick="closeVendor()" aria-label="閉じる"
               class="w-11 h-11 rounded-full bg-black/[0.07] flex items-center justify-center
                      border-none cursor-pointer font-sans flex-shrink-0">
-        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+        <span class="ms-nav" style="font-size:22px;color:var(--text)">close</span>
       </button>
     </div>
-    <p class="text-2xs text-[#6B7280] px-6 pb-3 flex-shrink-0">不用品回収・引越し・便利屋などのサービスです</p>
+    <p class="text-2xs text-[var(--muted)] px-6 pb-3 flex-shrink-0">不用品回収・引越し・便利屋などのサービスです</p>
     <div class="overflow-y-auto flex-1 px-6" style="padding-bottom:calc(24px + var(--safe-b))">
       <div id="vendor-grid" class="grid grid-cols-2 gap-3 pb-4"></div>
     </div>
@@ -662,7 +671,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button onclick="closeContact()" aria-label="閉じる"
               class="w-11 h-11 rounded-full bg-black/[0.07] flex items-center justify-center
                      border-none cursor-pointer font-sans flex-shrink-0">
-        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+        <span class="ms-nav" style="font-size:22px;color:var(--text)">close</span>
       </button>
     </div>
     <div id="contact-sheet-rows" class="overflow-y-auto flex-1"
@@ -683,12 +692,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="flex items-center justify-between px-6 pb-4 flex-shrink-0">
       <div>
         <h2 class="text-xl font-extrabold tracking-tight flex items-center gap-2"><span class="ms-nav" style="color:#5A8800">translate</span> 言語設定</h2>
-        <p class="text-2xs text-[#6B7280] mt-[3px]">Google 翻訳で自動翻訳します</p>
+        <p class="text-2xs text-[var(--muted)] mt-[3px]">Google 翻訳で自動翻訳します</p>
       </div>
       <button onclick="closeLanguageSheet()" aria-label="閉じる"
               class="w-11 h-11 rounded-full bg-black/[0.07] flex items-center justify-center
                      border-none cursor-pointer font-sans flex-shrink-0">
-        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+        <span class="ms-nav" style="font-size:22px;color:var(--text)">close</span>
       </button>
     </div>
     <div id="language-list" class="overflow-y-auto flex-1"
@@ -728,7 +737,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button onclick="closeDayDetail()" aria-label="閉じる"
               class="w-11 h-11 rounded-full bg-black/[0.07] flex items-center justify-center
                      border-none cursor-pointer font-sans flex-shrink-0">
-        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+        <span class="ms-nav" style="font-size:22px;color:var(--text)">close</span>
       </button>
     </div>
     <div id="day-detail-content" class="overflow-y-auto flex-1 px-4"
@@ -746,7 +755,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- 上部広告 -->
   <div id="ad-top"
        class="w-full h-14 bg-black/[0.035] rounded-2xl
-              flex items-center justify-center text-2xs text-[#6B7280] tracking-widest"
+              flex items-center justify-center text-2xs text-[var(--muted)] tracking-widest"
        role="complementary" aria-label="広告">広告（320×50）</div>
 
   <!-- ==========================================================
@@ -769,13 +778,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             style="border:2px solid var(--brand);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">
       <div class="flex items-center gap-3">
         <div class="flex-shrink-0">
-          <p class="text-[11px] font-extrabold text-[#6B7280] tracking-wider uppercase">今日のごみ</p>
-          <p id="today-strip-date" class="text-[18px] font-extrabold text-[#1C1C1E] mt-[1px] leading-tight"></p>
+          <p class="text-[11px] font-extrabold text-[var(--muted)] tracking-wider uppercase">今日のごみ</p>
+          <p id="today-strip-date" class="text-[18px] font-extrabold text-[var(--ink)] mt-[1px] leading-tight"></p>
         </div>
         <div id="today-strip-types" class="flex-1 flex items-center gap-2 flex-wrap min-w-0"></div>
       </div>
       <p id="today-strip-cutoff" class="is-hidden"
-         style="font-size:13px;font-weight:500;color:#6B7280;border-top:1px solid rgba(0,0,0,0.08);padding-top:10px"></p>
+         style="font-size:13px;font-weight:500;color:var(--muted);border-top:1px solid rgba(0,0,0,0.08);padding-top:10px"></p>
     </button>
 
     <!-- ② カレンダー（月間グリッド・DS.md 2-4-4） -->
@@ -785,22 +794,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- 月ナビ -->
       <div class="flex items-center justify-between mb-4">
         <button onclick="prevMonth()" aria-label="前の月"
-                class="w-11 h-11 rounded-[10px] bg-white
-                       text-[#636366] flex items-center justify-center
-                       cursor-pointer hover:bg-white active:bg-white font-sans" style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24);">
+                class="w-11 h-11 rounded-[14px] bg-white
+                       text-[var(--text)] flex items-center justify-center
+                       cursor-pointer hover:bg-white active:bg-white font-sans" style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);">
           <span class="ms-nav" style="font-size:24px">chevron_left</span>
         </button>
         <h2 id="cal-month-label" class="text-xl font-extrabold tracking-tight whitespace-nowrap" aria-live="polite"></h2>
         <button onclick="nextMonth()" aria-label="次の月"
-                class="w-11 h-11 rounded-[10px] bg-white
-                       text-[#636366] flex items-center justify-center
-                       cursor-pointer hover:bg-white active:bg-white font-sans" style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24);">
+                class="w-11 h-11 rounded-[14px] bg-white
+                       text-[var(--text)] flex items-center justify-center
+                       cursor-pointer hover:bg-white active:bg-white font-sans" style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);">
           <span class="ms-nav" style="font-size:24px;">chevron_right</span>
         </button>
       </div>
 
       <!-- 曜日ヘッダー -->
-      <div class="grid grid-cols-7 text-center text-xs font-bold text-[#6B7280] mb-1" aria-hidden="true">
+      <div class="grid grid-cols-7 text-center text-xs font-bold text-[var(--muted)] mb-1" aria-hidden="true">
         <span class="text-[#C94B2A]">日</span><span>月</span><span>火</span><span>水</span><span>木</span><span>金</span><span class="text-[#3A5BB8]">土</span>
       </div>
 
@@ -810,9 +819,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <!-- 地区未選択 -->
       <div id="cal-no-area" class="is-hidden text-center py-10 px-6">
-        <span class="ms-nav block mb-3" style="font-size:40px;color:#6B7280" aria-hidden="true">location_off</span>
-        <p class="text-base font-bold text-[#636366]">地区を選択してください</p>
-        <p class="text-xs text-[#6B7280] mt-1">右上 ☰ メニューから設定できます</p>
+        <span class="ms-nav block mb-3" style="font-size:40px;color:var(--muted)" aria-hidden="true">location_off</span>
+        <p class="text-base font-bold text-[var(--text)]">地区を選択してください</p>
+        <p class="text-xs text-[var(--muted)] mt-1">右上 ☰ メニューから設定できます</p>
         <button onclick="openSheet()"
                 class="mt-4 inline-flex items-center gap-1 bg-[var(--brand)] text-white
                        border-none rounded-full px-5 h-11 font-sans text-sm font-bold
@@ -846,13 +855,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                placeholder="ごみの名前で検索…"
                autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"
                oninput="onSearch(this.value)"
-               class="flex-1 min-w-0 border-none outline-none text-[17px] font-bold text-[#1C1C1E]
-                      bg-transparent font-sans caret-brand placeholder:text-[#6B7280] placeholder:font-bold">
+               class="flex-1 min-w-0 border-none outline-none text-[17px] font-bold text-[var(--ink)]
+                      bg-transparent font-sans caret-brand placeholder:text-[var(--muted)] placeholder:font-bold">
         <button id="search-clear-btn" onclick="clearSearch()" type="button" aria-label="検索をクリア"
                 style="display:none"
                 class="w-11 h-11 rounded-full border-none bg-black/[0.07]
                        flex items-center justify-center cursor-pointer flex-shrink-0 font-sans">
-          <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+          <span class="ms-nav" style="font-size:22px;color:var(--text)">close</span>
         </button>
       </div>
       </div>
@@ -864,7 +873,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ③ 五十音一覧ラベル（枠の外） -->
     <p id="search-index-label"
        class="is-hidden"
-       style="font-size:13px;font-weight:700;color:#6B7280;letter-spacing:.06em;
+       style="font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.06em;
               padding-left:4px;margin-top:20px"></p>
 
     <!-- ④ 五十音ジャンプナビ（sticky固定・JSが動的に描画。DS.md 2-4-3。
@@ -890,14 +899,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="width:64px;height:64px;background:#E0FAF1;border-radius:50%;display:flex;align-items:center;justify-content:center">
           <span class="ms-cat" style="font-size:32px;color:var(--brand)" aria-hidden="true">redeem</span>
         </div>
-        <h2 style="font-size:18px;font-weight:700;color:#1C1C1E;margin:0">お得情報は準備中です</h2>
-        <p style="font-size:14px;color:#636366;line-height:1.8;margin:0">
+        <h2 style="font-size:18px;font-weight:700;color:var(--ink);margin:0">お得情報は準備中です</h2>
+        <p style="font-size:14px;color:var(--text);line-height:1.8;margin:0">
           引越しの一括見積もりや不用品回収、<br>
           ごみ出しに役立つグッズの紹介など、<br>
           くらしに役立つ情報を近日公開予定です。
         </p>
-        <span style="display:inline-flex;align-items:center;gap:6px;background:#F0F2F5;color:#636366;font-size:12px;font-weight:700;padding:6px 14px;border-radius:99px;margin-top:4px">
-          <span class="ms-nav" style="font-size:15px;color:#6B7280" aria-hidden="true">schedule</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;background:#F0F2F5;color:var(--text);font-size:12px;font-weight:700;padding:6px 14px;border-radius:99px;margin-top:4px">
+          <span class="ms-nav" style="font-size:15px;color:var(--muted)" aria-hidden="true">schedule</span>
           近日公開
         </span>
       </div>
@@ -918,8 +927,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div style="min-height:90px;background:#F0F2F5;border-radius:8px;
                 display:flex;flex-direction:column;align-items:center;
                 justify-content:center;gap:4px">
-      <span class="ms-nav" style="font-size:22px;color:#6B7280" aria-hidden="true">campaign</span>
-      <span style="font-size:11px;color:#6B7280">広告</span>
+      <span class="ms-nav" style="font-size:22px;color:var(--muted)" aria-hidden="true">campaign</span>
+      <span style="font-size:11px;color:var(--muted)">広告</span>
     </div>
   </div>
 
@@ -940,7 +949,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button onclick="closeItemDetail()" aria-label="閉じる"
               class="w-11 h-11 rounded-full bg-black/[0.07] flex items-center justify-center
                      border-none cursor-pointer font-sans flex-shrink-0">
-        <span class="ms-nav" style="font-size:22px;color:#636366">close</span>
+        <span class="ms-nav" style="font-size:22px;color:var(--text)">close</span>
       </button>
     </div>
     <div id="item-detail-body"
@@ -1008,16 +1017,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 ============================================================ -->
 <footer class="text-center px-4"
         style="background:var(--bg-content);padding-top:20px;padding-bottom:calc(64px + 24px + var(--safe-b))">
-  <p class="text-[11px] text-[#6B7280] leading-relaxed">
+  <p class="text-[11px] text-[var(--muted)] leading-relaxed">
     出典：
     <a id="citation-link" href="#"
        target="_blank" rel="noopener"
-       class="underline text-[#6B7280] hover:text-[#636366]">
+       class="underline text-[var(--muted)] hover:text-[var(--text)]">
       公式ホームページ
     </a><br>
     <span id="citation-note">本サイトは非公式サイトです</span>
   </p>
-  <p class="text-[11px] text-[#6B7280] mt-2">© 2026 YOUSENA</p>
+  <p class="text-[11px] text-[var(--muted)] mt-2">© 2026 YOUSENA</p>
 </footer>
 
 <!-- ============================================================

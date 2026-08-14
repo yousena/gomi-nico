@@ -242,9 +242,9 @@ function showError(msg) {
   el.innerHTML = `
     <div class="text-center px-6 py-12">
       <div class="mb-4"><span class="ms-nav" style="font-size:48px;color:var(--c-status-warn)">warning</span></div>
-      <p class="font-bold text-[#1C1C1E] mb-2">データを読み込めませんでした</p>
-      <p class="text-xs text-[#636366]">${msg}</p>
-      <p class="text-[11px] text-[#6B7280] mt-2 leading-relaxed">
+      <p class="font-bold text-[var(--ink)] mb-2">データを読み込めませんでした</p>
+      <p class="text-xs text-[var(--text)]">${msg}</p>
+      <p class="text-[11px] text-[var(--muted)] mt-2 leading-relaxed">
         ローカルサーバーが必要です:<br>
         <code class="bg-black/[0.06] px-[6px] py-[2px] rounded">Live Server で開いてください</code>
       </p>
@@ -410,7 +410,7 @@ function applyAdType() {
     return;
   }
   if (type === 'official') {
-    if (anchor) anchor.innerHTML = `<div class="text-[10px] text-[#6B7280]">${DATA.name} 公式情報</div>`;
+    if (anchor) anchor.innerHTML = `<div class="text-[10px] text-[var(--muted)]">${DATA.name} 公式情報</div>`;
   }
 }
 
@@ -437,19 +437,19 @@ function handleMenuBackdrop(e) {
 function buildAreaSheet() {
   const scroll = document.getElementById('sheet-scroll');
   scroll.innerHTML = DATA.area_groups.map(g => `
-    ${g.keys.length > 1 ? `<p class="text-[10px] font-extrabold text-[#6B7280] tracking-[0.12em] uppercase pt-4 px-2 pb-2">${g.label}</p>` : ''}
+    ${g.keys.length > 1 ? `<p class="text-[10px] font-extrabold text-[var(--muted)] tracking-[0.12em] uppercase pt-4 px-2 pb-2">${g.label}</p>` : ''}
     ${g.keys.map(k => {
       const area = DATA.areas[k];
       if (!area) return '';
       return `
         <button class="area-option flex items-center justify-between w-full text-left
                        px-4 py-4 rounded-2xl border-none bg-transparent
-                       font-sans text-base font-medium text-[#1C1C1E]
+                       font-sans text-base font-medium text-[var(--ink)]
                        cursor-pointer min-h-[48px]"
                 data-key="${k}" onclick="selectArea('${k}')" type="button">
           <span>
             ${area.name}
-            ${area.note ? `<span class="text-xs text-[#6B7280] block mt-[1px] font-normal">${area.note}</span>` : ''}
+            ${area.note ? `<span class="text-xs text-[var(--muted)] block mt-[1px] font-normal">${area.note}</span>` : ''}
           </span>
           <span class="ms-nav area-check-icon" aria-hidden="true">check_circle</span>
         </button>`;
@@ -715,7 +715,7 @@ function renderTodayStrip() {
   const typesEl  = document.getElementById('today-strip-types');
   const cutoffEl = document.getElementById('today-strip-cutoff');
   if (!areaKey) {
-    typesEl.innerHTML = `<span class="text-sm text-[#6B7280]">地区を選択してください</span>`;
+    typesEl.innerHTML = `<span class="text-sm text-[var(--muted)]">地区を選択してください</span>`;
     if (cutoffEl) cutoffEl.classList.add('is-hidden');
     return;
   }
@@ -736,11 +736,11 @@ function renderTodayStrip() {
       // カテゴリ名の列挙は括弧の入れ子で読みにくいとの指摘（2026-07-24）を受け削除。日数のみ表示する
       typesEl.innerHTML = `
         <div style="display:flex;flex-direction:column;gap:2px">
-          <span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:var(--brand);vertical-align:-3px">check_circle</span>今日は収集なし</span>
-          <span class="text-[12px] text-[#6B7280]">次の収集: ${diffLabel}</span>
+          <span class="text-sm font-bold text-[var(--text)] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:var(--brand);vertical-align:-3px">check_circle</span>今日は収集なし</span>
+          <span class="text-[12px] text-[var(--muted)]">次の収集: ${diffLabel}</span>
         </div>`;
     } else {
-      typesEl.innerHTML = `<span class="text-sm font-bold text-[#636366] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:var(--brand);vertical-align:-3px">check_circle</span>今日は収集なし</span>`;
+      typesEl.innerHTML = `<span class="text-sm font-bold text-[var(--text)] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:var(--brand);vertical-align:-3px">check_circle</span>今日は収集なし</span>`;
     }
     return;
   }
@@ -829,7 +829,7 @@ function closeDayDetail() {
 function buildDayDetailHTML(areaKey, date) {
   if (!areaKey) {
     return `<div class="text-center py-10 px-6">
-      <p class="text-base font-bold text-[#636366]">地区を選択してください</p>
+      <p class="text-base font-bold text-[var(--text)]">地区を選択してください</p>
       <button onclick="closeDayDetail();openSheet();"
               class="mt-4 inline-flex items-center gap-1 bg-[var(--brand)] text-white
                      border-none rounded-full px-5 h-11 font-sans text-sm font-bold cursor-pointer"
@@ -839,8 +839,8 @@ function buildDayDetailHTML(areaKey, date) {
   if (isYearEnd(date)) {
     return `<div class="text-center py-10 px-6">
       <span class="text-[48px] block mb-3">🎍</span>
-      <p class="text-base font-bold text-[#636366]">年末年始休止</p>
-      <p class="text-xs text-[#6B7280] mt-1">${DATA.collection_settings.yearend_ranges
+      <p class="text-base font-bold text-[var(--text)]">年末年始休止</p>
+      <p class="text-xs text-[var(--muted)] mt-1">${DATA.collection_settings.yearend_ranges
         .map(r => `${r.month === 11 ? 12 : 1}/${r.days.join('・')}`).join('〜')}は収集お休みです</p>
     </div>`;
   }
@@ -848,8 +848,8 @@ function buildDayDetailHTML(areaKey, date) {
   if (fixedHoliday) {
     return `<div class="text-center py-10 px-6">
       <span class="text-[48px] block mb-3">🎌</span>
-      <p class="text-base font-bold text-[#636366]">${fixedHoliday.label}のため収集お休み</p>
-      <p class="text-xs text-[#6B7280] mt-1">この日は通常の収集日でも収集がありません</p>
+      <p class="text-base font-bold text-[var(--text)]">${fixedHoliday.label}のため収集お休み</p>
+      <p class="text-xs text-[var(--muted)] mt-1">この日は通常の収集日でも収集がありません</p>
     </div>`;
   }
 
@@ -857,7 +857,7 @@ function buildDayDetailHTML(areaKey, date) {
   if (types.length === 0) {
     return `<div class="text-center py-10 px-6">
       <span class="text-[48px] block mb-3">😊</span>
-      <p class="text-base font-bold text-[#636366]">この日の収集はありません</p>
+      <p class="text-base font-bold text-[var(--text)]">この日の収集はありません</p>
     </div>`;
   }
 
@@ -874,7 +874,7 @@ function buildDayDetailHTML(areaKey, date) {
       catIcon(t.type, s.img ? 56 : 30) + '</div>' +
       '<div style="flex:1">' +
       '<p style="font-size:18px;font-weight:700;color:' + s.fg + ';line-height:1.2">' + t.label + '</p>' +
-      (t.how ? '<p style="font-size:12px;margin-top:4px;line-height:1.5;color:#636366">' + t.how + '</p>' : '') +
+      (t.how ? '<p style="font-size:12px;margin-top:4px;line-height:1.5;color:var(--text)">' + t.how + '</p>' : '') +
       '</div>' +
       (hasDetail ? '<span class="ms-nav" style="color:' + s.fg + ';opacity:0.5;font-size:20px;flex-shrink:0">chevron_right</span>' : '') +
       '</' + tag + '>';
@@ -999,8 +999,8 @@ function renderCategoryLegend(seenTypes) {
   seenTypes.forEach((label, typeKey) => {
     rows += '<div style="display:flex;align-items:center;gap:8px;padding:4px 0">' +
       '<span style="width:20px;height:20px;display:flex;align-items:center;justify-content:center;flex-shrink:0">' + catIcon(typeKey, 20) + '</span>' +
-      '<span style="color:#6B7280;font-size:13px">…</span>' +
-      '<span style="font-size:13px;font-weight:700;color:#1C1C1E">' + categoryShortLabel(typeKey) + '</span>' +
+      '<span style="color:var(--muted);font-size:13px">…</span>' +
+      '<span style="font-size:13px;font-weight:700;color:var(--ink)">' + categoryShortLabel(typeKey) + '</span>' +
       '</div>';
   });
   el.innerHTML = rows;
@@ -1057,10 +1057,10 @@ function renderQuickTags() {
   var el = document.getElementById('search-quick');
   if (!el) return;
   el.innerHTML =
-    '<p style="font-size:13px;font-weight:700;color:#6B7280;letter-spacing:.06em;margin-bottom:10px;">よく検索されるごみ</p>' +
+    '<p style="font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:10px;">よく検索されるごみ</p>' +
     '<div style="display:flex;flex-wrap:wrap;gap:8px;padding:0 2px">' +
     QUICK_TAGS.map(function(q) {
-      return '<button style="padding:8px 16px;background:#fff;border:none;border-radius:20px;font-size:14px;font-weight:700;color:#1C1C1E;cursor:pointer;font-family:inherit;white-space:nowrap;min-height:40px;line-height:1.2;" class="shadow-card" onclick="openItemDetail(\'' + q + '\')">' + q + '</button>';
+      return '<button style="padding:8px 16px;background:#fff;border:none;border-radius:20px;font-size:14px;font-weight:700;color:var(--ink);cursor:pointer;font-family:inherit;white-space:nowrap;min-height:40px;line-height:1.2;" class="shadow-card" onclick="openItemDetail(\'' + q + '\')">' + q + '</button>';
     }).join('') +
     '</div>';
 }
@@ -1098,7 +1098,7 @@ function renderSearchIndex() {
     // 行見出し（白背景・ブランドカラーテキスト）
     html += '<div style="padding:0 16px;height:54px;display:flex;align-items:center;gap:8px">' +
       '<span style="font-size:16px;font-weight:700;color:var(--brand)">' + rowLabel + '</span>' +
-      '<span style="font-size:12px;color:#6B7280">' + items.length + '件</span>' +
+      '<span style="font-size:12px;color:var(--muted)">' + items.length + '件</span>' +
       '</div>';
 
     // アイテム一覧
@@ -1111,9 +1111,9 @@ function renderSearchIndex() {
         'padding:14px 16px;border:none;border-top:1px solid rgba(0,0,0,0.04);' +
         'background:#fff;font-family:inherit;cursor:pointer;min-height:54px;-webkit-tap-highlight-color:transparent" ' +
         'onclick="openItemDetail(\'' + safe + '\')">' +
-        '<span style="flex:1;font-size:16px;font-weight:500;color:#1C1C1E">' + item.name + '</span>' +
+        '<span style="flex:1;font-size:16px;font-weight:500;color:var(--ink)">' + item.name + '</span>' +
         '<span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:4px;flex-shrink:0;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + '">' + catIcon(item.category, st.img ? 28 : 18) + '</span>' +
-        '<span class="ms-nav" style="color:#6B7280;font-size:20px;margin-left:2px">chevron_right</span>' +
+        '<span class="ms-nav" style="color:var(--muted);font-size:20px;margin-left:2px">chevron_right</span>' +
         '</button>';
     });
 
@@ -1260,7 +1260,7 @@ function onSearch(query) {
 
   if (hits.length === 0) {
     trackNoResult(q);
-    bodyEl.innerHTML = '<div style="text-align:center;padding:40px 16px"><span style="font-size:36px;display:block;margin-bottom:12px">🤔</span><p style="font-size:14px;font-weight:700;color:#636366">「' + q + '」は見つかりませんでした</p><p style="font-size:12px;color:#6B7280;margin-top:8px">市の公式サイトでご確認ください</p></div>';
+    bodyEl.innerHTML = '<div style="text-align:center;padding:40px 16px"><span style="font-size:36px;display:block;margin-bottom:12px">🤔</span><p style="font-size:14px;font-weight:700;color:var(--text)">「' + q + '」は見つかりませんでした</p><p style="font-size:12px;color:var(--muted);margin-top:8px">市の公式サイトでご確認ください</p></div>';
     return;
   }
 
@@ -1278,10 +1278,10 @@ function renderSearchItemHtml(item) {
   var safeName = item.name.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
   return '<button onclick="openItemDetail(\'' + safeName + '\')" style="display:block;padding:14px 16px;border-radius:20px;background:#fff;border:1px solid rgba(0,0,0,0.07);width:100%;text-align:left;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">' +
     '<div style="display:flex;align-items:center;gap:8px">' +
-    '<p style="font-size:16px;font-weight:700;color:#1C1C1E;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + item.name + '</p>' +
+    '<p style="font-size:16px;font-weight:700;color:var(--ink);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + item.name + '</p>' +
     '<span style="display:inline-flex;align-items:center;padding:3px 9px;border-radius:999px;font-size:10px;font-weight:700;white-space:nowrap;flex-shrink:0;background:' + st.iconBg + ';color:' + st.fg + ';border:1.5px solid ' + st.fg + '33">' + cat + '</span>' +
-    '<span class="ms-nav" style="color:#6B7280;font-size:18px;flex-shrink:0">chevron_right</span></div>' +
-    (item.note ? '<p style="font-size:12px;color:#636366;margin-top:5px;line-height:1.5">※ ' + item.note + '</p>' : '') +
+    '<span class="ms-nav" style="color:var(--muted);font-size:18px;flex-shrink:0">chevron_right</span></div>' +
+    (item.note ? '<p style="font-size:12px;color:var(--text);margin-top:5px;line-height:1.5">※ ' + item.note + '</p>' : '') +
     '</button>';
 }
 
@@ -1294,7 +1294,7 @@ function renderSearchPage(bodyEl) {
 
   var itemsHtml = slice.map(renderSearchItemHtml).join('');
   var moreBtn   = rest > 0
-    ? '<button onclick="loadMoreSearch()" style="display:block;width:100%;margin-top:4px;padding:14px;border-radius:20px;background:#fff;border:1.5px solid rgba(0,0,0,0.10);font-size:14px;font-weight:700;color:#636366;cursor:pointer;font-family:inherit">もっと' + Math.min(rest, SEARCH_PAGE_SIZE) + '件見る（残り' + rest + '件）</button>'
+    ? '<button onclick="loadMoreSearch()" style="display:block;width:100%;margin-top:4px;padding:14px;border-radius:20px;background:#fff;border:1.5px solid rgba(0,0,0,0.10);font-size:14px;font-weight:700;color:var(--text);cursor:pointer;font-family:inherit">もっと' + Math.min(rest, SEARCH_PAGE_SIZE) + '件見る（残り' + rest + '件）</button>'
     : '';
 
   if (!bodyEl) bodyEl = document.getElementById('search-body');
@@ -1347,7 +1347,7 @@ function openItemDetail(name) {
         catIcon(item.category, st.img ? 56 : 30) +
       '</div>' +
       '<div style="flex:1;min-width:0">' +
-        '<p style="font-size:18px;font-weight:700;color:#1C1C1E;margin:0 0 7px;line-height:1.2">' + item.name + '</p>' +
+        '<p style="font-size:18px;font-weight:700;color:var(--ink);margin:0 0 7px;line-height:1.2">' + item.name + '</p>' +
         '<span style="display:inline-flex;align-items:center;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:700;background:' + st.bg + ';color:' + st.fg + '">' +
           catLabel +
         '</span>' +
@@ -1359,15 +1359,15 @@ function openItemDetail(name) {
 
   if (item.note) {
     html += '<div style="background:var(--bg-neutral-soft);border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
-      '<p style="font-size:11px;font-weight:700;color:#6B7280;margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
-      '<p style="font-size:14px;color:#1C1C1E;line-height:1.7;margin:0">' + item.note + '</p>' +
+      '<p style="font-size:11px;font-weight:700;color:var(--muted);margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
+      '<p style="font-size:14px;color:var(--ink);line-height:1.7;margin:0">' + item.note + '</p>' +
     '</div>';
   }
 
   if (item.source === 'estimated') {
     html += '<div style="display:flex;align-items:flex-start;gap:6px;margin-bottom:16px;padding:10px 12px;background:var(--bg-neutral-soft);border-radius:10px;border:1px dashed rgba(0,0,0,0.15)">' +
-      '<span class="ms-nav" style="font-size:16px;color:#6B7280;flex-shrink:0;line-height:1.4">info</span>' +
-      '<p style="font-size:12px;color:#6B7280;line-height:1.6;margin:0">' + DATA.name + 'の公式資料に記載がないため、一般的な分別ルールをもとにした参考情報です。正式な確認は<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="color:var(--brand);text-decoration:underline;font-weight:700">問い合わせ先</a>へ</p>' +
+      '<span class="ms-nav" style="font-size:16px;color:var(--muted);flex-shrink:0;line-height:1.4">info</span>' +
+      '<p style="font-size:12px;color:var(--muted);line-height:1.6;margin:0">' + DATA.name + 'の公式資料に記載がないため、一般的な分別ルールをもとにした参考情報です。正式な確認は<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="color:var(--brand);text-decoration:underline;font-weight:700">問い合わせ先</a>へ</p>' +
     '</div>';
   }
 
@@ -1381,14 +1381,14 @@ function openItemDetail(name) {
     }).join('');
     html += '<div style="background:var(--brand-soft);border-left:4px solid var(--brand);border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
       '<p style="font-size:11px;font-weight:700;color:var(--brand-strong);margin:0 0 6px;letter-spacing:.06em">どうすればいい？</p>' +
-      '<p style="font-size:14px;color:#1C1C1E;line-height:1.7;margin:0 0 12px">' + guide.body + '</p>' +
+      '<p style="font-size:14px;color:var(--ink);line-height:1.7;margin:0 0 12px">' + guide.body + '</p>' +
       '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
         linkChips +
         '<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="display:inline-flex;align-items:center;gap:4px;background:#fff;color:var(--brand-strong);border:1px solid var(--brand-border);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:700;text-decoration:none">' +
           '<span class="ms-nav" style="font-size:14px">call</span>問い合わせ先' +
         '</a>' +
       '</div>' +
-      (guide.sellable ? '<p style="font-size:12px;color:#6B7280;margin:10px 0 0;line-height:1.6">動作するものは<a href="/articles/kaden#uru-yuzuru" style="color:var(--brand-strong);text-decoration:underline;font-weight:700">売る・譲るという選択肢</a>もあります</p>' : '') +
+      (guide.sellable ? '<p style="font-size:12px;color:var(--muted);margin:10px 0 0;line-height:1.6">動作するものは<a href="/articles/kaden#uru-yuzuru" style="color:var(--brand-strong);text-decoration:underline;font-weight:700">売る・譲るという選択肢</a>もあります</p>' : '') +
     '</div>';
   }
 
@@ -1424,16 +1424,16 @@ function renderContact() {
   var contacts = (DATA && DATA.contact) || [];
 
   var cardsHtml = contacts.length === 0
-    ? '<div style="padding:24px;text-align:center"><p style="font-size:13px;color:#6B7280">問い合わせ先情報が見つかりませんでした。</p></div>'
+    ? '<div style="padding:24px;text-align:center"><p style="font-size:13px;color:var(--muted)">問い合わせ先情報が見つかりませんでした。</p></div>'
     : contacts.map(function(c, i) {
     var last = i === contacts.length - 1;
     return '<div style="padding:16px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.05)') + '">' +
-      (c.note ? '<p style="font-size:11px;color:#6B7280;margin-bottom:4px">' + c.note + '</p>' : '') +
-      '<p style="font-size:15px;font-weight:700;color:#1C1C1E;margin-bottom:8px">' + c.name + '</p>' +
+      (c.note ? '<p style="font-size:11px;color:var(--muted);margin-bottom:4px">' + c.note + '</p>' : '') +
+      '<p style="font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px">' + c.name + '</p>' +
       '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px">' +
       '<div>' +
-      '<p style="font-size:12px;color:#636366"><span style="color:#6B7280">電話番号</span>　' + c.tel + '</p>' +
-      (c.hours ? '<p style="font-size:12px;color:#636366;margin-top:2px"><span style="color:#6B7280">受付時間</span>　' + c.hours + '</p>' : '') +
+      '<p style="font-size:12px;color:var(--text)"><span style="color:var(--muted)">電話番号</span>　' + c.tel + '</p>' +
+      (c.hours ? '<p style="font-size:12px;color:var(--text);margin-top:2px"><span style="color:var(--muted)">受付時間</span>　' + c.hours + '</p>' : '') +
       '</div>' +
       '<a href="tel:' + c.tel + '" style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid var(--brand-soft-strong)">' +
       '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">call</span>電話する</a>' +
@@ -1441,15 +1441,15 @@ function renderContact() {
   }).join('');
 
   // セクション見出し（ごみに関するお問い合わせ）
-  var sectionHeadGomi = '<p style="font-size:12px;font-weight:700;color:#6B7280;padding:16px 20px 8px">ごみの分別・収集について（' + DATA.name + '）</p>';
+  var sectionHeadGomi = '<p style="font-size:12px;font-weight:700;color:var(--muted);padding:16px 20px 8px">ごみの分別・収集について（' + DATA.name + '）</p>';
 
   // サイトについてのお問い合わせ（ユウセナ・運営者マター）
-  var sectionHeadSite = '<p style="font-size:12px;font-weight:700;color:#6B7280;padding:20px 20px 8px">サイトの内容・不具合について（運営者）</p>';
+  var sectionHeadSite = '<p style="font-size:12px;font-weight:700;color:var(--muted);padding:20px 20px 8px">サイトの内容・不具合について（運営者）</p>';
   var siteContact = '<div style="background:#fff;border-radius:20px;margin:0 16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden;padding:16px 20px">' +
-    '<p style="font-size:12px;color:#1C1C1E;line-height:1.7;margin-bottom:12px">掲載情報の誤り・古い情報や、画面表示の不具合などはこちらからお知らせください。</p>' +
+    '<p style="font-size:12px;color:var(--ink);line-height:1.7;margin-bottom:12px">掲載情報の誤り・古い情報や、画面表示の不具合などはこちらからお知らせください。</p>' +
     '<a href="mailto:contact@gomi-nico.jp" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid var(--brand-soft-strong)">' +
     '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">mail</span>メールする</a>' +
-    '<p style="font-size:11px;color:#6B7280;margin-top:8px">contact@gomi-nico.jp　※返信にお時間をいただく場合があります</p>' +
+    '<p style="font-size:11px;color:var(--muted);margin-top:8px">contact@gomi-nico.jp　※返信にお時間をいただく場合があります</p>' +
     '</div>';
 
   // 免責・出典（サイト全般についての注記）
@@ -1462,21 +1462,21 @@ function renderContact() {
 
     // 本サイトについて
     '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
-    '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">本サイトについて</p>' +
-    '<p style="font-size:12px;color:#1C1C1E;line-height:1.7">本サイト「gomi-nico.jp」は、' + DATA.name + 'が運営する<strong>公式サイトではありません</strong>。市民のための非公式の情報サイトです。</p>' +
+    '<p style="font-size:11px;font-weight:700;color:var(--muted);margin-bottom:4px">本サイトについて</p>' +
+    '<p style="font-size:12px;color:var(--ink);line-height:1.7">本サイト「gomi-nico.jp」は、' + DATA.name + 'が運営する<strong>公式サイトではありません</strong>。市民のための非公式の情報サイトです。</p>' +
     '</div>' +
 
     // 情報について
     '<div style="padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.05)">' +
-    '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">情報について</p>' +
-    '<p style="font-size:12px;color:#1C1C1E;line-height:1.7">' + DATA.name + 'ホームページの公開情報を参考に作成されています。月1回程度で更新していますが、最新情報は公式サイトをご確認ください。</p>' +
+    '<p style="font-size:11px;font-weight:700;color:var(--muted);margin-bottom:4px">情報について</p>' +
+    '<p style="font-size:12px;color:var(--ink);line-height:1.7">' + DATA.name + 'ホームページの公開情報を参考に作成されています。月1回程度で更新していますが、最新情報は公式サイトをご確認ください。</p>' +
     '<p style="font-size:11px;margin-top:6px"><a href="' + (DATA.official_url || '#') + '" target="_blank" rel="noopener" style="color:var(--brand);text-decoration:underline">出典：' + DATA.name + 'ホームページ（ごみ・リサイクル）</a></p>' +
     '</div>' +
 
     // 免責事項
     '<div style="padding:12px 16px">' +
-    '<p style="font-size:11px;font-weight:700;color:#6B7280;margin-bottom:4px">免責事項</p>' +
-    '<p style="font-size:12px;color:#636366;line-height:1.7">当サイトの情報に基づいて行った行為により損害が発生した場合、当サイト運営者は責任を負いかねます。</p>' +
+    '<p style="font-size:11px;font-weight:700;color:var(--muted);margin-bottom:4px">免責事項</p>' +
+    '<p style="font-size:12px;color:var(--text);line-height:1.7">当サイトの情報に基づいて行った行為により損害が発生した場合、当サイト運営者は責任を負いかねます。</p>' +
     '</div>' +
 
     '</div>';
@@ -1491,10 +1491,10 @@ function renderAffiliate() {
   var el = document.getElementById('vendor-grid');
   if (!el || !(DATA && DATA.affiliate_items)) return;
   el.innerHTML = DATA.affiliate_items.map(function(item) {
-    return '<a href="' + item.url + '" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-4 px-3 bg-black/[0.025] rounded-[20px] no-underline text-[#1C1C1E] active:scale-[0.97] transition-transform">' +
+    return '<a href="' + item.url + '" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2 p-4 px-3 bg-black/[0.025] rounded-[20px] no-underline text-[var(--ink)] active:scale-[0.97] transition-transform">' +
       '<span class="text-[28px]">' + item.icon + '</span>' +
       '<span class="text-xs font-extrabold text-center">' + item.name + '</span>' +
-      '<span class="text-[10px] text-[#6B7280]">' + (item.sub || '楽天で探す →') + '</span></a>';
+      '<span class="text-[10px] text-[var(--muted)]">' + (item.sub || '楽天で探す →') + '</span></a>';
   }).join('');
 }
 
@@ -1506,7 +1506,7 @@ function renderFAQ() {
     var bc = i < items.length - 1 ? 'border-b border-black/[0.04]' : '';
     return '<div class="px-6 py-4 ' + bc + '">' +
       '<p class="text-sm font-extrabold mb-[6px]" style="color:var(--brand)">Q. ' + item.q + '</p>' +
-      '<p class="text-sm text-[#636366] leading-relaxed">A. ' + item.a + '</p></div>';
+      '<p class="text-sm text-[var(--text)] leading-relaxed">A. ' + item.a + '</p></div>';
   }).join('');
   // 記事への内部リンク（テレビ・パソコン等、収集に出せない品目の詳しい記事）
   html += '<div class="px-6 pt-2 pb-5">' +
@@ -1538,8 +1538,8 @@ function openLanguageSheet() {
         'background:' + (active ? 'var(--brand-soft)' : 'transparent') + ';font-family:inherit;cursor:pointer">' +
         '<span style="font-size:24px">' + lang.flag + '</span>' +
         '<span style="flex:1;font-size:16px;font-weight:' + (active ? 800 : 500) + ';' +
-        'color:' + (active ? 'var(--brand)' : '#1C1C1E') + '">' + lang.label + '</span>' +
-        (active ? '<span style="font-size:18px;color:var(--brand);font-weight:700">✓</span>' : '<span class="ms-nav" style="font-size:20px;color:#6B7280">chevron_right</span>') +
+        'color:' + (active ? 'var(--brand)' : 'var(--ink)') + '">' + lang.label + '</span>' +
+        (active ? '<span style="font-size:18px;color:var(--brand);font-weight:700">✓</span>' : '<span class="ms-nav" style="font-size:20px;color:var(--muted)">chevron_right</span>') +
         '</button>';
     }).join('');
     // イベント委任でクリックを処理
@@ -1637,16 +1637,16 @@ function renderNoticePanel() {
     var installBtnHtml = window._deferredPrompt
       ? '<button onclick="installA2hs()" style="margin-top:12px;padding:9px 18px;background:var(--brand);color:#fff;border:none;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">ホーム画面に追加する</button>'
       : isIOS
-        ? '<p style="font-size:13px;color:#1C1C1E;line-height:1.75;">画面下の<strong style="">共有ボタン<img src="/icons/share.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:-5px"></strong>をタップし、<br><strong>ホーム画面に追加</strong>を選んでください。</p>'
-        : '<p style="font-size:13px;color:#1C1C1E;line-height:1.75;">お使いのブラウザで対応していません</p>';
+        ? '<p style="font-size:13px;color:var(--ink);line-height:1.75;">画面下の<strong style="">共有ボタン<img src="/icons/share.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:-5px"></strong>をタップし、<br><strong>ホーム画面に追加</strong>を選んでください。</p>'
+        : '<p style="font-size:13px;color:var(--ink);line-height:1.75;">お使いのブラウザで対応していません</p>';
     html += '<div style="position:relative;background:var(--brand-soft);border-radius:20px;padding:18px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start" class="shadow-card">' +
       '<img src="/icons/icon-192.png" style="width:44px;height:44px;border-radius:10px;flex-shrink:0" alt="">' +
       '<div style="flex:1;min-width:0">' +
-        '<p style="font-size:18px;font-weight:700;color:#1C1C1E;margin-bottom:4px">ホーム画面に追加</p>' +
-        '<p style="font-size:13px;color:#1C1C1E;line-height:1.75">アプリのようにすぐ起動できます。</p>' +
+        '<p style="font-size:18px;font-weight:700;color:var(--ink);margin-bottom:4px">ホーム画面に追加</p>' +
+        '<p style="font-size:13px;color:var(--ink);line-height:1.75">アプリのようにすぐ起動できます。</p>' +
         installBtnHtml +
       '</div>' +
-      '<button onclick="dismissA2hs();renderNoticePanel()" style="position:absolute;top:18px;right:20px;background:none;border:none;color:#6B7280;font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">×</button>' +
+      '<button onclick="dismissA2hs();renderNoticePanel()" style="position:absolute;top:18px;right:20px;background:none;border:none;color:var(--muted);font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">×</button>' +
     '</div>';
   }
 
@@ -1654,7 +1654,7 @@ function renderNoticePanel() {
   // v1.46: 全件を1つの枠にまとめず、1件=1枚の独立したカードにする（境目が薄くて
   // わかりにくいとの指摘。DS.md 1-4節参照）
   if (features.notice !== false && notices.length > 0) {
-    html += '<h2 style="font-size:16px;font-weight:700;color:#1C1C1E;margin:0 0 8px">お知らせ</h2>' +
+    html += '<h2 style="font-size:16px;font-weight:700;color:var(--ink);margin:0 0 8px">お知らせ</h2>' +
       '<div style="display:flex;flex-direction:column;gap:14px">';
     notices.forEach(function(n) {
       var link = n.url
@@ -1665,16 +1665,16 @@ function renderNoticePanel() {
           '<span class="ms-nav" style="font-size:15px">open_in_new</span></a>'
         : '';
       html += '<div style="background:#fff;border-radius:20px;padding:18px;" class="shadow-card">' +
-        '<p style="font-size:12px;font-weight:700;color:#6B7280;line-height:1.5;margin-bottom:6px">' + n.date + '</p>' +
-        '<p style="font-size:18px;font-weight:700;color:#1C1C1E;line-height:1.5;margin-bottom:8px">' + n.title + '</p>' +
-        '<p style="font-size:14px;color:#1C1C1E;line-height:1.75">' + n.body + '</p>' +
+        '<p style="font-size:12px;font-weight:700;color:var(--muted);line-height:1.5;margin-bottom:6px">' + n.date + '</p>' +
+        '<p style="font-size:18px;font-weight:700;color:var(--ink);line-height:1.5;margin-bottom:8px">' + n.title + '</p>' +
+        '<p style="font-size:14px;color:var(--ink);line-height:1.75">' + n.body + '</p>' +
         link +
         '</div>';
     });
     html += '</div>';
   }
 
-  el.innerHTML = html || '<p style="text-align:center;color:#6B7280;padding:40px 20px;font-size:14px">お知らせはありません</p>';
+  el.innerHTML = html || '<p style="text-align:center;color:var(--muted);padding:40px 20px;font-size:14px">お知らせはありません</p>';
 }
 
 /* =====================================================
@@ -1690,7 +1690,7 @@ function renderRulesSheet() {
   var ruleItems = rules.items || [];
 
   if (ruleItems.length === 0) {
-    el.innerHTML = '<p style="text-align:center;color:#6B7280;padding:40px 24px;font-size:14px">ルール情報はありません</p>';
+    el.innerHTML = '<p style="text-align:center;color:var(--muted);padding:40px 24px;font-size:14px">ルール情報はありません</p>';
     return;
   }
 
@@ -1698,8 +1698,8 @@ function renderRulesSheet() {
     var last = i === ruleItems.length - 1;
     return '<div style="display:flex;gap:14px;padding:16px 24px;' + (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.04)') + '">' +
       '<span class="ms-nav" style="font-size:22px;color:var(--brand);flex-shrink:0;margin-top:1px">' + item.icon + '</span>' +
-      '<div><p style="font-size:16px;font-weight:700;color:#1C1C1E;margin-bottom:6px">' + item.title + '</p>' +
-      '<p style="font-size:16px;color:#636366;line-height:1.5">' + item.body + '</p></div>' +
+      '<div><p style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:6px">' + item.title + '</p>' +
+      '<p style="font-size:16px;color:var(--text);line-height:1.5">' + item.body + '</p></div>' +
       '</div>';
   }).join('');
 }
@@ -1767,18 +1767,18 @@ function renderProducts(typeKey, iconBg, fg) {
       '<div style="height:68px;background:' + iconBg + ';display:flex;align-items:center;justify-content:center">' +
       '<span class="ms-nav" style="font-size:30px;color:' + fg + '">shopping_bag</span></div>' +
       '<div style="padding:8px 8px 10px">' +
-      '<p style="font-size:11px;font-weight:700;color:#1C1C1E;line-height:1.4;margin-bottom:6px">' + p.name + '</p>' +
+      '<p style="font-size:11px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:6px">' + p.name + '</p>' +
       '<span style="font-size:10px;color:#BF0000;font-weight:700">楽天で見る ›</span>' +
       '</div></a>';
   }).join('');
   return '<div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(0,0,0,0.07)">' +
     '<div style="display:flex;align-items:center;gap:6px;margin-bottom:12px">' +
-    '<span class="ms-nav" style="font-size:15px;color:#6B7280">shopping_bag</span>' +
-    '<p style="font-size:13px;font-weight:700;color:#636366">関連グッズ</p></div>' +
+    '<span class="ms-nav" style="font-size:15px;color:var(--muted)">shopping_bag</span>' +
+    '<p style="font-size:13px;font-weight:700;color:var(--text)">関連グッズ</p></div>' +
     '<div style="display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;' +
     '-webkit-overflow-scrolling:touch;scrollbar-width:none">' +
     cards + '</div>' +
-    '<p style="font-size:10px;color:#6B7280;margin-top:8px">※広告・アフィリエイトリンクを含みます</p>' +
+    '<p style="font-size:10px;color:var(--muted);margin-top:8px">※広告・アフィリエイトリンクを含みます</p>' +
     '</div>';
 }
 
@@ -1800,14 +1800,14 @@ function openCategoryDetail(typeKey, year, month, day) {
           '<div style="width:52px;height:52px;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:' + (st.keepBg ? st.iconBg : 'transparent') + ';flex-shrink:0">' +
           catIcon(typeKey, st.img ? 52 : 28) + '</div>' +
           '<div style="min-width:0">' +
-          (dateLabel ? '<p style="font-size:12px;font-weight:700;color:#6B7280;margin-bottom:1px">' + dateLabel + '</p>' : '') +
+          (dateLabel ? '<p style="font-size:12px;font-weight:700;color:var(--muted);margin-bottom:1px">' + dateLabel + '</p>' : '') +
           '<h2 style="font-size:20px;font-weight:700;color:' + st.fg + '">' + (cat.label || typeKey) + '</h2>' +
           '</div>' +
         '</div>' +
         '<button onclick="closeCategoryDetail()" aria-label="閉じる" ' +
           'style="width:40px;height:40px;border-radius:50%;border:none;background:rgba(0,0,0,0.07);' +
           'display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;font-family:inherit">' +
-          '<span class="ms-nav" style="font-size:22px;color:#636366">close</span>' +
+          '<span class="ms-nav" style="font-size:22px;color:var(--text)">close</span>' +
         '</button>' +
       '</div>';
   }
@@ -1822,14 +1822,14 @@ function openCategoryDetail(typeKey, year, month, day) {
     return '<div style="margin-bottom:20px">' +
       '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">' +
       '<span class="ms-nav" style="font-size:20px;color:' + color + '">' + icon + '</span>' +
-      '<p style="font-size:18px;font-weight:700;color:#1C1C1E">' + title + '</p></div>' +
+      '<p style="font-size:18px;font-weight:700;color:var(--ink)">' + title + '</p></div>' +
       '<div style="background:#FFFFFF;border-radius:12px;overflow:hidden">' +
       items.map(function(item, i) {
         var last = i === items.length - 1;
         return '<div style="display:flex;align-items:flex-start;gap:10px;padding:12px 14px;' +
           (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.05)') + '">' +
           '<span class="ms-nav" style="font-size:16px;color:' + color + ';flex-shrink:0;line-height:1.5">check</span>' +
-          '<p style="font-size:16px;color:#1C1C1E;line-height:1.5">' + item + '</p></div>';
+          '<p style="font-size:16px;color:var(--ink);line-height:1.5">' + item + '</p></div>';
       }).join('') +
       '</div></div>';
   }
@@ -1851,8 +1851,8 @@ function openCategoryDetail(typeKey, year, month, day) {
   // 関連する検索へのショートカット
   html += '<button onclick="closeCategoryDetail();showPanel(\'search\');quickSearch(this.getAttribute(\'data-q\'))" data-q="' + (cat.label || '') + '"' +
     ' style="width:100%;padding:14px;background:#fff;border:1.5px solid rgba(0,0,0,0.10);border-radius:12px;' +
-    'font-size:14px;font-weight:700;color:#1C1C1E;cursor:pointer;font-family:inherit;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:6px">' +
-    '<span class="ms-nav" style="font-size:18px;color:#636366">search</span>' +
+    'font-size:14px;font-weight:700;color:var(--ink);cursor:pointer;font-family:inherit;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:6px">' +
+    '<span class="ms-nav" style="font-size:18px;color:var(--text)">search</span>' +
     '「' + (cat.label || typeKey) + '」でごみを検索</button>';
 
   // 関連グッズ（アフィリエイト）
