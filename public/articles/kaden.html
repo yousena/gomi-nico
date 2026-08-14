@@ -48,21 +48,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        borderRadius: { '2xl': '20px' },
+      },
+    },
+  };
+</script>
 <style>
-  html, body { background:#FBFAF4; font-family: -apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; color:#1C1C1E; }
+  :root {
+    --ink:   #1E1D1C;
+    --text:  #686461;
+    --muted: #76706B;
+  }
+  html, body { background:#FBFAF4; font-family: -apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; color:var(--ink); }
   a { color:#00A86B; }
   .eyebrow   { font-size:13px; font-weight:800; color:#00A86B; letter-spacing:.16em; margin-bottom:10px; }
-  .sec-title { font-family:'Zen Kaku Gothic New',-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; font-size:23px; font-weight:900; color:#1C1C1E; line-height:1.5; letter-spacing:-.01em; }
+  .sec-title { font-family:'Zen Kaku Gothic New',-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; font-size:23px; font-weight:900; color:var(--ink); line-height:1.5; letter-spacing:-.01em; }
   .body-p    { font-size:16px; color:#4B4B4D; line-height:1.9; }
   .icon-tile { border-radius:14px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
   .ms  { font-family:'Material Symbols Rounded'; font-variation-settings:'FILL' 1,'wght' 500; }
   .ms-o{ font-family:'Material Symbols Rounded'; font-variation-settings:'FILL' 0,'wght' 400; }
-  .step-num { width:24px;height:24px;border-radius:50%;background:#6B7280;color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
-  .cite { font-size:12px;color:#6B7280;line-height:1.8;margin-top:12px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.06); }
+  .step-num { width:24px;height:24px;border-radius:50%;background:var(--muted);color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
+  .cite { font-size:12px;color:var(--muted);line-height:1.8;margin-top:12px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.06); }
   .cite a { color:#00885A;font-weight:700; }
   .tag-chip { display:inline-flex;align-items:center;background:#F0F2F5;color:#4B4B4D;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700; }
-  mark { background:#EAF6F0; color:#1C1C1E; padding:1px 4px; border-radius:4px; font-weight:700; }
-  .ad-slot { background:#F0F2F5;border-radius:8px;padding:24px 16px;text-align:center;font-size:12px;color:#6B7280;margin:32px 0; }
+  mark { background:#EAF6F0; color:var(--ink); padding:1px 4px; border-radius:4px; font-weight:700; }
+  .ad-slot { background:#F0F2F5;border-radius:8px;padding:24px 16px;text-align:center;font-size:12px;color:var(--muted);margin:32px 0; }
 
   /* ── h2装飾（吹き出しの丸2つ・v1.12で確定） ── */
   .h2-decor { position:relative; background:#00885A; color:#fff; border-radius:10px; font-size:18px; padding:12px 16px; font-weight:700; margin-bottom:48px; }
@@ -92,12 +106,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- ══════════════ パンくずリスト ══════════════ -->
   <nav aria-label="パンくずリスト" class="mb-4">
-    <ol class="flex flex-wrap items-center gap-1" style="font-size:12px;color:#6B7280;list-style:none;padding:0;margin:0">
-      <li><a href="/" class="no-underline" style="color:#6B7280">ごみニコ</a></li>
+    <ol class="flex flex-wrap items-center gap-1" style="font-size:12px;color:var(--muted);list-style:none;padding:0;margin:0">
+      <li><a href="/" class="no-underline" style="color:var(--muted)">ごみニコ</a></li>
       <li aria-hidden="true">›</li>
-      <li><a href="/articles/" class="no-underline" style="color:#6B7280">記事一覧</a></li>
+      <li><a href="/articles/" class="no-underline" style="color:var(--muted)">記事一覧</a></li>
       <li aria-hidden="true">›</li>
-      <li aria-current="page" style="color:#1C1C1E;font-weight:700">こんな時どうする？出せないごみの処分方法</li>
+      <li aria-current="page" style="color:var(--ink);font-weight:700">こんな時どうする？出せないごみの処分方法</li>
     </ol>
   </nav>
 
@@ -107,7 +121,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="tag-chip" style="background:rgba(0,168,107,0.12);color:#00885A">困ったときの処分ガイド</span>
     </div>
     <h1 class="sec-title mb-3">こんな時どうする？<br>出せないごみの処分方法</h1>
-    <div class="flex items-center gap-3 mb-5" style="font-size:12px;color:#6B7280">
+    <div class="flex items-center gap-3 mb-5" style="font-size:12px;color:var(--muted)">
       <span class="flex items-center gap-1"><span class="ms-o" style="font-size:14px">calendar_today</span>2026年7月更新</span>
       <span class="flex items-center gap-1"><span class="ms-o" style="font-size:14px">schedule</span>読了目安 8分</span>
     </div>
@@ -154,16 +168,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ══════════════ 目次 ══════════════ -->
     <nav aria-label="目次" class="rounded-2xl shadow-sm px-5 py-4 mb-8" style="background:#F0F2F5">
-      <h2 class="text-[15px] font-extrabold text-[#1C1C1E] mb-3" style="letter-spacing:.08em">目次</h2>
+      <h2 class="text-[15px] font-extrabold text-[var(--ink)] mb-3" style="letter-spacing:.08em">目次</h2>
       <ol class="flex flex-col gap-1">
-        <li><a href="#kaden4" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[#1C1C1E] no-underline"><span class="text-[#6B7280] text-[13px] font-extrabold w-5">01</span>テレビ・冷蔵庫・洗濯機・エアコン</a></li>
-        <li><a href="#pc" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[#1C1C1E] no-underline"><span class="text-[#6B7280] text-[13px] font-extrabold w-5">02</span>パソコン</a></li>
-        <li><a href="#kogata" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[#1C1C1E] no-underline"><span class="text-[#6B7280] text-[13px] font-extrabold w-5">03</span>スマホ・小型家電</a></li>
-        <li><a href="#shoukaki" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[#1C1C1E] no-underline"><span class="text-[#6B7280] text-[13px] font-extrabold w-5">04</span>消火器</a></li>
-        <li><a href="#piano" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[#1C1C1E] no-underline"><span class="text-[#6B7280] text-[13px] font-extrabold w-5">05</span>ピアノ</a></li>
-        <li><a href="#tire" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[#1C1C1E] no-underline"><span class="text-[#6B7280] text-[13px] font-extrabold w-5">06</span>タイヤ・バイク</a></li>
-        <li><a href="#houritsu" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[#1C1C1E] no-underline"><span class="text-[#6B7280] text-[13px] font-extrabold w-5">07</span>関連の法律まとめ</a></li>
-        <li><a href="#uru-yuzuru" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[#1C1C1E] no-underline"><span class="text-[#6B7280] text-[13px] font-extrabold w-5">08</span>売る・譲るという選択肢</a></li>
+        <li><a href="#kaden4" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[var(--ink)] no-underline"><span class="text-[var(--muted)] text-[13px] font-extrabold w-5">01</span>テレビ・冷蔵庫・洗濯機・エアコン</a></li>
+        <li><a href="#pc" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[var(--ink)] no-underline"><span class="text-[var(--muted)] text-[13px] font-extrabold w-5">02</span>パソコン</a></li>
+        <li><a href="#kogata" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[var(--ink)] no-underline"><span class="text-[var(--muted)] text-[13px] font-extrabold w-5">03</span>スマホ・小型家電</a></li>
+        <li><a href="#shoukaki" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[var(--ink)] no-underline"><span class="text-[var(--muted)] text-[13px] font-extrabold w-5">04</span>消火器</a></li>
+        <li><a href="#piano" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[var(--ink)] no-underline"><span class="text-[var(--muted)] text-[13px] font-extrabold w-5">05</span>ピアノ</a></li>
+        <li><a href="#tire" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[var(--ink)] no-underline"><span class="text-[var(--muted)] text-[13px] font-extrabold w-5">06</span>タイヤ・バイク</a></li>
+        <li><a href="#houritsu" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[var(--ink)] no-underline"><span class="text-[var(--muted)] text-[13px] font-extrabold w-5">07</span>関連の法律まとめ</a></li>
+        <li><a href="#uru-yuzuru" class="flex items-center gap-2 py-2 text-[15px] font-bold text-[var(--ink)] no-underline"><span class="text-[var(--muted)] text-[13px] font-extrabold w-5">08</span>売る・譲るという選択肢</a></li>
       </ol>
     </nav>
 
@@ -174,40 +188,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <svg viewBox="0 0 194 58" width="200" height="60" aria-hidden="true" style="display:block;margin:0 auto 20px">
         <!-- テレビ -->
         <rect x="2" y="16" width="34" height="22" rx="3" fill="#EAF6F0" stroke="#00885A" stroke-width="2"/>
-        <rect x="15" y="40" width="8" height="4" fill="#6B7280"/>
-        <rect x="9" y="45" width="20" height="3" rx="1.5" fill="#6B7280"/>
+        <rect x="15" y="40" width="8" height="4" fill="var(--muted)"/>
+        <rect x="9" y="45" width="20" height="3" rx="1.5" fill="var(--muted)"/>
         <!-- 冷蔵庫 -->
-        <rect x="48" y="12" width="30" height="40" rx="4" fill="#F0F2F5" stroke="#6B7280" stroke-width="2"/>
-        <rect x="48" y="25" width="30" height="2" fill="#6B7280"/>
-        <rect x="54" y="16" width="2" height="6" rx="1" fill="#6B7280"/>
-        <rect x="54" y="29" width="2" height="9" rx="1" fill="#6B7280"/>
+        <rect x="48" y="12" width="30" height="40" rx="4" fill="#F0F2F5" stroke="var(--muted)" stroke-width="2"/>
+        <rect x="48" y="25" width="30" height="2" fill="var(--muted)"/>
+        <rect x="54" y="16" width="2" height="6" rx="1" fill="var(--muted)"/>
+        <rect x="54" y="29" width="2" height="9" rx="1" fill="var(--muted)"/>
         <!-- 洗濯機 -->
         <rect x="91" y="4" width="38" height="44" rx="4" fill="#EAF6F0" stroke="#00885A" stroke-width="2"/>
         <rect x="95" y="8" width="30" height="6" rx="2" fill="#00885A"/>
         <circle cx="122" cy="11" r="1.6" fill="#fff"/>
         <circle cx="110" cy="30" r="11" fill="#fff" stroke="#00885A" stroke-width="2"/>
         <circle cx="110" cy="30" r="6" fill="none" stroke="#00885A" stroke-width="1.5"/>
-        <rect x="97" y="48" width="4" height="4" fill="#6B7280"/>
-        <rect x="119" y="48" width="4" height="4" fill="#6B7280"/>
+        <rect x="97" y="48" width="4" height="4" fill="var(--muted)"/>
+        <rect x="119" y="48" width="4" height="4" fill="var(--muted)"/>
         <!-- エアコン -->
-        <rect x="140" y="20" width="48" height="15" rx="4" fill="#F0F2F5" stroke="#6B7280" stroke-width="2"/>
-        <rect x="144" y="24" width="40" height="2" fill="#6B7280"/>
-        <rect x="144" y="28" width="40" height="2" fill="#6B7280"/>
-        <path d="M146 38 q4 6 0 12 M158 38 q4 6 0 12 M170 38 q4 6 0 12" stroke="#6B7280" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <rect x="140" y="20" width="48" height="15" rx="4" fill="#F0F2F5" stroke="var(--muted)" stroke-width="2"/>
+        <rect x="144" y="24" width="40" height="2" fill="var(--muted)"/>
+        <rect x="144" y="28" width="40" height="2" fill="var(--muted)"/>
+        <path d="M146 38 q4 6 0 12 M158 38 q4 6 0 12 M170 38 q4 6 0 12" stroke="var(--muted)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
       </svg>
 
       <div>
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
         <p class="body-p mb-4">「<mark>家電リサイクル法</mark>」により、テレビ・冷蔵庫/冷凍庫・洗濯機/衣類乾燥機・エアコンの4品目は、市区町村の通常収集の対象外と法律で決められています。資源として再商品化することが義務づけられているためです。</p>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">出し方（3つのルート）</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">出し方（3つのルート）</h3>
         <div class="flex flex-col gap-3 mb-4">
           <div class="flex gap-3"><span class="step-num mt-[1px]">A</span><div><p class="body-p">購入した店がわかる場合は、そのお店に引き取りを依頼する（法律上、<mark>引取義務</mark>があります）</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒購入した店舗を調べてみましょう</p></div></div>
           <div class="flex gap-3"><span class="step-num mt-[1px]">B</span><div><p class="body-p">購入店が不明な場合は、お住まいの自治体が案内する方法（買い替え店での下取り・依頼・自治体指定の収集運搬業者など）で処分する</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒お住まいの自治体へ連絡して確認しましょう</p></div></div>
           <div class="flex gap-3"><span class="step-num mt-[1px]">C</span><div><p class="body-p">「郵便局振込方式」でリサイクル料金を支払い、指定引取場所に自分で持ち込む方法もある</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒郵便局の窓口（または郵便局内のATM）で相談しましょう</p></div></div>
         </div>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">費用の目安</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">費用の目安</h3>
         <p class="body-p mb-4">リサイクル料金は品目・メーカーによって異なり、改定されることもあります。別途、収集運搬料金がかかるのが一般的です。正確な金額は家電リサイクル券センターの料金表で確認しましょう。</p>
 
         <p class="body-p">動作するものは、<a href="#uru-yuzuru" style="color:#00885A;font-weight:700;text-decoration:underline">売る・譲るという選択肢</a>もあります。</p>
@@ -223,21 +237,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <svg viewBox="0 0 88 62" width="70" height="49" aria-hidden="true" style="display:block;margin:0 auto 20px">
         <rect x="10" y="2" width="68" height="42" rx="4" fill="#EAF6F0" stroke="#00885A" stroke-width="2"/>
         <rect x="16" y="8" width="56" height="30" rx="2" fill="#00885A"/>
-        <path d="M4 46 L84 46 L88 56 Q88 60 84 60 L4 60 Q0 60 0 56 Z" fill="#F0F2F5" stroke="#6B7280" stroke-width="2"/>
-        <rect x="34" y="52" width="18" height="4" rx="2" fill="#6B7280"/>
+        <path d="M4 46 L84 46 L88 56 Q88 60 84 60 L4 60 Q0 60 0 56 Z" fill="#F0F2F5" stroke="var(--muted)" stroke-width="2"/>
+        <rect x="34" y="52" width="18" height="4" rx="2" fill="var(--muted)"/>
       </svg>
 
       <div>
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
         <p class="body-p mb-4">「<mark>資源有効利用促進法</mark>」により、家庭用パソコンはメーカーによる回収・リサイクルが義務づけられています。基板や部品に有用な金属資源が含まれているためです。</p>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">出し方</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">出し方</h3>
         <div class="flex flex-col gap-3 mb-4">
-          <div class="flex gap-3"><span class="step-num mt-[1px]">A</span><div><p class="body-p">本体に「PCリサイクルマーク」がついていれば、メーカーに回収を申し込む（Web申込可）と無償で回収してもらえる</p><p class="body-p" style="margin-top:8px;padding-left:12px;border-left:2px solid #F0F2F5;color:#6B7280;font-size:15px">↳ 申込後に送られてくる「エコゆうパック伝票」を使い、梱包して郵便局窓口へ持ち込むか、戸口回収を依頼する</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒まず本体にリサイクルマークがあるか確認しましょう</p></div></div>
+          <div class="flex gap-3"><span class="step-num mt-[1px]">A</span><div><p class="body-p">本体に「PCリサイクルマーク」がついていれば、メーカーに回収を申し込む（Web申込可）と無償で回収してもらえる</p><p class="body-p" style="margin-top:8px;padding-left:12px;border-left:2px solid #F0F2F5;color:var(--muted);font-size:15px">↳ 申込後に送られてくる「エコゆうパック伝票」を使い、梱包して郵便局窓口へ持ち込むか、戸口回収を依頼する</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒まず本体にリサイクルマークがあるか確認しましょう</p></div></div>
           <div class="flex gap-3"><span class="step-num mt-[1px]">B</span><div><p class="body-p">マークがない・メーカーが不明な場合は「パソコン3R推進協会」に問い合わせる。自治体の小型家電回収ボックスが使えるケースもある</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒<a href="https://www.pc3r.jp/" target="_blank" rel="noopener" style="color:#00885A;text-decoration:underline">パソコン3R推進協会（pc3r.jp）</a>で問い合わせてみましょう</p></div></div>
         </div>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">費用の目安</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">費用の目安</h3>
         <p class="body-p mb-4">PCリサイクルマークがある機種は無償。マークがない古い機種（2003年10月以前発売など）は有償になる場合があります。</p>
 
         <p class="body-p">動作するものは、<a href="#uru-yuzuru" style="color:#00885A;font-weight:700;text-decoration:underline">売る・譲るという選択肢</a>もあります。</p>
@@ -254,25 +268,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <rect x="8" y="4" width="22" height="44" rx="5" fill="#EAF6F0" stroke="#00885A" stroke-width="2"/>
         <rect x="11" y="9" width="16" height="30" rx="1" fill="#00885A"/>
         <circle cx="19" cy="44" r="2" fill="#00885A"/>
-        <rect x="48" y="10" width="10" height="8" rx="2" fill="#F0F2F5" stroke="#6B7280" stroke-width="2"/>
-        <rect x="44" y="16" width="40" height="28" rx="4" fill="#F0F2F5" stroke="#6B7280" stroke-width="2"/>
-        <rect x="76" y="20" width="6" height="4" fill="#6B7280"/>
-        <circle cx="64" cy="30" r="9" fill="#fff" stroke="#6B7280" stroke-width="2"/>
-        <circle cx="64" cy="30" r="4" fill="#6B7280"/>
+        <rect x="48" y="10" width="10" height="8" rx="2" fill="#F0F2F5" stroke="var(--muted)" stroke-width="2"/>
+        <rect x="44" y="16" width="40" height="28" rx="4" fill="#F0F2F5" stroke="var(--muted)" stroke-width="2"/>
+        <rect x="76" y="20" width="6" height="4" fill="var(--muted)"/>
+        <circle cx="64" cy="30" r="9" fill="#fff" stroke="var(--muted)" stroke-width="2"/>
+        <circle cx="64" cy="30" r="4" fill="var(--muted)"/>
       </svg>
 
       <div>
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
         <p class="body-p mb-4">スマートフォン・デジタルカメラ・ゲーム機などの小型家電には、金・銅やレアメタルといった有用な金属が使われています。「<mark>小型家電リサイクル法</mark>」により、これらを資源として回収するルートが用意されています。また、内蔵のリチウムイオン電池を入れたまま不燃ごみに出すと、<mark>収集車やごみ処理施設で発火事故を起こす</mark>ことがあるため注意が必要です。</p>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">出し方</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">出し方</h3>
         <div class="flex flex-col gap-3 mb-4">
           <div class="flex gap-3"><span class="step-num mt-[1px]">A</span><div><p class="body-p">お住まいの自治体に「小型家電回収ボックス」がないか確認する（役所・公民館・家電量販店などに設置されていることが多い）</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒お住まいの自治体サイトで設置場所を調べてみましょう</p></div></div>
           <div class="flex gap-3"><span class="step-num mt-[1px]">B</span><div><p class="body-p">ボックスに入らない大きさのものは、自治体の不燃ごみ・粗大ごみとして案内される場合があるので窓口に確認する</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒お住まいの自治体のごみ担当窓口に確認しましょう</p></div></div>
           <div class="flex gap-3"><span class="step-num mt-[1px]">C</span><div><p class="body-p">スマホやパソコンなど個人情報が入った機器は、データを消去してから出す</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒出す前に必ずデータ消去を済ませておきましょう</p></div></div>
         </div>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">費用の目安</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">費用の目安</h3>
         <p class="body-p mb-4">回収ボックスでの回収は無料の自治体がほとんどです。設置場所や対象品目は自治体によって異なります。</p>
 
         <p class="body-p">動作するものは、<a href="#uru-yuzuru" style="color:#00885A;font-weight:700;text-decoration:underline">売る・譲るという選択肢</a>もあります。</p>
@@ -289,32 +303,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="sec-title h2-decor">消火器のごみの出し方は？</h2>
 
       <svg viewBox="0 0 60 90" width="48" height="72" aria-hidden="true" style="display:block;margin:0 auto 20px">
-        <path d="M24 8 q6 -8 12 0" stroke="#6B7280" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-        <rect x="18" y="8" width="24" height="12" rx="3" fill="#6B7280"/>
-        <rect x="40" y="10" width="14" height="4" rx="2" fill="#6B7280"/>
-        <circle cx="54" cy="12" r="3" fill="none" stroke="#6B7280" stroke-width="2"/>
-        <rect x="22" y="18" width="16" height="12" rx="3" fill="#F0F2F5" stroke="#6B7280" stroke-width="2"/>
-        <rect x="14" y="28" width="32" height="54" rx="8" fill="#F0F2F5" stroke="#6B7280" stroke-width="2"/>
-        <circle cx="30" cy="34" r="5" fill="#fff" stroke="#6B7280" stroke-width="1.5"/>
-        <line x1="30" y1="34" x2="33" y2="31" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M14 40 q-10 4 -8 20" stroke="#6B7280" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-        <rect x="2" y="58" width="8" height="6" rx="2" fill="#6B7280"/>
-        <rect x="14" y="54" width="32" height="14" fill="#fff" stroke="#6B7280" stroke-width="1"/>
-        <text x="30" y="64" text-anchor="middle" font-size="9" font-weight="900" fill="#1C1C1E" font-family="'Zen Kaku Gothic New',sans-serif">消火器</text>
+        <path d="M24 8 q6 -8 12 0" stroke="var(--muted)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <rect x="18" y="8" width="24" height="12" rx="3" fill="var(--muted)"/>
+        <rect x="40" y="10" width="14" height="4" rx="2" fill="var(--muted)"/>
+        <circle cx="54" cy="12" r="3" fill="none" stroke="var(--muted)" stroke-width="2"/>
+        <rect x="22" y="18" width="16" height="12" rx="3" fill="#F0F2F5" stroke="var(--muted)" stroke-width="2"/>
+        <rect x="14" y="28" width="32" height="54" rx="8" fill="#F0F2F5" stroke="var(--muted)" stroke-width="2"/>
+        <circle cx="30" cy="34" r="5" fill="#fff" stroke="var(--muted)" stroke-width="1.5"/>
+        <line x1="30" y1="34" x2="33" y2="31" stroke="var(--muted)" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M14 40 q-10 4 -8 20" stroke="var(--muted)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <rect x="2" y="58" width="8" height="6" rx="2" fill="var(--muted)"/>
+        <rect x="14" y="54" width="32" height="14" fill="#fff" stroke="var(--muted)" stroke-width="1"/>
+        <text x="30" y="64" text-anchor="middle" font-size="9" font-weight="900" fill="var(--ink)" font-family="'Zen Kaku Gothic New',sans-serif">消火器</text>
       </svg>
 
       <div>
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
         <p class="body-p mb-4">内部に加圧されたガスと薬剤が入っており、収集・処理の過程で破裂する危険があるためです。通常のごみ・不燃ごみには<mark>絶対に出せません</mark>。</p>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">出し方</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">出し方</h3>
         <div class="flex flex-col gap-3 mb-4">
           <div class="flex gap-3"><span class="step-num mt-[1px]">A</span><div><p class="body-p">2010年以降に購入した消火器は、本体に最初から「リサイクルシール」が貼られている</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒まず本体にシールが貼られているか確認しましょう</p></div></div>
           <div class="flex gap-3"><span class="step-num mt-[1px]">B</span><div><p class="body-p">シールがない古い消火器は、消火器の特定窓口（消火器販売店など）でシールを購入し、貼り付ける</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒消火器の購入店や特定窓口を探してみましょう</p></div></div>
           <div class="flex gap-3"><span class="step-num mt-[1px]">C</span><div><p class="body-p">シールを貼った状態で、特定窓口または指定引取場所へ持ち込む</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒シールを貼ってから窓口へ持ち込みましょう</p></div></div>
         </div>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">費用の目安</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">費用の目安</h3>
         <p class="body-p">リサイクルシール代（<mark>数百円程度</mark>）のみで、追加の処理費用はかかりません。収集運搬を依頼する場合は別途費用がかかることがあります。</p>
 
         <div class="cite">出典: <a href="https://www.jfema.or.jp/about/recycling/" target="_blank" rel="noopener">一般社団法人 日本消火器工業会</a> ／ <a href="https://www.ferpc.jp/recycleseal/kind/" target="_blank" rel="noopener">消火器リサイクル推進センター</a></div>
@@ -326,38 +340,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="sec-title h2-decor">ピアノのごみの出し方は？</h2>
 
       <svg viewBox="0 0 90 70" width="80" height="62" aria-hidden="true" style="display:block;margin:0 auto 20px">
-        <path d="M14 4 L60 4 L50 16 L14 16 Z" fill="#F0F2F5" stroke="#6B7280" stroke-width="2"/>
-        <rect x="10" y="16" width="60" height="26" rx="3" fill="#F0F2F5" stroke="#6B7280" stroke-width="2"/>
-        <rect x="10" y="42" width="60" height="12" rx="2" fill="#fff" stroke="#6B7280" stroke-width="2"/>
-        <line x1="18" y1="42" x2="18" y2="54" stroke="#6B7280" stroke-width="1"/>
-        <line x1="26" y1="42" x2="26" y2="54" stroke="#6B7280" stroke-width="1"/>
-        <line x1="34" y1="42" x2="34" y2="54" stroke="#6B7280" stroke-width="1"/>
-        <line x1="42" y1="42" x2="42" y2="54" stroke="#6B7280" stroke-width="1"/>
-        <line x1="50" y1="42" x2="50" y2="54" stroke="#6B7280" stroke-width="1"/>
-        <line x1="58" y1="42" x2="58" y2="54" stroke="#6B7280" stroke-width="1"/>
-        <line x1="66" y1="42" x2="66" y2="54" stroke="#6B7280" stroke-width="1"/>
-        <rect x="17" y="42" width="3" height="7" fill="#6B7280"/>
-        <rect x="25" y="42" width="3" height="7" fill="#6B7280"/>
-        <rect x="41" y="42" width="3" height="7" fill="#6B7280"/>
-        <rect x="49" y="42" width="3" height="7" fill="#6B7280"/>
-        <rect x="57" y="42" width="3" height="7" fill="#6B7280"/>
-        <rect x="16" y="54" width="5" height="12" fill="#6B7280"/>
-        <rect x="64" y="54" width="5" height="12" fill="#6B7280"/>
-        <rect x="38" y="64" width="3" height="5" fill="#6B7280"/>
-        <rect x="45" y="64" width="3" height="5" fill="#6B7280"/>
+        <path d="M14 4 L60 4 L50 16 L14 16 Z" fill="#F0F2F5" stroke="var(--muted)" stroke-width="2"/>
+        <rect x="10" y="16" width="60" height="26" rx="3" fill="#F0F2F5" stroke="var(--muted)" stroke-width="2"/>
+        <rect x="10" y="42" width="60" height="12" rx="2" fill="#fff" stroke="var(--muted)" stroke-width="2"/>
+        <line x1="18" y1="42" x2="18" y2="54" stroke="var(--muted)" stroke-width="1"/>
+        <line x1="26" y1="42" x2="26" y2="54" stroke="var(--muted)" stroke-width="1"/>
+        <line x1="34" y1="42" x2="34" y2="54" stroke="var(--muted)" stroke-width="1"/>
+        <line x1="42" y1="42" x2="42" y2="54" stroke="var(--muted)" stroke-width="1"/>
+        <line x1="50" y1="42" x2="50" y2="54" stroke="var(--muted)" stroke-width="1"/>
+        <line x1="58" y1="42" x2="58" y2="54" stroke="var(--muted)" stroke-width="1"/>
+        <line x1="66" y1="42" x2="66" y2="54" stroke="var(--muted)" stroke-width="1"/>
+        <rect x="17" y="42" width="3" height="7" fill="var(--muted)"/>
+        <rect x="25" y="42" width="3" height="7" fill="var(--muted)"/>
+        <rect x="41" y="42" width="3" height="7" fill="var(--muted)"/>
+        <rect x="49" y="42" width="3" height="7" fill="var(--muted)"/>
+        <rect x="57" y="42" width="3" height="7" fill="var(--muted)"/>
+        <rect x="16" y="54" width="5" height="12" fill="var(--muted)"/>
+        <rect x="64" y="54" width="5" height="12" fill="var(--muted)"/>
+        <rect x="38" y="64" width="3" height="5" fill="var(--muted)"/>
+        <rect x="45" y="64" width="3" height="5" fill="var(--muted)"/>
       </svg>
 
       <div>
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
         <p class="body-p mb-4">ピアノは「<mark>適正処理困難物</mark>」というものに指定されていて、多くの自治体で通常の粗大ごみ収集の対象外となっています（根拠：廃棄物処理法第6条の3）。重さやサイズが大きいうえ、内部のピアノ線の処理が難しいことが理由です。</p>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">出し方</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">出し方</h3>
         <div class="flex flex-col gap-3 mb-4">
           <div class="flex gap-3"><span class="step-num mt-[1px]">A</span><div><p class="body-p">お住まいの自治体のごみ担当窓口に、収集の可否をまず確認する（電子ピアノのみ粗大ごみ対応、という自治体もあります）</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒お住まいの自治体のごみ担当窓口に確認しましょう</p></div></div>
           <div class="flex gap-3"><span class="step-num mt-[1px]">B</span><div><p class="body-p">自治体で扱えない場合は、ピアノ専門の買取・回収業者、または不用品回収業者に依頼する</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒ピアノ専門の買取・回収業者を探してみましょう</p></div></div>
         </div>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">知っておきたいこと</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">知っておきたいこと</h3>
         <p class="body-p">家電やパソコンのような全国統一のリサイクル制度はなく、業者ごとに費用・対応が異なります。状態が良ければ買取・下取りの対象になることもあるため、処分の前に複数社へ相談すると安心です。</p>
 
         <div class="cite">出典: <a href="https://www.env.go.jp/hourei/11/000258.html" target="_blank" rel="noopener">環境省「処理が困難な廃棄物対策について」</a></div>
@@ -369,11 +383,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="sec-title h2-decor">タイヤ・バイクのごみの出し方は？</h2>
 
       <svg viewBox="0 0 130 64" width="112" height="55" aria-hidden="true" style="display:block;margin:0 auto 20px">
-        <circle cx="26" cy="32" r="24" fill="#F0F2F5" stroke="#6B7280" stroke-width="3"/>
-        <circle cx="26" cy="32" r="19" fill="none" stroke="#6B7280" stroke-width="2" stroke-dasharray="2 4"/>
-        <circle cx="26" cy="32" r="10" fill="#fff" stroke="#6B7280" stroke-width="2"/>
-        <circle cx="26" cy="32" r="3" fill="#6B7280"/>
-        <rect x="58" y="37" width="10" height="3" rx="1.5" fill="#6B7280"/>
+        <circle cx="26" cy="32" r="24" fill="#F0F2F5" stroke="var(--muted)" stroke-width="3"/>
+        <circle cx="26" cy="32" r="19" fill="none" stroke="var(--muted)" stroke-width="2" stroke-dasharray="2 4"/>
+        <circle cx="26" cy="32" r="10" fill="#fff" stroke="var(--muted)" stroke-width="2"/>
+        <circle cx="26" cy="32" r="3" fill="var(--muted)"/>
+        <rect x="58" y="37" width="10" height="3" rx="1.5" fill="var(--muted)"/>
         <circle cx="72" cy="40" r="13" fill="#00885A"/>
         <circle cx="72" cy="40" r="8.5" fill="#fff"/>
         <circle cx="110" cy="40" r="13" fill="#00885A"/>
@@ -386,16 +400,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </svg>
 
       <div>
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">なぜ普通のごみに出せないの？</h3>
         <p class="body-p mb-4">廃タイヤも「<mark>適正処理困難物</mark>」に指定されています。ゴムは焼却処理が難しく、埋め立てても分解されにくいため、専用のリサイクルルートで処理する仕組みになっています。バイク本体も同様に、自治体の通常収集の対象外です。</p>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">出し方</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">出し方</h3>
         <div class="flex flex-col gap-3 mb-4">
           <div class="flex gap-3"><span class="step-num mt-[1px]">A</span><div><p class="body-p">タイヤ販売店・カー用品店・ガソリンスタンドは廃タイヤの<mark>引取義務</mark>があるため、そこへ持ち込む（交換とあわせて依頼すると無料になる店も）</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒購入店やカー用品店に連絡しましょう</p></div></div>
           <div class="flex gap-3"><span class="step-num mt-[1px]">B</span><div><p class="body-p">バイク本体は、購入した販売店や、バイク処分の無料回収サービス（二輪車リサイクルシステム対象車種）を利用する</p><p style="font-size:15px;color:#00885A;font-weight:700;margin-top:4px">⇒購入した販売店やバイク処分の回収サービスに相談しましょう</p></div></div>
         </div>
 
-        <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">費用の目安</h3>
+        <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">費用の目安</h3>
         <p class="body-p mb-4">タイヤ1本あたり数百円程度が目安です（ホイール付きは別料金の場合あり）。店舗や地域によって差があるため、事前に確認しましょう。</p>
 
         <p class="body-p">動作するバイクは、<a href="#uru-yuzuru" style="color:#00885A;font-weight:700;text-decoration:underline">売る・譲るという選択肢</a>もあります。</p>
@@ -411,28 +425,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="flex flex-col gap-3">
         <div>
-          <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">家電リサイクル法</h3>
-          <p class="text-[14px] text-[#6B7280] mb-2">テレビ／エアコン／冷蔵庫・冷凍庫／洗濯機・衣類乾燥機</p>
+          <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">家電リサイクル法</h3>
+          <p class="text-[14px] text-[var(--muted)] mb-2">テレビ／エアコン／冷蔵庫・冷凍庫／洗濯機・衣類乾燥機</p>
           <p class="body-p" style="font-size:14px">→ 購入した販売店、または自治体が許可した業者へ</p>
         </div>
         <div>
-          <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">資源有効利用促進法</h3>
-          <p class="text-[14px] text-[#6B7280] mb-2">パソコン本体／ディスプレイ／ノートパソコン</p>
+          <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">資源有効利用促進法</h3>
+          <p class="text-[14px] text-[var(--muted)] mb-2">パソコン本体／ディスプレイ／ノートパソコン</p>
           <p class="body-p" style="font-size:14px">→ 購入したメーカー、またはパソコン3R推進協会へ</p>
         </div>
         <div>
-          <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">小型家電リサイクル法</h3>
-          <p class="text-[14px] text-[#6B7280] mb-2">スマートフォン／デジタルカメラ／ゲーム機 など</p>
+          <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">小型家電リサイクル法</h3>
+          <p class="text-[14px] text-[var(--muted)] mb-2">スマートフォン／デジタルカメラ／ゲーム機 など</p>
           <p class="body-p" style="font-size:14px">→ 自治体の小型家電回収ボックスへ</p>
         </div>
         <div>
-          <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">処理困難ごみ（適正処理困難物）</h3>
-          <p class="text-[14px] text-[#6B7280] mb-2">オートバイ／タイヤ・バンパー等の自動車部品／ピアノ／消火器／浴槽／ブロック／注射針・医療品 など</p>
+          <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">処理困難ごみ（適正処理困難物）</h3>
+          <p class="text-[14px] text-[var(--muted)] mb-2">オートバイ／タイヤ・バンパー等の自動車部品／ピアノ／消火器／浴槽／ブロック／注射針・医療品 など</p>
           <p class="body-p" style="font-size:14px">→ 販売店、または廃棄物処理業者へ委託</p>
         </div>
         <div>
-          <h3 class="text-[16px] font-bold text-[#1C1C1E]" style="border-bottom:2px dotted #6B7280;padding-bottom:8px;margin:32px 0 16px">事業ごみ（自宅兼事務所の方も対象）</h3>
-          <p class="text-[14px] text-[#6B7280] mb-2">自宅を事務所にしている個人事業主・法人も含め、事業活動で出たごみ（一般廃棄物）</p>
+          <h3 class="text-[16px] font-bold text-[var(--ink)]" style="border-bottom:2px dotted var(--muted);padding-bottom:8px;margin:32px 0 16px">事業ごみ（自宅兼事務所の方も対象）</h3>
+          <p class="text-[14px] text-[var(--muted)] mb-2">自宅を事務所にしている個人事業主・法人も含め、事業活動で出たごみ（一般廃棄物）</p>
           <p class="body-p" style="font-size:14px">→ 家庭ごみとしては出せません。自己搬入か、許可を受けた収集運搬業者への有料委託が必要です</p>
         </div>
       </div>
@@ -446,9 +460,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="body-p mb-4">ここまで紹介した家電・パソコン・小型家電・タイヤ/バイクなどは、正常に動作する状態なら「廃棄」ではなく「売る・譲る」という方法も選べます。リサイクル料金や処分費用がかからないだけでなく、収入になることもあります。</p>
 
       <ul class="flex flex-col gap-2 mb-4">
-        <li class="flex items-start gap-2" style="font-size:16px;color:#4B4B4D;line-height:1.9"><span class="ms-o" style="font-size:18px;color:#00885A;flex-shrink:0;margin-top:2px">storefront</span><span><strong class="text-[#1C1C1E]">リサイクルショップ</strong>（宅配買取・出張買取）: 査定・出張料が無料の店が多く、まとめて複数点を持ち込める</span></li>
-        <li class="flex items-start gap-2" style="font-size:16px;color:#4B4B4D;line-height:1.9"><span class="ms-o" style="font-size:18px;color:#00885A;flex-shrink:0;margin-top:2px">sell</span><span><strong class="text-[#1C1C1E]">フリマアプリ</strong>（メルカリなど）: 高く売れることもあるが、大型品は配送の手間・送料に注意</span></li>
-        <li class="flex items-start gap-2" style="font-size:16px;color:#4B4B4D;line-height:1.9"><span class="ms-o" style="font-size:18px;color:#00885A;flex-shrink:0;margin-top:2px">near_me</span><span><strong class="text-[#1C1C1E]">地域の掲示板アプリ</strong>（ジモティーなど）: 近隣で直接受け渡しをすれば送料がかからない</span></li>
+        <li class="flex items-start gap-2" style="font-size:16px;color:#4B4B4D;line-height:1.9"><span class="ms-o" style="font-size:18px;color:#00885A;flex-shrink:0;margin-top:2px">storefront</span><span><strong class="text-[var(--ink)]">リサイクルショップ</strong>（宅配買取・出張買取）: 査定・出張料が無料の店が多く、まとめて複数点を持ち込める</span></li>
+        <li class="flex items-start gap-2" style="font-size:16px;color:#4B4B4D;line-height:1.9"><span class="ms-o" style="font-size:18px;color:#00885A;flex-shrink:0;margin-top:2px">sell</span><span><strong class="text-[var(--ink)]">フリマアプリ</strong>（メルカリなど）: 高く売れることもあるが、大型品は配送の手間・送料に注意</span></li>
+        <li class="flex items-start gap-2" style="font-size:16px;color:#4B4B4D;line-height:1.9"><span class="ms-o" style="font-size:18px;color:#00885A;flex-shrink:0;margin-top:2px">near_me</span><span><strong class="text-[var(--ink)]">地域の掲示板アプリ</strong>（ジモティーなど）: 近隣で直接受け渡しをすれば送料がかからない</span></li>
       </ul>
 
       <p class="body-p mb-4">リサイクルショップやフリマアプリが不要品を引き取れるのは、お金を払って「価値のある中古品」として買い取っているためです。この場合は古物営業法の扱いとなり、家庭ごみの収集に必要な「一般廃棄物処理業の許可」（廃棄物処理法）は不要です。一方、お金を受け取って回収するにもかかわらずこの許可を持たない<mark>無許可の回収業者</mark>（トラックで巡回して「無料回収」を呼びかけたり、チラシで回収日を知らせたりする業者など）を利用するのは違法で、不法投棄につながるおそれがあります。故障している・古すぎるなど買い取ってもらえない場合は、各品目の正規ルートで処分してください。</p>
@@ -490,23 +504,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ══════════════ こんな記事も ══════════════ -->
     <div class="mb-10">
-      <h2 class="text-[15px] font-extrabold text-[#1C1C1E] mb-3" style="letter-spacing:.08em">こんな記事も</h2>
+      <h2 class="text-[15px] font-extrabold text-[var(--ink)] mb-3" style="letter-spacing:.08em">こんな記事も</h2>
       <div class="flex flex-col gap-3">
         <a href="/articles/" class="flex items-center gap-3 rounded-2xl shadow-sm px-5 py-4 no-underline" style="min-height:44px;background:#F0F2F5">
           <span class="ms" style="font-size:22px;color:#00A86B;flex-shrink:0">menu_book</span>
           <div>
-            <p class="text-[15px] font-bold text-[#1C1C1E]">記事一覧を見る</p>
-            <p class="text-[14px]" style="color:#6B7280">ごみの困りごとを解決する記事をもっと読む</p>
+            <p class="text-[15px] font-bold text-[var(--ink)]">記事一覧を見る</p>
+            <p class="text-[14px]" style="color:var(--muted)">ごみの困りごとを解決する記事をもっと読む</p>
           </div>
-          <span class="ms-o ml-auto" style="font-size:20px;color:#6B7280;flex-shrink:0">chevron_right</span>
+          <span class="ms-o ml-auto" style="font-size:20px;color:var(--muted);flex-shrink:0">chevron_right</span>
         </a>
         <a href="/#cities" class="flex items-center gap-3 rounded-2xl shadow-sm px-5 py-4 no-underline" style="min-height:44px;background:#F0F2F5">
           <span class="ms" style="font-size:22px;color:#00A86B;flex-shrink:0">location_city</span>
           <div>
-            <p class="text-[15px] font-bold text-[#1C1C1E]">お住まいの自治体のごみ出しアプリを探す</p>
-            <p class="text-[14px]" style="color:#6B7280">収集日の確認・品目検索など、日々使える機能があります</p>
+            <p class="text-[15px] font-bold text-[var(--ink)]">お住まいの自治体のごみ出しアプリを探す</p>
+            <p class="text-[14px]" style="color:var(--muted)">収集日の確認・品目検索など、日々使える機能があります</p>
           </div>
-          <span class="ms-o ml-auto" style="font-size:20px;color:#6B7280;flex-shrink:0">chevron_right</span>
+          <span class="ms-o ml-auto" style="font-size:20px;color:var(--muted);flex-shrink:0">chevron_right</span>
         </a>
       </div>
     </div>
@@ -529,16 +543,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <footer class="bg-white border-t border-black/[0.05]">
   <div class="max-w-2xl mx-auto text-center px-6 py-8">
-    <p class="text-[13px] text-[#6B7280] leading-relaxed">
+    <p class="text-[13px] text-[var(--muted)] leading-relaxed">
       本サイトは各自治体の非公式情報サービスです。<br>
       最新情報は各自治体の公式サイトでご確認ください。
     </p>
     <p class="mt-2 flex items-center justify-center gap-x-3 gap-y-0 flex-wrap whitespace-nowrap">
-      <a href="/about" class="text-[12px] text-[#6B7280] underline hover:text-[#4B4B4D] inline-flex items-center" style="min-height:44px">運営者情報・免責事項</a>
-      <a href="/privacy" class="text-[12px] text-[#6B7280] underline hover:text-[#4B4B4D] inline-flex items-center" style="min-height:44px">プライバシーポリシー</a>
-      <a href="/ads" class="text-[12px] text-[#6B7280] underline hover:text-[#4B4B4D] inline-flex items-center" style="min-height:44px">広告について</a>
+      <a href="/about" class="text-[12px] text-[var(--muted)] underline hover:text-[#4B4B4D] inline-flex items-center" style="min-height:44px">運営者情報・免責事項</a>
+      <a href="/privacy" class="text-[12px] text-[var(--muted)] underline hover:text-[#4B4B4D] inline-flex items-center" style="min-height:44px">プライバシーポリシー</a>
+      <a href="/ads" class="text-[12px] text-[var(--muted)] underline hover:text-[#4B4B4D] inline-flex items-center" style="min-height:44px">広告について</a>
     </p>
-    <p class="text-[13px] text-[#6B7280] mt-2">© 2026 YOUSENA</p>
+    <p class="text-[13px] text-[var(--muted)] mt-2">© 2026 YOUSENA</p>
   </div>
 </footer>
 

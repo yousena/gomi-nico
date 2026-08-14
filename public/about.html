@@ -17,11 +17,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="canonical" href="https://gomi-nico.jp/about">
 <title>運営者情報・免責事項 | ごみニコ</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        borderRadius: { '2xl': '20px' },
+      },
+    },
+  };
+</script>
 <style>
+  :root {
+    --ink:        #1E1D1C;
+    --text:       #686461;
+    --muted:      #76706B;
+    --bg-content: #FBFAF4;
+  }
   html, body { background:#fff; font-family: -apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; }
   body a { color:#18A87A; text-decoration:underline; }
-  .section-label { font-size:11px; font-weight:700; color:#8890A0; margin-bottom:4px; }
-  .section-body  { font-size:13px; color:#1C1C1E; line-height:1.8; }
+  .section-label { font-size:11px; font-weight:700; color:var(--muted); margin-bottom:4px; }
+  .section-body  { font-size:13px; color:var(--ink); line-height:1.8; }
 </style>
 </head>
 <body>
@@ -29,19 +44,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNH8H4L2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<header class="bg-white border-b border-black/[0.07] sticky top-0 z-10">
+<header class="bg-[rgba(251,250,244,0.9)] backdrop-blur-xl border-b border-black/[0.07] sticky top-0 z-10">
   <div class="max-w-2xl mx-auto px-5 py-4 flex items-center gap-3">
     <a href="/" class="text-[#18A87A] font-bold text-sm no-underline">← 戻る</a>
-    <h1 class="text-base font-extrabold text-[#1C1C1E]">運営者情報・免責事項</h1>
+    <h1 class="text-base font-extrabold text-[var(--ink)]">運営者情報・免責事項</h1>
   </div>
 </header>
 
-<main class="max-w-2xl mx-auto px-4 py-5 pb-20 flex flex-col gap-4" style="background:#F7F6F3">
+<main class="max-w-2xl mx-auto px-4 py-5 pb-20 flex flex-col gap-4" style="background:var(--bg-content)">
 
   <!-- サイト運営者 -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">サイト運営者</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">サイト運営者</h2>
     </div>
     <dl class="px-5 py-4 flex flex-col gap-4">
       <div>
@@ -64,7 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <dt class="section-label">お問い合わせ</dt>
         <dd class="section-body">
           <a href="mailto:contact@gomi-nico.jp">contact@gomi-nico.jp</a><br>
-          <span class="text-xs text-[#AEAEB2]">※誤情報・不具合・サイト運用に関するお問い合わせはこちらへ。※返信にお時間をいただく場合があります。</span>
+          <span class="text-xs text-[var(--muted)]">※誤情報・不具合・サイト運用に関するお問い合わせはこちらへ。※返信にお時間をいただく場合があります。</span>
         </dd>
       </div>
     </dl>
@@ -73,7 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- 本サイトについて -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">本サイトについて</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">本サイトについて</h2>
     </div>
     <div class="px-5 py-4 flex flex-col gap-4">
       <div>
@@ -96,7 +111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- 免責事項 -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">免責事項</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">免責事項</h2>
     </div>
     <div class="px-5 py-4 flex flex-col gap-4">
       <div>
@@ -121,15 +136,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- 関連ページ -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">関連ページ</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">関連ページ</h2>
     </div>
     <ul class="divide-y divide-black/[0.04]">
-      <li><a href="/privacy" class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[#1C1C1E] hover:bg-black/[0.02]">プライバシーポリシー <span class="text-[#AEAEB2]">›</span></a></li>
-      <li><a href="/ads"     class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[#1C1C1E] hover:bg-black/[0.02]">広告・アフィリエイトについて <span class="text-[#AEAEB2]">›</span></a></li>
+      <li><a href="/privacy" class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[var(--ink)] hover:bg-black/[0.02]">プライバシーポリシー <span class="text-[var(--muted)]">›</span></a></li>
+      <li><a href="/ads"     class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[var(--ink)] hover:bg-black/[0.02]">広告・アフィリエイトについて <span class="text-[var(--muted)]">›</span></a></li>
     </ul>
   </div>
 
-  <p class="text-xs text-[#AEAEB2] text-center">最終更新日：2026年8月10日</p>
+  <p class="text-xs text-[var(--muted)] text-center">最終更新日：2026年8月10日</p>
 
 </main>
 </body>

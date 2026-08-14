@@ -10,22 +10,37 @@
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 <title>広告・アフィリエイトについて | ごみニコ</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        borderRadius: { '2xl': '20px' },
+      },
+    },
+  };
+</script>
 <style>
+  :root {
+    --ink:        #1E1D1C;
+    --text:       #686461;
+    --muted:      #76706B;
+    --bg-content: #FBFAF4;
+  }
   html, body { background:#fff; font-family: -apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; }
   body a { color:#18A87A; text-decoration:underline; }
-  .section-label { font-size:11px; font-weight:700; color:#8890A0; margin-bottom:4px; }
-  .section-body  { font-size:13px; color:#1C1C1E; line-height:1.8; }
+  .section-label { font-size:11px; font-weight:700; color:var(--muted); margin-bottom:4px; }
+  .section-body  { font-size:13px; color:var(--ink); line-height:1.8; }
 </style>
 </head>
 <body>
-<header class="bg-white border-b border-black/[0.07] sticky top-0 z-10">
+<header class="bg-[rgba(251,250,244,0.9)] backdrop-blur-xl border-b border-black/[0.07] sticky top-0 z-10">
   <div class="max-w-2xl mx-auto px-5 py-4 flex items-center gap-3">
     <a href="/" class="text-[#18A87A] font-bold text-sm no-underline">← 戻る</a>
-    <h1 class="text-base font-extrabold text-[#1C1C1E]">広告・アフィリエイトについて</h1>
+    <h1 class="text-base font-extrabold text-[var(--ink)]">広告・アフィリエイトについて</h1>
   </div>
 </header>
 
-<main class="max-w-2xl mx-auto px-4 py-5 pb-20 flex flex-col gap-4" style="background:#F7F6F3">
+<main class="max-w-2xl mx-auto px-4 py-5 pb-20 flex flex-col gap-4" style="background:var(--bg-content)">
 
   <!-- ご理解のお願い -->
   <div class="bg-[#F0FAF5] rounded-2xl border border-[#18A87A]/20 px-5 py-4">
@@ -37,7 +52,7 @@
   <!-- Google AdSense -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">Google AdSense</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">Google AdSense</h2>
     </div>
     <div class="px-5 py-4 flex flex-col gap-4">
       <div>
@@ -56,7 +71,7 @@
   <!-- 楽天アフィリエイト -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">楽天アフィリエイト</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">楽天アフィリエイト</h2>
     </div>
     <div class="px-5 py-4 flex flex-col gap-4">
       <div>
@@ -77,7 +92,7 @@
   <!-- 情報の独立性 -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">情報の独立性</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">情報の独立性</h2>
     </div>
     <div class="px-5 py-4">
       <p class="section-body">ごみ分別情報・収集日程・分別ルールは、広告主やアフィリエイト先から報酬・依頼を受けることなく、志木市の公式情報をもとに独立して作成しています。広告の内容が分別情報に影響することはありません。</p>
@@ -87,15 +102,15 @@
   <!-- 関連ページ -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">関連ページ</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">関連ページ</h2>
     </div>
     <ul class="divide-y divide-black/[0.04]">
-      <li><a href="/privacy" class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[#1C1C1E] hover:bg-black/[0.02]">プライバシーポリシー <span class="text-[#AEAEB2]">›</span></a></li>
-      <li><a href="/about"   class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[#1C1C1E] hover:bg-black/[0.02]">運営者情報・免責事項 <span class="text-[#AEAEB2]">›</span></a></li>
+      <li><a href="/privacy" class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[var(--ink)] hover:bg-black/[0.02]">プライバシーポリシー <span class="text-[var(--muted)]">›</span></a></li>
+      <li><a href="/about"   class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[var(--ink)] hover:bg-black/[0.02]">運営者情報・免責事項 <span class="text-[var(--muted)]">›</span></a></li>
     </ul>
   </div>
 
-  <p class="text-xs text-[#AEAEB2] text-center">最終更新日：2026年7月15日</p>
+  <p class="text-xs text-[var(--muted)] text-center">最終更新日：2026年7月15日</p>
 
 </main>
 </body>

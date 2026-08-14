@@ -17,11 +17,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="canonical" href="https://gomi-nico.jp/privacy">
 <title>プライバシーポリシー | ごみニコ</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        borderRadius: { '2xl': '20px' },
+      },
+    },
+  };
+</script>
 <style>
+  :root {
+    --ink:        #1E1D1C;
+    --text:       #686461;
+    --muted:      #76706B;
+    --bg-content: #FBFAF4;
+  }
   html, body { background:#fff; font-family: -apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif; }
   body a { color:#18A87A; text-decoration:underline; }
-  .section-label { font-size:11px; font-weight:700; color:#8890A0; margin-bottom:4px; }
-  .section-body  { font-size:13px; color:#1C1C1E; line-height:1.8; }
+  .section-label { font-size:11px; font-weight:700; color:var(--muted); margin-bottom:4px; }
+  .section-body  { font-size:13px; color:var(--ink); line-height:1.8; }
 </style>
 </head>
 <body>
@@ -29,21 +44,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNH8H4L2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<header class="bg-white border-b border-black/[0.07] sticky top-0 z-10">
+<header class="bg-[rgba(251,250,244,0.9)] backdrop-blur-xl border-b border-black/[0.07] sticky top-0 z-10">
   <div class="max-w-2xl mx-auto px-5 py-4 flex items-center gap-3">
     <a href="/" class="text-[#18A87A] font-bold text-sm no-underline">← 戻る</a>
-    <h1 class="text-base font-extrabold text-[#1C1C1E]">プライバシーポリシー</h1>
+    <h1 class="text-base font-extrabold text-[var(--ink)]">プライバシーポリシー</h1>
   </div>
 </header>
 
-<main class="max-w-2xl mx-auto px-4 py-5 pb-20 flex flex-col gap-4" style="background:#F7F6F3">
+<main class="max-w-2xl mx-auto px-4 py-5 pb-20 flex flex-col gap-4" style="background:var(--bg-content)">
 
-  <p class="text-xs text-[#8890A0] px-1">株式会社ユウセナ（以下「当社」）が運営する「ごみニコ」（gomi-nico.jp）における個人情報の取扱いについて定めます。</p>
+  <p class="text-xs text-[var(--muted)] px-1">株式会社ユウセナ（以下「当社」）が運営する「ごみニコ」（gomi-nico.jp）における個人情報の取扱いについて定めます。</p>
 
   <!-- 収集する情報 -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">1. 収集する情報</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">1. 収集する情報</h2>
     </div>
     <div class="px-5 py-4 flex flex-col gap-4">
       <div>
@@ -64,7 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- Cookie・アクセス解析 -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">2. Cookie・アクセス解析</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">2. Cookie・アクセス解析</h2>
     </div>
     <div class="px-5 py-4 flex flex-col gap-4">
       <div>
@@ -81,7 +96,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- 広告・アフィリエイト -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">3. 広告・アフィリエイト</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">3. 広告・アフィリエイト</h2>
     </div>
     <div class="px-5 py-4 flex flex-col gap-4">
       <div>
@@ -98,7 +113,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- 第三者提供・外部送信 -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">4. 第三者提供・外部送信</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">4. 第三者提供・外部送信</h2>
     </div>
     <div class="px-5 py-4 flex flex-col gap-4">
       <div>
@@ -115,7 +130,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- セキュリティ・保存期間 -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">5. 安全管理・保存期間</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">5. 安全管理・保存期間</h2>
     </div>
     <div class="px-5 py-4 flex flex-col gap-4">
       <div>
@@ -132,7 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ポリシーの変更・お問い合わせ -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">6. ポリシーの変更・お問い合わせ</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">6. ポリシーの変更・お問い合わせ</h2>
     </div>
     <div class="px-5 py-4 flex flex-col gap-4">
       <div>
@@ -144,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="section-body">
           株式会社ユウセナ<br>
           <a href="mailto:contact@gomi-nico.jp">contact@gomi-nico.jp</a><br>
-          <span class="text-xs text-[#AEAEB2]">※返信にお時間をいただく場合があります</span>
+          <span class="text-xs text-[var(--muted)]">※返信にお時間をいただく場合があります</span>
         </p>
       </div>
     </div>
@@ -153,15 +168,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- 関連ページ -->
   <div class="bg-white rounded-2xl border border-black/[0.07] shadow-sm overflow-hidden">
     <div class="px-5 py-4 border-b border-black/[0.05]">
-      <h2 class="text-base font-extrabold text-[#1C1C1E]">関連ページ</h2>
+      <h2 class="text-base font-extrabold text-[var(--ink)]">関連ページ</h2>
     </div>
     <ul class="divide-y divide-black/[0.04]">
-      <li><a href="/about" class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[#1C1C1E] hover:bg-black/[0.02]">運営者情報・免責事項 <span class="text-[#AEAEB2]">›</span></a></li>
-      <li><a href="/ads"   class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[#1C1C1E] hover:bg-black/[0.02]">広告・アフィリエイトについて <span class="text-[#AEAEB2]">›</span></a></li>
+      <li><a href="/about" class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[var(--ink)] hover:bg-black/[0.02]">運営者情報・免責事項 <span class="text-[var(--muted)]">›</span></a></li>
+      <li><a href="/ads"   class="flex items-center justify-between px-5 py-4 text-sm no-underline text-[var(--ink)] hover:bg-black/[0.02]">広告・アフィリエイトについて <span class="text-[var(--muted)]">›</span></a></li>
     </ul>
   </div>
 
-  <p class="text-xs text-[#AEAEB2] text-center">最終更新日：2026年7月15日</p>
+  <p class="text-xs text-[var(--muted)] text-center">最終更新日：2026年7月15日</p>
 
 </main>
 </body>
