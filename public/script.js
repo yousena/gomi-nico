@@ -736,11 +736,11 @@ function renderTodayStrip() {
       // カテゴリ名の列挙は括弧の入れ子で読みにくいとの指摘（2026-07-24）を受け削除。日数のみ表示する
       typesEl.innerHTML = `
         <div style="display:flex;flex-direction:column;gap:2px">
-          <span class="text-sm font-bold text-[var(--text)] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:var(--brand);vertical-align:-3px">check_circle</span>今日は収集なし</span>
+          <span class="text-sm font-bold text-[var(--text)] inline-flex items-center gap-1"><span style="font-size:18px;line-height:1;vertical-align:-3px" aria-hidden="true">😊</span>今日の収集はありません</span>
           <span class="text-[12px] text-[var(--muted)]">次の収集: ${diffLabel}</span>
         </div>`;
     } else {
-      typesEl.innerHTML = `<span class="text-sm font-bold text-[var(--text)] inline-flex items-center gap-1"><span class="ms-nav" style="font-size:18px;color:var(--brand);vertical-align:-3px">check_circle</span>今日は収集なし</span>`;
+      typesEl.innerHTML = `<span class="text-sm font-bold text-[var(--text)] inline-flex items-center gap-1"><span style="font-size:18px;line-height:1;vertical-align:-3px" aria-hidden="true">😊</span>今日の収集はありません</span>`;
     }
     return;
   }
