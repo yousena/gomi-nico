@@ -1398,7 +1398,7 @@ function openItemDetail(name) {
     'background:' + st.fg + ';color:#fff;border:none;border-radius:14px;' +
     'font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;' +
     'box-shadow:0 4px 14px ' + st.fg + '44">' +
-      '「' + catLabel + '」のごみ一覧を見る' +
+      '分別の詳細を見る<span class="ms-nav" style="font-size:18px">arrow_forward</span>' +
     '</button>';
 
   document.getElementById('item-detail-body').innerHTML = html;
