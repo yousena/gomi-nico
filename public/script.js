@@ -45,22 +45,22 @@ function isHoliday(date) {
 
 const TYPE_STYLE = {
   // ── 既存（志木市）
-  moeru:       { icon:'local_fire_department', img:'/icons/moeru.svg',   bg:'var(--c-moeru-bg)',   iconBg:'rgba(232,81,42,0.14)',   fg:'var(--c-moeru)',   dotColor:'var(--c-moeru)'   },
-  moenai:      { icon:'delete_sweep',          img:'/icons/moenai.svg',  bg:'var(--c-moenai-bg)',  iconBg:'rgba(2,27,152,0.14)',   fg:'var(--c-moenai)',  dotColor:'var(--c-moenai)'  },
-  recycle:     { icon:'recycling',             img:'/icons/recycle.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
+  moeru:       { icon:'local_fire_department', img:'/icons/moeru.svg',   bg:'var(--c-moeru-bg)',   iconBg:'rgba(231,35,33,0.14)',   fg:'var(--c-moeru)',   dotColor:'var(--c-moeru)'   },
+  moenai:      { icon:'delete_sweep',          img:'/icons/moenai.svg',  bg:'var(--c-moenai-bg)',  iconBg:'rgba(91,96,199,0.14)',  fg:'var(--c-moenai)',  dotColor:'var(--c-moenai)'  },
+  recycle:     { icon:'recycling',             img:'/icons/recycle.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(23,135,81,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
   'shigen-pla':{ icon:'water_bottle',          img:'/icons/plastic.svg', bg:'var(--c-pla-bg)',     iconBg:'rgba(58,58,60,0.14)',    fg:'var(--c-pla)',     dotColor:'var(--c-pla)'     },
-  kiken:       { icon:'warning',               img:'/icons/kiken.svg',   bg:'var(--c-kiken-bg)',   iconBg:'rgba(240,122,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
+  kiken:       { icon:'warning',               img:'/icons/kiken.svg',   bg:'var(--c-kiken-bg)',   iconBg:'rgba(191,89,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
   yugai:       { icon:'science',               img:'/icons/harmful.svg', selfBg:true, bg:'var(--c-yugai-bg)',   iconBg:'rgba(145,96,204,0.14)',  fg:'var(--c-yugai)',   dotColor:'var(--c-yugai)'   },
   sodai:       { icon:'weekend',               img:'/icons/sodai.svg',   selfBg:true, bg:'var(--c-sodai-bg)',   iconBg:'rgba(122,82,48,0.14)',   fg:'var(--c-sodai)',   dotColor:'var(--c-sodai)'   },
   // ── 拡張（マルチ自治体対応）
   fuku:        { icon:'checkroom',             img:'/icons/fuku.svg',    bg:'var(--c-fuku-bg)',    iconBg:'rgba(91,132,196,0.14)',  fg:'var(--c-fuku)',    dotColor:'var(--c-fuku)'    },
   kami:        { icon:'newspaper',             img:'/icons/kami.svg',    bg:'var(--c-kami-bg)',    iconBg:'rgba(180,130,40,0.14)',  fg:'var(--c-kami)',    dotColor:'var(--c-kami)'    },
-  can:         { icon:'sports_bar',            img:'/icons/can.svg',     bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
+  can:         { icon:'sports_bar',            img:'/icons/can.svg',     bg:'var(--c-can-bg)',     iconBg:'rgba(173,101,16,0.14)',  fg:'var(--c-can)',     dotColor:'var(--c-can)'     },
   pet:         { icon:'water_bottle',          img:'/icons/pet.svg',     bg:'var(--c-pet-bg)',     iconBg:'rgba(11,111,168,0.14)',  fg:'var(--c-pet)',     dotColor:'var(--c-pet)'     },
-  bin:         { icon:'wine_bar',              img:'/icons/bin.svg',     bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
-  can_pet_bin: { icon:'recycling',             img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
-  can_pet:     { icon:'recycling',             img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
-  spraycan:    { icon:'propane', img:'/icons/spray_can.svg',               bg:'var(--c-kiken-bg)',   iconBg:'rgba(224,120,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
+  bin:         { icon:'wine_bar',              img:'/icons/bin.svg',     bg:'var(--c-bin-bg)',     iconBg:'rgba(75,131,73,0.14)',   fg:'var(--c-bin)',     dotColor:'var(--c-bin)'     },
+  can_pet_bin: { icon:'recycling',             img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(23,135,81,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
+  can_pet:     { icon:'recycling',             img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(23,135,81,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
+  spraycan:    { icon:'propane', img:'/icons/spray_can.svg',               bg:'var(--c-kiken-bg)',   iconBg:'rgba(191,89,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
   unknown:     { icon:'help',               img:'/icons/none.svg',        keepBg:true, bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  },
 };
 
