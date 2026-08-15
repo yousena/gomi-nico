@@ -163,7 +163,7 @@
         "中身が残ったまま出すと回収してもらえません"
       ],
       "how_steps": [
-        "プラマーク（♻マーク）の付いたものを対象にする",
+        "プラマーク（<img src=\"/icons/plastic.svg\" alt=\"プラマーク\" style=\"display:inline-block;width:16px;height:16px;vertical-align:-3px;border-radius:3px\">マーク）の付いたものを対象にする",
         "汚れを水で軽く落とし、乾かしてからまとめる",
         "市指定の黄緑ネットへバラで入れる",
         "集積所へ、収集当日の朝8時までに出す"
@@ -529,7 +529,22 @@
         2,
         5
       ],
-      "recycle": [
+      "can": [
+        1
+      ],
+      "bin": [
+        1
+      ],
+      "pet": [
+        1
+      ],
+      "kami": [
+        1
+      ],
+      "fuku": [
+        1
+      ],
+      "spraycan": [
         1
       ],
       "plasticRec": [
@@ -561,7 +576,22 @@
         3,
         6
       ],
-      "recycle": [
+      "can": [
+        1
+      ],
+      "bin": [
+        1
+      ],
+      "pet": [
+        1
+      ],
+      "kami": [
+        1
+      ],
+      "fuku": [
+        1
+      ],
+      "spraycan": [
         1
       ],
       "plasticRec": [
@@ -593,7 +623,22 @@
         2,
         5
       ],
-      "recycle": [
+      "can": [
+        1
+      ],
+      "bin": [
+        1
+      ],
+      "pet": [
+        1
+      ],
+      "kami": [
+        1
+      ],
+      "fuku": [
+        1
+      ],
+      "spraycan": [
         1
       ],
       "plasticRec": [
@@ -625,7 +670,22 @@
         1,
         4
       ],
-      "recycle": [
+      "can": [
+        2
+      ],
+      "bin": [
+        2
+      ],
+      "pet": [
+        2
+      ],
+      "kami": [
+        2
+      ],
+      "fuku": [
+        2
+      ],
+      "spraycan": [
         2
       ],
       "plasticRec": [
@@ -657,7 +717,22 @@
         1,
         4
       ],
-      "recycle": [
+      "can": [
+        2
+      ],
+      "bin": [
+        2
+      ],
+      "pet": [
+        2
+      ],
+      "kami": [
+        2
+      ],
+      "fuku": [
+        2
+      ],
+      "spraycan": [
         2
       ],
       "plasticRec": [
@@ -689,7 +764,22 @@
         1,
         4
       ],
-      "recycle": [
+      "can": [
+        5
+      ],
+      "bin": [
+        5
+      ],
+      "pet": [
+        5
+      ],
+      "kami": [
+        5
+      ],
+      "fuku": [
+        5
+      ],
+      "spraycan": [
         5
       ],
       "plasticRec": [
@@ -721,7 +811,22 @@
         3,
         6
       ],
-      "recycle": [
+      "can": [
+        4
+      ],
+      "bin": [
+        4
+      ],
+      "pet": [
+        4
+      ],
+      "kami": [
+        4
+      ],
+      "fuku": [
+        4
+      ],
+      "spraycan": [
         4
       ],
       "plasticRec": [
@@ -753,7 +858,22 @@
         1,
         4
       ],
-      "recycle": [
+      "can": [
+        4
+      ],
+      "bin": [
+        4
+      ],
+      "pet": [
+        4
+      ],
+      "kami": [
+        4
+      ],
+      "fuku": [
+        4
+      ],
+      "spraycan": [
         4
       ],
       "plasticRec": [
@@ -785,7 +905,22 @@
         2,
         5
       ],
-      "recycle": [
+      "can": [
+        4
+      ],
+      "bin": [
+        4
+      ],
+      "pet": [
+        4
+      ],
+      "kami": [
+        4
+      ],
+      "fuku": [
+        4
+      ],
+      "spraycan": [
         4
       ],
       "plasticRec": [
@@ -817,7 +952,22 @@
         2,
         5
       ],
-      "recycle": [
+      "can": [
+        3
+      ],
+      "bin": [
+        3
+      ],
+      "pet": [
+        3
+      ],
+      "kami": [
+        3
+      ],
+      "fuku": [
+        3
+      ],
+      "spraycan": [
         3
       ],
       "plasticRec": [
@@ -849,7 +999,22 @@
         2,
         5
       ],
-      "recycle": [
+      "can": [
+        3
+      ],
+      "bin": [
+        3
+      ],
+      "pet": [
+        3
+      ],
+      "kami": [
+        3
+      ],
+      "fuku": [
+        3
+      ],
+      "spraycan": [
         3
       ],
       "plasticRec": [
@@ -1491,7 +1656,7 @@
     },
     {
       "name": "ペットボトル",
-      "category": "recycle",
+      "category": "pet",
       "note": "PETマーク付き。フタ・ラベルをはずし、つぶして青いネットへ",
       "tags": [
         "ペット",
@@ -1504,7 +1669,7 @@
     },
     {
       "name": "ビン（ガラスびん）",
-      "category": "recycle",
+      "category": "bin",
       "note": "フタをはずし中を洗う。割れたビンは透明ビニール袋に",
       "tags": [
         "ビン",
@@ -1517,7 +1682,7 @@
     },
     {
       "name": "スプレー缶",
-      "category": "recycle",
+      "category": "spraycan",
       "note": "中身を使いきってから出す。穴開け不要",
       "tags": [
         "スプレー缶",
@@ -1528,7 +1693,7 @@
     },
     {
       "name": "カセットボンベ",
-      "category": "recycle",
+      "category": "spraycan",
       "note": "中身を完全に使いきること。穴開け不要",
       "tags": [
         "カセットボンベ",
@@ -1539,7 +1704,7 @@
     },
     {
       "name": "カン（アルミ・スチール）",
-      "category": "recycle",
+      "category": "can",
       "note": "中を洗う。油缶は中身を使いきる",
       "tags": [
         "缶",
@@ -1553,7 +1718,7 @@
     },
     {
       "name": "新聞",
-      "category": "recycle",
+      "category": "kami",
       "note": "折込チラシも一緒に。紙ひもでくくる",
       "tags": [
         "新聞",
@@ -1564,7 +1729,7 @@
     },
     {
       "name": "段ボール",
-      "category": "recycle",
+      "category": "kami",
       "note": "紙ひもでくくる。雨の日も出せる",
       "tags": [
         "ダンボール",
@@ -1575,7 +1740,7 @@
     },
     {
       "name": "雑誌・本",
-      "category": "recycle",
+      "category": "kami",
       "note": "紙ひもでくくる",
       "tags": [
         "雑誌",
@@ -1589,7 +1754,7 @@
     },
     {
       "name": "雑紙",
-      "category": "recycle",
+      "category": "kami",
       "note": "チラシ・菓子箱・はがき等。紙袋に入れて出す",
       "tags": [
         "雑紙",
@@ -1602,7 +1767,7 @@
     },
     {
       "name": "紙パック（アルミなし）",
-      "category": "recycle",
+      "category": "kami",
       "note": "アルミなしのみ。開いて洗い乾かす",
       "tags": [
         "紙パック",
@@ -1612,7 +1777,7 @@
     },
     {
       "name": "衣類・布類",
-      "category": "recycle",
+      "category": "fuku",
       "note": "汚れているものは可燃ごみ。綿入りも可燃ごみ",
       "tags": [
         "衣類",
@@ -1626,7 +1791,7 @@
     },
     {
       "name": "毛布",
-      "category": "recycle",
+      "category": "fuku",
       "note": "雨で濡れたものは収集できない",
       "tags": [
         "毛布",
@@ -2350,7 +2515,7 @@
     },
     {
       "name": "紙袋（きれいなもの）",
-      "category": "recycle",
+      "category": "kami",
       "note": "汚れ・匂いがないものに限る。雑紙として紙ひもでくくって出す",
       "source": "estimated",
       "tags": ["紙袋", "かみぶくろ", "ショップ袋"]
@@ -2462,7 +2627,7 @@
     },
     {
       "name": "着なくなった服",
-      "category": "recycle",
+      "category": "fuku",
       "note": "汚れていない衣類は資源（布類）へ。汚れているものは可燃ごみ",
       "source": "estimated",
       "tags": ["古着", "ふるぎ", "洋服", "服の処分", "きなくなったふく"]
