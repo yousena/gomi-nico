@@ -1437,7 +1437,10 @@ function renderContact() {
       '</div>' +
       '<a href="tel:' + c.tel + '" style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid var(--brand-soft-strong)">' +
       '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">call</span>電話する</a>' +
-      '</div></div>';
+      '</div>' +
+      (c.url ? '<a href="' + c.url + '" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:5px;margin-top:10px;padding:9px 14px;border-radius:999px;background:#fff;color:var(--ink);font-size:12.5px;font-weight:700;text-decoration:none;border:1px solid rgba(0,0,0,0.12)">' +
+      '<span class="ms-nav" style="font-size:15px;vertical-align:-2px">open_in_new</span>インターネットで予約</a>' : '') +
+      '</div>';
   }).join('');
 
   // セクション見出し（ごみに関するお問い合わせ）

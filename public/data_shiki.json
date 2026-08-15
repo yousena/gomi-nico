@@ -27,7 +27,8 @@
       "name": "粗大ごみ等受付センター",
       "note": "粗大ごみの収集予約",
       "tel": "0484735311",
-      "hours": "月〜金 8:30〜17:15"
+      "hours": "月〜金 8:30〜17:15",
+      "url": "https://s-kantan.com/shikisodaiuketuke-u/"
     }
   ],
   "collection_settings": {
@@ -246,7 +247,7 @@
         "布団は50cm×50cm以内に切れば可燃ごみで無料で出せます"
       ],
       "how_steps": [
-        "事前に電話またはインターネットで予約する（<a href=\"javascript:void(0)\" onclick=\"closeFAQ();closeCategoryDetail();closeItemDetail();openContact()\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">お問い合わせ先</a>／24時間受付可）",
+        "事前に電話（<a href=\"javascript:void(0)\" onclick=\"closeFAQ();closeCategoryDetail();closeItemDetail();openContact()\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">お問い合わせ先</a>）または<a href=\"https://s-kantan.com/shikisodaiuketuke-u/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">インターネット</a>で予約する（24時間受付可）",
         "予約した金額分の粗大ごみ処理券を取扱店で購入する（再発行・払戻し不可）",
         "処理券を品物に貼り、予約日の朝8時30分までに指定場所へ出す（立ち会い不要）",
         "手数料は品目によって異なる（予約時に案内あり）"
