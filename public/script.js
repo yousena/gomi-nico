@@ -60,7 +60,7 @@ const TYPE_STYLE = {
   bin:         { icon:'wine_bar',              img:'/icons/bin.svg',     bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
   can_pet_bin: { icon:'recycling',             img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
   can_pet:     { icon:'recycling',             img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(24,168,122,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
-  spraycan:    { icon:'propane',                                          bg:'var(--c-kiken-bg)',   iconBg:'rgba(224,120,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
+  spraycan:    { icon:'propane', img:'/icons/spray_can.svg',               bg:'var(--c-kiken-bg)',   iconBg:'rgba(224,120,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
   unknown:     { icon:'help',               img:'/icons/none.svg',        keepBg:true, bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  },
 };
 
