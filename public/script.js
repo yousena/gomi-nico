@@ -285,7 +285,7 @@ function applyMunicipalityMeta() {
 
   // ── タイトル ──
   document.title = pageTitle;
-  document.getElementById('header-title').textContent = `${city}のごみの分別と出し方`;
+  document.getElementById('header-title').textContent = `${city}のごみ分別と出し方`;
 
   // ── meta 基本 ──
   const setMeta = (sel, val, attr = 'content') => {
