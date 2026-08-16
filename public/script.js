@@ -280,12 +280,12 @@ function applyMunicipalityMeta() {
   const pref  = DATA.prefecture;    // 埼玉県
   const id    = DATA.municipality_id; // shiki
   const pageUrl = `https://gomi-nico.jp/${id}/`;
-  const pageTitle = `${city}のごみ収集日・ごみ分別検索｜ごみニコ`;
-  const pageDesc  = `${pref}${city}のごみ収集日・分別方法を地区別に簡単検索。可燃ごみ・不燃ごみ・資源ごみのカレンダー表示、分別検索、ごみ出しルールをまとめた非公式情報サイト「ごみニコ」です。`;
+  const pageTitle = `${city}のごみ収集日・分別と出し方｜ごみニコ`;
+  const pageDesc  = `${pref}${city}のごみ収集日・分別と出し方を地区別に簡単検索。可燃ごみ・不燃ごみ・資源ごみのカレンダー表示、分別検索、ごみ出しルールをまとめた非公式情報サイト「ごみニコ」です。`;
 
   // ── タイトル ──
   document.title = pageTitle;
-  document.getElementById('header-title').textContent = `${city}ごみ分別`;
+  document.getElementById('header-title').textContent = `${city}のごみの分別と出し方`;
 
   // ── meta 基本 ──
   const setMeta = (sel, val, attr = 'content') => {
@@ -302,8 +302,8 @@ function applyMunicipalityMeta() {
   setMeta('meta[property="og:url"]',         pageUrl);
 
   // ── Twitter Card ──
-  setMeta('meta[name="twitter:title"]',       `${city}のごみ収集日・ごみ分別検索｜ごみニコ`);
-  setMeta('meta[name="twitter:description"]', `${pref}${city}のごみ収集日・分別方法を地区別に検索できます。`);
+  setMeta('meta[name="twitter:title"]',       pageTitle);
+  setMeta('meta[name="twitter:description"]', `${pref}${city}のごみ収集日・分別と出し方を地区別に検索できます。`);
 
   // ── JSON-LD ──
   const contact0 = (DATA.contact || [])[0] || {};
