@@ -1524,7 +1524,7 @@ function renderContact() {
     '<p style="font-size:12px;color:var(--ink);line-height:1.7;margin-bottom:12px">掲載情報の誤り・古い情報や、画面表示の不具合などはこちらからお知らせください。</p>' +
     '<a href="' + feedbackMailtoUrl() + '" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid var(--brand-soft-strong)">' +
     '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">mail</span>メールする</a>' +
-    '<p style="font-size:11px;color:var(--muted);margin-top:8px">contact@gomi-nico.jp　※返信にお時間をいただく場合があります。件名・本文はあらかじめ入力されています</p>' +
+    '<p style="font-size:11px;color:var(--muted);margin-top:8px">※返信にお時間をいただく場合があります。件名・本文はあらかじめ入力されています</p>' +
     '</div>';
 
   // 免責・出典（サイト全般についての注記）
