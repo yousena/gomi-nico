@@ -991,10 +991,11 @@ function renderCalendar() {
 function renderCategoryLegend(seenTypes) {
   const el = document.getElementById('cal-legend');
   if (!el) return;
-  if (!seenTypes || seenTypes.size === 0) { el.innerHTML = ''; return; }
+  if (!seenTypes || seenTypes.size === 0) { el.innerHTML = ''; el.classList.add('is-hidden'); return; }
 
   // 色付きピルは「カラフルすぎる」との指摘（2026-07-24）を受け廃止。
   // アイコン＋三点リーダー＋カテゴリ名（短縮表記）を1行ずつ並べる、色のないリスト表示に変更（DS.md 2-4-1・v1.30）
+  // 種類が増えて縦に間延びしたため、カード化（影付き）+ 2列グリッドに変更（2026-08-16・v1.75）
   let rows = '';
   seenTypes.forEach((label, typeKey) => {
     rows += '<div style="display:flex;align-items:center;gap:8px;padding:4px 0">' +
@@ -1004,6 +1005,50 @@ function renderCategoryLegend(seenTypes) {
       '</div>';
   });
   el.innerHTML = rows;
+  el.classList.remove('is-hidden');
+}
+
+/* =====================================================
+   共有ボタン（2026-08-16・v1.76）
+   Web Share API対応端末は共有シートを開き、非対応（主にPC）は
+   URLをクリップボードにコピーしてトースト通知でフィードバックする
+===================================================== */
+let toastTimer = null;
+function showToast(msg) {
+  const el = document.getElementById('toast');
+  const msgEl = document.getElementById('toast-message');
+  if (!el || !msgEl) return;
+  msgEl.textContent = msg;
+  el.classList.remove('is-hidden');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.add('is-hidden'), 2200);
+}
+
+async function shareCurrentPage() {
+  const cityName = (DATA && DATA.name) ? DATA.name : '';
+  const shareData = {
+    title: document.title,
+    text: `${cityName}のごみ収集日・分別をかんたん検索できる「ごみニコ」`,
+    url: location.href
+  };
+  if (navigator.share) {
+    try {
+      await navigator.share(shareData);
+    } catch (e) {
+      // ユーザーが共有をキャンセルした場合は何もしない
+    }
+    return;
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    try {
+      await navigator.clipboard.writeText(location.href);
+      showToast('リンクをコピーしました');
+      return;
+    } catch (e) {
+      // クリップボード権限がない場合はフォールバックへ
+    }
+  }
+  showToast(location.href);
 }
 
 /* =====================================================
