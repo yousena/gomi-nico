@@ -1052,6 +1052,33 @@ async function shareCurrentPage() {
 }
 
 /* =====================================================
+   情報の誤り・更新フィードバック（2026-08-16）
+   件名・本文をあらかじめ入力したmailtoリンクを生成する。
+   共有ボタンの下・ハンバーガーメニュー「問い合わせ先」の
+   「サイトの内容・不具合について」メールボタン、両方で使用する共通関数。
+===================================================== */
+function feedbackMailtoUrl() {
+  const cityName = (DATA && DATA.name) ? DATA.name : '';
+  const subject = `【${cityName}】ごみ情報の誤り・更新のご連絡`;
+  const body =
+`以下のページの内容について、誤り・古い情報などをお伝えします。
+
+【対象ページ】
+${location.href}
+
+【誤り・気になる点】
+（ここに具体的な内容をご記入ください）
+
+【市区町村】
+${cityName}`;
+  return 'mailto:contact@gomi-nico.jp?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+}
+
+function openFeedbackMail() {
+  location.href = feedbackMailtoUrl();
+}
+
+/* =====================================================
    検索 — あいうえお順一覧
 ===================================================== */
 
@@ -1495,9 +1522,9 @@ function renderContact() {
   var sectionHeadSite = '<p style="font-size:12px;font-weight:700;color:var(--muted);padding:20px 20px 8px">サイトの内容・不具合について（運営者）</p>';
   var siteContact = '<div style="background:#fff;border-radius:20px;margin:0 16px;box-shadow:0 2px 14px rgba(0,0,0,0.08);overflow:hidden;padding:16px 20px">' +
     '<p style="font-size:12px;color:var(--ink);line-height:1.7;margin-bottom:12px">掲載情報の誤り・古い情報や、画面表示の不具合などはこちらからお知らせください。</p>' +
-    '<a href="mailto:contact@gomi-nico.jp" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid var(--brand-soft-strong)">' +
+    '<a href="' + feedbackMailtoUrl() + '" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:700;text-decoration:none;border:1px solid var(--brand-soft-strong)">' +
     '<span class="ms-nav" style="font-size:16px;vertical-align:-2px">mail</span>メールする</a>' +
-    '<p style="font-size:11px;color:var(--muted);margin-top:8px">contact@gomi-nico.jp　※返信にお時間をいただく場合があります</p>' +
+    '<p style="font-size:11px;color:var(--muted);margin-top:8px">contact@gomi-nico.jp　※返信にお時間をいただく場合があります。件名・本文はあらかじめ入力されています</p>' +
     '</div>';
 
   // 免責・出典（サイト全般についての注記）
