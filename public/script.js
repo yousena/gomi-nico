@@ -637,7 +637,16 @@ function getGarbageForDate(areaKey, date) {
     for (const wk of area.nonBurnable.weeks) {
       const d = getNthWeekday(year, month, day, wk);
       if (d && d.getDate() === date.getDate()) {
-        result.push({ type:'moenai', label:'不燃ごみ・有害ごみ', how: cats.moenai?.how || '' });
+        result.push({ type:'moenai', label: cats.moenai?.label || '不燃ごみ', how: cats.moenai?.how || '' });
+        break;
+      }
+    }
+  }
+  if (day === area.hazardous?.day) {
+    for (const wk of area.hazardous.weeks) {
+      const d = getNthWeekday(year, month, day, wk);
+      if (d && d.getDate() === date.getDate()) {
+        result.push({ type:'yugai', label: cats.yugai?.label || '有害ごみ', how: cats.yugai?.how || '' });
         break;
       }
     }
