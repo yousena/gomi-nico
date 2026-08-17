@@ -921,28 +921,141 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <!-- ==========================================================
-       お得情報 パネル（近日公開）
-       ※本実装は楽天アフィリエイト等の審査通過後に行う。
-         旧コンテンツはgit履歴（コミット7d1b8df以前）を参照。
+       お得情報 パネル（DS.md 2-4-8・v1.79構成に基づく仮実装 2026-08-17）
+       ※期間限定セールバナー・片付け動画は素材未確定のため今回は省略
+         （バナー: 楽天スーパーセール等の開催期間限定バナー画像・条件表示ロジック未着手。
+          動画: 広告主の公式YouTube動画が確認できていない）。
+         引っ越し・捨てる前に売るはA8net審査待ちのため準備中表示。
+         詳細はdocs/やることリスト.md参照。
   ========================================================== -->
   <div id="panel-tokutoku" class="is-hidden flex flex-col gap-4" aria-label="お得情報">
-    <div class="bg-white rounded-2xl shadow-card overflow-hidden animate-fade-up">
-      <div style="padding:40px 24px 36px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
-        <div style="width:64px;height:64px;background:#E0FAF1;border-radius:50%;display:flex;align-items:center;justify-content:center">
-          <span class="ms-cat" style="font-size:32px;color:var(--brand)" aria-hidden="true">redeem</span>
+
+    <!-- お部屋すっきり（片付け・不用品回収・バナー広告 2026-08-17更新） -->
+    <div class="bg-white rounded-2xl shadow-card p-4 animate-fade-up">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <div style="display:flex;align-items:center;gap:6px">
+          <span class="ms-nav" style="font-size:16px;color:var(--brand)" aria-hidden="true">cleaning_services</span>
+          <h2 style="font-size:15px;font-weight:700;color:var(--ink);margin:0">お部屋すっきり</h2>
         </div>
-        <h2 style="font-size:18px;font-weight:700;color:var(--ink);margin:0">お得情報は準備中です</h2>
-        <p style="font-size:14px;color:var(--text);line-height:1.8;margin:0">
-          引越しの一括見積もりや不用品回収、<br>
-          ごみ出しに役立つグッズの紹介など、<br>
-          くらしに役立つ情報を近日公開予定です。
-        </p>
-        <span style="display:inline-flex;align-items:center;gap:6px;background:#F0F2F5;color:var(--text);font-size:12px;font-weight:700;padding:6px 14px;border-radius:99px;margin-top:4px">
-          <span class="ms-nav" style="font-size:15px;color:var(--muted)" aria-hidden="true">schedule</span>
-          近日公開
-        </span>
+        <span style="font-size:9px;font-weight:700;color:var(--muted);background:#F0F2F5;border-radius:4px;padding:2px 6px">広告</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;align-items:center">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BA759+2J3ENE+36X8+15P77L" target="_blank" rel="nofollow sponsored noopener" style="display:block;max-width:100%">
+          <img border="0" width="300" height="250" alt="不用品のことなら【ECOクリーン】" src="https://www24.a8.net/svt/bgt?aid=260816301153&wid=004&eno=01&mid=s00000014894007004000&mc=1" style="max-width:100%;height:auto;border-radius:8px;display:block">
+        </a>
+        <img src="https://www16.a8.net/0.gif?a8mat=4BA759+2J3ENE+36X8+15P77L" alt="" width="1" height="1" style="position:absolute">
+
+        <a href="https://px.a8.net/svt/ejp?a8mat=4BA759+2A5WKQ+4X26+NV1XD" target="_blank" rel="nofollow sponsored noopener" style="display:block;max-width:100%">
+          <img border="0" width="300" height="250" alt="【不用品回収】業界最安値に挑戦中！作業実績20万件突破" src="https://www25.a8.net/svt/bgt?aid=260816301138&wid=004&eno=01&mid=s00000022947004008000&mc=1" style="max-width:100%;height:auto;border-radius:8px;display:block">
+        </a>
+        <img src="https://www13.a8.net/0.gif?a8mat=4BA759+2A5WKQ+4X26+NV1XD" alt="" width="1" height="1" style="position:absolute">
       </div>
     </div>
+
+    <!-- 引っ越し（審査待ち・準備中） -->
+    <div class="bg-white rounded-2xl shadow-card p-4 animate-fade-up">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:12px">
+        <span class="ms-nav" style="font-size:16px;color:var(--brand)" aria-hidden="true">local_shipping</span>
+        <h2 style="font-size:15px;font-weight:700;color:var(--ink);margin:0">引っ越し</h2>
+      </div>
+      <div style="background:#F0F2F5;border-radius:8px;padding:16px 14px;text-align:center">
+        <p style="font-size:12.5px;color:var(--muted);line-height:1.7;margin:0">引っ越し一括見積もりサービスは<br>準備中です</p>
+      </div>
+    </div>
+
+    <!-- 捨てる前に売る（審査待ち・準備中） -->
+    <div class="bg-white rounded-2xl shadow-card p-4 animate-fade-up">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:12px">
+        <span class="ms-nav" style="font-size:16px;color:var(--brand)" aria-hidden="true">sell</span>
+        <h2 style="font-size:15px;font-weight:700;color:var(--ink);margin:0">捨てる前に売る</h2>
+      </div>
+      <div style="background:#F0F2F5;border-radius:8px;padding:16px 14px;text-align:center">
+        <p style="font-size:12.5px;color:var(--muted);line-height:1.7;margin:0">買取・出張査定サービスは<br>準備中です</p>
+      </div>
+    </div>
+
+    <!-- あると便利なグッズ（楽天アフィリエイト・カテゴリ別横スクロール） -->
+    <div class="bg-white rounded-2xl shadow-card p-4 animate-fade-up">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">
+        <span class="ms-nav" style="font-size:16px;color:var(--brand)" aria-hidden="true">shopping_bag</span>
+        <h2 style="font-size:15px;font-weight:700;color:var(--ink);margin:0">あると便利なグッズ</h2>
+      </div>
+
+      <p style="font-size:12px;font-weight:700;color:var(--text);margin:16px 0 8px">ゴミ箱系</p>
+      <div style="display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/0c45781e.388f0b2d.0c45781f.9b36b5b3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B4%E3%83%9F%E7%AE%B1%2F&link_type=text&ut=eyJwYWdljoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="noopener sponsored"
+           style="flex-shrink:0;width:114px;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,0.08);border-radius:10px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column">
+          <div style="height:68px;background:#F0F2F5;display:flex;align-items:center;justify-content:center">
+            <span class="ms-nav" style="font-size:30px;color:var(--muted)" aria-hidden="true">delete</span>
+          </div>
+          <div style="padding:8px 8px 10px">
+            <p style="font-size:11px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:6px">ゴミ箱を探す</p>
+            <span style="font-size:10px;color:#BF0000;font-weight:700">楽天で見る ›</span>
+          </div>
+        </a>
+        <a href="https://hb.afl.rakuten.co.jp/hgc/0c45781e.388f0b2d.0c45781f.9b36b5b3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%B1%8B%E5%A4%96%20%E3%82%B4%E3%83%9F%E7%AE%B1%2F&link_type=text&ut=eyJwYWdljoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="noopener sponsored"
+           style="flex-shrink:0;width:114px;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,0.08);border-radius:10px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column">
+          <div style="height:68px;background:#F0F2F5;display:flex;align-items:center;justify-content:center">
+            <span class="ms-nav" style="font-size:30px;color:var(--muted)" aria-hidden="true">yard</span>
+          </div>
+          <div style="padding:8px 8px 10px">
+            <p style="font-size:11px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:6px">屋外用ゴミ収納庫</p>
+            <span style="font-size:10px;color:#BF0000;font-weight:700">楽天で見る ›</span>
+          </div>
+        </a>
+      </div>
+
+      <p style="font-size:12px;font-weight:700;color:var(--text);margin:16px 0 8px">お掃除系</p>
+      <div style="display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/0c45781e.388f0b2d.0c45781f.9b36b5b3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E6%8E%83%E9%99%A4%E3%82%B0%E3%83%83%E3%82%BA%2F&link_type=text&ut=eyJwYWdljoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="noopener sponsored"
+           style="flex-shrink:0;width:114px;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,0.08);border-radius:10px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column">
+          <div style="height:68px;background:#F0F2F5;display:flex;align-items:center;justify-content:center">
+            <span class="ms-nav" style="font-size:30px;color:var(--muted)" aria-hidden="true">cleaning_services</span>
+          </div>
+          <div style="padding:8px 8px 10px">
+            <p style="font-size:11px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:6px">掃除グッズまとめ</p>
+            <span style="font-size:10px;color:#BF0000;font-weight:700">楽天で見る ›</span>
+          </div>
+        </a>
+        <a href="https://hb.afl.rakuten.co.jp/hgc/0c45781e.388f0b2d.0c45781f.9b36b5b3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E6%B4%97%E5%89%A4%20%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84%2F&link_type=text&ut=eyJwYWdljoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="noopener sponsored"
+           style="flex-shrink:0;width:114px;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,0.08);border-radius:10px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column">
+          <div style="height:68px;background:#F0F2F5;display:flex;align-items:center;justify-content:center">
+            <span class="ms-nav" style="font-size:30px;color:var(--muted)" aria-hidden="true">soap</span>
+          </div>
+          <div style="padding:8px 8px 10px">
+            <p style="font-size:11px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:6px">洗剤のまとめ買い</p>
+            <span style="font-size:10px;color:#BF0000;font-weight:700">楽天で見る ›</span>
+          </div>
+        </a>
+      </div>
+
+      <p style="font-size:12px;font-weight:700;color:var(--text);margin:16px 0 8px">ストッカー系</p>
+      <div style="display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/0c45781e.388f0b2d.0c45781f.9b36b5b3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B9%E3%83%88%E3%83%83%E3%82%AB%E3%83%BC%2F&link_type=text&ut=eyJwYWdljoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="noopener sponsored"
+           style="flex-shrink:0;width:114px;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,0.08);border-radius:10px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column">
+          <div style="height:68px;background:#F0F2F5;display:flex;align-items:center;justify-content:center">
+            <span class="ms-nav" style="font-size:30px;color:var(--muted)" aria-hidden="true">inventory_2</span>
+          </div>
+          <div style="padding:8px 8px 10px">
+            <p style="font-size:11px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:6px">ストッカーを探す</p>
+            <span style="font-size:10px;color:#BF0000;font-weight:700">楽天で見る ›</span>
+          </div>
+        </a>
+        <a href="https://hb.afl.rakuten.co.jp/hgc/0c45781e.388f0b2d.0c45781f.9b36b5b3/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E9%A3%9F%E5%93%81%E3%82%B9%E3%83%88%E3%83%83%E3%82%AB%E3%83%BC%2F&link_type=text&ut=eyJwYWdljoidXJsIiwidHlwZSI6InRleHQiLCJjb2wiOjF9" target="_blank" rel="noopener sponsored"
+           style="flex-shrink:0;width:114px;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,0.08);border-radius:10px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column">
+          <div style="height:68px;background:#F0F2F5;display:flex;align-items:center;justify-content:center">
+            <span class="ms-nav" style="font-size:30px;color:var(--muted)" aria-hidden="true">kitchen</span>
+          </div>
+          <div style="padding:8px 8px 10px">
+            <p style="font-size:11px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:6px">食品ストッカー</p>
+            <span style="font-size:10px;color:#BF0000;font-weight:700">楽天で見る ›</span>
+          </div>
+        </a>
+      </div>
+
+      <p style="font-size:10px;color:var(--muted);margin-top:16px">※広告・アフィリエイトリンクを含みます</p>
+    </div>
+
   </div>
 
   <!-- ── インフィード広告枠（ad_type:noneのあいだ非表示。復活はapplyAdType()参照） ── -->
