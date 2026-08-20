@@ -283,6 +283,26 @@
       .cal-cell.is-today:hover { background:var(--brand-soft-strong); }
     }
     .cal-cell.is-today { background:var(--brand-soft); outline:2px solid var(--brand); outline-offset:-1px; }
+    /* 品目詳細の「次の収集日」からジャンプしてきたときだけ付く一時的な目印（v1.97で新設。v1.99で、
+       is-todayの緑と紛れて目立たないという指摘を受け、検索したカテゴリの色で塗る＋登場時に一度だけ
+       弾むアニメーションを付ける方式に変更。色はscript.js側で--target-color/--target-bgとして
+       セルにインラインで渡す（カテゴリごとに変わるため固定のCSS変数では表現できない）） */
+    .cal-cell.is-target {
+      background:var(--target-bg, var(--brand-soft));
+      outline:3px solid var(--target-color, var(--brand));
+      outline-offset:-2px;
+      animation:cal-target-pop .5s ease-out;
+    }
+    .cal-cell.is-target .cal-day { color:var(--target-color, var(--brand)); font-weight:700; }
+    @keyframes cal-target-pop {
+      0%   { transform:scale(1); }
+      30%  { transform:scale(1.12); }
+      60%  { transform:scale(.96); }
+      100% { transform:scale(1); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cal-cell.is-target { animation:none; }
+    }
     .cal-cell.yearend  { opacity:0.18; pointer-events:none; }
     .cal-day           { font-size:13px; font-weight:700; color:var(--ink); line-height:1; }
     .cal-day-sun       { color:#C94B2A; }

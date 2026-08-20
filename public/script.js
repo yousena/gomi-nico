@@ -153,6 +153,9 @@ const DEFAULT_FAQ = [
 ===================================================== */
 let DATA = null;
 let calYear, calMonth; // 表示中の年・月（月間グリッド表示）
+let calTargetDate = null; // 品目詳細の「次の収集日」から遷移したとき、その日を一時的に目立たせるための目印（v1.97）。
+                           // ページを離れれば消える一時的なものなのでlocalStorageには保存しない。
+                           // 月移動・日付タップなど、利用者が自分で別の操作をしたら都度クリアする
 
 /**
  * 都市検出: metaタグ(/shiki/) → URLパス(/shiki/) → クエリパラメータ(?city=shiki) → デフォルト
@@ -824,6 +827,10 @@ function handleTodayStripTap() {
    日別シートを飛ばして直接カテゴリ詳細へ遷移する（2タップ→1タップ）
 ===================================================== */
 function handleDayTap(year, month, day) {
+  // 利用者が自分でセルをタップしたら、jumpToCollectionDate()由来の一時的な目印は役目を終えるのでクリアする。
+  // 目印は既にグリッドのHTMLとして描画済みのため、変数をクリアするだけでは見た目に反映されない。
+  // タップされたセル自体を再描画するので、目印が付いていた場合のみ再描画して見た目からも消す
+  if (calTargetDate) { calTargetDate = null; renderCalendar(); }
   const date    = new Date(year, month, day);
   const areaKey = localStorage.getItem(getAreaKey());
 
@@ -857,6 +864,21 @@ function showDayDetail(year, month, day) {
 function closeDayDetail() {
   document.getElementById('day-detail-backdrop').classList.add('is-hidden');
   document.body.style.overflow = '';
+}
+
+/**
+ * 品目詳細の「次の収集日」ボタンから呼ばれる（v1.97）。カレンダーの対象月に切り替えて
+ * その日を一時的にハイライトするだけで、日別の内訳ポップアップは自動で開かない
+ * （太平さんの指示により、ジャンプ＋ハイライトのみにとどめる）。
+ * categoryは、検索した品目のカテゴリ色で目印を塗るために使う（v1.99・renderCalendar()側で参照）。
+ */
+function jumpToCollectionDate(year, month, day, category) {
+  closeItemDetail();
+  calYear = year;
+  calMonth = month;
+  calTargetDate = { year: year, month: month, day: day, category: category };
+  showPanel('calendar');
+  renderCalendar();
 }
 
 function buildDayDetailHTML(areaKey, date) {
@@ -923,8 +945,8 @@ function buildDayDetailHTML(areaKey, date) {
    蕨市のように1日に収集カテゴリが3〜6種類重なる地区への対策は、小セルを拡張する
    のではなく「アイコン最大4枠・超過分は+Nバッジ」で表現する方式にした（後述）。
 ===================================================== */
-function prevMonth() { calMonth--; if (calMonth < 0) { calMonth = 11; calYear--; } renderCalendar(); }
-function nextMonth() { calMonth++; if (calMonth > 11) { calMonth = 0; calYear++; } renderCalendar(); }
+function prevMonth() { calTargetDate = null; calMonth--; if (calMonth < 0) { calMonth = 11; calYear--; } renderCalendar(); }
+function nextMonth() { calTargetDate = null; calMonth++; if (calMonth > 11) { calMonth = 0; calYear++; } renderCalendar(); }
 
 const WD_SHORT = ['日','月','火','水','木','金','土'];
 const CAL_MAX_ICONS = 4; // 1セルに表示するアイコンの上限（2列×2行）。超過時は3枠+「+Nバッジ」に切り替える
@@ -971,6 +993,13 @@ function renderCalendar() {
     const isYE    = isYearEnd(date) || !!getFixedHolidayClosure(date);
     const isHol   = isHoliday(date);
     const dow     = date.getDay();
+    // 品目詳細の「次の収集日」から遷移してきた場合のみ、その日を一時的にハイライトする（v1.97）。
+    // v1.99で、検索したカテゴリの色で目印を塗るように変更（is-todayの緑と紛れて目立たないという
+    // 太平さんの指摘への対応）。色はCSSクラスでは表現できないため、対象セルにだけ
+    // --target-color/--target-bgというCSS変数をインラインで渡し、スタイルシート側で参照する
+    const isTarget    = !!calTargetDate && calTargetDate.year === calYear && calTargetDate.month === calMonth && calTargetDate.day === d;
+    const targetSt     = isTarget ? (TYPE_STYLE[calTargetDate.category] || TYPE_STYLE.unknown) : null;
+    const targetStyle  = isTarget ? ' style="--target-color:' + targetSt.fg + ';--target-bg:' + targetSt.bg + '"' : '';
 
     types.forEach(t => { if (!seenTypes.has(t.type)) seenTypes.set(t.type, t.label); });
 
@@ -1001,6 +1030,7 @@ function renderCalendar() {
     const cellCls = ['cal-cell',
       types.length > 0 ? 'has-col' : '',
       isToday          ? 'is-today' : '',
+      isTarget         ? 'is-target' : '',
       isYE             ? 'yearend'  : '',
     ].filter(Boolean).join(' ');
 
@@ -1008,7 +1038,7 @@ function renderCalendar() {
       <button class="${cellCls}" role="gridcell"
               aria-label="${calMonth+1}月${d}日 ${labelText}"
               onclick="handleDayTap(${calYear},${calMonth},${d})"
-              type="button">
+              type="button"${targetStyle}>
         <span class="${dayCls}">${d}</span>
         ${iconsHtml}
       </button>`;
@@ -1469,10 +1499,10 @@ function openItemDetail(name) {
   // ごみ出し不可（unknown）はそもそも収集の対象外のため、この枠自体を出さない
   // （代わりに下の「どうすればいい？」ガイドで案内する）。
   if (item.category === 'sodai') {
-    html += '<div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:16px;padding:14px 16px;background:' + st.bg + ';border-radius:12px">' +
-      '<span class="ms-nav" style="font-size:22px;color:' + st.fg + ';flex-shrink:0;line-height:1.4">event_busy</span>' +
+    html += '<div style="display:flex;align-items:flex-start;gap:2px;margin-bottom:16px;padding:14px 16px;background:' + st.bg + ';border-radius:12px">' +
+      '<span class="ms-nav" style="font-size:16px;color:' + st.fg + ';flex-shrink:0;line-height:1.2">event_busy</span>' +
       '<div style="min-width:0">' +
-        '<p style="font-size:11px;font-weight:700;color:' + st.fg + ';margin:0 0 4px;letter-spacing:.04em">収集日について</p>' +
+        '<p style="font-size:12px;font-weight:700;color:' + st.fg + ';margin:0 0 4px;letter-spacing:.06em">収集日について</p>' +
         '<p style="font-size:14px;color:var(--ink);line-height:1.6;margin:0">' + (cat.how || '事前予約が必要です') + '</p>' +
       '</div>' +
     '</div>';
@@ -1480,8 +1510,8 @@ function openItemDetail(name) {
     var areaKeyForNext = localStorage.getItem(getAreaKey());
     if (!areaKeyForNext) {
       html += '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px;padding:14px 16px;background:var(--bg-neutral-soft);border-radius:12px">' +
-        '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
-          '<span class="ms-nav" style="font-size:22px;color:var(--muted);flex-shrink:0">event</span>' +
+        '<div style="display:flex;align-items:center;gap:2px;min-width:0">' +
+          '<span class="ms-nav" style="font-size:16px;color:var(--muted);flex-shrink:0">event</span>' +
           '<p style="font-size:13.5px;color:var(--text);line-height:1.5;margin:0">地区を選択すると次の収集日がわかります</p>' +
         '</div>' +
         '<button onclick="closeItemDetail();openSheet();" style="flex-shrink:0;padding:8px 14px;border-radius:999px;background:var(--brand);color:#fff;border:none;font-size:12.5px;font-weight:700;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">選択する</button>' +
@@ -1492,16 +1522,19 @@ function openItemDetail(name) {
         var nextLabel = formatDateJP(nextCollection.date);
         if (nextCollection.diffDays === 0) nextLabel += '・今日';
         else if (nextCollection.diffDays === 1) nextLabel += '・明日';
-        html += '<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;padding:14px 16px;background:' + st.bg + ';border-radius:12px">' +
-          '<span class="ms-nav" style="font-size:22px;color:' + st.fg + ';flex-shrink:0">event</span>' +
-          '<div style="min-width:0">' +
-            '<p style="font-size:11px;font-weight:700;color:' + st.fg + ';margin:0 0 2px;letter-spacing:.04em">次の収集日</p>' +
-            '<p style="font-size:16px;font-weight:700;color:var(--ink);margin:0">' + nextLabel + '</p>' +
+        html += '<button onclick="jumpToCollectionDate(' + nextCollection.date.getFullYear() + ',' + nextCollection.date.getMonth() + ',' + nextCollection.date.getDate() + ',\'' + item.category + '\')" style="display:flex;align-items:center;gap:2px;margin-bottom:16px;padding:14px 16px;background:' + st.bg + ';border-radius:12px;border:none;width:100%;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;text-align:left">' +
+          '<span class="ms-nav" style="font-size:16px;color:' + st.fg + ';flex-shrink:0">event</span>' +
+          '<div style="min-width:0;display:flex;align-items:center;gap:8px;width:100%;justify-content:space-between">' +
+            '<p style="font-size:12px;font-weight:700;color:' + st.fg + ';margin:0;letter-spacing:.06em">次の収集日</p>' +
+            '<span style="display:flex;align-items:center;gap:2px;flex-shrink:0">' +
+              '<p style="font-size:16px;font-weight:700;color:var(--ink);margin:0">' + nextLabel + '</p>' +
+              '<span class="ms-nav" style="font-size:18px;color:var(--muted)" aria-hidden="true">chevron_right</span>' +
+            '</span>' +
           '</div>' +
-        '</div>';
+        '</button>';
       } else {
         html += '<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;padding:14px 16px;background:var(--bg-neutral-soft);border-radius:12px">' +
-          '<span class="ms-nav" style="font-size:22px;color:var(--muted);flex-shrink:0">event_busy</span>' +
+          '<span class="ms-nav" style="font-size:16px;color:var(--muted);flex-shrink:0">event_busy</span>' +
           '<p style="font-size:13.5px;color:var(--text);line-height:1.5;margin:0">収集日の情報を確認できませんでした。<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="color:var(--brand);text-decoration:underline;font-weight:700">お問い合わせ先</a>へご確認ください</p>' +
         '</div>';
       }
@@ -1510,7 +1543,7 @@ function openItemDetail(name) {
 
   if (item.note) {
     html += '<div style="background:var(--bg-neutral-soft);border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
-      '<p style="font-size:11px;font-weight:700;color:var(--muted);margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
+      '<p style="font-size:12px;font-weight:700;color:var(--muted);margin:0 0 6px;letter-spacing:.06em">出し方・注意点</p>' +
       '<p style="font-size:14px;color:var(--ink);line-height:1.7;margin:0">' + item.note + '</p>' +
     '</div>';
   }
@@ -1531,7 +1564,7 @@ function openItemDetail(name) {
       '</a>';
     }).join('');
     html += '<div style="background:var(--brand-soft);border-left:4px solid var(--brand);border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
-      '<p style="font-size:11px;font-weight:700;color:var(--brand-strong);margin:0 0 6px;letter-spacing:.06em">どうすればいい？</p>' +
+      '<p style="font-size:12px;font-weight:700;color:var(--brand-strong);margin:0 0 6px;letter-spacing:.06em">どうすればいい？</p>' +
       '<p style="font-size:14px;color:var(--ink);line-height:1.7;margin:0 0 12px">' + guide.body + '</p>' +
       '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
         linkChips +
@@ -2030,6 +2063,14 @@ function closeCategoryDetail() {
 var ALL_PANELS = ['calendar','today','search','notice','faq','vendor','contact','language','affiliate','tokutoku'];
 
 function showPanel(p) {
+  // カレンダー以外のパネルへ移動するときは、jumpToCollectionDate()由来の一時的な目印は
+  // 役目を終えるのでクリアする（v1.100・お知らせ/分別検索/お得情報など、カレンダーから
+  // 離れる操作全般が対象。renderCalendar()は非表示中でも呼んでおき、次にカレンダーへ
+  // 戻ったときに古い目印が残ったままにならないようにする）
+  if (p !== 'calendar' && calTargetDate) {
+    calTargetDate = null;
+    renderCalendar();
+  }
   ALL_PANELS.forEach(function(id) {
     var panel = document.getElementById('panel-' + id);
     if (panel) panel.classList.toggle('is-hidden', id !== p);
