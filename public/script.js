@@ -690,6 +690,30 @@ function getGarbageForDate(areaKey, date) {
   return result;
 }
 
+/**
+ * 指定カテゴリの「次の収集日」を探す（v1.95で新設・品目検索結果からその場で収集日がわかる機能用）。
+ * getGarbageForDate()が返す当日の全カテゴリの中から、指定カテゴリに一致する日だけを拾う点が
+ * renderTodayStrip()の「次の収集」探索（カテゴリ不問で最初に見つかった日を表示）との違い。
+ * カテゴリを絞らずに探すと「3日後」と案内されたのに実際は別カテゴリだった、という誤解を招くため、
+ * 必ず対象カテゴリで絞り込む。危険ごみ・有害ごみ・不燃ごみは月1〜隔週ペースのため、14日では
+ * 取りこぼす可能性があり、探索範囲は60日先まで確保する（年末年始・祝日振替による収集お休みは
+ * getGarbageForDate()側で既に考慮済み）。
+ */
+function findNextCollectionByCategory(areaKey, category, maxDays) {
+  if (!areaKey) return null;
+  maxDays = maxDays || 60;
+  var today = new Date();
+  for (var i = 0; i <= maxDays; i++) {
+    var d = new Date(today);
+    d.setDate(today.getDate() + i);
+    var types = getGarbageForDate(areaKey, d);
+    if (types.some(function(t) { return t.type === category; })) {
+      return { date: d, diffDays: i };
+    }
+  }
+  return null;
+}
+
 function formatDateJP(date) {
   return `${date.getMonth()+1}月${date.getDate()}日（${WD_JP[date.getDay()]}）`;
 }
@@ -1417,6 +1441,7 @@ function openItemDetail(name) {
   if (!item) return;
 
   var st       = TYPE_STYLE[item.category] || TYPE_STYLE.unknown;
+  var cat      = DATA.categories[item.category] || {};
   var catLabel = DATA.categories[item.category]
     ? DATA.categories[item.category].label
     : item.category;
@@ -1437,6 +1462,51 @@ function openItemDetail(name) {
 
   // ── ボディ（出し方・タグ・カテゴリ一覧ボタン）
   var html = '';
+
+  // ── 次の収集日（v1.95で新設）。「検索して何ごみかわかった、その場でいつ出せるかも知りたい」
+  // という要望を受け、品目詳細を開いた瞬間にそのカテゴリの次の収集日がわかるようにする。
+  // 粗大ごみ（sodai）は固定収集日を持たない予約制のため、日付検索はせず案内文のみ表示する。
+  // ごみ出し不可（unknown）はそもそも収集の対象外のため、この枠自体を出さない
+  // （代わりに下の「どうすればいい？」ガイドで案内する）。
+  if (item.category === 'sodai') {
+    html += '<div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:16px;padding:14px 16px;background:' + st.bg + ';border-radius:12px">' +
+      '<span class="ms-nav" style="font-size:22px;color:' + st.fg + ';flex-shrink:0;line-height:1.4">event_busy</span>' +
+      '<div style="min-width:0">' +
+        '<p style="font-size:11px;font-weight:700;color:' + st.fg + ';margin:0 0 4px;letter-spacing:.04em">収集日について</p>' +
+        '<p style="font-size:14px;color:var(--ink);line-height:1.6;margin:0">' + (cat.how || '事前予約が必要です') + '</p>' +
+      '</div>' +
+    '</div>';
+  } else if (item.category !== 'unknown') {
+    var areaKeyForNext = localStorage.getItem(getAreaKey());
+    if (!areaKeyForNext) {
+      html += '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px;padding:14px 16px;background:var(--bg-neutral-soft);border-radius:12px">' +
+        '<div style="display:flex;align-items:center;gap:10px;min-width:0">' +
+          '<span class="ms-nav" style="font-size:22px;color:var(--muted);flex-shrink:0">event</span>' +
+          '<p style="font-size:13.5px;color:var(--text);line-height:1.5;margin:0">地区を選択すると次の収集日がわかります</p>' +
+        '</div>' +
+        '<button onclick="closeItemDetail();openSheet();" style="flex-shrink:0;padding:8px 14px;border-radius:999px;background:var(--brand);color:#fff;border:none;font-size:12.5px;font-weight:700;font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent">選択する</button>' +
+      '</div>';
+    } else {
+      var nextCollection = findNextCollectionByCategory(areaKeyForNext, item.category);
+      if (nextCollection) {
+        var nextLabel = formatDateJP(nextCollection.date);
+        if (nextCollection.diffDays === 0) nextLabel += '・今日';
+        else if (nextCollection.diffDays === 1) nextLabel += '・明日';
+        html += '<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;padding:14px 16px;background:' + st.bg + ';border-radius:12px">' +
+          '<span class="ms-nav" style="font-size:22px;color:' + st.fg + ';flex-shrink:0">event</span>' +
+          '<div style="min-width:0">' +
+            '<p style="font-size:11px;font-weight:700;color:' + st.fg + ';margin:0 0 2px;letter-spacing:.04em">次の収集日</p>' +
+            '<p style="font-size:16px;font-weight:700;color:var(--ink);margin:0">' + nextLabel + '</p>' +
+          '</div>' +
+        '</div>';
+      } else {
+        html += '<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;padding:14px 16px;background:var(--bg-neutral-soft);border-radius:12px">' +
+          '<span class="ms-nav" style="font-size:22px;color:var(--muted);flex-shrink:0">event_busy</span>' +
+          '<p style="font-size:13.5px;color:var(--text);line-height:1.5;margin:0">収集日の情報を確認できませんでした。<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="color:var(--brand);text-decoration:underline;font-weight:700">お問い合わせ先</a>へご確認ください</p>' +
+        '</div>';
+      }
+    }
+  }
 
   if (item.note) {
     html += '<div style="background:var(--bg-neutral-soft);border-radius:12px;padding:14px 16px;margin-bottom:16px">' +
