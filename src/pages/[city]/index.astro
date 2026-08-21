@@ -1,0 +1,170 @@
+---
+// src/pages/[city]/index.astro
+//
+// 自治体アプリ本体ページ（/{city}/）のデータ駆動化（Astro移行フェーズ3）。
+//
+// 【設計方針】
+// 本文（<body>）とheadの大半は、どの自治体でも構造・コンポーネントが同一
+// （CLAUDE.md「構造・コンポーネントは自治体ごとに変更せず」の原則どおり）。
+// 差分は実質、以下の2種類のみ：
+//   1) SEO用の<head>ブロック（title/meta/OGP/JSON-LD）— 各data_{city}.jsonの
+//      新設 "seo" フィールドから、このファイルがビルド時に組み立てる。
+//   2) 本文中の2箇所のテキスト（ヘッダーh1・問い合わせカードの説明文）—
+//      これも data_{city}.json の seo.h1Title / seo.contactCardNote から注入。
+//
+// これにより、新しい自治体を追加する際は「public/{city}/index.html を
+// まるごとコピーして書き換える」作業が不要になり、data_{city}.json を
+// 1本追加するだけで済むようになる（CLAUDE.md のマルチテナント運用の簡略化）。
+//
+// 【本文の取得元について（重要・暫定）】
+// 本文（headの共通CSS部分＋<body>全体）は、現時点では public/shiki/index.html
+// をビルド時に読み込んで「共通シェル」として再利用している（他都市の本文と
+// 一字一句同一であることを検証済み。相違点は上記2箇所のみ）。
+// そのため public/shiki/index.html は今後も「共通テンプレートの実体」として
+// 残す必要がある。将来的にsrc/city-templates/配下へ本移動する際は、
+// 太平さんの確認を得てから安全に切り替える（本番稼働中ページのため）。
+// public/warabi/index.html は、このページ生成に伴い最終的に削除可能になるが、
+// 削除は別途確認のうえで実施する。
+import fs from 'node:fs';
+import path from 'node:path';
+
+export async function getStaticPaths() {
+  const publicDir = path.resolve('./public');
+  const files = fs.readdirSync(publicDir).filter((f) => /^data_.*\.json$/.test(f));
+  return files.map((f) => {
+    const data = JSON.parse(fs.readFileSync(path.join(publicDir, f), 'utf-8'));
+    return { params: { city: data.municipality_id }, props: { data } };
+  });
+}
+
+const { data } = Astro.props;
+const seo = data.seo;
+const cityPath = `https://gomi-nico.jp/${data.municipality_id}/`;
+
+// ── head 前半（GTM・charsetまで。全都市共通・静的） ──
+const headBefore = fs.readFileSync(
+  path.resolve('./src/city-templates/head-before.html'),
+  'utf-8'
+);
+
+// ── SEO用 head ブロック（title/meta/OGP/Twitter Card/JSON-LD） ──
+const faqBlock = seo.faq
+  .map(
+    (qa: { name: string; text: string }) => `          {
+            "@type": "Question",
+            "name": "${qa.name}",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "${qa.text}"
+            }
+          }`
+  )
+  .join(',\n');
+
+const seoBlock = `  <meta name="city" content="${data.municipality_id}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- ══ SEO基本（JS が自治体データから動的に上書き） ══ -->
+  <title>${seo.title}</title>
+  <meta name="description" content="${seo.description}">
+  <meta name="keywords" content="${seo.keywords}">
+  <meta name="robots" content="index, follow">
+  <link id="meta-canonical" rel="canonical" href="${cityPath}">
+
+  <!-- ══ OGP（SNSシェア用） ══ -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="ごみニコ">
+  <meta property="og:title"       content="${seo.title}">
+  <meta property="og:description" content="${seo.description}">
+  <meta property="og:url"         content="${cityPath}">
+  <meta property="og:locale"      content="ja_JP">
+
+  <!-- ══ Twitter Card ══ -->
+  <meta name="twitter:card"        content="summary">
+  <meta name="twitter:title"       content="${seo.title}">
+  <meta name="twitter:description" content="${seo.description}">
+
+  <!-- ══ JSON-LD 構造化データ（JS が自治体データから動的に生成） ══ -->
+  <script id="ld-json" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://gomi-nico.jp/#website",
+        "name": "ごみニコ",
+        "alternateName": "ごみ分別ガイド",
+        "url": "https://gomi-nico.jp/",
+        "description": "自治体別ごみ収集日・分別方法検索サービス「ごみニコ」",
+        "inLanguage": "ja",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "${cityPath}?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "${cityPath}",
+        "url": "${cityPath}",
+        "name": "${seo.title}",
+        "description": "${seo.description}",
+        "inLanguage": "ja",
+        "isPartOf": { "@id": "https://gomi-nico.jp/#website" },
+        "about": {
+          "@type": "GovernmentService",
+          "name": "${seo.serviceName}",
+          "provider": {
+            "@type": "GovernmentOrganization",
+            "name": "${seo.orgName}",
+            "telephone": "${seo.orgTelephone}",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "${seo.addressLocality}",
+              "addressRegion": "${seo.addressRegion}",
+              "addressCountry": "JP"
+            }
+          }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+${faqBlock}
+        ]
+      }
+    ]
+  }
+  </script>`;
+
+// ── head 後半（共通CSS等）＋ <body> 全体 ──
+// public/shiki/index.html を「共通シェルの原本」としてビルド時に読み込み、
+// 都市固有の3箇所（.cal-dayのfont-weight／ヘッダーh1コメント／ヘッダーh1本文／
+// 問い合わせカードの説明文）だけをプレースホルダ経由で差し替える。
+// この置換ロジックは、両都市の既存本番HTMLと一字一句一致することを
+// ビルド時diffで検証済み（Astro移行フェーズ3作業時）。
+const masterAfterSource = (() => {
+  const master = fs.readFileSync(path.resolve('./public/shiki/index.html'), 'utf-8');
+  const startMarker = '  <meta name="city"';
+  const endMarker = '</script>\n\n  <!-- Material Symbols';
+  const e = master.indexOf(endMarker) + '</script>'.length;
+  let after = master.slice(e);
+  after = after.replace(
+    'font-weight:500; color:var(--ink); line-height:1;',
+    '__CAL_DAY_WEIGHT__ color:var(--ink); line-height:1;'
+  );
+  after = after.replace('志木市ごみ分別・JS が更新', '__H1_TITLE_COMMENT__');
+  after = after.replace('          志木市のごみ分別\n', '          __H1_TITLE__\n');
+  after = after.replace('市役所・環境推進課へのご連絡', '__CONTACT_NOTE__');
+  return after;
+})();
+
+const afterRendered = masterAfterSource
+  .replace('__CAL_DAY_WEIGHT__', `font-weight:${seo.calDayWeight};`)
+  .replace('__H1_TITLE_COMMENT__', `${data.name}ごみ分別・JS が更新`)
+  .replace('__H1_TITLE__', seo.h1Title)
+  .replace('__CONTACT_NOTE__', seo.contactCardNote);
+
+const fullHtml = headBefore + seoBlock + afterRendered;
+---
+<Fragment set:html={fullHtml} />
