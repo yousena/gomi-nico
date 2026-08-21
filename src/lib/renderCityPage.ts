@@ -25,6 +25,8 @@ export type CityData = {
     addressRegion: string;
     faq: { name: string; text: string }[];
   };
+  garbage_db?: { name: string; category: string; note?: string }[];
+  categories?: Record<string, unknown>;
   [key: string]: unknown;
 };
 
@@ -32,6 +34,107 @@ export function getAllCityData(): CityData[] {
   const publicDir = path.resolve('./public');
   const files = fs.readdirSync(publicDir).filter((f) => /^data_.*\.json$/.test(f));
   return files.map((f) => JSON.parse(fs.readFileSync(path.join(publicDir, f), 'utf-8')));
+}
+
+// ── 「品目から探す」静的アコーディオン（DS.md §2-4-12・v1.106で新設） ──
+// 品目別の個別ページ・複数URLハイブリッド案はいずれも重複コンテンツリスクを理由に
+// 不採用となり、代わりに新規URLを一切作らず /{city}/ 本体の初期HTMLへ garbage_db
+// 全品目をカテゴリ別に埋め込む方式を採用した。SPAのshowPanel()切替（.is-hidden）
+// の対象には含めず、<details>/<summary>だけで開閉する常時DOM上の静的セクションにする。
+//
+// categories[key].how/how_steps/tips・garbage_db[].note は、script.js側の
+// section()/openItemDetail()と同じく「電話番号・問い合わせ先へのリンクを含む
+// 信頼済みHTML断片」として扱う既存のデータ規約に合わせ、ここでもエスケープせず
+// そのまま連結する（エスケープすると<a href="tel:...">等が文字列のまま表示されてしまう）。
+const CATEGORY_ICON: Record<string, string> = {
+  moeru: '/icons/moeru.svg',
+  moenai: '/icons/moenai.svg',
+  recycle: '/icons/recycle.svg',
+  'shigen-pla': '/icons/plastic.svg',
+  kiken: '/icons/kiken.svg',
+  yugai: '/icons/harmful.svg',
+  sodai: '/icons/sodai.svg',
+  fuku: '/icons/fuku.svg',
+  kami: '/icons/kami.svg',
+  can: '/icons/can.svg',
+  pet: '/icons/pet.svg',
+  bin: '/icons/bin.svg',
+  can_pet_bin: '/icons/can_pet.svg',
+  can_pet: '/icons/can_pet.svg',
+  spraycan: '/icons/spray_can.svg',
+  unknown: '/icons/none.svg',
+};
+
+type GarbageItem = { name: string; category: string; note?: string };
+
+function buildExampleRows(kind: 'ok' | 'ng', list: string[] | undefined): string {
+  if (!list || list.length === 0) return '';
+  const rowIcon = kind === 'ok' ? 'check_circle' : 'cancel';
+  const color = kind === 'ok' ? 'var(--c-status-ok)' : 'var(--c-status-ng)';
+  const title = kind === 'ok' ? '出せるものの例' : '出せないものの例';
+  const rows = list
+    .slice(0, 10)
+    .map(
+      (t) =>
+        `<div class="item-idx-row"><span class="ms-nav" style="font-size:16px;color:${color};flex-shrink:0;line-height:1.5">${rowIcon}</span><span>${t}</span></div>`
+    )
+    .join('');
+  return `<p class="item-idx-sub" style="margin-top:0">${title}</p>${rows}`;
+}
+
+function buildItemIndexSection(data: CityData): string {
+  const categories = (data.categories || {}) as Record<string, any>;
+  const items = (data.garbage_db || []) as GarbageItem[];
+
+  const byCat = new Map<string, GarbageItem[]>();
+  for (const item of items) {
+    if (!byCat.has(item.category)) byCat.set(item.category, []);
+    byCat.get(item.category)!.push(item);
+  }
+
+  const blocks = Object.keys(categories)
+    .filter((key) => (byCat.get(key) || []).length > 0)
+    .map((key) => {
+      const cat = categories[key] || {};
+      const catItems = byCat.get(key)!;
+      const icon = CATEGORY_ICON[key] || '/icons/none.svg';
+
+      const howTexts = ([] as string[]).concat(cat.how_steps || [], cat.tips || []);
+      const howHtml = howTexts.length
+        ? `<div class="item-idx-how"><p class="item-idx-sub" style="margin-top:0">出し方・注意点</p>${howTexts
+            .map((t) => `<p>${t}</p>`)
+            .join('')}</div>`
+        : '';
+
+      const itemListHtml =
+        `<p class="item-idx-sub">品目一覧</p><ul class="item-idx-list">` +
+        catItems
+          .map(
+            (it) =>
+              `<li>${it.name}${it.note ? `<span class="item-idx-note"> — ${it.note}</span>` : ''}</li>`
+          )
+          .join('') +
+        `</ul>`;
+
+      return (
+        `<details><summary><span class="item-idx-summary-label"><img src="${icon}" width="22" height="22" alt="" aria-hidden="true">${
+          cat.label || key
+        }<span class="item-idx-count">（${catItems.length}件）</span></span>` +
+        `<span class="ms-nav item-idx-chevron" aria-hidden="true" style="font-size:20px;color:var(--muted)">expand_more</span></summary>` +
+        `<div class="item-idx-body">${buildExampleRows('ok', cat.allowed)}${buildExampleRows(
+          'ng',
+          cat.not_allowed
+        )}${howHtml}${itemListHtml}</div></details>`
+      );
+    });
+
+  if (blocks.length === 0) return '';
+
+  return `<section class="item-idx" aria-label="品目から探す">
+  <p style="font-size:13px;font-weight:800;color:var(--muted);letter-spacing:.06em;margin:0 0 10px">品目から探す</p>
+  <p class="item-idx-lead">${data.name}のごみ分別を、カテゴリごとに一覧で確認できます。品目名で探すには、下部メニューの「分別検索」もあわせてご利用ください。</p>
+  ${blocks.join('\n  ')}
+</section>`;
 }
 
 export function renderCityPage(data: CityData): string {
@@ -154,7 +257,8 @@ ${faqBlock}
     .replace('__CAL_DAY_WEIGHT__', `font-weight:${seo.calDayWeight};`)
     .replace('__H1_TITLE_COMMENT__', `${data.name}ごみ分別・JS が更新`)
     .replace('__H1_TITLE__', seo.h1Title)
-    .replace('__CONTACT_NOTE__', seo.contactCardNote);
+    .replace('__CONTACT_NOTE__', seo.contactCardNote)
+    .replace('__ITEM_INDEX_SECTION__', buildItemIndexSection(data));
 
   return headBefore + seoBlock + afterRendered;
 }

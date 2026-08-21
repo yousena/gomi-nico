@@ -246,6 +246,36 @@
       user-select: none; vertical-align: middle;
     }
 
+    /* ── 品目から探す（SEO対応・静的アコーディオン。DS.md §2-4-12・v1.106で新設） ──
+       SPAのshowPanel()切替（.is-hidden）の対象には含めない、常時DOM上の
+       独立セクション。<details>はネイティブ機構のため閉じていてもテキストは
+       HTML内に存在し、開閉のJSも描画コストも不要 */
+    .item-idx { margin: 8px 0 32px; }
+    .item-idx-lead { font-size: 13px; color: var(--muted); line-height: 1.7; margin: 0 0 14px; }
+    .item-idx details {
+      background: #fff; border-radius: 14px; border: 1px solid rgba(0,0,0,0.07);
+      overflow: hidden; margin-bottom: 10px;
+    }
+    .item-idx summary {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 16px; cursor: pointer; list-style: none; min-height: 44px;
+    }
+    .item-idx summary::-webkit-details-marker { display: none; }
+    .item-idx-summary-label { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; color: var(--ink); }
+    .item-idx-summary-label img { flex-shrink: 0; }
+    .item-idx-count { font-size: 12.5px; font-weight: 600; color: var(--muted); }
+    .item-idx-chevron { transition: transform 0.2s ease-out; }
+    .item-idx details[open] .item-idx-chevron { transform: rotate(180deg); }
+    .item-idx-body { padding: 0 16px 16px; }
+    .item-idx-sub { font-size: 12.5px; font-weight: 800; color: var(--muted); letter-spacing: .04em; margin: 14px 0 4px; }
+    .item-idx-row { display: flex; align-items: flex-start; gap: 8px; padding: 8px 0; border-top: 1px solid rgba(0,0,0,0.05); font-size: 14px; color: var(--ink); line-height: 1.6; }
+    .item-idx-how { background: var(--bg-neutral-soft); border-radius: 12px; padding: 14px 16px; margin-top: 14px; }
+    .item-idx-how p { font-size: 14px; color: var(--ink); line-height: 1.7; margin: 0 0 8px; }
+    .item-idx-how p:last-child { margin-bottom: 0; }
+    .item-idx-list { list-style: none; margin: 0; padding: 0; }
+    .item-idx-list li { padding: 8px 0; border-top: 1px solid rgba(0,0,0,0.05); font-size: 14px; color: var(--ink); }
+    .item-idx-note { color: var(--muted); font-size: 12.5px; }
+
     /* ── ボトムシート共通 ── */
     .bottom-sheet {
       position:absolute; bottom:0; left:0; right:0;
@@ -1180,6 +1210,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
 </nav>
+
+<!-- ============================================================
+     品目から探す（SEO対応・静的アコーディオン。DS.md §2-4-12）
+============================================================ -->
+<div class="max-w-[430px] mx-auto px-4">
+__ITEM_INDEX_SECTION__
+</div>
 
 <!-- ============================================================
      出典フッター

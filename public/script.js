@@ -2042,7 +2042,10 @@ function openCategoryDetail(typeKey, year, month, day) {
   if (!bodyEl) return;
   var html = '';
 
-  function section(icon, title, items, color) {
+  // 「出せるもの」「出せないもの」は行ごとに違うアイコン・色で描画する
+  // （2026-08-21・v1.106: 従来は3セクションとも同じ白カード+checkアイコンで
+  // 見分けが付きにくく、「出せないもの」の行にもcheckが付くミスリードがあった）
+  function section(icon, title, items, color, rowIcon) {
     if (!items || items.length === 0) return '';
     return '<div style="margin-bottom:20px">' +
       '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">' +
@@ -2053,15 +2056,30 @@ function openCategoryDetail(typeKey, year, month, day) {
         var last = i === items.length - 1;
         return '<div style="display:flex;align-items:flex-start;gap:10px;padding:12px 14px;' +
           (last ? '' : 'border-bottom:1px solid rgba(0,0,0,0.05)') + '">' +
-          '<span class="ms-nav" style="font-size:16px;color:' + color + ';flex-shrink:0;line-height:1.5">check</span>' +
+          '<span class="ms-nav" style="font-size:16px;color:' + color + ';flex-shrink:0;line-height:1.5">' + rowIcon + '</span>' +
           '<p style="font-size:16px;color:var(--ink);line-height:1.5">' + item + '</p></div>';
       }).join('') +
       '</div></div>';
   }
 
-  html += section('check_circle', '出せるもの',    cat.allowed,                               'var(--c-status-ok)');
-  html += section('close',        '出せないもの',   cat.not_allowed,                           'var(--c-status-ng)');
-  html += section('info',         '出し方・注意点', (cat.how_steps||[]).concat(cat.tips||[]), 'var(--c-status-warn)');
+  // 「出し方・注意点」はチェック行の羅列ではなく、グレー角丸ボックス1枚に
+  // 文章として表示する（品目詳細シートの「出し方・注意点」ボックスと同じ視覚言語）
+  function noteBox(icon, title, texts, color) {
+    if (!texts || texts.length === 0) return '';
+    return '<div style="margin-bottom:20px;background:var(--bg-neutral-soft);border-radius:12px;padding:16px">' +
+      '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">' +
+      '<span class="ms-nav" style="font-size:20px;color:' + color + '">' + icon + '</span>' +
+      '<p style="font-size:18px;font-weight:700;color:var(--ink)">' + title + '</p></div>' +
+      texts.map(function(t, i) {
+        var last = i === texts.length - 1;
+        return '<p style="font-size:15px;color:var(--ink);line-height:1.7' + (last ? '' : ';margin-bottom:8px') + '">' + t + '</p>';
+      }).join('') +
+      '</div>';
+  }
+
+  html += section('check_circle', '出せるもの',    cat.allowed,     'var(--c-status-ok)', 'check_circle');
+  html += section('cancel',       '出せないもの',   cat.not_allowed, 'var(--c-status-ng)', 'cancel');
+  html += noteBox('info', '出し方・注意点', (cat.how_steps||[]).concat(cat.tips||[]), 'var(--c-status-warn)');
 
   // 関連記事への導線（cat.article_urlが設定されている場合のみ表示。記事公開までは非表示のまま）
   if (cat.article_url) {
