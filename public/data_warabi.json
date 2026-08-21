@@ -350,7 +350,8 @@
       "tips": [
         "「収集できない」理由は品目ごとに異なります（家電リサイクル法対象・産業廃棄物・破砕機損傷のおそれ等）",
         "蕨市ホームページの「ごみと資源の出し方（分類表）」には、あ〜わ行の品目別一覧があります",
-        "判断に迷ったら<a href=\"javascript:void(0)\" onclick=\"closeFAQ();closeCategoryDetail();closeItemDetail();openContact()\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">安全安心課生活環境係へお問い合わせ</a>ください"
+        "判断に迷ったら<a href=\"javascript:void(0)\" onclick=\"closeFAQ();closeCategoryDetail();closeItemDetail();openContact()\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">安全安心課生活環境係へお問い合わせ</a>ください",
+        "「無料回収します」というトラックの巡回・チラシ・ネット広告にご注意ください。家庭ごみを回収できるのは市区町村の許可を受けた業者だけで、無許可の業者に依頼すると不法投棄や高額請求につながることがあります。詳しくは<a href=\"https://www.env.go.jp/recycle/kaden/tv-recycle/qa.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">環境省の解説ページ</a>をご確認ください"
       ]
     }
   },
@@ -5307,13 +5308,45 @@
     {
       "id": 1,
       "type": "info",
+      "date": "2026-08-10",
+      "title": "蕨戸田衛生センター粗大ごみ処理施設設置に係る生活環境影響調査報告書の縦覧について",
+      "body": "火災で焼損した粗大ごみ処理施設の代替施設設置に向けて、生活環境への影響を調査した報告書を公開しています。縦覧期間は令和8年8月3日〜9月2日。データ公開のほか、市安全安心課生活環境係の窓口でも閲覧できます。",
+      "url": "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1013173.html"
+    },
+    {
+      "id": 2,
+      "type": "info",
+      "date": "2026-05-22",
+      "title": "市民の皆さんが利用するごみステーションの場所について",
+      "body": "利用するごみステーションの場所は地域ごとに決まっています。不明な場合は各町会・自治会へご相談ください。集合住宅にお住まいの方は、所有者がごみステーションを確保しています。清潔に保つため、ごみ当番へのご協力もお願いします。",
+      "url": "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1012850.html"
+    },
+    {
+      "id": 3,
+      "type": "info",
       "date": "2026-03-31",
       "title": "リチウムイオン電池等・小型家電の分別方法が変わりました",
       "body": "令和8年4月1日から、リチウムイオン電池等の充電式電池本体や40cm以下の小型家電製品は、電池の有無にかかわらず「リチウムイオン電池等・小型家電」としてだいだい色のかごへ。透明の袋に入れてから出してください（区分名称も「消火器・バッテリー」から変更になりました）。",
       "url": "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1012525.html"
     },
     {
-      "id": 2,
+      "id": 4,
+      "type": "info",
+      "date": "2026-03-24",
+      "title": "ごみの減量にご協力ください",
+      "body": "火災で停止していたもやすごみ焼却施設が令和8年3月23日に全3炉再稼働し、収集時間も通常どおりに戻りました。ただし粗大ごみ・もえないごみは引き続き民間処理委託のため、ごみの減量にご協力をお願いします。",
+      "url": "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1006964.html"
+    },
+    {
+      "id": 5,
+      "type": "warn",
+      "date": "2026-03-10",
+      "title": "蕨戸田衛生センターの火災とごみ処理への対応",
+      "body": "令和7年7月12日に粗大ごみ処理施設で発生した火災により、ごみ焼却施設等が一時停止しました。県内自治体や東京二十三区清掃一部事務組合等の協力でごみ処理を継続し、令和8年3月に焼却施設が全基再稼働しています。粗大ごみ・もえないごみは引き続き民間委託で対応中です。",
+      "url": "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1011923.html"
+    },
+    {
+      "id": 6,
       "type": "info",
       "date": "2026-02-26",
       "title": "生ごみ堆肥と花苗の交換事業のご案内",
@@ -5321,7 +5354,7 @@
       "url": "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001340.html"
     },
     {
-      "id": 3,
+      "id": 7,
       "type": "info",
       "date": "2024-09-11",
       "title": "ごみを一人で出せない方へ〜ふれあい収集のご案内〜",
@@ -5329,7 +5362,7 @@
       "url": "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1009806.html"
     },
     {
-      "id": 4,
+      "id": 8,
       "type": "info",
       "date": "2024-06-03",
       "title": "珪藻土製品（アスベストを含まないもの）の回収を再開しました",
@@ -5337,7 +5370,15 @@
       "url": "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1007059.html"
     },
     {
-      "id": 5,
+      "id": 9,
+      "type": "info",
+      "date": "2023-02-21",
+      "title": "使い捨てライター、カセットボンベ、スプレー缶の持ち出し方",
+      "body": "中身が残ったまま出すと収集車や処理施設の火災・爆発事故につながります。使い切ってから、屋外の火気のない場所でガスを完全に抜いて出してください（穴は開けない）。ガスが抜けない場合は市では収集できません。",
+      "url": "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001331.html"
+    },
+    {
+      "id": 10,
       "type": "warn",
       "date": "2019-11-23",
       "title": "資源物の持ち去りにご注意ください",

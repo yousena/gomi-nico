@@ -1830,7 +1830,6 @@ function renderNoticePanel() {
       '<img src="/icons/icon-192.png" style="width:44px;height:44px;border-radius:10px;flex-shrink:0" alt="">' +
       '<div style="flex:1;min-width:0">' +
         '<p style="font-size:18px;font-weight:700;color:var(--ink);margin-bottom:4px">ホーム画面に追加</p>' +
-        '<p style="font-size:13px;color:var(--ink);line-height:1.75">アプリのようにすぐ起動できます。</p>' +
         installBtnHtml +
       '</div>' +
       '<button onclick="dismissA2hs();renderNoticePanel()" style="position:absolute;top:18px;right:20px;background:none;border:none;color:var(--muted);font-size:18px;cursor:pointer;padding:0;line-height:1;flex-shrink:0">×</button>' +
@@ -1843,10 +1842,11 @@ function renderNoticePanel() {
   // v1.101: 太平さんの奥様から「校長先生みたいで読みたくない」とのレビュー。文章そのものは
   // 変えず（本文はいずれも自治体公式のお知らせ文なので、事実関係を変えたくない）、情報密度を
   // 下げる方向で対応。折りたたみ式にして初見では日付・タイトルだけを見せ、本文はタップで
-  // 開くようにする。あわせて種別（危険・お知らせ）でアイコン・色を出し分け、最新1件には
-  // NEWバッジを付ける。詳細はDS.md 2-4-10節参照
+  // 開くようにする。あわせて種別（危険・お知らせ）でアイコン・色を出し分ける。詳細はDS.md
+  // 2-4-10節参照
+  // v1.103: NEWバッジは太平さんの指摘により撤去（バッジの有無でカードごとに日付の横位置が
+  // ずれて見えるため）。日付は常にラベル無しでアイコンの右隣に来るので、カード間で位置が揃う
   if (features.notice !== false && notices.length > 0) {
-    var newestDate = notices.reduce(function(max, n) { return n.date > max ? n.date : max; }, notices[0].date);
     var NOTICE_TYPE_STYLE = {
       warn: { icon: 'warning',  bg: 'var(--bg-warn-soft)', fg: 'var(--c-status-warn)' },
       info: { icon: 'campaign', bg: 'var(--c-notice-bg)',  fg: 'var(--c-notice)' }
@@ -1855,7 +1855,6 @@ function renderNoticePanel() {
       '<div style="display:flex;flex-direction:column;gap:10px">';
     notices.forEach(function(n) {
       var ts    = NOTICE_TYPE_STYLE[n.type] || NOTICE_TYPE_STYLE.info;
-      var isNew = n.date === newestDate;
       var link = n.url
         ? '<a href="' + n.url + '" target="_blank" rel="noopener" ' +
           'style="display:inline-flex;align-items:center;gap:4px;margin-top:12px;' +
@@ -1873,7 +1872,6 @@ function renderNoticePanel() {
           '</span>' +
           '<span style="flex:1;min-width:0">' +
             '<span style="display:flex;align-items:center;gap:6px;margin-bottom:2px">' +
-              (isNew ? '<span style="font-size:10px;font-weight:700;color:#fff;background:var(--brand);padding:2px 7px;border-radius:999px;flex-shrink:0">NEW</span>' : '') +
               '<span style="font-size:11px;color:var(--muted)">' + n.date + '</span>' +
             '</span>' +
             '<span style="display:block;font-size:15px;font-weight:700;color:var(--ink);line-height:1.4">' + n.title + '</span>' +
