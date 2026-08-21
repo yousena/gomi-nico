@@ -88,6 +88,14 @@ html, body {
 
 .is-hidden { display: none !important; }
 
+/* ── Material Symbolsアイコン共通クラス（記事・品目別ページ用） ──
+   public/articles/kaden.html の同名クラスと同一定義。従来kaden.html等の
+   ページ内<style>にしか無く、Astro化した記事（ArticleLayout.astro）と
+   新設の品目別ページには定義が抜けていた（アイコンがリガチャ文字のまま
+   表示される状態だった）ため、共通CSSに移してここで一元管理する。 */
+.ms   { font-family: 'Material Symbols Rounded'; font-variation-settings: 'FILL' 1, 'wght' 500; }
+.ms-o { font-family: 'Material Symbols Rounded'; font-variation-settings: 'FILL' 0, 'wght' 400; }
+
 :focus-visible {
   outline: 2.5px solid var(--brand);
   outline-offset: 2px;
