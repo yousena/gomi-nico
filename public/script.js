@@ -1840,10 +1840,22 @@ function renderNoticePanel() {
   // ── お知らせセクション（features.notice が true の場合のみ）
   // v1.46: 全件を1つの枠にまとめず、1件=1枚の独立したカードにする（境目が薄くて
   // わかりにくいとの指摘。DS.md 1-4節参照）
+  // v1.101: 太平さんの奥様から「校長先生みたいで読みたくない」とのレビュー。文章そのものは
+  // 変えず（本文はいずれも自治体公式のお知らせ文なので、事実関係を変えたくない）、情報密度を
+  // 下げる方向で対応。折りたたみ式にして初見では日付・タイトルだけを見せ、本文はタップで
+  // 開くようにする。あわせて種別（危険・お知らせ）でアイコン・色を出し分け、最新1件には
+  // NEWバッジを付ける。詳細はDS.md 2-4-10節参照
   if (features.notice !== false && notices.length > 0) {
+    var newestDate = notices.reduce(function(max, n) { return n.date > max ? n.date : max; }, notices[0].date);
+    var NOTICE_TYPE_STYLE = {
+      warn: { icon: 'warning',  bg: 'var(--bg-warn-soft)', fg: 'var(--c-status-warn)' },
+      info: { icon: 'campaign', bg: 'var(--c-notice-bg)',  fg: 'var(--c-notice)' }
+    };
     html += '<h2 style="font-size:16px;font-weight:700;color:var(--ink);margin:0 0 8px">お知らせ</h2>' +
-      '<div style="display:flex;flex-direction:column;gap:14px">';
+      '<div style="display:flex;flex-direction:column;gap:10px">';
     notices.forEach(function(n) {
+      var ts    = NOTICE_TYPE_STYLE[n.type] || NOTICE_TYPE_STYLE.info;
+      var isNew = n.date === newestDate;
       var link = n.url
         ? '<a href="' + n.url + '" target="_blank" rel="noopener" ' +
           'style="display:inline-flex;align-items:center;gap:4px;margin-top:12px;' +
@@ -1851,17 +1863,45 @@ function renderNoticePanel() {
           '公式サイトで詳細を確認' +
           '<span class="ms-nav" style="font-size:15px">open_in_new</span></a>'
         : '';
-      html += '<div style="background:#fff;border-radius:20px;padding:18px;" class="shadow-card">' +
-        '<p style="font-size:12px;font-weight:700;color:var(--muted);line-height:1.5;margin-bottom:6px">' + n.date + '</p>' +
-        '<p style="font-size:18px;font-weight:700;color:var(--ink);line-height:1.5;margin-bottom:8px">' + n.title + '</p>' +
-        '<p style="font-size:14px;color:var(--ink);line-height:1.75">' + n.body + '</p>' +
-        link +
-        '</div>';
+      html += '<div id="notice-card-' + n.id + '" class="notice-card shadow-card" style="background:#fff;border-radius:16px;padding:14px">' +
+        '<button type="button" onclick="toggleNotice(' + n.id + ')" aria-expanded="false" ' +
+          'style="display:flex;align-items:center;gap:10px;width:100%;min-height:44px;background:none;border:none;padding:0;' +
+          'text-align:left;cursor:pointer;font-family:inherit;-webkit-tap-highlight-color:transparent">' +
+          '<span style="width:32px;height:32px;border-radius:10px;background:' + ts.bg + ';color:' + ts.fg + ';' +
+            'display:flex;align-items:center;justify-content:center;flex-shrink:0">' +
+            '<span class="ms-nav" style="font-size:18px" aria-hidden="true">' + ts.icon + '</span>' +
+          '</span>' +
+          '<span style="flex:1;min-width:0">' +
+            '<span style="display:flex;align-items:center;gap:6px;margin-bottom:2px">' +
+              (isNew ? '<span style="font-size:10px;font-weight:700;color:#fff;background:var(--brand);padding:2px 7px;border-radius:999px;flex-shrink:0">NEW</span>' : '') +
+              '<span style="font-size:11px;color:var(--muted)">' + n.date + '</span>' +
+            '</span>' +
+            '<span style="display:block;font-size:15px;font-weight:700;color:var(--ink);line-height:1.4">' + n.title + '</span>' +
+          '</span>' +
+          '<span class="ms-nav notice-chevron" style="font-size:20px;color:var(--muted);flex-shrink:0" aria-hidden="true">expand_more</span>' +
+        '</button>' +
+        '<div class="notice-body" style="padding:12px 0 0 42px">' +
+          '<p style="font-size:14px;color:var(--ink);line-height:1.75;margin:0">' + n.body + '</p>' +
+          link +
+        '</div>' +
+      '</div>';
     });
     html += '</div>';
   }
 
   el.innerHTML = html || '<p style="text-align:center;color:var(--muted);padding:40px 20px;font-size:14px">お知らせはありません</p>';
+}
+
+/**
+ * お知らせカードの開閉（v1.101）。CSSの.notice-card.is-openクラスと対で使う
+ * （実際の表示切り替えはCSS側の.notice-card .notice-body{display:none}等で行う）。
+ */
+function toggleNotice(id) {
+  var card = document.getElementById('notice-card-' + id);
+  if (!card) return;
+  var open = card.classList.toggle('is-open');
+  var btn = card.querySelector('button');
+  if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
 }
 
 /* =====================================================

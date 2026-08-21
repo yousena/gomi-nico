@@ -199,6 +199,11 @@
       /* 中立・注意喚起の淡背景（ブランド非依存の汎用トークン。v1.57で新設） */
       --bg-neutral-soft: #F4F5F7;
       --bg-warn-soft: #FFF8EC;
+      /* お知らせパネル専用のアクセント色（v1.101で新設）。分別カテゴリ色（--c-moeru等）とは
+         別の名前空間で、カテゴリの意味を一切持たない。制度変更・マナー啓発など「危険ではない
+         お知らせ」を示す色で、他のどの--c-*カテゴリ色とも重ならないピンク系を採用 */
+      --c-notice:    #99315C;
+      --c-notice-bg: #FBEAF0;
       /* 本文の基本テキスト色（v1.61で新設・CSS変数化）。従来は3色とも色相が青寄り
          （H≈220〜240°）だったのを、生成り背景（--bg-content）と馴染む暖色系の
          ニュートラルグレー（H≈30°）に統一。明度（コントラスト比）は旧値をほぼ維持しており、
@@ -304,6 +309,14 @@
       .cal-cell.is-target { animation:none; }
     }
     .cal-cell.yearend  { opacity:0.18; pointer-events:none; }
+    /* お知らせカードの開閉（v1.101。折りたたみ式にして初見の情報量を絞る。JSの
+       classList.toggle('is-open')と対で使う。ネイティブの<details>ではなくボタン制御に
+       しているのは、NEWバッジ・アイコン・タイトルを含む複雑な見出し行をsummary内に
+       安全に組めないため） */
+    .notice-card .notice-body { display:none; }
+    .notice-card.is-open .notice-body { display:block; }
+    .notice-card .notice-chevron { transition:transform .2s ease-out; }
+    .notice-card.is-open .notice-chevron { transform:rotate(180deg); }
     .cal-day           { font-size:13px; font-weight:700; color:var(--ink); line-height:1; }
     .cal-day-sun       { color:#C94B2A; }
     .cal-day-sat       { color:#3A5BB8; }
