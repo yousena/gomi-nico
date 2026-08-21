@@ -6,6 +6,21 @@
 ========================================================== */
 @import "tailwindcss";
 
+/* ── クラス名の走査対象（Tailwind CDN撤去・2026-08-21） ──
+   Tailwind v4は基本的にプロジェクト内を自動検出するが、
+   script.jsが実行時にテンプレート文字列でクラス名を組み立てる箇所
+   （カレンダー・FAQ・品目詳細シート等）を確実に拾わせるため明示指定する。
+   ここに無いファイルで新しいクラス名を使った場合、ビルド後のCSSに
+   そのクラスが出力されず見た目が崩れるので、新しい静的HTML/JSファイルを
+   追加したときはこの一覧に追加すること。 */
+@source "../../public/script.js";
+@source "../../public/index.html";
+@source "../../public/about.html";
+@source "../../public/privacy.html";
+@source "../../public/ads.html";
+@source "../../public/articles/*.html";
+@source "../city-templates/*.html";
+
 /* ── Tailwindのテーマ拡張（旧 tailwind.config.theme.extend 相当） ── */
 @theme {
   --font-sans: 'Zen Kaku Gothic New', -apple-system, BlinkMacSystemFont,

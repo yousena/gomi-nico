@@ -4,3 +4,7 @@ dist/
 .astro/
 npm-debug.log*
 .DS_Store
+
+# Tailwind CDN撤去（2026-08-21）: `npm run build`/`npm run dev` のたびに
+# src/styles/global.css から自動生成される。手動編集・コミット不要。
+public/assets/css/tailwind.css
