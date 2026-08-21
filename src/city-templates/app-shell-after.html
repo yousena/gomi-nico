@@ -96,6 +96,14 @@
       box-shadow:0 2px 8px rgba(0,0,0,0.08); -webkit-tap-highlight-color:transparent;
     }
     .kana-chip.active { background:var(--brand); color:#fff; }
+    /* 検索インプットの二重枠を解消（DS.md 2-4-3・v1.107）。#search-box-pillが常時
+       持つ2pxのブランド色枠のすぐ内側に、グローバルな:focus-visibleの輪郭線が
+       重なって見えていたため、入力欄側のリングは消し、ピル本体の外側にオフセットして
+       移動する（outline:noneの単独使用はしない＝フォーカス可視性は維持） */
+    #search-input:focus-visible { outline:none; }
+    #search-box-pill:focus-within {
+      outline:2.5px solid var(--brand); outline-offset:3px; border-radius:18px;
+    }
     @media (prefers-reduced-motion:reduce) {
       *,*::before,*::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; }
     }
