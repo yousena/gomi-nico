@@ -135,25 +135,20 @@ ${faqBlock}
   </script>`;
 
   // ── head 後半（共通CSS等）＋ <body> 全体 ──
-  // public/shiki/index.html を「共通シェルの原本」としてビルド時に読み込み、
+  // src/city-templates/app-shell-after.html を「共通シェルの原本」として
+  // ビルド時に読み込む（このファイルは public/shiki/index.html・
+  // public/warabi/index.html の「後半部分」を一字一句そのまま複製した、
+  // リポジトリ内の自己完結型ファイル。以前の実装は public/shiki/index.html を
+  // 直接ビルド時に読みに行っていたが、それだと同ファイルが存在する前提が
+  // 崩れると即ビルド不能になる欠陥があったため、このファイルへ切り出した）。
   // 都市固有の4箇所（.cal-dayのfont-weight／ヘッダーh1コメント／ヘッダーh1本文／
   // 問い合わせカードの説明文）だけをプレースホルダ経由で差し替える。
   // この置換ロジックは、両都市の既存本番HTMLと一字一句一致することを
   // ビルド時diffで検証済み（Astro移行フェーズ3作業時）。
-  const masterAfterSource = (() => {
-    const master = fs.readFileSync(path.resolve('./public/shiki/index.html'), 'utf-8');
-    const endMarker = '</script>\n\n  <!-- Material Symbols';
-    const e = master.indexOf(endMarker) + '</script>'.length;
-    let after = master.slice(e);
-    after = after.replace(
-      'font-weight:500; color:var(--ink); line-height:1;',
-      '__CAL_DAY_WEIGHT__ color:var(--ink); line-height:1;'
-    );
-    after = after.replace('志木市ごみ分別・JS が更新', '__H1_TITLE_COMMENT__');
-    after = after.replace('          志木市のごみ分別\n', '          __H1_TITLE__\n');
-    after = after.replace('市役所・環境推進課へのご連絡', '__CONTACT_NOTE__');
-    return after;
-  })();
+  const masterAfterSource = fs.readFileSync(
+    path.resolve('./src/city-templates/app-shell-after.html'),
+    'utf-8'
+  );
 
   const afterRendered = masterAfterSource
     .replace('__CAL_DAY_WEIGHT__', `font-weight:${seo.calDayWeight};`)
