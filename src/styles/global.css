@@ -1,0 +1,80 @@
+/* ==========================================================
+   ごみニコ グローバルスタイル（Astro移行フェーズ1）
+   従来: 各HTMLに<script src="cdn.tailwindcss.com">＋tailwind.config を直書き
+   今後: このファイル1箇所に集約。Tailwindの拡張設定はDS.md §1-1と揃えること。
+   参照元: public/shiki/index.html <head> 内 tailwind.config / :root（移行時点のコピー）
+========================================================== */
+@import "tailwindcss";
+
+/* ── Tailwindのテーマ拡張（旧 tailwind.config.theme.extend 相当） ── */
+@theme {
+  --font-sans: 'Zen Kaku Gothic New', -apple-system, BlinkMacSystemFont,
+    'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic UI', Meiryo, sans-serif;
+  --text-2xs: 10px;
+  --radius-2xl: 20px;
+  --shadow-top: 0 -2px 12px rgba(0,0,0,0.07);
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.16);
+  --animate-fade-up: fadeUp 0.22s ease both;
+  --animate-spin-slow: spin 1.5s linear infinite;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ── デザイントークン（DS.md 正典。script.js / 各コンポーネントが var(--c-*) で参照） ── */
+:root {
+  --c-moeru:   #E72321; --c-moeru-bg:   #F8ECEC;
+  --c-moenai:  #5B60C7; --c-moenai-bg:  #EEEFF6;
+  --c-recycle: #178751; --c-recycle-bg: #EDF8F2;
+  --c-pla:     #3A3A3C; --c-pla-bg:     #EDEDED;
+  --c-pet:     #0B6FA8; --c-pet-bg:     #E6F4FB;
+  --c-can:     #AD6510; --c-can-bg:     #F9F3EC;
+  --c-bin:     #4B8349; --c-bin-bg:     #F0F4F0;
+  --c-kiken:   #BF5900; --c-kiken-bg:   #FAF2EB;
+  --c-yugai:   #8040CC; --c-yugai-bg:   #F2EEFF;
+  --c-sodai:   #7A5230; --c-sodai-bg:   #F5EDE0;
+  --c-unknown: #6B7280; --c-unknown-bg: #F0F2F5;
+  --c-fuku:    #4A74C4; --c-fuku-bg:    #EBF1FD;
+  --c-kami:    #A06820; --c-kami-bg:    #FDF2DE;
+
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+
+  /* 自治体テーマカラー（data_{city}.json の brand_color でJSが上書き。DS.md §1-1-1） */
+  --brand: #00A86B;
+  --brand-strong: #00885A;
+  --brand-soft: rgba(0,168,107,0.08);
+  --brand-soft-strong: rgba(0,168,107,0.15);
+  --brand-border: rgba(0,168,107,0.35);
+
+  --bg-content: #FBFAF4;
+
+  --c-status-ok:   #00A86B;
+  --c-status-ng:   #E8512A;
+  --c-status-warn: #E07800;
+
+  --bg-neutral-soft: #F4F5F7;
+  --bg-warn-soft: #FFF8EC;
+
+  --c-notice:    #99315C;
+  --c-notice-bg: #FBEAF0;
+
+  --ink:   #1E1D1C;
+  --text:  #686461;
+  --muted: #76706B;
+}
+
+html, body {
+  background-color: #FBFAF4;
+  font-weight: 400;
+}
+
+.is-hidden { display: none !important; }
+
+:focus-visible {
+  outline: 2.5px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
