@@ -78,3 +78,65 @@ html, body {
   outline-offset: 2px;
   border-radius: 6px;
 }
+
+/* ==========================================================
+   記事プロース（本文Markdown用スタイル）
+   public/articles/kaden.html の .sec-title / .h2-decor / h3の下点線 /
+   .body-p / mark / .cite をそのまま移植（Astro移行フェーズ2）。
+   今後の記事はMarkdownを書くだけでこのスタイルが自動で当たる。
+========================================================== */
+.article-prose h2 {
+  font-family: 'Zen Kaku Gothic New', -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif;
+  position: relative;
+  background: #00885A;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 12px 16px;
+  font-weight: 700;
+  margin: 40px 0 32px;
+  line-height: 1.5;
+}
+.article-prose h2:first-child { margin-top: 0; }
+.article-prose h2::before {
+  content: ''; position: absolute; top: calc(100% + 3px); left: 10px;
+  width: 10px; height: 10px; border-radius: 50%; background: #3eb98f;
+}
+.article-prose h2::after {
+  content: ''; position: absolute; top: calc(100% + 13px); left: 22px;
+  width: 6px; height: 6px; border-radius: 50%; background: #88cdb6;
+}
+.article-prose h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  border-bottom: 2px dotted var(--muted);
+  padding-bottom: 8px;
+  margin: 32px 0 16px;
+}
+.article-prose p {
+  font-size: 16px;
+  color: #4B4B4D;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+.article-prose ul, .article-prose ol {
+  margin: 0 0 16px;
+  padding-left: 1.4em;
+  font-size: 16px;
+  color: #4B4B4D;
+  line-height: 1.9;
+}
+.article-prose li { margin-bottom: 4px; }
+.article-prose a { color: #00885A; font-weight: 700; text-decoration: underline; }
+.article-prose mark {
+  background: #EAF6F0; color: var(--ink); padding: 1px 4px; border-radius: 4px; font-weight: 700;
+}
+.article-prose strong { color: var(--ink); }
+/* 出典の書式（本文中で `> 出典: ...` と書けばこのスタイルになる） */
+.article-prose blockquote {
+  font-size: 12px; color: var(--muted); line-height: 1.8;
+  margin: 12px 0 24px; padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.06);
+}
+.article-prose blockquote p { font-size: 12px; color: var(--muted); margin-bottom: 0; }
+.article-prose blockquote a { color: #00885A; font-weight: 700; }

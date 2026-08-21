@@ -1,0 +1,18 @@
+---
+// src/pages/articles/[...slug].astro
+// src/content/articles/*.md を1本ずつ静的ページ化する。
+// 新規記事の追加はMarkdownファイルを置くだけでよく、このファイルの変更は不要。
+import { getCollection } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('articles');
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+---
+<ArticleLayout entry={entry} />
