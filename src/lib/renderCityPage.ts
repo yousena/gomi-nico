@@ -56,6 +56,7 @@ const CATEGORY_ICON: Record<string, string> = {
   sodai: '/icons/sodai.svg',
   fuku: '/icons/fuku.svg',
   kami: '/icons/kami.svg',
+  zasshi: '/icons/kami.svg',
   can: '/icons/can.svg',
   pet: '/icons/pet.svg',
   bin: '/icons/bin.svg',
