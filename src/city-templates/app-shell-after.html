@@ -260,7 +260,11 @@
     /* ── 品目から探す（SEO対応・静的アコーディオン。DS.md §2-4-12・v1.106で新設） ──
        SPAのshowPanel()切替（.is-hidden）の対象には含めない、常時DOM上の
        独立セクション。<details>はネイティブ機構のため閉じていてもテキストは
-       HTML内に存在し、開閉のJSも描画コストも不要 */
+       HTML内に存在し、開閉のJSも描画コストも不要。
+       v1.109: 品目と無関係なタブ（お知らせ・お得情報等）でも常に全体が見えてしまい
+       違和感があるとの指摘を受け、section全体をもう1段階閉じたdetailsで包んだ
+       （.item-idx-outer）。閉じていてもテキストは存在し続けるためSEO効果は保ったまま、
+       どのタブでも「品目から探す」という1行だけが最後に出る程度まで見た目を抑えている */
     .item-idx { margin: 8px 0 32px; }
     .item-idx-lead { font-size: 13px; color: var(--muted); line-height: 1.7; margin: 0 0 14px; }
     .item-idx details {
@@ -274,6 +278,8 @@
     .item-idx summary::-webkit-details-marker { display: none; }
     .item-idx-summary-label { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; color: var(--ink); }
     .item-idx-summary-label img { flex-shrink: 0; }
+    .item-idx-outer-label { font-size: 15px; font-weight: 700; color: var(--ink); }
+    .item-idx-outer-body { padding: 4px 16px 16px; }
     .item-idx-count { font-size: 12.5px; font-weight: 600; color: var(--muted); }
     .item-idx-chevron { transition: transform 0.2s ease-out; }
     .item-idx details[open] .item-idx-chevron { transform: rotate(180deg); }

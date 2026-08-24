@@ -130,10 +130,23 @@ function buildItemIndexSection(data: CityData): string {
 
   if (blocks.length === 0) return '';
 
+  // 全体をもう1段階、閉じたdetailsで包む（v1.109）。カレンダー・お知らせ・お得情報など
+  // 品目と無関係なタブでも常時この節が見えてしまい太平さんから「かなり違和感がある」との
+  // 指摘を受けた対応。SPAのshowPanel()切替（.is-hidden）には含めない方針は維持しつつ
+  // （Googleの初期スナップショットで隠れてしまうとSEO効果が弱まるため）、閉じた状態の
+  // <details>は初期状態でもテキストとしてDOM上に存在し続けるため、どのタブでも
+  // 「品目から探す」という1行だけが最後に出る程度まで見た目を抑えられる
   return `<section class="item-idx" aria-label="品目から探す">
-  <p style="font-size:13px;font-weight:800;color:var(--muted);letter-spacing:.06em;margin:0 0 10px">品目から探す</p>
-  <p class="item-idx-lead">${data.name}のごみ分別を、カテゴリごとに一覧で確認できます。品目名で探すには、下部メニューの「分別検索」もあわせてご利用ください。</p>
-  ${blocks.join('\n  ')}
+  <details class="item-idx-outer">
+    <summary>
+      <span class="item-idx-outer-label">品目から探す<span class="item-idx-count">（全${items.length}件）</span></span>
+      <span class="ms-nav item-idx-chevron" aria-hidden="true" style="font-size:20px;color:var(--muted)">expand_more</span>
+    </summary>
+    <div class="item-idx-outer-body">
+      <p class="item-idx-lead">${data.name}のごみ分別を、カテゴリごとに一覧で確認できます。品目名で探すには、下部メニューの「分別検索」もあわせてご利用ください。</p>
+      ${blocks.join('\n      ')}
+    </div>
+  </details>
 </section>`;
 }
 
