@@ -258,19 +258,26 @@
     }
 
     /* ── 品目から探す（SEO対応・静的アコーディオン。DS.md §2-4-12・v1.106で新設） ──
-       SPAのshowPanel()切替（.is-hidden）の対象には含めない、常時DOM上の
-       独立セクション。<details>はネイティブ機構のため閉じていてもテキストは
-       HTML内に存在し、開閉のJSも描画コストも不要。
+       <details>はネイティブ機構のため閉じていてもテキストはHTML内に存在し、
+       開閉のJSも描画コストも不要。
        v1.109: 品目と無関係なタブ（お知らせ・お得情報等）でも常に全体が見えてしまい
        違和感があるとの指摘を受け、section全体をもう1段階閉じたdetailsで包んだ
-       （.item-idx-outer）。閉じていてもテキストは存在し続けるためSEO効果は保ったまま、
-       どのタブでも「品目から探す」という1行だけが最後に出る程度まで見た目を抑えている */
-    .item-idx { margin: 8px 0 32px; }
+       （.item-idx-outer）。
+       v1.110: ①白背景に薄いborderだけの見た目が、他カードのbg-white+shadow-card
+       という規約から浮いて見える指摘を受け、outer側をshadow-cardに統一②「お知らせ・
+       お得情報タブでは非表示にしたい／場所はカレンダーかカレンダー下が妥当では」との
+       相談を受け、全パネル外の独立セクションから、デフォルト表示パネルである
+       #panel-calendarの末尾（フィードバックボタンの下）へ移動。Googleの初期
+       レンダリング後にアクティブなのはcalendarパネルのため、is-hiddenの対象内でも
+       クロール時には読める。お知らせ・お得情報タブでは自然に非表示になる */
     .item-idx-lead { font-size: 13px; color: var(--muted); line-height: 1.7; margin: 0 0 14px; }
-    .item-idx details {
-      background: #fff; border-radius: 14px; border: 1px solid rgba(0,0,0,0.07);
-      overflow: hidden; margin-bottom: 10px;
+    .item-idx-outer {
+      background: #fff; border-radius: 20px; box-shadow: var(--shadow-card); overflow: hidden;
     }
+    .item-idx-outer-body > details {
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+    .item-idx-outer-body > details:first-of-type { border-top: none; }
     .item-idx summary {
       display: flex; align-items: center; justify-content: space-between;
       padding: 14px 16px; cursor: pointer; list-style: none; min-height: 44px;
@@ -282,7 +289,7 @@
     .item-idx-outer-body { padding: 4px 16px 16px; }
     .item-idx-count { font-size: 12.5px; font-weight: 600; color: var(--muted); }
     .item-idx-chevron { transition: transform 0.2s ease-out; }
-    .item-idx details[open] .item-idx-chevron { transform: rotate(180deg); }
+    .item-idx details[open] > summary .item-idx-chevron { transform: rotate(180deg); }
     .item-idx-body { padding: 0 16px 16px; }
     .item-idx-sub { font-size: 12.5px; font-weight: 800; color: var(--muted); letter-spacing: .04em; margin: 14px 0 4px; }
     .item-idx-row { display: flex; align-items: flex-start; gap: 8px; padding: 8px 0; border-top: 1px solid rgba(0,0,0,0.05); font-size: 14px; color: var(--ink); line-height: 1.6; }
@@ -798,6 +805,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       ごみ情報の誤り・更新を伝える
     </button>
 
+    <!-- ⑤ 品目から探す（SEO対応・静的アコーディオン。DS.md §2-4-12）
+         カレンダーパネル（デフォルト表示）の末尾に配置。Googleの初期レンダリングで
+         最初にアクティブなパネルがここなので、is-hiddenの対象パネル内にあっても
+         クロール時に読める状態になる。お知らせ・お得情報タブでは表示されない -->
+__ITEM_INDEX_SECTION__
+
   </div>
 
   <!-- ==========================================================
@@ -1227,13 +1240,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
 </nav>
-
-<!-- ============================================================
-     品目から探す（SEO対応・静的アコーディオン。DS.md §2-4-12）
-============================================================ -->
-<div class="max-w-[430px] mx-auto px-4">
-__ITEM_INDEX_SECTION__
-</div>
 
 <!-- ============================================================
      出典フッター
