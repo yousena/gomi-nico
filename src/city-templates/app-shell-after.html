@@ -785,7 +785,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- カテゴリ凡例（DS.md §2-4-1・その月のカレンダーに実在する種類のみ動的表示） -->
     <div id="cal-legend" class="is-hidden bg-white rounded-2xl shadow-card p-4 grid grid-cols-2 gap-x-4 animate-fade-up" aria-label="ごみ種類の凡例"></div>
 
-    <!-- ③ 共有ボタン（DS.md §2-4-1・2026-08-16） -->
+    <!-- ③ 品目から探す（SEO対応・静的アコーディオン。DS.md §2-4-12）
+         カレンダーパネル（デフォルト表示）内、共有ボタンより上に配置。Googleの初期
+         レンダリングで最初にアクティブなパネルがここなので、is-hiddenの対象パネル内に
+         あってもクロール時に読める状態になる。お知らせ・お得情報タブでは表示されない -->
+__ITEM_INDEX_SECTION__
+
+    <!-- ④ 共有ボタン（DS.md §2-4-1・2026-08-16） -->
     <button type="button" onclick="shareCurrentPage()"
             class="bg-white rounded-2xl shadow-card w-full h-12
                    flex items-center justify-center gap-2
@@ -795,7 +801,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       このページを共有
     </button>
 
-    <!-- ④ 情報の誤り・更新フィードバック -->
+    <!-- ⑤ 情報の誤り・更新フィードバック -->
     <button type="button" onclick="openFeedbackMail()"
             class="bg-white rounded-2xl shadow-card w-full h-11
                    flex items-center justify-center gap-1.5
@@ -804,12 +810,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="ms-nav" style="font-size:15px" aria-hidden="true">feedback</span>
       ごみ情報の誤り・更新を伝える
     </button>
-
-    <!-- ⑤ 品目から探す（SEO対応・静的アコーディオン。DS.md §2-4-12）
-         カレンダーパネル（デフォルト表示）の末尾に配置。Googleの初期レンダリングで
-         最初にアクティブなパネルがここなので、is-hiddenの対象パネル内にあっても
-         クロール時に読める状態になる。お知らせ・お得情報タブでは表示されない -->
-__ITEM_INDEX_SECTION__
 
   </div>
 
