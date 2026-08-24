@@ -976,7 +976,9 @@ function renderCalendar() {
 
   const today0      = new Date(); today0.setHours(0,0,0,0);
   const firstOfMonth = new Date(calYear, calMonth, 1);
-  const startDow      = firstOfMonth.getDay();
+  // 週の開始曜日は月曜始まり（v1.113）。getDay()は日曜=0〜土曜=6を返すため、
+  // 月曜=0になるよう+6してから%7で変換する（日曜だけ7-1=6列目のオフセットになる）
+  const startDow      = (firstOfMonth.getDay() + 6) % 7;
   const daysInMonth    = new Date(calYear, calMonth + 1, 0).getDate();
 
   let html = '';
