@@ -55,7 +55,7 @@ const TYPE_STYLE = {
   // ── 拡張（マルチ自治体対応）
   fuku:        { icon:'checkroom',             img:'/icons/fuku.svg',    bg:'var(--c-fuku-bg)',    iconBg:'rgba(91,132,196,0.14)',  fg:'var(--c-fuku)',    dotColor:'var(--c-fuku)'    },
   kami:        { icon:'newspaper',             img:'/icons/kami.svg',    bg:'var(--c-kami-bg)',    iconBg:'rgba(180,130,40,0.14)',  fg:'var(--c-kami)',    dotColor:'var(--c-kami)'    },
-  zasshi:      { icon:'sticky_note_2',         img:'/icons/kami.svg',    bg:'var(--c-zasshi-bg)',  iconBg:'rgba(15,118,110,0.14)',  fg:'var(--c-zasshi)',  dotColor:'var(--c-zasshi)'  },
+  zasshi:      { icon:'sticky_note_2',         img:'/icons/kami_other.svg', bg:'var(--c-zasshi-bg)',  iconBg:'rgba(15,118,110,0.14)',  fg:'var(--c-zasshi)',  dotColor:'var(--c-zasshi)'  },
   can:         { icon:'sports_bar',            img:'/icons/can.svg',     bg:'var(--c-can-bg)',     iconBg:'rgba(173,101,16,0.14)',  fg:'var(--c-can)',     dotColor:'var(--c-can)'     },
   pet:         { icon:'water_bottle',          img:'/icons/pet.svg',     bg:'var(--c-pet-bg)',     iconBg:'rgba(11,111,168,0.14)',  fg:'var(--c-pet)',     dotColor:'var(--c-pet)'     },
   bin:         { icon:'wine_bar',              img:'/icons/bin.svg',     bg:'var(--c-bin-bg)',     iconBg:'rgba(75,131,73,0.14)',   fg:'var(--c-bin)',     dotColor:'var(--c-bin)'     },
