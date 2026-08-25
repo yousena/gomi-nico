@@ -858,21 +858,6 @@ function showDayDetail(year, month, day) {
   document.getElementById('day-detail-date').innerHTML = formatDateJPHtml(date);
   document.getElementById('day-detail-content').innerHTML = buildDayDetailHTML(areaKey, date);
 
-  // カレンダー追加ボタン（v1.117）。実際に収集がある日だけ表示する
-  // （地区未選択・年末年始・固定祝日・収集なしの日は非表示のまま）
-  const calBtn = document.getElementById('day-detail-cal-btn');
-  if (calBtn) {
-    const types = (areaKey && !isYearEnd(date) && !getFixedHolidayClosure(date))
-      ? getGarbageForDate(areaKey, date) : [];
-    if (types.length > 0) {
-      calBtn.classList.remove('is-hidden');
-      calBtn.onclick = function () { downloadDayIcs(year, month, day, types.map(t => t.type).join(',')); };
-    } else {
-      calBtn.classList.add('is-hidden');
-      calBtn.onclick = null;
-    }
-  }
-
   document.getElementById('day-detail-backdrop').classList.remove('is-hidden');
   document.body.style.overflow = 'hidden';
 }
@@ -903,6 +888,60 @@ function icsDateStr(y, m, d) {
   var mm = String(m + 1).padStart(2, '0');
   var dd = String(d).padStart(2, '0');
   return '' + y + mm + dd;
+}
+
+/**
+ * カレンダー追加の2ボタン行（v1.118）。太平さんの実機フィードバック
+ * 「カレンダー追加ボタンだとまずわからない」を受け、v1.117のアイコンのみボタンを廃止し、
+ * ラベル付き2ボタンをシート本文の先頭に常時表示する方式に変更した（DS.md 2-4-13節）。
+ * 「Googleカレンダーに追加」はファイルダウンロードなしでGoogleの追加画面を開く動線、
+ * 「その他のカレンダー」は従来どおり.icsファイルをダウンロードする動線
+ */
+function buildCalAddButtonsHtml(year, month, day, typeKeysCsv) {
+  var args = year + ',' + month + ',' + day + ',\'' + typeKeysCsv + '\'';
+  return '<div style="display:flex;gap:8px;margin-bottom:16px">' +
+    '<button onclick="openGoogleCalendarAdd(' + args + ')" type="button" ' +
+    'style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:12px 8px;' +
+    'background:#fff;border:1.5px solid rgba(0,0,0,0.10);border-radius:12px;text-align:center;line-height:1.3;' +
+    'font-size:13px;font-weight:700;color:var(--ink);cursor:pointer;font-family:inherit">' +
+    '<span class="ms-nav" style="font-size:18px;color:var(--text);flex-shrink:0">event</span>Googleカレンダーに追加</button>' +
+    '<button onclick="downloadDayIcs(' + args + ')" type="button" ' +
+    'style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:12px 8px;' +
+    'background:#fff;border:1.5px solid rgba(0,0,0,0.10);border-radius:12px;text-align:center;line-height:1.3;' +
+    'font-size:13px;font-weight:700;color:var(--ink);cursor:pointer;font-family:inherit">' +
+    '<span class="ms-nav" style="font-size:18px;color:var(--text);flex-shrink:0">download</span>その他のカレンダー（.icsをダウンロード）</button>' +
+  '</div>';
+}
+
+/**
+ * 指定日の1件以上のカテゴリをGoogleカレンダーの「クイック追加」画面へ渡し、新規タブで開く（v1.118）。
+ * ファイルダウンロードを一切発生させず、Google側の画面でユーザー自身が「保存」を押すことで
+ * 初めて予定が追加される（＝ごみニコ側で「追加しました」と言い切らない誠実な設計）
+ */
+function openGoogleCalendarAdd(year, month, day, typeKeysCsv) {
+  var typeKeys = String(typeKeysCsv || '').split(',').filter(Boolean);
+  if (!typeKeys.length || !DATA) return;
+
+  var cats     = DATA.categories || {};
+  var cityName = DATA.name || '';
+  var dtStart  = icsDateStr(year, month, day);
+  var endDate  = new Date(year, month, day + 1);
+  var dtEnd    = icsDateStr(endDate.getFullYear(), endDate.getMonth(), endDate.getDate());
+
+  var title = typeKeys.map(function(key) { return (cats[key] || {}).label || key; }).join('・') +
+    (cityName ? '（' + cityName + '）' : '');
+  var details = typeKeys.map(function(key) {
+    var cat = cats[key] || {};
+    var how = cat.how ? String(cat.how).replace(/<[^>]*>/g, '') : '';
+    return (cat.label || key) + (how ? '：' + how : '');
+  }).join('\n');
+
+  var url = 'https://calendar.google.com/calendar/render?action=TEMPLATE' +
+    '&text=' + encodeURIComponent(title) +
+    '&dates=' + dtStart + '/' + dtEnd +
+    '&details=' + encodeURIComponent(details);
+
+  window.open(url, '_blank', 'noopener');
 }
 
 /**
@@ -948,7 +987,7 @@ function downloadDayIcs(year, month, day, typeKeysCsv) {
   document.body.removeChild(a);
   setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
 
-  if (typeof showToast === 'function') showToast('カレンダーに追加しました');
+  if (typeof showToast === 'function') showToast('ファイルをダウンロードしました。開いてカレンダーに追加してください');
 }
 
 /**
@@ -1020,7 +1059,12 @@ function buildDayDetailHTML(areaKey, date) {
       '</' + tag + '>';
   }).join('');
 
-  return `<div class="flex flex-col gap-2">${items}</div>`;
+  // カレンダー追加ボタン（v1.118）。収集がある日の本文先頭に常時表示する
+  const calButtonsHtml = buildCalAddButtonsHtml(
+    date.getFullYear(), date.getMonth(), date.getDate(), types.map(t => t.type).join(',')
+  );
+
+  return `<div class="flex flex-col gap-2">${calButtonsHtml}${items}</div>`;
 }
 
 /* =====================================================
@@ -2110,14 +2154,6 @@ function openCategoryDetail(typeKey, year, month, day) {
   // ヘッダー
   var headerEl = document.getElementById('category-detail-header');
   if (headerEl) {
-    // カレンダー追加ボタンは、日付付きで開かれた場合のみ表示する（品目検索経由等、
-    // 日付が無い呼び出しでは「特定の1日」が存在しないため出さない。DS.md 2-4-13節）
-    var calBtnHtml = (year !== undefined)
-      ? '<button onclick="downloadDayIcs(' + year + ',' + month + ',' + day + ',\'' + typeKey + '\')" aria-label="カレンダーに追加" ' +
-        'style="width:40px;height:40px;border-radius:50%;border:none;background:rgba(0,0,0,0.07);' +
-        'display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;font-family:inherit">' +
-        '<span class="ms-nav" style="font-size:20px;color:var(--text)">event</span></button>'
-      : '';
     headerEl.innerHTML =
       '<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;padding-bottom:4px">' +
         '<div style="display:flex;align-items:center;gap:14px;flex:1;min-width:0">' +
@@ -2128,21 +2164,20 @@ function openCategoryDetail(typeKey, year, month, day) {
           '<h2 style="font-size:20px;font-weight:700;color:' + st.fg + '">' + (cat.label || typeKey) + '</h2>' +
           '</div>' +
         '</div>' +
-        '<div style="display:flex;align-items:center;gap:8px;flex-shrink:0">' +
-          calBtnHtml +
-          '<button onclick="closeCategoryDetail()" aria-label="閉じる" ' +
-            'style="width:40px;height:40px;border-radius:50%;border:none;background:rgba(0,0,0,0.07);' +
-            'display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;font-family:inherit">' +
-            '<span class="ms-nav" style="font-size:22px;color:var(--text)">close</span>' +
-          '</button>' +
-        '</div>' +
+        '<button onclick="closeCategoryDetail()" aria-label="閉じる" ' +
+          'style="width:40px;height:40px;border-radius:50%;border:none;background:rgba(0,0,0,0.07);' +
+          'display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;font-family:inherit">' +
+          '<span class="ms-nav" style="font-size:22px;color:var(--text)">close</span>' +
+        '</button>' +
       '</div>';
   }
 
   // ボディ
   var bodyEl = document.getElementById('category-detail-body');
   if (!bodyEl) return;
-  var html = '';
+  // カレンダー追加ボタンは、日付付きで開かれた場合のみ本文先頭に表示する（品目検索経由等、
+  // 日付が無い呼び出しでは「特定の1日」が存在しないため出さない。DS.md 2-4-13節）
+  var html = (year !== undefined) ? buildCalAddButtonsHtml(year, month, day, typeKey) : '';
 
   // 「出せるもの」「出せないもの」は行ごとに違うアイコン・色で描画する
   // （2026-08-21・v1.106: 従来は3セクションとも同じ白カード+checkアイコンで
