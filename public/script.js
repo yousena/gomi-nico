@@ -868,25 +868,67 @@ function closeDayDetail() {
 }
 
 /**
- * カレンダー登録ボタン（v1.120）。Cloudflare Pages Functions（/calendar-ics）への
- * 素のリンク1本を生成するだけで、JSのイベントハンドラは不要（タップ＝ブラウザの通常の
- * ナビゲーション）。エンドポイント側がContent-Dispositionを付けずtext/calendarを返すため、
- * ファイルダウンロードを経由せずモバイルブラウザがOS標準のカレンダーアプリへ橋渡しする
- * 想定（DS.md 2-4-13節のv1.120項）。v1.117〜v1.118のBlobダウンロード・Googleカレンダー
- * 2択で迷わせた反省を踏まえ、ボタンは1個のみ・ラベルも「カレンダーに追加」に統一する
+ * カレンダー登録ボタン（v1.120・v1.121で通知選択＋確認ステップを追加）。
+ * Cloudflare Pages Functions（/calendar-ics）がContent-Dispositionを付けず
+ * text/calendarを返すため、ファイルダウンロードを経由せずモバイルブラウザがOS標準の
+ * カレンダーアプリへ橋渡しする想定（DS.md 2-4-13節のv1.120項）。
+ *
+ * ただし太平さんの実機（iPhone Chrome）確認で、iOS版Chromeは（Safariと異なり）
+ * .icsをダウンロードするだけでCalendarアプリへの導線を出さない既知の制限があり、
+ * 「Gmail・iCloudが出てきて驚いた」「カレンダーファイルの表示が不安」というフィードバックを
+ * 受けた（v1.121）。ブラウザ自体のダイアログ文言は制御できないため、代わりに
+ * タップ直後には遷移させず、まず自サイトの言葉で「続行を押してください」という
+ * 確認ステップを挟むようにした（revealCalConfirm()）。あわせて「通知の時間を細かく
+ * 設定したい」との要望を受け、通知（VALARM）の時刻を選ぶプルダウンを追加した
  */
 function buildCalAddButtonHtml(year, month, day, typeKeysCsv) {
   if (!DATA || !DATA.municipality_id) return '';
   var mm = String(month + 1).padStart(2, '0');
   var dd = String(day).padStart(2, '0');
   var dateStr = year + '-' + mm + '-' + dd;
-  var url = '/calendar-ics?city=' + encodeURIComponent(DATA.municipality_id) +
+  var baseUrl = '/calendar-ics?city=' + encodeURIComponent(DATA.municipality_id) +
     '&date=' + dateStr + '&types=' + encodeURIComponent(typeKeysCsv);
-  return '<a href="' + url + '" ' +
-    'style="display:flex;align-items:center;justify-content:center;gap:6px;padding:12px;margin-bottom:16px;' +
-    'background:#fff;border:1.5px solid rgba(0,0,0,0.10);border-radius:12px;' +
-    'font-size:14px;font-weight:700;color:var(--ink);text-decoration:none;font-family:inherit">' +
-    '<span class="ms-nav" style="font-size:18px;color:var(--text);flex-shrink:0">event</span>カレンダーに追加</a>';
+  return '<div class="cal-add-block" data-url="' + baseUrl + '" style="margin-bottom:16px">' +
+    '<label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px">通知（リマインダー）</label>' +
+    '<select class="cal-alarm-select" style="width:100%;height:44px;padding:0 10px;margin-bottom:8px;' +
+      'border-radius:12px;border:1.5px solid rgba(0,0,0,0.10);background:#fff;font-size:13px;font-family:inherit;color:var(--ink)">' +
+      '<option value="none">通知なし</option>' +
+      '<option value="prev20" selected>前日 20:00</option>' +
+      '<option value="prev21">前日 21:00</option>' +
+      '<option value="day07">当日 朝7:00</option>' +
+      '<option value="day08">当日 朝8:00</option>' +
+    '</select>' +
+    '<button type="button" class="cal-add-btn" onclick="revealCalConfirm(this)" ' +
+      'style="width:100%;display:flex;align-items:center;justify-content:center;gap:6px;height:44px;' +
+      'background:#fff;border:1.5px solid rgba(0,0,0,0.10);border-radius:12px;' +
+      'font-size:14px;font-weight:700;color:var(--ink);cursor:pointer;font-family:inherit">' +
+      '<span class="ms-nav" style="font-size:18px;color:var(--text);flex-shrink:0">event</span>カレンダーに追加</button>' +
+    '<div class="cal-confirm-box is-hidden" style="margin-top:8px;padding:12px;background:var(--bg-neutral-soft);border-radius:12px">' +
+      '<p style="font-size:13px;color:var(--ink);line-height:1.6;margin-bottom:10px">カレンダーに追加する許可をするには「続行」を押してください。</p>' +
+      '<a class="cal-confirm-link" href="#" ' +
+        'style="display:flex;align-items:center;justify-content:center;height:40px;' +
+        'background:var(--brand);color:#fff;border-radius:10px;font-size:14px;font-weight:700;' +
+        'text-decoration:none;font-family:inherit">続行</a>' +
+    '</div>' +
+  '</div>';
+}
+
+/**
+ * 「カレンダーに追加」ボタンから呼ばれる（v1.121）。ブラウザ自体が出す
+ * （こちらでは制御できない）ダイアログの前に、まず自サイトの言葉で確認ステップを
+ * 表示する。選択中の通知タイミングを読み取り、「続行」リンクのhrefに反映してから表示する
+ */
+function revealCalConfirm(btn) {
+  var block = btn.closest('.cal-add-block');
+  if (!block) return;
+  var baseUrl = block.getAttribute('data-url') || '';
+  var selectEl = block.querySelector('.cal-alarm-select');
+  var alarmVal = selectEl ? selectEl.value : 'none';
+  var link = block.querySelector('.cal-confirm-link');
+  if (link) link.href = baseUrl + '&alarm=' + encodeURIComponent(alarmVal);
+  var box = block.querySelector('.cal-confirm-box');
+  if (box) box.classList.remove('is-hidden');
+  btn.style.display = 'none';
 }
 
 /**

@@ -1,5 +1,5 @@
 /* =====================================================
-   カレンダー登録（v1.120）
+   カレンダー登録（v1.120・v1.121で通知時刻対応を追加）
    Cloudflare Pages Functions。サイトに初めて追加するサーバー機能。
    KV/D1等の保存領域は使わず、リクエストのたびに同一オリジンの
    /data_{city}.json（既存の静的アセット）を読み、その場で.icsを組み立てて返すだけの
@@ -12,7 +12,12 @@
    OS標準のカレンダーアプリへその場で橋渡しすることを狙う
    （ホットペッパー等の予約サイトと同じ仕組み。DS.md 2-4-13節参照）。
 
-   呼び出し例: /calendar-ics?city=toda&date=2026-08-15&types=moeru,pet
+   ただしiOS版Chromeは（Safariと異なり）.icsをダウンロードするだけでCalendarアプリへの
+   導線を出さない既知の制限がある（v1.121でDS.mdに記録。ブラウザ側の挙動のためサイト側では
+   制御不可）。ダウンロードになった場合でもファイル名だけは意味の分かるものにするため、
+   Content-Dispositionはinlineのまま（強制ダウンロードには戻さず）filenameだけ付与する。
+
+   呼び出し例: /calendar-ics?city=toda&date=2026-08-15&types=moeru,pet&alarm=prev20
 ===================================================== */
 
 /** icsのテキストフィールド用にHTMLタグを除去し、RFC5545の予約文字をエスケープする */
@@ -26,11 +31,34 @@ function badRequest(message) {
   return new Response(message, { status: 400, headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
 }
 
+/** UTCのDateをicalendarの絶対時刻トリガー形式（YYYYMMDDTHHMMSSZ）に変換する */
+function icsUtcStr(d) {
+  return '' + d.getUTCFullYear() +
+    String(d.getUTCMonth() + 1).padStart(2, '0') +
+    String(d.getUTCDate()).padStart(2, '0') + 'T' +
+    String(d.getUTCHours()).padStart(2, '0') +
+    String(d.getUTCMinutes()).padStart(2, '0') +
+    String(d.getUTCSeconds()).padStart(2, '0') + 'Z';
+}
+
+// 通知（リマインダー）の選択肢。日本はタイムゾーンが単一・サマータイムなしのため
+// JST=UTC+9固定で変換できる（dayOffset: 収集日を0とした日数、hour: JSTでの時刻）。
+// 全日イベント（VALUE=DATE）に対する相対デュレーション形式のTRIGGERは、カレンダー
+// アプリによって解釈がばらつくリスクがあるため、絶対UTC時刻のTRIGGERを使う
+var ALARM_PRESETS = {
+  prev20: { dayOffset: -1, hour: 20 },
+  prev21: { dayOffset: -1, hour: 21 },
+  day07:  { dayOffset: 0,  hour: 7 },
+  day08:  { dayOffset: 0,  hour: 8 }
+};
+
 export async function onRequestGet(context) {
   var url = new URL(context.request.url);
   var city = url.searchParams.get('city') || '';
   var dateStr = url.searchParams.get('date') || '';
   var typesParam = url.searchParams.get('types') || '';
+  var alarmParam = url.searchParams.get('alarm') || 'none';
+  var alarmPreset = ALARM_PRESETS[alarmParam] || null; // 未知の値・'none'は通知なし扱い
 
   // 入力検証（他ファイルへのパス操作・不正な値でのアクセスを防ぐ）
   if (!/^[a-z0-9_-]{1,40}$/.test(city)) return badRequest('invalid city');
@@ -99,6 +127,14 @@ export async function onRequestGet(context) {
     lines.push('DTEND;VALUE=DATE:' + dtEnd);
     lines.push('SUMMARY:' + icsEscape((cat.label || key) + (cityName ? '（' + cityName + '）' : '')));
     if (cat.how) lines.push('DESCRIPTION:' + icsEscape(cat.how));
+    if (alarmPreset) {
+      var triggerDate = new Date(Date.UTC(year, month - 1, day + alarmPreset.dayOffset, alarmPreset.hour - 9, 0, 0));
+      lines.push('BEGIN:VALARM');
+      lines.push('ACTION:DISPLAY');
+      lines.push('DESCRIPTION:' + icsEscape((cat.label || key) + 'の収集日です'));
+      lines.push('TRIGGER;VALUE=DATE-TIME:' + icsUtcStr(triggerDate));
+      lines.push('END:VALARM');
+    }
     lines.push('END:VEVENT');
   });
   lines.push('END:VCALENDAR');
@@ -108,8 +144,11 @@ export async function onRequestGet(context) {
   return new Response(lines.join('\r\n'), {
     status: 200,
     headers: {
-      // Content-Dispositionを付けないのが今回の要（ダウンロードさせない）
+      // Content-Dispositionは「inline」のみ（強制ダウンロードのattachmentには戻さない）。
+      // やむを得ずダウンロードになる環境（iOS版Chrome等）でも、ファイル名だけは
+      // 意味の分かるものになるようfilenameヒントを付ける（v1.121）
       'Content-Type': 'text/calendar; charset=utf-8',
+      'Content-Disposition': 'inline; filename="gomi-' + dtStart + '.ics"',
       'Cache-Control': 'public, max-age=86400'
     }
   });
