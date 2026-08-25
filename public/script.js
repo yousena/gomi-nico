@@ -867,129 +867,6 @@ function closeDayDetail() {
   document.body.style.overflow = '';
 }
 
-/* =====================================================
-   カレンダーへの追加（単日.ics・v1.117）
-   通知機能の代替。地区全体の繰り返し購読ではなく、特定の1日だけを単発イベントとして
-   カレンダーアプリへ追加できるようにする。太平さんの「カレンダー利用が主になると
-   ごみニコの利用率が下がるのでは」という指摘を踏まえた意図的な設計（DS.md 2-4-13節）。
-   新規バックエンドは使わず、クライアント側でicsテキストを組み立ててBlobダウンロード
-   させるだけの完結した実装
-===================================================== */
-
-/** icsのテキストフィールド用にHTMLタグを除去し、RFC5545の予約文字をエスケープする */
-function icsEscape(html) {
-  var text = String(html || '').replace(/<[^>]*>/g, '');
-  text = text.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ');
-  return text.replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
-}
-
-/** YYYYMMDD形式（ローカル日付、タイムゾーン変換なし） */
-function icsDateStr(y, m, d) {
-  var mm = String(m + 1).padStart(2, '0');
-  var dd = String(d).padStart(2, '0');
-  return '' + y + mm + dd;
-}
-
-/**
- * カレンダー追加の2ボタン行（v1.118）。太平さんの実機フィードバック
- * 「カレンダー追加ボタンだとまずわからない」を受け、v1.117のアイコンのみボタンを廃止し、
- * ラベル付き2ボタンをシート本文の先頭に常時表示する方式に変更した（DS.md 2-4-13節）。
- * 「Googleカレンダーに追加」はファイルダウンロードなしでGoogleの追加画面を開く動線、
- * 「その他のカレンダー」は従来どおり.icsファイルをダウンロードする動線
- */
-function buildCalAddButtonsHtml(year, month, day, typeKeysCsv) {
-  var args = year + ',' + month + ',' + day + ',\'' + typeKeysCsv + '\'';
-  return '<div style="display:flex;gap:8px;margin-bottom:16px">' +
-    '<button onclick="openGoogleCalendarAdd(' + args + ')" type="button" ' +
-    'style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:12px 8px;' +
-    'background:#fff;border:1.5px solid rgba(0,0,0,0.10);border-radius:12px;text-align:center;line-height:1.3;' +
-    'font-size:13px;font-weight:700;color:var(--ink);cursor:pointer;font-family:inherit">' +
-    '<span class="ms-nav" style="font-size:18px;color:var(--text);flex-shrink:0">event</span>Googleカレンダーに追加</button>' +
-    '<button onclick="downloadDayIcs(' + args + ')" type="button" ' +
-    'style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:12px 8px;' +
-    'background:#fff;border:1.5px solid rgba(0,0,0,0.10);border-radius:12px;text-align:center;line-height:1.3;' +
-    'font-size:13px;font-weight:700;color:var(--ink);cursor:pointer;font-family:inherit">' +
-    '<span class="ms-nav" style="font-size:18px;color:var(--text);flex-shrink:0">download</span>その他のカレンダー（.icsをダウンロード）</button>' +
-  '</div>';
-}
-
-/**
- * 指定日の1件以上のカテゴリをGoogleカレンダーの「クイック追加」画面へ渡し、新規タブで開く（v1.118）。
- * ファイルダウンロードを一切発生させず、Google側の画面でユーザー自身が「保存」を押すことで
- * 初めて予定が追加される（＝ごみニコ側で「追加しました」と言い切らない誠実な設計）
- */
-function openGoogleCalendarAdd(year, month, day, typeKeysCsv) {
-  var typeKeys = String(typeKeysCsv || '').split(',').filter(Boolean);
-  if (!typeKeys.length || !DATA) return;
-
-  var cats     = DATA.categories || {};
-  var cityName = DATA.name || '';
-  var dtStart  = icsDateStr(year, month, day);
-  var endDate  = new Date(year, month, day + 1);
-  var dtEnd    = icsDateStr(endDate.getFullYear(), endDate.getMonth(), endDate.getDate());
-
-  var title = typeKeys.map(function(key) { return (cats[key] || {}).label || key; }).join('・') +
-    (cityName ? '（' + cityName + '）' : '');
-  var details = typeKeys.map(function(key) {
-    var cat = cats[key] || {};
-    var how = cat.how ? String(cat.how).replace(/<[^>]*>/g, '') : '';
-    return (cat.label || key) + (how ? '：' + how : '');
-  }).join('\n');
-
-  var url = 'https://calendar.google.com/calendar/render?action=TEMPLATE' +
-    '&text=' + encodeURIComponent(title) +
-    '&dates=' + dtStart + '/' + dtEnd +
-    '&details=' + encodeURIComponent(details);
-
-  window.open(url, '_blank', 'noopener');
-}
-
-/**
- * 指定日の1件以上のカテゴリをまとめて1つの.icsファイルにし、ダウンロードさせる。
- * @param {number} year
- * @param {number} month  0始まり
- * @param {number} day
- * @param {string} typeKeysCsv  カテゴリキーをカンマ区切りにした文字列（onclick属性から渡しやすいよう文字列にしている）
- */
-function downloadDayIcs(year, month, day, typeKeysCsv) {
-  var typeKeys = String(typeKeysCsv || '').split(',').filter(Boolean);
-  if (!typeKeys.length || !DATA) return;
-
-  var cats     = DATA.categories || {};
-  var cityName = DATA.name || '';
-  var dtStart  = icsDateStr(year, month, day);
-  var endDate  = new Date(year, month, day + 1);
-  var dtEnd    = icsDateStr(endDate.getFullYear(), endDate.getMonth(), endDate.getDate());
-  var dtStamp  = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-
-  var lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//gomi-nico//JP', 'CALSCALE:GREGORIAN'];
-  typeKeys.forEach(function(key) {
-    var cat = cats[key] || {};
-    var uid = 'gomi-nico-' + dtStart + '-' + key + '-' + Math.random().toString(36).slice(2, 8) + '@gomi-nico.jp';
-    lines.push('BEGIN:VEVENT');
-    lines.push('UID:' + uid);
-    lines.push('DTSTAMP:' + dtStamp);
-    lines.push('DTSTART;VALUE=DATE:' + dtStart);
-    lines.push('DTEND;VALUE=DATE:' + dtEnd);
-    lines.push('SUMMARY:' + icsEscape((cat.label || key) + (cityName ? '（' + cityName + '）' : '')));
-    if (cat.how) lines.push('DESCRIPTION:' + icsEscape(cat.how));
-    lines.push('END:VEVENT');
-  });
-  lines.push('END:VCALENDAR');
-
-  var blob = new Blob([lines.join('\r\n')], { type: 'text/calendar;charset=utf-8' });
-  var url  = URL.createObjectURL(blob);
-  var a    = document.createElement('a');
-  a.href = url;
-  a.download = 'gomi-' + dtStart + '.ics';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
-
-  if (typeof showToast === 'function') showToast('ファイルをダウンロードしました。開いてカレンダーに追加してください');
-}
-
 /**
  * 品目詳細の「次の収集日」ボタンから呼ばれる（v1.97）。カレンダーの対象月に切り替えて
  * その日を一時的にハイライトするだけで、日別の内訳ポップアップは自動で開かない
@@ -1059,12 +936,7 @@ function buildDayDetailHTML(areaKey, date) {
       '</' + tag + '>';
   }).join('');
 
-  // カレンダー追加ボタン（v1.118）。収集がある日の本文先頭に常時表示する
-  const calButtonsHtml = buildCalAddButtonsHtml(
-    date.getFullYear(), date.getMonth(), date.getDate(), types.map(t => t.type).join(',')
-  );
-
-  return `<div class="flex flex-col gap-2">${calButtonsHtml}${items}</div>`;
+  return `<div class="flex flex-col gap-2">${items}</div>`;
 }
 
 /* =====================================================
@@ -2175,9 +2047,7 @@ function openCategoryDetail(typeKey, year, month, day) {
   // ボディ
   var bodyEl = document.getElementById('category-detail-body');
   if (!bodyEl) return;
-  // カレンダー追加ボタンは、日付付きで開かれた場合のみ本文先頭に表示する（品目検索経由等、
-  // 日付が無い呼び出しでは「特定の1日」が存在しないため出さない。DS.md 2-4-13節）
-  var html = (year !== undefined) ? buildCalAddButtonsHtml(year, month, day, typeKey) : '';
+  var html = '';
 
   // 「出せるもの」「出せないもの」は行ごとに違うアイコン・色で描画する
   // （2026-08-21・v1.106: 従来は3セクションとも同じ白カード+checkアイコンで
