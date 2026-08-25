@@ -1007,10 +1007,14 @@ function renderCalendar() {
     types.forEach(t => { if (!seenTypes.has(t.type)) seenTypes.set(t.type, t.label); });
 
     const dayCls    = (dow === 0 || isHol) ? 'cal-day cal-day-sun' : dow === 6 ? 'cal-day cal-day-sat' : 'cal-day';
-    const labelText = types.map(t => t.label).join('・') || '収集なし';
+    const labelText = isYE ? '収集休み' : (types.map(t => t.label).join('・') || '収集なし');
 
     let iconsHtml = '';
-    if (!isYE && types.length > 0) {
+    if (isYE) {
+      // 年末年始・固定祝日は、セル全体を薄めるのではなく「収集休み」ラベルで示す（v1.116）。
+      // タップすればshowDayDetail()側の「年末年始休止」等の詳細説明に遷移できる
+      iconsHtml = '<div class="cal-icons cal-icons-single"><span class="cal-holiday-label">収集休み</span></div>';
+    } else if (types.length > 0) {
       if (types.length === 1) {
         // 1種類のみの日はアイコンを大きく1つだけ表示（従来の挙動を踏襲。複数種類のときの2列グリッドとは別扱い）
         iconsHtml = '<div class="cal-icons cal-icons-single"><span class="cal-icon-wrap cal-icon-wrap-lg">' +

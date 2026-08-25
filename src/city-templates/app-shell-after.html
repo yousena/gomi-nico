@@ -171,7 +171,12 @@
     @media (prefers-reduced-motion: reduce) {
       .cal-cell.is-target { animation:none; }
     }
-    .cal-cell.yearend  { opacity:0.18; pointer-events:none; }
+    /* 年末年始・固定祝日の収集休止セル（v1.116）。従来はopacityでセル全体（罫線含む）を
+       薄めていたが、太平さんから「罫線まで薄くなってよくわからない」との指摘を受け、
+       背景色＋日付の半透明化＋「収集休み」ラベルに変更した。罫線自体は薄めない */
+    .cal-cell.yearend { background:var(--bg-neutral-soft); }
+    .cal-cell.yearend .cal-day { opacity:0.5; }
+    .cal-holiday-label { font-size:9px; font-weight:700; color:var(--muted); white-space:nowrap; }
     /* お知らせカードの開閉（v1.101。折りたたみ式にして初見の情報量を絞る。JSの
        classList.toggle('is-open')と対で使う。ネイティブの<details>ではなくボタン制御に
        しているのは、NEWバッジ・アイコン・タイトルを含む複雑な見出し行をsummary内に
