@@ -78,17 +78,23 @@
        （すりガラス）がスクロール中の一覧を隙間なく覆う。中の検索ピル本体は
        #search-box-pill（別要素）。左右はmarginの負値でmainのpx-4を打ち消し、
        画面幅いっぱいまでブリードさせる（#kana-jump-navと同じ手法） */
+    /* v1.123: position:sticky + backdrop-filterの組み合わせは、iOS系ブラウザ
+       （特にChrome for iOS）でスクロール中にGPU合成レイヤーの再生成が不安定になり、
+       要素やページ全体が一瞬白く塗りつぶされたように見える既知の不具合パターンがある。
+       translateZ(0)+will-changeでレイヤーを常時確保させ、再生成そのものを防ぐ対処 */
     #search-box-card {
       position:sticky; top:calc(60px + var(--safe-t)); z-index:80;
       background:rgba(251,250,244,0.75);
       -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
       margin: -16px -16px -8px; padding: 16px;
+      -webkit-transform:translateZ(0); transform:translateZ(0); will-change:transform;
     }
     #kana-jump-nav {
       position:sticky; top:calc(152px + var(--safe-t)); z-index:79;
       background:rgba(251,250,244,0.75);
       -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
       margin:-8px -16px 0;
+      -webkit-transform:translateZ(0); transform:translateZ(0); will-change:transform;
     }
     .kana-chip {
       flex-shrink:0; min-width:44px; height:44px; padding:0 14px;
@@ -356,7 +362,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      HEADER
 ============================================================ -->
 <header class="sticky top-0 z-[100] bg-[rgba(251,250,244,0.9)] backdrop-blur-xl border-b border-black/[0.07]"
-        style="padding-top:var(--safe-t)"
+        style="padding-top:var(--safe-t);-webkit-transform:translateZ(0);transform:translateZ(0);will-change:transform"
         role="banner">
   <div class="max-w-[430px] mx-auto h-[60px] flex items-center justify-between px-4">
 
@@ -1202,7 +1208,7 @@ __ITEM_INDEX_SECTION__
             min-h-[64px] bg-white/95 backdrop-blur-xl
             border-t border-black/[0.07] shadow-top
             flex items-start justify-center"
-     style="padding-bottom:var(--safe-b)"
+     style="padding-bottom:var(--safe-b);-webkit-transform:translateZ(0);transform:translateZ(0);will-change:transform"
      role="navigation" aria-label="メインナビゲーション">
   <div class="max-w-[430px] w-full flex items-stretch">
 
