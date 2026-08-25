@@ -3,7 +3,7 @@
    戦略: アプリシェル → キャッシュ優先 / データ → ネットワーク優先
 ===================================================== */
 
-const CACHE_NAME   = 'gomi-nico-v173';
+const CACHE_NAME   = 'gomi-nico-v174';
 const SHELL_ASSETS = [
   '/shiki/',
   '/shiki/index.html',
@@ -60,6 +60,13 @@ self.addEventListener('activate', function(e) {
 self.addEventListener('fetch', function(e) {
   // CDN（Tailwind・Material Symbols）はキャッシュしない
   if (e.request.url.includes('cdn.') || e.request.url.includes('fonts.')) {
+    return;
+  }
+
+  // カレンダー登録エンドポイント（v1.120・Cloudflare Pages Functions）はキャッシュしない。
+  // 日付・カテゴリの組み合わせごとに異なるURLになるため、キャッシュ優先のままだと
+  // アクセスされるたびにキャッシュが際限なく増え続けてしまう
+  if (e.request.url.includes('/calendar-ics')) {
     return;
   }
 

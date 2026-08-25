@@ -868,6 +868,28 @@ function closeDayDetail() {
 }
 
 /**
+ * カレンダー登録ボタン（v1.120）。Cloudflare Pages Functions（/calendar-ics）への
+ * 素のリンク1本を生成するだけで、JSのイベントハンドラは不要（タップ＝ブラウザの通常の
+ * ナビゲーション）。エンドポイント側がContent-Dispositionを付けずtext/calendarを返すため、
+ * ファイルダウンロードを経由せずモバイルブラウザがOS標準のカレンダーアプリへ橋渡しする
+ * 想定（DS.md 2-4-13節のv1.120項）。v1.117〜v1.118のBlobダウンロード・Googleカレンダー
+ * 2択で迷わせた反省を踏まえ、ボタンは1個のみ・ラベルも「カレンダーに追加」に統一する
+ */
+function buildCalAddButtonHtml(year, month, day, typeKeysCsv) {
+  if (!DATA || !DATA.municipality_id) return '';
+  var mm = String(month + 1).padStart(2, '0');
+  var dd = String(day).padStart(2, '0');
+  var dateStr = year + '-' + mm + '-' + dd;
+  var url = '/calendar-ics?city=' + encodeURIComponent(DATA.municipality_id) +
+    '&date=' + dateStr + '&types=' + encodeURIComponent(typeKeysCsv);
+  return '<a href="' + url + '" ' +
+    'style="display:flex;align-items:center;justify-content:center;gap:6px;padding:12px;margin-bottom:16px;' +
+    'background:#fff;border:1.5px solid rgba(0,0,0,0.10);border-radius:12px;' +
+    'font-size:14px;font-weight:700;color:var(--ink);text-decoration:none;font-family:inherit">' +
+    '<span class="ms-nav" style="font-size:18px;color:var(--text);flex-shrink:0">event</span>カレンダーに追加</a>';
+}
+
+/**
  * 品目詳細の「次の収集日」ボタンから呼ばれる（v1.97）。カレンダーの対象月に切り替えて
  * その日を一時的にハイライトするだけで、日別の内訳ポップアップは自動で開かない
  * （太平さんの指示により、ジャンプ＋ハイライトのみにとどめる）。
@@ -936,7 +958,12 @@ function buildDayDetailHTML(areaKey, date) {
       '</' + tag + '>';
   }).join('');
 
-  return `<div class="flex flex-col gap-2">${items}</div>`;
+  // カレンダー登録ボタン（v1.120）。収集がある日の本文先頭に表示する
+  const calButtonHtml = buildCalAddButtonHtml(
+    date.getFullYear(), date.getMonth(), date.getDate(), types.map(t => t.type).join(',')
+  );
+
+  return `<div class="flex flex-col gap-2">${calButtonHtml}${items}</div>`;
 }
 
 /* =====================================================
@@ -2047,7 +2074,9 @@ function openCategoryDetail(typeKey, year, month, day) {
   // ボディ
   var bodyEl = document.getElementById('category-detail-body');
   if (!bodyEl) return;
-  var html = '';
+  // カレンダー登録ボタンは、日付付きで開かれた場合のみ本文先頭に表示する（品目検索経由等、
+  // 日付が無い呼び出しでは「特定の1日」が存在しないため出さない。DS.md 2-4-13節）
+  var html = (year !== undefined) ? buildCalAddButtonHtml(year, month, day, typeKey) : '';
 
   // 「出せるもの」「出せないもの」は行ごとに違うアイコン・色で描画する
   // （2026-08-21・v1.106: 従来は3セクションとも同じ白カード+checkアイコンで
