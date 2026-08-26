@@ -1,0 +1,45 @@
+{
+  "_readme": "お知らせ（notices）定期監視タスク用の状態ファイル。週次スケジュールタスクが読み書きする。known_urlsは『既に把握済み＝新着として報告しない』URLの一覧。手動でdata_{city}.jsonにnoticesを追加した際は、このファイルのknown_urlsにもそのURLを追記しておくこと（忘れると次回の巡回で「新着候補」として二重報告される）。",
+  "cities": {
+    "shiki": {
+      "label": "志木市",
+      "check_url": "https://www.city.shiki.lg.jp/life/1/12/73/",
+      "check_url_note": "公式サイトの「新着情報」一覧ページ（2026-08-21に太平さんとの相談で特定済み）",
+      "known_urls": [
+        "https://www.city.shiki.lg.jp/soshiki/16/27868.html",
+        "https://www.city.shiki.lg.jp/soshiki/16/16052.html",
+        "https://www.city.shiki.lg.jp/soshiki/16/33350.html",
+        "https://www.city.shiki.lg.jp/soshiki/16/1217.html",
+        "https://www.city.shiki.lg.jp/soshiki/16/1178.html"
+      ],
+      "last_checked": null
+    },
+    "warabi": {
+      "label": "蕨市",
+      "check_url": "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/index.html",
+      "check_url_note": "単一の新着情報一覧ページが確認できていないため、ごみの出し方トップページを起点に確認する。ページ内にお知らせ一覧やリンクがあれば辿ること。",
+      "known_urls": [
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1013173.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1012850.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1012525.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1006964.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1011923.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001340.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1009806.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1007059.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001331.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001337.html"
+      ],
+      "last_checked": null
+    },
+    "toda": {
+      "label": "戸田市",
+      "check_url": "https://www.city.toda.saitama.jp/life/2/19/85/",
+      "check_url_note": "単一の新着情報一覧ページが確認できていないため、ごみの出し方トップページを起点に確認する。ページ内にお知らせ一覧やリンクがあれば辿ること。",
+      "known_urls": [
+        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-gomi.html"
+      ],
+      "last_checked": null
+    }
+  }
+}
