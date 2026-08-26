@@ -68,6 +68,17 @@ const CATEGORY_ICON: Record<string, string> = {
   metal: '/icons/metal.svg',
 };
 
+// 自治体別アイコン差し替え（v1.135新設・script.jsのCITY_ICON_OVERRIDEと対）。
+// yugai・canは自治体ごとに指す内容が異なるため、共有辞書のままだと
+// 他自治体で見た目と実態がズレる（詳細はscript.js側のコメント参照）。
+// 太平さんの判断（2026-08-26）で川口市限定で適用。
+const CITY_ICON_OVERRIDE: Record<string, Record<string, string>> = {
+  kawaguchi: {
+    yugai: '/icons/harmful_light_mercury.svg',
+    can: '/icons/can_drink_only.svg',
+  },
+};
+
 type GarbageItem = { name: string; category: string; note?: string };
 
 function buildExampleRows(kind: 'ok' | 'ng', list: string[] | undefined): string {
@@ -100,7 +111,10 @@ function buildItemIndexSection(data: CityData): string {
     .map((key) => {
       const cat = categories[key] || {};
       const catItems = byCat.get(key)!;
-      const icon = CATEGORY_ICON[key] || '/icons/none.svg';
+      const icon =
+        (CITY_ICON_OVERRIDE[data.municipality_id] || {})[key] ||
+        CATEGORY_ICON[key] ||
+        '/icons/none.svg';
 
       const howTexts = ([] as string[]).concat(cat.how_steps || [], cat.tips || []);
       const howHtml = howTexts.length

@@ -70,6 +70,23 @@ const TYPE_STYLE = {
 };
 
 /**
+ * 自治体別アイコン差し替え（v1.135新設）。
+ * TYPE_STYLE/CATEGORY_ICONは全自治体で共有されるフラットな辞書だが、
+ * yugai・canのように同じキーでも自治体ごとに指す内容が異なる場合がある
+ * （例: yugaiは川口市=蛍光管・水銀体温計、蕨市=乾電池のみ、志木市=両方混在。
+ * canは川口市=飲料かん限定、蕨市・戸田市=金属類全般）。
+ * ここに自治体IDを追加すれば、そのキーだけ画像を上書きできる。
+ * 太平さんの判断（2026-08-26）で、有害ごみ・飲料かんの新アイコンは
+ * 川口市限定で適用することにした。
+ */
+const CITY_ICON_OVERRIDE = {
+  kawaguchi: {
+    yugai: '/icons/harmful_light_mercury.svg',
+    can:   '/icons/can_drink_only.svg',
+  },
+};
+
+/**
  * カテゴリアイコンHTML（Material Symbols Rounded · Filled）
  * @param {string} typeKey  TYPE_STYLE のキー
  * @param {number} sizePx   フォントサイズ px（省略時 20）
@@ -78,8 +95,10 @@ const TYPE_STYLE = {
 function catIcon(typeKey, sizePx) {
   var st = TYPE_STYLE[typeKey] || TYPE_STYLE.unknown;
   var sz = sizePx || 20;
-  if (st.img && sz >= 20) {
-    return '<img src="' + st.img + '" width="' + sz + '" height="' + sz + '" alt="" aria-hidden="true" style="display:block;object-fit:cover;flex-shrink:0">';
+  var override = (CITY_ICON_OVERRIDE[getCityId()] || {})[typeKey];
+  var img = override || st.img;
+  if (img && sz >= 20) {
+    return '<img src="' + img + '" width="' + sz + '" height="' + sz + '" alt="" aria-hidden="true" style="display:block;object-fit:cover;flex-shrink:0">';
   }
   return '<span class="ms-cat" style="font-size:' + sz + 'px;color:' + st.fg + '" aria-hidden="true">' + st.icon + '</span>';
 }
