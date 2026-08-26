@@ -12,7 +12,7 @@
         "https://www.city.shiki.lg.jp/soshiki/16/1217.html",
         "https://www.city.shiki.lg.jp/soshiki/16/1178.html"
       ],
-      "last_checked": null
+      "last_checked": "2026-08-26T12:52:43+09:00"
     },
     "warabi": {
       "label": "蕨市",
@@ -28,18 +28,45 @@
         "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1009806.html",
         "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1007059.html",
         "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001331.html",
-        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001337.html"
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001337.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1012646.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001325.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001327.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1012773.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1012772.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001330.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1006289.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1011270.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1003925.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1003929.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001335.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001332.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001328.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001329.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1003940.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1011586.html",
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1006458.html"
       ],
-      "last_checked": null
+      "last_checked": "2026-08-26T12:52:43+09:00"
     },
     "toda": {
       "label": "戸田市",
       "check_url": "https://www.city.toda.saitama.jp/life/2/19/85/",
       "check_url_note": "単一の新着情報一覧ページが確認できていないため、ごみの出し方トップページを起点に確認する。ページ内にお知らせ一覧やリンクがあれば辿ること。",
       "known_urls": [
-        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-gomi.html"
+        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-gomi.html",
+        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-jigyou-gomi.html",
+        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-gomiokiba.html",
+        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-cls-top.html",
+        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-outo-bike.html",
+        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-kan.html",
+        "https://www.city.toda.saitama.jp/soshiki/212/richiumu.html",
+        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-kogatakaden.html",
+        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-ippanhaikibutu.html",
+        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-gomi-list.html",
+        "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-pc.html"
       ],
-      "last_checked": null
+      "last_checked": "2026-08-26T12:52:43+09:00"
     }
   }
 }
