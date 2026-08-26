@@ -41,10 +41,11 @@
       --brand-soft: rgba(0,168,107,0.08);
       --brand-soft-strong: rgba(0,168,107,0.15);
       --brand-border: rgba(0,168,107,0.35);
-      /* 基本背景（生成り）。LP・記事ページの--gn-bgと同じ#FBFAF4に統一（v1.57・DS.md §1-1参照）。
-         v1.125で#F0EDE0に濃くしたが、他の淡色トークン（--bg-neutral-soft等）と混在して
-         「まだら」に見えるとの太平さんの指摘を受け、v1.126で#FBFAF4に差し戻した */
-      --bg-content: #FBFAF4;
+      /* 基本背景（v1.128でミント系#E3F1EDに変更。DS.md §1-1参照）。
+         LP・記事ページ（--gn-bg #FBFAF4）とは今回意図的に分岐させたスコープ外運用。
+         v1.125→v1.126の「まだら」の教訓を踏まえ、変更時チェックリストに沿って
+         sticky要素のハードコードrgba・--mutedのコントラスト比を追随済み */
+      --bg-content: #E3F1ED;
       /* 固定シグナルカラー（OK/NG/注意の3色）。自治体のbrand_colorを何色に変えても
          この3色は変わらない（DS.md §1-1-1「対象外」参照。v1.57で専用トークン化） */
       --c-status-ok:   #00A86B;
@@ -65,11 +66,12 @@
          （算出根拠はDS.md §1-1参照）。 */
       --ink:   #1E1D1C; /* 見出し・本文の主要テキスト */
       --text:  #686461; /* 説明文・セカンダリテキスト */
-      --muted: #76706B; /* 補足・ラベル・アイコン系の控えめな文字色（v1.125で#6E6863に調整したが、
-                            背景を#FBFAF4へ差し戻したv1.126にあわせてこちらも元の値に復帰） */
+      --muted: #6E6863; /* 補足・ラベル・アイコン系の控えめな文字色。v1.128で新背景#E3F1EDに対する
+                            コントラスト比を再計算したところ旧#76706Bは4.20:1でWCAG AA未達となったため、
+                            v1.125で実績のある#6E6863に変更（新背景に対し4.73:1を確保） */
     }
     html, body {
-      background-color: #FBFAF4;
+      background-color: #E3F1ED;
       font-weight: 400;
     }
     .is-hidden { display:none !important; }
@@ -87,14 +89,14 @@
        translateZ(0)+will-changeでレイヤーを常時確保させ、再生成そのものを防ぐ対処 */
     #search-box-card {
       position:sticky; top:calc(60px + var(--safe-t)); z-index:80;
-      background:rgba(251,250,244,0.75);
+      background:rgba(227,241,237,0.75);
       -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
       margin: -16px -16px -8px; padding: 16px;
       -webkit-transform:translateZ(0); transform:translateZ(0); will-change:transform;
     }
     #kana-jump-nav {
       position:sticky; top:calc(152px + var(--safe-t)); z-index:79;
-      background:rgba(251,250,244,0.75);
+      background:rgba(227,241,237,0.75);
       -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
       margin:-8px -16px 0;
       -webkit-transform:translateZ(0); transform:translateZ(0); will-change:transform;

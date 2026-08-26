@@ -1833,7 +1833,7 @@ function renderNoticePanel() {
       : isIOS
         ? '<p style="font-size:13px;color:var(--ink);line-height:1.75;">画面下の<strong style="">共有ボタン<img src="/icons/share.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:-5px"></strong>をタップし、<br><strong>ホーム画面に追加</strong>を選んでください。</p>'
         : '<p style="font-size:13px;color:var(--ink);line-height:1.75;">お使いのブラウザで対応していません</p>';
-    html += '<div style="position:relative;background:var(--brand-soft);border-radius:20px;padding:18px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start" class="shadow-card">' +
+    html += '<div style="position:relative;background:#fff;border-radius:20px;padding:18px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start" class="shadow-card">' +
       '<img src="/icons/icon-192.png" style="width:44px;height:44px;border-radius:10px;flex-shrink:0" alt="">' +
       '<div style="flex:1;min-width:0">' +
         '<p style="font-size:18px;font-weight:700;color:var(--ink);margin-bottom:4px">ホーム画面に追加</p>' +
