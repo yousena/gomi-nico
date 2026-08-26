@@ -64,9 +64,9 @@ const TYPE_STYLE = {
   spraycan:    { icon:'propane', img:'/icons/spray_can.svg',               bg:'var(--c-kiken-bg)',   iconBg:'rgba(191,89,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
   unknown:     { icon:'help',               img:'/icons/none.svg',        keepBg:true, bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  },
   // ── 拡張（川口市）
-  ippan:       { icon:'delete',                bg:'var(--c-ippan-bg)',   iconBg:'rgba(52,73,94,0.14)',    fg:'var(--c-ippan)',   dotColor:'var(--c-ippan)'   },
+  ippan:       { icon:'delete',   img:'/icons/common_gomi.svg', bg:'var(--c-ippan-bg)',   iconBg:'rgba(52,73,94,0.14)',    fg:'var(--c-ippan)',   dotColor:'var(--c-ippan)'   },
   kanden:      { icon:'battery_full',          bg:'var(--c-kanden-bg)',  iconBg:'rgba(166,61,107,0.14)',  fg:'var(--c-kanden)',  dotColor:'var(--c-kanden)'  },
-  metal:       { icon:'hardware',              bg:'var(--c-metal-bg)',   iconBg:'rgba(92,107,115,0.14)',  fg:'var(--c-metal)',   dotColor:'var(--c-metal)'   },
+  metal:       { icon:'hardware', img:'/icons/metal.svg',       bg:'var(--c-metal-bg)',   iconBg:'rgba(92,107,115,0.14)',  fg:'var(--c-metal)',   dotColor:'var(--c-metal)'   },
 };
 
 /**

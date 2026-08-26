@@ -64,6 +64,8 @@ const CATEGORY_ICON: Record<string, string> = {
   can_pet: '/icons/can_pet.svg',
   spraycan: '/icons/spray_can.svg',
   unknown: '/icons/none.svg',
+  ippan: '/icons/common_gomi.svg',
+  metal: '/icons/metal.svg',
 };
 
 type GarbageItem = { name: string; category: string; note?: string };
