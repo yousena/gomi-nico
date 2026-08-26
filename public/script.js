@@ -63,6 +63,10 @@ const TYPE_STYLE = {
   can_pet:     { icon:'recycling',             img:'/icons/can_pet.svg', bg:'var(--c-recycle-bg)', iconBg:'rgba(23,135,81,0.14)',  fg:'var(--c-recycle)', dotColor:'var(--c-recycle)' },
   spraycan:    { icon:'propane', img:'/icons/spray_can.svg',               bg:'var(--c-kiken-bg)',   iconBg:'rgba(191,89,0,0.14)',   fg:'var(--c-kiken)',   dotColor:'var(--c-kiken)'   },
   unknown:     { icon:'help',               img:'/icons/none.svg',        keepBg:true, bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  },
+  // ── 拡張（川口市）
+  ippan:       { icon:'delete',                bg:'var(--c-ippan-bg)',   iconBg:'rgba(52,73,94,0.14)',    fg:'var(--c-ippan)',   dotColor:'var(--c-ippan)'   },
+  kanden:      { icon:'battery_full',          bg:'var(--c-kanden-bg)',  iconBg:'rgba(166,61,107,0.14)',  fg:'var(--c-kanden)',  dotColor:'var(--c-kanden)'  },
+  metal:       { icon:'hardware',              bg:'var(--c-metal-bg)',   iconBg:'rgba(92,107,115,0.14)',  fg:'var(--c-metal)',   dotColor:'var(--c-metal)'   },
 };
 
 /**
@@ -1503,9 +1507,11 @@ function openItemDetail(name) {
   // ── 次の収集日（v1.95で新設）。「検索して何ごみかわかった、その場でいつ出せるかも知りたい」
   // という要望を受け、品目詳細を開いた瞬間にそのカテゴリの次の収集日がわかるようにする。
   // 粗大ごみ（sodai）は固定収集日を持たない予約制のため、日付検索はせず案内文のみ表示する。
+  // 乾電池（kanden、川口市などで使用）も同様に、公共施設の回収ボックスへ随時持ち込む方式で
+  // 固定の収集日を持たないため、sodaiと同じ扱いにする。
   // ごみ出し不可（unknown）はそもそも収集の対象外のため、この枠自体を出さない
   // （代わりに下の「どうすればいい？」ガイドで案内する）。
-  if (item.category === 'sodai') {
+  if (item.category === 'sodai' || item.category === 'kanden') {
     html += '<div style="display:flex;align-items:flex-start;gap:2px;margin-bottom:16px;padding:14px 16px;background:' + st.bg + ';border-radius:12px">' +
       '<span class="ms-nav" style="font-size:16px;color:' + st.fg + ';flex-shrink:0;line-height:1.2">event_busy</span>' +
       '<div style="min-width:0">' +
