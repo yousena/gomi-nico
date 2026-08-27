@@ -399,7 +399,7 @@ function applyMunicipalityMeta() {
   const citationNote = document.getElementById('citation-note');
   if (citationNote) {
     const dateStr = DATA.citation_date || '';
-    citationNote.textContent = `参照日：${dateStr}${dateStr ? ' ／ ' : ''}本サイトは${city}の非公式サイトです`;
+    citationNote.textContent = `参照日：${dateStr}${dateStr ? ' ／ ' : ''}本サイトは${city}の公式サイトではありません`;
   }
 
   // ── ブランドカラー ── brand_colorから--brand系4トークンを自動生成（DS.md §1-1-1）
