@@ -1,0 +1,4557 @@
+{
+  "municipality_id": "okegawa",
+  "name": "桶川市",
+  "prefecture": "埼玉県",
+  "population": 74000,
+  "ad_type": "none",
+  "official_banner_url": "",
+  "brand_color": "#2E6F9E",
+  "official_url": "https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/index.html",
+  "official_url_label": "桶川市ホームページ（ごみ・リサイクル）",
+  "citation_date": "2026年8月",
+  "cityLogo": null,
+  "seo": {
+    "title": "桶川市のごみ収集日・分別と出し方｜ごみニコ",
+    "description": "埼玉県桶川市のごみ収集日をカレンダーで確認、品目名で分別と出し方もすぐ検索。東側地区・西側地区の収集曜日がひと目でわかります。無料・登録不要。",
+    "keywords": "ごみ,分別,収集日,カレンダー,燃やせるごみ,プラスチック,金属,ガラス,乾電池,粗大ごみ,ごみ出し,桶川市",
+    "h1Title": "桶川市のごみ分別",
+    "contactCardNote": "環境センターへのご連絡",
+    "calDayWeight": 500,
+    "serviceName": "桶川市 ごみ収集サービス",
+    "orgName": "桶川市 環境センター",
+    "orgTelephone": "048-728-1902",
+    "addressLocality": "桶川市",
+    "addressRegion": "埼玉県",
+    "faq": [
+      {
+        "name": "桶川市の燃やせるごみの収集日はいつですか？",
+        "text": "桶川市はJR高崎線を境に東側地区・西側地区に分かれます。東側地区は月曜・木曜、西側地区は火曜・金曜が燃やせるごみの収集日です（祝日等で変更になる場合があります）。"
+      },
+      {
+        "name": "桶川市のプラスチックとペットボトルは同じ日に出せますか？",
+        "text": "はい。桶川市では「プラスチック」の区分にペットボトルも含まれ、同じ日にまとめて出せます。ペットボトルはふたとラベルを外し、中を洗ってからつぶして出してください。"
+      },
+      {
+        "name": "桶川市の粗大ごみはどうやって出しますか？",
+        "text": "粗大ごみは有料です。環境センター（048-728-1902）へ事前に電話予約するか、環境センターへ直接搬入してください。収集は1点300円〜1,800円、自己搬入は10キログラムにつき110円です。"
+      },
+      {
+        "name": "桶川市でリチウムイオン電池・モバイルバッテリーはどうやって捨てますか？",
+        "text": "ごみ集積所には出せません。発火の危険があるため、市役所本庁舎や公民館など市内の回収ボックス設置施設へお持ち込みください。"
+      }
+    ]
+  },
+  "area_groups": [
+    {
+      "label": "東側地区（JR高崎線の東側）",
+      "keys": [
+        "higashi"
+      ]
+    },
+    {
+      "label": "西側地区（JR高崎線の西側）",
+      "keys": [
+        "nishi"
+      ]
+    }
+  ],
+  "areas": {
+    "higashi": {
+      "name": "東側地区",
+      "moeru": [
+        1,
+        4
+      ],
+      "pla_pet": [
+        2
+      ]
+    },
+    "nishi": {
+      "name": "西側地区",
+      "moeru": [
+        2,
+        5
+      ],
+      "pla_pet": [
+        4
+      ]
+    }
+  },
+  "categories": {
+    "moeru": {
+      "label": "燃やせるごみ",
+      "how": "生ごみは水切りをしてから、桶川市指定のごみ袋（うす茶色）に入れて出す",
+      "allowed": [
+        "生ごみ（水切りをしてから）",
+        "紙くず・紙おむつ（汚物は取り除く）",
+        "木の枝・木くず（50cm以内に切って縛る。1回3束以内）",
+        "リサイクルできない古着",
+        "プラマークのない製品プラスチック"
+      ],
+      "not_allowed": [
+        "プラスチック製容器包装・ペットボトル（プラスチックの日へ）",
+        "金属・ガラス・乾電池（該当日へ）",
+        "スプレー缶・カセットボンベ（金属・ガラス・乾電池の日へ、中身を使い切ってから）",
+        "粗大ごみ（一辺50cm超・3辺合計100cm超・棒状で50cm超）"
+      ],
+      "tips": [
+        "生ごみの水切りで収集車内の臭いや汚水漏れを防げます",
+        "商店・飲食店・事務所など事業活動に伴う事業系ごみは有料です"
+      ],
+      "how_steps": [
+        "生ごみは水切りをしてから袋へ",
+        "桶川市指定のごみ袋（うす茶色、15L・30L・45L）に入れる",
+        "東側地区は月曜・木曜、西側地区は火曜・金曜の朝に集積所へ"
+      ]
+    },
+    "pla_pet": {
+      "label": "プラスチック",
+      "how": "汚れを落として無色透明または無色半透明の袋（レジ袋不可、30〜70L）に入れて出す。ペットボトルはふた・ラベルを外し中を水洗いしてつぶす",
+      "allowed": [
+        "プラマークのある容器包装（トレー・カップ麺容器・洗剤容器等、洗って汚れを落としたもの）",
+        "ペットボトル本体（ふた・ラベルは外す）",
+        "ペットボトルのふた・ラベル",
+        "レジ袋・ポリ袋、発泡スチロール"
+      ],
+      "not_allowed": [
+        "汚れの落ちない容器包装（燃やせるごみへ）",
+        "金属部分の付いたプラスチック製品（金属・ガラス・乾電池へ）",
+        "土などが付いたプランター・植木鉢（土を落としてから）"
+      ],
+      "tips": [
+        "変更前の市指定ごみ袋（水色）も引き続き使用できます",
+        "ペットボトルは本体・ふた・ラベルすべて同じ日に出せます（ふた・ラベルは本体から外す）"
+      ],
+      "how_steps": [
+        "容器は中身を空にしてよく洗う",
+        "無色透明または無色半透明の袋（レジ袋不可）に入れる",
+        "東側地区は火曜、西側地区は木曜の朝に集積所へ"
+      ]
+    },
+    "kinzoku_gb": {
+      "label": "金属・ガラス・乾電池",
+      "how": "無色透明または無色半透明の袋（レジ袋不可、45L以下）に入れて出す。びん・缶は中を洗い、ふた・コルクは外す。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">正確な収集日は桶川市の収集日程表でご確認ください</a>（毎月2回・指定日制のため）",
+      "allowed": [
+        "金属製品（なべ・フライパン・工具・小型家電本体等）",
+        "びん類（ふた・コルクを外して洗う）",
+        "乾電池（一次電池）",
+        "スプレー缶・カセットボンベ（中身を必ず使い切る）"
+      ],
+      "not_allowed": [
+        "プラスチック製の部品（プラスチックの日へ）",
+        "リチウムイオン電池等の充電式電池・モバイルバッテリー（発火の危険があるため集積所には出せません。回収ボックスへ）",
+        "異物の混入した空き缶（タバコの吸い殻等を入れない）"
+      ],
+      "tips": [
+        "毎月2回、指定日の収集です（東側地区は原則金曜、西側地区は原則月曜）。正確な日付は年度ごとの収集日程表でご確認ください",
+        "刃物・割れ物は紙や布で包んでから出す",
+        "異物混入があるとリサイクルできなくなります"
+      ],
+      "how_steps": [
+        "びん・缶は中身を空にして洗う",
+        "無色透明または無色半透明の袋（45L以下）に入れる",
+        "指定日の朝に集積所へ（正確な日付は収集日程表を確認）"
+      ]
+    },
+    "moenai": {
+      "label": "その他ごみ",
+      "how": "無色透明または無色半透明の袋（レジ袋不可、45L以下）に入れて出す。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">正確な収集日は桶川市の収集日程表でご確認ください</a>（毎月1回・指定日制のため）",
+      "allowed": [
+        "陶器・ガラス食器",
+        "ゴム製品・靴・かばん等の身の回り品",
+        "電球・蛍光管（鋭利な部分を保護してから）",
+        "使い捨てライター（中身を使い切ってから）"
+      ],
+      "not_allowed": [
+        "金属製品（金属・ガラス・乾電池の日へ）",
+        "プラマーク容器包装（プラスチックの日へ）",
+        "大きいもの（3辺合計100cm超等は粗大ごみへ）"
+      ],
+      "tips": [
+        "ライターなどは必ず中身を使いきってから出してください",
+        "蛍光灯・電球は収集時にケガをしないよう、鋭利な部分をガムテープなどで覆ってから出してください"
+      ],
+      "how_steps": [
+        "割れ物・刃物は紙や布に包む",
+        "無色透明または無色半透明の袋（45L以下）に入れる",
+        "指定日の朝に集積所へ（正確な日付は収集日程表を確認）"
+      ]
+    },
+    "kami": {
+      "label": "紙製の容器と包装紙",
+      "how": "無色透明または無色半透明の袋（レジ袋不可、30L以上）、または紙袋（雨天時は不可）に入れて出す。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">正確な収集日は桶川市の収集日程表でご確認ください</a>（毎月2回・指定日制のため）",
+      "allowed": [
+        "お菓子の箱・洗剤の空き箱（紙製）",
+        "包装紙・紙袋",
+        "アルミを使った紙パック（酒パック等）"
+      ],
+      "not_allowed": [
+        "新聞・雑誌・段ボール・紙パック（アルミなし）（古着等の日へ）",
+        "識別表示がプラマークのもの（プラスチックの日へ）"
+      ],
+      "tips": [
+        "「紙」の識別表示マークで分別を確認してください"
+      ],
+      "how_steps": [
+        "識別マークを確認する",
+        "無色透明・半透明の袋または紙袋（雨天時不可）に入れる",
+        "指定日の朝に集積所へ（東側地区は原則金曜、西側地区は原則月曜。正確な日付は収集日程表を確認）"
+      ]
+    },
+    "fuku_zasshi": {
+      "label": "古着・新聞紙・雑誌・段ボール・紙パック",
+      "how": "古着は無色透明・半透明の袋（45L以下）に入れて縛る。新聞・雑誌・段ボールは紐で縛る。紙パックは洗って開いて乾かしてから束ねる。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">正確な収集日は桶川市の収集日程表でご確認ください</a>（毎月2回・指定日制のため）",
+      "allowed": [
+        "古着（リサイクル可能なもの、洗濯済み）",
+        "新聞紙・折込チラシ",
+        "雑誌・カタログ・教科書・本",
+        "段ボール（つぶして紐で縛る）",
+        "紙パック（アルミなし、洗って開いて乾燥）"
+      ],
+      "not_allowed": [
+        "雨天が予想される日の古着（排出を控える）",
+        "紙パック（アルミあり）（紙製容器包装の日へ）",
+        "汚れた紙・においの強い紙"
+      ],
+      "tips": [
+        "雨天が予想される場合、古着の排出はご遠慮ください",
+        "紙パックは飲み口のプラスチックも外し、洗って開いて乾かしてから出す"
+      ],
+      "how_steps": [
+        "古着は洗ってから袋に入れて縛る",
+        "新聞・雑誌・段ボールは紐で縛る",
+        "毎月2回、原則土曜の指定日に集積所へ（正確な日付は収集日程表を確認）"
+      ]
+    },
+    "sodai": {
+      "label": "粗大ごみ",
+      "how": "有料。事前に環境センターへ電話予約が必要です。<a href=\"javascript:void(0)\" onclick=\"closeFAQ();closeCategoryDetail();closeItemDetail();openContact()\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">お問い合わせ先</a>、または環境センターへ自己搬入",
+      "allowed": [
+        "家具類（タンス・テーブル・棚など）",
+        "一辺50cmを超えるもの、または3辺の合計が100cmを超えるもの",
+        "自転車、ふとん（洗浄機付き便座等を含む）"
+      ],
+      "not_allowed": [
+        "家電リサイクル法対象4品目（テレビ・エアコン・冷蔵庫冷凍庫・洗濯機）・パソコン（市で収集できないものへ）"
+      ],
+      "tips": [
+        "料金は自己搬入10キログラムにつき110円（総重量20kg以下は減免あり）、収集は1点300円〜1,800円",
+        "原動機付自転車・ベッドマット・マッサージチェア等は特別料金（持込1,600円・回収1,800円）",
+        "収集は月〜金の平日のみ、電話予約制・先着順です",
+        "1回の回収は6点まで・総重量100kg以内。料金は当日現金払いのため在宅が必要です"
+      ],
+      "how_steps": [
+        "環境センターへ電話予約する（048-728-1902、平日8:30〜17:00）",
+        "収集または環境センターへの自己搬入を選ぶ",
+        "収集の場合は品物を屋外（集合住宅は1階）に出し、当日現金で支払う"
+      ]
+    },
+    "unknown": {
+      "label": "市で収集できないもの",
+      "how": "処分方法は品目によって異なります。下記を確認してください",
+      "allowed": [],
+      "not_allowed": [
+        "家電リサイクル法対象4品目（テレビ・エアコン・冷蔵庫冷凍庫・洗濯機）・衣類乾燥機",
+        "パソコン・パソコンディスプレイ",
+        "リチウムイオン電池等の充電式電池・モバイルバッテリー（発火の危険があるため集積所には出せません）",
+        "ピアノ・耐火金庫・畳・浴槽・ドア等の建具",
+        "タイヤ・原動機付自転車（50ccを超えるもの）",
+        "ブロック・コンクリート・土砂"
+      ],
+      "tips": [
+        "「無料回収します」というトラックの巡回・チラシ・ネット広告にご注意ください。家庭ごみを回収できるのは市区町村の許可を受けた業者だけです"
+      ],
+      "how_steps": [
+        "家電4品目・衣類乾燥機: 購入店に引取りを依頼するか、許可業者に依頼する",
+        "リチウムイオン電池等: 発火の危険があるため、市役所本庁舎・保健センター・各公民館等の回収ボックスへ持ち込む",
+        "パソコン: 製造メーカーに相談する（PCリサイクルマーク付きは無料）",
+        "その他（ピアノ・畳・タイヤ・建築廃材等）: 専門業者・許可業者にご相談ください"
+      ]
+    }
+  },
+  "garbage_db": [
+    {
+      "name": "油",
+      "category": "moeru",
+      "note": "紙や布などに染み込ませるか凝固剤などで固める",
+      "tags": [
+        "あぶら"
+      ]
+    },
+    {
+      "name": "油紙",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "衣料（古着などでリサイクルできない物）",
+      "category": "moeru",
+      "note": "衣類はボタン・ファスナーなどははずす",
+      "tags": [
+        "いりょう"
+      ]
+    },
+    {
+      "name": "植木",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": [
+        "うえき"
+      ]
+    },
+    {
+      "name": "うちわ（竹製）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "枝",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": [
+        "えだ"
+      ]
+    },
+    {
+      "name": "えんぴつ",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "落ち葉",
+      "category": "moeru",
+      "note": "土などは入れない",
+      "tags": [
+        "おちば"
+      ]
+    },
+    {
+      "name": "お手拭き（お弁当の付属品）",
+      "category": "moeru",
+      "note": "袋は「プラスチック」",
+      "tags": [
+        "おてふき"
+      ]
+    },
+    {
+      "name": "おむつ",
+      "category": "moeru",
+      "note": "汚物はとり除く",
+      "tags": []
+    },
+    {
+      "name": "おもちゃ（布製・木製）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カーボン紙",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "貝がら",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かいがら"
+      ]
+    },
+    {
+      "name": "化学ぞうきん",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かがくぞうきん"
+      ]
+    },
+    {
+      "name": "額縁（木製）",
+      "category": "moeru",
+      "note": "大きさにより「粗大ごみ」ガラス部分は「金属・ガラス・乾電池」",
+      "tags": [
+        "がくぶち"
+      ]
+    },
+    {
+      "name": "かさ立て（籐製）",
+      "category": "moeru",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "かさたて"
+      ]
+    },
+    {
+      "name": "かつら（人毛）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "紙おむつ",
+      "category": "moeru",
+      "note": "汚物はとり除く",
+      "tags": [
+        "かみおむつ"
+      ]
+    },
+    {
+      "name": "紙くず",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かみくず"
+      ]
+    },
+    {
+      "name": "紙ねんど",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かみねんど"
+      ]
+    },
+    {
+      "name": "ガムテープ（紙製・布製）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "木",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": [
+        "き"
+      ]
+    },
+    {
+      "name": "木くず",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": [
+        "きくず"
+      ]
+    },
+    {
+      "name": "草花",
+      "category": "moeru",
+      "note": "土などは入れない",
+      "tags": [
+        "くさばな"
+      ]
+    },
+    {
+      "name": "串（竹製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "くし"
+      ]
+    },
+    {
+      "name": "果物の皮",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "くだもののかわ"
+      ]
+    },
+    {
+      "name": "クッション（わた入り）",
+      "category": "moeru",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "クレヨン",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "軍手",
+      "category": "moeru",
+      "note": "ゴム（滑り止め）付きは「その他ごみ」",
+      "tags": [
+        "ぐんて"
+      ]
+    },
+    {
+      "name": "毛（頭髪）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "け"
+      ]
+    },
+    {
+      "name": "剣道防具（竹刀）",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": [
+        "けんどうぼうぐ"
+      ]
+    },
+    {
+      "name": "ござ",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": []
+    },
+    {
+      "name": "碁盤",
+      "category": "moeru",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "ごばん"
+      ]
+    },
+    {
+      "name": "コルク",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "座布団（わた入り）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ざぶとん"
+      ]
+    },
+    {
+      "name": "皿（紙製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "さら"
+      ]
+    },
+    {
+      "name": "残飯",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ざんぱん"
+      ]
+    },
+    {
+      "name": "竹刀（剣道）",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": [
+        "しない"
+      ]
+    },
+    {
+      "name": "写真",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "しゃしん"
+      ]
+    },
+    {
+      "name": "将棋盤",
+      "category": "moeru",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "しょうぎばん"
+      ]
+    },
+    {
+      "name": "食用油",
+      "category": "moeru",
+      "note": "紙や布などに染み込ませるか凝固剤などで固める",
+      "tags": [
+        "しょくようあぶら"
+      ]
+    },
+    {
+      "name": "芯（ラップ・トイレットペーパーなど）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "しん"
+      ]
+    },
+    {
+      "name": "すだれ",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": []
+    },
+    {
+      "name": "砂（ペット用・紙製）",
+      "category": "moeru",
+      "note": "汚物はとり除く",
+      "tags": [
+        "すな"
+      ]
+    },
+    {
+      "name": "生理用品",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "せいりようひん"
+      ]
+    },
+    {
+      "name": "石鹸（固形）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "せっけん"
+      ]
+    },
+    {
+      "name": "雑巾",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ぞうきん"
+      ]
+    },
+    {
+      "name": "ソーイングボックス（木製・籐製）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "そろばん（木製）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "竹串",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "たけぐし"
+      ]
+    },
+    {
+      "name": "竹ほうき",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": [
+        "たけほうき"
+      ]
+    },
+    {
+      "name": "たばこの吸殻",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "たばこのすいがら"
+      ]
+    },
+    {
+      "name": "茶殻・茶かす",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ちゃがら"
+      ]
+    },
+    {
+      "name": "チョーク",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ちり紙",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ちりがみ"
+      ]
+    },
+    {
+      "name": "杖（木製）",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": [
+        "つえ"
+      ]
+    },
+    {
+      "name": "積み木（木製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "つみき"
+      ]
+    },
+    {
+      "name": "テニスラケット（木製）",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る・ガットは外して「その他ごみ」",
+      "tags": []
+    },
+    {
+      "name": "てんぷら油",
+      "category": "moeru",
+      "note": "紙や布などに染み込ませるか凝固剤などで固める",
+      "tags": [
+        "てんぷらあぶら"
+      ]
+    },
+    {
+      "name": "人形（木製・布製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "にんぎょう"
+      ]
+    },
+    {
+      "name": "ぬか床",
+      "category": "moeru",
+      "note": "水分をよく切る",
+      "tags": [
+        "ぬかどこ"
+      ]
+    },
+    {
+      "name": "猫の砂（紙製）",
+      "category": "moeru",
+      "note": "シリカゲルは「その他ごみ」",
+      "tags": [
+        "ねこのすな"
+      ]
+    },
+    {
+      "name": "粘着テープ（布製・紙製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ねんちゃくてーぷ"
+      ]
+    },
+    {
+      "name": "はくせい",
+      "category": "moeru",
+      "note": "ケースは「その他ごみ」",
+      "tags": []
+    },
+    {
+      "name": "バット（木製）",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": []
+    },
+    {
+      "name": "花",
+      "category": "moeru",
+      "note": "土などは入れない",
+      "tags": [
+        "はな"
+      ]
+    },
+    {
+      "name": "花火（使用済み）",
+      "category": "moeru",
+      "note": "発火しないよう水で十分に湿らせる",
+      "tags": [
+        "はなび"
+      ]
+    },
+    {
+      "name": "ハンガー（木製）",
+      "category": "moeru",
+      "note": "金属部分はとりはずし「金属・ガラス・乾電池」",
+      "tags": []
+    },
+    {
+      "name": "半てん",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "はんてん"
+      ]
+    },
+    {
+      "name": "笛（木製、竹製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ふえ"
+      ]
+    },
+    {
+      "name": "不織布",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ふしょくふ"
+      ]
+    },
+    {
+      "name": "ペットの砂（紙製）",
+      "category": "moeru",
+      "note": "汚物はとり除く",
+      "tags": []
+    },
+    {
+      "name": "ほうき（竹製など）",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": []
+    },
+    {
+      "name": "骨（魚・とりなどの残飯）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ほね"
+      ]
+    },
+    {
+      "name": "まくら（そばがら・綿）",
+      "category": "moeru",
+      "note": "ビーズ・スポンジのものは「その他ごみ」",
+      "tags": []
+    },
+    {
+      "name": "マッチ（使用済み）",
+      "category": "moeru",
+      "note": "発火しないよう水で十分に湿らせる",
+      "tags": []
+    },
+    {
+      "name": "マット（台所・玄関・足拭き用）",
+      "category": "moeru",
+      "note": "ゴム（滑り止め）付きは「その他ごみ」",
+      "tags": []
+    },
+    {
+      "name": "むしろ",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": []
+    },
+    {
+      "name": "木材",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る",
+      "tags": [
+        "もくざい"
+      ]
+    },
+    {
+      "name": "野菜くず",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "やさいくず"
+      ]
+    },
+    {
+      "name": "ラケット（木製）",
+      "category": "moeru",
+      "note": "50センチ以内にして縛る・ガットは外して「その他ごみ」",
+      "tags": []
+    },
+    {
+      "name": "ラケット（卓球用）",
+      "category": "moeru",
+      "note": "ラバーははがして「その他ごみ」",
+      "tags": []
+    },
+    {
+      "name": "練炭",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "れんたん"
+      ]
+    },
+    {
+      "name": "ろうそく",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "綿",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "わた"
+      ]
+    },
+    {
+      "name": "割り箸",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "わりばし"
+      ]
+    },
+    {
+      "name": "生ごみ",
+      "category": "moeru",
+      "note": "十分水切りをしてから出してください",
+      "tags": [
+        "なまごみ",
+        "食べ物",
+        "食品",
+        "残飯"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "ティッシュペーパー",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "てぃっしゅぺーぱー"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "輪ゴム",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "わごむ"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "使い捨てマスク",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "つかいすてますく",
+        "不織布マスク"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "油の容器（プラスチック製）",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "あぶらのようき"
+      ]
+    },
+    {
+      "name": "網戸用の網（プラスチック製）",
+      "category": "pla_pet",
+      "note": "金網は「金属・ガラス・乾電池」",
+      "tags": [
+        "あみど"
+      ]
+    },
+    {
+      "name": "植木鉢（プラスチック製）",
+      "category": "pla_pet",
+      "note": "土などは入れない",
+      "tags": [
+        "うえきばち"
+      ]
+    },
+    {
+      "name": "うちわ（プラスチック製）",
+      "category": "pla_pet",
+      "note": "紙の部分ははがし「燃やせるごみ」",
+      "tags": []
+    },
+    {
+      "name": "エムディーケース",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "桶（プラスチック製）",
+      "category": "pla_pet",
+      "note": "木製は「燃やせるごみ」",
+      "tags": [
+        "おけ"
+      ]
+    },
+    {
+      "name": "おまる（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "おもちゃ（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "買い物袋（レジ袋）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": [
+        "かいものぶくろ"
+      ]
+    },
+    {
+      "name": "菓子皿（プラスチック製）",
+      "category": "pla_pet",
+      "note": "木製は「燃やせるごみ」",
+      "tags": []
+    },
+    {
+      "name": "菓子袋（ビニール・アルミ張り）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カセットテープのケース",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カップ麺の袋（かやく・スープの袋）",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": []
+    },
+    {
+      "name": "カップ麺の容器（プラスチック製）",
+      "category": "pla_pet",
+      "note": "洗って出す",
+      "tags": []
+    },
+    {
+      "name": "乾燥剤（衣類用）の容器",
+      "category": "pla_pet",
+      "note": "水分は除く",
+      "tags": [
+        "かんそうざいのようき"
+      ]
+    },
+    {
+      "name": "薬のシート・錠剤用（ピーティーピーシート）",
+      "category": "pla_pet",
+      "note": "中身は「燃やせるごみ」",
+      "tags": [
+        "くすりのしーと"
+      ]
+    },
+    {
+      "name": "口紅容器（プラスチック製）",
+      "category": "pla_pet",
+      "note": "中身は使い切る",
+      "tags": [
+        "くちべにようき"
+      ]
+    },
+    {
+      "name": "クリーニング袋",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "化粧品の容器（プラスチック製）",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "けしょうひんのようき"
+      ]
+    },
+    {
+      "name": "ごみ箱（プラスチック製）",
+      "category": "pla_pet",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "ごみばこ"
+      ]
+    },
+    {
+      "name": "酒パックなどのふた",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "シーディー",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "湿布薬のフィルム",
+      "category": "pla_pet",
+      "note": "",
+      "tags": [
+        "しっぷやくのふぃるむ"
+      ]
+    },
+    {
+      "name": "シャベル（園芸用・プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "シャンプーの容器",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": []
+    },
+    {
+      "name": "照明器具のかさ（プラスチック製）",
+      "category": "pla_pet",
+      "note": "大きさにより「粗大ごみ」電球・蛍光管は「その他ごみ」",
+      "tags": []
+    },
+    {
+      "name": "じょうろ（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "食品トレイ",
+      "category": "pla_pet",
+      "note": "洗って出す",
+      "tags": [
+        "しょくひんとれい"
+      ]
+    },
+    {
+      "name": "水筒（プラスチック製）",
+      "category": "pla_pet",
+      "note": "金属の付いているものは「金属・ガラス・乾電池」",
+      "tags": [
+        "すいとう"
+      ]
+    },
+    {
+      "name": "ストロー",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "洗剤容器（プラスチック製）",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "せんざいようき"
+      ]
+    },
+    {
+      "name": "洗面器（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": [
+        "せんめんき"
+      ]
+    },
+    {
+      "name": "ソースの容器",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": []
+    },
+    {
+      "name": "脱臭容器",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "だっしゅうようき"
+      ]
+    },
+    {
+      "name": "タッパー",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "たまごのパック（プラスチック製）",
+      "category": "pla_pet",
+      "note": "紙製は「紙製の容器と包装紙」",
+      "tags": []
+    },
+    {
+      "name": "チューブ（プラスチック製）歯磨き粉など",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": []
+    },
+    {
+      "name": "ちりとり（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "漬物の樽（プラスチック製）",
+      "category": "pla_pet",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "つけもののたる"
+      ]
+    },
+    {
+      "name": "積み木（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ディーヴィディー",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "テレホンカード",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "電気のかさ（プラスチック製）",
+      "category": "pla_pet",
+      "note": "大きさにより「粗大ごみ」照明器具本体は「金属」",
+      "tags": []
+    },
+    {
+      "name": "トイレの便座（金具なし）",
+      "category": "pla_pet",
+      "note": "洗浄機付は「粗大ごみ（有料）」",
+      "tags": []
+    },
+    {
+      "name": "灯油入れ（ポリタンク）",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "とうゆいれ"
+      ]
+    },
+    {
+      "name": "灯油ポンプ",
+      "category": "pla_pet",
+      "note": "電池式は電池をはずして「その他ごみ」",
+      "tags": [
+        "とうゆぽんぷ"
+      ]
+    },
+    {
+      "name": "トレイ（発泡スチロール）",
+      "category": "pla_pet",
+      "note": "洗って出す",
+      "tags": []
+    },
+    {
+      "name": "人形（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": [
+        "にんぎょう"
+      ]
+    },
+    {
+      "name": "ネガフィルム",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "農薬の空容器（家庭園芸用・プラ製）",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "のうやくのからようき"
+      ]
+    },
+    {
+      "name": "バケツ（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "バター・マーガリンの容器",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": []
+    },
+    {
+      "name": "発泡スチロール",
+      "category": "pla_pet",
+      "note": "",
+      "tags": [
+        "はっぽうすちろーる"
+      ]
+    },
+    {
+      "name": "歯ブラシ",
+      "category": "pla_pet",
+      "note": "",
+      "tags": [
+        "はぶらし"
+      ]
+    },
+    {
+      "name": "歯磨きチューブ",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "はみがきちゅーぶ"
+      ]
+    },
+    {
+      "name": "ハンガー（プラスチック製）",
+      "category": "pla_pet",
+      "note": "金属部分のついてないものに限る",
+      "tags": []
+    },
+    {
+      "name": "ピアニカのケース（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ピーティーピーシート（薬のシート・錠剤用）",
+      "category": "pla_pet",
+      "note": "中身は「燃やせるごみ」",
+      "tags": []
+    },
+    {
+      "name": "ビデオテープのケース",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "肥料袋（家庭園芸用）",
+      "category": "pla_pet",
+      "note": "紙製は「紙製の容器と包装紙」",
+      "tags": [
+        "ひりょうぶくろ"
+      ]
+    },
+    {
+      "name": "びん・缶のふた（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "フィルム（ネガ・ポジ）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "フィルムケース",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "笛（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": [
+        "ふえ"
+      ]
+    },
+    {
+      "name": "プランター（プラスチック製）",
+      "category": "pla_pet",
+      "note": "土などは入れない・大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "ブルーシート",
+      "category": "pla_pet",
+      "note": "金属部分はとりはずし「金属・ガラス・乾電池」",
+      "tags": []
+    },
+    {
+      "name": "風呂桶・手桶（プラスチック製）",
+      "category": "pla_pet",
+      "note": "木製は「燃やせるごみ」、浴槽は「粗大ごみ（有料）」",
+      "tags": [
+        "ふろおけ"
+      ]
+    },
+    {
+      "name": "噴霧器（プラスチック製）",
+      "category": "pla_pet",
+      "note": "大きさにより「粗大ごみ」金属部分は「金属・ガラス・乾電池」",
+      "tags": [
+        "ふんむき"
+      ]
+    },
+    {
+      "name": "ペットボトル",
+      "category": "pla_pet",
+      "note": "ふたとラベルをとりはずし、中を水洗いして",
+      "tags": [
+        "ぺっとぼとる"
+      ]
+    },
+    {
+      "name": "ペットボトルのふた",
+      "category": "pla_pet",
+      "note": "本体からはずす",
+      "tags": []
+    },
+    {
+      "name": "ペットボトルのラベル",
+      "category": "pla_pet",
+      "note": "本体からはずす",
+      "tags": []
+    },
+    {
+      "name": "便座",
+      "category": "pla_pet",
+      "note": "洗浄機付は「粗大ごみ（有料）」",
+      "tags": [
+        "べんざ"
+      ]
+    },
+    {
+      "name": "弁当容器（コンビニ弁当容器など）",
+      "category": "pla_pet",
+      "note": "洗って出す",
+      "tags": [
+        "べんとうようき"
+      ]
+    },
+    {
+      "name": "ホースリール（プラスチック製）",
+      "category": "pla_pet",
+      "note": "金属製のものは「金属・ガラス・乾電池」",
+      "tags": []
+    },
+    {
+      "name": "ポリタンク（18リットルまで）",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": []
+    },
+    {
+      "name": "ポリバケツ",
+      "category": "pla_pet",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "ポリ袋（レジ袋）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "麻雀牌（プラスチック製）",
+      "category": "pla_pet",
+      "note": "象牙や竹製は「燃やせるごみ」",
+      "tags": [
+        "まーじゃんぱい"
+      ]
+    },
+    {
+      "name": "まな板（プラスチック製）",
+      "category": "pla_pet",
+      "note": "木製は「燃やせるごみ」",
+      "tags": [
+        "まないた"
+      ]
+    },
+    {
+      "name": "マヨネーズの容器",
+      "category": "pla_pet",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": []
+    },
+    {
+      "name": "虫かご（プラスチック製）",
+      "category": "pla_pet",
+      "note": "",
+      "tags": [
+        "むしかご"
+      ]
+    },
+    {
+      "name": "ラップ",
+      "category": "pla_pet",
+      "note": "芯は「燃やせるごみ」",
+      "tags": []
+    },
+    {
+      "name": "レーザーディスク盤",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "レジ袋",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "レジャーシート",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "レトルトパウチ",
+      "category": "pla_pet",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "アイスピック",
+      "category": "kinzoku_gb",
+      "note": "先端部分は紙や布でくるむ",
+      "tags": []
+    },
+    {
+      "name": "アイロン",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "アイロン台",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "あいろんだい"
+      ]
+    },
+    {
+      "name": "アダプター",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "油の容器（缶）",
+      "category": "kinzoku_gb",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": []
+    },
+    {
+      "name": "あんか（電気あんか）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "アンテナ（パラボラ）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "あんま機（ハンディータイプ）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "椅子（自転車取付用）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "いす"
+      ]
+    },
+    {
+      "name": "一斗缶",
+      "category": "kinzoku_gb",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "いっとかん"
+      ]
+    },
+    {
+      "name": "植木バサミ",
+      "category": "kinzoku_gb",
+      "note": "刃は紙や布でくるむ",
+      "tags": [
+        "うえきばさみ"
+      ]
+    },
+    {
+      "name": "エキスパンダー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "枝きりばさみ",
+      "category": "kinzoku_gb",
+      "note": "刃は紙や布でくるむ・大きさにより「粗大ごみ」",
+      "tags": [
+        "えだきりばさみ"
+      ]
+    },
+    {
+      "name": "MDプレイヤー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "園芸用の支柱",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "えんげいようのしちゅう"
+      ]
+    },
+    {
+      "name": "延長コード",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "えんちょうこーど"
+      ]
+    },
+    {
+      "name": "えんぴつ削り器",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "えんぴつけずりき"
+      ]
+    },
+    {
+      "name": "オイル缶",
+      "category": "kinzoku_gb",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": []
+    },
+    {
+      "name": "オーブントースター",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "お玉（金属製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "おたま"
+      ]
+    },
+    {
+      "name": "斧",
+      "category": "kinzoku_gb",
+      "note": "刃は紙や布でくるむ",
+      "tags": [
+        "おの"
+      ]
+    },
+    {
+      "name": "おもちゃ（金属製）",
+      "category": "kinzoku_gb",
+      "note": "電池式は電池をはずす",
+      "tags": []
+    },
+    {
+      "name": "オルゴール",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "下ろし金",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "おろしがね"
+      ]
+    },
+    {
+      "name": "温度計（電池式）",
+      "category": "kinzoku_gb",
+      "note": "電池ははずす",
+      "tags": [
+        "おんどけい"
+      ]
+    },
+    {
+      "name": "カーステレオ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カーテンレール（金属製）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "カーナビゲーション",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "懐中電灯",
+      "category": "kinzoku_gb",
+      "note": "電池ははずす",
+      "tags": [
+        "かいちゅうでんとう"
+      ]
+    },
+    {
+      "name": "かぎ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "かさ立て（金属製）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "かさたて"
+      ]
+    },
+    {
+      "name": "加湿器",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "かしつき"
+      ]
+    },
+    {
+      "name": "カセットコンロ（本体）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カセットコンロ用ボンベ",
+      "category": "kinzoku_gb",
+      "note": "必ず中身は使い切る",
+      "tags": []
+    },
+    {
+      "name": "カッター",
+      "category": "kinzoku_gb",
+      "note": "刃は紙や布でくるむ",
+      "tags": []
+    },
+    {
+      "name": "蚊取器",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "かとりき"
+      ]
+    },
+    {
+      "name": "かなづち・ハンマー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "花びん（ガラス製・金属製）",
+      "category": "kinzoku_gb",
+      "note": "陶器のものは「その他ごみ」",
+      "tags": [
+        "かびん"
+      ]
+    },
+    {
+      "name": "かま（鎌）",
+      "category": "kinzoku_gb",
+      "note": "刃は紙や布でくるむ",
+      "tags": []
+    },
+    {
+      "name": "釜（電気釜を含む）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "かま"
+      ]
+    },
+    {
+      "name": "カメラ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ガラス",
+      "category": "kinzoku_gb",
+      "note": "割れている場合は紙（新聞紙）で包み内容物を書く",
+      "tags": []
+    },
+    {
+      "name": "ガラス食器",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "がらすしょっき"
+      ]
+    },
+    {
+      "name": "缶（飲食用他）",
+      "category": "kinzoku_gb",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "かん"
+      ]
+    },
+    {
+      "name": "換気扇",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "かんきせん"
+      ]
+    },
+    {
+      "name": "缶きり",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "かんきり"
+      ]
+    },
+    {
+      "name": "かんな",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "金庫（手提げ式）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "きんこ"
+      ]
+    },
+    {
+      "name": "空気入れ（自転車用）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "くうきいれ"
+      ]
+    },
+    {
+      "name": "釘",
+      "category": "kinzoku_gb",
+      "note": "紙（新聞紙）で包み内容物を書く",
+      "tags": [
+        "くぎ"
+      ]
+    },
+    {
+      "name": "鎖",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "くさり"
+      ]
+    },
+    {
+      "name": "串（金属製）",
+      "category": "kinzoku_gb",
+      "note": "紙（新聞紙）で包み内容物を書く",
+      "tags": [
+        "くし"
+      ]
+    },
+    {
+      "name": "口紅容器（金属製）",
+      "category": "kinzoku_gb",
+      "note": "中身は使い切る",
+      "tags": [
+        "くちべにようき"
+      ]
+    },
+    {
+      "name": "携帯電話",
+      "category": "kinzoku_gb",
+      "note": "出来るだけ販売店に引き取ってもらう",
+      "tags": [
+        "けいたいでんわ"
+      ]
+    },
+    {
+      "name": "携帯電話の充電器",
+      "category": "kinzoku_gb",
+      "note": "出来るだけ販売店に引き取ってもらう",
+      "tags": [
+        "けいたいでんわのじゅうでんき"
+      ]
+    },
+    {
+      "name": "計量ばかり（料理用）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "けいりょうばかり"
+      ]
+    },
+    {
+      "name": "ゲームカセット",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ゲーム機",
+      "category": "kinzoku_gb",
+      "note": "電池ははずす",
+      "tags": [
+        "げーむき"
+      ]
+    },
+    {
+      "name": "化粧品の容器（びん）",
+      "category": "kinzoku_gb",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "けしょうひんのようき"
+      ]
+    },
+    {
+      "name": "血圧計",
+      "category": "kinzoku_gb",
+      "note": "電池ははずす",
+      "tags": [
+        "けつあつけい"
+      ]
+    },
+    {
+      "name": "剣山",
+      "category": "kinzoku_gb",
+      "note": "先端部分は紙や布でくるむ",
+      "tags": [
+        "けんざん"
+      ]
+    },
+    {
+      "name": "コード（電気コード）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "コーヒーメーカー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ごみ箱（金属製）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "ごみばこ"
+      ]
+    },
+    {
+      "name": "ゴルフクラブ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "コンセントプラグ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "コンロ（一口用）",
+      "category": "kinzoku_gb",
+      "note": "カセットコンロは、カセットボンベをはずす",
+      "tags": [
+        "こんろ"
+      ]
+    },
+    {
+      "name": "コンロ用のカセットボンベ",
+      "category": "kinzoku_gb",
+      "note": "必ず中身は使い切る",
+      "tags": []
+    },
+    {
+      "name": "皿（ガラス製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "さら"
+      ]
+    },
+    {
+      "name": "三脚（カメラ用・ビデオ用）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "さんきゃく"
+      ]
+    },
+    {
+      "name": "CDプレーヤー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "磁石",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "じしゃく"
+      ]
+    },
+    {
+      "name": "自転車の補助イス",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "じてんしゃのほじょいす"
+      ]
+    },
+    {
+      "name": "蛇口（家庭で交換したもの）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "じゃぐち"
+      ]
+    },
+    {
+      "name": "ジャッキ",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」（注意）油圧式のものは処理できません",
+      "tags": []
+    },
+    {
+      "name": "シャベル（園芸用・金属製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ジューサー（ミキサー）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "充電器",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "じゅうでんき"
+      ]
+    },
+    {
+      "name": "シュレッダー（家庭用）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "照明器具のかさ（金属製）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」電球・蛍光管は「その他ごみ」",
+      "tags": []
+    },
+    {
+      "name": "照明器具本体",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」電球・蛍光管は「その他ごみ」",
+      "tags": [
+        "しょうめいきぐほんたい"
+      ]
+    },
+    {
+      "name": "じょうろ（ブリキ製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "水筒（ステンレス製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "すいとう"
+      ]
+    },
+    {
+      "name": "炊飯器",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "すいはんき"
+      ]
+    },
+    {
+      "name": "スキャナー（家庭用）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "スコップ（家庭用）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スパナ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スプーン",
+      "category": "kinzoku_gb",
+      "note": "プラ製は「プラスチック」",
+      "tags": []
+    },
+    {
+      "name": "スプレー缶",
+      "category": "kinzoku_gb",
+      "note": "必ず中身は使い切る",
+      "tags": [
+        "すぷれーかん"
+      ]
+    },
+    {
+      "name": "洗面器（金属製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "せんめんき"
+      ]
+    },
+    {
+      "name": "掃除機の本体",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "そうじきのほんたい"
+      ]
+    },
+    {
+      "name": "体温計（デジタル）",
+      "category": "kinzoku_gb",
+      "note": "電池ははずす",
+      "tags": [
+        "たいおんけい"
+      ]
+    },
+    {
+      "name": "体重計（ヘルスメーター）",
+      "category": "kinzoku_gb",
+      "note": "電池ははずす",
+      "tags": [
+        "たいじゅうけい"
+      ]
+    },
+    {
+      "name": "タイプライター（家庭用）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "タイヤチェーン（金属製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "チェーン",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ちりとり（金属製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "爪きり",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "つめきり"
+      ]
+    },
+    {
+      "name": "DVDデッキ・プレーヤー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "デジタル血圧計",
+      "category": "kinzoku_gb",
+      "note": "電池ははずす",
+      "tags": [
+        "でじたるけつあつけい"
+      ]
+    },
+    {
+      "name": "鉄アレイ・ダンベル",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "てつあれい"
+      ]
+    },
+    {
+      "name": "電気アンカ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "でんきあんか"
+      ]
+    },
+    {
+      "name": "電気カミソリ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "でんきかみそり"
+      ]
+    },
+    {
+      "name": "電気コード",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "電気スタンド",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」電球・蛍光管は「その他ごみ」",
+      "tags": [
+        "でんきすたんど"
+      ]
+    },
+    {
+      "name": "電気のかさ（金属製）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "電卓",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "でんたく"
+      ]
+    },
+    {
+      "name": "電池",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "でんち"
+      ]
+    },
+    {
+      "name": "電話機",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "でんわき"
+      ]
+    },
+    {
+      "name": "ドアノブ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "トースター",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "時計",
+      "category": "kinzoku_gb",
+      "note": "電池ははずす",
+      "tags": [
+        "とけい"
+      ]
+    },
+    {
+      "name": "ドライバー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ドライヤー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "トランシーバー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "鳥かご（金属製）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "とりかご"
+      ]
+    },
+    {
+      "name": "塗料の容器（スチール缶）",
+      "category": "kinzoku_gb",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "とりょうのようき"
+      ]
+    },
+    {
+      "name": "トレイ（金属製）",
+      "category": "kinzoku_gb",
+      "note": "洗って出す",
+      "tags": []
+    },
+    {
+      "name": "ナイフ",
+      "category": "kinzoku_gb",
+      "note": "刃は紙や布でくるむ",
+      "tags": []
+    },
+    {
+      "name": "なべ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "人形（金属製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "にんぎょう"
+      ]
+    },
+    {
+      "name": "農薬の空容器（家庭園芸用・ガラス製）",
+      "category": "kinzoku_gb",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "のうやくのからようき"
+      ]
+    },
+    {
+      "name": "ノートパソコン",
+      "category": "kinzoku_gb",
+      "note": "平成15年10月以降に購入されたパソコンはメーカーなどに引き取ってもらう",
+      "tags": []
+    },
+    {
+      "name": "のこぎり",
+      "category": "kinzoku_gb",
+      "note": "刃は紙や布でくるむ",
+      "tags": []
+    },
+    {
+      "name": "のみ（工具）",
+      "category": "kinzoku_gb",
+      "note": "刃は紙や布でくるむ",
+      "tags": []
+    },
+    {
+      "name": "ハーモニカ",
+      "category": "kinzoku_gb",
+      "note": "プラ製は「プラスチック」",
+      "tags": []
+    },
+    {
+      "name": "バール",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "はかり（料理用）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "はかり"
+      ]
+    },
+    {
+      "name": "バケツ（金属製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "はさみ",
+      "category": "kinzoku_gb",
+      "note": "刃は紙や布でくるむ",
+      "tags": []
+    },
+    {
+      "name": "パソコン（ノート型）",
+      "category": "kinzoku_gb",
+      "note": "平成15年10月以降に購入されたパソコンはメーカーなどに引き取ってもらう",
+      "tags": []
+    },
+    {
+      "name": "パソコンのキーボード・マウス",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "バット（金属製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "バネ（スプリング）",
+      "category": "kinzoku_gb",
+      "note": "（注意）車部品のスプリングは処理できません",
+      "tags": []
+    },
+    {
+      "name": "歯ブラシ（電動）",
+      "category": "kinzoku_gb",
+      "note": "電池式は電池をはずして「その他ごみ」",
+      "tags": [
+        "はぶらし"
+      ]
+    },
+    {
+      "name": "刃物",
+      "category": "kinzoku_gb",
+      "note": "刃は紙や布でくるむ",
+      "tags": [
+        "はもの"
+      ]
+    },
+    {
+      "name": "針",
+      "category": "kinzoku_gb",
+      "note": "紙（新聞紙）で包み内容物を書く",
+      "tags": [
+        "はり"
+      ]
+    },
+    {
+      "name": "針金",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "はりがね"
+      ]
+    },
+    {
+      "name": "ハンガー（針金製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "パン焼き器",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "ぱんやきき"
+      ]
+    },
+    {
+      "name": "BS・CSチューナー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ひげそり（電動）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビデオカメラ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビデオデッキ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "びん",
+      "category": "kinzoku_gb",
+      "note": "ふたなどをはずし、中身を空にして洗う",
+      "tags": []
+    },
+    {
+      "name": "びん・缶のふた（金属製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ファックス（家庭用）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "フォーク",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "布団乾燥機",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "ふとんかんそうき"
+      ]
+    },
+    {
+      "name": "フライパン",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ブラインド",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "プリンター（家庭用）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」複合機は「粗大ごみ（有料）」",
+      "tags": []
+    },
+    {
+      "name": "文鎮",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "ぶんちん"
+      ]
+    },
+    {
+      "name": "噴霧器（金属製）",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "ふんむき"
+      ]
+    },
+    {
+      "name": "ペットフード缶",
+      "category": "kinzoku_gb",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": []
+    },
+    {
+      "name": "ヘッドホン",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ヘルスメーター",
+      "category": "kinzoku_gb",
+      "note": "電池ははずす",
+      "tags": []
+    },
+    {
+      "name": "ペンキの缶",
+      "category": "kinzoku_gb",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": []
+    },
+    {
+      "name": "ペンチ",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "包丁",
+      "category": "kinzoku_gb",
+      "note": "刃は紙や布でくるむ",
+      "tags": [
+        "ほうちょう"
+      ]
+    },
+    {
+      "name": "ボウル（台所用・金属製）",
+      "category": "kinzoku_gb",
+      "note": "プラ製のものは「プラスチック」",
+      "tags": []
+    },
+    {
+      "name": "ホームベーカリー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "歩数計",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "ほすうけい"
+      ]
+    },
+    {
+      "name": "ポット（保温・電気）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ホットプレート",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ボルト",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "マイク",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "マウス（パソコン用）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "マグネット",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "マッサージ機（ハンディータイプ）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "魔法瓶",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "まほうびん"
+      ]
+    },
+    {
+      "name": "ミキサー（ジューサー）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "蒸し器",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "むしき"
+      ]
+    },
+    {
+      "name": "メジャー（家庭用・金属製）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "餅つき機",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": [
+        "もちつきき"
+      ]
+    },
+    {
+      "name": "やかん",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "郵便受け（金属製）",
+      "category": "kinzoku_gb",
+      "note": "プラ製のものは「プラスチック」",
+      "tags": [
+        "ゆうびんうけ"
+      ]
+    },
+    {
+      "name": "湯たんぽ",
+      "category": "kinzoku_gb",
+      "note": "プラ製のものは「プラスチック」",
+      "tags": [
+        "ゆたんぽ"
+      ]
+    },
+    {
+      "name": "ラジオ",
+      "category": "kinzoku_gb",
+      "note": "電池ははずす",
+      "tags": []
+    },
+    {
+      "name": "ラジカセ",
+      "category": "kinzoku_gb",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "ラジコン",
+      "category": "kinzoku_gb",
+      "note": "電池・バッテリーははずす",
+      "tags": []
+    },
+    {
+      "name": "ランチジャー（弁当箱）",
+      "category": "kinzoku_gb",
+      "note": "プラ製は「プラスチック」",
+      "tags": []
+    },
+    {
+      "name": "リール（釣り用）",
+      "category": "kinzoku_gb",
+      "note": "釣り糸ははずして「その他ごみ」",
+      "tags": []
+    },
+    {
+      "name": "リモコン（テレビ・音響機器用）",
+      "category": "kinzoku_gb",
+      "note": "電池ははずす",
+      "tags": []
+    },
+    {
+      "name": "レコードプレーヤー",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "レンズ",
+      "category": "kinzoku_gb",
+      "note": "プラ製は「プラスチック」",
+      "tags": []
+    },
+    {
+      "name": "ロースター（魚焼き器）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ローラースケート",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ワープロ（ノート型）",
+      "category": "kinzoku_gb",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ワックスの容器",
+      "category": "kinzoku_gb",
+      "note": "中身は使い切って汚れを落とす、プラ製は「プラスチック」",
+      "tags": [
+        "わっくすのようき"
+      ]
+    },
+    {
+      "name": "アタッシュケース",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "雨合羽",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "あまがっぱ"
+      ]
+    },
+    {
+      "name": "アルミ箔製品（食品用・台所用）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "アルミホイル",
+      "category": "moenai",
+      "note": "芯は「燃やせるごみ」",
+      "tags": []
+    },
+    {
+      "name": "入れ歯",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "いれば"
+      ]
+    },
+    {
+      "name": "インクカートリッジ（プリンター用）",
+      "category": "moenai",
+      "note": "市役所・環境センターまたは、お店の回収にご協力ください",
+      "tags": [
+        "いんくかーとりっじ"
+      ]
+    },
+    {
+      "name": "植木鉢（陶器製）",
+      "category": "moenai",
+      "note": "土などは入れない",
+      "tags": [
+        "うえきばち"
+      ]
+    },
+    {
+      "name": "浮き輪",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "うきわ"
+      ]
+    },
+    {
+      "name": "MD",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "塩ビパイプ",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "えんびぱいぷ"
+      ]
+    },
+    {
+      "name": "オアシス（花などを挿す物）",
+      "category": "moenai",
+      "note": "乾かしてから出す",
+      "tags": []
+    },
+    {
+      "name": "温度計（水銀使用）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "おんどけい"
+      ]
+    },
+    {
+      "name": "カイロ（使い捨てを含む）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "かがみ",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "かさ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ガスライター",
+      "category": "moenai",
+      "note": "必ず中身は使い切る",
+      "tags": [
+        "がすらいたー"
+      ]
+    },
+    {
+      "name": "ガスレンジパネル（ガード）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カセットテープ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ガット（ラケット用）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "かつら（化繊）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "かばん",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カミソリ",
+      "category": "moenai",
+      "note": "紙（新聞紙）で包み内容物を書く",
+      "tags": [
+        "かみそり"
+      ]
+    },
+    {
+      "name": "紙ヤスリ",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "かみやすり"
+      ]
+    },
+    {
+      "name": "軽石（お風呂で使うもの）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "かるいし"
+      ]
+    },
+    {
+      "name": "革製品（くつ・ベルト・かばん）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "かわせいひん"
+      ]
+    },
+    {
+      "name": "乾燥剤（菓子・乾物用）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "かんそうざい"
+      ]
+    },
+    {
+      "name": "急須",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "きゅうす"
+      ]
+    },
+    {
+      "name": "靴",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "くつ"
+      ]
+    },
+    {
+      "name": "クッション（スポンジ入り）",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "クリスマスツリー",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "グローブ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "グローランプ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "蛍光管",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "けいこうかん"
+      ]
+    },
+    {
+      "name": "蛍光ぺん",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "けいこうぺん"
+      ]
+    },
+    {
+      "name": "剣道防具（胴部・面・こて）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "けんどうぼうぐ"
+      ]
+    },
+    {
+      "name": "碁石",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ごいし"
+      ]
+    },
+    {
+      "name": "氷枕・水枕",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "こおりまくら"
+      ]
+    },
+    {
+      "name": "ゴム製品",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ごむせいひん"
+      ]
+    },
+    {
+      "name": "ゴムホース",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ゴルフシューズ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ゴルフボール",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "座布団（スポンジ入り）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ざぶとん"
+      ]
+    },
+    {
+      "name": "皿（陶器製）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "さら"
+      ]
+    },
+    {
+      "name": "サンシェード",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "サンダル",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "サンドペーパー",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "七輪・七厘",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "しちりん"
+      ]
+    },
+    {
+      "name": "湿布薬",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "しっぷやく"
+      ]
+    },
+    {
+      "name": "自転車のチューブ",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "じてんしゃのちゅーぶ"
+      ]
+    },
+    {
+      "name": "ジュラルミンケース",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": []
+    },
+    {
+      "name": "浄水器（家庭用）",
+      "category": "moenai",
+      "note": "置き型は「金属・ガラス・乾電池」",
+      "tags": [
+        "じょうすいき"
+      ]
+    },
+    {
+      "name": "食器（陶器製）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "しょっき"
+      ]
+    },
+    {
+      "name": "人工芝",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "じんこうしば"
+      ]
+    },
+    {
+      "name": "水槽",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "すいそう"
+      ]
+    },
+    {
+      "name": "スキー靴",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "すきーぐつ"
+      ]
+    },
+    {
+      "name": "スケート靴",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "すけーとぐつ"
+      ]
+    },
+    {
+      "name": "すずり",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スタンプ台",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "すたんぷだい"
+      ]
+    },
+    {
+      "name": "スニーカー",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スパイクシューズ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スポーツバッグ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スポンジ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スリッパ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "すり鉢",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "すりばち"
+      ]
+    },
+    {
+      "name": "せともの",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "洗濯機のホース",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "せんたくきのほーす"
+      ]
+    },
+    {
+      "name": "洗濯ばさみ",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "せんたくばさみ"
+      ]
+    },
+    {
+      "name": "造花（針金入り）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ぞうか"
+      ]
+    },
+    {
+      "name": "双眼鏡",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "そうがんきょう"
+      ]
+    },
+    {
+      "name": "掃除機のホース",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "そうじきのほーす"
+      ]
+    },
+    {
+      "name": "体温計（水銀使用）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "たいおんけい"
+      ]
+    },
+    {
+      "name": "タイヤ（自転車用）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "たいや"
+      ]
+    },
+    {
+      "name": "タイヤチェーン（ゴム製）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "たわし",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "地球儀",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ちきゅうぎ"
+      ]
+    },
+    {
+      "name": "チューブ（アルミ製）薬・絵具など",
+      "category": "moenai",
+      "note": "中身は使い切る",
+      "tags": []
+    },
+    {
+      "name": "チューブ（自転車用）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "使い捨てカイロ",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "つかいすてかいろ"
+      ]
+    },
+    {
+      "name": "使い捨てライター",
+      "category": "moenai",
+      "note": "必ず中身は使い切る",
+      "tags": [
+        "つかいすてらいたー"
+      ]
+    },
+    {
+      "name": "漬物の樽（陶器製）",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "つけもののたる"
+      ]
+    },
+    {
+      "name": "壺",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "つぼ"
+      ]
+    },
+    {
+      "name": "釣りざお",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "つりざお"
+      ]
+    },
+    {
+      "name": "デスクマット",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "テニスボール",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "テニスラケット（カーボン製・アルミ製）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "電気毛布（掛・敷）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "でんきもうふ"
+      ]
+    },
+    {
+      "name": "電球",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "でんきゅう"
+      ]
+    },
+    {
+      "name": "陶磁器類",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "とうじきるい"
+      ]
+    },
+    {
+      "name": "長靴",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ながぐつ"
+      ]
+    },
+    {
+      "name": "ナップザック",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "入浴剤",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "にゅうよくざい"
+      ]
+    },
+    {
+      "name": "人形ケース",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "にんぎょうけーす"
+      ]
+    },
+    {
+      "name": "ぬいぐるみ（中身がスポンジ）",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」中身が綿のものは「燃やせるごみ」",
+      "tags": []
+    },
+    {
+      "name": "寝袋",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ねぶくろ"
+      ]
+    },
+    {
+      "name": "ねんど",
+      "category": "moenai",
+      "note": "紙ねんどは「燃やせるごみ」",
+      "tags": []
+    },
+    {
+      "name": "白熱球",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "はくねつきゅう"
+      ]
+    },
+    {
+      "name": "バッグ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ハンガー",
+      "category": "moenai",
+      "note": "木・プラ製で金属部分がとれないもの",
+      "tags": []
+    },
+    {
+      "name": "ハンガー（物干バサミ付き）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ピアニカ",
+      "category": "moenai",
+      "note": "ホースは「プラスチック」",
+      "tags": []
+    },
+    {
+      "name": "ひげそり（T字）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビデオテープ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビニールテープ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビニールプール",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビニールホース",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビニールポット",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "プリンターインクカートリッジ",
+      "category": "moenai",
+      "note": "市役所・環境センターまたは、お店の回収にご協力ください",
+      "tags": []
+    },
+    {
+      "name": "プリンターリボン",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "フロッピーディスク",
+      "category": "moenai",
+      "note": "プラ製のケースは「プラスチック」",
+      "tags": []
+    },
+    {
+      "name": "ベルト（革製・ビニール製）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ヘルメット",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ホイル（アルミホイル）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "望遠鏡",
+      "category": "moenai",
+      "note": "大きさにより「粗大ごみ」",
+      "tags": [
+        "ぼうえんきょう"
+      ]
+    },
+    {
+      "name": "防虫剤",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ぼうちゅうざい"
+      ]
+    },
+    {
+      "name": "ホース",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ボール",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ボールペン",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "保冷剤",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ほれいざい"
+      ]
+    },
+    {
+      "name": "マーカーペン・マジックペン",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "マット（浴室用・ウレタン製）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "マット（足元用・電気式）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "虫めがね",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "むしめがね"
+      ]
+    },
+    {
+      "name": "めがね",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "メジャー（家庭用・布製）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "面（野球・剣道・おもちゃ）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "めん"
+      ]
+    },
+    {
+      "name": "毛布（電気毛布）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "もうふ"
+      ]
+    },
+    {
+      "name": "ライター",
+      "category": "moenai",
+      "note": "必ず中身は使い切る",
+      "tags": []
+    },
+    {
+      "name": "ラケット（カーボン製・アルミ製）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ランドセル",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "リュックサック",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "レインコート",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "レコード",
+      "category": "moenai",
+      "note": "ケースの紙は「燃やせるごみ」、プラ製は「プラスチック」",
+      "tags": []
+    },
+    {
+      "name": "レンジガード（アルミ製）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ロープ（ナイロン製）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "輪ゴム",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "わごむ"
+      ]
+    },
+    {
+      "name": "アルミホイルの外箱",
+      "category": "kami",
+      "note": "識別表示に従って",
+      "tags": []
+    },
+    {
+      "name": "菓子箱（紙製）",
+      "category": "kami",
+      "note": "金属製は「金属・ガラス・乾電池」、プラ製は「プラスチック」",
+      "tags": [
+        "かしばこ"
+      ]
+    },
+    {
+      "name": "カップ麺の容器（紙製）",
+      "category": "kami",
+      "note": "洗って出す",
+      "tags": []
+    },
+    {
+      "name": "紙パック（アルミを用いてるもの）",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "かみぱっく"
+      ]
+    },
+    {
+      "name": "紙袋",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "かみぶくろ"
+      ]
+    },
+    {
+      "name": "米の入っている紙袋",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "こめのはいっているかみぶくろ"
+      ]
+    },
+    {
+      "name": "酒パック（アルミを用いた紙パック）",
+      "category": "kami",
+      "note": "洗って出す",
+      "tags": [
+        "さけぱっく"
+      ]
+    },
+    {
+      "name": "商品箱・包装紙",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "しょうひんばこ"
+      ]
+    },
+    {
+      "name": "洗剤容器（紙製）",
+      "category": "kami",
+      "note": "中身は使い切って汚れを落とす",
+      "tags": [
+        "せんざいようき"
+      ]
+    },
+    {
+      "name": "たばこの空箱",
+      "category": "kami",
+      "note": "識別表示に従って",
+      "tags": [
+        "たばこのからばこ"
+      ]
+    },
+    {
+      "name": "ティッシュの空箱",
+      "category": "kami",
+      "note": "識別表示に従って",
+      "tags": [
+        "てぃっしゅのからばこ"
+      ]
+    },
+    {
+      "name": "手提げ袋（紙製）",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "てさげぶくろ"
+      ]
+    },
+    {
+      "name": "包装紙",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "ほうそうし"
+      ]
+    },
+    {
+      "name": "ラップの外箱",
+      "category": "kami",
+      "note": "識別表示に従って",
+      "tags": []
+    },
+    {
+      "name": "割り箸の袋",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "わりばしのふくろ"
+      ]
+    },
+    {
+      "name": "アルバム",
+      "category": "fuku_zasshi",
+      "note": "写真は「燃やせるごみ」",
+      "tags": [
+        "あるばむ"
+      ]
+    },
+    {
+      "name": "衣料（古着などでリサイクルできる物）",
+      "category": "fuku_zasshi",
+      "note": "洗って出す",
+      "tags": [
+        "いりょう"
+      ]
+    },
+    {
+      "name": "カーテン（布製）",
+      "category": "fuku_zasshi",
+      "note": "洗って出す",
+      "tags": []
+    },
+    {
+      "name": "カタログ",
+      "category": "fuku_zasshi",
+      "note": "紐で縛る",
+      "tags": []
+    },
+    {
+      "name": "かばん（セカンドバッグ・ハンドバッグ）",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "紙パック（アルミを用いてないもの）",
+      "category": "fuku_zasshi",
+      "note": "洗って開いて乾かして出す",
+      "tags": [
+        "かみぱっく"
+      ]
+    },
+    {
+      "name": "革ジャンパー",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": [
+        "かわじゃんぱー"
+      ]
+    },
+    {
+      "name": "牛乳パック",
+      "category": "fuku_zasshi",
+      "note": "洗って開いて乾かして出す",
+      "tags": [
+        "ぎゅうにゅうぱっく"
+      ]
+    },
+    {
+      "name": "教科書",
+      "category": "fuku_zasshi",
+      "note": "紐で縛る",
+      "tags": [
+        "きょうかしょ"
+      ]
+    },
+    {
+      "name": "くつした",
+      "category": "fuku_zasshi",
+      "note": "洗って出す",
+      "tags": []
+    },
+    {
+      "name": "毛糸",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": [
+        "けいと"
+      ]
+    },
+    {
+      "name": "毛皮",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": [
+        "けがわ"
+      ]
+    },
+    {
+      "name": "広告（チラシ）",
+      "category": "fuku_zasshi",
+      "note": "紐で縛る",
+      "tags": [
+        "こうこく"
+      ]
+    },
+    {
+      "name": "コピー用紙",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": [
+        "こぴーようし"
+      ]
+    },
+    {
+      "name": "雑誌",
+      "category": "fuku_zasshi",
+      "note": "紐で縛る",
+      "tags": [
+        "ざっし"
+      ]
+    },
+    {
+      "name": "シーツ",
+      "category": "fuku_zasshi",
+      "note": "洗って出す",
+      "tags": []
+    },
+    {
+      "name": "辞書",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": [
+        "じしょ"
+      ]
+    },
+    {
+      "name": "下着",
+      "category": "fuku_zasshi",
+      "note": "洗って出す",
+      "tags": [
+        "したぎ"
+      ]
+    },
+    {
+      "name": "新聞紙",
+      "category": "fuku_zasshi",
+      "note": "紐で縛る",
+      "tags": [
+        "しんぶんし"
+      ]
+    },
+    {
+      "name": "スーツ",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スキーウェア",
+      "category": "fuku_zasshi",
+      "note": "洗って出す",
+      "tags": []
+    },
+    {
+      "name": "ストッキング",
+      "category": "fuku_zasshi",
+      "note": "洗って出す",
+      "tags": []
+    },
+    {
+      "name": "セーター",
+      "category": "fuku_zasshi",
+      "note": "洗って出す",
+      "tags": []
+    },
+    {
+      "name": "セカンドバッグ",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "タオル・タオルケット",
+      "category": "fuku_zasshi",
+      "note": "洗って出す",
+      "tags": [
+        "たおる"
+      ]
+    },
+    {
+      "name": "段ボール",
+      "category": "fuku_zasshi",
+      "note": "たたんで紐で縛る",
+      "tags": [
+        "だんぼーる"
+      ]
+    },
+    {
+      "name": "チラシ（折り込み広告）",
+      "category": "fuku_zasshi",
+      "note": "紐で縛る",
+      "tags": []
+    },
+    {
+      "name": "ネクタイ",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ノート",
+      "category": "fuku_zasshi",
+      "note": "紐で縛る",
+      "tags": []
+    },
+    {
+      "name": "ノンカーボン紙",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "バッグ（ハンドバッグ・セカンドバッグ）",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ハンドバッグ",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "便箋",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": [
+        "びんせん"
+      ]
+    },
+    {
+      "name": "ファイル・バインダー（紙製）",
+      "category": "fuku_zasshi",
+      "note": "プラ製は「プラスチック」",
+      "tags": []
+    },
+    {
+      "name": "封筒",
+      "category": "fuku_zasshi",
+      "note": "窓付きは窓部分をとりはずし「プラスチック」",
+      "tags": [
+        "ふうとう"
+      ]
+    },
+    {
+      "name": "ふとんカバー",
+      "category": "fuku_zasshi",
+      "note": "洗って出す",
+      "tags": []
+    },
+    {
+      "name": "帽子（麦わら帽子・制帽は除く）",
+      "category": "fuku_zasshi",
+      "note": "麦わら帽子・制帽は「燃やせるごみ」",
+      "tags": [
+        "ぼうし"
+      ]
+    },
+    {
+      "name": "本",
+      "category": "fuku_zasshi",
+      "note": "紐で縛る",
+      "tags": [
+        "ほん"
+      ]
+    },
+    {
+      "name": "漫画本",
+      "category": "fuku_zasshi",
+      "note": "紐で縛る",
+      "tags": [
+        "まんがぼん"
+      ]
+    },
+    {
+      "name": "水着",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": [
+        "みずぎ"
+      ]
+    },
+    {
+      "name": "毛布（羊毛・化繊）",
+      "category": "fuku_zasshi",
+      "note": "洗って出す",
+      "tags": [
+        "もうふ"
+      ]
+    },
+    {
+      "name": "洋服",
+      "category": "fuku_zasshi",
+      "note": "",
+      "tags": [
+        "ようふく"
+      ]
+    },
+    {
+      "name": "スプレー缶（カセットボンベ含む）",
+      "category": "kinzoku_gb",
+      "note": "必ず中身を使い切ってから「金属・ガラス・乾電池」の日に出す",
+      "tags": [
+        "すぷれーかん",
+        "かせっとぼんべ"
+      ]
+    },
+    {
+      "name": "使い捨てライター",
+      "category": "moenai",
+      "note": "必ず中身を使い切ってから「その他ごみ」の日に出す",
+      "tags": [
+        "つかいすてらいたー"
+      ]
+    },
+    {
+      "name": "リチウムイオン電池",
+      "category": "unknown",
+      "note": "ごみ集積所には出せません。発火の危険があるため、市役所・保健センター・公民館等の回収ボックスへ持ち込んでください",
+      "tags": [
+        "りちうむいおんでんち"
+      ]
+    },
+    {
+      "name": "モバイルバッテリー",
+      "category": "unknown",
+      "note": "ごみ集積所には出せません。発火の危険があるため、市役所・保健センター・公民館等の回収ボックスへ持ち込んでください",
+      "tags": [
+        "もばいるばってりー"
+      ]
+    },
+    {
+      "name": "加熱式たばこ",
+      "category": "unknown",
+      "note": "内蔵電池がリチウムイオン電池のため、ごみ集積所には出せません。回収ボックスへ持ち込んでください",
+      "tags": [
+        "かねつしきたばこ"
+      ]
+    },
+    {
+      "name": "電気シェーバー・電動歯ブラシ",
+      "category": "unknown",
+      "note": "内蔵電池がリチウムイオン電池の場合、ごみ集積所には出せません。回収ボックスへ持ち込んでください",
+      "tags": []
+    },
+    {
+      "name": "充電式掃除機",
+      "category": "unknown",
+      "note": "内蔵電池がリチウムイオン電池の場合、ごみ集積所には出せません。回収ボックスへ持ち込んでください",
+      "tags": [
+        "じゅうでんしきそうじき"
+      ]
+    },
+    {
+      "name": "エアコン",
+      "category": "unknown",
+      "note": "家電リサイクル法対象品のため収集対象外。購入店またはメーカーへ",
+      "tags": []
+    },
+    {
+      "name": "テレビ",
+      "category": "unknown",
+      "note": "家電リサイクル法対象品のため収集対象外。購入店またはメーカーへ",
+      "tags": []
+    },
+    {
+      "name": "冷蔵庫・冷凍庫",
+      "category": "unknown",
+      "note": "家電リサイクル法対象品のため収集対象外。購入店またはメーカーへ",
+      "tags": [
+        "れいぞうこ"
+      ]
+    },
+    {
+      "name": "洗濯機・衣類乾燥機",
+      "category": "unknown",
+      "note": "家電リサイクル法対象品のため収集対象外。購入店またはメーカーへ",
+      "tags": [
+        "せんたくき"
+      ]
+    },
+    {
+      "name": "デスクトップパソコン",
+      "category": "unknown",
+      "note": "資源有効利用促進法によりメーカー等が回収。PCリサイクルマーク付きは無料",
+      "tags": []
+    },
+    {
+      "name": "原動機付自転車・バイク（50cc超）",
+      "category": "unknown",
+      "note": "二輪車リサイクルシステムをご利用ください（二輪車リサイクルコールセンター 050-3000-0727）",
+      "tags": [
+        "ばいく"
+      ]
+    },
+    {
+      "name": "タイヤ（自動車用）",
+      "category": "unknown",
+      "note": "購入店・カー用品店・タイヤ販売店等にご相談ください",
+      "tags": [
+        "たいや"
+      ]
+    },
+    {
+      "name": "ピアノ",
+      "category": "unknown",
+      "note": "販売店や専門業者にご相談ください",
+      "tags": [
+        "ぴあの"
+      ]
+    },
+    {
+      "name": "耐火金庫",
+      "category": "unknown",
+      "note": "販売店や専門業者にご相談ください",
+      "tags": [
+        "たいかきんこ"
+      ]
+    },
+    {
+      "name": "消火器",
+      "category": "unknown",
+      "note": "「消火器リサイクル推進センター」またはお近くの消火器取扱店にご相談ください",
+      "tags": [
+        "しょうかき"
+      ]
+    },
+    {
+      "name": "畳・浴槽・ドア・シャッター等の建具",
+      "category": "unknown",
+      "note": "解体業者・リフォーム業者にご相談ください",
+      "tags": [
+        "たたみ"
+      ]
+    },
+    {
+      "name": "ブロック・コンクリート・土砂",
+      "category": "unknown",
+      "note": "専門業者にご相談ください",
+      "tags": [
+        "ぶろっく"
+      ]
+    },
+    {
+      "name": "タンス",
+      "category": "sodai",
+      "note": "一辺50cm超・3辺合計100cm超は粗大ごみ。事前に環境センターへ電話予約",
+      "tags": [
+        "たんす"
+      ]
+    },
+    {
+      "name": "テーブル",
+      "category": "sodai",
+      "note": "一辺50cm超・3辺合計100cm超は粗大ごみ。事前に環境センターへ電話予約",
+      "tags": []
+    },
+    {
+      "name": "自転車（粗大ごみとして出す場合）",
+      "category": "sodai",
+      "note": "廃車手続き・ナンバー返却が必要な原動機付自転車を除き、通常の自転車は粗大ごみ",
+      "tags": [
+        "じてんしゃ"
+      ]
+    },
+    {
+      "name": "ふとん（粗大ごみとして出す場合）",
+      "category": "sodai",
+      "note": "2枚までなど、点数の目安は環境センターへご確認ください",
+      "tags": []
+    },
+    {
+      "name": "ベッド",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ベッドマット",
+      "category": "sodai",
+      "note": "処理が困難なため特別料金（持込1,600円・回収1,800円）",
+      "tags": []
+    },
+    {
+      "name": "マッサージチェア",
+      "category": "sodai",
+      "note": "処理が困難なため特別料金（持込1,600円・回収1,800円）",
+      "tags": []
+    },
+    {
+      "name": "原動機付自転車（総排気量0.05リットル以下）",
+      "category": "sodai",
+      "note": "処理が困難なため特別料金（持込1,600円・回収1,800円）。ナンバーを市役所に返却し、オイル・ガソリンは空にして出す",
+      "tags": [
+        "げんどうきつきじてんしゃ"
+      ]
+    },
+    {
+      "name": "大型遊具",
+      "category": "sodai",
+      "note": "処理が困難なため特別料金（持込1,300円・回収1,500円）",
+      "tags": []
+    },
+    {
+      "name": "ウインドサーフィン",
+      "category": "sodai",
+      "note": "処理が困難なため特別料金（持込1,300円・回収1,500円）",
+      "tags": []
+    },
+    {
+      "name": "足踏み式ミシン",
+      "category": "sodai",
+      "note": "処理が困難なため特別料金（持込1,000円・回収1,200円）",
+      "tags": [
+        "あしぶみしきみしん"
+      ]
+    },
+    {
+      "name": "オルガン",
+      "category": "sodai",
+      "note": "処理が困難なため特別料金（持込1,000円・回収1,200円）",
+      "tags": []
+    },
+    {
+      "name": "電動自転車",
+      "category": "sodai",
+      "note": "処理が困難なため特別料金（持込700円・回収900円）",
+      "tags": [
+        "でんどうじてんしゃ"
+      ]
+    },
+    {
+      "name": "リクライニングソファー",
+      "category": "sodai",
+      "note": "処理が困難なため特別料金（持込700円・回収900円）",
+      "tags": []
+    },
+    {
+      "name": "オイルヒーター（粗大ごみとして出す場合）",
+      "category": "sodai",
+      "note": "処理が困難なため特別料金（持込700円・回収900円）。オイルが入ったままで出せる",
+      "tags": []
+    },
+    {
+      "name": "ボウリングの玉",
+      "category": "sodai",
+      "note": "処理が困難なため特別料金（持込400円・回収600円）",
+      "tags": [
+        "ぼうりんぐのたま"
+      ]
+    },
+    {
+      "name": "物置（簡易物置）",
+      "category": "sodai",
+      "note": "解体してから出す",
+      "tags": [
+        "ものおき"
+      ]
+    },
+    {
+      "name": "バイク（50cc以下、粗大ごみとして出す場合）",
+      "category": "sodai",
+      "note": "ナンバーを市役所に返却し、オイル・ガソリンは空にして出す",
+      "tags": [
+        "ばいく"
+      ]
+    },
+    {
+      "name": "ストーブ（灯油式、粗大ごみとして出す場合）",
+      "category": "sodai",
+      "note": "灯油を空にして、乾電池がついている場合は取りはずす",
+      "tags": []
+    }
+  ],
+  "contact": [
+    {
+      "name": "桶川市 環境センター",
+      "note": "分別方法・収集日・粗大ごみの申込みに関すること",
+      "tel": "0487281902",
+      "hours": "月〜金 8:30〜17:00（第2・4土曜は自己搬入のみ 8:30〜11:30）"
+    }
+  ],
+  "features": {
+    "notice": true,
+    "faq": true,
+    "vendor": false,
+    "contact": true,
+    "language": true,
+    "affiliate": true
+  },
+  "notices": [
+    {
+      "id": 1,
+      "type": "warn",
+      "date": "2026-07-31",
+      "title": "リチウムイオン電池等は集積所に出さないでください",
+      "body": "モバイルバッテリーや充電式の小型家電などに使われているリチウムイオン電池は、ごみ収集車や処理施設で発火する危険が非常に高く、県内でも火災が発生しています。市役所本庁舎・保健センター・各公民館など市内8施設の回収ボックスへお持ち込みください。",
+      "url": "https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/9258.html"
+    },
+    {
+      "id": 2,
+      "type": "info",
+      "date": "2026-07-21",
+      "title": "「おいくら」で不用品のリユースができます",
+      "body": "粗大ごみとして捨てる前に、まだ使えるものは「おいくら」で売却できる場合があります。ごみの削減のため、処分前にご検討ください。",
+      "url": "https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1657.html"
+    },
+    {
+      "id": 3,
+      "type": "info",
+      "date": "2026-07-20",
+      "title": "生ごみ処理容器・減量化機器の購入補助金があります",
+      "body": "コンポストや電気式生ごみ減量化機器を購入した方に補助金を交付しています。生ごみ処理容器は購入額の2分の1（上限3,000円）、減量化機器は購入額の2分の1（上限20,000円）です。令和8年度分は予算が残りわずかのため、事前に環境センターへご相談ください。",
+      "url": "https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1648.html"
+    },
+    {
+      "id": 4,
+      "type": "info",
+      "date": "2026-03-02",
+      "title": "令和8年度のごみ収集日程表を公開しています",
+      "body": "東側地区・西側地区それぞれのごみ収集日程表（PDF）を公開しています。金属・ガラス・乾電池、紙製の容器と包装紙、その他ごみ、古着・新聞紙・雑誌・段ボール・紙パックは月1〜2回の指定日制のため、正確な日付は日程表でご確認ください。",
+      "url": "https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html"
+    },
+    {
+      "id": 5,
+      "type": "warn",
+      "date": "2016-09-01",
+      "title": "スプレー缶・カセットボンベは中身を使い切ってから",
+      "body": "ガスの残ったスプレー缶やカセットボンベを集積所に出すと、収集車両や焼却施設の火災の原因になり大変危険です。火気のない屋外でガスを完全に出し切ってから「金属・ガラス・乾電池」の日に出してください。",
+      "url": "https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1653.html"
+    }
+  ],
+  "rules": {
+    "title": "ごみ出しルール",
+    "items": [
+      {
+        "icon": "swap_horiz",
+        "title": "東西2地区制",
+        "body": "桶川市はJR高崎線を境に東側地区・西側地区に分かれ、収集曜日が異なります。お住まいの地区を確認してください。"
+      },
+      {
+        "icon": "shopping_bag",
+        "title": "袋のルール",
+        "body": "燃やせるごみは市指定のうす茶色の袋。それ以外は無色透明または無色半透明の袋（レジ袋不可）を使用してください。"
+      },
+      {
+        "icon": "event_repeat",
+        "title": "月1〜2回の指定日収集",
+        "body": "金属・ガラス・乾電池、紙製の容器と包装紙、古着・新聞紙・雑誌等、その他ごみは、曜日固定ではなく月1〜2回の指定日収集です。正確な日付は収集日程表でご確認ください。"
+      },
+      {
+        "icon": "water_drop",
+        "title": "生ごみの水切り",
+        "body": "燃やせるごみは水分をよく切ってから出すと、収集車の臭いや汚水漏れの防止になります。"
+      },
+      {
+        "icon": "recycling",
+        "title": "びん・缶へのご協力",
+        "body": "びん・缶は中身を空にしてよく洗い、ふたやコルクを外してから出しましょう。異物が入っているとリサイクルできません。"
+      }
+    ]
+  },
+  "affiliate_items": [
+    {
+      "icon": "🕸️",
+      "name": "カラスよけネット",
+      "sub": "楽天で探す →",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%82%AB%E3%83%A9%E3%82%B9%E3%82%88%E3%81%91%E3%83%8D%E3%83%83%E3%83%88/"
+    },
+    {
+      "icon": "🛍️",
+      "name": "分別ごみ袋",
+      "sub": "楽天で探す →",
+      "url": "https://search.rakuten.co.jp/search/mall/%E5%88%86%E5%88%A5%E3%82%B4%E3%83%9F%E8%A2%8B/"
+    }
+  ]
+}

@@ -66,6 +66,9 @@ const CATEGORY_ICON: Record<string, string> = {
   unknown: '/icons/none.svg',
   ippan: '/icons/common_gomi.svg',
   metal: '/icons/metal.svg',
+  pla_pet: '/icons/plastic.svg',
+  kinzoku_gb: '/icons/metal.svg',
+  fuku_zasshi: '/icons/fuku.svg',
 };
 
 // 自治体別アイコン差し替え（v1.135新設・script.jsのCITY_ICON_OVERRIDEと対）。

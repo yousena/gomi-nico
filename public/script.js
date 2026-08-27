@@ -67,6 +67,10 @@ const TYPE_STYLE = {
   ippan:       { icon:'delete',   img:'/icons/common_gomi.svg', bg:'var(--c-ippan-bg)',   iconBg:'rgba(52,73,94,0.14)',    fg:'var(--c-ippan)',   dotColor:'var(--c-ippan)'   },
   kanden:      { icon:'battery_full',          bg:'var(--c-kanden-bg)',  iconBg:'rgba(166,61,107,0.14)',  fg:'var(--c-kanden)',  dotColor:'var(--c-kanden)'  },
   metal:       { icon:'hardware', img:'/icons/metal.svg',       bg:'var(--c-metal-bg)',   iconBg:'rgba(92,107,115,0.14)',  fg:'var(--c-metal)',   dotColor:'var(--c-metal)'   },
+  // ── 拡張（桶川市）
+  pla_pet:     { icon:'water_bottle', img:'/icons/plastic.svg',   bg:'var(--c-pla-pet-bg)',    iconBg:'rgba(84,119,34,0.14)',   fg:'var(--c-pla-pet)',    dotColor:'var(--c-pla-pet)'    },
+  kinzoku_gb:  { icon:'hardware',     img:'/icons/metal.svg',     bg:'var(--c-kinzoku-gb-bg)', iconBg:'rgba(36,89,107,0.14)',   fg:'var(--c-kinzoku-gb)', dotColor:'var(--c-kinzoku-gb)' },
+  fuku_zasshi: { icon:'checkroom',    img:'/icons/fuku.svg',      bg:'var(--c-fuku-zasshi-bg)',iconBg:'rgba(114,55,114,0.14)',  fg:'var(--c-fuku-zasshi)',dotColor:'var(--c-fuku-zasshi)'},
 };
 
 /**
