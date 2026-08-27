@@ -64,7 +64,11 @@
       ],
       "pla_pet": [
         2
-      ]
+      ],
+      "kami": { "day": 5, "weeks": [1, 3] },
+      "kinzoku_gb": { "day": 5, "weeks": [2, 4] },
+      "fuku_zasshi": { "day": 6, "weeks": [2, 4] },
+      "moenai": { "day": 3, "week": 2 }
     },
     "nishi": {
       "name": "西側地区",
@@ -74,7 +78,11 @@
       ],
       "pla_pet": [
         4
-      ]
+      ],
+      "kami": { "day": 1, "weeks": [1, 3] },
+      "kinzoku_gb": { "day": 1, "weeks": [2, 4] },
+      "fuku_zasshi": { "day": 6, "weeks": [2, 4] },
+      "moenai": { "day": 3, "week": 2 }
     }
   },
   "categories": {
@@ -130,7 +138,7 @@
     },
     "kinzoku_gb": {
       "label": "金属・ガラス・乾電池",
-      "how": "無色透明または無色半透明の袋（レジ袋不可、45L以下）に入れて出す。びん・缶は中を洗い、ふた・コルクは外す。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">正確な収集日は桶川市の収集日程表でご確認ください</a>（毎月2回・指定日制のため）",
+      "how": "無色透明または無色半透明の袋（レジ袋不可、45L以下）に入れて出す。びん・缶は中を洗い、ふた・コルクは外す。毎月第2・4○曜（東側地区=金曜、西側地区=月曜）の収集。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">年間の収集日程表はこちら</a>",
       "allowed": [
         "金属製品（なべ・フライパン・工具・小型家電本体等）",
         "びん類（ふた・コルクを外して洗う）",
@@ -143,19 +151,19 @@
         "異物の混入した空き缶（タバコの吸い殻等を入れない）"
       ],
       "tips": [
-        "毎月2回、指定日の収集です（東側地区は原則金曜、西側地区は原則月曜）。正確な日付は年度ごとの収集日程表でご確認ください",
+        "毎月第2・4○曜日の収集です（東側地区は金曜、西側地区は月曜）",
         "刃物・割れ物は紙や布で包んでから出す",
         "異物混入があるとリサイクルできなくなります"
       ],
       "how_steps": [
         "びん・缶は中身を空にして洗う",
         "無色透明または無色半透明の袋（45L以下）に入れる",
-        "指定日の朝に集積所へ（正確な日付は収集日程表を確認）"
+        "第2・4○曜（東側地区=金曜、西側地区=月曜）の朝に集積所へ"
       ]
     },
     "moenai": {
       "label": "その他ごみ",
-      "how": "無色透明または無色半透明の袋（レジ袋不可、45L以下）に入れて出す。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">正確な収集日は桶川市の収集日程表でご確認ください</a>（毎月1回・指定日制のため）",
+      "how": "無色透明または無色半透明の袋（レジ袋不可、45L以下）に入れて出す。毎月第2水曜（東西地区とも）の収集。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">年間の収集日程表はこちら</a>",
       "allowed": [
         "陶器・ガラス食器",
         "ゴム製品・靴・かばん等の身の回り品",
@@ -168,18 +176,19 @@
         "大きいもの（3辺合計100cm超等は粗大ごみへ）"
       ],
       "tips": [
+        "毎月第2水曜日の収集です（東側地区・西側地区とも同じ）",
         "ライターなどは必ず中身を使いきってから出してください",
         "蛍光灯・電球は収集時にケガをしないよう、鋭利な部分をガムテープなどで覆ってから出してください"
       ],
       "how_steps": [
         "割れ物・刃物は紙や布に包む",
         "無色透明または無色半透明の袋（45L以下）に入れる",
-        "指定日の朝に集積所へ（正確な日付は収集日程表を確認）"
+        "毎月第2水曜の朝に集積所へ"
       ]
     },
     "kami": {
       "label": "紙製の容器と包装紙",
-      "how": "無色透明または無色半透明の袋（レジ袋不可、30L以上）、または紙袋（雨天時は不可）に入れて出す。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">正確な収集日は桶川市の収集日程表でご確認ください</a>（毎月2回・指定日制のため）",
+      "how": "無色透明または無色半透明の袋（レジ袋不可、30L以上）、または紙袋（雨天時は不可）に入れて出す。毎月第1・3○曜（東側地区=金曜、西側地区=月曜）の収集。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">年間の収集日程表はこちら</a>",
       "allowed": [
         "お菓子の箱・洗剤の空き箱（紙製）",
         "包装紙・紙袋",
@@ -190,17 +199,18 @@
         "識別表示がプラマークのもの（プラスチックの日へ）"
       ],
       "tips": [
-        "「紙」の識別表示マークで分別を確認してください"
+        "「紙」の識別表示マークで分別を確認してください",
+        "毎月第1・3○曜日の収集です（東側地区は金曜、西側地区は月曜）"
       ],
       "how_steps": [
         "識別マークを確認する",
         "無色透明・半透明の袋または紙袋（雨天時不可）に入れる",
-        "指定日の朝に集積所へ（東側地区は原則金曜、西側地区は原則月曜。正確な日付は収集日程表を確認）"
+        "第1・3○曜（東側地区=金曜、西側地区=月曜）の朝に集積所へ"
       ]
     },
     "fuku_zasshi": {
       "label": "古着・新聞紙・雑誌・段ボール・紙パック",
-      "how": "古着は無色透明・半透明の袋（45L以下）に入れて縛る。新聞・雑誌・段ボールは紐で縛る。紙パックは洗って開いて乾かしてから束ねる。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">正確な収集日は桶川市の収集日程表でご確認ください</a>（毎月2回・指定日制のため）",
+      "how": "古着は無色透明・半透明の袋（45L以下）に入れて縛る。新聞・雑誌・段ボールは紐で縛る。紙パックは洗って開いて乾かしてから束ねる。毎月第2・4土曜（東西地区とも）の収集。<a href=\"https://www.city.okegawa.lg.jp/soshiki/shiminseikatsu/recycle/gomi/gomi_recycle/1659.html\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand);text-decoration:underline;font-weight:700\">年間の収集日程表はこちら</a>",
       "allowed": [
         "古着（リサイクル可能なもの、洗濯済み）",
         "新聞紙・折込チラシ",
@@ -214,13 +224,14 @@
         "汚れた紙・においの強い紙"
       ],
       "tips": [
+        "毎月第2・4土曜日の収集です（東側地区・西側地区とも同じ）",
         "雨天が予想される場合、古着の排出はご遠慮ください",
         "紙パックは飲み口のプラスチックも外し、洗って開いて乾かしてから出す"
       ],
       "how_steps": [
         "古着は洗ってから袋に入れて縛る",
         "新聞・雑誌・段ボールは紐で縛る",
-        "毎月2回、原則土曜の指定日に集積所へ（正確な日付は収集日程表を確認）"
+        "毎月第2・4土曜の朝に集積所へ"
       ]
     },
     "sodai": {
@@ -4526,7 +4537,7 @@
       {
         "icon": "event_repeat",
         "title": "月1〜2回の指定日収集",
-        "body": "金属・ガラス・乾電池、紙製の容器と包装紙、古着・新聞紙・雑誌等、その他ごみは、曜日固定ではなく月1〜2回の指定日収集です。正確な日付は収集日程表でご確認ください。"
+        "body": "金属・ガラス・乾電池、紙製の容器と包装紙、古着・新聞紙・雑誌等は第1・3または第2・4の指定曜日、その他ごみは毎月第2水曜の収集です。アプリのカレンダーは自動で該当日を表示します。"
       },
       {
         "icon": "water_drop",
