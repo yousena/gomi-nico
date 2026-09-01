@@ -50,6 +50,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- 北本市 -->
+  <url>
+    <loc>https://gomi-nico.jp/kitamoto/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- 記事コンテンツ -->
   <url>
     <loc>https://gomi-nico.jp/articles/</loc>
