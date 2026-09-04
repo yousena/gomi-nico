@@ -1970,6 +1970,312 @@
       "tags": [
         "びんるい"
       ]
+    },
+    {
+      "name": "カセットテープのケース",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "紙（ストーンペーパー）",
+      "category": "moeru",
+      "note": "",
+      "tags": ["かみ"]
+    },
+    {
+      "name": "感熱性発泡紙",
+      "category": "moeru",
+      "note": "",
+      "tags": ["かんねつせいはっぽうし"]
+    },
+    {
+      "name": "クリーニングの袋",
+      "category": "moeru",
+      "note": "",
+      "tags": ["くりーにんぐのふくろ"]
+    },
+    {
+      "name": "CD（コンパクトディスク）のケース",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "真空パック・レトルトパック",
+      "category": "shigen-pla",
+      "note": "洗って出す",
+      "tags": ["しんくうぱっくれとるとぱっく"]
+    },
+    {
+      "name": "ストロー",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スノーボード",
+      "category": "sodai",
+      "note": "指定日に1点400円のシールを貼って出す",
+      "tags": []
+    },
+    {
+      "name": "背広カバー",
+      "category": "shigen-pla",
+      "note": "",
+      "tags": ["せびろかばー"]
+    },
+    {
+      "name": "ダウンジャケット",
+      "category": "moeru",
+      "note": "40cm未満に切ってから出す",
+      "tags": []
+    },
+    {
+      "name": "DVDプレーヤー",
+      "category": "sodai",
+      "note": "40cm未満は不燃物等",
+      "tags": []
+    },
+    {
+      "name": "テレビ（有機ELテレビ・モニター・プロジェクター等）",
+      "category": "unknown",
+      "note": "家電リサイクル法対象外のテレビ等。業者へ相談",
+      "tags": []
+    },
+    {
+      "name": "テレホンカード",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "電子キーボード（楽器）",
+      "category": "sodai",
+      "note": "指定日に1点400円のシールを貼って出す。スタンドは別",
+      "tags": ["でんしきーぼーど"]
+    },
+    {
+      "name": "パチンコ・パチスロ台",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": ["ぱちんこぱちすろだい"]
+    },
+    {
+      "name": "バラン（弁当などの仕切り）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ハンガー（プラスチック・針金複合製）",
+      "category": "moenai",
+      "note": "束ねて出す",
+      "tags": ["はんがー"]
+    },
+    {
+      "name": "ビデオテープのケース",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ピンチハンガー",
+      "category": "moenai",
+      "note": "洗濯バサミが複数付いたもの。折りたたみ式で開いた大きさが40cm以上は粗大ごみ",
+      "tags": []
+    },
+    {
+      "name": "フィルム（カメラ）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "フィルム（商品の包装）",
+      "category": "shigen-pla",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "フィルムのケース",
+      "category": "shigen-pla",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ふすま",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": []
+    },
+    {
+      "name": "プラスチックケース",
+      "category": "moeru",
+      "note": "40cm以上は粗大ごみ",
+      "tags": []
+    },
+    {
+      "name": "プラスチック（包装）ケース",
+      "category": "shigen-pla",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "フリーザーパック",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "プリンター用カートリッジ（トナーカートリッジ）",
+      "category": "moeru",
+      "note": "メーカー回収に連絡するか、大型電気店等の回収ボックスへ",
+      "tags": ["ぷりんたーようかーとりっじ"]
+    },
+    {
+      "name": "フロッピーディスク",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "フロッピーディスクのケース",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ベッドパッド",
+      "category": "sodai",
+      "note": "2枚までシール1点",
+      "tags": []
+    },
+    {
+      "name": "ホイール（車用）",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": []
+    },
+    {
+      "name": "ホース",
+      "category": "sodai",
+      "note": "指定日に1点400円のシールを貼って出す。直径5cm以下は5本まで1点。40cm未満に切った場合はもやすごみ",
+      "tags": []
+    },
+    {
+      "name": "ボウリングの球",
+      "category": "sodai",
+      "note": "指定日に1点400円のシールを貼って出す",
+      "tags": ["ぼうりんぐのたま"]
+    },
+    {
+      "name": "マット",
+      "category": "sodai",
+      "note": "キッチンマット・風呂場のマット・トイレマットはシール1点で2枚まで（組み合わせ自由）",
+      "tags": []
+    },
+    {
+      "name": "ラップフィルムの紙芯",
+      "category": "zasshi",
+      "note": "ひもで結ぶか紙袋・レジ袋へ",
+      "tags": ["らっぷふぃるむのかみしん"]
+    },
+    {
+      "name": "冷却水",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": ["れいきゃくすい"]
+    },
+    {
+      "name": "耐火金庫",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": ["たいかきんこ"]
+    },
+    {
+      "name": "浴槽",
+      "category": "unknown",
+      "note": "住宅設備のため業者へ相談",
+      "tags": ["よくそう"]
+    },
+    {
+      "name": "ドア・扉",
+      "category": "unknown",
+      "note": "建具のため業者へ相談",
+      "tags": ["どあ", "とびら"]
+    },
+    {
+      "name": "石こうボード",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": ["せっこうぼーど"]
+    },
+    {
+      "name": "土（庭の土等）",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": ["つち"]
+    },
+    {
+      "name": "レンガ",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": []
+    },
+    {
+      "name": "コンクリート塊",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": ["こんくりーとかたまり"]
+    },
+    {
+      "name": "プロパンガスボンベ（LPG）",
+      "category": "unknown",
+      "note": "家庭用のプロパンガスボンベは市で収集できません。ガス販売店へご相談ください（カセットコンロ用ガスボンベ・スプレー缶は危険物として収集）",
+      "tags": []
+    },
+    {
+      "name": "塗料・薬品類",
+      "category": "unknown",
+      "note": "購入店または業者へ相談",
+      "tags": ["とりょう・やくひんるい"]
+    },
+    {
+      "name": "注射針",
+      "category": "unknown",
+      "note": "在宅医療廃棄物のため医療機関・薬局へご相談ください",
+      "tags": ["ちゅうしゃばり"]
+    },
+    {
+      "name": "将棋盤・碁盤",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": ["しょうぎばん・ごばん"]
+    },
+    {
+      "name": "臼（うす）",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": ["うす"]
+    },
+    {
+      "name": "衣装ケース",
+      "category": "sodai",
+      "note": "1個でシール1点",
+      "tags": ["いしょうけーす"]
+    },
+    {
+      "name": "敷パッド",
+      "category": "sodai",
+      "note": "ベッドパッドと合わせて2枚まで1点",
+      "tags": ["しきぱっど"]
+    },
+    {
+      "name": "ホイールキャップ",
+      "category": "unknown",
+      "note": "業者へ相談",
+      "tags": []
     }
   ],
   "contact": [
