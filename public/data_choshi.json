@@ -16876,6 +16876,2404 @@
    "tags": [
     "ほちきす（すてーぷらー）のはり"
    ]
+  },
+  {
+   "name": "補聴器",
+   "category": "metal",
+   "note": "Q＆A Q10参照",
+   "tags": [
+    "ほちょうき"
+   ]
+  },
+  {
+   "name": "ボックスシーツ・ベッドパット",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ボックスファイル",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "ポット（保温瓶）",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "ぽっと（ほおんびん）"
+   ]
+  },
+  {
+   "name": "ホットカーペット",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ホットカーペットカバー",
+   "category": "sodai",
+   "note": "50cm×50cmに裁断した場合は普通ごみへ",
+   "tags": []
+  },
+  {
+   "name": "ホットカーラー",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ホットサンドメーカー",
+   "category": "metal",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ホットプレート",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ボディーソープの容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ぼでぃーそーぷのようき"
+   ]
+  },
+  {
+   "name": "ボディータオル（ナイロンタオル）",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ボディブラシ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ボディーボード",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ポテトマッシャー",
+   "category": "metal",
+   "note": "大部分が金属の場合は資源ごみ。それ以外は普通ごみへ",
+   "tags": []
+  },
+  {
+   "name": "ポラロイドカメラ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ポラロイドフィルム",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ポラロイド写真",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ぽらろいどしゃしん"
+   ]
+  },
+  {
+   "name": "ポリタンク",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ポリバケツ",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ポリ袋",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ぽりぶくろ"
+   ]
+  },
+  {
+   "name": "ポリポット（個人・家庭菜園）",
+   "category": "ippan",
+   "note": "販売店に相談してください",
+   "tags": [
+    "ぽりぽっと（こじん・かていさいえん）"
+   ]
+  },
+  {
+   "name": "ポリポット（農業用）",
+   "category": "unknown",
+   "note": "販売店や専門の処理業者に相談してください",
+   "tags": [
+    "ぽりぽっと（のうぎょうよう）"
+   ]
+  },
+  {
+   "name": "ポリ容器（灯油用・水用等）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "ぽりようき（とうゆよう・すいようなど）"
+   ]
+  },
+  {
+   "name": "ボルト・ナット",
+   "category": "metal",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "保冷剤",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ほれいざい"
+   ]
+  },
+  {
+   "name": "保冷バッグ（クーラーバッグ）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ほれいばっぐ（くーらーばっぐ）"
+   ]
+  },
+  {
+   "name": "ホワイトボード",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "盆",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ぼん"
+   ]
+  },
+  {
+   "name": "本立て",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "ほんたて"
+   ]
+  },
+  {
+   "name": "本棚（木製）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "ほんだな（もくせい）"
+   ]
+  },
+  {
+   "name": "本棚（金属製）",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "ほんだな（きんぞくせい）"
+   ]
+  },
+  {
+   "name": "盆提灯（ぼんちょうちん）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "ぼんちょうちん"
+   ]
+  },
+  {
+   "name": "ポンプ（井戸用ポンプ）",
+   "category": "sodai",
+   "note": "業者が取り外した場合は施工業者に相談してください",
+   "tags": [
+    "ぽんぷ（いどようぽんぷ）"
+   ]
+  },
+  {
+   "name": "マーカーペン",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マーガリンの容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "まーがりんのようき"
+   ]
+  },
+  {
+   "name": "麻雀（マージャン）卓",
+   "category": "unknown",
+   "note": "販売店または専門の処理業者に相談してください",
+   "tags": [
+    "まーじゃん（まーじゃん）たく"
+   ]
+  },
+  {
+   "name": "麻雀（マージャン）牌",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "まーじゃん（まーじゃん）ぱい"
+   ]
+  },
+  {
+   "name": "麻雀（マージャン）マット",
+   "category": "sodai",
+   "note": "50cm×50cm程度に裁断した場合は普通ごみへ",
+   "tags": [
+    "まーじゃん（まーじゃん）まっと"
+   ]
+  },
+  {
+   "name": "マイク",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ。電池は有害ごみへ",
+   "tags": []
+  },
+  {
+   "name": "マウス",
+   "category": "metal",
+   "note": "Q＆A Q10参照 電池は有害ごみへ",
+   "tags": []
+  },
+  {
+   "name": "マウスウォッシュの容器",
+   "category": "ippan",
+   "note": "中身をからにしてください",
+   "tags": [
+    "まうすうぉっしゅのようき"
+   ]
+  },
+  {
+   "name": "マウスパッド",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マガジンラック",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ。指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "巻尺（メジャー）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "まきじゃく（めじゃー）"
+   ]
+  },
+  {
+   "name": "巻き簾",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "まきれん"
+   ]
+  },
+  {
+   "name": "マグカップ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マグネット",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マグネットクリップ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マグネットシート",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マグネットバー",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マグネットフック",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "枕",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "まくら"
+   ]
+  },
+  {
+   "name": "枕カバー",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "まくらかばー"
+   ]
+  },
+  {
+   "name": "孫の手",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "まごのて"
+   ]
+  },
+  {
+   "name": "マジックインキ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マジックハンド",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マスカラ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マスク",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マッサージチェア",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マッサージ機",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "まっさーじき"
+   ]
+  },
+  {
+   "name": "マッチ（未使用）",
+   "category": "ippan",
+   "note": "火薬部分を水で十分に濡らしてから出してください",
+   "tags": [
+    "まっち（みしよう）"
+   ]
+  },
+  {
+   "name": "マッチ（使用済み）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "まっち（しようずみ）"
+   ]
+  },
+  {
+   "name": "マット（玄関・台所・浴室等）",
+   "category": "ippan",
+   "note": "50cm×50cm程度に裁断して出してください",
+   "tags": [
+    "まっと（げんかん・だいどころ・よくしつなど）"
+   ]
+  },
+  {
+   "name": "マットレス（ベットマット）",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "マット類",
+   "category": "sodai",
+   "note": "50cm×50cm程度に裁断した場合は普通ごみへ",
+   "tags": [
+    "まっとるい"
+   ]
+  },
+  {
+   "name": "松葉杖",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "まつばづえ"
+   ]
+  },
+  {
+   "name": "窓付き封筒",
+   "category": "kami",
+   "note": "フィルムははがして普通ごみへ。ヒモで束ねて出してください",
+   "tags": [
+    "まどつきふうとう"
+   ]
+  },
+  {
+   "name": "マドラー",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "まな板（木製・プラスチック製）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "まないた（もくせい・ぷらすちっくせい）"
+   ]
+  },
+  {
+   "name": "マニキュアの容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "まにきゅあのようき"
+   ]
+  },
+  {
+   "name": "マネークリップ（金属製）",
+   "category": "metal",
+   "note": "",
+   "tags": [
+    "まねーくりっぷ（きんぞくせい）"
+   ]
+  },
+  {
+   "name": "マフラー（防寒用）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "まふらー（ぼうかんよう）"
+   ]
+  },
+  {
+   "name": "魔法瓶（ジャー、ポット）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "まほうびん（じゃー、ぽっと）"
+   ]
+  },
+  {
+   "name": "豆電球",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "まめでんきゅう"
+   ]
+  },
+  {
+   "name": "マヨネーズの容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "まよねーずのようき"
+   ]
+  },
+  {
+   "name": "マラカス",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "枕木",
+   "category": "sodai",
+   "note": "粗大ごみは太さ15㎝以内かつ長さ200㎝以内とします",
+   "tags": [
+    "まくらぎ"
+   ]
+  },
+  {
+   "name": "丸太",
+   "category": "sodai",
+   "note": "粗大ごみは太さ15㎝以内かつ長さ200㎝以内とします",
+   "tags": [
+    "まるた"
+   ]
+  },
+  {
+   "name": "丸型容器",
+   "category": "ippan",
+   "note": "家庭で使用した物に限る。指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "まるがたようき"
+   ]
+  },
+  {
+   "name": "マルチシート（農業用ビニール）",
+   "category": "unknown",
+   "note": "販売店や専門処理業者に相談してください",
+   "tags": [
+    "まるちしーと（のうぎょうようびにーる）"
+   ]
+  },
+  {
+   "name": "万歩計",
+   "category": "metal",
+   "note": "電池は有害ごみへ",
+   "tags": [
+    "まんぽけい"
+   ]
+  },
+  {
+   "name": "万年筆",
+   "category": "ippan",
+   "note": "金属はなるべく取り外して資源（金属）へ",
+   "tags": [
+    "まんねんひつ"
+   ]
+  },
+  {
+   "name": "ミートハンマー",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "ミサンガ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ミシン",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ミシンケース",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "水着",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "みずぎ"
+   ]
+  },
+  {
+   "name": "水切りかご",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "みずきりかご"
+   ]
+  },
+  {
+   "name": "水切りネット",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "みずきりねっと"
+   ]
+  },
+  {
+   "name": "水切りラック",
+   "category": "metal",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "みずきりらっく"
+   ]
+  },
+  {
+   "name": "水切りワイパー（窓用）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "みずきりわいぱー（まどよう）"
+   ]
+  },
+  {
+   "name": "水差し（ピッチャー）",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "みずさし（ぴっちゃー）"
+   ]
+  },
+  {
+   "name": "ミスト（霧吹き）の容器",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "みすと（きりふき）のようき"
+   ]
+  },
+  {
+   "name": "水鉄砲（ウォーターガン）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "みずでっぽう（うぉーたーがん）"
+   ]
+  },
+  {
+   "name": "水枕",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "みずまくら"
+   ]
+  },
+  {
+   "name": "味噌の容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "みそのようき"
+   ]
+  },
+  {
+   "name": "ミニカー（玩具）",
+   "category": "metal",
+   "note": "",
+   "tags": [
+    "みにかー（がんぐ）"
+   ]
+  },
+  {
+   "name": "ミニコンポ",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ミニスキー",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ミニディスク（MD）",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ミニディスク（MD）レコーダー",
+   "category": "metal",
+   "note": "Ｑ＆Ａ Ｑ１０参照",
+   "tags": []
+  },
+  {
+   "name": "ミニバイク・オートバイ",
+   "category": "unknown",
+   "note": "二輪車リサイクルコールセンター（０５０－３０００－０７２７）へお問い合わせください",
+   "tags": []
+  },
+  {
+   "name": "耳かき",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "みみかき"
+   ]
+  },
+  {
+   "name": "耳毛カッター",
+   "category": "metal",
+   "note": "Ｑ＆Ａ Ｑ１０参照 電池は有害ごみへ",
+   "tags": [
+    "みみげかったー"
+   ]
+  },
+  {
+   "name": "耳栓",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "みみせん"
+   ]
+  },
+  {
+   "name": "ミラーテープ（ラピーテープ）",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ミル",
+   "category": "ippan",
+   "note": "金属製は取り外して資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "麦わら帽子",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "むぎわらぼうし"
+   ]
+  },
+  {
+   "name": "虫かご",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "むしかご"
+   ]
+  },
+  {
+   "name": "蒸し器（金属製）",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "むしき（きんぞくせい）"
+   ]
+  },
+  {
+   "name": "蒸し器（シリコン製）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "むしき（しりこんせい）"
+   ]
+  },
+  {
+   "name": "虫ピン",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "むしぴん"
+   ]
+  },
+  {
+   "name": "虫メガネ（拡大鏡・ルーペ）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "むしめがね（かくだいきょう・るーぺ）"
+   ]
+  },
+  {
+   "name": "虫よけスプレーの缶",
+   "category": "metal",
+   "note": "完全に中身を使い切って、穴をあけずに出してください",
+   "tags": [
+    "むしよけすぷれーのかん"
+   ]
+  },
+  {
+   "name": "むしろ",
+   "category": "sodai",
+   "note": "50cm×50cmに裁断した場合は普通ごみへ",
+   "tags": []
+  },
+  {
+   "name": "名刺",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "めいし"
+   ]
+  },
+  {
+   "name": "名刺入れ",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "めいしいれ"
+   ]
+  },
+  {
+   "name": "名刺ホルダー",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "めいしほるだー"
+   ]
+  },
+  {
+   "name": "メールボックス（郵便受け）",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ。また、指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "めーるぼっくす（ゆうびんうけ）"
+   ]
+  },
+  {
+   "name": "メガネ",
+   "category": "ippan",
+   "note": "ガラスレンズも普通ごみへ",
+   "tags": []
+  },
+  {
+   "name": "メガネケース",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "メガネ拭き",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "めがねふき"
+   ]
+  },
+  {
+   "name": "メガホン",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "メガホン（拡声器）",
+   "category": "metal",
+   "note": "電池は有害ごみへ。指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "めがほん（かくせいき）"
+   ]
+  },
+  {
+   "name": "目薬の携帯ケース",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "めぐすりのけいたいけーす"
+   ]
+  },
+  {
+   "name": "目薬の容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "めぐすりのようき"
+   ]
+  },
+  {
+   "name": "目覚まし時計",
+   "category": "ippan",
+   "note": "電池は有害ごみへ",
+   "tags": [
+    "めざましとけい"
+   ]
+  },
+  {
+   "name": "メジャー（巻尺）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "めじゃー（まきじゃく）"
+   ]
+  },
+  {
+   "name": "目玉クリップ",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "めだまくりっぷ"
+   ]
+  },
+  {
+   "name": "メッシュケース",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "メッシュパネル（壁面ラック）",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "めっしゅぱねる（へきめんらっく）"
+   ]
+  },
+  {
+   "name": "メモリーカード",
+   "category": "metal",
+   "note": "Q＆A Q10参照",
+   "tags": []
+  },
+  {
+   "name": "メラミンスポンジ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "メリーゴーランド（乳児用）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "めりーごーらんど（にゅうじよう）"
+   ]
+  },
+  {
+   "name": "面（剣道・フェンシング）",
+   "category": "ippan",
+   "note": "金具部分はなるべく取り外して資源（金属）へ。指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "めん（けんどう・ふぇんしんぐ）"
+   ]
+  },
+  {
+   "name": "メンディングテープ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "麺棒（製麺用）",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "めんぼう（せいめんよう）"
+   ]
+  },
+  {
+   "name": "綿棒（衛生用品）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "めんぼう（えいせいようひん）"
+   ]
+  },
+  {
+   "name": "綿棒（衛生用品）の容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "めんぼう（えいせいようひん）のようき"
+   ]
+  },
+  {
+   "name": "毛布",
+   "category": "ippan",
+   "note": "50cm×50cm程度に裁断して出してください。指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "もうふ"
+   ]
+  },
+  {
+   "name": "モーター類（おもちゃ用）",
+   "category": "metal",
+   "note": "",
+   "tags": [
+    "もーたーるい（おもちゃよう）"
+   ]
+  },
+  {
+   "name": "木炭",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "もくたん"
+   ]
+  },
+  {
+   "name": "木馬（子供用遊具）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "もくば（こどもようゆうぐ）"
+   ]
+  },
+  {
+   "name": "木工用ボンドの容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "もっこうようぼんどのようき"
+   ]
+  },
+  {
+   "name": "餅つき機",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "もちつきき"
+   ]
+  },
+  {
+   "name": "モデルガン（エアガン）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "モップ",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "物置",
+   "category": "sodai",
+   "note": "解体したものに限る。業者が取り外した場合は施工業者に相談してください",
+   "tags": [
+    "ものおき"
+   ]
+  },
+  {
+   "name": "物干しざお",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "ものほしざお"
+   ]
+  },
+  {
+   "name": "物干し台",
+   "category": "sodai",
+   "note": "コンクリートの土台は収集しない",
+   "tags": [
+    "ものほしだい"
+   ]
+  },
+  {
+   "name": "門扉",
+   "category": "sodai",
+   "note": "業者が取り外した場合は施工業者に相談してください",
+   "tags": [
+    "もんぴ"
+   ]
+  },
+  {
+   "name": "やかん",
+   "category": "metal",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "焼き網",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "やきあみ"
+   ]
+  },
+  {
+   "name": "焼き鳥の串",
+   "category": "ippan",
+   "note": "金属性は資源（金属）へ",
+   "tags": [
+    "やきとりのくし"
+   ]
+  },
+  {
+   "name": "野球グローブ",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "やきゅうぐろーぶ"
+   ]
+  },
+  {
+   "name": "野球バット（玩具・プラスチック）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "やきゅうばっと（がんぐ・ぷらすちっく）"
+   ]
+  },
+  {
+   "name": "野球バット（木製・金属）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "やきゅうばっと（もくせい・きんぞく）"
+   ]
+  },
+  {
+   "name": "野球ボール（軟式・硬式）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "やきゅうぼーる（なんしき・こうしき）"
+   ]
+  },
+  {
+   "name": "野菜の外袋",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "やさいのそとぶくろ"
+   ]
+  },
+  {
+   "name": "薬品（農薬など）",
+   "category": "unknown",
+   "note": "販売店や専門の処理業者に相談してください",
+   "tags": [
+    "やくひん（のうやくなど）"
+   ]
+  },
+  {
+   "name": "薬品（家庭医薬品）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "やくひん（かていいやくひん）"
+   ]
+  },
+  {
+   "name": "薬品（家庭医薬品）の容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "やくひん（かていいやくひん）のようき"
+   ]
+  },
+  {
+   "name": "薬品（家庭医薬品）の容器（金属製）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "やくひん（かていいやくひん）のようき（きんぞくせい）"
+   ]
+  },
+  {
+   "name": "ヤスリ",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "屋根用防水シート",
+   "category": "ippan",
+   "note": "ごみ袋２袋程度",
+   "tags": [
+    "やねようぼうすいしーと"
+   ]
+  },
+  {
+   "name": "柳行李（やなぎこうり）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "やなぎごうり（やなぎごうり）"
+   ]
+  },
+  {
+   "name": "Ｕ字溝",
+   "category": "unknown",
+   "note": "専門処理業者に相談してください",
+   "tags": [
+    "Ｕじみぞ"
+   ]
+  },
+  {
+   "name": "USBメモリ",
+   "category": "metal",
+   "note": "Q＆A Q10参照 データは削除してください",
+   "tags": []
+  },
+  {
+   "name": "有害物質",
+   "category": "unknown",
+   "note": "専門の処理業者に相談してください",
+   "tags": [
+    "ゆうがいぶっしつ"
+   ]
+  },
+  {
+   "name": "有機ＥＬ式テレビ",
+   "category": "unknown",
+   "note": "Q＆A Q9参照",
+   "tags": [
+    "ゆうきＥＬしきてれび"
+   ]
+  },
+  {
+   "name": "誘導棒（合図灯）",
+   "category": "ippan",
+   "note": "電池は有害ごみへ",
+   "tags": [
+    "ゆうどうぼう（あいずとう）"
+   ]
+  },
+  {
+   "name": "融雪機",
+   "category": "sodai",
+   "note": "バッテリーは除いてください",
+   "tags": [
+    "ゆうせつき"
+   ]
+  },
+  {
+   "name": "浴衣（ゆかた）",
+   "category": "fuku",
+   "note": "軽くたたんでから、透明または半透明の袋に入れる。汚損している場合は普通ごみへ",
+   "tags": [
+    "ゆかた（ゆかた）"
+   ]
+  },
+  {
+   "name": "床暖房パネル",
+   "category": "unknown",
+   "note": "専門の処理業者に相談してください",
+   "tags": [
+    "ゆかだんぼうぱねる"
+   ]
+  },
+  {
+   "name": "湯切りざる",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "ゆきりざる"
+   ]
+  },
+  {
+   "name": "油性ペン",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ゆせいぺん"
+   ]
+  },
+  {
+   "name": "湯たんぽ",
+   "category": "metal",
+   "note": "プラスチック製は普通ごみへ",
+   "tags": [
+    "ゆたんぽ"
+   ]
+  },
+  {
+   "name": "湯呑み茶碗",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ゆのみちゃわん"
+   ]
+  },
+  {
+   "name": "指サック",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ゆびさっく"
+   ]
+  },
+  {
+   "name": "指輪",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ゆびわ"
+   ]
+  },
+  {
+   "name": "湯沸かし器",
+   "category": "metal",
+   "note": "電池は有害ごみへ。指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "ゆわかしき"
+   ]
+  },
+  {
+   "name": "ゆりかご",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "洋裁バサミ（裁ちばさみ）",
+   "category": "metal",
+   "note": "危ないので紙等に包んで袋に入れて出してください",
+   "tags": [
+    "ようさいばさみ（たちばさみ）"
+   ]
+  },
+  {
+   "name": "幼児用遊具（家庭用の滑り台、ブランコ等）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "ようじようゆうぐ（かていようのすべりだい、ぶらんこなど）"
+   ]
+  },
+  {
+   "name": "楊枝",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ようじ"
+   ]
+  },
+  {
+   "name": "楊枝の容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ようじのようき"
+   ]
+  },
+  {
+   "name": "養生用シート",
+   "category": "ippan",
+   "note": "50cm×50cm程度に裁断して出してください",
+   "tags": [
+    "ようじょうようしーと"
+   ]
+  },
+  {
+   "name": "養生用テープ",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ようじょうようてーぷ"
+   ]
+  },
+  {
+   "name": "用箋挟み（バインダー）",
+   "category": "ippan",
+   "note": "なるべく留め具は外して、資源（金属）へ",
+   "tags": [
+    "ようせんばさみ（ばいんだー）"
+   ]
+  },
+  {
+   "name": "洋服掛け、コート掛け",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "ようふくかけ、こーとかけ"
+   ]
+  },
+  {
+   "name": "洋服カバー",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ようふくかばー"
+   ]
+  },
+  {
+   "name": "洋服ダンス",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "ようふくだんす"
+   ]
+  },
+  {
+   "name": "洋服ブラシ",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "ようふくぶらし"
+   ]
+  },
+  {
+   "name": "ヨーグルトの容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "よーぐるとのようき"
+   ]
+  },
+  {
+   "name": "浴室乾燥機",
+   "category": "sodai",
+   "note": "業者が取り外した場合は施工業者に相談してください",
+   "tags": [
+    "よくしつかんそうき"
+   ]
+  },
+  {
+   "name": "浴槽",
+   "category": "unknown",
+   "note": "販売店や施工業者に相談してください",
+   "tags": [
+    "よくそう"
+   ]
+  },
+  {
+   "name": "ヨーヨー",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "よしず",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ライサー（米びつ）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "らいさー（こめびつ）"
+   ]
+  },
+  {
+   "name": "ライティングデスク",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ライフジャケット（救命胴衣）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "らいふじゃけっと（きゅうめいどうい）"
+   ]
+  },
+  {
+   "name": "ラグビーボール",
+   "category": "ippan",
+   "note": "なるべく中の空気を抜いてください",
+   "tags": []
+  },
+  {
+   "name": "ラグマット",
+   "category": "sodai",
+   "note": "50cm×50cmに裁断した場合は普通ごみへ",
+   "tags": []
+  },
+  {
+   "name": "ラケット",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ラジオ・ラジカセ",
+   "category": "metal",
+   "note": "電池は有害ごみへ。小型の場合はなるべく資源（小型家電）へ",
+   "tags": []
+  },
+  {
+   "name": "ラジオペンチ",
+   "category": "metal",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ラジコンカー",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ラック",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ラップフィルム",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ラップ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ラップの芯",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "らっぷのしん"
+   ]
+  },
+  {
+   "name": "ラップのカッター部分",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "らっぷのかったーぶぶん"
+   ]
+  },
+  {
+   "name": "ラティスフェンス（園芸用柵）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "らてぃすふぇんす（えんげいようさく）"
+   ]
+  },
+  {
+   "name": "ラバーカップ（吸引棒）（トイレ清掃用）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "らばーかっぷ（きゅういんぼう）（といれせいそうよう）"
+   ]
+  },
+  {
+   "name": "ラピ―テープ（ミラーテープ）",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ラミネーター（パウチラミネーター）",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ラミネートチューブ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ラミネートフィルム（パウチフィルム）",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ランタン",
+   "category": "metal",
+   "note": "必ずオイルを使い切ってください。電池は有害ごみへ",
+   "tags": []
+  },
+  {
+   "name": "ランチジャー（弁当箱）",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "らんちじゃー（べんとうばこ）"
+   ]
+  },
+  {
+   "name": "ランチマット（ランチョンマット）",
+   "category": "ippan",
+   "note": "50cm×50cm程度に裁断して出してください",
+   "tags": []
+  },
+  {
+   "name": "ランドセル",
+   "category": "ippan",
+   "note": "金具はなるべく取り外して資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "ランドリーラック",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ランドリーワゴン",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ランニングマシーン",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ランプ（燃料式）",
+   "category": "metal",
+   "note": "必ず燃料を使い切ってください",
+   "tags": [
+    "らんぷ（ねんりょうしき）"
+   ]
+  },
+  {
+   "name": "ランプ（電池式）",
+   "category": "metal",
+   "note": "電池は有害ごみへ",
+   "tags": [
+    "らんぷ（でんちしき）"
+   ]
+  },
+  {
+   "name": "ランプシェード（照明器具）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "らんぷしぇーど（しょうめいきぐ）"
+   ]
+  },
+  {
+   "name": "リード（ペット用）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "りーど（ぺっとよう）"
+   ]
+  },
+  {
+   "name": "リクライニングチェア",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "リコーダー",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "リップクリームの容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "りっぷくりーむのようき"
+   ]
+  },
+  {
+   "name": "リビングボード",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "リボン",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "リムーブバー（除針器）",
+   "category": "metal",
+   "note": "",
+   "tags": [
+    "りむーぶばー（じょはりき）"
+   ]
+  },
+  {
+   "name": "リムーブバー（除毒器）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "りむーぶばー（じょどくき）"
+   ]
+  },
+  {
+   "name": "リモコン",
+   "category": "metal",
+   "note": "Q＆A Q10参照 電池は有害ごみへ",
+   "tags": []
+  },
+  {
+   "name": "リヤカー",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "リヤカーのタイヤ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "リュックサック",
+   "category": "ippan",
+   "note": "金具はなるべく取り外して資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "両面テープ",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "りょうめんてーぷ"
+   ]
+  },
+  {
+   "name": "旅行かばん",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "りょこうかばん"
+   ]
+  },
+  {
+   "name": "リング（指輪）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "りんぐ（ゆびわ）"
+   ]
+  },
+  {
+   "name": "リング式ファイル",
+   "category": "ippan",
+   "note": "金具はなるべく取り外して資源（金属）へ",
+   "tags": [
+    "りんぐしきふぁいる"
+   ]
+  },
+  {
+   "name": "リングノート",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "リンスの容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "りんすのようき"
+   ]
+  },
+  {
+   "name": "ルアー（釣具）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "るあー（つりぐ）"
+   ]
+  },
+  {
+   "name": "ルーズリーフ（バインダー）",
+   "category": "ippan",
+   "note": "金具はなるべく取り外して資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "ルーター（モデム）",
+   "category": "metal",
+   "note": "Q＆A Q10参照",
+   "tags": []
+  },
+  {
+   "name": "ルーフボックス（車載用）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "るーふぼっくす（しゃさいよう）"
+   ]
+  },
+  {
+   "name": "ルーペ（拡大鏡・虫メガネ）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "るーぺ（かくだいきょう・むしめがね）"
+   ]
+  },
+  {
+   "name": "ルームシューズ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ルームランナー",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "冷蔵庫用脱臭剤",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "れいぞうこようだっしゅうざい"
+   ]
+  },
+  {
+   "name": "冷却枕",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "れいきゃくまくら"
+   ]
+  },
+  {
+   "name": "冷却ジェルシート",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "れいきゃくじぇるしーと"
+   ]
+  },
+  {
+   "name": "冷水機",
+   "category": "sodai",
+   "note": "３辺１５０㎝以下でフロンを抜いたものに限り（要証明書）直接搬入のみ可",
+   "tags": [
+    "れいすいき"
+   ]
+  },
+  {
+   "name": "冷風機",
+   "category": "sodai",
+   "note": "３辺１５０㎝以下でフロンを抜いたものに限り（要証明書）直接搬入のみ可",
+   "tags": [
+    "れいふうき"
+   ]
+  },
+  {
+   "name": "冷凍食品の仕切りトレイ",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "れいとうしょくひんのしきりとれい"
+   ]
+  },
+  {
+   "name": "冷凍食品の袋",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "れいとうしょくひんのぶくろ"
+   ]
+  },
+  {
+   "name": "冷媒製品",
+   "category": "sodai",
+   "note": "３辺１５０㎝以下でフロンを抜いたものに限り（要証明書）直接搬入のみ可",
+   "tags": [
+    "れいばいせいひん"
+   ]
+  },
+  {
+   "name": "レインウェア",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レインコート",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レインブーツ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レーザーディスク（LD）",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レーザーポインター",
+   "category": "ippan",
+   "note": "電池は有害ごみへ",
+   "tags": []
+  },
+  {
+   "name": "レースカーテン",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レガース",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レギンス",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レコード",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レコードジャケット",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レコードプレーヤー",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "レシート（感熱紙）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "れしーと（かんねつし）"
+   ]
+  },
+  {
+   "name": "レジ袋",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "れじぶくろ"
+   ]
+  },
+  {
+   "name": "レジャーテーブル",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レジャーボート（ゴムボート）",
+   "category": "ippan",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "レターオープナー",
+   "category": "metal",
+   "note": "電池は有害ごみへ（電池式）",
+   "tags": []
+  },
+  {
+   "name": "レターケース",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "レタースケール",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レッグウォーマー",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レトルト食品の袋・容器",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "れとるとしょくひんのふくろ・ようき"
+   ]
+  },
+  {
+   "name": "レンガ",
+   "category": "unknown",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レンガタイル",
+   "category": "unknown",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レンゲ",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "レンジ（電子・ガス）",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": [
+    "れんじ（でんし・がす）"
+   ]
+  },
+  {
+   "name": "レンジガード（レンジパネル）",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レンジカバー",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レンジラック",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "レンジフード",
+   "category": "sodai",
+   "note": "業者が取り外した場合は施工業者に相談してください",
+   "tags": []
+  },
+  {
+   "name": "レンジフードファン",
+   "category": "sodai",
+   "note": "業者が取り外した場合は施工業者に相談してください",
+   "tags": []
+  },
+  {
+   "name": "レンジフード（換気扇）フィルター",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "れんじふーど（かんきせん）ふぃるたー"
+   ]
+  },
+  {
+   "name": "レンズ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "蝋（ろう）",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ろう（ろう）"
+   ]
+  },
+  {
+   "name": "ろうそく",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "老眼鏡",
+   "category": "ippan",
+   "note": "ガラスレンズも普通ごみへ",
+   "tags": [
+    "ろうがんきょう"
+   ]
+  },
+  {
+   "name": "ろう紙",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ろうかみ"
+   ]
+  },
+  {
+   "name": "漏斗（ろうと）",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": [
+    "じょうご（ろうと）"
+   ]
+  },
+  {
+   "name": "ろ紙",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "ろかみ"
+   ]
+  },
+  {
+   "name": "ロジンバッグ（野球用品）",
+   "category": "ippan",
+   "note": "大量の廃棄は不可",
+   "tags": [
+    "ろじんばっぐ（やきゅうようひん）"
+   ]
+  },
+  {
+   "name": "ロースターグリル",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ローソファー",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ロードコーン（カラーコーン）",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ロープ（天然繊維製・化学繊維）",
+   "category": "ippan",
+   "note": "50cm程度に切断して出してください",
+   "tags": [
+    "ろーぷ（てんねんせんいせい・かがくせんい）"
+   ]
+  },
+  {
+   "name": "ロープ（金属製）",
+   "category": "metal",
+   "note": "",
+   "tags": [
+    "ろーぷ（きんぞくせい）"
+   ]
+  },
+  {
+   "name": "ローボード",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ローラーシューズ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ローラースケート",
+   "category": "ippan",
+   "note": "金具はなるべく取り外して資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "ローラーブレード",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ロールアップカーテン",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ロールスクリーン",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ロッカー（スチール製）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "ろっかー（すちーるせい）"
+   ]
+  },
+  {
+   "name": "六角棒レンチ",
+   "category": "metal",
+   "note": "",
+   "tags": [
+    "ろっかくぼうれんち"
+   ]
+  },
+  {
+   "name": "ロッキングチェアー",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ロデオマシーン（乗馬マシーン）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "ろでおましーん（じょうばましーん）"
+   ]
+  },
+  {
+   "name": "ロボットクリーナー",
+   "category": "metal",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ワープロ",
+   "category": "metal",
+   "note": "指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ワープロインクリボン",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ワードプロセッサー",
+   "category": "metal",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ワイパー",
+   "category": "metal",
+   "note": "個人が取り外したものに限る。ゴムの部分は普通ごみへ",
+   "tags": []
+  },
+  {
+   "name": "ワイヤーロープ",
+   "category": "metal",
+   "note": "ばらけない様にヒモで縛ってください。指定袋に入らない場合は粗大ごみ",
+   "tags": []
+  },
+  {
+   "name": "ワイヤー錠",
+   "category": "metal",
+   "note": "",
+   "tags": [
+    "わいやーじょう"
+   ]
+  },
+  {
+   "name": "ワインオープナー",
+   "category": "metal",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ワインクーラー",
+   "category": "ippan",
+   "note": "金属製は資源（金属）へ",
+   "tags": []
+  },
+  {
+   "name": "ワインのコルク",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "輪ゴム",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "わごむ"
+   ]
+  },
+  {
+   "name": "ワゴン",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ワサビのチューブ",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "和紙",
+   "category": "kami",
+   "note": "ヒモで束ねて出してください",
+   "tags": [
+    "わし"
+   ]
+  },
+  {
+   "name": "綿・綿入りのもの",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "めん・わたいりのもの"
+   ]
+  },
+  {
+   "name": "ワックス",
+   "category": "ippan",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ワックス加工紙",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "わっくすかこうし"
+   ]
+  },
+  {
+   "name": "ワッシャー（座金）",
+   "category": "metal",
+   "note": "",
+   "tags": [
+    "わっしゃー（ざがね）"
+   ]
+  },
+  {
+   "name": "和服",
+   "category": "fuku",
+   "note": "軽くたたんでから、透明または半透明の袋に入れる。汚損している場合は普通ごみへ",
+   "tags": [
+    "わふく"
+   ]
+  },
+  {
+   "name": "わら製品",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "わらせいひん"
+   ]
+  },
+  {
+   "name": "割りばし",
+   "category": "ippan",
+   "note": "",
+   "tags": [
+    "わりばし"
+   ]
+  },
+  {
+   "name": "割れたビン",
+   "category": "ippan",
+   "note": "危ないので紙等に包んで袋に入れて、他の普通ごみと一緒に出してください。ごみ袋には「ガラス」と表示",
+   "tags": [
+    "われたびん"
+   ]
   }
  ],
  "contact": [
