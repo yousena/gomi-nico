@@ -1,0 +1,379 @@
+{
+  "municipality_id": "miho",
+  "name": "美浦村",
+  "prefecture": "茨城県",
+  "population": 13269,
+  "ad_type": "none",
+  "official_banner_url": "",
+  "brand_color": "#936567",
+  "official_url": "https://www.vill.miho.lg.jp/page/dir001520.html",
+  "official_url_label": "美浦村公式ホームページ（ごみ処理について）",
+  "citation_date": "2026年9月",
+  "cityLogo": null,
+  "seo": {
+    "title": "美浦村のごみ収集日・分別と出し方｜ごみニコ",
+    "description": "茨城県稲敷郡美浦村のごみ収集日をカレンダーで確認、品目名で分別と出し方もすぐ検索。燃やすごみは村内全域で毎週月・木曜日。無料・登録不要。",
+    "keywords": "ごみ,分別,収集日,カレンダー,燃やすごみ,資源物,粗大ごみ,美浦村",
+    "h1Title": "美浦村のごみ分別",
+    "contactCardNote": "生活安全課へのご連絡",
+    "calDayWeight": 500,
+    "serviceName": "美浦村 ごみ収集サービス",
+    "orgName": "美浦村 生活安全課",
+    "orgTelephone": "029-885-0340",
+    "addressLocality": "美浦村",
+    "addressRegion": "茨城県",
+    "faq": [
+      {
+        "name": "美浦村の燃やすごみの収集日はいつですか？",
+        "text": "村内全域で毎週月・木曜日です。指定の袋に入れて出してください。"
+      },
+      {
+        "name": "ビン・ガラス類、金属類はいつ出せますか？",
+        "text": "火曜日が収集日です。毎月第1火曜日はビン・ガラス類、それ以外の火曜日（第2〜5）は金属類（小型家電・せともの類を含む）です。"
+      },
+      {
+        "name": "プラスチック製容器包装や紙製容器包装はいつ出せますか？",
+        "text": "金曜日が収集日です。第1・3金曜日はプラスチック製容器包装、第2・4金曜日は紙製容器包装・紙パックです。新聞紙・雑誌類・ダンボールは毎月第3水曜日のみの収集です。"
+      },
+      {
+        "name": "美浦村の粗大ごみはどうやって出しますか？",
+        "text": "戸別の収集はなく、江戸崎地方衛生土木組合まで直接搬入します。ペットボトルも拠点回収（曜日収集ではありません）です。"
+      }
+    ]
+  },
+  "area_groups": [
+    {
+      "label": "美浦村内（全域共通）",
+      "keys": ["village"]
+    }
+  ],
+  "areas": {
+    "village": {
+      "name": "美浦村内",
+      "moeru": [1, 4],
+      "bin": {"day": 2, "weeks": [1]},
+      "can": {"day": 2, "weeks": [2, 3, 4, 5]},
+      "shigen-pla": {"day": 5, "weeks": [1, 3, 5]},
+      "kami": {"day": 5, "weeks": [2, 4]},
+      "zasshi": {"day": 3, "weeks": [3]}
+    }
+  },
+  "categories": {
+    "moeru": {
+      "label": "燃やすごみ",
+      "how": "村指定の袋に入れて、村内全域で毎週月・木曜日の収集日当日午前8時30分までに集積所へ出す",
+      "allowed": [
+        "残飯・料理くず（水をよく切る）、木くず・小枝（長さ50cm・太さ5cm以内に切って束ねる）",
+        "食用油（紙や布にしみこませる）、竹串",
+        "紙おむつ（便をトイレに流してから）",
+        "靴・カバン・ベルト、肌着・セーター・スカート",
+        "木製玩具、ハンガー・バケツ等のプラスチック製日用品"
+      ],
+      "not_allowed": [
+        "紙製容器包装・プラスチック製容器包装は各資源区分へ",
+        "小型家電（リチウムイオン電池を含むもの）は必ず金属類の日または回収ボックスへ"
+      ],
+      "tips": [
+        "小枝が5束を超える場合は江戸崎地方衛生土木組合へ直接搬入してください"
+      ]
+    },
+    "bin": {
+      "label": "ビン・ガラス類",
+      "how": "毎月第1火曜日に集積所のコンテナへ。空きビンはキャップを外して水ですすぐ",
+      "allowed": [
+        "酒・ビールのビン、清涼飲料水のビン",
+        "コップ類、板ガラス、ポット（魔法ビン含む）",
+        "鏡、蛍光灯、電球、ウィスキービン、ワインビン"
+      ],
+      "not_allowed": [
+        "割れたものを出す場合は危険なので新聞紙などで包んで出す",
+        "せともの類は金属類の日に出す"
+      ],
+      "tips": []
+    },
+    "can": {
+      "label": "金属類",
+      "how": "毎月第1火曜日を除く火曜日（第2〜第5）に集積所のコンテナへ。指定ごみ袋に入るものに限る",
+      "allowed": [
+        "清涼飲料水のスチール缶・アルミ缶（中身を空にしてすすぐ）",
+        "茶碗・皿・土鍋等のせともの類、アイロン、扇風機、炊飯ジャー、トースター、なべ、ヘアードライヤー、ヤカン、フライパン、傘",
+        "乾電池、電話機、小型家電類、金物類"
+      ],
+      "not_allowed": [
+        "スプレー缶・携帯用ガスボンベは爆発の危険があるため必ず使いきってから出す",
+        "リチウムイオン電池が入った小型家電（モバイルバッテリー・電子タバコ等）は衝撃で発熱・発火する危険があるため、必ず金属類の日か小型家電回収ボックスへ"
+      ],
+      "tips": [
+        "刃物などを出す場合は危険なので新聞紙などで包んでください"
+      ]
+    },
+    "shigen-pla": {
+      "label": "プラスチック製容器包装",
+      "how": "毎月第1・3金曜日に出す。中身を空にし、すすいだ後、水切りしてから出す",
+      "allowed": [
+        "レジ袋、お菓子の袋、コンビニ等の弁当容器、カップめんの容器",
+        "シャンプー・リンスの容器、洗剤の容器",
+        "ペットボトルのラベル・キャップ（ボトル本体はペットボトルの区分へ）"
+      ],
+      "not_allowed": [
+        "内容物が取りきれないもの、汚れがひどいものは燃やすごみへ",
+        "薬類のプラスチック容器、ラップ類はすべて燃やすごみへ",
+        "容器包装にあたらないプラスチック製品そのものは燃やすごみへ"
+      ],
+      "tips": [
+        "指定袋には個々に入れてください（子袋にまとめたまま出さない）"
+      ]
+    },
+    "kami": {
+      "label": "紙製容器包装・紙パック",
+      "how": "毎月第2・4金曜日に出す",
+      "allowed": [
+        "お菓子の箱、靴の箱、ティッシュペーパーの箱、デパートの包み紙",
+        "牛乳パック、紙袋、紙コップ等"
+      ],
+      "not_allowed": [
+        "紙以外のものが付いている場合は取り外せるものは取り外し、できないものは燃やすごみへ",
+        "アルミ加工されているもの（裏面が銀色のもの）は燃やすごみへ",
+        "個人情報のある郵便物・タバコの空き箱は燃やすごみへ",
+        "ティッシュペーパー・トイレットペーパーは燃やすごみへ"
+      ],
+      "tips": []
+    },
+    "zasshi": {
+      "label": "新聞紙・雑誌類・ダンボール",
+      "how": "毎月第3水曜日のみの収集。50cm四方程度に折りこみ、ひもで束ねて出す",
+      "allowed": [
+        "新聞紙・チラシ（新聞店配布の紙袋で出すことも可）",
+        "雑誌類、ダンボール"
+      ],
+      "not_allowed": [
+        "書籍等のビニールカバーは取り除いてから出す",
+        "高さ（厚さ）は30cm程度までにする"
+      ],
+      "tips": [
+        "新聞紙（チラシ）・雑誌類・ダンボールは、それぞれ別々に束ねてください"
+      ]
+    },
+    "pet": {
+      "label": "ペットボトル類",
+      "how": "曜日収集ではなく、村内の拠点回収場所（江戸崎地方衛生土木組合の回収場所）へ持ち込む",
+      "allowed": [
+        "醤油・みりん・酒・清涼飲料水・調味料・ドレッシング等のペットボトル（リサイクル表示のあるもの）"
+      ],
+      "not_allowed": [],
+      "tips": [
+        "キャップ・ラベルを取り外して水ですすいだ後、つぶしてください",
+        "回収場所については江戸崎地方衛生土木組合のホームページをご確認ください"
+      ]
+    },
+    "sodai": {
+      "label": "粗大ごみ",
+      "how": "村による戸別収集は行っていません。江戸崎地方衛生土木組合まで直接搬入してください",
+      "allowed": [
+        "掃除機、ステレオ、編み機、ストーブ、ビデオデッキ、ミシン、ヒーター、ブラインド、エレクトーン、ワープロ",
+        "椅子、タンス、応接セット、本棚、こたつ、机、食器棚、ベッド、マットレス、アコーディオンカーテン、布団、毛布、ソファー",
+        "三輪車、乳母車、自転車、金属トタン、古材、畳、針金、ポリバケツ、スキー板、ボイラー"
+      ],
+      "not_allowed": [
+        "ストーブ、ヒーター等は油を抜き乾電池を取り外してから搬入",
+        "マットレス、ソファー等はスプリングを取り除いてから搬入",
+        "ボイラーは断熱材を取り除いてから搬入"
+      ],
+      "tips": [
+        "引越などの一時多量ごみは、自己搬入するか組合の許可業者に依頼してください"
+      ]
+    },
+    "unknown": {
+      "label": "家電リサイクル法対象品・受入不可",
+      "how": "集積所には出せません。買い替えの場合は新しい製品を購入する小売店に、処分のみの場合は購入した小売店に引取りを依頼してください",
+      "allowed": [],
+      "not_allowed": [
+        "テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機（家電リサイクル法対象4品目）",
+        "パソコン本体・ディスプレイ"
+      ],
+      "tips": [
+        "購入店が不明・遠方等で依頼できない場合は回収協力店（ケーズデンキ稲敷店 0299-78-2244、ケーズデンキ稲敷江戸崎店 029-834-5080）へご相談ください。回収希望日の2週間程度前までに申込が必要です（業務用のもの・天井埋込形エアコンは対象外）",
+        "パソコンの処理方法についてはパソコン3R推進協会のホームページをご確認ください",
+        "いずれの方法でも家電リサイクル料・収集運搬料が必要です"
+      ]
+    }
+  },
+  "garbage_db": [
+    {"name": "残飯・料理くず", "category": "moeru", "note": "水をよく切る", "tags": ["ざんぱん・りょうりくず"]},
+    {"name": "木くず・小枝", "category": "moeru", "note": "長さ50cm・太さ5cm以内に切って束ねる", "tags": ["きくず・こえだ"]},
+    {"name": "食用油", "category": "moeru", "note": "紙や布にしみこませる", "tags": ["しょくようあぶら"]},
+    {"name": "竹串", "category": "moeru", "note": "", "tags": ["たけぐし"]},
+    {"name": "紙おむつ", "category": "moeru", "note": "便をトイレに流してから", "tags": ["かみおむつ"]},
+    {"name": "靴", "category": "moeru", "note": "", "tags": ["くつ"]},
+    {"name": "カバン", "category": "moeru", "note": "", "tags": ["かばん"]},
+    {"name": "ベルト", "category": "moeru", "note": "", "tags": ["べると"]},
+    {"name": "肌着", "category": "moeru", "note": "", "tags": ["はだぎ"]},
+    {"name": "セーター", "category": "moeru", "note": "", "tags": ["せーたー"]},
+    {"name": "スカート", "category": "moeru", "note": "", "tags": ["すかーと"]},
+    {"name": "木製玩具", "category": "moeru", "note": "", "tags": ["もくせいがんぐ"]},
+    {"name": "ティッシュ", "category": "moeru", "note": "", "tags": ["てぃっしゅ"], "source": "estimated"},
+    {"name": "割り箸", "category": "moeru", "note": "", "tags": ["わりばし"], "source": "estimated"},
+    {"name": "卵の殻", "category": "moeru", "note": "", "tags": ["たまごのから"], "source": "estimated"},
+    {"name": "輪ゴム", "category": "moeru", "note": "", "tags": ["わごむ"], "source": "estimated"},
+    {"name": "使い捨てマスク", "category": "moeru", "note": "", "tags": ["つかいすてますく"], "source": "estimated"},
+    {"name": "野菜くず", "category": "moeru", "note": "残飯・料理くずと同様、水をよく切る", "tags": ["やさいくず"]},
+    {"name": "カセットテープ", "category": "moeru", "note": "", "tags": ["かせっとてーぷ"]},
+    {"name": "スリッパ", "category": "moeru", "note": "", "tags": ["すりっぱ"]},
+    {"name": "サンダル", "category": "moeru", "note": "", "tags": ["さんだる"]},
+    {"name": "酒・ビールのビン", "category": "bin", "note": "キャップを外して水ですすぐ", "tags": ["さけ・びーるのびん"]},
+    {"name": "清涼飲料水のビン", "category": "bin", "note": "", "tags": ["せいりょういんりょうすいのびん"]},
+    {"name": "コップ類", "category": "bin", "note": "", "tags": ["こっぷるい"]},
+    {"name": "板ガラス", "category": "bin", "note": "割れたものは新聞紙などで包む", "tags": ["いたがらす"]},
+    {"name": "ポット（魔法ビン含む）", "category": "bin", "note": "", "tags": ["ぽっと"]},
+    {"name": "鏡", "category": "bin", "note": "", "tags": ["かがみ"]},
+    {"name": "蛍光灯", "category": "bin", "note": "", "tags": ["けいこうとう"]},
+    {"name": "電球", "category": "bin", "note": "", "tags": ["でんきゅう"]},
+    {"name": "酢ビン", "category": "bin", "note": "", "tags": ["すびん"]},
+    {"name": "醤油ビン", "category": "bin", "note": "", "tags": ["しょうゆびん"]},
+    {"name": "食用油ビン", "category": "bin", "note": "", "tags": ["しょくようあぶらびん"]},
+    {"name": "薬剤ドリンクビン", "category": "bin", "note": "", "tags": ["やくざいどりんくびん"]},
+    {"name": "ウィスキービン", "category": "bin", "note": "", "tags": ["ういすきーびん"]},
+    {"name": "ワインビン", "category": "bin", "note": "", "tags": ["わいんびん"]},
+    {"name": "スチール缶", "category": "can", "note": "中身を空にしてすすぐ", "tags": ["すちーるかん"]},
+    {"name": "アルミ缶", "category": "can", "note": "中身を空にしてすすぐ", "tags": ["あるみかん"]},
+    {"name": "茶碗・皿・土鍋", "category": "can", "note": "せともの類", "tags": ["ちゃわん・さら・どなべ"]},
+    {"name": "アイロン", "category": "can", "note": "", "tags": ["あいろん"]},
+    {"name": "扇風機", "category": "can", "note": "", "tags": ["せんぷうき"]},
+    {"name": "炊飯ジャー", "category": "can", "note": "", "tags": ["すいはんじゃー"]},
+    {"name": "トースター", "category": "can", "note": "", "tags": ["とーすたー"]},
+    {"name": "なべ", "category": "can", "note": "", "tags": ["なべ"]},
+    {"name": "ヘアードライヤー", "category": "can", "note": "", "tags": ["へあーどらいやー"]},
+    {"name": "ヤカン", "category": "can", "note": "", "tags": ["やかん"]},
+    {"name": "フライパン", "category": "can", "note": "", "tags": ["ふらいぱん"]},
+    {"name": "傘", "category": "can", "note": "", "tags": ["かさ"]},
+    {"name": "乾電池", "category": "can", "note": "", "tags": ["かんでんち"]},
+    {"name": "電話機", "category": "can", "note": "", "tags": ["でんわき"]},
+    {"name": "卓上コンロのガスボンベ", "category": "can", "note": "使いきってから出す", "tags": ["たくじょうこんろのがすぼんべ"]},
+    {"name": "スプレー缶", "category": "can", "note": "使いきってから出す", "tags": ["すぷれーかん"]},
+    {"name": "モバイルバッテリー", "category": "can", "note": "必ず金属類の日か回収ボックスへ", "tags": ["もばいるばってりー"]},
+    {"name": "電子タバコ", "category": "can", "note": "必ず金属類の日か回収ボックスへ", "tags": ["でんしたばこ"]},
+    {"name": "携帯用ガスボンベ", "category": "can", "note": "使いきってから出す", "tags": ["けいたいようがすぼんべ"]},
+    {"name": "スマートフォン", "category": "can", "note": "リチウムイオン電池内蔵。必ず金属類の日か小型家電回収ボックスへ", "tags": ["すまーとふぉん"]},
+    {"name": "ゲーム機", "category": "can", "note": "リチウムイオン電池内蔵。必ず金属類の日か小型家電回収ボックスへ", "tags": ["げーむき"]},
+    {"name": "加熱式タバコ", "category": "can", "note": "リチウムイオン電池内蔵。必ず金属類の日か小型家電回収ボックスへ", "tags": ["かねつしきたばこ"]},
+    {"name": "電子機器のバッテリー", "category": "can", "note": "リチウムイオン電池。必ず金属類の日か小型家電回収ボックスへ", "tags": ["でんしききのばってりー"]},
+    {"name": "レジ袋", "category": "shigen-pla", "note": "", "tags": ["れじぶくろ"]},
+    {"name": "お菓子の袋", "category": "shigen-pla", "note": "", "tags": ["おかしのふくろ"]},
+    {"name": "コンビニ弁当の容器", "category": "shigen-pla", "note": "", "tags": ["こんびにべんとうのようき"]},
+    {"name": "カップめんの容器", "category": "shigen-pla", "note": "", "tags": ["かっぷめんのようき"]},
+    {"name": "シャンプーの容器", "category": "shigen-pla", "note": "", "tags": ["しゃんぷーのようき"]},
+    {"name": "洗剤の容器", "category": "shigen-pla", "note": "", "tags": ["せんざいのようき"]},
+    {"name": "ペットボトルのキャップ", "category": "shigen-pla", "note": "", "tags": ["ぺっとぼとるのきゃっぷ"]},
+    {"name": "ペットボトルのラベル", "category": "shigen-pla", "note": "", "tags": ["ぺっとぼとるのらべる"]},
+    {"name": "リンスの容器", "category": "shigen-pla", "note": "", "tags": ["りんすのようき"]},
+    {"name": "お菓子の箱", "category": "kami", "note": "", "tags": ["おかしのはこ"]},
+    {"name": "靴の箱", "category": "kami", "note": "", "tags": ["くつのはこ"]},
+    {"name": "ティッシュペーパーの箱", "category": "kami", "note": "中のティッシュは燃やすごみ", "tags": ["てぃっしゅぺーぱーのはこ"]},
+    {"name": "牛乳パック", "category": "kami", "note": "", "tags": ["ぎゅうにゅうぱっく"]},
+    {"name": "紙袋", "category": "kami", "note": "", "tags": ["かみぶくろ"]},
+    {"name": "紙コップ", "category": "kami", "note": "", "tags": ["かみこっぷ"]},
+    {"name": "デパートの包み紙", "category": "kami", "note": "", "tags": ["でぱーとのつつみがみ"]},
+    {"name": "新聞紙", "category": "zasshi", "note": "チラシと束ねてよい", "tags": ["しんぶんし"]},
+    {"name": "チラシ", "category": "zasshi", "note": "", "tags": ["ちらし"]},
+    {"name": "雑誌", "category": "zasshi", "note": "", "tags": ["ざっし"]},
+    {"name": "ダンボール", "category": "zasshi", "note": "", "tags": ["だんぼーる"]},
+    {"name": "ペットボトル", "category": "pet", "note": "キャップ・ラベルを外し水ですすいでつぶす。拠点回収", "tags": ["ぺっとぼとる"]},
+    {"name": "掃除機", "category": "sodai", "note": "組合まで直接搬入", "tags": ["そうじき"]},
+    {"name": "ステレオ", "category": "sodai", "note": "", "tags": ["すてれお"]},
+    {"name": "編み機", "category": "sodai", "note": "", "tags": ["あみき"]},
+    {"name": "ストーブ", "category": "sodai", "note": "油を抜き乾電池を外す", "tags": ["すとーぶ"]},
+    {"name": "ビデオデッキ", "category": "sodai", "note": "", "tags": ["びでおでっき"]},
+    {"name": "ミシン", "category": "sodai", "note": "", "tags": ["みしん"]},
+    {"name": "ヒーター", "category": "sodai", "note": "油を抜き乾電池を外す", "tags": ["ひーたー"]},
+    {"name": "ブラインド", "category": "sodai", "note": "", "tags": ["ぶらいんど"]},
+    {"name": "エレクトーン", "category": "sodai", "note": "", "tags": ["えれくとーん"]},
+    {"name": "ワープロ", "category": "sodai", "note": "", "tags": ["わーぷろ"]},
+    {"name": "椅子", "category": "sodai", "note": "", "tags": ["いす"]},
+    {"name": "タンス", "category": "sodai", "note": "", "tags": ["たんす"]},
+    {"name": "応接セット", "category": "sodai", "note": "", "tags": ["おうせつせっと"]},
+    {"name": "本棚", "category": "sodai", "note": "", "tags": ["ほんだな"]},
+    {"name": "こたつ", "category": "sodai", "note": "", "tags": ["こたつ"]},
+    {"name": "机", "category": "sodai", "note": "", "tags": ["つくえ"]},
+    {"name": "食器棚", "category": "sodai", "note": "", "tags": ["しょっきだな"]},
+    {"name": "ベッド", "category": "sodai", "note": "", "tags": ["べっど"]},
+    {"name": "ジュータン", "category": "sodai", "note": "", "tags": ["じゅーたん"]},
+    {"name": "マットレス", "category": "sodai", "note": "スプリングを取り除く", "tags": ["まっとれす"]},
+    {"name": "アコーディオンカーテン", "category": "sodai", "note": "", "tags": ["あこーでぃおんかーてん"]},
+    {"name": "布団", "category": "sodai", "note": "", "tags": ["ふとん"]},
+    {"name": "毛布", "category": "sodai", "note": "", "tags": ["もうふ"]},
+    {"name": "ソファー", "category": "sodai", "note": "スプリングを取り除く", "tags": ["そふぁー"]},
+    {"name": "三輪車", "category": "sodai", "note": "", "tags": ["さんりんしゃ"]},
+    {"name": "乳母車", "category": "sodai", "note": "", "tags": ["うばぐるま"]},
+    {"name": "自転車", "category": "sodai", "note": "", "tags": ["じてんしゃ"]},
+    {"name": "金属トタン", "category": "sodai", "note": "", "tags": ["きんぞくとたん"]},
+    {"name": "古材", "category": "sodai", "note": "", "tags": ["こざい"]},
+    {"name": "畳", "category": "sodai", "note": "", "tags": ["たたみ"]},
+    {"name": "針金", "category": "sodai", "note": "", "tags": ["はりがね"]},
+    {"name": "ポリバケツ", "category": "sodai", "note": "", "tags": ["ぽりばけつ"]},
+    {"name": "スキー板", "category": "sodai", "note": "", "tags": ["すきーいた"]},
+    {"name": "ボイラー", "category": "sodai", "note": "断熱材を取り除く", "tags": ["ぼいらー"]},
+    {"name": "テレビ", "category": "unknown", "note": "家電リサイクル法対象。購入店に引取り依頼", "tags": ["てれび"]},
+    {"name": "エアコン", "category": "unknown", "note": "家電リサイクル法対象", "tags": ["えあこん"]},
+    {"name": "冷蔵庫・冷凍庫", "category": "unknown", "note": "家電リサイクル法対象", "tags": ["れいぞうこ・れいとうこ"]},
+    {"name": "洗濯機・衣類乾燥機", "category": "unknown", "note": "家電リサイクル法対象", "tags": ["せんたくき・いるいかんそうき"]},
+    {"name": "パソコン本体", "category": "unknown", "note": "パソコン3R推進協会のホームページを確認", "tags": ["ぱそこんほんたい"]},
+    {"name": "パソコン用ディスプレイ", "category": "unknown", "note": "", "tags": ["ぱそこんようでぃすぷれい"]},
+    {"name": "タバコの吸い殻", "category": "moeru", "note": "灰を十分に消してから出す（全国的に一般的な扱いの参考情報）", "tags": ["たばこのすいがら"], "source": "estimated"},
+    {"name": "生理用品", "category": "moeru", "note": "全国的に一般的な扱いの参考情報", "tags": ["せいりようひん"], "source": "estimated"},
+    {"name": "紙皿", "category": "moeru", "note": "汚れが落ちないものは燃やすごみへ（全国的に一般的な扱いの参考情報）", "tags": ["かみざら"], "source": "estimated"},
+    {"name": "ゴムホース", "category": "moeru", "note": "全国的に一般的な扱いの参考情報", "tags": [], "source": "estimated"},
+    {"name": "文房具", "category": "moeru", "note": "ボールペン・鉛筆等（全国的に一般的な扱いの参考情報）", "tags": ["ぶんぼうぐ"], "source": "estimated"},
+    {"name": "使い捨て手袋", "category": "moeru", "note": "全国的に一般的な扱いの参考情報", "tags": ["つかいすててぶくろ"], "source": "estimated"},
+    {"name": "粘着テープ", "category": "moeru", "note": "セロハンテープ・ガムテープ等（全国的に一般的な扱いの参考情報）", "tags": ["ねんちゃくてーぷ"], "source": "estimated"},
+    {"name": "キッチンペーパー", "category": "moeru", "note": "全国的に一般的な扱いの参考情報", "tags": [], "source": "estimated"},
+    {"name": "詰め替えパウチ", "category": "shigen-pla", "note": "中を空にしてすすいでから出す（全国的に一般的な扱いの参考情報）", "tags": ["つめかえぱうち"], "source": "estimated"},
+    {"name": "弁当容器", "category": "shigen-pla", "note": "中を空にして洗って水切り（全国的に一般的な扱いの参考情報）", "tags": ["べんとうようき"], "source": "estimated"},
+    {"name": "ヨーグルト容器", "category": "shigen-pla", "note": "中を空にして洗って水切り（全国的に一般的な扱いの参考情報）", "tags": ["よーぐるとようき"], "source": "estimated"},
+    {"name": "クリップ", "category": "can", "note": "全国的に一般的な扱いの参考情報", "tags": [], "source": "estimated"},
+    {"name": "ホチキス針", "category": "can", "note": "全国的に一般的な扱いの参考情報", "tags": ["ほちきすばり"], "source": "estimated"},
+    {"name": "カミソリ", "category": "can", "note": "刃を新聞紙等で包んで危険と分かるようにする（全国的に一般的な扱いの参考情報）", "tags": [], "source": "estimated"}
+  ],
+  "contact": [
+    {
+      "name": "美浦村 生活安全課",
+      "note": "分別方法・収集日に関すること",
+      "tel": "0298850340",
+      "hours": "平日8:30〜17:15（土日・祝日・年末年始を除く）"
+    }
+  ],
+  "features": {
+    "notice": true,
+    "faq": true,
+    "vendor": false,
+    "contact": true,
+    "language": true,
+    "affiliate": true
+  },
+  "notices": [
+    {
+      "id": 1,
+      "date": "2026-03-18",
+      "title": "年末年始のごみ収集日について",
+      "body": "12月30日（水）は年末特別収集を行います。1月1日〜3日は年始休暇のため収集がなく、次週を第1週の収集としますので、資源ごみの収集日にご注意ください。",
+      "source": "美浦村公式ホームページ"
+    },
+    {
+      "id": 2,
+      "date": "2026-07-01",
+      "title": "ごみ集積所からの資源物の持ち去り行為にご注意ください",
+      "body": "集積所に出した資源ごみを無断で持ち去る行為が確認されています。持ち去りにお気づきの際はご連絡ください。",
+      "source": "美浦村公式ホームページ"
+    }
+  ],
+  "rules": {
+    "title": "美浦村のごみ分別ルール",
+    "items": [
+      "燃やすごみは村内全域で毎週月・木曜日",
+      "ビン・ガラス類は毎月第1火曜日、金属類はそれ以外の火曜日（第2〜5）",
+      "プラスチック製容器包装は第1・3金曜日、紙製容器包装・紙パックは第2・4金曜日",
+      "新聞紙・雑誌類・ダンボールは毎月第3水曜日のみ",
+      "ペットボトルは曜日収集ではなく拠点回収、粗大ごみは戸別収集なし（組合へ直接搬入）"
+    ]
+  },
+  "affiliate_items": []
+}

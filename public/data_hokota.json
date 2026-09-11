@@ -1,0 +1,11293 @@
+{
+  "municipality_id": "hokota",
+  "name": "鉾田市",
+  "prefecture": "茨城県",
+  "population": 43357,
+  "ad_type": "none",
+  "official_banner_url": "",
+  "brand_color": "#8A5C2E",
+  "official_url": "https://www.city.hokota.lg.jp/page/page004091.html",
+  "official_url_label": "鉾田市公式ホームページ（ごみの処理）",
+  "citation_date": "2026年9月",
+  "cityLogo": null,
+  "seo": {
+    "title": "鉾田市のごみ収集日・分別と出し方｜ごみニコ",
+    "description": "茨城県鉾田市のごみ収集日をカレンダーで確認、品目名で分別と出し方もすぐ検索。旭・鉾田・大洋地区の地区別の収集曜日、資源物・ペットボトル・有害ごみの収集日がひと目でわかります。無料・登録不要。",
+    "keywords": "ごみ,分別,収集日,カレンダー,可燃ごみ,不燃ごみ,資源物,ペットボトル,有害ごみ,粗大ごみ,鉾田市",
+    "h1Title": "鉾田市のごみ分別",
+    "contactCardNote": "生活環境課へのご連絡",
+    "calDayWeight": 500,
+    "serviceName": "鉾田市 ごみ収集サービス",
+    "orgName": "鉾田市 環境経済部 生活環境課",
+    "orgTelephone": "0291-36-7486",
+    "addressLocality": "鉾田市",
+    "addressRegion": "茨城県",
+    "faq": [
+      {
+        "name": "鉾田市の可燃ごみの収集日はいつですか？",
+        "text": "鉾田市は旭・鉾田・大洋の3地区、さらに地区（大字）ごとに分かれており、可燃ごみは週2回、お住まいの地区により月曜・木曜または火曜・金曜のいずれかです。アプリでお住まいの地区を選ぶと収集日がすぐにわかります。"
+      },
+      {
+        "name": "鉾田市の空き缶はどう捨てますか？",
+        "text": "鉾田・大洋地区では空き缶は不燃ごみとして全域毎週水曜日に収集します（処理施設で分別・リサイクル）。旭地区では空き缶は資源物（びん・缶・紙類）として月2回、指定曜日に収集します。お住まいの地区で確認してください。"
+      },
+      {
+        "name": "鉾田市の有害ごみと使用済み小型家電はどう出しますか？",
+        "text": "蛍光灯・電池・水銀体温計等の有害ごみは、有害シールを貼ってペットボトルと同じ日（月2回）に集積所へ出します。携帯電話やデジタルカメラなどの小型家電は、市役所本庁舎や市民センターなど市内7か所の回収ボックスに持ち込みます。"
+      },
+      {
+        "name": "鉾田市の粗大ごみはどうやって出しますか？",
+        "text": "鉾田市では粗大ごみの集積所収集は行っておらず、各自で鉾田クリーンセンター（鉾田・大洋地区）または大洗、鉾田、水戸環境組合（旭地区）へ自己搬入します。50kgを超える場合は25円/kgの処理料金がかかります。"
+      },
+      {
+        "name": "鉾田市でテレビ・冷蔵庫などの家電はどう処分しますか？",
+        "text": "家電リサイクル法対象の4品目（テレビ・洗濯機・冷蔵庫冷凍庫・エアコン・衣類乾燥機）は市では収集できません。買い替え店や購入店に処分を依頼するか、郵便局でリサイクル料金を納入のうえ鉾田クリーンセンターへ自己搬入してください。"
+      }
+    ]
+  },
+  "area_groups": [
+    {
+      "label": "旭地区",
+      "keys": [
+        "arechi",
+        "iida",
+        "daijin",
+        "oonuma",
+        "kashiwagumanitta",
+        "waoka",
+        "kachishita",
+        "kachishimoshinden",
+        "ueoota",
+        "uegama",
+        "ueshikata",
+        "konama",
+        "konamani",
+        "sawajiri",
+        "shitaoota",
+        "shitashikata",
+        "takihama",
+        "takihamanitta",
+        "tazaki",
+        "tamada",
+        "tsukuriyaichi",
+        "tsukuriyani",
+        "tsukuriyasan",
+        "joubanichi",
+        "joubanni",
+        "saishoushita",
+        "noda",
+        "hiyamizu",
+        "minowanishi",
+        "minowahigashi",
+        "sanwa",
+        "shouyama",
+        "yutsubo"
+      ]
+    },
+    {
+      "label": "鉾田地区",
+      "keys": [
+        "aoyagi",
+        "aoyama",
+        "akiyama",
+        "asahimachi",
+        "awano",
+        "awakita",
+        "awatakano",
+        "awaminami",
+        "meshimei",
+        "ishihachinohe",
+        "ookawa",
+        "ootake",
+        "ooto",
+        "oowada",
+        "okahorigome",
+        "odakane",
+        "hitaisou",
+        "kashiwaguma",
+        "kemurita",
+        "kamijuku",
+        "kamisuwa",
+        "kamitonda",
+        "shakuyado",
+        "shakuyadonitta",
+        "kushibanue",
+        "kushibanshita",
+        "gennama",
+        "gunsakai",
+        "komagine",
+        "sakato",
+        "sakuramoto",
+        "shichikenmachi",
+        "shitaarechi",
+        "shitatomita",
+        "shouwachou",
+        "shiratsuka",
+        "shinhokota",
+        "shinhokotanishi",
+        "shinmachi",
+        "suga",
+        "sukaitaun",
+        "kannotani",
+        "takada",
+        "tanaka",
+        "tsukushinodanchi",
+        "toukesaki",
+        "touma",
+        "tokuyadonitta",
+        "tokuyadohongou",
+        "tosunitta",
+        "tosuhongou",
+        "nakasu",
+        "nishidai",
+        "seihanhara",
+        "nishimachi",
+        "niisato",
+        "notomo",
+        "hanbara",
+        "higashino",
+        "fujinuma",
+        "funaki",
+        "koyado",
+        "horinouchi",
+        "honchou",
+        "oshiro",
+        "minamino",
+        "mihara",
+        "miyauchi",
+        "motohashimachi",
+        "kouyou",
+        "yasuzuka",
+        "yugei",
+        "yokochou",
+        "yorii"
+      ]
+    },
+    {
+      "label": "大洋地区",
+      "keys": [
+        "aoyama2",
+        "agyoku",
+        "azumahara",
+        "arechi2",
+        "iijima",
+        "egawa",
+        "ookura",
+        "kajiyama",
+        "kamisawa",
+        "uehataki",
+        "kyouchikama",
+        "kyuuuekamijuku",
+        "kyuujougeyado",
+        "kumitsuka",
+        "kinnami",
+        "sakaikama",
+        "shiiyukinai",
+        "shimozawa",
+        "daihamanishibu",
+        "daihamaichi",
+        "daihamani",
+        "takakama",
+        "tagonuma",
+        "tatsuka",
+        "tenjindaira",
+        "nakai",
+        "nigorisawa",
+        "higashihara",
+        "satsu",
+        "nijuusaku",
+        "takeshiyokama",
+        "besshokama",
+        "machiyama",
+        "wada"
+      ]
+    }
+  ],
+  "areas": {
+    "arechi": {
+      "name": "荒地",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "iida": {
+      "name": "飯田",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "daijin": {
+      "name": "大神",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "oonuma": {
+      "name": "大沼",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kashiwagumanitta": {
+      "name": "柏熊新田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "waoka": {
+      "name": "和岡",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kachishita": {
+      "name": "勝下",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kachishimoshinden": {
+      "name": "勝下新田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "ueoota": {
+      "name": "上太田",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "uegama": {
+      "name": "上釜",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "ueshikata": {
+      "name": "上鹿田",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "konama": {
+      "name": "子生",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "konamani": {
+      "name": "子生第二",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "sawajiri": {
+      "name": "沢尻",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "shitaoota": {
+      "name": "下太田",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "shitashikata": {
+      "name": "下鹿田",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "takihama": {
+      "name": "滝浜",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "takihamanitta": {
+      "name": "滝浜新田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "tazaki": {
+      "name": "田崎",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "tamada": {
+      "name": "玉田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "tsukuriyaichi": {
+      "name": "造谷第一",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "tsukuriyani": {
+      "name": "造谷第二",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "tsukuriyasan": {
+      "name": "造谷第三",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "joubanichi": {
+      "name": "常磐第一",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "joubanni": {
+      "name": "常磐第二",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "saishoushita": {
+      "name": "西勝下",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "noda": {
+      "name": "野田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "hiyamizu": {
+      "name": "冷水",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "minowanishi": {
+      "name": "箕輪西",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "minowahigashi": {
+      "name": "箕輪東",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        4
+      ],
+      "yugai": [
+        4
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "sanwa": {
+      "name": "三和",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "shouyama": {
+      "name": "樅山",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "yutsubo": {
+      "name": "湯坪",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        2
+      ],
+      "yugai": [
+        2
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "can": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "aoyagi": {
+      "name": "青柳",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "aoyama": {
+      "name": "青山",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "akiyama": {
+      "name": "秋山",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "asahimachi": {
+      "name": "旭町",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "awano": {
+      "name": "粟野",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "awakita": {
+      "name": "安房北",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "awatakano": {
+      "name": "安房高野",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "awaminami": {
+      "name": "安房南",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "meshimei": {
+      "name": "飯名",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "ishihachinohe": {
+      "name": "石八戸",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "ookawa": {
+      "name": "大川",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "ootake": {
+      "name": "大竹",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "ooto": {
+      "name": "大戸",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "oowada": {
+      "name": "大和田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "okahorigome": {
+      "name": "岡堀米",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "odakane": {
+      "name": "小高根",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "hitaisou": {
+      "name": "額相",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kashiwaguma": {
+      "name": "柏熊",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kemurita": {
+      "name": "烟田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "kamijuku": {
+      "name": "上宿",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "kamisuwa": {
+      "name": "上諏訪",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kamitonda": {
+      "name": "上冨田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "shakuyado": {
+      "name": "借宿",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "shakuyadonitta": {
+      "name": "借宿新田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kushibanue": {
+      "name": "串挽上",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "kushibanshita": {
+      "name": "串挽下",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "gennama": {
+      "name": "玄生",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "gunsakai": {
+      "name": "郡境",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "komagine": {
+      "name": "駒木根",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "sakato": {
+      "name": "坂戸",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "sakuramoto": {
+      "name": "桜本",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "shichikenmachi": {
+      "name": "七軒町",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "shitaarechi": {
+      "name": "下荒地",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "shitatomita": {
+      "name": "下冨田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "shouwachou": {
+      "name": "昭和町",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "shiratsuka": {
+      "name": "白塚",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "shinhokota": {
+      "name": "新鉾田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "shinhokotanishi": {
+      "name": "新鉾田西",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "shinmachi": {
+      "name": "新町",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "suga": {
+      "name": "須賀",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "sukaitaun": {
+      "name": "スカイタウン",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "kannotani": {
+      "name": "菅野谷",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "takada": {
+      "name": "高田",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "tanaka": {
+      "name": "田中",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "tsukushinodanchi": {
+      "name": "つくし野団地",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "toukesaki": {
+      "name": "塔ヶ崎",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "touma": {
+      "name": "当間",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "tokuyadonitta": {
+      "name": "徳宿新田",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "tokuyadohongou": {
+      "name": "徳宿本郷",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "tosunitta": {
+      "name": "鳥栖新田",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "tosuhongou": {
+      "name": "鳥栖本郷",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "nakasu": {
+      "name": "仲須",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "nishidai": {
+      "name": "西台",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "seihanhara": {
+      "name": "西半原",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "nishimachi": {
+      "name": "西町",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "niisato": {
+      "name": "新里",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "notomo": {
+      "name": "野友",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "hanbara": {
+      "name": "半原",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "higashino": {
+      "name": "東野",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "fujinuma": {
+      "name": "藤沼",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "funaki": {
+      "name": "舟木",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "koyado": {
+      "name": "古宿",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "horinouchi": {
+      "name": "堀之内",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "honchou": {
+      "name": "本町",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "oshiro": {
+      "name": "御城",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "minamino": {
+      "name": "南野",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "mihara": {
+      "name": "美原",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "miyauchi": {
+      "name": "宮内",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "motohashimachi": {
+      "name": "本橋町",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "kouyou": {
+      "name": "紅葉",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "yasuzuka": {
+      "name": "安塚",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "yugei": {
+      "name": "靭負",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "yokochou": {
+      "name": "横町",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "yorii": {
+      "name": "寄居",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 1,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "aoyama2": {
+      "name": "青山",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "agyoku": {
+      "name": "阿玉",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "azumahara": {
+      "name": "吾妻原",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "arechi2": {
+      "name": "荒地",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "iijima": {
+      "name": "飯島",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "egawa": {
+      "name": "江川",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "ookura": {
+      "name": "大蔵",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "kajiyama": {
+      "name": "梶山",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "kamisawa": {
+      "name": "上沢",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "uehataki": {
+      "name": "上幡木",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kyouchikama": {
+      "name": "京知釜",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kyuuuekamijuku": {
+      "name": "汲上上宿",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "kyuujougeyado": {
+      "name": "汲上下宿",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "kumitsuka": {
+      "name": "組塚",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kinnami": {
+      "name": "金並",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "sakaikama": {
+      "name": "堺釜",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "shiiyukinai": {
+      "name": "椎之内",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "shimozawa": {
+      "name": "下沢",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "daihamanishibu": {
+      "name": "台浜西部",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "daihamaichi": {
+      "name": "台浜第一",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "daihamani": {
+      "name": "台浜第二",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "takakama": {
+      "name": "高釜",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "tagonuma": {
+      "name": "田子沼",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "tatsuka": {
+      "name": "田塚",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "tenjindaira": {
+      "name": "天神平",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "nakai": {
+      "name": "中居",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "nigorisawa": {
+      "name": "濁沢",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "higashihara": {
+      "name": "東原",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "satsu": {
+      "name": "札",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "nijuusaku": {
+      "name": "二重作",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "takeshiyokama": {
+      "name": "武与釜",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "besshokama": {
+      "name": "別所釜",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "machiyama": {
+      "name": "町山",
+      "moeru": [
+        1,
+        4
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "wada": {
+      "name": "和田",
+      "moeru": [
+        2,
+        5
+      ],
+      "moenai": [
+        3
+      ],
+      "can": [
+        3
+      ],
+      "kami": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "bin": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "pet": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "yugai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    }
+  },
+  "categories": {
+    "moeru": {
+      "label": "可燃ごみ",
+      "how": "鉾田市の指定ごみ袋に入れて、収集日当日朝7時までに集積所へ出す（週2回、地区により月・木曜日または火・金曜日）",
+      "allowed": [
+        "生ごみ・貝殻（しっかりと水切りをする）",
+        "紙オムツ（汚物はトイレで処理する）",
+        "ゴム製品・ビニール製品・発泡スチロール",
+        "廃食油（紙などに染み込ませるか固める）",
+        "皮革製品（合成皮革製品）",
+        "衣類",
+        "プラスチック製品",
+        "枝木（太さ3cm程度まで・長さ50cm程度・直径30cm程度に束ねる）・草類（枯らしたもの、土を落とす）",
+        "在宅医療廃棄物（使用済みガーゼ・脱脂綿・チューブ類・カテーテル・輸液バッグ。廃液は処分してから）"
+      ],
+      "not_allowed": [
+        "資源物・ペットボトル・びん・空き缶（それぞれの分別区分へ）",
+        "注射針等の鋭利なもの・血液が多量に付着した医療廃棄物（処方された医療機関または薬局へ相談）",
+        "太さ3cmを超える枝木（粗大ごみへ）"
+      ],
+      "tips": [
+        "野外焼却（野焼き）は法律で原則禁止されています",
+        "枝木・草類は一度に2、3束（袋）ずつ出してください",
+        "鉾田クリーンセンター（鉾田・大洋地区）または大洗、鉾田、水戸環境組合（旭地区）へ無料で自己搬入もできます"
+      ],
+      "how_steps": [
+        "指定ごみ袋に入れる",
+        "収集日当日朝7時までに集積所へ",
+        "地区により月・木曜日または火・金曜日（週2回）"
+      ]
+    },
+    "moenai": {
+      "label": "不燃ごみ",
+      "how": "プラスチック製のコンテナに入れて出す（空き缶を含む。地区により週1回、決まった曜日）",
+      "allowed": [
+        "空き缶（中身を残さず水ですすぐ）",
+        "スプレー缶・殺虫剤の缶（中身を使い切り、風通しの良い場所で穴を開ける）",
+        "食器・ガラス製品（割れたものは新聞紙などで包み「キケン」と表示）",
+        "フライパン・なべ・やかん",
+        "刃物類（新聞紙などで包み「キケン」と表示）",
+        "ライター（中身を使い切ってから）"
+      ],
+      "not_allowed": [
+        "1辺が30cmを超えるもの（粗大ごみへ）",
+        "電池が入っているもの（必ず取り外す）",
+        "蛍光灯・電球（切れていないもの）・水銀体温計等（有害ごみへ）"
+      ],
+      "tips": [
+        "小型家電については使用済み小型家電回収ボックスも利用できます",
+        "空き缶は不燃ごみとして収集していますが、処理施設で分別しリサイクルしています"
+      ],
+      "how_steps": [
+        "プラスチック製のコンテナに入れる",
+        "刃物・割れ物は新聞紙などで包み「キケン」と表示する",
+        "地区の収集曜日（鉾田・大洋地区は全域毎週水曜日、旭地区は週1回の指定曜日）に集積所へ"
+      ]
+    },
+    "kami": {
+      "label": "紙類（新聞紙・雑誌・ダンボール・紙パック）",
+      "how": "種類ごとにひもで十字に縛り、資源物の収集日（月2回・第1,3または第2,4の指定曜日）に集積所へ出す",
+      "allowed": [
+        "新聞紙（折込チラシを含む）",
+        "雑誌（週刊誌・カタログなど）",
+        "ダンボール",
+        "紙パック（中を水ですすぐ）"
+      ],
+      "not_allowed": [
+        "粘着テープで縛ったもの、ダンボールに入れて出したもの",
+        "雨にぬれた紙類（次回の収集日に）"
+      ],
+      "tips": [
+        "紙類はぬれるとリサイクルに影響するため、雨の日に出すのは控えてください",
+        "新聞販売店の袋を利用する際もひもで十字に縛ってください"
+      ],
+      "how_steps": [
+        "種類ごとに分ける",
+        "ひもで十字に縛る",
+        "資源物の収集日（月2回）に集積所へ"
+      ]
+    },
+    "bin": {
+      "label": "資源物（びん）",
+      "how": "中身を残さず、中を水ですすいで指定コンテナに入れ、資源物の収集日（月2回・指定曜日）に出す",
+      "allowed": [
+        "茶色びん",
+        "無色びん",
+        "その他びん"
+      ],
+      "not_allowed": [
+        "飲食用以外のもの、割れたり汚れたりしているもの（不燃ごみへ）"
+      ],
+      "tips": [],
+      "how_steps": [
+        "中身を残さず水ですすぐ",
+        "色別の指定コンテナへ入れる",
+        "資源物の収集日（月2回）に集積所へ"
+      ]
+    },
+    "pet": {
+      "label": "ペットボトル",
+      "how": "キャップとラベルを外し（可燃ごみへ）、中を水洗いして専用収集かごに入れ、月2回の指定曜日に出す",
+      "allowed": [
+        "リサイクルマークのあるペットボトル本体（水洗いしたもの）"
+      ],
+      "not_allowed": [
+        "汚れの落ちないもの（可燃ごみへ）",
+        "キャップ・ラベル（可燃ごみへ）"
+      ],
+      "tips": [
+        "風の強い日は収集かごが飛ばないよう注意してください"
+      ],
+      "how_steps": [
+        "キャップとラベルを外す",
+        "中を水洗いする",
+        "専用収集かごへ（月2回の指定曜日）"
+      ]
+    },
+    "yugai": {
+      "label": "有害ごみ・使用済み小型家電",
+      "how": "蛍光灯・電球・電池・水銀体温計等は透明か半透明の袋に入れ、有害シールを貼って集積所へ（月2回・ペットボトルと同じ日）。携帯電話等の小型家電は市内7か所の回収ボックスへ持ち込む",
+      "allowed": [
+        "蛍光灯・電球（切れていないもの）",
+        "乾電池・充電池・携帯電話のバッテリー等",
+        "水銀体温計",
+        "携帯電話・スマートフォン・タブレット端末・デジタルカメラ・ビデオカメラ・ゲーム機・電卓・電子辞書・電気カミソリ・電動歯ブラシ・ヘアドライヤー・ヘッドホン・イヤホン・電子血圧計・カーナビ・ラジオ・USBメモリ等（回収ボックスのサイズ15cm×30cmに入るもの）"
+      ],
+      "not_allowed": [
+        "回収ボックスの投入口に入らない大きさの小型家電（粗大ごみへ）",
+        "割れた蛍光灯・電球（不燃ごみへ）"
+      ],
+      "tips": [
+        "有害シールはごみ袋販売店及び市役所で無料配布しています",
+        "処理施設へ自己搬入する場合、有害シールは不要です",
+        "小型家電回収ボックスに入れる前に個人情報は必ず消去してください。投入されたものは返却できません"
+      ],
+      "how_steps": [
+        "有害ごみ: 透明・半透明の袋に入れ有害シールを貼る→月2回の指定日に集積所へ",
+        "小型家電: 個人情報を消去する→市役所・市民センター等の回収ボックスへ持ち込む"
+      ]
+    },
+    "sodai": {
+      "label": "粗大ごみ（1辺が30cmを超えるごみ）",
+      "how": "集積所での収集は行っていません。各自、鉾田クリーンセンター（鉾田・大洋地区）または大洗、鉾田、水戸環境組合（旭地区）へ自己搬入してください",
+      "allowed": [
+        "石油ストーブ・木製家具",
+        "ふとん・マットレス・カーペット（2、3箇所を縛って搬入）",
+        "ポット・トースター・ファンヒーター・電子レンジ・ガスコンロ",
+        "自転車・ポリタンク等"
+      ],
+      "not_allowed": [
+        "家電リサイクル法対象4品目（テレビ・洗濯機・冷蔵庫冷凍庫・エアコン・衣類乾燥機。リサイクル料金が別途必要）",
+        "電池が入っているもの（必ず取り外す）"
+      ],
+      "tips": [
+        "処理料金は50kgを超える場合25円/kg（45kg＝無料、60kg＝250円が目安）"
+      ],
+      "how_steps": [
+        "電池が入っているものは取り外す",
+        "ふとん等は2、3箇所を縛る",
+        "鉾田クリーンセンターまたは環境組合へ自己搬入する"
+      ]
+    },
+    "unknown": {
+      "label": "市で収集できないもの（処理困難物・リサイクル家電）",
+      "how": "品目によって処分方法が異なります。下記を確認してください",
+      "allowed": [],
+      "not_allowed": [
+        "家電リサイクル法対象4品目（テレビ・洗濯機・冷蔵庫冷凍庫・エアコン・衣類乾燥機）※購入店に処分依頼するか、郵便局でリサイクル料金を納入し鉾田クリーンセンターへ自己搬入",
+        "自動車解体部品（タイヤ・バッテリー・ドア・バンパー等）",
+        "農薬缶・廃ビニール等",
+        "廃油（ガソリン・軽油・灯油・オイル等）",
+        "バイク・原動機付自転車、ピアノ",
+        "注射針等の鋭利な医療廃棄物（かかりつけの医療機関・薬局へ相談）"
+      ],
+      "tips": [
+        "リサイクル家電の自己搬入時は、リサイクル料金とは別に運搬料金（1台1,000円）がかかります"
+      ],
+      "how_steps": [
+        "家電4品目: 購入店に処分依頼するか、郵便局でリサイクル料金を納入し鉾田クリーンセンターへ自己搬入する",
+        "その他処理困難物: 該当の相談先（ガソリンスタンド・解体許可業者・医療機関等）に相談する"
+      ]
+    }
+  },
+  "garbage_db": [
+    {
+      "name": "生ごみ",
+      "category": "moeru",
+      "note": "しっかりと水切りをする",
+      "tags": [
+        "なまごみ"
+      ]
+    },
+    {
+      "name": "貝殻",
+      "category": "moeru",
+      "note": "しっかりと水切りをする",
+      "tags": [
+        "かいがら"
+      ]
+    },
+    {
+      "name": "紙オムツ",
+      "category": "moeru",
+      "note": "汚物はトイレで処理してから出す",
+      "tags": [
+        "かみおむつ",
+        "おむつ"
+      ]
+    },
+    {
+      "name": "ゴム製品",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ごむせいひん"
+      ]
+    },
+    {
+      "name": "ビニール製品",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "びにーるせいひん"
+      ]
+    },
+    {
+      "name": "発泡スチロール",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "はっぽうすちろーる"
+      ]
+    },
+    {
+      "name": "廃食油",
+      "category": "moeru",
+      "note": "紙などに染み込ませるか、固めてから出す",
+      "tags": [
+        "はいしょくゆ",
+        "あぶら"
+      ]
+    },
+    {
+      "name": "皮革製品（合成皮革製品）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ひかくせいひん",
+        "かばん",
+        "くつ"
+      ]
+    },
+    {
+      "name": "衣類",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "いるい"
+      ]
+    },
+    {
+      "name": "プラスチック製品",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ぷらすちっくせいひん"
+      ]
+    },
+    {
+      "name": "枝木（太さ3cm程度まで）",
+      "category": "moeru",
+      "note": "長さ50cm程度、直径30cm程度に束ねる。一度に出す量は2、3束（袋）まで",
+      "tags": [
+        "えだき"
+      ]
+    },
+    {
+      "name": "草類（枯らしたもの）",
+      "category": "moeru",
+      "note": "土を落として指定ごみ袋へ",
+      "tags": [
+        "くさるい"
+      ]
+    },
+    {
+      "name": "卵の殻",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "たまごのから"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "割り箸",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "わりばし"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "ティッシュペーパー",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "てぃっしゅぺーぱー"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "空き缶",
+      "category": "moenai",
+      "note": "中身を残さず、中を水ですすいでからプラスチック製のコンテナへ（不燃ごみ扱い）",
+      "tags": [
+        "あきかん",
+        "かん"
+      ]
+    },
+    {
+      "name": "スプレー缶",
+      "category": "moenai",
+      "note": "中身を使い切って、風通しの良い場所で穴を開けてから出す",
+      "tags": [
+        "すぷれーかん"
+      ]
+    },
+    {
+      "name": "殺虫剤の缶",
+      "category": "moenai",
+      "note": "中身を使い切って穴を開けてから出す",
+      "tags": [
+        "さっちゅうざいのかん"
+      ]
+    },
+    {
+      "name": "食器（陶磁器）",
+      "category": "moenai",
+      "note": "割れたものは新聞紙などで包み「キケン」と表示する",
+      "tags": [
+        "しょっき",
+        "ちゃわん",
+        "さら"
+      ]
+    },
+    {
+      "name": "ガラス製品",
+      "category": "moenai",
+      "note": "割れたものは新聞紙などで包み「キケン」と表示する",
+      "tags": [
+        "がらすせいひん"
+      ]
+    },
+    {
+      "name": "フライパン",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ふらいぱん"
+      ]
+    },
+    {
+      "name": "なべ",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "なべ"
+      ]
+    },
+    {
+      "name": "やかん",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "やかん"
+      ]
+    },
+    {
+      "name": "刃物類（包丁・はさみ・鎌等）",
+      "category": "moenai",
+      "note": "新聞紙などで包み「キケン」と表示する",
+      "tags": [
+        "はものるい",
+        "ほうちょう",
+        "はさみ",
+        "かま"
+      ]
+    },
+    {
+      "name": "ライター",
+      "category": "moenai",
+      "note": "中身を必ず使い切ってから出す",
+      "tags": [
+        "らいたー"
+      ]
+    },
+    {
+      "name": "電球",
+      "category": "moenai",
+      "note": "割れた蛍光灯・電球は不燃ごみ。切れていない蛍光灯・電球は有害ごみ",
+      "tags": [
+        "でんきゅう"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "茶色びん",
+      "category": "bin",
+      "note": "中身を残さず、水ですすいで専用コンテナへ",
+      "tags": [
+        "ちゃいろびん"
+      ]
+    },
+    {
+      "name": "無色びん",
+      "category": "bin",
+      "note": "中身を残さず、水ですすいで専用コンテナへ",
+      "tags": [
+        "むしょくびん"
+      ]
+    },
+    {
+      "name": "その他びん",
+      "category": "bin",
+      "note": "飲食用以外や割れた・汚れたビンは不燃ごみへ",
+      "tags": [
+        "そのたびん"
+      ]
+    },
+    {
+      "name": "新聞紙（折込チラシ含む）",
+      "category": "kami",
+      "note": "ひもで十字に縛る。雨の日は控える",
+      "tags": [
+        "しんぶんし",
+        "ちらし"
+      ]
+    },
+    {
+      "name": "雑誌（週刊誌・カタログ等）",
+      "category": "kami",
+      "note": "ひもで十字に縛る",
+      "tags": [
+        "ざっし"
+      ]
+    },
+    {
+      "name": "ダンボール",
+      "category": "kami",
+      "note": "ひもで十字に縛る。ダンボールに他の紙類を入れて出さない",
+      "tags": [
+        "だんぼーる"
+      ]
+    },
+    {
+      "name": "紙パック",
+      "category": "kami",
+      "note": "中を水ですすいでからひもで十字に縛る",
+      "tags": [
+        "かみぱっく",
+        "ぎゅうにゅうぱっく"
+      ]
+    },
+    {
+      "name": "ペットボトル",
+      "category": "pet",
+      "note": "キャップとラベルを外し（可燃ごみへ）、中を水洗いして専用収集かごへ",
+      "tags": [
+        "ぺっとぼとる"
+      ]
+    },
+    {
+      "name": "蛍光灯",
+      "category": "yugai",
+      "note": "透明か半透明の袋に入れ、有害シールを貼って出す",
+      "tags": [
+        "けいこうとう"
+      ]
+    },
+    {
+      "name": "電球（切れていないもの）",
+      "category": "yugai",
+      "note": "",
+      "tags": [
+        "でんきゅう"
+      ]
+    },
+    {
+      "name": "乾電池",
+      "category": "yugai",
+      "note": "",
+      "tags": [
+        "かんでんち"
+      ]
+    },
+    {
+      "name": "携帯電話のバッテリー等",
+      "category": "yugai",
+      "note": "個人情報は必ず消去する",
+      "tags": [
+        "けいたいでんわのばってりー"
+      ]
+    },
+    {
+      "name": "水銀体温計",
+      "category": "yugai",
+      "note": "",
+      "tags": [
+        "すいぎんたいおんけい"
+      ]
+    },
+    {
+      "name": "携帯電話・スマートフォン",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックス（市内7か所）へ。個人情報は必ず消去する",
+      "tags": [
+        "けいたいでんわ",
+        "すまーとふぉん"
+      ]
+    },
+    {
+      "name": "タブレット端末",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "たぶれっとたんまつ"
+      ]
+    },
+    {
+      "name": "デジタルカメラ",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "でじたるかめら"
+      ]
+    },
+    {
+      "name": "ビデオカメラ",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "びでおかめら"
+      ]
+    },
+    {
+      "name": "ゲーム機（据置型・携帯型）",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "げーむき"
+      ]
+    },
+    {
+      "name": "電卓",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "でんたく"
+      ]
+    },
+    {
+      "name": "電子辞書",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "でんしじしょ"
+      ]
+    },
+    {
+      "name": "電気カミソリ",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "でんきかみそり"
+      ]
+    },
+    {
+      "name": "電動歯ブラシ",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "でんどうはぶらし"
+      ]
+    },
+    {
+      "name": "ヘアドライヤー",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "へあどらいやー"
+      ]
+    },
+    {
+      "name": "ヘッドホン・イヤホン",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "へっどほん",
+        "いやほん"
+      ]
+    },
+    {
+      "name": "電子血圧計",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "でんしけつあつけい"
+      ]
+    },
+    {
+      "name": "カーナビ",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "かーなび"
+      ]
+    },
+    {
+      "name": "ラジオ",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "らじお"
+      ]
+    },
+    {
+      "name": "USBメモリ",
+      "category": "yugai",
+      "note": "使用済み小型家電回収ボックスへ",
+      "tags": [
+        "ゆーえすびーめもり"
+      ]
+    },
+    {
+      "name": "モバイルバッテリー",
+      "category": "yugai",
+      "note": "内蔵電池のため使用済み小型家電回収ボックスまたは有害ごみへ",
+      "tags": [
+        "もばいるばってりー"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "石油ストーブ",
+      "category": "sodai",
+      "note": "鉾田クリーンセンター等へ自己搬入。集積所収集は不可",
+      "tags": [
+        "せきゆすとーぶ"
+      ]
+    },
+    {
+      "name": "木製家具",
+      "category": "sodai",
+      "note": "鉾田クリーンセンター等へ自己搬入",
+      "tags": [
+        "もくせいかぐ"
+      ]
+    },
+    {
+      "name": "ふとん・マットレス",
+      "category": "sodai",
+      "note": "2、3箇所を縛って搬入する",
+      "tags": [
+        "ふとん",
+        "まっとれす"
+      ]
+    },
+    {
+      "name": "カーペット",
+      "category": "sodai",
+      "note": "2、3箇所を縛って搬入する",
+      "tags": [
+        "かーぺっと"
+      ]
+    },
+    {
+      "name": "ポット（電気式）",
+      "category": "sodai",
+      "note": "電池が入っているものは取り外す",
+      "tags": [
+        "ぽっと"
+      ]
+    },
+    {
+      "name": "トースター",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "とーすたー"
+      ]
+    },
+    {
+      "name": "ファンヒーター",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ふぁんひーたー"
+      ]
+    },
+    {
+      "name": "電子レンジ",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "でんしれんじ"
+      ]
+    },
+    {
+      "name": "ガスコンロ",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "がすこんろ"
+      ]
+    },
+    {
+      "name": "自転車",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "じてんしゃ"
+      ]
+    },
+    {
+      "name": "ポリタンク",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ぽりたんく"
+      ]
+    },
+    {
+      "name": "使用済みガーゼ・脱脂綿",
+      "category": "moeru",
+      "note": "在宅医療廃棄物。指定ごみ袋に入れて集積所へ出せる",
+      "tags": [
+        "がーぜ",
+        "だっしめん"
+      ]
+    },
+    {
+      "name": "チューブ類（医療用）",
+      "category": "moeru",
+      "note": "在宅医療廃棄物。指定ごみ袋に入れて出す",
+      "tags": [
+        "ちゅーぶるい"
+      ]
+    },
+    {
+      "name": "カテーテル",
+      "category": "moeru",
+      "note": "在宅医療廃棄物。指定ごみ袋に入れて出す",
+      "tags": [
+        "かてーてる"
+      ]
+    },
+    {
+      "name": "輸液バッグ",
+      "category": "moeru",
+      "note": "在宅医療廃棄物。廃液は適切に処分してから出す",
+      "tags": [
+        "ゆえきばっぐ"
+      ]
+    },
+    {
+      "name": "注射針",
+      "category": "unknown",
+      "note": "収集不可。処方された医療機関または薬局へ相談",
+      "tags": [
+        "ちゅうしゃばり"
+      ]
+    },
+    {
+      "name": "テレビ",
+      "category": "unknown",
+      "note": "家電リサイクル法対象。購入店等に処分依頼するか、郵便局でリサイクル料金を納入し鉾田クリーンセンターへ自己搬入",
+      "tags": [
+        "てれび"
+      ]
+    },
+    {
+      "name": "洗濯機・衣類乾燥機",
+      "category": "unknown",
+      "note": "家電リサイクル法対象",
+      "tags": [
+        "せんたくき"
+      ]
+    },
+    {
+      "name": "冷蔵庫・冷凍庫",
+      "category": "unknown",
+      "note": "家電リサイクル法対象",
+      "tags": [
+        "れいぞうこ",
+        "れいとうこ"
+      ]
+    },
+    {
+      "name": "エアコン",
+      "category": "unknown",
+      "note": "家電リサイクル法対象",
+      "tags": [
+        "えあこん"
+      ]
+    },
+    {
+      "name": "自動車解体部品（タイヤ・バッテリー・ドア・バンパー等）",
+      "category": "unknown",
+      "note": "ガソリンスタンド、カーショップ、タイヤ専門店、解体許可業者等へ相談",
+      "tags": [
+        "じどうしゃかいたいぶひん",
+        "たいや"
+      ]
+    },
+    {
+      "name": "農薬缶",
+      "category": "unknown",
+      "note": "市（協議会）実施の集団回収へ",
+      "tags": [
+        "のうやくかん"
+      ]
+    },
+    {
+      "name": "廃油（ガソリン・軽油・灯油・オイル等）",
+      "category": "unknown",
+      "note": "ガソリンスタンド等へ相談",
+      "tags": [
+        "はいゆ"
+      ]
+    },
+    {
+      "name": "バイク・原動機付自転車",
+      "category": "unknown",
+      "note": "市では収集不能",
+      "tags": [
+        "ばいく"
+      ]
+    },
+    {
+      "name": "ピアノ",
+      "category": "unknown",
+      "note": "一般廃棄物処理業者へ相談",
+      "tags": [
+        "ぴあの"
+      ]
+    },
+    {
+      "name": "衣装ケース",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "いしょうけーす"
+      ]
+    },
+    {
+      "name": "板又は板切れ（木くずも同じ）",
+      "category": "moeru",
+      "note": "厚みは3cm程度まで長さは50cm程度",
+      "tags": [
+        "いたまたはいたきれ"
+      ]
+    },
+    {
+      "name": "一斗缶（中身のないもの）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "いっとかん"
+      ]
+    },
+    {
+      "name": "犬小屋",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "いぬこや"
+      ]
+    },
+    {
+      "name": "医薬品（錠剤等）",
+      "category": "moeru",
+      "note": "液体は紙などに染みこませる",
+      "tags": [
+        "いやくひん"
+      ]
+    },
+    {
+      "name": "イヤホン",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "医療廃棄物",
+      "category": "moeru",
+      "note": "在宅医療廃棄物として指定ごみ袋へ（血液付着物・注射針等は医療機関へ相談）",
+      "tags": [
+        "いりょうはいきぶつ"
+      ]
+    },
+    {
+      "name": "衣類（衣装類）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "いるい"
+      ]
+    },
+    {
+      "name": "入れ歯",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "いれば"
+      ]
+    },
+    {
+      "name": "印鑑（はんこ）",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": [
+        "いんかん"
+      ]
+    },
+    {
+      "name": "インクカートリッジ（プリンターカートリッジ）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "植木鉢（素焼き・陶器製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃",
+      "tags": [
+        "うえきばち"
+      ]
+    },
+    {
+      "name": "ウェットスーツ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "浮き輪（レジャー用）",
+      "category": "moeru",
+      "note": "空気は抜く",
+      "tags": [
+        "うきわ"
+      ]
+    },
+    {
+      "name": "臼（木製・石製）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "うす"
+      ]
+    },
+    {
+      "name": "ウッドデッキ",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "腕時計",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "うでどけい"
+      ]
+    },
+    {
+      "name": "羽毛布団",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": [
+        "うもうふとん"
+      ]
+    },
+    {
+      "name": "エアーコンプレッサー",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "エアマット",
+      "category": "moeru",
+      "note": "空気は抜く",
+      "tags": []
+    },
+    {
+      "name": "枝切りはさみ",
+      "category": "moenai",
+      "note": "刃物類は新聞紙などで包み「キケン」と表示",
+      "tags": [
+        "えだきりはさみ"
+      ]
+    },
+    {
+      "name": "絵具チューブ（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": [
+        "えのぐちゅーぶ"
+      ]
+    },
+    {
+      "name": "MD（ミニディスク）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "MDコンポ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "MDプレーヤー",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "LED電球",
+      "category": "yugai",
+      "note": "有害ごみとして透明・半透明の袋に入れ有害シールを貼り、ペットボトルと同じ日に出す",
+      "tags": []
+    },
+    {
+      "name": "塩化ビニール（農業用）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "えんかびにーる"
+      ]
+    },
+    {
+      "name": "塩化ビニール管",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "えんかびにーるかん"
+      ]
+    },
+    {
+      "name": "園芸用支柱（家庭用）",
+      "category": "sodai",
+      "note": "事業系を除く",
+      "tags": [
+        "えんげいようしちゅう"
+      ]
+    },
+    {
+      "name": "エンジンオイル",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "縁台",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "えんだい"
+      ]
+    },
+    {
+      "name": "延長コード",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "えんちょうこーど"
+      ]
+    },
+    {
+      "name": "鉛筆削り機",
+      "category": "moenai",
+      "note": "携帯式は金属を取り外して可燃",
+      "tags": [
+        "えんぴつけずりき"
+      ]
+    },
+    {
+      "name": "オイル（食用以外のもの）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "オイルヒーター",
+      "category": "sodai",
+      "note": "燃料は抜き取る",
+      "tags": []
+    },
+    {
+      "name": "応接いす・セット",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "おうせついす・せっと"
+      ]
+    },
+    {
+      "name": "オーディオセット",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "オートバイ（バイク）",
+      "category": "unknown",
+      "note": "鉾田クリーンセンターでは受入れ不可。購入店・専門業者・各種リサイクル制度へ相談",
+      "tags": []
+    },
+    {
+      "name": "オーブントースター",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "オーブンレンジ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "おけ（タライ）",
+      "category": "sodai",
+      "note": "30cm以下は可燃、または不燃",
+      "tags": []
+    },
+    {
+      "name": "おたま（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": []
+    },
+    {
+      "name": "落ち葉",
+      "category": "moeru",
+      "note": "剪定枝・草花と同じ扱い（可燃ごみ）",
+      "tags": [
+        "おちば"
+      ]
+    },
+    {
+      "name": "斧（おの）",
+      "category": "moenai",
+      "note": "刃物類は新聞紙などで包み「キケン」と表示",
+      "tags": [
+        "おの"
+      ]
+    },
+    {
+      "name": "お風呂マット",
+      "category": "moeru",
+      "note": "珪藻土マットは不可",
+      "tags": []
+    },
+    {
+      "name": "お盆（金属製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "おまる",
+      "category": "sodai",
+      "note": "汚物は取り除く",
+      "tags": []
+    },
+    {
+      "name": "オムツ",
+      "category": "moeru",
+      "note": "汚物は取り除く",
+      "tags": []
+    },
+    {
+      "name": "おもちゃ（金属製）",
+      "category": "moenai",
+      "note": "電池は取り外す、プラスチック・木製は可燃、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "折込みチラシ（広告）",
+      "category": "kami",
+      "note": "新聞紙と同じ",
+      "tags": [
+        "おりこみちらし"
+      ]
+    },
+    {
+      "name": "オルガン",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "オルゴール",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "おろしがね（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": []
+    },
+    {
+      "name": "温水器（電気・太陽光）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "おんすいき"
+      ]
+    },
+    {
+      "name": "温度計",
+      "category": "moenai",
+      "note": "水銀式は有害",
+      "tags": [
+        "おんどけい"
+      ]
+    },
+    {
+      "name": "温風ヒーター",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "おんぷうひーたー"
+      ]
+    },
+    {
+      "name": "カーキャリア",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カーステレオ（カーコンポ）",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "カーテン",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ガーデンシュレッダー（枝木粉砕機）",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カーテンレール",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カーナビゲーション",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "懐中電灯",
+      "category": "moenai",
+      "note": "電池は取り外す",
+      "tags": [
+        "かいちゅうでんとう"
+      ]
+    },
+    {
+      "name": "外壁材",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "がいへきざい"
+      ]
+    },
+    {
+      "name": "カイロ",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": []
+    },
+    {
+      "name": "鏡",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "かがみ"
+      ]
+    },
+    {
+      "name": "学習机",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "がくしゅうづくえ"
+      ]
+    },
+    {
+      "name": "額縁（金属製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃、ガラスは外す",
+      "tags": [
+        "がくぶち"
+      ]
+    },
+    {
+      "name": "かご（プラスチック製）",
+      "category": "moeru",
+      "note": "金属製は不燃、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "傘（折り畳み傘）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "かさ"
+      ]
+    },
+    {
+      "name": "火災廃材",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "かさいはいざい"
+      ]
+    },
+    {
+      "name": "傘立て",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "かさたてて"
+      ]
+    },
+    {
+      "name": "加湿器",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "かしつき"
+      ]
+    },
+    {
+      "name": "菓子類の紙箱",
+      "category": "kami",
+      "note": "雑誌と同じ",
+      "tags": [
+        "かしるいのかみばこ"
+      ]
+    },
+    {
+      "name": "ガスコンロ（ガスレンジ）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ガスストーブ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ガスボンベ（プロパンガス）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "ガスレンジフード・パネル",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "カセットコンロ",
+      "category": "sodai",
+      "note": "カセットボンベは取り外す",
+      "tags": []
+    },
+    {
+      "name": "カセットテープ",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カセットデッキ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カセットボンベ",
+      "category": "moenai",
+      "note": "刃物類は新聞紙などで包み「キケン」と表示",
+      "tags": []
+    },
+    {
+      "name": "ガソリン",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "ガソリン携行缶",
+      "category": "sodai",
+      "note": "中身のないもの",
+      "tags": []
+    },
+    {
+      "name": "カタログ",
+      "category": "kami",
+      "note": "雑誌と同じ",
+      "tags": []
+    },
+    {
+      "name": "活性炭（家庭用消臭剤）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かっせいたん"
+      ]
+    },
+    {
+      "name": "カッターナイフ",
+      "category": "moenai",
+      "note": "刃は外し、ふた付きの缶へ入れる",
+      "tags": []
+    },
+    {
+      "name": "合羽（レインコート）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かっぱ"
+      ]
+    },
+    {
+      "name": "かつら",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "蚊取り器",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "かとりき"
+      ]
+    },
+    {
+      "name": "かなづち",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "かばん（布・革・ビニール製）",
+      "category": "moeru",
+      "note": "30cm以上は粗大、金属は取り外す",
+      "tags": []
+    },
+    {
+      "name": "画びょう",
+      "category": "moenai",
+      "note": "ふた付きの缶へ入れる",
+      "tags": [
+        "がびょう"
+      ]
+    },
+    {
+      "name": "花びん（プラスチック・木製）",
+      "category": "moeru",
+      "note": "金属・陶器製は不燃",
+      "tags": [
+        "かびん"
+      ]
+    },
+    {
+      "name": "壁紙（クロス）",
+      "category": "unknown",
+      "note": "建築・リフォーム等で発生するもの、耐火性等の不燃物は不可",
+      "tags": [
+        "かべがみ"
+      ]
+    },
+    {
+      "name": "釜",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "かま"
+      ]
+    },
+    {
+      "name": "鎌",
+      "category": "moenai",
+      "note": "新聞紙などで包み「キケン」と表示",
+      "tags": [
+        "かま"
+      ]
+    },
+    {
+      "name": "カミソリ（金属製）",
+      "category": "moenai",
+      "note": "刃は外し、ふた付きの缶へ入れる、プラスチック製は可燃",
+      "tags": []
+    },
+    {
+      "name": "紙粘土",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かみねんど"
+      ]
+    },
+    {
+      "name": "紙類・紙くず",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かみるい・かみくず"
+      ]
+    },
+    {
+      "name": "カメラ",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "カラーボックス",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ガラス",
+      "category": "moenai",
+      "note": "刃物類は新聞紙などで包み「キケン」と表示",
+      "tags": []
+    },
+    {
+      "name": "瓦・スレート瓦",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "かわら・すれーとかわら"
+      ]
+    },
+    {
+      "name": "缶",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "かん"
+      ]
+    },
+    {
+      "name": "缶（一斗缶）",
+      "category": "sodai",
+      "note": "中身のないもの",
+      "tags": [
+        "かん"
+      ]
+    },
+    {
+      "name": "換気扇（台所用）",
+      "category": "sodai",
+      "note": "業務用は販売店、専門業者等に相談",
+      "tags": [
+        "かんきせん"
+      ]
+    },
+    {
+      "name": "缶切り",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "かんきり"
+      ]
+    },
+    {
+      "name": "玩具（金属製）",
+      "category": "moenai",
+      "note": "電池は取り外す、プラスチック・木製は可燃、30cm以上は粗大",
+      "tags": [
+        "がんぐ"
+      ]
+    },
+    {
+      "name": "乾燥機（衣類乾燥機）",
+      "category": "unknown",
+      "note": "家電リサイクル法対象品。購入店に処分依頼するか、郵便局でリサイクル料金を納入し自己搬入",
+      "tags": [
+        "かんそうき"
+      ]
+    },
+    {
+      "name": "乾燥機（食器・布団）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "かんそうき"
+      ]
+    },
+    {
+      "name": "乾燥剤",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かんそうざい"
+      ]
+    },
+    {
+      "name": "かんな",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "キーボード（パソコン用）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "木くず（板又は板切れも同じ）",
+      "category": "moeru",
+      "note": "厚みは3cm程度まで長さは50cm程度",
+      "tags": [
+        "きくず"
+      ]
+    },
+    {
+      "name": "ギター",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "木づち",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "きづち"
+      ]
+    },
+    {
+      "name": "キッチンワゴン",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "きね",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "キャスター",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "脚立（はしご）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "きゃたつ"
+      ]
+    },
+    {
+      "name": "キャップ（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": []
+    },
+    {
+      "name": "キャリーケース",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "急須",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "きゅうす"
+      ]
+    },
+    {
+      "name": "給湯機（湯沸し器）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "きゅうとうき"
+      ]
+    },
+    {
+      "name": "牛乳パック",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "ぎゅうにゅうぱっく"
+      ]
+    },
+    {
+      "name": "給油ポンプ（電池式）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃、30cm以上は粗大、電池は取り外す",
+      "tags": [
+        "きゅうゆぽんぷ"
+      ]
+    },
+    {
+      "name": "教科書",
+      "category": "kami",
+      "note": "雑誌と同じ",
+      "tags": [
+        "きょうかしょ"
+      ]
+    },
+    {
+      "name": "金庫（手提げ金庫以外）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "きんこ"
+      ]
+    },
+    {
+      "name": "空気入れ（自転車用）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "くうきいれ"
+      ]
+    },
+    {
+      "name": "空気清浄機",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "くうきせいじょうき"
+      ]
+    },
+    {
+      "name": "クーラー（送風機）",
+      "category": "sodai",
+      "note": "エアコンは除く",
+      "tags": []
+    },
+    {
+      "name": "クーラーボックス",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "釘",
+      "category": "moenai",
+      "note": "ふた付きの缶へ入れる",
+      "tags": [
+        "くぎ"
+      ]
+    },
+    {
+      "name": "草刈り機",
+      "category": "sodai",
+      "note": "燃料は抜き取る",
+      "tags": [
+        "くさかりき"
+      ]
+    },
+    {
+      "name": "草花",
+      "category": "moeru",
+      "note": "剪定枝・草花と同じ扱い（可燃ごみ）",
+      "tags": [
+        "くさばな"
+      ]
+    },
+    {
+      "name": "鎖（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": [
+        "くさり"
+      ]
+    },
+    {
+      "name": "櫛（くし）",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": [
+        "くし"
+      ]
+    },
+    {
+      "name": "串（竹串）",
+      "category": "moeru",
+      "note": "金属製は不燃、（刃物類は新聞紙などで包み「キケン」と表示）",
+      "tags": [
+        "くし"
+      ]
+    },
+    {
+      "name": "薬（錠剤・顆粒・貼り薬等医薬品）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "くすり"
+      ]
+    },
+    {
+      "name": "薬の包装シート",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "くすりのほうそうしーと"
+      ]
+    },
+    {
+      "name": "薬のびん（家庭用）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "くすりのびん"
+      ]
+    },
+    {
+      "name": "口紅",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "くちべに"
+      ]
+    },
+    {
+      "name": "靴",
+      "category": "moeru",
+      "note": "鉄板が入っているものは不燃",
+      "tags": [
+        "くつ"
+      ]
+    },
+    {
+      "name": "クッション",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "靴べら（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": [
+        "くつべら"
+      ]
+    },
+    {
+      "name": "首輪",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "くびわ"
+      ]
+    },
+    {
+      "name": "グラス",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "車いす",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "くるまいす"
+      ]
+    },
+    {
+      "name": "クレヨン",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "グローブ",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "グローランプ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "蛍光管・蛍光灯",
+      "category": "yugai",
+      "note": "有害ごみとして透明・半透明の袋に入れ有害シールを貼り、ペットボトルと同じ日に出す",
+      "tags": [
+        "けいこうかん・けいこうとう"
+      ]
+    },
+    {
+      "name": "計算機（電卓）",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "けいさんき"
+      ]
+    },
+    {
+      "name": "携帯電話",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "けいたいでんわ"
+      ]
+    },
+    {
+      "name": "計量器（はかり）",
+      "category": "moenai",
+      "note": "電池は取り外す、30cm以上は粗大",
+      "tags": [
+        "けいりょうき"
+      ]
+    },
+    {
+      "name": "ケース入り人形",
+      "category": "sodai",
+      "note": "ガラスは外す",
+      "tags": []
+    },
+    {
+      "name": "ケーブル",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "ゲーム機器",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "ゲームソフト",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "化粧品のびん（ガラス製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": [
+        "けしょうひんのびん"
+      ]
+    },
+    {
+      "name": "下駄",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "げた"
+      ]
+    },
+    {
+      "name": "血圧計",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "けつあつけい"
+      ]
+    },
+    {
+      "name": "剣山",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "けんざん"
+      ]
+    },
+    {
+      "name": "建築廃材",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "けんちくはいざい"
+      ]
+    },
+    {
+      "name": "剣道用具",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "けんどうようぐ"
+      ]
+    },
+    {
+      "name": "鍵盤ハーモニカ（ピアニカ）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "けんばんはーもにか"
+      ]
+    },
+    {
+      "name": "顕微鏡",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "けんびきょう"
+      ]
+    },
+    {
+      "name": "碁石",
+      "category": "moenai",
+      "note": "プラスチック・貝製は可燃",
+      "tags": [
+        "ごいし"
+      ]
+    },
+    {
+      "name": "高圧洗浄機",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "こうあつせんじょうき"
+      ]
+    },
+    {
+      "name": "工具類（ドライバー・スパナ・レンチ等）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "こうぐるい"
+      ]
+    },
+    {
+      "name": "ゴーグル（プラスチック製）",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": []
+    },
+    {
+      "name": "コードリール",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "コード類",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "コーヒーメーカー",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "氷枕",
+      "category": "moeru",
+      "note": "留め金具は不燃",
+      "tags": [
+        "こおりまくら"
+      ]
+    },
+    {
+      "name": "ござ・むしろ",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": []
+    },
+    {
+      "name": "こたつ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "こたつ布団・毛布",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": []
+    },
+    {
+      "name": "コップ（ガラス製）",
+      "category": "moenai",
+      "note": "プラスチック・紙製は可燃",
+      "tags": []
+    },
+    {
+      "name": "コピー機（家庭用）",
+      "category": "sodai",
+      "note": "業務用は販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "ごみ箱（金属製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ゴムボート",
+      "category": "moeru",
+      "note": "空気は抜く",
+      "tags": []
+    },
+    {
+      "name": "米びつ",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "こめびつ"
+      ]
+    },
+    {
+      "name": "コルクボード",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ゴルフクラブ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ゴルフバッグ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ゴルフボール",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "コンクリート（ブロック片）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "コンタクトレンズ",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "コンテナ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "コンパネ",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "コンプレッサー",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "コンポスト",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "サーフボード",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "災害廃棄物",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "さいがいはいきぶつ"
+      ]
+    },
+    {
+      "name": "座椅子",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ざいす"
+      ]
+    },
+    {
+      "name": "サイドボード",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "財布",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "さいふ"
+      ]
+    },
+    {
+      "name": "サッカーボール",
+      "category": "moeru",
+      "note": "空気は抜く",
+      "tags": []
+    },
+    {
+      "name": "サッシ",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "雑誌",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "ざっし"
+      ]
+    },
+    {
+      "name": "座布団",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": [
+        "ざぶとん"
+      ]
+    },
+    {
+      "name": "皿（ガラス製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃",
+      "tags": [
+        "さら"
+      ]
+    },
+    {
+      "name": "ざる（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": []
+    },
+    {
+      "name": "三脚",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "さんきゃく"
+      ]
+    },
+    {
+      "name": "サングラス（プラスチック製）",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": []
+    },
+    {
+      "name": "酸素ボンベ",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "さんそぼんべ"
+      ]
+    },
+    {
+      "name": "CD",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "CDケース",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "CDプレーヤー・CDラジカセ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "シートカバー（自動車・二輪車用）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "シェーバー（髭剃り）",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "磁石（マグネット）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "じしゃく"
+      ]
+    },
+    {
+      "name": "下着類",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "したぎるい"
+      ]
+    },
+    {
+      "name": "七輪（木炭コンロ）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "しちりん"
+      ]
+    },
+    {
+      "name": "シップ薬",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "自転車タイヤ（チューブ）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "じてんしゃたいや"
+      ]
+    },
+    {
+      "name": "自動車部品",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "じどうしゃぶひん"
+      ]
+    },
+    {
+      "name": "竹刀",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "しない"
+      ]
+    },
+    {
+      "name": "シニアカー（セニアカー・電動車両）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "シャープペンシル",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": []
+    },
+    {
+      "name": "蛇口",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "じゃぐち"
+      ]
+    },
+    {
+      "name": "ジャッキ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "シャベル・スコップ（プラスチック製）",
+      "category": "moeru",
+      "note": "金属製は不燃、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "シャンプーの容器",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "週刊誌",
+      "category": "kami",
+      "note": "雑誌と同じ",
+      "tags": [
+        "しゅうかんし"
+      ]
+    },
+    {
+      "name": "ジューサー（ミキサー）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "じゅうたん",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": []
+    },
+    {
+      "name": "充電器",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "じゅうでんき"
+      ]
+    },
+    {
+      "name": "ジュニアシート",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "瞬間冷却材（冷却材）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "しゅんかんれいきゃくざい"
+      ]
+    },
+    {
+      "name": "消火器",
+      "category": "unknown",
+      "note": "鉾田クリーンセンターでは受入れ不可。購入店・専門業者・各種リサイクル制度へ相談",
+      "tags": [
+        "しょうかき"
+      ]
+    },
+    {
+      "name": "将棋盤・碁盤",
+      "category": "sodai",
+      "note": "厚み3cm以下は可燃",
+      "tags": [
+        "しょうぎばん・ごばん"
+      ]
+    },
+    {
+      "name": "障子戸",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "しょうじこ"
+      ]
+    },
+    {
+      "name": "浄水器",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "じょうすいき"
+      ]
+    },
+    {
+      "name": "照明器具",
+      "category": "moenai",
+      "note": "電球は取り外す、30cm以上は粗大",
+      "tags": [
+        "しょうめいきぐ"
+      ]
+    },
+    {
+      "name": "じょうろ",
+      "category": "moeru",
+      "note": "金属製は不燃、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "食品トレイ",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": [
+        "しょくひんとれい"
+      ]
+    },
+    {
+      "name": "除湿器",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "じょしつき"
+      ]
+    },
+    {
+      "name": "除湿剤（シリカゲル）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "じょしつざい"
+      ]
+    },
+    {
+      "name": "食器（陶器・金属製）",
+      "category": "moenai",
+      "note": "プラスチック・紙・木製は可燃",
+      "tags": [
+        "しょっき"
+      ]
+    },
+    {
+      "name": "食器乾燥機",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "しょっきかんそうき"
+      ]
+    },
+    {
+      "name": "食器棚",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "しょっきだな"
+      ]
+    },
+    {
+      "name": "シルバーカー（歩行補助具）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "シンナー",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "新聞紙",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "しんぶんし"
+      ]
+    },
+    {
+      "name": "水槽（ガラス製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃、30cm以上は粗大",
+      "tags": [
+        "すいそう"
+      ]
+    },
+    {
+      "name": "水中ポンプ",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "すいちゅうぽんぷ"
+      ]
+    },
+    {
+      "name": "水筒（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃、30cm以上は粗大",
+      "tags": [
+        "すいとう"
+      ]
+    },
+    {
+      "name": "炊飯器",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "すいはんき"
+      ]
+    },
+    {
+      "name": "スーツケース",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スキー・スノーボード板",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スキー・スノーボード靴",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スキャナー",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "スケート靴",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スケートボード",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スケール（コンベックス）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スコップ・シャベル（プラスチック製）",
+      "category": "moeru",
+      "note": "金属製は不燃、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "硯（すずり）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談、プラスチック製は可燃",
+      "tags": [
+        "すずり"
+      ]
+    },
+    {
+      "name": "すだれ",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": []
+    },
+    {
+      "name": "スタンプ台",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": []
+    },
+    {
+      "name": "スチールウール",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ステレオセット",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ストーブ",
+      "category": "sodai",
+      "note": "燃料は抜き取る",
+      "tags": []
+    },
+    {
+      "name": "ストップウォッチ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "砂",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "すな"
+      ]
+    },
+    {
+      "name": "砂（ペット用）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談、紙製は可燃",
+      "tags": [
+        "すな"
+      ]
+    },
+    {
+      "name": "すのこ",
+      "category": "sodai",
+      "note": "30cm以下は可燃",
+      "tags": []
+    },
+    {
+      "name": "スパイク（金具あり）",
+      "category": "moenai",
+      "note": "金具なしは可燃",
+      "tags": []
+    },
+    {
+      "name": "スピーカー",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "スプーン（金属製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃",
+      "tags": []
+    },
+    {
+      "name": "ズボンプレッサー",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スマートフォン",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "炭",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "すみ"
+      ]
+    },
+    {
+      "name": "すり鉢",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "生花",
+      "category": "moeru",
+      "note": "剪定枝・草花と同じ扱い（可燃ごみ）",
+      "tags": [
+        "せいか"
+      ]
+    },
+    {
+      "name": "生理用品",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "せいりようひん"
+      ]
+    },
+    {
+      "name": "石鹸",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "せっけん"
+      ]
+    },
+    {
+      "name": "石膏・石膏ボード",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "せっこう・せっこうぼーど"
+      ]
+    },
+    {
+      "name": "瀬戸物",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "せともの"
+      ]
+    },
+    {
+      "name": "セメント",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "センサーライト",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "洗車ブラシ",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "せんしゃぶらし"
+      ]
+    },
+    {
+      "name": "扇子（金属製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃",
+      "tags": [
+        "せんす"
+      ]
+    },
+    {
+      "name": "洗濯機",
+      "category": "unknown",
+      "note": "家電リサイクル法対象品。購入店に処分依頼するか、郵便局でリサイクル料金を納入し自己搬入",
+      "tags": [
+        "せんたくき"
+      ]
+    },
+    {
+      "name": "洗濯ばさみ（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": [
+        "せんたくばさみ"
+      ]
+    },
+    {
+      "name": "剪定枝",
+      "category": "moeru",
+      "note": "剪定枝・草花と同じ扱い（可燃ごみ）",
+      "tags": [
+        "せんていえだ"
+      ]
+    },
+    {
+      "name": "扇風機",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "せんぷうき"
+      ]
+    },
+    {
+      "name": "洗面器（プラスチック製）",
+      "category": "moeru",
+      "note": "金属製は不燃、30cm以上は粗大",
+      "tags": [
+        "せんめんき"
+      ]
+    },
+    {
+      "name": "洗面台",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "せんめんだい"
+      ]
+    },
+    {
+      "name": "造花",
+      "category": "moeru",
+      "note": "針金入りは不燃",
+      "tags": [
+        "ぞうか"
+      ]
+    },
+    {
+      "name": "双眼鏡",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "そうがんきょう"
+      ]
+    },
+    {
+      "name": "掃除機",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "そうじき"
+      ]
+    },
+    {
+      "name": "ソーラーパネル（太陽電池パネル）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "ソファー・ソファーベッド",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "そり（幼児用玩具）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "そろばん",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "体温計（水銀使用）",
+      "category": "yugai",
+      "note": "有害ごみとして透明・半透明の袋に入れ有害シールを貼り、ペットボトルと同じ日に出す",
+      "tags": [
+        "たいおんけい"
+      ]
+    },
+    {
+      "name": "体温計（電子）",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "たいおんけい"
+      ]
+    },
+    {
+      "name": "体重計（ヘルスメーター）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "たいじゅうけい"
+      ]
+    },
+    {
+      "name": "耐熱ガラス製品",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "たいねつがらすせいひん"
+      ]
+    },
+    {
+      "name": "タイヤ（自転車以外）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "タイル",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "高枝切りばさみ",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "たかえだきりばさみ"
+      ]
+    },
+    {
+      "name": "竹（青竹）",
+      "category": "moeru",
+      "note": "剪定枝・草花と同じ扱い（可燃ごみ）、（剪定枝同様）",
+      "tags": [
+        "たけ"
+      ]
+    },
+    {
+      "name": "畳",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "たたみ"
+      ]
+    },
+    {
+      "name": "卓球台",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "たっきゅうだい"
+      ]
+    },
+    {
+      "name": "卓球ラケット",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "たっきゅうらけっと"
+      ]
+    },
+    {
+      "name": "脱臭剤",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "だっしゅうざい"
+      ]
+    },
+    {
+      "name": "棚",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "たな"
+      ]
+    },
+    {
+      "name": "たまごパック",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "樽",
+      "category": "unknown",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "たる"
+      ]
+    },
+    {
+      "name": "たわし（金属製）",
+      "category": "moenai",
+      "note": "毛質・ナイロン製は可燃",
+      "tags": []
+    },
+    {
+      "name": "たんす",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "断熱材",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "だんねつざい"
+      ]
+    },
+    {
+      "name": "ダンベル（鉄アレイ）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "チェーン（タイヤチェーン）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "地球儀",
+      "category": "sodai",
+      "note": "30cm以下は不燃",
+      "tags": [
+        "ちきゅうぎ"
+      ]
+    },
+    {
+      "name": "チャイルドシート",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "チャッカマン",
+      "category": "moenai",
+      "note": "中身は使い切る",
+      "tags": []
+    },
+    {
+      "name": "ちゃぶ台（食事用座卓・座卓）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "茶碗（瀬戸物）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": [
+        "ちゃわん"
+      ]
+    },
+    {
+      "name": "注射器（プラスチック製）",
+      "category": "moeru",
+      "note": "在宅医療廃棄物として指定ごみ袋へ（血液付着物・注射針等は医療機関へ相談）、針は取り外す",
+      "tags": [
+        "ちゅうしゃき"
+      ]
+    },
+    {
+      "name": "チューブ（医療用）",
+      "category": "moeru",
+      "note": "在宅医療廃棄物として指定ごみ袋へ（血液付着物・注射針等は医療機関へ相談）",
+      "tags": []
+    },
+    {
+      "name": "提灯",
+      "category": "moeru",
+      "note": "30cm以上は粗大、電球・金属等は取り外す",
+      "tags": [
+        "ていとう"
+      ]
+    },
+    {
+      "name": "チラシ（広告）",
+      "category": "kami",
+      "note": "新聞紙と同じ",
+      "tags": []
+    },
+    {
+      "name": "ちりとり（プラスチック製）",
+      "category": "moeru",
+      "note": "金属製は不燃、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "杖（つえ）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "つえ"
+      ]
+    },
+    {
+      "name": "使い捨てカイロ",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "つかいすてかいろ"
+      ]
+    },
+    {
+      "name": "使い捨てライター",
+      "category": "moenai",
+      "note": "中身は使い切る",
+      "tags": [
+        "つかいすてらいたー"
+      ]
+    },
+    {
+      "name": "机（デスク）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "つくえ"
+      ]
+    },
+    {
+      "name": "漬物石",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "つけものいし"
+      ]
+    },
+    {
+      "name": "土・砂",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "つち・すな"
+      ]
+    },
+    {
+      "name": "壺（つぼ）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "つぼ"
+      ]
+    },
+    {
+      "name": "積み木",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "つみき"
+      ]
+    },
+    {
+      "name": "爪きり",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "つめきり"
+      ]
+    },
+    {
+      "name": "釣り網（捕獲網・玉網）",
+      "category": "moeru",
+      "note": "金属は取り外す",
+      "tags": [
+        "つりあみ"
+      ]
+    },
+    {
+      "name": "釣り竿",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "つりさお"
+      ]
+    },
+    {
+      "name": "DVDプレーヤー",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ディスク（DVD・BD・CD・MD）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ディスプレイ",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "ティッシュペーパーの箱",
+      "category": "kami",
+      "note": "雑誌と同じ",
+      "tags": []
+    },
+    {
+      "name": "テープカッター",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "テーブル",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "テーブルクロス",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "テープレコーダー・テープデッキ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "デジタルビデオカメラ",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "デスクマット",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "テニスボール",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "テニスラケット",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "電気あんか",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "でんきあんか"
+      ]
+    },
+    {
+      "name": "電気オーブン",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "でんきおーぶん"
+      ]
+    },
+    {
+      "name": "電気カーペット",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": [
+        "でんきかーぺっと"
+      ]
+    },
+    {
+      "name": "電気コード（ドラム）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "でんきこーど"
+      ]
+    },
+    {
+      "name": "電気スタンド",
+      "category": "moenai",
+      "note": "電球は取り外す、30cm以上は粗大",
+      "tags": [
+        "でんきすたんど"
+      ]
+    },
+    {
+      "name": "電気ストーブ",
+      "category": "sodai",
+      "note": "燃料は抜き取る",
+      "tags": [
+        "でんきすとーぶ"
+      ]
+    },
+    {
+      "name": "電気ポット",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "でんきぽっと"
+      ]
+    },
+    {
+      "name": "電気毛布",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": [
+        "でんきもうふ"
+      ]
+    },
+    {
+      "name": "電球・電灯",
+      "category": "yugai",
+      "note": "有害ごみとして透明・半透明の袋に入れ有害シールを貼り、ペットボトルと同じ日に出す",
+      "tags": [
+        "でんきゅう・でんとう"
+      ]
+    },
+    {
+      "name": "電子オルガン",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "でんしおるがん"
+      ]
+    },
+    {
+      "name": "電子辞書・手帳",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "でんしじしょ・てちょう"
+      ]
+    },
+    {
+      "name": "電子タバコ",
+      "category": "moenai",
+      "note": "電池は取り外す",
+      "tags": [
+        "でんしたばこ"
+      ]
+    },
+    {
+      "name": "電子ピアノ",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "でんしぴあの"
+      ]
+    },
+    {
+      "name": "電卓（計算機）",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "でんたく"
+      ]
+    },
+    {
+      "name": "電池",
+      "category": "yugai",
+      "note": "有害ごみとして透明・半透明の袋に入れ有害シールを貼り、ペットボトルと同じ日に出す",
+      "tags": [
+        "でんち"
+      ]
+    },
+    {
+      "name": "点滴バッグ・チューブ（在宅医療）",
+      "category": "moeru",
+      "note": "在宅医療廃棄物として指定ごみ袋へ（血液付着物・注射針等は医療機関へ相談）",
+      "tags": [
+        "てんてきばっぐ・ちゅーぶ"
+      ]
+    },
+    {
+      "name": "テント",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "電動工具（ドライバー等）",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "でんどうこうぐ"
+      ]
+    },
+    {
+      "name": "電動自転車",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "でんどうじてんしゃ"
+      ]
+    },
+    {
+      "name": "電話機",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "でんわき"
+      ]
+    },
+    {
+      "name": "電話帳",
+      "category": "kami",
+      "note": "雑誌と同じ",
+      "tags": [
+        "でんわちょう"
+      ]
+    },
+    {
+      "name": "ドア",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "ドアノブ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "砥石",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "といし"
+      ]
+    },
+    {
+      "name": "陶磁器類",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "とうじきるい"
+      ]
+    },
+    {
+      "name": "灯油",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "とうゆ"
+      ]
+    },
+    {
+      "name": "灯油ポリタンク",
+      "category": "sodai",
+      "note": "中身のないもの30cm以下は可燃",
+      "tags": [
+        "とうゆぽりたんく"
+      ]
+    },
+    {
+      "name": "灯油ポンプ（電池式）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃。電池は取り外す。30cm以上は粗大",
+      "tags": [
+        "とうゆぽんぷ"
+      ]
+    },
+    {
+      "name": "時計",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "とけい"
+      ]
+    },
+    {
+      "name": "戸棚",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "とだな"
+      ]
+    },
+    {
+      "name": "トタン",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "トナー（トナーカートリッジ）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "土鍋",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "どなべ"
+      ]
+    },
+    {
+      "name": "ドライヤー",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "ドラム（コードリール）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ドラム缶",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "塗料",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "とりょう"
+      ]
+    },
+    {
+      "name": "塗料類の缶",
+      "category": "moenai",
+      "note": "中身は空にし、ふき取る",
+      "tags": [
+        "とりょうるいのかん"
+      ]
+    },
+    {
+      "name": "トレーニング機器",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ドレッサー（鏡台）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "トロフィー",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ナイフ類",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "苗木・苗ポッド（家庭用）",
+      "category": "moeru",
+      "note": "事業系を除く",
+      "tags": [
+        "なえぎ・なえぽっど"
+      ]
+    },
+    {
+      "name": "長靴",
+      "category": "moeru",
+      "note": "鉄板が入っているものは不燃",
+      "tags": [
+        "ながぐつ"
+      ]
+    },
+    {
+      "name": "流し台（シンク）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "ながしだい"
+      ]
+    },
+    {
+      "name": "なべ（鍋）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "生ごみ処理機",
+      "category": "sodai",
+      "note": "電気式も含む",
+      "tags": [
+        "なまごみしょりき"
+      ]
+    },
+    {
+      "name": "波トタン",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "なみとたん"
+      ]
+    },
+    {
+      "name": "ニス（塗装面の保護塗料）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "庭木",
+      "category": "moeru",
+      "note": "剪定枝・草花と同じ扱い（可燃ごみ）",
+      "tags": [
+        "にわき"
+      ]
+    },
+    {
+      "name": "人形",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "にんぎょう"
+      ]
+    },
+    {
+      "name": "ぬいぐるみ",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "布類",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ぬのるい"
+      ]
+    },
+    {
+      "name": "ネクタイ",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ネジ（ナット・ボルト）",
+      "category": "moenai",
+      "note": "ふた付きの缶へ入れる",
+      "tags": []
+    },
+    {
+      "name": "ネット（スポーツ用）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ネット（野菜・果物用）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ネット（園芸用）",
+      "category": "moeru",
+      "note": "事業系を除く",
+      "tags": []
+    },
+    {
+      "name": "寝袋",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "ねぶくろ"
+      ]
+    },
+    {
+      "name": "粘土",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ねんど"
+      ]
+    },
+    {
+      "name": "燃料（ガソリン・灯油・石油等）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "ねんりょう"
+      ]
+    },
+    {
+      "name": "農機具（部品を含む）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "のうきぐ"
+      ]
+    },
+    {
+      "name": "農業用ビニール",
+      "category": "unknown",
+      "note": "事業系を除く。家庭用は可燃",
+      "tags": [
+        "のうぎょうようびにーる"
+      ]
+    },
+    {
+      "name": "農業用肥料袋",
+      "category": "unknown",
+      "note": "家庭用は可燃、販売店、専門業者等に相談",
+      "tags": [
+        "のうぎょうようひりょうふくろ"
+      ]
+    },
+    {
+      "name": "農薬（農薬・塩酸・殺虫剤・除草剤等の薬品）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "のうやく"
+      ]
+    },
+    {
+      "name": "農薬の紙袋",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "のうやくのかみぶくろ"
+      ]
+    },
+    {
+      "name": "農薬の容器（ビン・かん・プラスチック容器）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "のうやくのようき"
+      ]
+    },
+    {
+      "name": "ノート",
+      "category": "kami",
+      "note": "雑誌と同じ",
+      "tags": []
+    },
+    {
+      "name": "ノートパソコン",
+      "category": "unknown",
+      "note": "鉾田クリーンセンターでは受入れ不可。購入店・専門業者・各種リサイクル制度へ相談",
+      "tags": []
+    },
+    {
+      "name": "のこぎり",
+      "category": "moenai",
+      "note": "刃物類は新聞紙などで包み「キケン」と表示",
+      "tags": []
+    },
+    {
+      "name": "バーベキューセット",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "バーベル",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ハーモニカ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "灰",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "はい"
+      ]
+    },
+    {
+      "name": "バイク（オートバイ）",
+      "category": "unknown",
+      "note": "鉾田クリーンセンターでは受入れ不可。購入店・専門業者・各種リサイクル制度へ相談",
+      "tags": []
+    },
+    {
+      "name": "灰皿（卓上用）",
+      "category": "moenai",
+      "note": "設置型は粗大",
+      "tags": [
+        "はいざら"
+      ]
+    },
+    {
+      "name": "廃油（車両・機械油）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "はいゆ"
+      ]
+    },
+    {
+      "name": "バインダー（プラスチック・紙製）",
+      "category": "moeru",
+      "note": "金属は取り外す",
+      "tags": []
+    },
+    {
+      "name": "はかり",
+      "category": "moenai",
+      "note": "電池は取り外す、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "はく製",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "白熱灯",
+      "category": "yugai",
+      "note": "有害ごみとして透明・半透明の袋に入れ有害シールを貼り、ペットボトルと同じ日に出す",
+      "tags": [
+        "はくねつとう"
+      ]
+    },
+    {
+      "name": "バケツ（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": []
+    },
+    {
+      "name": "羽子板（飾り用）",
+      "category": "sodai",
+      "note": "玩具用は可燃",
+      "tags": [
+        "はごいた"
+      ]
+    },
+    {
+      "name": "はさみ",
+      "category": "moenai",
+      "note": "刃物類は新聞紙などで包み「キケン」と表示",
+      "tags": []
+    },
+    {
+      "name": "箸（プラスチック・木製）",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": [
+        "はし"
+      ]
+    },
+    {
+      "name": "はしご",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "バスマット",
+      "category": "moeru",
+      "note": "珪藻土マットは不可",
+      "tags": []
+    },
+    {
+      "name": "パソコン",
+      "category": "unknown",
+      "note": "鉾田クリーンセンターでは受入れ不可。購入店・専門業者・各種リサイクル制度へ相談",
+      "tags": []
+    },
+    {
+      "name": "鉢（素焼き・陶器製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃、30cm以上は粗大",
+      "tags": [
+        "はち"
+      ]
+    },
+    {
+      "name": "バッグ（布・革・ビニール製）",
+      "category": "moeru",
+      "note": "30cm以上は粗大、金属は取り外す",
+      "tags": []
+    },
+    {
+      "name": "バッテリー（自動車等）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "発電機",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "はつでんき"
+      ]
+    },
+    {
+      "name": "バット",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "発泡スチロール（早見表）",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "はっぽうすちろーる"
+      ]
+    },
+    {
+      "name": "花火",
+      "category": "moeru",
+      "note": "水につけ、引火しない状態にしてから出す",
+      "tags": [
+        "はなび"
+      ]
+    },
+    {
+      "name": "歯ブラシ",
+      "category": "moeru",
+      "note": "状態にする",
+      "tags": [
+        "はぶらし"
+      ]
+    },
+    {
+      "name": "刃物",
+      "category": "moenai",
+      "note": "刃物類は新聞紙などで包み「キケン」と表示",
+      "tags": [
+        "はもの"
+      ]
+    },
+    {
+      "name": "針",
+      "category": "moenai",
+      "note": "ふた付きの缶へ入れる",
+      "tags": [
+        "はり"
+      ]
+    },
+    {
+      "name": "針金",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "はりがね"
+      ]
+    },
+    {
+      "name": "パレット（積載用）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "ハロゲンヒーター",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ハンガー（金属製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃",
+      "tags": []
+    },
+    {
+      "name": "はんこ（印鑑）",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": []
+    },
+    {
+      "name": "飯ごう",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "めしごう"
+      ]
+    },
+    {
+      "name": "ハンドミキサー",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ハンマー",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ピアニカ（鍵盤ハーモニカ）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ヒーター",
+      "category": "sodai",
+      "note": "燃料は抜き取る",
+      "tags": []
+    },
+    {
+      "name": "ビーチパラソル",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビールケース",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "皮革製品（合成皮革含む）",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "ひかくせいひん"
+      ]
+    },
+    {
+      "name": "ピクニックテーブル",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "髭剃り",
+      "category": "moenai",
+      "note": "刃は外し、ふた付きの缶へ入れる、プラスチック製は可燃",
+      "tags": [
+        "ひげそり"
+      ]
+    },
+    {
+      "name": "ビデオテープ",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビデオデッキ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ひな段",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビニール合羽",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビニールシート",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "火鉢",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ひばち"
+      ]
+    },
+    {
+      "name": "ヒューズ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "肥料",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "ひりょう"
+      ]
+    },
+    {
+      "name": "肥料袋",
+      "category": "unknown",
+      "note": "事業系を除く、家庭用は可燃",
+      "tags": [
+        "ひりょうふくろ"
+      ]
+    },
+    {
+      "name": "びん（飲食用）",
+      "category": "bin",
+      "note": "びん・紙類と同じ資源物の扱い",
+      "tags": []
+    },
+    {
+      "name": "びん（飲食用以外）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ピンポン玉",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ファックス（家庭用）",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "フィルム（ネガ）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "フィン（足ひれ）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "風鈴",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ふうりん"
+      ]
+    },
+    {
+      "name": "プール（幼児用）",
+      "category": "moeru",
+      "note": "空気は抜く",
+      "tags": []
+    },
+    {
+      "name": "フォーク（食器・金属製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃",
+      "tags": []
+    },
+    {
+      "name": "服",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ふく"
+      ]
+    },
+    {
+      "name": "ふすま",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "ふすま紙",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "仏壇",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ぶつだん"
+      ]
+    },
+    {
+      "name": "不凍液",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "ふとうえき"
+      ]
+    },
+    {
+      "name": "ふとん（布団）",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": []
+    },
+    {
+      "name": "布団乾燥機",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ふとんかんそうき"
+      ]
+    },
+    {
+      "name": "ブラインド",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ブラシ（金属）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃",
+      "tags": []
+    },
+    {
+      "name": "プラスチック容器・製品",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "フラッシュメモリー",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "プランター（陶器製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "プリンター",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ブルーシート",
+      "category": "sodai",
+      "note": "十字に縛る",
+      "tags": []
+    },
+    {
+      "name": "フレコンバッグ",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "フロアマット（自動車用）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "風呂がま",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "ふろがま"
+      ]
+    },
+    {
+      "name": "プロジェクター",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ブロック（建築資材用）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "フロッピーディスク",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "風呂のふた",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ふろのふた"
+      ]
+    },
+    {
+      "name": "プロパンガス",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "ぶんちん（ペーパーウェイト）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "噴霧器（手動式・電動式）",
+      "category": "sodai",
+      "note": "エンジン式は販売店、、専門業者等に相談",
+      "tags": [
+        "ふんむき"
+      ]
+    },
+    {
+      "name": "ヘアブラシ",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ベッド",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ペットの汚物（フン）",
+      "category": "unknown",
+      "note": "トイレに流す",
+      "tags": []
+    },
+    {
+      "name": "ヘッドホン",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "ペット用トイレ砂",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談、紙製は可燃",
+      "tags": []
+    },
+    {
+      "name": "ベビーカー（乳母車）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ベビーバス",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ヘルスメーター（機械式）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ヘルメット",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ペン（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": []
+    },
+    {
+      "name": "便器",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "べんき"
+      ]
+    },
+    {
+      "name": "ペンキ",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "ペンキ缶",
+      "category": "moenai",
+      "note": "中身は空にし、ふき取る",
+      "tags": []
+    },
+    {
+      "name": "便座",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "べんざ"
+      ]
+    },
+    {
+      "name": "ベンチ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "弁当箱（金属製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃",
+      "tags": [
+        "べんとうばこ"
+      ]
+    },
+    {
+      "name": "ホイール（自動車）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "ボイラー",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "望遠鏡",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "ぼうえんきょう"
+      ]
+    },
+    {
+      "name": "ほうき",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "芳香剤の容器",
+      "category": "moeru",
+      "note": "びん・缶は不燃",
+      "tags": [
+        "ほうこうざいのようき"
+      ]
+    },
+    {
+      "name": "防災ラジオ",
+      "category": "unknown",
+      "note": "市の総務課危機管理室、まで返却",
+      "tags": [
+        "ぼうさいらじお"
+      ]
+    },
+    {
+      "name": "包丁",
+      "category": "moenai",
+      "note": "刃物類は新聞紙などで包み「キケン」と表示",
+      "tags": [
+        "ほうちょう"
+      ]
+    },
+    {
+      "name": "包丁研ぎ器（砥石以外）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ほうちょうとぎき"
+      ]
+    },
+    {
+      "name": "ボウル（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ホース",
+      "category": "moeru",
+      "note": "長さ50cm以内に切断、それ以上のものは粗大",
+      "tags": []
+    },
+    {
+      "name": "ホースリール",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ポータブルトイレ",
+      "category": "sodai",
+      "note": "携帯用は可燃",
+      "tags": []
+    },
+    {
+      "name": "ボールペン",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": []
+    },
+    {
+      "name": "木刀",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ぼくとう"
+      ]
+    },
+    {
+      "name": "歩行器",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ほこうき"
+      ]
+    },
+    {
+      "name": "ボストンバッグ",
+      "category": "moeru",
+      "note": "30cm以上は粗大、金属は取り外す",
+      "tags": []
+    },
+    {
+      "name": "ボタン（金属製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃",
+      "tags": []
+    },
+    {
+      "name": "ホチキス",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ポット",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ホットカーペット",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": []
+    },
+    {
+      "name": "ホットプレート",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ボディボード",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "哺乳びん（ガラス製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": [
+        "ほにゅうびん"
+      ]
+    },
+    {
+      "name": "ポリタンク（20ℓ以下）",
+      "category": "sodai",
+      "note": "中身のないもの30cm以下は可燃",
+      "tags": []
+    },
+    {
+      "name": "ポリバケツ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "保冷剤",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ほれいざい"
+      ]
+    },
+    {
+      "name": "本",
+      "category": "kami",
+      "note": "雑誌と同じ",
+      "tags": [
+        "ほん"
+      ]
+    },
+    {
+      "name": "ポンプ（井戸等）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "麻雀卓",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "まーじゃんすぐる"
+      ]
+    },
+    {
+      "name": "麻雀パイ",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "まーじゃんぱい"
+      ]
+    },
+    {
+      "name": "マイク",
+      "category": "moenai",
+      "note": "電池は取り外す",
+      "tags": []
+    },
+    {
+      "name": "マウス（パソコン用）",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "巻尺",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "まきじゃく"
+      ]
+    },
+    {
+      "name": "薪ストーブ",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "たきぎすとーぶ"
+      ]
+    },
+    {
+      "name": "マグネット",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "枕（まくら）",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "まくら"
+      ]
+    },
+    {
+      "name": "マジックペン",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": []
+    },
+    {
+      "name": "マッサージチェア",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "マッサージ器具",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "マット",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": []
+    },
+    {
+      "name": "マットレス",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "まな板",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "魔法瓶",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "まほうびん"
+      ]
+    },
+    {
+      "name": "豆電球（常夜灯）",
+      "category": "yugai",
+      "note": "有害ごみとして透明・半透明の袋に入れ有害シールを貼り、ペットボトルと同じ日に出す",
+      "tags": [
+        "まめでんきゅう"
+      ]
+    },
+    {
+      "name": "万年筆",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": [
+        "まんねんひつ"
+      ]
+    },
+    {
+      "name": "万歩計",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "まんぽけい"
+      ]
+    },
+    {
+      "name": "ミキサー（早見表）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ミシン",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "水枕",
+      "category": "moeru",
+      "note": "留め金具は不燃",
+      "tags": [
+        "みずまくら"
+      ]
+    },
+    {
+      "name": "耳かき",
+      "category": "moeru",
+      "note": "金属製は不燃",
+      "tags": [
+        "みみかき"
+      ]
+    },
+    {
+      "name": "ミルク缶",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "虫かご（金属製）",
+      "category": "moenai",
+      "note": "プラスチック・木製は可燃、30cm以上は粗大",
+      "tags": [
+        "むしかご"
+      ]
+    },
+    {
+      "name": "虫取り網",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "むしとりあみ"
+      ]
+    },
+    {
+      "name": "虫眼鏡（ガラス製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": [
+        "むしめがね"
+      ]
+    },
+    {
+      "name": "メガネ（金属製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": []
+    },
+    {
+      "name": "目覚まし時計",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": [
+        "めざましとけい"
+      ]
+    },
+    {
+      "name": "メジャー",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "毛布",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": [
+        "もうふ"
+      ]
+    },
+    {
+      "name": "餅つき機",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "もちつきき"
+      ]
+    },
+    {
+      "name": "モップ",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "物置",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "ものおき"
+      ]
+    },
+    {
+      "name": "物干し竿及びポール",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ものほしさおおよびぽーる"
+      ]
+    },
+    {
+      "name": "物干し台（セメント・石）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "ものほしだい"
+      ]
+    },
+    {
+      "name": "焼き網",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": [
+        "やきあみ"
+      ]
+    },
+    {
+      "name": "野球グローブ",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "やきゅうぐろーぶ"
+      ]
+    },
+    {
+      "name": "野球ボール",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "やきゅうぼーる"
+      ]
+    },
+    {
+      "name": "薬品（農業用・工業用）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "やくひん"
+      ]
+    },
+    {
+      "name": "遊具（家庭用）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ゆうぐ"
+      ]
+    },
+    {
+      "name": "湯たんぽ",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ゆたんぽ"
+      ]
+    },
+    {
+      "name": "ゆりかご",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "湯沸かし器（給湯器）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ゆわかしき"
+      ]
+    },
+    {
+      "name": "洋服",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ようふく"
+      ]
+    },
+    {
+      "name": "浴槽（バスタブ）",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": [
+        "よくそう"
+      ]
+    },
+    {
+      "name": "よしず",
+      "category": "sodai",
+      "note": "2、3箇所縛る",
+      "tags": []
+    },
+    {
+      "name": "ラケット",
+      "category": "moeru",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ラジカセ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ラジコン",
+      "category": "moenai",
+      "note": "電池は取り外す、30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ラック（棚）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ランチジャー（保温性弁当箱）",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ランドセル",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ランプ・ランタン",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "リール（釣具）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "リコーダー（笛）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "リチウムイオン電池",
+      "category": "yugai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "リモコン",
+      "category": "moenai",
+      "note": "使用済み小型家電回収ボックスでも回収可",
+      "tags": []
+    },
+    {
+      "name": "リュックサック",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ルアー（釣具）",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ルームランナー（ランニングマシン）",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "冷風機",
+      "category": "sodai",
+      "note": "エアコンは除く",
+      "tags": [
+        "れいふうき"
+      ]
+    },
+    {
+      "name": "レインコート（合羽）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "レーザーディスクプレーヤー",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "レコードプレーヤー",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "レジ袋",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "レジャーシート",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "レンガ",
+      "category": "unknown",
+      "note": "販売店、専門業者等に相談",
+      "tags": []
+    },
+    {
+      "name": "レンズ（ガラス製）",
+      "category": "moenai",
+      "note": "プラスチック製は可燃",
+      "tags": []
+    },
+    {
+      "name": "練炭",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "れんたん"
+      ]
+    },
+    {
+      "name": "ロウソク",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ロープ",
+      "category": "moeru",
+      "note": "長さ1ｍ以内に切断",
+      "tags": []
+    },
+    {
+      "name": "ローラースケート",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ロッカー",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ワープロ",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ワイヤーロープ",
+      "category": "moenai",
+      "note": "30cm以上は粗大",
+      "tags": []
+    },
+    {
+      "name": "ワゴン",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    }
+  ],
+  "contact": [
+    {
+      "name": "鉾田市 生活環境課",
+      "note": "分別方法・収集日に関すること",
+      "tel": "0291367486",
+      "hours": "平日 8:30〜17:15"
+    },
+    {
+      "name": "鉾田クリーンセンター",
+      "note": "鉾田・大洋地区の自己搬入・粗大ごみ相談",
+      "tel": "0291324187",
+      "hours": "月〜金曜日 午前8時〜午後4時"
+    },
+    {
+      "name": "大洗、鉾田、水戸環境組合",
+      "note": "旭地区の自己搬入・粗大ごみ相談",
+      "tel": "0292672898",
+      "hours": "要問い合わせ"
+    }
+  ],
+  "features": {
+    "notice": true,
+    "faq": true,
+    "vendor": false,
+    "contact": true,
+    "language": true,
+    "affiliate": true
+  },
+  "notices": [
+    {
+      "id": 1,
+      "type": "info",
+      "date": "2026-09-02",
+      "title": "大洋市民センター暫定集積所のご案内",
+      "body": "地域の通常のごみ集積所を利用できない方を対象に、大洋市民センター敷地内（鉾田市汲上2415番地5）で可燃ごみ（毎週月・木曜日）・不燃ごみ（毎週水曜日）の定時回収を実施。回収時間は各日午前7:00〜7:20の20分間のみで、事前手続きは不要。粗大ごみ・資源ごみの持込みは不可。年末年始は通常集積所の収集スケジュールに準ずる。",
+      "url": "https://www.city.hokota.lg.jp/page/page008165.html"
+    },
+    {
+      "id": 2,
+      "type": "warn",
+      "date": "2026-08-04",
+      "title": "リチウムイオン電池の分別収集にご協力ください",
+      "body": "モバイルバッテリー・加熱式タバコ・ワイヤレスイヤホン等に内蔵されたリチウムイオン電池が原因のごみ収集車・処理施設の火災が多発。正常な電池パック・モバイルバッテリーは端子を絶縁して「有害ごみ」の日に集積所へ、電池が取り外せない小型家電は使用済小型家電の無料回収ボックスへ。膨張・変形した電池は集積所に出さず、各クリーンセンターへ直接持ち込む。",
+      "url": "https://www.city.hokota.lg.jp/page/page007603.html"
+    },
+    {
+      "id": 3,
+      "type": "info",
+      "date": "2026-08-01",
+      "title": "指定ごみ袋の品薄に伴う臨時措置を終了しました（令和8年9月30日まで）",
+      "body": "中東情勢等の影響による品薄・品切れのため認めていた臨時措置は、令和8年9月30日で終了予定です。詳細は鉾田市公式サイトでご確認ください。",
+      "url": "https://www.city.hokota.lg.jp/page/page008128.html"
+    }
+  ],
+  "rules": {
+    "title": "ごみ出しルール",
+    "items": [
+      {
+        "icon": "swap_horiz",
+        "title": "旭・鉾田・大洋の3地区、さらに大字ごとに収集日が異なる",
+        "body": "鉾田市は旭地区・鉾田地区・大洋地区に分かれ、それぞれの中でも大字（地区名）ごとに可燃ごみの曜日（月・木または火・金）、資源物・ペットボトル・有害ごみの月2回の指定曜日が異なります。お住まいの地区を選んで確認してください。"
+      },
+      {
+        "icon": "delete_sweep",
+        "title": "空き缶の分別区分は地区によって異なる",
+        "body": "鉾田・大洋地区では空き缶は不燃ごみ（全域毎週水曜日）、旭地区では空き缶は資源物（びん・缶・紙類、月2回）として扱います。"
+      },
+      {
+        "icon": "warning",
+        "title": "刃物・割れ物・電池は必ず分別・保護してから出す",
+        "body": "刃物や割れた食器・ガラスは新聞紙などで包み「キケン」と表示してください。電池が入っている製品は必ず電池を取り外し、有害ごみとして別に出してください。"
+      },
+      {
+        "icon": "storefront",
+        "title": "粗大ごみは集積所収集なし・自己搬入のみ",
+        "body": "鉾田市に粗大ごみの戸別収集はありません。鉾田クリーンセンター（鉾田・大洋地区）または大洗、鉾田、水戸環境組合（旭地区）へご自身で搬入してください（50kg超は有料）。"
+      },
+      {
+        "icon": "devices",
+        "title": "小型家電は市内7か所の回収ボックスへ",
+        "body": "携帯電話・デジタルカメラ等の使用済み小型家電は、市役所本庁舎・旭市民センター・大洋市民センター・鉾田中央公民館・旭公民館・とっぷさんて大洋・ほっとパーク鉾田の回収ボックスに持ち込めます。"
+      }
+    ]
+  },
+  "affiliate_items": [
+    {
+      "icon": "🛍️",
+      "name": "指定ごみ袋",
+      "sub": "楽天で探す →",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%81%94%E3%81%BF%E8%A2%8B/"
+    },
+    {
+      "icon": "🕸️",
+      "name": "カラスよけネット",
+      "sub": "楽天で探す →",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%82%AB%E3%83%A9%E3%82%B9%E3%82%88%E3%81%91%E3%83%8D%E3%83%83%E3%83%88/"
+    }
+  ]
+}

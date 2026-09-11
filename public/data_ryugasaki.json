@@ -1,0 +1,2519 @@
+{
+  "municipality_id": "ryugasaki",
+  "name": "龍ケ崎市",
+  "prefecture": "茨城県",
+  "population": 73880,
+  "ad_type": "none",
+  "official_banner_url": "",
+  "brand_color": "#6B1F4A",
+  "official_url": "https://www.city.ryugasaki.ibaraki.jp/kurashi/kankyo/gomi/index.html",
+  "official_url_label": "龍ケ崎市公式ホームページ（ごみ・リサイクル）",
+  "citation_date": "2026年9月",
+  "cityLogo": null,
+  "seo": {
+    "title": "龍ケ崎市のごみ収集日・分別と出し方｜ごみニコ",
+    "description": "茨城県龍ケ崎市のごみ収集日をカレンダーで確認、品目名で分別と出し方もすぐ検索。16地区の収集曜日に対応。無料・登録不要。",
+    "keywords": "ごみ,分別,収集日,カレンダー,燃やすごみ,燃やさないごみ,資源物,粗大ごみ,龍ケ崎市",
+    "h1Title": "龍ケ崎市のごみ分別",
+    "contactCardNote": "都市整備部 廃棄物対策課へのご連絡",
+    "calDayWeight": 500,
+    "serviceName": "龍ケ崎市 ごみ収集サービス",
+    "orgName": "龍ケ崎市 廃棄物対策課",
+    "orgTelephone": "0297-64-1111",
+    "addressLocality": "龍ケ崎市",
+    "addressRegion": "茨城県",
+    "faq": [
+      {
+        "name": "龍ケ崎市の燃やすごみの収集日はいつですか？",
+        "text": "お住まいの地区で異なります。地区ごとに「月・水・金」または「火・木・土」のいずれかの週3回です。"
+      },
+      {
+        "name": "燃やさないごみの収集日は？",
+        "text": "地区ごとに決まった曜日の毎月第1・3または第2・4のいずれかです。詳しくはお住まいの地区の収集カレンダーでご確認ください。"
+      },
+      {
+        "name": "資源物（ビン・カン・紙類・ペットボトル・布類・白トレー）はいつ出せますか？",
+        "text": "地区ごとに決まった曜日の毎月第1・3または第2・4に、資源物回収ステーションへ午前8時30分までに出してください。木くず類は別の収集日です。"
+      },
+      {
+        "name": "龍ケ崎市の粗大ごみはどうやって出しますか？",
+        "text": "予約制・有料です。電話・窓口・市公式LINEで申し込み、1点1,570円の「粗大ごみ処理・廃家電収集運搬券」を販売店等で購入して貼り、毎週水・木曜日の朝8時30分までに指定の場所へ出します。"
+      },
+      {
+        "name": "家電4品目（テレビ・エアコン・冷蔵庫・洗濯機）はどう処分しますか？",
+        "text": "家電リサイクル法の対象のため、購入した販売店またはメーカーへ引き取りを依頼してください。"
+      }
+    ]
+  },
+  "area_groups": [
+    {
+      "label": "燃やすごみ「月・水・金」地区",
+      "keys": [
+        "dashiyama",
+        "nakanedai",
+        "nemachi",
+        "nagayama",
+        "komemachi",
+        "shouwa",
+        "kitamonma",
+        "sanuki"
+      ]
+    },
+    {
+      "label": "燃やすごみ「火・木・土」地区",
+      "keys": [
+        "kawarashiro",
+        "asamagaura",
+        "ireji",
+        "wakashiba",
+        "yahara",
+        "omiya",
+        "kubodai",
+        "sunamachi"
+      ]
+    }
+  ],
+  "areas": {
+    "dashiyama": {
+      "name": "出し山町・野原町・城ノ内",
+      "moeru": [
+        1,
+        3,
+        5
+      ],
+      "moenai": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "recycle": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "nakanedai": {
+      "name": "中根台・藤ケ丘",
+      "moeru": [
+        1,
+        3,
+        5
+      ],
+      "moenai": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "recycle": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "nemachi": {
+      "name": "根町・馴馬町中曽根・愛戸町・富士見・城下・緑町",
+      "moeru": [
+        1,
+        3,
+        5
+      ],
+      "moenai": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "recycle": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "nagayama": {
+      "name": "長山・長山前",
+      "moeru": [
+        1,
+        3,
+        5
+      ],
+      "moenai": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "recycle": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "komemachi": {
+      "name": "米町・姫宮町・水門・馴馬町上米",
+      "moeru": [
+        1,
+        3,
+        5
+      ],
+      "moenai": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "recycle": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "shouwa": {
+      "name": "昭和・小通幸谷町・稗柄町・南中島南1・北1・2区・川崎町",
+      "moeru": [
+        1,
+        3,
+        5
+      ],
+      "moenai": {
+        "day": 4,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "recycle": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kitamonma": {
+      "name": "北文間全域・新町・横町・田町・南が丘",
+      "moeru": [
+        1,
+        3,
+        5
+      ],
+      "moenai": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "recycle": {
+        "day": 2,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "sanuki": {
+      "name": "佐貫1〜5区",
+      "moeru": [
+        1,
+        3,
+        5
+      ],
+      "moenai": {
+        "day": 4,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "recycle": {
+        "day": 2,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kawarashiro": {
+      "name": "川原代全域",
+      "moeru": [
+        2,
+        4,
+        6
+      ],
+      "moenai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "recycle": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "asamagaura": {
+      "name": "浅間ケ浦・庄兵衛新田町・松葉",
+      "moeru": [
+        2,
+        4,
+        6
+      ],
+      "moenai": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "recycle": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "ireji": {
+      "name": "入地町・馴馬町（上米・中曽根を除く）・平台・小柴",
+      "moeru": [
+        2,
+        4,
+        6
+      ],
+      "moenai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "recycle": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "wakashiba": {
+      "name": "若柴1〜3区・佐貫町（佐貫南・浦、前・中・後佐貫、佐貫台、立羽）",
+      "moeru": [
+        2,
+        4,
+        6
+      ],
+      "moenai": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "recycle": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "yahara": {
+      "name": "八原全域・長戸全域・白羽・中里",
+      "moeru": [
+        2,
+        4,
+        6
+      ],
+      "moenai": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "recycle": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "omiya": {
+      "name": "大宮全域",
+      "moeru": [
+        2,
+        4,
+        6
+      ],
+      "moenai": {
+        "day": 5,
+        "weeks": [
+          1,
+          3
+        ]
+      },
+      "recycle": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    },
+    "kubodai": {
+      "name": "久保台・松ケ丘",
+      "moeru": [
+        2,
+        4,
+        6
+      ],
+      "moenai": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "recycle": {
+        "day": 3,
+        "weeks": [
+          1,
+          3
+        ]
+      }
+    },
+    "sunamachi": {
+      "name": "砂町・上町・栄町・下町・高砂町・直鮒町",
+      "moeru": [
+        2,
+        4,
+        6
+      ],
+      "moenai": {
+        "day": 5,
+        "weeks": [
+          2,
+          4
+        ]
+      },
+      "recycle": {
+        "day": 3,
+        "weeks": [
+          2,
+          4
+        ]
+      }
+    }
+  },
+  "categories": {
+    "moeru": {
+      "label": "燃やすごみ",
+      "how": "生ごみ・紙くず・木製品・布類・皮革製品・プラスチック製品そのもの等を、地区ごとに決まった週3回（「月・水・金」または「火・木・土」）の朝8時30分までに集積所へ",
+      "allowed": [
+        "生ごみ（水切りをしてから）、紙くず、紙おむつ（汚物は取り除く）",
+        "木製品・木くず（建設廃材を除く）、布類・革製品・ゴム製品",
+        "プラスチック製品そのもの（ポリバケツ・CDケース等）、発泡スチロール",
+        "1m未満及び20kg未満の木製家具・木製椅子など"
+      ],
+      "not_allowed": [
+        "資源物（ビン・カン・紙類・ペットボトル・布類・白トレー・木くず類は資源物の日へ）",
+        "1m以上または20kg以上のもの（粗大ごみへ）",
+        "業者処分の品目（石・建築廃材・農業廃材等）"
+      ],
+      "tips": [
+        "収集日は地区で異なり、週3回「月・水・金」または「火・木・土」のいずれか",
+        "最も長い部分が1m以上、または重さが20kg以上のものは粗大ごみになります"
+      ],
+      "how_steps": [
+        "指定袋に入れる",
+        "地区の収集曜日（週3回）の朝8時30分までに集積所へ"
+      ]
+    },
+    "moenai": {
+      "label": "燃やさないごみ",
+      "how": "金属製品・ガラス製品・陶磁器・小型家電等を、地区ごとに決まった曜日の毎月第1・3または第2・4の朝8時30分までに集積所へ",
+      "allowed": [
+        "金属製品（アイロン・なべ・フライパン等）、ガラス製品、陶磁器",
+        "小型家電（掃除機・ドライヤー・電卓等）、蛍光灯・電球（中身を確認できる袋に単独で）",
+        "乾電池（単独の袋で）、使用済みライター・スプレー缶（中身を使い切ってから）"
+      ],
+      "not_allowed": [
+        "資源物（ビン・カン・紙類・ペットボトル・布類・木くず類は資源物の日へ）",
+        "1m以上または20kg以上のもの（粗大ごみへ）",
+        "家電4品目・パソコン（別ルートでリサイクル）"
+      ],
+      "tips": [
+        "収集日は地区で異なり、毎月第1・3または第2・4のいずれかの曜日",
+        "刃物・ガラスの破片は紙に包んで危険が分かるようにしてください",
+        "スプレー缶・ライターは中身を使い切ってから穴を開けずに出してください"
+      ],
+      "how_steps": [
+        "指定袋に入れる（蛍光灯・乾電池は単独の袋で）",
+        "地区の収集曜日（月1〜2回）の朝8時30分までに集積所へ"
+      ]
+    },
+    "recycle": {
+      "label": "資源物（ビン・カン・紙類・布類・ペットボトル・白トレー）",
+      "how": "色別・種類別に分けて資源物回収ステーションへ。地区ごとに決まった曜日の毎月第1・3または第2・4の朝8時30分までに出す。木くず類のみ収集日が異なる",
+      "allowed": [
+        "ビン（無色透明・茶色・黒色・青緑色の4種に分別、フタを外し中を洗う）",
+        "カン（一斗缶までの金属缶、中を洗う）",
+        "紙類（新聞紙・ダンボール・雑がみ・紙パック、ひもで縛る）",
+        "ペットボトル（識別マークがあるもの、フタ・ラベルを外し軽くすすぐ）",
+        "布（シャツ・タオル・着物等、束ねてひもで縛る）",
+        "白トレー（真っ白な皿状トレーのみ、洗って乾かす）",
+        "木くず類（枝・板、収集日は他の資源物と異なる）"
+      ],
+      "not_allowed": [
+        "化粧品ビン・耐熱ガラス・食器・蛍光灯（燃やさないごみへ）",
+        "汚れの落ちないカン・ビン（燃やさないごみへ）",
+        "色や柄のついたトレー、匂いのある容器（燃やすごみへ）",
+        "羽毛布団・ダウンジャケット・毛布・カーテン・絨毯（布の日には出せません）"
+      ],
+      "tips": [
+        "資源物をごみの収集日に出しても回収されません",
+        "ビンは色ごとに正しく分別しないとコンテナごと回収されないことがあります",
+        "木くず類の収集日はビン・カン・紙類・ペットボトル・布・白トレーと異なります",
+        "廃食用油・ペットボトルキャップはコミュニティセンター等での拠点回収を利用してください"
+      ],
+      "how_steps": [
+        "種類ごとに分別し、洗ってすすぐ",
+        "資源物回収ステーションの各コンテナ・回収網袋に入れる",
+        "地区の収集曜日の朝8時30分までに出す"
+      ]
+    },
+    "sodai": {
+      "label": "粗大ごみ",
+      "how": "最も長い部分が1m以上、または重さが20kg以上のごみ。予約制・有料。電話・窓口・市公式LINEで申し込み、1点1,570円の「粗大ごみ処理・廃家電収集運搬券」を販売店等で購入して貼り、毎週水・木曜日の朝8時30分までに指定の場所へ出す",
+      "allowed": [
+        "家庭から出る粗大ごみ（タンス・ベッド・自転車等）"
+      ],
+      "not_allowed": [
+        "事業活動に伴うごみ",
+        "大人2人がかりでも運べない大型のもの、くりーんプラザ・龍に搬入できないもの"
+      ],
+      "tips": [
+        "収集は毎週水・木曜日の予約制です（LINE・窓口・電話0297-64-1111で予約）",
+        "「くりーんプラザ・龍」への直接搬入（有料）も可能です",
+        "リユースプラットフォーム「おいくら」での売却も検討できます",
+        "手数料は還付できません"
+      ],
+      "how_steps": [
+        "LINE・窓口・電話で予約する",
+        "「粗大ごみ処理・廃家電収集運搬券」（1点1,570円）を販売店等で購入し氏名を記入して貼る",
+        "指定収集日の朝8時30分までに指定の場所へ出す"
+      ]
+    },
+    "unknown": {
+      "label": "業者処分・収集できないごみ（家電4品目・パソコン等）",
+      "how": "家電4品目（エアコン・テレビ・冷蔵庫冷凍庫・洗濯機）は購入した販売店またはメーカーへ、パソコンはメーカーまたはリサイクル窓口へ、その他業者処分の品目は専門の処理業者へ依頼してください",
+      "allowed": [],
+      "not_allowed": [
+        "家電4品目（テレビ・エアコン・冷蔵庫冷凍庫・洗濯機衣類乾燥機）",
+        "パソコン、バイク、消火器",
+        "建築廃材、コンクリート、石、農薬・農機具、シンナー・ガソリン等の危険物",
+        "水銀使用の体温計・温度計（くりーんプラザ・龍への直接搬入のみ）"
+      ],
+      "tips": [
+        "家電4品目は家電リサイクル法の対象で、購入した販売店またはメーカーへ引き取りを依頼してください",
+        "パソコンは資源有効利用促進法によりメーカーへ（パソコンの出し方のページ参照）",
+        "消火器は消火器リサイクル推進センターへ",
+        "水銀使用の体温計・温度計はくりーんプラザ・龍への直接搬入のみ受付"
+      ],
+      "how_steps": [
+        "品目を確認し該当する処分方法を選ぶ",
+        "販売店・メーカー・専門業者に連絡する",
+        "案内に従って処分する"
+      ]
+    }
+  },
+  "garbage_db": [
+    {
+      "name": "アイロン",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "アイロン台（脚・金属なし・1m未満）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "あいろんだい"
+      ]
+    },
+    {
+      "name": "アイロン台（脚・金属なし・1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "あいろんだい"
+      ]
+    },
+    {
+      "name": "アイロン台（脚・金属含む・1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "あいろんだい"
+      ]
+    },
+    {
+      "name": "アイロン台（脚・金属含む・1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "あいろんだい"
+      ]
+    },
+    {
+      "name": "アコーディオンカーテン",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "油（食用）",
+      "category": "recycle",
+      "note": "コミュニティセンター・サンデーリサイクルでの拠点回収（集積所の資源物回収ステーションでは回収不可）",
+      "tags": [
+        "あぶら"
+      ]
+    },
+    {
+      "name": "油（食用以外）",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "あぶら"
+      ]
+    },
+    {
+      "name": "網戸（1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "あみど"
+      ]
+    },
+    {
+      "name": "網戸（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "あみど"
+      ]
+    },
+    {
+      "name": "アルミサッシ（1m未満及び20kg未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "あるみさっし"
+      ]
+    },
+    {
+      "name": "アルミサッシ（1m以上又は20kg未満）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "あるみさっし"
+      ]
+    },
+    {
+      "name": "石",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "いし"
+      ]
+    },
+    {
+      "name": "いす（木製・1m未満及び20kg未満）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "いす"
+      ]
+    },
+    {
+      "name": "いす（木製以外・1m未満及び20kg未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "いす"
+      ]
+    },
+    {
+      "name": "いす（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "いす"
+      ]
+    },
+    {
+      "name": "一輪車",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "いちりんしゃ"
+      ]
+    },
+    {
+      "name": "インクカートリッジ",
+      "category": "unknown",
+      "note": "メーカー・販売店等によるリサイクルルートあり",
+      "tags": []
+    },
+    {
+      "name": "インクジェットプリンター",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "植木ばち（陶製）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "うえきばち"
+      ]
+    },
+    {
+      "name": "植木ばち（プラスチック製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "うえきばち"
+      ]
+    },
+    {
+      "name": "ウォーターサーバー（フロン類が使用されている製品）",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "うぉーたーさーばー"
+      ]
+    },
+    {
+      "name": "ウォーターサーバー（フロン類が使用されていない製品）",
+      "category": "moenai",
+      "note": "1m以上または20kg以上のものは粗大ごみ",
+      "tags": [
+        "うぉーたーさーばー"
+      ]
+    },
+    {
+      "name": "臼",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "うす"
+      ]
+    },
+    {
+      "name": "エアコン",
+      "category": "unknown",
+      "note": "家電リサイクル法対象（家電販売店等へ引き取り依頼）",
+      "tags": []
+    },
+    {
+      "name": "塩ビ管",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "しおびかん"
+      ]
+    },
+    {
+      "name": "オイル",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "オイルヒーター",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "応接セット",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "おうせつせっと"
+      ]
+    },
+    {
+      "name": "オーブンレンジ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "おまる（簡易トイレ）",
+      "category": "moeru",
+      "note": "汚物を取り除く",
+      "tags": [
+        "おまる"
+      ]
+    },
+    {
+      "name": "おもちゃ（金属製）",
+      "category": "moenai",
+      "note": "電池をはずす",
+      "tags": [
+        "おもちゃ"
+      ]
+    },
+    {
+      "name": "おもちゃ（プラスチック製）",
+      "category": "moeru",
+      "note": "電池をはずす",
+      "tags": [
+        "おもちゃ"
+      ]
+    },
+    {
+      "name": "オルガン",
+      "category": "sodai",
+      "note": "業者処分となる場合あり",
+      "tags": []
+    },
+    {
+      "name": "温水器",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "おんすいき"
+      ]
+    },
+    {
+      "name": "温度計（水銀使用）",
+      "category": "unknown",
+      "note": "くりーんプラザ・龍への直接搬入のみ（水銀使用製品）",
+      "tags": [
+        "おんどけい"
+      ]
+    },
+    {
+      "name": "温度計（電子式）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "おんどけい"
+      ]
+    },
+    {
+      "name": "貝がら",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かいがら"
+      ]
+    },
+    {
+      "name": "カーテン",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カーテンレール（金属製・1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "かーてんれーる"
+      ]
+    },
+    {
+      "name": "カーテンレール（プラスチック製・1m未満）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かーてんれーる"
+      ]
+    },
+    {
+      "name": "カーテンレール（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "かーてんれーる"
+      ]
+    },
+    {
+      "name": "カーペット（布・1m未満）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かーぺっと"
+      ]
+    },
+    {
+      "name": "カーペット（電気・1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "かーぺっと"
+      ]
+    },
+    {
+      "name": "カーペット（布・電気・1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "かーぺっと"
+      ]
+    },
+    {
+      "name": "鏡（1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "かがみ"
+      ]
+    },
+    {
+      "name": "鏡（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "かがみ"
+      ]
+    },
+    {
+      "name": "額縁（金属製）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "がくぶち"
+      ]
+    },
+    {
+      "name": "額縁（木製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "がくぶち"
+      ]
+    },
+    {
+      "name": "傘",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "かさ"
+      ]
+    },
+    {
+      "name": "ガスコンロ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ガスボンベ（卓上）",
+      "category": "recycle",
+      "note": "中身を使い切り、安全な場所で穴を開ける",
+      "tags": [
+        "がすぼんべ"
+      ]
+    },
+    {
+      "name": "ガスボンベ（卓上以外）",
+      "category": "unknown",
+      "note": "業者処分（カセットボンベ・スプレー缶の処分について参照）",
+      "tags": [
+        "がすぼんべ"
+      ]
+    },
+    {
+      "name": "ガソリン",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カップめんの容器",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かっぷめんのようき"
+      ]
+    },
+    {
+      "name": "カップめんのふた",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "かばん（1m未満）",
+      "category": "moeru",
+      "note": "金属類が多く使用されているものは燃やさないごみ",
+      "tags": [
+        "かばん"
+      ]
+    },
+    {
+      "name": "かばん（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "かばん"
+      ]
+    },
+    {
+      "name": "紙おむつ",
+      "category": "moeru",
+      "note": "汚物は取り除く",
+      "tags": [
+        "かみおむつ"
+      ]
+    },
+    {
+      "name": "カミソリ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "神棚",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "かみだな"
+      ]
+    },
+    {
+      "name": "紙箱",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "かみばこ"
+      ]
+    },
+    {
+      "name": "紙袋",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "かみぶくろ"
+      ]
+    },
+    {
+      "name": "カメラ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "カラオケ機器（1m未満及び20kg未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "からおけきき"
+      ]
+    },
+    {
+      "name": "カラオケ機器（1m以上又は20kg以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "からおけきき"
+      ]
+    },
+    {
+      "name": "革製品",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かわせいひん"
+      ]
+    },
+    {
+      "name": "缶（ジュース類・菓子缶など）",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "かん"
+      ]
+    },
+    {
+      "name": "換気扇",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "かんきせん"
+      ]
+    },
+    {
+      "name": "乾燥機（衣類）",
+      "category": "unknown",
+      "note": "家電リサイクル法対象（家電販売店等へ引き取り依頼）",
+      "tags": [
+        "かんそうき"
+      ]
+    },
+    {
+      "name": "乾燥機（布団）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "かんそうき"
+      ]
+    },
+    {
+      "name": "乾燥剤",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かんそうざい"
+      ]
+    },
+    {
+      "name": "乾電池",
+      "category": "moenai",
+      "note": "中身を確認できる袋に乾電池のみを入れて出す",
+      "tags": [
+        "かんでんち"
+      ]
+    },
+    {
+      "name": "ギター（1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ぎたー"
+      ]
+    },
+    {
+      "name": "ギター（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ぎたー"
+      ]
+    },
+    {
+      "name": "杵",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "きね"
+      ]
+    },
+    {
+      "name": "木の枝（太さ20cm未満・長さ1m未満）",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "きのえだ"
+      ]
+    },
+    {
+      "name": "木の根",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "きのね"
+      ]
+    },
+    {
+      "name": "牛乳パック",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "ぎゅうにゅうぱっく"
+      ]
+    },
+    {
+      "name": "金庫（手提げ）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "きんこ"
+      ]
+    },
+    {
+      "name": "金庫（大型）",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "きんこ"
+      ]
+    },
+    {
+      "name": "空気清浄器",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "くうきせいじょうき"
+      ]
+    },
+    {
+      "name": "クーラーボックス",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "くつ",
+      "category": "moeru",
+      "note": "金属類が入っているものは燃やさないごみ",
+      "tags": []
+    },
+    {
+      "name": "車いす",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "くるまいす"
+      ]
+    },
+    {
+      "name": "蛍光灯",
+      "category": "moenai",
+      "note": "中身を確認できる袋などに蛍光灯のみを入れる",
+      "tags": [
+        "けいこうとう"
+      ]
+    },
+    {
+      "name": "ゲーム機",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "げーむき"
+      ]
+    },
+    {
+      "name": "玄関マット（金属製）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "げんかんまっと"
+      ]
+    },
+    {
+      "name": "玄関マット（布・プラスチック製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "げんかんまっと"
+      ]
+    },
+    {
+      "name": "建築廃材",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "けんちくはいざい"
+      ]
+    },
+    {
+      "name": "珪藻土バスマット",
+      "category": "moeru",
+      "note": "アスベストを含む製品は除く",
+      "tags": [
+        "けいそうつちばすまっと"
+      ]
+    },
+    {
+      "name": "こたつ（1m未満及び20kg未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "こたつ"
+      ]
+    },
+    {
+      "name": "こたつ（1m以上又は20kg以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "こたつ"
+      ]
+    },
+    {
+      "name": "ごみ箱（プラスチック製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ごみはこ"
+      ]
+    },
+    {
+      "name": "ごみ箱（金属製）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ごみはこ"
+      ]
+    },
+    {
+      "name": "ゴルフクラブ",
+      "category": "moenai",
+      "note": "1m以上のものは粗大ごみ",
+      "tags": []
+    },
+    {
+      "name": "ゴルフバック",
+      "category": "moenai",
+      "note": "1m以上のものは粗大ごみ",
+      "tags": []
+    },
+    {
+      "name": "ゴルフボール",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "コンクリート",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "サイルチェーン（非金属チェーン）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "さいるちぇーん"
+      ]
+    },
+    {
+      "name": "サーフボード",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "座椅子（1m未満及び20kg未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ざいす"
+      ]
+    },
+    {
+      "name": "座椅子（1m以上又は20kg以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ざいす"
+      ]
+    },
+    {
+      "name": "裁縫箱（木製・プラスチック製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "さいほうばこ"
+      ]
+    },
+    {
+      "name": "裁縫箱（金属製）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "さいほうばこ"
+      ]
+    },
+    {
+      "name": "雑誌",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "ざっし"
+      ]
+    },
+    {
+      "name": "殺虫剤",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "さっちゅうざい"
+      ]
+    },
+    {
+      "name": "三輪車（小児用）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "さんりんしゃ"
+      ]
+    },
+    {
+      "name": "CD（コンパクトディスク）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "自転車",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "じてんしゃ"
+      ]
+    },
+    {
+      "name": "自動車部品",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "じどうしゃぶひん"
+      ]
+    },
+    {
+      "name": "シートカバー",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ジャッキ",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "白トレー",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "しろとれー"
+      ]
+    },
+    {
+      "name": "写真",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "しゃしん"
+      ]
+    },
+    {
+      "name": "シャンプー容器（プラスチック製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "しゃんぷーようき"
+      ]
+    },
+    {
+      "name": "充電池",
+      "category": "unknown",
+      "note": "小型充電式電池（リチウムイオン電池等）の処分についてのページを確認してください",
+      "tags": [
+        "じゅうでんち"
+      ]
+    },
+    {
+      "name": "消火器",
+      "category": "unknown",
+      "note": "メーカー・販売店等によるリサイクルルートあり",
+      "tags": [
+        "しょうかき"
+      ]
+    },
+    {
+      "name": "除湿機（フロン類が使用されている製品）",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "じょしつき"
+      ]
+    },
+    {
+      "name": "除湿機（フロン類が使用されていない製品）",
+      "category": "moenai",
+      "note": "1m以上または20kg以上のものは粗大ごみ",
+      "tags": [
+        "じょしつき"
+      ]
+    },
+    {
+      "name": "食器棚",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "しょっきだな"
+      ]
+    },
+    {
+      "name": "障子（木製・プラスチック製・1m未満）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "しょうじ"
+      ]
+    },
+    {
+      "name": "障子（アルミ枠、ガラス付・1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "しょうじ"
+      ]
+    },
+    {
+      "name": "障子（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "しょうじ"
+      ]
+    },
+    {
+      "name": "照明器具",
+      "category": "moenai",
+      "note": "1m以上または20kg以上のものは粗大ごみ",
+      "tags": [
+        "しょうめいきぐ"
+      ]
+    },
+    {
+      "name": "食器洗い機",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "しょっきあらいき"
+      ]
+    },
+    {
+      "name": "書籍",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "しょせき"
+      ]
+    },
+    {
+      "name": "シンナー",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "新聞紙（チラシを含む）",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "しんぶんし"
+      ]
+    },
+    {
+      "name": "スーツケース（1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "すーつけーす"
+      ]
+    },
+    {
+      "name": "スーツケース（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "すーつけーす"
+      ]
+    },
+    {
+      "name": "水槽（1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "すいそう"
+      ]
+    },
+    {
+      "name": "水槽（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "すいそう"
+      ]
+    },
+    {
+      "name": "水筒",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "すいとう"
+      ]
+    },
+    {
+      "name": "スキー板（1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "すきーいた"
+      ]
+    },
+    {
+      "name": "スキー板（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "すきーいた"
+      ]
+    },
+    {
+      "name": "スケートボード",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スチールチェーン",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ステレオ（1m未満及び20kg未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "すてれお"
+      ]
+    },
+    {
+      "name": "ステレオ（1m以上又は20kg以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "すてれお"
+      ]
+    },
+    {
+      "name": "スノーボード（1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "すのーぼーど"
+      ]
+    },
+    {
+      "name": "スノーボード（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "すのーぼーど"
+      ]
+    },
+    {
+      "name": "ストーブ",
+      "category": "moenai",
+      "note": "灯油を抜き乾電池をはずす",
+      "tags": []
+    },
+    {
+      "name": "砂（ペット用）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "すな"
+      ]
+    },
+    {
+      "name": "スナック菓子の袋",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "すなっくかしのふくろ"
+      ]
+    },
+    {
+      "name": "スポンジ",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スリッパ",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "スプレー缶（ホコリ除去用スプレーなど）",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "すぷれーかん"
+      ]
+    },
+    {
+      "name": "スプレー缶（殺虫剤・塗料・ヘアスプレー・制汗剤など）",
+      "category": "moenai",
+      "note": "中身を使い切り、安全な場所で開ける（カセットボンベ・スプレー缶の処分について参照）",
+      "tags": [
+        "すぷれーかん"
+      ]
+    },
+    {
+      "name": "洗濯機",
+      "category": "unknown",
+      "note": "家電リサイクル法対象（家電販売店等へ引き取り依頼）",
+      "tags": [
+        "せんたくき"
+      ]
+    },
+    {
+      "name": "扇風機",
+      "category": "moenai",
+      "note": "1m以上又は20kg以上のものは粗大ごみ",
+      "tags": [
+        "せんぷうき"
+      ]
+    },
+    {
+      "name": "ソース容器（プラスチック製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "そーすようき"
+      ]
+    },
+    {
+      "name": "双眼鏡",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "そうがんきょう"
+      ]
+    },
+    {
+      "name": "掃除機",
+      "category": "moenai",
+      "note": "ノズルなどのプラスチック部分は燃やすごみ",
+      "tags": [
+        "そうじき"
+      ]
+    },
+    {
+      "name": "タイヤ（自動車用）",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "たいや"
+      ]
+    },
+    {
+      "name": "体温計（水銀使用）",
+      "category": "unknown",
+      "note": "くりーんプラザ・龍への直接搬入のみ（水銀使用製品）",
+      "tags": [
+        "たいおんけい"
+      ]
+    },
+    {
+      "name": "体温計（電子式）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "たいおんけい"
+      ]
+    },
+    {
+      "name": "畳",
+      "category": "sodai",
+      "note": "業者処分となる場合あり",
+      "tags": [
+        "たたみ"
+      ]
+    },
+    {
+      "name": "たんす",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "段ボール",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "だんぼーる"
+      ]
+    },
+    {
+      "name": "チャイルドシート",
+      "category": "moenai",
+      "note": "1m以上又は20kg以上のものは粗大ごみ",
+      "tags": []
+    },
+    {
+      "name": "注射器・注射針",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "ちゅうしゃきちゅうしゃばり"
+      ]
+    },
+    {
+      "name": "チラシ",
+      "category": "recycle",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ちりとり（木製・プラスチック製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ちりとり"
+      ]
+    },
+    {
+      "name": "ちりとり（金属製）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ちりとり"
+      ]
+    },
+    {
+      "name": "使い捨てカイロ",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "つかいすてかいろ"
+      ]
+    },
+    {
+      "name": "机",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "つくえ"
+      ]
+    },
+    {
+      "name": "漬物石",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "つけものいし"
+      ]
+    },
+    {
+      "name": "DVD（デジタルバーサイタルディスク）",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "テーブル（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "てーぶる"
+      ]
+    },
+    {
+      "name": "テレビ（ブラウン管式・液晶式）",
+      "category": "unknown",
+      "note": "家電リサイクル法対象（家電販売店等へ引き取り依頼）",
+      "tags": [
+        "てれび"
+      ]
+    },
+    {
+      "name": "テレビアンテナ（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "てれびあんてな"
+      ]
+    },
+    {
+      "name": "テレビ台（1m未満及び20kg未満）",
+      "category": "moenai",
+      "note": "木製ものは燃やすごみ",
+      "tags": [
+        "てれびだい"
+      ]
+    },
+    {
+      "name": "テレビ台（1m以上又は20kg以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "てれびだい"
+      ]
+    },
+    {
+      "name": "電気コード",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "でんきこーど"
+      ]
+    },
+    {
+      "name": "電気スタンド（卓上用）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "でんきすたんど"
+      ]
+    },
+    {
+      "name": "電子レンジ（20kg未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "でんしれんじ"
+      ]
+    },
+    {
+      "name": "電子レンジ（20kg以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "でんしれんじ"
+      ]
+    },
+    {
+      "name": "電卓",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "でんたく"
+      ]
+    },
+    {
+      "name": "ドア（木製・1m未満）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "どあ"
+      ]
+    },
+    {
+      "name": "ドア（木製・1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "どあ"
+      ]
+    },
+    {
+      "name": "ドア（木製以外・1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "どあ"
+      ]
+    },
+    {
+      "name": "ドア（木製以外・1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "どあ"
+      ]
+    },
+    {
+      "name": "トースター",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "灯油",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "とうゆ"
+      ]
+    },
+    {
+      "name": "ドライヤー",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ドラム缶（200リットル）",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "どらむかん"
+      ]
+    },
+    {
+      "name": "なべ類",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "なべるい"
+      ]
+    },
+    {
+      "name": "生ごみ",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "なまごみ"
+      ]
+    },
+    {
+      "name": "ぬいぐるみ",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "布類",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "ぬのるい"
+      ]
+    },
+    {
+      "name": "農機具",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "のうきぐ"
+      ]
+    },
+    {
+      "name": "農業用ビニール",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "のうぎょうようびにーる"
+      ]
+    },
+    {
+      "name": "ノート",
+      "category": "recycle",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "農薬",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "のうやく"
+      ]
+    },
+    {
+      "name": "のこぎり",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "バイク",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "はしご（木製：1m未満及び20kg未満）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "はしご"
+      ]
+    },
+    {
+      "name": "はしご（鉄・アルミ製：1m未満及び20kg未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "はしご"
+      ]
+    },
+    {
+      "name": "はしご（1m以上又は20kg以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "はしご"
+      ]
+    },
+    {
+      "name": "パソコン",
+      "category": "unknown",
+      "note": "パソコンの出し方 参照",
+      "tags": []
+    },
+    {
+      "name": "バッテリー",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "発泡スチロール",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "はっぽうすちろーる"
+      ]
+    },
+    {
+      "name": "ハンガー",
+      "category": "moeru",
+      "note": "金属があるものは燃やさないごみ",
+      "tags": []
+    },
+    {
+      "name": "ピアノ",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "PDA（携帯情報端末）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "けいたいじょうほうたんまつ"
+      ]
+    },
+    {
+      "name": "ビデオカメラ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビデオテープ",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビデオデッキ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビニールホース",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ビン類（ドリンク剤、調味料のビン、ウイスキーのビン、一升ビン、ビールビンなど）",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "びんるい"
+      ]
+    },
+    {
+      "name": "ビン類（化粧ビン、耐熱ガラス、農薬用など）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "びんるい"
+      ]
+    },
+    {
+      "name": "ファンヒーター（1m未満及び20kg未満）",
+      "category": "moenai",
+      "note": "灯油・オイルは抜いて出す",
+      "tags": [
+        "ふぁんひーたー"
+      ]
+    },
+    {
+      "name": "ファンヒーター（1m以上又は20kg以上）",
+      "category": "sodai",
+      "note": "業者処分となる場合あり",
+      "tags": [
+        "ふぁんひーたー"
+      ]
+    },
+    {
+      "name": "ふすま（1m未満）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ふすま"
+      ]
+    },
+    {
+      "name": "ふすま（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ふすま"
+      ]
+    },
+    {
+      "name": "仏壇",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "ぶつだん"
+      ]
+    },
+    {
+      "name": "布団",
+      "category": "moeru",
+      "note": "たたんでひもで縛って出す",
+      "tags": [
+        "ふとん"
+      ]
+    },
+    {
+      "name": "風呂桶",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "ふろおけ"
+      ]
+    },
+    {
+      "name": "風呂釜",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "ふろがま"
+      ]
+    },
+    {
+      "name": "風呂マット",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ふろまっと"
+      ]
+    },
+    {
+      "name": "ペットボトル",
+      "category": "recycle",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ペットボトルキャップ",
+      "category": "recycle",
+      "note": "コミュニティセンター・サンデーリサイクルでの拠点回収（集積所の資源物回収ステーションでは回収不可）",
+      "tags": []
+    },
+    {
+      "name": "ベッドマット",
+      "category": "sodai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ベビーカー",
+      "category": "moenai",
+      "note": "1m以上又は20kg以上のものは粗大ごみ",
+      "tags": []
+    },
+    {
+      "name": "ヘルメット",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "便器",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "べんき"
+      ]
+    },
+    {
+      "name": "ボウリング玉",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "ぼうりんぐたま"
+      ]
+    },
+    {
+      "name": "ボールペン",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ポリタンク",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "保冷材",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ほれいざい"
+      ]
+    },
+    {
+      "name": "まな板（木製・プラスチック製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "まないた"
+      ]
+    },
+    {
+      "name": "まな板（金属製）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "まないた"
+      ]
+    },
+    {
+      "name": "マッサージ機（1m未満及び20kg未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "まっさーじき"
+      ]
+    },
+    {
+      "name": "マッサージ機（1m以上又は20kg以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "まっさーじき"
+      ]
+    },
+    {
+      "name": "マヨネーズ容器",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "まよねーずようき"
+      ]
+    },
+    {
+      "name": "ミシン（1m未満及び20kg未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "みしん"
+      ]
+    },
+    {
+      "name": "ミシン（1m以上又は20kg以上）",
+      "category": "sodai",
+      "note": "業務用で使用したものは業者処分",
+      "tags": [
+        "みしん"
+      ]
+    },
+    {
+      "name": "メモ用紙",
+      "category": "recycle",
+      "note": "",
+      "tags": [
+        "めもようし"
+      ]
+    },
+    {
+      "name": "物干し竿（1m未満）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ものほしさお"
+      ]
+    },
+    {
+      "name": "物干し竿（1m以上）",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ものほしさお"
+      ]
+    },
+    {
+      "name": "やかん",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "湯沸器",
+      "category": "moenai",
+      "note": "1m以上又は20kg以上のものは粗大ごみ",
+      "tags": [
+        "ゆわかしき"
+      ]
+    },
+    {
+      "name": "浴槽（木製）",
+      "category": "moeru",
+      "note": "1m以上又は20kg以上のものは粗大ごみ",
+      "tags": [
+        "よくそう"
+      ]
+    },
+    {
+      "name": "浴槽（木製以外）",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "よくそう"
+      ]
+    },
+    {
+      "name": "ライター",
+      "category": "moenai",
+      "note": "使い切った後、中身を確認できる袋にライターのみを入れる） ※ ライターのガスの抜き方(PDF:554KB) ※ 一般社団法人　日本喫煙具協会（外部サイト",
+      "tags": []
+    },
+    {
+      "name": "ランチジャー",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "冷蔵庫・冷凍庫",
+      "category": "unknown",
+      "note": "家電リサイクル法対象（家電販売店等へ引き取り依頼）",
+      "tags": [
+        "れいぞうこれいとうこ"
+      ]
+    },
+    {
+      "name": "冷風機（フロン類が使用されている製品）",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "れいふうき"
+      ]
+    },
+    {
+      "name": "冷風機（フロン類が使用されていない製品）",
+      "category": "moenai",
+      "note": "1m以上または20kg以上のものは粗大ごみ",
+      "tags": [
+        "れいふうき"
+      ]
+    },
+    {
+      "name": "レジ袋",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "れじぶくろ"
+      ]
+    },
+    {
+      "name": "レトルト食品の袋",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "れとるとしょくひんのふくろ"
+      ]
+    },
+    {
+      "name": "レンガ",
+      "category": "unknown",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ローラースケート",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ろうそく",
+      "category": "moeru",
+      "note": "",
+      "tags": []
+    },
+    {
+      "name": "ワープロ",
+      "category": "moenai",
+      "note": "",
+      "tags": []
+    }
+  ],
+  "contact": [
+    {
+      "name": "龍ケ崎市 都市整備部 廃棄物対策課",
+      "note": "分別方法・収集日・粗大ごみ収集の申込みに関すること",
+      "tel": "0297641111",
+      "hours": "月〜金 9:00〜17:00（祝日・年末年始を除く）"
+    }
+  ],
+  "features": {
+    "notice": true,
+    "faq": true,
+    "vendor": false,
+    "contact": true,
+    "language": true,
+    "affiliate": true
+  },
+  "notices": [
+    {
+      "id": 1,
+      "date": "2026-07-01",
+      "title": "指定ごみ袋でのごみ出しに戻ります",
+      "body": "臨時措置として認めていた代用袋の取り扱いが終了し、令和8年7月1日から市指定ごみ袋でのごみ出しに戻りました。",
+      "source": "龍ケ崎市公式ホームページ"
+    },
+    {
+      "id": 2,
+      "date": "2026-04-07",
+      "title": "令和8年度地区別収集カレンダーを公開",
+      "body": "お住まいの地区の「燃やすごみ」「燃やさないごみ」「資源物」「木くず」の収集日は地区別収集カレンダー（PDF）でご確認いただけます。",
+      "source": "龍ケ崎市公式ホームページ"
+    }
+  ],
+  "rules": {
+    "title": "龍ケ崎市のごみ分別ルール",
+    "items": [
+      "ごみ・資源物は収集日当日の朝8時30分までに決められた集積所・資源物回収ステーションへ",
+      "燃やすごみ・燃やさないごみは市指定袋を使用",
+      "資源物は色・種類ごとに正しく分別（誤ると集積所に残されます）",
+      "粗大ごみは予約制・有料（1点1,570円〜）で毎週水・木曜日収集",
+      "家電4品目・パソコンは集積所に出せません（販売店・メーカーへ）"
+    ]
+  },
+  "affiliate_items": []
+}

@@ -1,0 +1,473 @@
+{
+  "municipality_id": "kawachi",
+  "name": "河内町",
+  "prefecture": "茨城県",
+  "population": 7131,
+  "ad_type": "none",
+  "official_banner_url": "",
+  "brand_color": "#95277D",
+  "official_url": "https://www.town.ibaraki-kawachi.lg.jp/page/page000334.html",
+  "official_url_label": "河内町公式ホームページ（ごみ処理について）",
+  "citation_date": "2026年9月",
+  "cityLogo": null,
+  "seo": {
+    "title": "河内町のごみ収集日・分別と出し方｜ごみニコ",
+    "description": "茨城県稲敷郡河内町のごみ収集日をカレンダーで確認、品目名で分別と出し方もすぐ検索。燃えるごみは町内全域で毎週月・水・金曜日。無料・登録不要。",
+    "keywords": "ごみ,分別,収集日,カレンダー,燃えるごみ,資源物,粗大ごみ,河内町",
+    "h1Title": "河内町のごみ分別",
+    "contactCardNote": "生活環境課へのご連絡",
+    "calDayWeight": 500,
+    "serviceName": "河内町 ごみ収集サービス",
+    "orgName": "河内町 生活環境課",
+    "orgTelephone": "0297-84-6957",
+    "addressLocality": "河内町",
+    "addressRegion": "茨城県",
+    "faq": [
+      {
+        "name": "河内町の燃えるごみの収集日はいつですか？",
+        "text": "町内全域で毎週月・水・金曜日です。収集日当日の朝7:00〜8:00までに集積所へ出してください。"
+      },
+      {
+        "name": "燃えないごみはいつ出せますか？",
+        "text": "A・B地区は毎月第2土曜日、C・D地区は毎月第4土曜日です。せともの・ガラス製品（びん以外）・小型の金属製品などが対象です。"
+      },
+      {
+        "name": "資源物（新聞・雑誌・缶・びん・ペットボトルなど）はいつ出せますか？",
+        "text": "原則月2回、A・C地区は火曜日、B・D地区は木曜日です。ただしゴールデンウィーク等で収集日が前後する年があるため、正確な日付は町公式サイトの地区別ごみ収集カレンダー（PDF）でご確認ください。"
+      },
+      {
+        "name": "河内町の粗大ごみはどうやって出しますか？",
+        "text": "町内全域で毎月第1土曜日に集積所で収集されます。事前に生活環境課（0297-84-6957）への電話予約が必要です。"
+      }
+    ]
+  },
+  "area_groups": [
+    {
+      "label": "A・B地区（燃えないごみ：第2土曜日／資源物：火曜日・木曜日）",
+      "keys": [
+        "ab01","ab02","ab03","ab04","ab05","ab06","ab07","ab08","ab09","ab10",
+        "ab11","ab12","ab13","ab14","ab15","ab16","ab17","ab18","ab19","ab20",
+        "ab21","ab22","ab23","ab24","ab25","ab26","ab27","ab28","ab29","ab30",
+        "ab31","ab32","ab33","ab34","ab35","ab36","ab37","ab38","ab39"
+      ]
+    },
+    {
+      "label": "C・D地区（燃えないごみ：第4土曜日／資源物：火曜日・木曜日）",
+      "keys": [
+        "cd01","cd02","cd03","cd04","cd05","cd06","cd07","cd08","cd09","cd10",
+        "cd11","cd12","cd13","cd14","cd15","cd16","cd17","cd18","cd19","cd20","cd21"
+      ]
+    }
+  ],
+  "areas": {
+    "ab01": { "name": "宿（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab02": { "name": "西（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab03": { "name": "関場（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab04": { "name": "中道（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab05": { "name": "幸谷（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab06": { "name": "堤向（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab07": { "name": "万年（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab08": { "name": "北河原（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab09": { "name": "早井（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab10": { "name": "砂場（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab11": { "name": "丸田（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab12": { "name": "堀割（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab13": { "name": "四ツ家（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab14": { "name": "三ツ家（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab15": { "name": "小巻（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab16": { "name": "広田（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab17": { "name": "竜町歩（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab18": { "name": "藤蔵（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab19": { "name": "大鍋（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab20": { "name": "生鍋（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab21": { "name": "小林町歩（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab22": { "name": "内野（A地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab23": { "name": "堤（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab24": { "name": "新橋（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab25": { "name": "古通（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab26": { "name": "中曽根（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab27": { "name": "保村（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab28": { "name": "遠下（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab29": { "name": "高（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab30": { "name": "手栗（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab31": { "name": "庄布川（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab32": { "name": "上組（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab33": { "name": "中上組（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab34": { "name": "下組（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab35": { "name": "愛宕町（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab36": { "name": "中郷（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab37": { "name": "羽子騎（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab38": { "name": "古河林（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "ab39": { "name": "浄玄（B地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[2]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd01": { "name": "荒地（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd02": { "name": "大境（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd03": { "name": "片巻（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd04": { "name": "和銅谷（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd05": { "name": "しらさぎ台（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd06": { "name": "下加納（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd07": { "name": "田川（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd08": { "name": "布鎌（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd09": { "name": "平三郎（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd10": { "name": "十里（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd11": { "name": "下町歩（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd12": { "name": "宮渕（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd13": { "name": "猿島（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd14": { "name": "角崎町歩（C地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd15": { "name": "流作（D地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd16": { "name": "排水機（D地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd17": { "name": "上金江津（D地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd18": { "name": "中金江津（D地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd19": { "name": "下金江津（D地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd20": { "name": "平川（D地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} },
+    "cd21": { "name": "十三間戸（D地区）", "moeru": [1,3,5], "moenai": {"day":6,"weeks":[4]}, "sodai": {"day":6,"weeks":[1]} }
+  },
+  "categories": {
+    "moeru": {
+      "label": "燃えるごみ",
+      "how": "町指定のごみ袋（または専用ステッカー）に入れ、口をしばって集積所へ。町内全域で毎週月・水・金曜日の朝7:00〜8:00までに出す",
+      "allowed": [
+        "生ごみ（水をよく切る。生ごみ処理機等での家庭内処理にもご協力を）、紙くず、帽子",
+        "紙おむつ（汚物を取り除いてから）",
+        "ゴム製品、皮革製品、ビニール製品、プラスチック製品そのもの（容器包装以外）",
+        "布団・毛布・カーペット類（小さくたたむか切ってから出す。大きいものは粗大ごみへ）",
+        "木の枝・落ち葉（1m以内に切断。多量の場合はなるべく集積所の外に出す）"
+      ],
+      "not_allowed": [
+        "新聞・雑誌・段ボール・紙パック・缶・びん・ペットボトル等は資源物の日へ",
+        "白色トレイ・古着（布類）は各資源区分へ",
+        "汚れの落ちない資源になれない紙類・ビニール加工紙・カーボン紙・感熱紙は燃えるごみでよい"
+      ],
+      "tips": [
+        "指定ごみ袋・専用ステッカーは町内の契約店で購入できます",
+        "金属類の含まれているものは燃えないごみへ、長さ1m以上のものは粗大ごみへ"
+      ]
+    },
+    "moenai": {
+      "label": "燃えないごみ",
+      "how": "集積所の専用コンテナへ。A・B地区は毎月第2土曜日、C・D地区は毎月第4土曜日",
+      "allowed": [
+        "せともの類、ガラス類（板ガラス・特殊ガラス等）、鏡、花びん、化粧びん",
+        "茶わん・皿・土鍋、アイロン・トースター・ステレオ・電気スタンド等の小型の家電・器具類",
+        "蛍光管・蛍光灯（ほかの燃えないごみとは別にして蛍光灯のみでまとめて出す）",
+        "ライター（ガスを使い切ってから出す）、傘、王冠"
+      ],
+      "not_allowed": [
+        "びん（飲食用のあきビン）は資源物のびんへ",
+        "縫針・カミソリ等の刃物は丈夫な入れ物に入れ「危険」と明記して出す",
+        "ストーブ等は必ず燃料を抜いてから、長さ1m以上のものは粗大ごみへ"
+      ],
+      "tips": []
+    },
+    "kami": {
+      "label": "新聞・雑誌・段ボール・紙パック",
+      "how": "資源物の日（原則月2回、A・C地区は火曜日、B・D地区は木曜日）に種類別にヒモで十字に束ねて集積所の専用コンテナへ。ゴールデンウィーク等で収集日が前後する年があるため、正確な日付は町公式サイトの地区別ごみ収集カレンダー（PDF）でご確認ください",
+      "allowed": [
+        "新聞・チラシ（混ぜてよい）",
+        "雑誌・週刊誌・古本、辞典・絵本など、雑紙（菓子箱・紙袋・ティッシュ箱等。ビニールがついている場合は必ずはがす）",
+        "段ボール（40〜50cm角程度に折りたたむ）",
+        "紙パック（内側が銀色・茶色でないもの。水洗いして切り開き乾かしてから束ねる）"
+      ],
+      "not_allowed": [
+        "ろう引き紙、油紙、感熱紙・感光紙、カーボン紙（FAX用紙等）、ビニール加工紙は燃えるごみへ",
+        "内側がアルミ箔など銀色の紙パック、内側が茶色の紙パックは燃えるごみへ"
+      ],
+      "tips": [
+        "ホチキスや発泡スチロールがついている場合は取り除いてから出してください"
+      ]
+    },
+    "can": {
+      "label": "缶・鉄類",
+      "how": "資源物の日に中身を空にして水洗いし、集積所の専用コンテナへ",
+      "allowed": [
+        "飲料用・食用のあき缶（ジュース缶・油缶・一斗缶など）",
+        "アルミと鉄は分けなくてよい"
+      ],
+      "not_allowed": [
+        "缶詰類は特によく洗ってください（油缶などは中身を出しきってあれば可）"
+      ],
+      "tips": [
+        "スプレー缶は使いきってから缶切り等で穴をあけガス抜きしてから出してください"
+      ]
+    },
+    "bin": {
+      "label": "びん",
+      "how": "資源物の日にキャップを取り外し中を水洗いして、集積所の専用コンテナに色別（透明・茶・黒・青・緑）に分別して入れる",
+      "allowed": [
+        "生きビン（一升ビン・ビールビン・ジュースビンなど）は買った店に返すのが望ましい",
+        "飲食用のあきビン全般"
+      ],
+      "not_allowed": [
+        "農薬・試薬のビン、化粧品のビン、特殊ガラス（耐熱性）、鏡、せともの、コップは資源のびんとして出せません（燃えないごみへ）",
+        "取り外したキャップは燃えないごみへ（あき缶のコンテナには入れない）"
+      ],
+      "tips": []
+    },
+    "pet": {
+      "label": "ペットボトル",
+      "how": "資源物の日にキャップ・ラベルを外し中を水洗いして、集積所に置いてある指定のペットボトル専用袋に入れる（色分け・大きさ分けは不要）",
+      "allowed": [
+        "リサイクルの表示があるペットボトルのみ（洗剤・化粧品・調味料・食用油・医薬品容器等の表示があるもの）"
+      ],
+      "not_allowed": [
+        "つぶして出してもかまいません"
+      ],
+      "tips": []
+    },
+    "shigen-pla": {
+      "label": "白色トレイ",
+      "how": "資源物の日によく洗い、乾かしてから集積所備え付けのネット袋に入れる（食品用の白色トレイのみ）",
+      "allowed": [
+        "白色（無地）の発泡スチロール製トレイ"
+      ],
+      "not_allowed": [
+        "色・柄のついたトレイ、汚れているもの、トレイ以外の発泡スチロール（カップ麺の容器・納豆の容器等）は燃えるごみへ",
+        "雨の降っている日・降りそうな日は出さない（濡れると不適合物になるため）"
+      ],
+      "tips": [
+        "利用しているスーパー・コンビニ等の店舗回収があれば、そちらの利用も可"
+      ]
+    },
+    "fuku": {
+      "label": "布類（古着）",
+      "how": "資源物の日に古着だけをビニールの袋に入れ、中の空気を抜いて口を結んで出す（袋の色指定なし）",
+      "allowed": [
+        "古着（ダウンジャケット等、中に綿や羽毛の入ったものは対象外）"
+      ],
+      "not_allowed": [
+        "布団・毛布類、シーツ・マットレス、カーテン、裁断くず、ナイロン系衣類は布類として出せません（燃えるごみ・粗大ごみへ）"
+      ],
+      "tips": []
+    },
+    "sodai": {
+      "label": "粗大ごみ",
+      "how": "町内全域で毎月第1土曜日に集積所へ。出す前に必ず生活環境課（84-6957）へ電話予約をしてください",
+      "allowed": [
+        "家具類、下駄箱、応接セット、テレビ台、こたつ、自転車、ベビーカー、ベッド、鏡台、学習机、物干し竿、タンス、棚"
+      ],
+      "not_allowed": [
+        "家電リサイクル法対象品（エアコン・テレビ・冷蔵庫・洗濯機）、パソコンは粗大ごみとして出せません"
+      ],
+      "tips": [
+        "家電製品を買い替えるときは、古い製品をできるだけ購入先に引き取ってもらってください"
+      ]
+    },
+    "unknown": {
+      "label": "受入不可・自己搬入",
+      "how": "集積所には出せません。家電4品目は購入した家電販売店へ、小型家電（パソコン以外）は役場本庁舎正面玄関の回収ボックスへ、パソコンは生活環境課へお持ちください",
+      "allowed": [],
+      "not_allowed": [
+        "エアコン・テレビ・冷蔵庫（冷凍庫含む）・洗濯機（家電リサイクル法対象製品）、パソコン",
+        "タイヤ、バッテリー（自動車等）、自動車の部品",
+        "農機具、農業用ビニール（ハウスビニール・肥料用袋など）、ボイラー・水中ポンプ・モーター",
+        "レンガ・コンクリート・石・瓦・アスファルト・鉄骨",
+        "爆発の危険性のあるもの（ガソリン・シンナー等）、農薬・有害物質・医療廃棄物・産業廃棄物",
+        "ペットの死がい、新改築ででる建築廃材等、バイク、焼却灰"
+      ],
+      "tips": [
+        "小型充電式電池（リチウムイオン電池等）は電極部分をセロハンテープ等で絶縁し、生活環境課窓口へ直接お持ちください（膨張・変形している場合も回収します。役場入り口の小型家電ボックスには入れないでください）",
+        "乾電池・ボタン電池は公共施設に設置してある赤色の回収ポストも利用できます",
+        "飲食業・サービス業等の事業活動で出るごみ（事業系ごみ）は、町の許可を受けた収集業者への有料依頼が必要です（生活環境課 0297-84-6957）"
+      ]
+    }
+  },
+  "garbage_db": [
+    {"name": "生ごみ", "category": "moeru", "note": "水をよく切る", "tags": ["なまごみ"]},
+    {"name": "紙くず", "category": "moeru", "note": "", "tags": ["かみくず"]},
+    {"name": "帽子", "category": "moeru", "note": "", "tags": ["ぼうし"]},
+    {"name": "紙おむつ", "category": "moeru", "note": "汚物を取り除いてから", "tags": ["かみおむつ"]},
+    {"name": "ゴム製品", "category": "moeru", "note": "", "tags": ["ごむせいひん"]},
+    {"name": "皮革製品", "category": "moeru", "note": "", "tags": ["ひかくせいひん"]},
+    {"name": "ビニール製品", "category": "moeru", "note": "", "tags": ["びにーるせいひん"]},
+    {"name": "プラスチック製品そのもの", "category": "moeru", "note": "容器包装以外", "tags": ["ぷらすちっくせいひん"]},
+    {"name": "布団", "category": "moeru", "note": "小さくたたむか切ってから。袋に入らない場合は粗大ごみへ", "tags": ["ふとん"]},
+    {"name": "毛布", "category": "moeru", "note": "小さくたたむか切ってから", "tags": ["もうふ"]},
+    {"name": "ジュータン・カーペット", "category": "moeru", "note": "小さくたたむか切ってから", "tags": ["じゅーたん・かーぺっと"]},
+    {"name": "木の枝", "category": "moeru", "note": "1m以内に切断。多量の場合は集積所の外へ", "tags": ["きのえだ"]},
+    {"name": "枯草", "category": "moeru", "note": "多量の場合は集積所の外へ", "tags": ["かれくさ"]},
+    {"name": "油紙", "category": "moeru", "note": "洗剤や石けんの紙包装など", "tags": ["あぶらがみ"]},
+    {"name": "ろう引き紙", "category": "moeru", "note": "", "tags": ["ろうびきがみ"]},
+    {"name": "感熱紙", "category": "moeru", "note": "感光紙も同様", "tags": ["かんねつし"]},
+    {"name": "カーボン紙", "category": "moeru", "note": "FAX用紙など", "tags": ["かーぼんし"]},
+    {"name": "ビニール加工紙", "category": "moeru", "note": "", "tags": ["びにーるかこうし"]},
+    {"name": "ティッシュ", "category": "moeru", "note": "", "tags": ["てぃっしゅ"], "source": "estimated"},
+    {"name": "割り箸", "category": "moeru", "note": "", "tags": ["わりばし"], "source": "estimated"},
+    {"name": "卵の殻", "category": "moeru", "note": "", "tags": ["たまごのから"], "source": "estimated"},
+    {"name": "輪ゴム", "category": "moeru", "note": "", "tags": ["わごむ"], "source": "estimated"},
+    {"name": "使い捨てマスク", "category": "moeru", "note": "", "tags": ["つかいすてますく"], "source": "estimated"},
+    {"name": "棒", "category": "moeru", "note": "", "tags": ["ぼう"]},
+    {"name": "竹", "category": "moeru", "note": "", "tags": ["たけ"]},
+    {"name": "タオル", "category": "moeru", "note": "", "tags": ["たおる"]},
+    {"name": "ぬいぐるみ", "category": "moeru", "note": "", "tags": ["ぬいぐるみ"]},
+    {"name": "座布団", "category": "moeru", "note": "", "tags": ["ざぶとん"]},
+    {"name": "草", "category": "moeru", "note": "", "tags": ["くさ"]},
+    {"name": "板", "category": "moeru", "note": "", "tags": ["いた"]},
+    {"name": "ビニールホース", "category": "moeru", "note": "", "tags": ["びにーるほーす"]},
+    {"name": "靴", "category": "moeru", "note": "", "tags": ["くつ"]},
+    {"name": "カーテン", "category": "moeru", "note": "", "tags": ["かーてん"]},
+    {"name": "サンダル", "category": "moeru", "note": "", "tags": ["さんだる"]},
+    {"name": "ゴムホース", "category": "moeru", "note": "", "tags": ["ごむほーす"]},
+    {"name": "CD・DVD", "category": "moeru", "note": "", "tags": []},
+    {"name": "スポンジ", "category": "moeru", "note": "", "tags": ["すぽんじ"]},
+    {"name": "プラスチック製飲食品用容器", "category": "moeru", "note": "容器包装以外のプラスチック製品と同様に燃えるごみ", "tags": ["ぷらすちっくせいいんしょくひんようようき"]},
+    {"name": "洗剤容器", "category": "moeru", "note": "", "tags": ["せんざいようき"]},
+    {"name": "スーパーのレジ袋", "category": "moeru", "note": "", "tags": ["すーぱーのれじぶくろ"]},
+    {"name": "シーツ", "category": "moeru", "note": "布類（古着）としては出せません", "tags": ["しーつ"]},
+    {"name": "裁断くず", "category": "moeru", "note": "布類（古着）としては出せません", "tags": ["さいだんくず"]},
+    {"name": "ナイロン系衣類", "category": "moeru", "note": "布類（古着）としては出せません", "tags": ["ないろんけいいるい"]},
+    {"name": "せともの類", "category": "moenai", "note": "", "tags": ["せとものるい"]},
+    {"name": "ガラス類（板ガラス等）", "category": "moenai", "note": "特殊ガラス（耐熱性）も含む", "tags": ["がらするい"]},
+    {"name": "鏡", "category": "moenai", "note": "", "tags": ["かがみ"]},
+    {"name": "花びん", "category": "moenai", "note": "", "tags": ["はなびん"]},
+    {"name": "化粧びん", "category": "moenai", "note": "資源のびんとしては出せない", "tags": ["けしょうびん"]},
+    {"name": "茶わん・皿・土鍋", "category": "moenai", "note": "", "tags": ["ちゃわん・さら・どなべ"]},
+    {"name": "アイロン", "category": "moenai", "note": "", "tags": ["あいろん"]},
+    {"name": "トースター", "category": "moenai", "note": "", "tags": ["とーすたー"]},
+    {"name": "ステレオ", "category": "moenai", "note": "", "tags": ["すてれお"]},
+    {"name": "電気スタンド", "category": "moenai", "note": "", "tags": ["でんきすたんど"]},
+    {"name": "扇風機", "category": "moenai", "note": "", "tags": ["せんぷうき"]},
+    {"name": "掃除機", "category": "moenai", "note": "", "tags": ["そうじき"]},
+    {"name": "ストーブ", "category": "moenai", "note": "必ず燃料を抜いてから", "tags": ["すとーぶ"]},
+    {"name": "ミシン", "category": "moenai", "note": "小型のもの。大型は粗大ごみ", "tags": ["みしん"]},
+    {"name": "ポット（電子含む）", "category": "moenai", "note": "", "tags": ["ぽっと"]},
+    {"name": "蛍光管", "category": "moenai", "note": "ほかの燃えないごみとは別にして蛍光灯のみで出す", "tags": ["けいこうかん"]},
+    {"name": "蛍光灯", "category": "moenai", "note": "ほかの燃えないごみとは別にして蛍光灯のみで出す", "tags": ["けいこうとう"]},
+    {"name": "使い捨てライター", "category": "moenai", "note": "ガスを使い切ってから", "tags": ["つかいすてらいたー"]},
+    {"name": "傘", "category": "moenai", "note": "", "tags": ["かさ"]},
+    {"name": "王冠", "category": "moenai", "note": "", "tags": ["おうかん"]},
+    {"name": "電子レンジ", "category": "moenai", "note": "", "tags": ["でんしれんじ"]},
+    {"name": "アルミ箔容器", "category": "moenai", "note": "", "tags": ["あるみはくようき"]},
+    {"name": "耐熱ガラス容器", "category": "moenai", "note": "", "tags": ["たいねつがらすようき"]},
+    {"name": "ラジオ", "category": "moenai", "note": "", "tags": ["らじお"]},
+    {"name": "カセットデッキ", "category": "moenai", "note": "", "tags": ["かせっとでっき"]},
+    {"name": "植木鉢", "category": "moenai", "note": "", "tags": ["うえきばち"]},
+    {"name": "コップ", "category": "moenai", "note": "資源物のびんとしては出せません", "tags": ["こっぷ"]},
+    {"name": "油びん", "category": "moenai", "note": "", "tags": ["あぶらびん"]},
+    {"name": "薬びん", "category": "moenai", "note": "資源物のびんとしては出せません", "tags": ["くすりびん"]},
+    {"name": "縫針", "category": "moenai", "note": "丈夫な入れ物に入れ「危険」と明記して出す", "tags": ["ぬいばり"]},
+    {"name": "カミソリ", "category": "moenai", "note": "丈夫な入れ物に入れ「危険」と明記して出す", "tags": ["かみそり"]},
+    {"name": "窓ガラス", "category": "moenai", "note": "資源物のびんとしては出せません", "tags": ["まどがらす"]},
+    {"name": "農薬のビン", "category": "moenai", "note": "資源物のびんとしては出せません", "tags": ["のうやくのびん"]},
+    {"name": "試薬のビン", "category": "moenai", "note": "資源物のびんとしては出せません", "tags": ["しやくのびん"]},
+    {"name": "新聞", "category": "kami", "note": "チラシと混ぜてよい", "tags": ["しんぶん"]},
+    {"name": "チラシ", "category": "kami", "note": "新聞と混ぜてよい", "tags": ["ちらし"]},
+    {"name": "雑誌", "category": "kami", "note": "週刊誌・古本・辞典・絵本など", "tags": ["ざっし"]},
+    {"name": "雑紙", "category": "kami", "note": "菓子箱・紙袋・ティッシュ箱など。ビニールは必ずはがす", "tags": ["ざつがみ"]},
+    {"name": "段ボール", "category": "kami", "note": "40〜50cm角程度に折りたたむ", "tags": ["だんぼーる"]},
+    {"name": "紙パック", "category": "kami", "note": "内側が銀色・茶色でないもの。水洗いして開いて乾かす", "tags": ["かみぱっく"]},
+    {"name": "窓あき封筒", "category": "kami", "note": "", "tags": ["まどあきふうとう"]},
+    {"name": "あき缶", "category": "can", "note": "中身を空にして水洗いする", "tags": ["あきかん"]},
+    {"name": "一斗缶", "category": "can", "note": "アルミと鉄は分けなくてよい", "tags": ["いっとかん"]},
+    {"name": "スプレー缶", "category": "can", "note": "使いきってから缶切り等で穴をあけガス抜きする", "tags": ["すぷれーかん"]},
+    {"name": "生きビン（一升ビン等）", "category": "bin", "note": "買った店に返すのが望ましい", "tags": ["いきびん"]},
+    {"name": "ビールビン", "category": "bin", "note": "", "tags": ["びーるびん"]},
+    {"name": "ジュースビン", "category": "bin", "note": "", "tags": ["じゅーすびん"]},
+    {"name": "油の入っていたビン", "category": "moenai", "note": "資源物のびんとしては出せません", "tags": ["あぶらのはいっていたびん"]},
+    {"name": "ペットボトル", "category": "pet", "note": "キャップ・ラベルを外し水洗いして、指定の専用袋へ", "tags": ["ぺっとぼとる"]},
+    {"name": "白色トレイ", "category": "shigen-pla", "note": "食品用の白色（無地）のもののみ。ネット袋へ", "tags": ["はくしょくとれい"]},
+    {"name": "古着", "category": "fuku", "note": "ダウン・羽毛入りは対象外", "tags": ["ふるぎ"]},
+    {"name": "家具類", "category": "sodai", "note": "", "tags": ["かぐるい"]},
+    {"name": "下駄箱", "category": "sodai", "note": "", "tags": ["げたばこ"]},
+    {"name": "応接セット", "category": "sodai", "note": "", "tags": ["おうせつせっと"]},
+    {"name": "テレビ台", "category": "sodai", "note": "", "tags": ["てれびだい"]},
+    {"name": "こたつ", "category": "sodai", "note": "", "tags": ["こたつ"]},
+    {"name": "自転車", "category": "sodai", "note": "", "tags": ["じてんしゃ"]},
+    {"name": "ベビーカー", "category": "sodai", "note": "", "tags": ["べびーかー"]},
+    {"name": "ベッド", "category": "sodai", "note": "", "tags": ["べっど"]},
+    {"name": "鏡台", "category": "sodai", "note": "", "tags": ["きょうだい"]},
+    {"name": "学習机", "category": "sodai", "note": "", "tags": ["がくしゅうづくえ"]},
+    {"name": "物干し竿", "category": "sodai", "note": "", "tags": ["ものほしざお"]},
+    {"name": "タンス", "category": "sodai", "note": "", "tags": ["たんす"]},
+    {"name": "棚", "category": "sodai", "note": "", "tags": ["たな"]},
+    {"name": "椅子", "category": "sodai", "note": "", "tags": ["いす"]},
+    {"name": "マットレス", "category": "sodai", "note": "", "tags": ["まっとれす"]},
+    {"name": "エアコン", "category": "unknown", "note": "家電リサイクル法対象。購入した家電販売店へ", "tags": ["えあこん"]},
+    {"name": "テレビ", "category": "unknown", "note": "家電リサイクル法対象", "tags": ["てれび"]},
+    {"name": "冷蔵庫・冷凍庫", "category": "unknown", "note": "家電リサイクル法対象", "tags": ["れいぞうこ・れいとうこ"]},
+    {"name": "洗濯機", "category": "unknown", "note": "家電リサイクル法対象", "tags": ["せんたくき"]},
+    {"name": "パソコン本体", "category": "unknown", "note": "生活環境課へ持参", "tags": ["ぱそこんほんたい"]},
+    {"name": "パソコン用モニター", "category": "unknown", "note": "生活環境課へ持参", "tags": ["ぱそこんようもにたー"]},
+    {"name": "タイヤ", "category": "unknown", "note": "販売店や専門処理業者へ", "tags": ["たいや"]},
+    {"name": "バッテリー（自動車等）", "category": "unknown", "note": "販売店や専門処理業者へ", "tags": ["ばってりー"]},
+    {"name": "農機具", "category": "unknown", "note": "", "tags": ["のうきぐ"]},
+    {"name": "農業用ビニール", "category": "unknown", "note": "ハウスビニール・肥料用袋など", "tags": ["のうぎょうようびにーる"]},
+    {"name": "ボイラー", "category": "unknown", "note": "", "tags": ["ぼいらー"]},
+    {"name": "電話機", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["でんわき"]},
+    {"name": "スマートフォン", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["すまーとふぉん"]},
+    {"name": "携帯電話", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["けいたいでんわ"]},
+    {"name": "デジタルカメラ", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["でじたるかめら"]},
+    {"name": "ゲーム機", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["げーむき"]},
+    {"name": "モバイルバッテリー", "category": "unknown", "note": "電極部分を絶縁し生活環境課窓口へ直接持参", "tags": ["もばいるばってりー"]},
+    {"name": "リチウムイオン電池", "category": "unknown", "note": "電極部分を絶縁し生活環境課窓口へ直接持参", "tags": ["りちうむいおんでんち"]},
+    {"name": "乾電池", "category": "unknown", "note": "公共施設の赤色回収ポストへ", "tags": ["かんでんち"]},
+    {"name": "ボタン電池", "category": "unknown", "note": "公共施設の赤色回収ポストへ", "tags": ["ぼたんでんち"]},
+    {"name": "ペットの死がい", "category": "unknown", "note": "生活環境課へご相談ください", "tags": ["ぺっとのしがい"]},
+    {"name": "建築廃材", "category": "unknown", "note": "専門処理業者へ", "tags": ["けんちくはいざい"]},
+    {"name": "バイク", "category": "unknown", "note": "販売店や専門処理業者へ", "tags": ["ばいく"]},
+    {"name": "PHS端末", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["ぴーえいちえすたんまつ"]},
+    {"name": "ビデオカメラ", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["びでおかめら"]},
+    {"name": "MDプレーヤー", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["えむでぃーぷれーやー"]},
+    {"name": "携帯音楽プレーヤー", "category": "unknown", "note": "フラッシュメモリ・HDDタイプ。小型家電回収ボックスへ", "tags": ["けいたいおんがくぷれーやー"]},
+    {"name": "CDプレーヤー", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["しーでぃーぷれーやー"]},
+    {"name": "テープレコーダー", "category": "unknown", "note": "デッキタイプを除く。小型家電回収ボックスへ", "tags": ["てーぷれこーだー"]},
+    {"name": "ICレコーダー", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["あいしーれこーだー"]},
+    {"name": "電子辞書", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["でんしじしょ"]},
+    {"name": "据置型ゲーム機", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["すえおきがたげーむき"]},
+    {"name": "携帯型ゲーム機", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["けいたいがたげーむき"]},
+    {"name": "VICSユニット", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["びっくすゆにっと"]},
+    {"name": "ETC車載ユニット", "category": "unknown", "note": "小型家電回収ボックスへ", "tags": ["いーてぃーしーしゃさいゆにっと"]},
+    {"name": "アルカリ電池", "category": "unknown", "note": "公共施設の赤色回収ポストへ", "tags": ["あるかりでんち"]},
+    {"name": "マンガン電池", "category": "unknown", "note": "公共施設の赤色回収ポストへ", "tags": ["まんがんでんち"]},
+    {"name": "オキシライド電池", "category": "unknown", "note": "公共施設の赤色回収ポストへ", "tags": ["おきしらいどでんち"]},
+    {"name": "自動車の部品", "category": "unknown", "note": "販売店や専門処理業者へ", "tags": ["じどうしゃのぶひん"]},
+    {"name": "水中ポンプ", "category": "unknown", "note": "", "tags": ["すいちゅうぽんぷ"]},
+    {"name": "モーター", "category": "unknown", "note": "", "tags": ["もーたー"]},
+    {"name": "レンガ", "category": "unknown", "note": "", "tags": ["れんが"]},
+    {"name": "コンクリート", "category": "unknown", "note": "", "tags": ["こんくりーと"]},
+    {"name": "石", "category": "unknown", "note": "", "tags": ["いし"]},
+    {"name": "瓦", "category": "unknown", "note": "", "tags": ["かわら"]},
+    {"name": "アスファルト", "category": "unknown", "note": "", "tags": ["あすふぁると"]},
+    {"name": "鉄骨", "category": "unknown", "note": "", "tags": ["てっこつ"]},
+    {"name": "ガソリン", "category": "unknown", "note": "爆発の危険性があるため専門業者へご相談ください", "tags": ["がそりん"]},
+    {"name": "シンナー", "category": "unknown", "note": "爆発の危険性があるため専門業者へご相談ください", "tags": ["しんなー"]},
+    {"name": "農薬", "category": "unknown", "note": "", "tags": ["のうやく"]},
+    {"name": "医療廃棄物", "category": "unknown", "note": "", "tags": ["いりょうはいきぶつ"]},
+    {"name": "産業廃棄物", "category": "unknown", "note": "", "tags": ["さんぎょうはいきぶつ"]},
+    {"name": "焼却灰", "category": "unknown", "note": "", "tags": ["しょうきゃくばい"]}
+  ],
+  "contact": [
+    {
+      "name": "河内町 生活環境課",
+      "note": "分別方法・収集日・粗大ごみ予約に関すること",
+      "tel": "0297846957",
+      "hours": "平日8:30〜17:15（土日・祝日・年末年始を除く）"
+    }
+  ],
+  "features": {
+    "notice": true,
+    "faq": true,
+    "vendor": false,
+    "contact": true,
+    "language": true,
+    "affiliate": true
+  },
+  "notices": [
+    {
+      "id": 1,
+      "date": "2026-04-01",
+      "title": "資源物の収集日はゴールデンウィーク等で前後することがあります",
+      "body": "資源物（新聞・雑誌・缶・びん・ペットボトル等）の収集日は原則月2回（A・C地区は火曜日、B・D地区は木曜日）ですが、大型連休や年末年始の前後で日程がずれる場合があります。正確な日付は町公式サイトの地区別ごみ収集カレンダー（PDF）でご確認ください。",
+      "source": "河内町公式ホームページ"
+    }
+  ],
+  "rules": {
+    "title": "河内町のごみ分別ルール",
+    "items": [
+      "燃えるごみは町内全域で毎週月・水・金曜日。収集日当日の朝7:00〜8:00までに出す",
+      "燃えないごみはA・B地区が第2土曜日、C・D地区が第4土曜日（月1回）",
+      "資源物（新聞・雑誌・段ボール・紙パック・缶・びん・ペットボトル・白色トレイ・古着）は原則月2回、A・C地区は火曜日、B・D地区は木曜日",
+      "粗大ごみは町内全域で毎月第1土曜日。事前に生活環境課への電話予約が必要",
+      "指定ごみ袋・専用ステッカーは町内の契約店で購入する"
+    ]
+  },
+  "affiliate_items": []
+}

@@ -1,0 +1,9275 @@
+{
+  "municipality_id": "sakuragawa",
+  "name": "桜川市",
+  "prefecture": "茨城県",
+  "population": 35124,
+  "ad_type": "none",
+  "official_banner_url": "",
+  "brand_color": "#B54A72",
+  "official_url": "https://www.city.sakuragawa.lg.jp/kurashi/seikatsu_kankyou/garbage/page000649.html",
+  "official_url_label": "桜川市公式ホームページ（ごみの収集日程について）",
+  "citation_date": "2026年9月",
+  "cityLogo": null,
+  "seo": {
+    "title": "桜川市のごみ収集日・分別と出し方｜ごみニコ",
+    "description": "茨城県桜川市のごみ収集日をカレンダーで確認、品目名で分別と出し方もすぐ検索。岩瀬・大和・真壁地区の地区別の収集曜日、資源・燃えない・有害ごみの「第◯日曜日」がひと目でわかります。無料・登録不要。",
+    "keywords": "ごみ,分別,収集日,カレンダー,燃えるごみ,資源ごみ,燃えないごみ,有害ごみ,粗大ごみ,桜川市",
+    "h1Title": "桜川市のごみ分別",
+    "contactCardNote": "生活環境課へのご連絡",
+    "calDayWeight": 500,
+    "serviceName": "桜川市 ごみ収集サービス",
+    "orgName": "桜川市 生活環境課",
+    "orgTelephone": "0296-75-3111",
+    "addressLocality": "桜川市",
+    "addressRegion": "茨城県",
+    "faq": [
+      {
+        "name": "桜川市の燃えるごみの収集日はいつですか？",
+        "text": "桜川市は岩瀬・大和・真壁の3地区、さらに地区ごとに細かく分かれており、燃えるごみは週2回、お住まいの地区により月曜・木曜または火曜・金曜のいずれかです。アプリでお住まいの地区を選ぶと収集日がすぐにわかります。"
+      },
+      {
+        "name": "桜川市の資源ごみ・燃えないごみ・有害ごみはいつ出せますか？",
+        "text": "資源ごみ（リサイクル）・燃えないごみ・有害ごみは、地区ごとに指定された「毎月第◯日曜日」の朝8時〜9時の間にまとめて集積所へ出します。同じ日でも品目ごとに分別・別々の袋（燃えないごみは指定の専用袋）で出す必要があります。"
+      },
+      {
+        "name": "桜川市でプラスチックごみの分別方法は変わりますか？",
+        "text": "はい。令和8年（2026年）10月から岩瀬じん芥処理場内「平日リサイクルステーション」でプラスチックごみの拠点回収が始まり、令和9年（2027年）4月からは各地区の集積所でも毎週水曜日にプラスチックごみを資源として分別収集する予定です。それまでは、プラスチック製容器包装・製品プラスチックは引き続き燃えるごみとして出してください。"
+      },
+      {
+        "name": "桜川市で日曜日に資源ごみ・燃えないごみ・有害ごみを出せなかった場合はどうすればいいですか？",
+        "text": "桜川市長方1245（岩瀬じん芥処理場内）の「平日リサイクルステーション」を利用できます。利用時間は月〜金曜日8時30分〜16時30分（11〜2月は8時30分〜15時30分）、土日祝日・年末年始は休業です。燃えるごみ・事業系ごみは持ち込めません。"
+      },
+      {
+        "name": "桜川市の粗大ごみはどうやって出しますか？",
+        "text": "粗大ごみは年4回、日程が決まり次第、区長文書でお知らせがあります。お急ぎの場合は筑西広域市町村圏事務組合環境センター（0296-33-3755、10kgで100円）へ自己搬入もできます。"
+      }
+    ]
+  },
+  "area_groups": [
+    {
+      "label": "岩瀬地区",
+      "keys": [
+        "higashi1",
+        "higashi2",
+        "higashi3",
+        "nishi",
+        "motoiwase",
+        "oryou",
+        "asuka",
+        "sakuragawanishisakuragawa",
+        "sakuragawahigashisakurakawa",
+        "fujimidai",
+        "oooka",
+        "joubanmachi",
+        "inuta",
+        "chouhoukita",
+        "chouhouminami",
+        "nakaizumi",
+        "uenohara",
+        "shimoizumi",
+        "hongou",
+        "teijou",
+        "nishiiioka",
+        "ooizumi",
+        "habuchi",
+        "hisahara",
+        "tomioka",
+        "kuwata",
+        "tomiya",
+        "nakazato",
+        "irinohonda",
+        "irinonitta",
+        "monkehigashi",
+        "monkenishi",
+        "minamiiida",
+        "aidajuu",
+        "hirasawa",
+        "ikegame",
+        "yamaguchi",
+        "ootsuki",
+        "sakamoto",
+        "koshio",
+        "fukuzaki",
+        "kameoka",
+        "nishishouhanawa1",
+        "nishishouhanawa2",
+        "nishishouhanawa3",
+        "kamobe1",
+        "kamobe2",
+        "takahata",
+        "imaizumi",
+        "kishoku",
+        "saruta",
+        "sone",
+        "keneisoneapaato",
+        "matsuda",
+        "haguroekimae",
+        "touyuubu",
+        "seiyuubu",
+        "inarihashi",
+        "ueshiro",
+        "yanaka",
+        "mito"
+      ]
+    },
+    {
+      "label": "大和地区",
+      "keys": [
+        "aoyagi",
+        "isobe",
+        "ine",
+        "motoki1",
+        "motoki2",
+        "oosone",
+        "higashiiida",
+        "seihou",
+        "abeta",
+        "haneda",
+        "miya",
+        "kizaki",
+        "maehara",
+        "nakamaruki",
+        "fukusen",
+        "nakane",
+        "takaku",
+        "washiyado",
+        "kanashiki",
+        "takamori",
+        "aoki"
+      ]
+    },
+    {
+      "label": "真壁地区",
+      "keys": [
+        "kamijuku",
+        "geshuku",
+        "kawaramachi",
+        "takauemachi",
+        "nakachou",
+        "shinjuku",
+        "yamatochou",
+        "kojou",
+        "yamaokoazaueyamao",
+        "yamaokoazanakayamao",
+        "yamaokoazanyuuzano",
+        "tanabeya",
+        "tanabeyakoazaomusaki",
+        "takanai",
+        "tayamakuchi",
+        "isakurikaesi",
+        "iizuka",
+        "shioyo",
+        "kamekuma",
+        "kamekumaapaatodanchichi",
+        "genhoutera",
+        "sutsuga",
+        "hatori",
+        "higashiyamata",
+        "kitashiio",
+        "minamishiio",
+        "murasakiodanchi",
+        "sakayori",
+        "saishiba",
+        "shitayakaishita",
+        "shitayakainaka",
+        "shitayakaiue",
+        "uetanikaiminami",
+        "uetanikaikita",
+        "higashiyakai",
+        "ootsukanitta",
+        "sakurai",
+        "shirai",
+        "nagaoka",
+        "shitaobata",
+        "ueobata",
+        "harahou",
+        "tokubetsu2"
+      ]
+    }
+  ],
+  "areas": {
+    "higashi1": {
+      "name": "東1区",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "higashi2": {
+      "name": "東2区",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "higashi3": {
+      "name": "東3区",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "nishi": {
+      "name": "西区",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "motoiwase": {
+      "name": "元岩瀬",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "oryou": {
+      "name": "御領",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "asuka": {
+      "name": "明日香",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "sakuragawanishisakuragawa": {
+      "name": "桜川（西桜川）",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "sakuragawahigashisakurakawa": {
+      "name": "桜川（東桜川）",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "fujimidai": {
+      "name": "富士見台",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "oooka": {
+      "name": "大岡",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "joubanmachi": {
+      "name": "常磐町",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "inuta": {
+      "name": "犬田",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "chouhoukita": {
+      "name": "長方北",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "chouhouminami": {
+      "name": "長方南",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "nakaizumi": {
+      "name": "中泉",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "uenohara": {
+      "name": "上の原",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "shimoizumi": {
+      "name": "下泉",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "hongou": {
+      "name": "本郷",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "teijou": {
+      "name": "堤上",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "nishiiioka": {
+      "name": "西飯岡",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "ooizumi": {
+      "name": "大泉",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "habuchi": {
+      "name": "飯渕",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "hisahara": {
+      "name": "久原",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "tomioka": {
+      "name": "富岡",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "kuwata": {
+      "name": "鍬田",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "tomiya": {
+      "name": "富谷",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "nakazato": {
+      "name": "中里",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "irinohonda": {
+      "name": "入野本田",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "irinonitta": {
+      "name": "入野新田",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "monkehigashi": {
+      "name": "門毛東",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "monkenishi": {
+      "name": "門毛西",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "minamiiida": {
+      "name": "南飯田",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "aidajuu": {
+      "name": "間中",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "hirasawa": {
+      "name": "平沢",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "ikegame": {
+      "name": "池亀",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "yamaguchi": {
+      "name": "山口",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "ootsuki": {
+      "name": "大月",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "sakamoto": {
+      "name": "坂本",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "koshio": {
+      "name": "小塩",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "fukuzaki": {
+      "name": "福崎",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "kameoka": {
+      "name": "亀岡",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "nishishouhanawa1": {
+      "name": "西小塙第1",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "nishishouhanawa2": {
+      "name": "西小塙第2",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "nishishouhanawa3": {
+      "name": "西小塙第3",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "kamobe1": {
+      "name": "加茂部第1",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "kamobe2": {
+      "name": "加茂部第2",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "takahata": {
+      "name": "高幡",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "imaizumi": {
+      "name": "今泉",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "kishoku": {
+      "name": "木植",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "saruta": {
+      "name": "猿田",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "sone": {
+      "name": "曽根",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "keneisoneapaato": {
+      "name": "県営曽根アパート",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "matsuda": {
+      "name": "松田",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "haguroekimae": {
+      "name": "羽黒駅前",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "touyuubu": {
+      "name": "東友部",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "seiyuubu": {
+      "name": "西友部",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "inarihashi": {
+      "name": "稲荷橋",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "ueshiro": {
+      "name": "上城",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "yanaka": {
+      "name": "谷中",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "mito": {
+      "name": "水戸",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "aoyagi": {
+      "name": "青柳",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "isobe": {
+      "name": "磯部",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "ine": {
+      "name": "稲",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "motoki1": {
+      "name": "本木1区",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "motoki2": {
+      "name": "本木2区",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "oosone": {
+      "name": "大曽根",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "higashiiida": {
+      "name": "東飯田",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "seihou": {
+      "name": "西方",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "abeta": {
+      "name": "阿部田",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "haneda": {
+      "name": "羽田",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "miya": {
+      "name": "宮",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "kizaki": {
+      "name": "木崎",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "maehara": {
+      "name": "前原",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "nakamaruki": {
+      "name": "中丸木",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "fukusen": {
+      "name": "福泉",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "nakane": {
+      "name": "中根",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "takaku": {
+      "name": "高久",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "washiyado": {
+      "name": "鷲宿",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "kanashiki": {
+      "name": "金敷",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "takamori": {
+      "name": "高森",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "aoki": {
+      "name": "青木",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "kamijuku": {
+      "name": "上宿",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "geshuku": {
+      "name": "下宿",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "kawaramachi": {
+      "name": "川原町",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "takauemachi": {
+      "name": "高上町",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "nakachou": {
+      "name": "仲町",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "shinjuku": {
+      "name": "新宿",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "yamatochou": {
+      "name": "大和町",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "kojou": {
+      "name": "古城",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "yamaokoazaueyamao": {
+      "name": "山尾・小字上山尾",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "yamaokoazanakayamao": {
+      "name": "山尾・小字中山尾",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "yamaokoazanyuuzano": {
+      "name": "山尾・小字入山尾",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "tanabeya": {
+      "name": "田（鍋屋）",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "tanabeyakoazaomusaki": {
+      "name": "田（鍋屋）・小字尾無崎",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "takanai": {
+      "name": "田（金井）",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "tayamakuchi": {
+      "name": "田（山口）",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          3
+        ]
+      }
+    },
+    "isakurikaesi": {
+      "name": "伊佐々",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "iizuka": {
+      "name": "飯塚",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "shioyo": {
+      "name": "塩世",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "kamekuma": {
+      "name": "亀熊",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "kamekumaapaatodanchichi": {
+      "name": "亀熊（アパート・団地地区）",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "genhoutera": {
+      "name": "源法寺",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "sutsuga": {
+      "name": "須津賀",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          4
+        ]
+      }
+    },
+    "hatori": {
+      "name": "羽鳥",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "higashiyamata": {
+      "name": "東山田",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "kitashiio": {
+      "name": "北椎尾",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "minamishiio": {
+      "name": "南椎尾",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "murasakiodanchi": {
+      "name": "紫尾団地",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "sakayori": {
+      "name": "酒寄",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "saishiba": {
+      "name": "細芝",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "shitayakaishita": {
+      "name": "下谷貝（下）",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "shitayakainaka": {
+      "name": "下谷貝（中）",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "shitayakaiue": {
+      "name": "下谷貝（上）",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "uetanikaiminami": {
+      "name": "上谷貝（南）",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "uetanikaikita": {
+      "name": "上谷貝（北）",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "higashiyakai": {
+      "name": "東矢貝",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "ootsukanitta": {
+      "name": "大塚新田",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    },
+    "sakurai": {
+      "name": "桜井",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "shirai": {
+      "name": "白井",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "nagaoka": {
+      "name": "長岡",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "shitaobata": {
+      "name": "下小幡",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "ueobata": {
+      "name": "上小幡",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "harahou": {
+      "name": "原方",
+      "moeru": [
+        1,
+        4
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          2
+        ]
+      }
+    },
+    "tokubetsu2": {
+      "name": "特別第2区",
+      "moeru": [
+        2,
+        5
+      ],
+      "kami": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "zasshi": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "fuku": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "bin": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "pet": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "can": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "moenai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "metal": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      },
+      "yugai": {
+        "day": 0,
+        "weeks": [
+          1
+        ]
+      }
+    }
+  },
+  "categories": {
+    "moeru": {
+      "label": "燃えるごみ",
+      "how": "桜川市指定のごみ袋に入れて口をよくしばり、収集日当日朝8時までに集積所へ出す（週2回、地区により月・木曜日または火・金曜日）",
+      "allowed": [
+        "台所ごみ（野菜・果物くず、残飯、魚、貝殻。生ごみはよく水を切る）",
+        "ビニール類（菓子の袋、ポリエチレン袋、ラップ類、卵パック等）",
+        "プラスチック類（CD・DVD、おもちゃ、カセットテープ、発泡スチロール、ペットボトルのふた等）",
+        "家庭廃食用油（ボロ布にしみ込ませるか凝固剤で固める）",
+        "紙くず（ちり紙、油紙、ビニール加工紙、ラミネート加工紙、カーボン紙など資源にならない紙）",
+        "ゴム・皮製品（バッグ、ランドセル、くつ、ボール、長靴、ゴム手袋、スリッパ等）",
+        "木くず（1本あたり長さ約50cm・太さ約10cm以内、持てる程度に束ねる）",
+        "資源とならない繊維（わたの入った衣類、下着、くつした、カーテン、ダウン衣料、座布団、まくら、ぬいぐるみ、紙おむつ等）"
+      ],
+      "not_allowed": [
+        "資源ごみ・ビン・空き缶（資源ごみへ。まぜないでください）",
+        "ダンボール箱をごみ容器として使うこと",
+        "刃物・電池・スプレー缶等（燃えないごみ・有害ごみへ）"
+      ],
+      "tips": [
+        "家庭での生ごみ処理は、コンポストの利用にご協力ください",
+        "収集日が祝日でも収集します。年末年始の収集は広報紙でご確認ください",
+        "令和8年（2026年）10月から岩瀬じん芥処理場内「平日リサイクルステーション」でプラスチックごみの拠点回収が始まり、令和9年（2027年）4月からは各地区の集積所でも毎週水曜日にプラスチックごみを資源として分別収集する予定です（対象品目の一覧は今後公表予定）。それまでの間、プラスチック製容器包装・製品プラスチックは引き続き燃えるごみとして出してください"
+      ],
+      "how_steps": [
+        "指定のごみ袋に入れて口をしばる",
+        "収集日当日朝8時までに集積所へ",
+        "地区により月・木曜日または火・金曜日（週2回）"
+      ]
+    },
+    "kami": {
+      "label": "紙類（新聞・チラシ・紙パック・ダンボール・雑誌）",
+      "how": "種類ごとにひも（ガムテープ不可）で十字に束ね、毎月第◯日曜日の朝8〜9時の間に集積所へ出す",
+      "allowed": [
+        "新聞紙・折込チラシ（4つ折りにして高さ約60cm・重さ約8kgごとに束ねる）",
+        "紙パック（牛乳パック・ジュース等、20〜30枚を目安に束ねる。酒パック等裏面が銀色のものは除く）",
+        "ダンボール（60〜80cmくらいに折りたたんで束ねる。粘着テープなどの異物は取り除く）",
+        "雑誌（高さ約30cmに束ねる）"
+      ],
+      "not_allowed": [
+        "汚れ・臭いの付いた紙（燃えるごみへ）",
+        "感熱紙・カーボン紙・ラミネート加工紙（燃えるごみへ）",
+        "裏面が銀色の酒パック等（燃えるごみへ）"
+      ],
+      "tips": [
+        "雨の日は出せません。次回の収集日に出してください",
+        "ひもで縛る際はガムテープを使わないでください"
+      ],
+      "how_steps": [
+        "種類ごとに分ける",
+        "ひもで十字に束ねる",
+        "毎月第◯日曜日朝8〜9時に集積所へ"
+      ]
+    },
+    "zasshi": {
+      "label": "雑紙",
+      "how": "封筒・紙袋・お菓子の空き箱など細かい雑紙は、紙袋等にまとめて入れ十字にしばり（高さ約20cm程度）、毎月第◯日曜日の朝8〜9時の間に集積所へ出す",
+      "allowed": [
+        "封筒・はがき",
+        "紙袋・お菓子の空き箱",
+        "トイレットペーパーの芯などの雑多な紙類"
+      ],
+      "not_allowed": [
+        "汚れ・臭いの付いた紙（燃えるごみへ）",
+        "感熱紙・カーボン紙（燃えるごみへ）"
+      ],
+      "tips": [
+        "なるべく資源として出してください"
+      ],
+      "how_steps": [
+        "紙袋等にまとめて入れる",
+        "十字にしばる",
+        "毎月第◯日曜日朝8〜9時に集積所へ"
+      ]
+    },
+    "fuku": {
+      "label": "繊維類（古着・タオル等）",
+      "how": "資源とならない繊維（わた入りの衣類等）以外の衣類・タオル等を、大きな布でくるむように約40cm角・高さ約40cmにまとめてしばり、毎月第◯日曜日の朝8〜9時の間に集積所へ出す",
+      "allowed": [
+        "古着・シャツ・ズボン",
+        "タオル・シーツ"
+      ],
+      "not_allowed": [
+        "わたの入った衣類・下着・くつした・カーテン・ダウン衣料・座布団・まくら・ぬいぐるみ（燃えるごみへ）",
+        "汚れ・臭いの付いた布類（燃えるごみへ）"
+      ],
+      "tips": [],
+      "how_steps": [
+        "資源とならない繊維以外の衣類・タオル類を分ける",
+        "大きな布でくるむように約40cm角・高さ約40cmにまとめてしばる",
+        "毎月第◯日曜日朝8〜9時に集積所へ"
+      ]
+    },
+    "bin": {
+      "label": "ビン類",
+      "how": "透明・茶色・緑色の色別に分け、ふたを外して中を空にして水洗いし、毎月第◯日曜日の朝8〜9時の間に集積所へ出す",
+      "allowed": [
+        "透明のビン（飲料のビン等）",
+        "茶色のビン（ビール・ウイスキーのビン等）",
+        "緑色のビン（日本酒のビン等）"
+      ],
+      "not_allowed": [
+        "農薬・劇物・化粧品のビン（燃えないごみへ）",
+        "油の入っていたボトル（燃えないごみへ）",
+        "汚れの落ちないビン（燃えないごみへ）"
+      ],
+      "tips": [
+        "ふたを取り外し、中を空にして水洗いしてください"
+      ],
+      "how_steps": [
+        "色別（透明・茶色・緑色）に分ける",
+        "ふたを外し中を空にして水洗いする",
+        "毎月第◯日曜日朝8〜9時に集積所へ"
+      ]
+    },
+    "pet": {
+      "label": "ペットボトル",
+      "how": "中を空にして水洗いし、キャップとラベルを外して（キャップ・ラベルは燃えるごみへ）、毎月第◯日曜日の朝8〜9時の間に集積所へ出す",
+      "allowed": [
+        "清涼飲料水・酒類のペットボトル本体（キャップ・ラベルを外し水洗いしたもの）"
+      ],
+      "not_allowed": [
+        "油の入っていたボトル（燃えないごみへ）",
+        "キャップ・ラベル（燃えるごみへ）"
+      ],
+      "tips": [],
+      "how_steps": [
+        "水でよく洗い、キャップ・ラベルを外す",
+        "外したキャップ・ラベルは燃えるごみへ",
+        "毎月第◯日曜日朝8〜9時に集積所へ"
+      ]
+    },
+    "can": {
+      "label": "空き缶",
+      "how": "中を空にして水洗いし、毎月第◯日曜日の朝8〜9時の間に集積所へ出す",
+      "allowed": [
+        "スチール缶",
+        "アルミ缶"
+      ],
+      "not_allowed": [
+        "汚れの落ちない缶（燃えないごみへ）"
+      ],
+      "tips": [],
+      "how_steps": [
+        "缶の中を水で洗う",
+        "毎月第◯日曜日朝8〜9時に集積所へ"
+      ]
+    },
+    "moenai": {
+      "label": "燃えないごみ（ガラス類・陶磁器類・小型電化製品・危険なごみ）",
+      "how": "桜川市指定の燃えないごみ専用袋に入れて、毎月第◯日曜日の朝8〜9時の間に集積所へ出す（資源ごみ・有害ごみと同じ日ですが、同じ袋にまとめて出すことができます）",
+      "allowed": [
+        "ガラス類（灰皿、ガラス製花びん、白熱球・LED電球・豆電球、グローランプ、めがね・レンズなどの特殊ガラス）",
+        "陶磁器類（茶碗、皿、植木鉢、陶磁器製の花びん）",
+        "小型電化製品（ポット、ラジオカセット、炊飯器、アイロン、サーキュレーター等、袋に入る大きさのもの）",
+        "割れたビン・食器（袋に入れて出す）",
+        "刃物・カミソリ・カッターの刃・針・押しピン（紙や布で覆ってから袋に入れる）",
+        "使い捨てライター（必ず使い切ってから出す）",
+        "スプレー缶・カセットボンベ（風通しの良い場所で穴をあけ、使い切ってから出す）"
+      ],
+      "not_allowed": [
+        "農薬・劇物・化粧品のビン（袋に入れて出せますが割れに注意）",
+        "取り外し可能な充電式電池（有害ごみへ。コードレス掃除機等は電池を外してから出す）",
+        "中身の入ったスプレー缶・ライター（使い切ってから出してください）"
+      ],
+      "tips": [
+        "刃物や割れたガラス・陶器は、紙や布で覆ってから袋に入れてください",
+        "燃えないごみは桜川市指定の燃えないごみ専用袋をご利用ください"
+      ],
+      "how_steps": [
+        "刃物・割れ物は紙や布で覆う",
+        "桜川市指定の燃えないごみ専用袋に入れる",
+        "毎月第◯日曜日朝8〜9時に集積所へ"
+      ]
+    },
+    "metal": {
+      "label": "金属類",
+      "how": "なべ・やかんなど袋に入る大きさの金属類を、毎月第◯日曜日の朝8〜9時の間に集積所へ出す",
+      "allowed": [
+        "なべ・やかん",
+        "アルミホイル・フライパン等の金属製品"
+      ],
+      "not_allowed": [
+        "袋に入らない大きさの金属類（粗大ごみへ）"
+      ],
+      "tips": [],
+      "how_steps": [
+        "袋に入る大きさか確認する",
+        "毎月第◯日曜日朝8〜9時に集積所へ"
+      ]
+    },
+    "yugai": {
+      "label": "有害ごみ（電池・蛍光灯・水銀使用物）",
+      "how": "発火のおそれがあるため他のごみと分別し、毎月第◯日曜日の朝8〜9時の間に集積所へ出す",
+      "allowed": [
+        "乾電池・ボタン型電池",
+        "充電式電池、または充電式電池を内蔵した機器（電子タバコ・モバイルバッテリー等）",
+        "直管型・丸型・電球型の蛍光灯",
+        "水銀体温計・水銀温度計・水銀血圧計など水銀使用製品"
+      ],
+      "not_allowed": [
+        "割れた蛍光灯（燃えないごみへ）",
+        "自動車・バイク用バッテリー（市では収集不能）"
+      ],
+      "tips": [
+        "リチウムイオン電池・モバイルバッテリー等は発火の危険があるため、必ず分別して出してください"
+      ],
+      "how_steps": [
+        "他のごみと分別する",
+        "電池を内蔵した機器はそのまま出せる（電池を分解しない）",
+        "毎月第◯日曜日朝8〜9時に集積所へ"
+      ]
+    },
+    "sodai": {
+      "label": "粗大ごみ",
+      "how": "年4回の予定で市が収集します（布類・木類は5・9月、鉄類・廃プラ・その他は6・11月を予定）。日程が決まり次第、区長文書でお知らせします。お急ぎの場合は筑西広域市町村圏事務組合環境センター（0296-33-3755）へ自己搬入も可能です",
+      "allowed": [
+        "タンス・ソファーなどの家具類",
+        "布団・寝具類",
+        "自転車",
+        "その他、指定袋に入らない大きさの家庭ごみ"
+      ],
+      "not_allowed": [
+        "家電リサイクル法対象4品目（エアコン・テレビ・冷蔵庫冷凍庫・洗濯機衣類乾燥機）",
+        "自動車部品・原動機付自転車、バイク（90cc以上）",
+        "ピアノ・耐火金庫・浄化槽など処理困難物"
+      ],
+      "tips": [
+        "環境センターへの自己搬入は10kgで100円の処分費が個人負担となります",
+        "多量にごみを出す場合は事前に環境センター（0296-33-3755）へ相談してください"
+      ],
+      "how_steps": [
+        "区長文書で日程を確認する（年4回）",
+        "収集日当日に指定の場所へ出す",
+        "急ぐ場合は環境センターへ自己搬入（有料）も検討する"
+      ]
+    },
+    "unknown": {
+      "label": "市で収集できないもの（処理困難物）",
+      "how": "品目によって処分方法が異なります。下記を確認してください",
+      "allowed": [],
+      "not_allowed": [
+        "家電リサイクル法対象4品目（エアコン・テレビ・冷蔵庫冷凍庫・洗濯機衣類乾燥機）※購入店に引取りを依頼",
+        "消火器（中身入り）・プロパンガスボンベ・塗料/シンナー・農薬（容器含む）",
+        "建築廃材・自動車部品・タイヤ・バイク（90cc以上）",
+        "ピアノ・大型耐火金庫・浄化槽",
+        "石・砂・土・コンクリートがら",
+        "感染の恐れがある医療系廃棄物（かかりつけの医療機関等に相談）"
+      ],
+      "tips": [
+        "農業用プラスチックは市（農林課）で収集を計画しています。日程は区長文書でお知らせします",
+        "多量ごみは環境センターへの自己搬入（有料）が可能です。事前に電話で相談してください"
+      ],
+      "how_steps": [
+        "家電4品目: 購入店（またはケーズデンキ桜川店 0296-75-8050）に引取りを依頼する",
+        "その他処理困難物: 一般廃棄物処理業者、または該当のリサイクル窓口に相談する"
+      ]
+    }
+  },
+  "garbage_db": [
+    {
+      "name": "野菜くず",
+      "category": "moeru",
+      "note": "生ごみはよく水を切る",
+      "tags": [
+        "やさいくず"
+      ]
+    },
+    {
+      "name": "果物くず",
+      "category": "moeru",
+      "note": "生ごみはよく水を切る",
+      "tags": [
+        "くだものくず"
+      ]
+    },
+    {
+      "name": "残飯",
+      "category": "moeru",
+      "note": "生ごみはよく水を切る",
+      "tags": [
+        "ざんぱん"
+      ]
+    },
+    {
+      "name": "魚のあら",
+      "category": "moeru",
+      "note": "生ごみはよく水を切る",
+      "tags": [
+        "さかなのあら"
+      ]
+    },
+    {
+      "name": "貝殻",
+      "category": "moeru",
+      "note": "生ごみはよく水を切る",
+      "tags": [
+        "かいがら"
+      ]
+    },
+    {
+      "name": "卵の殻",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "たまごのから"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "生ごみ",
+      "category": "moeru",
+      "note": "よく水を切ってから出す",
+      "tags": [
+        "なまごみ"
+      ]
+    },
+    {
+      "name": "菓子の袋",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かしのふくろ"
+      ]
+    },
+    {
+      "name": "ポリエチレン袋",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ぽりえちれんぶくろ"
+      ]
+    },
+    {
+      "name": "ラップ類",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "らっぷるい"
+      ]
+    },
+    {
+      "name": "卵パック（プラスチック製）",
+      "category": "moeru",
+      "note": "紙製の卵パックは雑紙へ",
+      "tags": [
+        "たまごぱっく"
+      ]
+    },
+    {
+      "name": "レジ袋",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "れじぶくろ"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "CD・DVD",
+      "category": "moeru",
+      "note": "ケースも同様",
+      "tags": [
+        "しーでぃー",
+        "でぃーぶいでぃー"
+      ]
+    },
+    {
+      "name": "おもちゃ（プラスチック製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "おもちゃ"
+      ]
+    },
+    {
+      "name": "カセットテープ",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かせっとてーぷ"
+      ]
+    },
+    {
+      "name": "発泡スチロール",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "はっぽうすちろーる"
+      ]
+    },
+    {
+      "name": "ペットボトルのふた",
+      "category": "moeru",
+      "note": "本体は資源ごみ（ペットボトル）へ",
+      "tags": [
+        "ぺっとぼとるのふた"
+      ]
+    },
+    {
+      "name": "ストッキング",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "すとっきんぐ"
+      ]
+    },
+    {
+      "name": "食用油（廃油）",
+      "category": "moeru",
+      "note": "ボロ布にしみ込ませるか凝固剤で固めて出す",
+      "tags": [
+        "しょくようあぶら",
+        "はいゆ"
+      ]
+    },
+    {
+      "name": "ちり紙",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ちりがみ"
+      ]
+    },
+    {
+      "name": "油紙",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "あぶらがみ"
+      ]
+    },
+    {
+      "name": "ビニール加工紙",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "びにーるかこうし"
+      ]
+    },
+    {
+      "name": "感熱紙",
+      "category": "moeru",
+      "note": "レシート等。資源にならない紙",
+      "tags": [
+        "かんねつし"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "カーボン紙",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "かーぼんし"
+      ]
+    },
+    {
+      "name": "ティッシュペーパー",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "てぃっしゅぺーぱー"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "写真（印画紙）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "しゃしん"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "バッグ（革・合皮製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ばっぐ"
+      ]
+    },
+    {
+      "name": "ランドセル",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "らんどせる"
+      ]
+    },
+    {
+      "name": "くつ",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "くつ"
+      ]
+    },
+    {
+      "name": "ボール（ゴム製）",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ぼーる"
+      ]
+    },
+    {
+      "name": "長靴",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ながぐつ"
+      ]
+    },
+    {
+      "name": "ゴム手袋",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ごむてぶくろ"
+      ]
+    },
+    {
+      "name": "スリッパ",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "すりっぱ"
+      ]
+    },
+    {
+      "name": "木くず",
+      "category": "moeru",
+      "note": "1本あたり長さ約50cm・太さ約10cm以内。袋に入れず持てる程度で束ねる",
+      "tags": [
+        "きくず"
+      ]
+    },
+    {
+      "name": "板きれ",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "いたきれ"
+      ]
+    },
+    {
+      "name": "剪定枝",
+      "category": "moeru",
+      "note": "葉は落とす。長さ約50cm・太さ約10cm以内に束ねる",
+      "tags": [
+        "せんていし",
+        "えだ"
+      ]
+    },
+    {
+      "name": "割り箸",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "わりばし"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "綿の入った衣類",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "わたのはいったいるい"
+      ]
+    },
+    {
+      "name": "下着",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "したぎ"
+      ]
+    },
+    {
+      "name": "くつした",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "くつした"
+      ]
+    },
+    {
+      "name": "カーテン（汚れたもの）",
+      "category": "moeru",
+      "note": "汚れのないものは繊維類（資源ごみ）へ",
+      "tags": [
+        "かーてん"
+      ]
+    },
+    {
+      "name": "ダウン衣料",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "だうんいりょう"
+      ]
+    },
+    {
+      "name": "座布団",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ざぶとん"
+      ]
+    },
+    {
+      "name": "まくら",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "まくら"
+      ]
+    },
+    {
+      "name": "ぬいぐるみ",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "ぬいぐるみ"
+      ]
+    },
+    {
+      "name": "紙おむつ",
+      "category": "moeru",
+      "note": "汚物は取り除く",
+      "tags": [
+        "かみおむつ",
+        "おむつ"
+      ]
+    },
+    {
+      "name": "生理用品",
+      "category": "moeru",
+      "note": "",
+      "tags": [
+        "せいりようひん"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "新聞紙",
+      "category": "kami",
+      "note": "1ヶ月分（4つ折りにして高さ約60cm・重さ約8kgごと）に十字に束ねる",
+      "tags": [
+        "しんぶんし"
+      ]
+    },
+    {
+      "name": "折込チラシ",
+      "category": "kami",
+      "note": "新聞紙とまとめて束ねてよい",
+      "tags": [
+        "おりこみちらし"
+      ]
+    },
+    {
+      "name": "紙パック（牛乳パック等）",
+      "category": "kami",
+      "note": "20〜30枚を目安に十字に束ねる。酒パック等裏面が銀色のものは除く",
+      "tags": [
+        "かみぱっく",
+        "ぎゅうにゅうぱっく"
+      ]
+    },
+    {
+      "name": "ダンボール",
+      "category": "kami",
+      "note": "60〜80cmくらいに折りたたんで十字に束ねる。粘着テープなどの異物は取り除く",
+      "tags": [
+        "だんぼーる",
+        "段ボール"
+      ]
+    },
+    {
+      "name": "雑誌",
+      "category": "kami",
+      "note": "高さ約30cmに束ねる",
+      "tags": [
+        "ざっし"
+      ]
+    },
+    {
+      "name": "教科書",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "きょうかしょ"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "カタログ",
+      "category": "kami",
+      "note": "",
+      "tags": [
+        "かたろぐ"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "雑紙",
+      "category": "zasshi",
+      "note": "細かい雑紙は紙袋に入れて十字にしばる（高さ約20cm）",
+      "tags": [
+        "ざつがみ"
+      ]
+    },
+    {
+      "name": "封筒",
+      "category": "zasshi",
+      "note": "",
+      "tags": [
+        "ふうとう"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "紙袋",
+      "category": "zasshi",
+      "note": "",
+      "tags": [
+        "かみぶくろ"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "お菓子の空き箱",
+      "category": "zasshi",
+      "note": "",
+      "tags": [
+        "おかしのあきばこ"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "古着",
+      "category": "fuku",
+      "note": "資源とならない繊維（わた入り衣類等）以外の衣類。約40cm角・高さ約40cmにくるむようにしばる",
+      "tags": [
+        "ふるぎ"
+      ]
+    },
+    {
+      "name": "タオル",
+      "category": "fuku",
+      "note": "",
+      "tags": [
+        "たおる"
+      ]
+    },
+    {
+      "name": "シーツ",
+      "category": "fuku",
+      "note": "",
+      "tags": [
+        "しーつ"
+      ]
+    },
+    {
+      "name": "透明のビン",
+      "category": "bin",
+      "note": "飲料のビン等。ふたを外し中を空にして水洗いする",
+      "tags": [
+        "とうめいのびん"
+      ]
+    },
+    {
+      "name": "茶色のビン",
+      "category": "bin",
+      "note": "ビールビン・ウイスキーのビンなど",
+      "tags": [
+        "ちゃいろのびん"
+      ]
+    },
+    {
+      "name": "緑色のビン",
+      "category": "bin",
+      "note": "日本酒のビンなど",
+      "tags": [
+        "みどりいろのびん"
+      ]
+    },
+    {
+      "name": "化粧品のビン",
+      "category": "moenai",
+      "note": "農薬・劇物・化粧品のビンは資源ごみに出せません",
+      "tags": [
+        "けしょうひんのびん"
+      ]
+    },
+    {
+      "name": "ペットボトル",
+      "category": "pet",
+      "note": "中を空にして水洗いする。キャップ・ラベルは外して燃えるごみへ",
+      "tags": [
+        "ぺっとぼとる"
+      ]
+    },
+    {
+      "name": "スチール缶",
+      "category": "can",
+      "note": "中を空にして水洗いする",
+      "tags": [
+        "すちーるかん"
+      ]
+    },
+    {
+      "name": "アルミ缶",
+      "category": "can",
+      "note": "中を空にして水洗いする",
+      "tags": [
+        "あるみかん"
+      ]
+    },
+    {
+      "name": "清涼飲料水の缶",
+      "category": "can",
+      "note": "",
+      "tags": [
+        "せいりょういんりょうすいのかん"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "灰皿（ガラス製）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "はいざら"
+      ]
+    },
+    {
+      "name": "ガラス製花びん",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "がらすせいはなびん"
+      ]
+    },
+    {
+      "name": "白熱球",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "はくねつきゅう"
+      ]
+    },
+    {
+      "name": "LED電球",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "えるいーでぃーでんきゅう"
+      ]
+    },
+    {
+      "name": "豆電球",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "まめでんきゅう"
+      ]
+    },
+    {
+      "name": "グローランプ",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ぐろーらんぷ"
+      ]
+    },
+    {
+      "name": "めがね",
+      "category": "moenai",
+      "note": "レンズなどの特殊ガラスを含む",
+      "tags": [
+        "めがね"
+      ]
+    },
+    {
+      "name": "レンズ（カメラ・めがね用）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "れんず"
+      ]
+    },
+    {
+      "name": "茶碗",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "ちゃわん"
+      ]
+    },
+    {
+      "name": "皿",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "さら"
+      ]
+    },
+    {
+      "name": "植木鉢（陶製）",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "うえきばち"
+      ]
+    },
+    {
+      "name": "陶磁器製の花びん",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "とうじきせいのはなびん"
+      ]
+    },
+    {
+      "name": "割れたビン・食器",
+      "category": "moenai",
+      "note": "袋に入れて出す（中を空にして水洗い）",
+      "tags": [
+        "われたびん",
+        "われたしょっき"
+      ]
+    },
+    {
+      "name": "ポット（電気式）",
+      "category": "moenai",
+      "note": "袋に入る大きさのもの",
+      "tags": [
+        "ぽっと"
+      ]
+    },
+    {
+      "name": "ラジオカセット",
+      "category": "moenai",
+      "note": "袋に入る大きさのもの",
+      "tags": [
+        "らじかせ"
+      ]
+    },
+    {
+      "name": "炊飯器",
+      "category": "moenai",
+      "note": "袋に入る大きさのもの",
+      "tags": [
+        "すいはんき"
+      ]
+    },
+    {
+      "name": "アイロン",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "あいろん"
+      ]
+    },
+    {
+      "name": "サーキュレーター",
+      "category": "moenai",
+      "note": "袋に入る大きさのもの",
+      "tags": [
+        "さーきゅれーたー"
+      ]
+    },
+    {
+      "name": "コードレス掃除機",
+      "category": "moenai",
+      "note": "取り外し可能な充電式電池は取り外して有害ごみへ",
+      "tags": [
+        "こーどれすそうじき"
+      ]
+    },
+    {
+      "name": "ドライヤー",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "どらいやー"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "刃物（包丁・はさみ等）",
+      "category": "moenai",
+      "note": "紙や布で刃を覆い袋に入れて出す",
+      "tags": [
+        "はもの",
+        "ほうちょう",
+        "はさみ"
+      ]
+    },
+    {
+      "name": "カミソリ",
+      "category": "moenai",
+      "note": "刃を紙や布で覆って出す",
+      "tags": [
+        "かみそり"
+      ]
+    },
+    {
+      "name": "カッターの刃",
+      "category": "moenai",
+      "note": "紙や布で覆って出す",
+      "tags": [
+        "かったーのは"
+      ]
+    },
+    {
+      "name": "針（裁縫針等）",
+      "category": "moenai",
+      "note": "紙や布で覆って出す",
+      "tags": [
+        "はり"
+      ]
+    },
+    {
+      "name": "押しピン",
+      "category": "moenai",
+      "note": "",
+      "tags": [
+        "おしぴん"
+      ]
+    },
+    {
+      "name": "使い捨てライター",
+      "category": "moenai",
+      "note": "必ず使い切ってから出す。中身の残ったものは収集不可",
+      "tags": [
+        "つかいすてらいたー",
+        "らいたー"
+      ]
+    },
+    {
+      "name": "スプレー缶",
+      "category": "moenai",
+      "note": "風通しの良い場所で穴をあけ、使い切ってから出す",
+      "tags": [
+        "すぷれーかん"
+      ]
+    },
+    {
+      "name": "カセットボンベ",
+      "category": "moenai",
+      "note": "使い切ってから穴をあけて出す",
+      "tags": [
+        "かせっとぼんべ"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "なべ",
+      "category": "metal",
+      "note": "",
+      "tags": [
+        "なべ"
+      ]
+    },
+    {
+      "name": "やかん",
+      "category": "metal",
+      "note": "",
+      "tags": [
+        "やかん"
+      ]
+    },
+    {
+      "name": "フライパン",
+      "category": "metal",
+      "note": "",
+      "tags": [
+        "ふらいぱん"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "アルミホイル",
+      "category": "metal",
+      "note": "",
+      "tags": [
+        "あるみほいる"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "乾電池",
+      "category": "yugai",
+      "note": "",
+      "tags": [
+        "かんでんち"
+      ]
+    },
+    {
+      "name": "ボタン型電池",
+      "category": "yugai",
+      "note": "",
+      "tags": [
+        "ぼたんがたでんち"
+      ]
+    },
+    {
+      "name": "充電式電池",
+      "category": "yugai",
+      "note": "発火のおそれがあるため必ず分別して出す",
+      "tags": [
+        "じゅうでんしきでんち"
+      ]
+    },
+    {
+      "name": "モバイルバッテリー",
+      "category": "yugai",
+      "note": "発火のおそれがあるため必ず分別して出す",
+      "tags": [
+        "もばいるばってりー"
+      ]
+    },
+    {
+      "name": "電子タバコ",
+      "category": "yugai",
+      "note": "内蔵電池のため有害ごみ",
+      "tags": [
+        "でんしたばこ"
+      ]
+    },
+    {
+      "name": "携帯電話",
+      "category": "yugai",
+      "note": "内蔵電池のため有害ごみ",
+      "tags": [
+        "けいたいでんわ"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "直管型蛍光灯",
+      "category": "yugai",
+      "note": "割れたものはガラスと一緒に燃えないごみへ",
+      "tags": [
+        "ちょっかんがたけいこうとう"
+      ]
+    },
+    {
+      "name": "丸型蛍光灯",
+      "category": "yugai",
+      "note": "",
+      "tags": [
+        "まるがたけいこうとう"
+      ]
+    },
+    {
+      "name": "電球型蛍光灯",
+      "category": "yugai",
+      "note": "",
+      "tags": [
+        "でんきゅうがたけいこうとう"
+      ]
+    },
+    {
+      "name": "水銀体温計",
+      "category": "yugai",
+      "note": "",
+      "tags": [
+        "すいぎんたいおんけい"
+      ]
+    },
+    {
+      "name": "水銀温度計",
+      "category": "yugai",
+      "note": "",
+      "tags": [
+        "すいぎんおんどけい"
+      ]
+    },
+    {
+      "name": "水銀血圧計",
+      "category": "yugai",
+      "note": "",
+      "tags": [
+        "すいぎんけつあつけい"
+      ]
+    },
+    {
+      "name": "タンス",
+      "category": "sodai",
+      "note": "年4回の粗大ごみ収集日程は区長文書でお知らせ。急ぐ場合は環境センターへ自己搬入（有料）",
+      "tags": [
+        "たんす"
+      ]
+    },
+    {
+      "name": "ソファー",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "そふぁー"
+      ]
+    },
+    {
+      "name": "布団",
+      "category": "sodai",
+      "note": "布類の粗大ごみは5・9月頃に予定",
+      "tags": [
+        "ふとん"
+      ]
+    },
+    {
+      "name": "自転車",
+      "category": "sodai",
+      "note": "鉄類の粗大ごみは6・11月頃に予定",
+      "tags": [
+        "じてんしゃ"
+      ]
+    },
+    {
+      "name": "物置",
+      "category": "sodai",
+      "note": "",
+      "tags": [
+        "ものおき"
+      ],
+      "source": "estimated"
+    },
+    {
+      "name": "エアコン",
+      "category": "unknown",
+      "note": "家電リサイクル法対象品目。購入店に引取りを依頼",
+      "tags": [
+        "えあこん"
+      ]
+    },
+    {
+      "name": "テレビ",
+      "category": "unknown",
+      "note": "家電リサイクル法対象品目。購入店に引取りを依頼",
+      "tags": [
+        "てれび"
+      ]
+    },
+    {
+      "name": "冷蔵庫・冷凍庫",
+      "category": "unknown",
+      "note": "家電リサイクル法対象品目。購入店に引取りを依頼",
+      "tags": [
+        "れいぞうこ",
+        "れいとうこ"
+      ]
+    },
+    {
+      "name": "洗濯機・衣類乾燥機",
+      "category": "unknown",
+      "note": "家電リサイクル法対象品目。購入店に引取りを依頼",
+      "tags": [
+        "せんたくき"
+      ]
+    },
+    {
+      "name": "消火器（中身入り）",
+      "category": "unknown",
+      "note": "市では収集不能。購入店または特定窓口へ",
+      "tags": [
+        "しょうかき"
+      ]
+    },
+    {
+      "name": "プロパンガスボンベ",
+      "category": "unknown",
+      "note": "販売店に相談",
+      "tags": [
+        "ぷろぱんがすぼんべ"
+      ]
+    },
+    {
+      "name": "塗料・シンナー",
+      "category": "unknown",
+      "note": "販売店等に相談",
+      "tags": [
+        "とりょう",
+        "しんなー"
+      ]
+    },
+    {
+      "name": "農薬（容器含む）",
+      "category": "unknown",
+      "note": "最寄りの農協等に相談",
+      "tags": [
+        "のうやく"
+      ]
+    },
+    {
+      "name": "建築廃材",
+      "category": "unknown",
+      "note": "一般廃棄物処理業者へ相談",
+      "tags": [
+        "けんちくはいざい"
+      ]
+    },
+    {
+      "name": "自動車部品・タイヤ",
+      "category": "unknown",
+      "note": "購入店・処理業者へ相談",
+      "tags": [
+        "たいや"
+      ]
+    },
+    {
+      "name": "バイク（90cc以上）",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "ばいく"
+      ]
+    },
+    {
+      "name": "ピアノ",
+      "category": "unknown",
+      "note": "一般廃棄物処理業者へ相談",
+      "tags": [
+        "ぴあの"
+      ]
+    },
+    {
+      "name": "金庫（大型・耐火）",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "きんこ"
+      ]
+    },
+    {
+      "name": "浄化槽",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "じょうかそう"
+      ]
+    },
+    {
+      "name": "石・砂・土",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "いし",
+        "すな",
+        "つち"
+      ]
+    },
+    {
+      "name": "コンクリートがら",
+      "category": "unknown",
+      "note": "",
+      "tags": [
+        "こんくりーとがら"
+      ]
+    },
+    {
+      "name": "農業用ビニール",
+      "category": "unknown",
+      "note": "市（農林課）で収集を計画。日程は区長文書で案内",
+      "tags": [
+        "のうぎょうようびにーる"
+      ]
+    }
+  ],
+  "contact": [
+    {
+      "name": "桜川市 生活環境課",
+      "note": "分別方法・収集日に関すること",
+      "tel": "0296753111",
+      "hours": "月〜金 8:30〜17:15（代表）"
+    },
+    {
+      "name": "筑西広域市町村圏事務組合 環境センター",
+      "note": "多量ごみの自己搬入・粗大ごみの相談",
+      "tel": "0296333755",
+      "hours": "平日 毎月第1日曜日 8:30〜11:45、13:00〜16:30"
+    }
+  ],
+  "features": {
+    "notice": true,
+    "faq": true,
+    "vendor": false,
+    "contact": true,
+    "language": true,
+    "affiliate": true
+  },
+  "notices": [
+    {
+      "id": 1,
+      "type": "info",
+      "date": "2026-06-15",
+      "title": "プラスチックの捨て方が変わります（令和8年10月拠点回収開始・令和9年4月から各地区集積所で開始）",
+      "body": "桜川市では、現在燃えるごみとして収集しているプラスチック製容器包装・製品プラスチックを資源として分別回収する取り組みを始めます。岩瀬じん芥処理場内「平日リサイクルステーション」での拠点回収は令和8年（2026年）10月から、各地区の集積所での回収（毎週水曜日朝8時まで、燃えるごみの集積所へ）は令和9年（2027年）4月からスタート予定です。ペットボトル本体・紙マーク付き容器・電池で動くもの・刃物類は対象外（それぞれ資源ごみ・燃えるごみ・有害ごみ・危険なごみへ）。開始までは、これまで通り燃えるごみとして出してください。",
+      "url": "https://www.city.sakuragawa.lg.jp/kurashi/seikatsu_kankyou/garbage/page010318.html"
+    },
+    {
+      "id": 2,
+      "type": "info",
+      "date": "2026-08-01",
+      "title": "環境センターごみ処理手数料が令和8年10月1日から改定されます",
+      "body": "筑西広域市町村圏事務組合環境センターへの自己搬入等にかかるごみ処理手数料が、令和8年（2026年）10月1日から改定されます。詳細は桜川市公式サイトでご確認ください。",
+      "url": "https://www.city.sakuragawa.lg.jp/kurashi/seikatsu_kankyou/garbage/page010425.html"
+    }
+  ],
+  "rules": {
+    "title": "ごみ出しルール",
+    "items": [
+      {
+        "icon": "swap_horiz",
+        "title": "岩瀬・大和・真壁の3地区、さらに細かい地区ごとに収集日が異なる",
+        "body": "桜川市は岩瀬地区・大和地区・真壁地区の3つの大きな地区に分かれ、それぞれの中でも大字・行政区ごとに燃えるごみの曜日（月・木または火・金）と、資源・燃えないごみ・有害ごみの「第◯日曜日」が異なります。お住まいの地区を選んで確認してください。"
+      },
+      {
+        "icon": "event_repeat",
+        "title": "資源ごみ・燃えないごみ・有害ごみは月1回、同じ日にまとめて収集",
+        "body": "資源ごみ（リサイクル）・燃えないごみ・有害ごみは、地区ごとに指定された「毎月第◯日曜日」の朝8時〜9時の間に、それぞれ分別してまとめて集積所へ出します。燃えないごみは桜川市指定の燃えないごみ専用袋を使用してください。"
+      },
+      {
+        "icon": "warning",
+        "title": "リチウムイオン電池・モバイルバッテリーは必ず分別",
+        "body": "電池で動くもの（モバイルバッテリー・電子タバコ等）は発火の危険があるため、有害ごみとして他のごみと分別して出してください。"
+      },
+      {
+        "icon": "storefront",
+        "title": "日曜日に出せない場合は平日リサイクルステーションへ",
+        "body": "資源ごみ・燃えないごみ・有害ごみを第◯日曜日に出せなかった場合は、桜川市長方1245（岩瀬じん芥処理場内）の「平日リサイクルステーション」（月〜金8:30〜16:30、11〜2月は8:30〜15:30、土日祝・年末年始休業）を利用できます。"
+      },
+      {
+        "icon": "recycling",
+        "title": "プラスチックの分別ルールが今後変わります",
+        "body": "令和8年10月から拠点回収、令和9年4月から各地区集積所での分別収集が始まる予定です。開始までは、プラスチック製容器包装・製品プラスチックは引き続き燃えるごみとして出してください。"
+      }
+    ]
+  },
+  "affiliate_items": [
+    {
+      "icon": "🛍️",
+      "name": "分別ごみ袋",
+      "sub": "楽天で探す →",
+      "url": "https://search.rakuten.co.jp/search/mall/%E5%88%86%E5%88%A5%E3%82%B4%E3%83%9F%E8%A2%8B/"
+    },
+    {
+      "icon": "🕸️",
+      "name": "カラスよけネット",
+      "sub": "楽天で探す →",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%82%AB%E3%83%A9%E3%82%B9%E3%82%88%E3%81%91%E3%83%8D%E3%83%83%E3%83%88/"
+    }
+  ]
+}
