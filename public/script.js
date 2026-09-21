@@ -71,6 +71,10 @@ const TYPE_STYLE = {
   pla_pet:     { icon:'water_bottle', img:'/icons/plastic.svg',   bg:'var(--c-pla-pet-bg)',    iconBg:'rgba(84,119,34,0.14)',   fg:'var(--c-pla-pet)',    dotColor:'var(--c-pla-pet)'    },
   kinzoku_gb:  { icon:'hardware',     img:'/icons/metal.svg',     bg:'var(--c-kinzoku-gb-bg)', iconBg:'rgba(36,89,107,0.14)',   fg:'var(--c-kinzoku-gb)', dotColor:'var(--c-kinzoku-gb)' },
   fuku_zasshi: { icon:'checkroom',    img:'/icons/fuku.svg',      bg:'var(--c-fuku-zasshi-bg)',iconBg:'rgba(114,55,114,0.14)',  fg:'var(--c-fuku-zasshi)',dotColor:'var(--c-fuku-zasshi)'},
+  // ── 拡張（茨城町・2026-09-16新設）
+  // びん類（bin）とは別に「ガラス・陶磁器類」を独立区分として収集する自治体向け。
+  // 専用の新色は用意せず、視覚的に近いbinと同じ色・アイコンを流用している。
+  glass:       { icon:'wine_bar',              img:'/icons/bin.svg',     bg:'var(--c-bin-bg)',     iconBg:'rgba(75,131,73,0.14)',   fg:'var(--c-bin)',     dotColor:'var(--c-bin)'     },
 };
 
 /**
@@ -614,6 +618,19 @@ function getNthWeekday(year, month, weekday, n) {
   return null;
 }
 
+/**
+ * 「毎月最終◯曜日」パターン用の判定（v226〜川場村で新設）。
+ * getNthWeekday()は固定の第n週（1〜5）しか扱えず、「最終週」は月によって
+ * 第4週の場合と第5週の場合があるため、weeks配列に数値の代わりに文字列"last"を
+ * 指定できるようにした（既存自治体は数値のみ使用しているため後方互換）。
+ * 判定方法：指定日がその月の最終7日間に含まれ、かつ曜日が一致すれば「最終◯曜日」。
+ */
+function isLastWeekdayOfMonth(date) {
+  const year = date.getFullYear(), month = date.getMonth();
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  return date.getDate() > daysInMonth - 7;
+}
+
 function isYearEnd(date) {
   if (!DATA?.collection_settings?.yearend_enabled) return false;
   const m = date.getMonth(), dd = date.getDate();
@@ -693,6 +710,8 @@ function getGarbageForDate(areaKey, date) {
   // 変更せず維持しつつ、area[カテゴリキー] が直接存在する自治体データにも対応する。
   // 値が曜日番号の配列なら毎週パターン、{day, week} または {day, weeks} オブジェクトなら
   // 第n○曜日パターンとして扱う。既に上記で追加済みのtypeは二重追加しない。
+  // weeks配列の要素は通常1〜5の数値だが、"last"（文字列）を指定すると「毎月最終◯曜日」
+  // （川場村など、月によって第4/第5週のどちらが最終週か変わる自治体向け。v226で新設）。
   const addedTypes = new Set(result.map(r => r.type));
   Object.keys(cats).forEach(catKey => {
     if (addedTypes.has(catKey)) return;
@@ -707,6 +726,14 @@ function getGarbageForDate(areaKey, date) {
       if (day === val.day) {
         const weeksArr = val.weeks || (val.week != null ? [val.week] : []);
         for (const wk of weeksArr) {
+          if (wk === 'last') {
+            if (isLastWeekdayOfMonth(date)) {
+              result.push({ type: catKey, label: cats[catKey]?.label || catKey, how: cats[catKey]?.how || '' });
+              addedTypes.add(catKey);
+              break;
+            }
+            continue;
+          }
           const d = getNthWeekday(year, month, day, wk);
           if (d && d.getDate() === date.getDate()) {
             result.push({ type: catKey, label: cats[catKey]?.label || catKey, how: cats[catKey]?.how || '' });

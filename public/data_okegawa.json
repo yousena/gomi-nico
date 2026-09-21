@@ -933,15 +933,6 @@
       "source": "estimated"
     },
     {
-      "name": "輪ゴム",
-      "category": "moeru",
-      "note": "",
-      "tags": [
-        "わごむ"
-      ],
-      "source": "estimated"
-    },
-    {
       "name": "使い捨てマスク",
       "category": "moeru",
       "note": "",
@@ -3391,14 +3382,6 @@
       "note": "",
       "tags": [
         "つかいすてかいろ"
-      ]
-    },
-    {
-      "name": "使い捨てライター",
-      "category": "moenai",
-      "note": "必ず中身は使い切る",
-      "tags": [
-        "つかいすてらいたー"
       ]
     },
     {

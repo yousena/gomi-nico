@@ -1,0 +1,738 @@
+{
+  "municipality_id": "oarai",
+  "name": "大洗町",
+  "prefecture": "茨城県",
+  "population": 14936,
+  "ad_type": "none",
+  "official_banner_url": "",
+  "brand_color": "#970737",
+  "official_url": "https://www.town.oarai.lg.jp/category/cat1/gomi-cat1/",
+  "official_url_label": "大洗町公式ホームページ（ごみ）",
+  "citation_date": "2026年9月",
+  "cityLogo": null,
+  "seo": {
+    "title": "大洗町のごみ収集日・分別と出し方｜ごみニコ",
+    "description": "茨城県大洗町のごみ収集日をカレンダーで確認、品目名で分別と出し方もすぐ検索。東地区・西地区で異なる収集曜日、燃やせる・燃やせない・資源物・粗大ごみの出し方がひと目でわかります。無料・登録不要。",
+    "keywords": "ごみ,分別,収集日,カレンダー,燃やせるごみ,燃やせないごみ,資源物,粗大ごみ,大洗町",
+    "h1Title": "大洗町のごみ分別",
+    "contactCardNote": "生活環境課へのご連絡",
+    "calDayWeight": 500,
+    "serviceName": "大洗町 ごみ収集サービス",
+    "orgName": "大洗町 生活環境課",
+    "orgTelephone": "029-267-5111",
+    "addressLocality": "大洗町",
+    "addressRegion": "茨城県",
+    "faq": [
+      {
+        "name": "大洗町の燃やせるごみの収集日はいつですか？",
+        "text": "東地区・西地区で収集曜日が異なります。東地区は月曜・木曜、西地区は火曜・金曜の週2回です。アプリでお住まいの地区を選ぶと収集日がすぐにわかります。"
+      },
+      {
+        "name": "燃やせないごみ・資源物（紙・びん・缶・ペットボトル）の収集日は？",
+        "text": "毎週水曜日ですが、東地区・西地区で隔週交互に収集します（片方が燃やせないごみの週は、もう片方が資源物の週）。資源物の具体的な曜日は回収場所（ルート）によって火〜金曜の間で異なるため、正確な曜日は資源回収場所マップまたは生活環境課でご確認ください。"
+      },
+      {
+        "name": "大洗町のペットボトル・缶・びんはどう出しますか？",
+        "text": "ペットボトルはキャップ・ラベルを外して洗い、緑ネットの専用袋へ。缶・びんは中身を洗い流し、種類ごとに回収場所のコンテナへ入れます。資源物を入れてきたレジ袋等の手持ちの袋は必ず持ち帰ってください。"
+      },
+      {
+        "name": "大洗町の粗大ごみはどうやって出しますか？",
+        "text": "予約制です。電話（029-267-5111）またはインターネットで収集日前日の午後4時30分までに予約し、町指定の処理券（小型専用400円・大型専用1,000円）を貼って自宅前に出します。収集日は毎週水曜日（東地区・西地区共通、第5水曜日は休み）です。"
+      },
+      {
+        "name": "リチウムイオン電池はどう処分すればいいですか？",
+        "text": "衝撃で発火する恐れがあるため、電子機器から取り外し、透明・半透明の袋に入れて資源ごみ回収場所の青色電池回収箱へ。役場1階ロビーの回収ボックスや、JBRC協力店での店頭回収も利用できます。"
+      }
+    ]
+  },
+  "area_groups": [
+    {
+      "label": "東地区",
+      "keys": ["higashi"]
+    },
+    {
+      "label": "西地区",
+      "keys": ["nishi"]
+    }
+  ],
+  "areas": {
+    "higashi": {
+      "name": "東地区",
+      "moeru": [1, 4],
+      "moenai": {"day": 3, "weeks": [3, 5]},
+      "kami": {"day": 3, "weeks": [2, 4]},
+      "can": {"day": 3, "weeks": [2, 4]},
+      "bin": {"day": 3, "weeks": [2, 4]},
+      "pet": {"day": 3, "weeks": [2, 4]},
+      "kanden": {"day": 3, "weeks": [2, 4]},
+      "spraycan": {"day": 3, "weeks": [2, 4]}
+    },
+    "nishi": {
+      "name": "西地区",
+      "moeru": [2, 5],
+      "moenai": {"day": 3, "weeks": [2, 4]},
+      "kami": {"day": 3, "weeks": [3, 5]},
+      "can": {"day": 3, "weeks": [3, 5]},
+      "bin": {"day": 3, "weeks": [3, 5]},
+      "pet": {"day": 3, "weeks": [3, 5]},
+      "kanden": {"day": 3, "weeks": [3, 5]},
+      "spraycan": {"day": 3, "weeks": [3, 5]}
+    }
+  },
+  "categories": {
+    "moeru": {
+      "label": "燃やせるごみ",
+      "how": "町指定の「燃やせるごみ専用袋」（大45L300円・中30L200円・小20L150円、各10枚入り、販売店で購入）に入れて口を結び、収集日（東地区は月・木曜、西地区は火・金曜）の午前8時までに地域の集積所へ。袋に入らない大きさの枝木・板・木片、ふとん・敷物類・マットレスは、1辺1m・高さ50cm以内であれば町指定の処理券（10枚入り300円）を直接貼って出せる。",
+      "allowed": [
+        "生ごみ（よく水を切る）、草・葉・木くず（土を落とす）、紙おむつ（汚物はトイレに流す）",
+        "再生できない紙（防水紙・感熱紙等）、皮・ビニール・ゴム製品（金具は外す）、発泡スチロール、衣類",
+        "プラスチック製品（食用油等の容器・タッパー・洗剤等の容器類、中身は空にする）",
+        "食用油（布・紙に含ませるか固形化する）"
+      ],
+      "not_allowed": [
+        "1辺1m・高さ50cmを超える枝木・ふとん等は粗大ごみへ",
+        "金属製・ガラス製のもの（燃えないごみへ）",
+        "資源物（紙類・びん・缶・ペットボトル等、資源物の日へ）"
+      ],
+      "tips": [
+        "収集日の午前8時までに出す。指定の場所、指定の出し方以外では収集しない",
+        "枝木・板・木片は1本の太さ10cm以内、箱や袋に入れたものは回収不可"
+      ],
+      "how_steps": [
+        "町指定のごみ袋（大・中・小）を選ぶ",
+        "対象品目を入れて口をしっかり結ぶ",
+        "収集日（東地区:月・木曜、西地区:火・金曜）の午前8時までに集積所へ"
+      ]
+    },
+    "moenai": {
+      "label": "燃やせないごみ",
+      "how": "町指定の「燃やせないごみ専用袋」（20L150円、10枚入り）に入れる。収集日は水曜日で、東地区・西地区が隔週交互（一方の地区が燃やせないごみの週は、もう一方が資源物の週）。50cm以内であれば処理券（10枚入り200円）を直接貼れば袋に入らないものも出せる。",
+      "allowed": [
+        "刃物類・割れ物・蛍光灯・電球類（新聞紙等に包む）、せともの・ガラス",
+        "ライター類（屋外の火の気のない場所でガスを使い切ってから出す）",
+        "小型の家電品等（家電4品目・電子レンジを除く）、飲食料品以外のびん・缶（中身を空にする）、金物類"
+      ],
+      "not_allowed": [
+        "電子レンジ・家電4品目（テレビ・冷蔵冷凍庫・洗濯機・エアコン）は不燃では出せない",
+        "充電式電池・リチウムイオン電池は不燃に出さず資源ごみ回収場所の電池回収箱へ"
+      ],
+      "tips": [
+        "収集日は東地区・西地区で隔週交互。詳細は家庭ごみ収集カレンダーで確認する",
+        "50cm以内のもの（ゴルフクラブ・傘・蛍光灯等は紐で5本程度の束にする、電気カーペットは畳んで縛る）は処理券を貼れば出せる"
+      ],
+      "how_steps": [
+        "町指定の燃やせないごみ専用袋に入れる、または50cm以内のものは処理券を直接貼る",
+        "刃物・割れ物は新聞紙等で包む、ライターはガスを使い切る",
+        "収集日（水曜日、東西地区隔週）の午前8時までに集積所へ"
+      ]
+    },
+    "sodai": {
+      "label": "粗大ごみ（予約制）",
+      "how": "電話（029-267-5111）またはインターネット（いばらき電子申請・届出サービス）で、収集日前日の午後4時30分までに予約する（1回の申込みは5個まで）。収集日は毎週水曜日（東地区・西地区共通、第5水曜日は休み、祝祭日も収集）。町指定の処理券（小型専用400円・大型専用1,000円、各10枚入り）を対象物に直接貼り、収集日当日の午前8時までに自宅前へ出す（家の中までは収集に行かない、立会い不要）。",
+      "allowed": [
+        "小型（1人で持ち運べる大きさ・重さ）：物干し竿、ストーブ、ベビーカー、電子レンジ、自転車、椅子等（処理券400円）",
+        "大型（1人で持ち運べない大きさ・重さ）：ベッド、タンス、机、畳、二人掛けソファー等（処理券1,000円）"
+      ],
+      "not_allowed": [
+        "家電4品目（テレビ・冷蔵冷凍庫・洗濯機・エアコン）は対象外（家電リサイクル法）",
+        "パソコンは対象外（メーカー回収・宅配便回収を利用）",
+        "事業活動で出たごみは対象外"
+      ],
+      "tips": [
+        "収集日前日16時30分までの予約制。当日申込みはできないが、立会いは不要（必ず自宅前・敷地内に出す）",
+        "大洗、鉾田、水戸環境組合への自己搬入も可能（家庭ごみ60kg未満一律300円等）"
+      ],
+      "how_steps": [
+        "電話またはインターネットで前日16時30分までに予約する",
+        "町指定の処理券（小型400円・大型1,000円）を販売店で購入し貼付する",
+        "収集日（毎週水曜日、東西地区共通、第5水曜は休み）の午前8時までに自宅前へ出す"
+      ]
+    },
+    "kami": {
+      "label": "資源物（紙類）",
+      "how": "種類ごとに紐で十字に縛って出す（ガムテープ不可、紙袋や箱に入れない）。回収日は東地区・西地区内の回収場所（ルート）によって火〜金曜日のいずれかで異なり、地区ごとに月2回（隔週）収集する。資源物を入れてきた手持ちの袋は必ず持ち帰る。",
+      "allowed": [
+        "新聞紙、ダンボール（1m以内にたたむ）、本・雑誌、紙パック（内側が白くアルミ不使用、プラスチック部分を除く）",
+        "その他の紙類（空き箱・紙ファイル等、金具やプラスチック部分は取り除く）"
+      ],
+      "not_allowed": [
+        "カーボン紙・写真等の感熱紙（レシート等）・油紙・ビニールコーティング紙・ティッシュペーパー・衛生用品は燃やせるごみへ",
+        "シール等・シュレッダーで断裁した紙、油等の汚れが付いた紙、クレヨン・絵の具等が付いた紙も燃やせるごみへ",
+        "ガムテープで縛らない、袋や箱に入れない"
+      ],
+      "tips": [
+        "回収場所（ルート）によって曜日が異なる（東地区・西地区内とも火〜金曜のいずれか）。正確な曜日は「資源回収場所」マップ（町公式サイト）で確認するか、生活環境課（029-267-5111）へ問い合わせる"
+      ],
+      "how_steps": [
+        "種類ごとに紐で十字に縛る",
+        "資源物を入れてきた袋は持ち帰る",
+        "地域で定められた回収場所へ午前8時までに出す"
+      ]
+    },
+    "can": {
+      "label": "資源物（缶類）",
+      "how": "中身を洗い流し、スチール缶・アルミ缶に分けて回収場所のコンテナへ入れる。",
+      "allowed": [
+        "スチール缶、アルミ缶（洗い流す）"
+      ],
+      "not_allowed": [
+        "飲食料品以外の缶（化粧品・カーワックス等）、汚れの落ちない缶、一斗缶、錆びた缶は燃やせないごみへ",
+        "縦に潰さない（不燃ごみへ）、缶詰めのふたは燃やせないごみへ"
+      ],
+      "tips": [
+        "回収曜日は東地区・西地区内の回収場所（ルート）によって火〜金曜のいずれか、地区ごとに月2回（隔週）"
+      ],
+      "how_steps": [
+        "中身を洗い流す",
+        "スチール・アルミ別にコンテナへ入れる",
+        "回収日の午前8時までに出す"
+      ]
+    },
+    "bin": {
+      "label": "資源物（びん類）",
+      "how": "中身を空にして洗い流し、茶びん・透明びん・緑びん・一升びん・青黒その他びん・ビールびんに分けて回収場所のコンテナへ入れる。ふたは外して燃やせないごみへ。",
+      "allowed": [
+        "飲食用のびん（茶・透明・緑・一升・青黒・ビールびん等）"
+      ],
+      "not_allowed": [
+        "割れたびん、飲み薬用のびん、薬びん、グラス等のガラス製品、耐熱ガラス製品は燃やせないごみへ",
+        "農薬びんは販売店・専門業者へ相談"
+      ],
+      "tips": [
+        "ふたは燃やせないごみへ。回収曜日は東地区・西地区内の回収場所（ルート）によって火〜金曜のいずれか、地区ごとに月2回（隔週）"
+      ],
+      "how_steps": [
+        "中身を空にして洗い流す",
+        "種類ごとにコンテナへ入れる",
+        "回収日の午前8時までに出す"
+      ]
+    },
+    "pet": {
+      "label": "資源物（ペットボトル）",
+      "how": "キャップとラベルを外し、中を洗い流して専用袋（緑ネット）に入れる。",
+      "allowed": [
+        "PETマークのあるペットボトル"
+      ],
+      "not_allowed": [
+        "キャップ・ラベルは燃やせるごみへ",
+        "洗剤や油が入っていたものは燃やせるごみへ"
+      ],
+      "tips": [
+        "回収曜日は東地区・西地区内の回収場所（ルート）によって火〜金曜のいずれか、地区ごとに月2回（隔週）"
+      ],
+      "how_steps": [
+        "キャップとラベルを外す",
+        "中を洗い流す",
+        "緑ネットの専用袋に入れて回収場所へ出す"
+      ]
+    },
+    "kanden": {
+      "label": "資源物（電池）",
+      "how": "乾電池・ボタン電池は資源物として回収場所の電池コンテナへ。リチウムイオン電池等の充電式電池は、資源ごみ回収場所の青色電池回収箱（透明・半透明の袋に入れる）、役場1階ロビーの回収ボックス、店頭回収（JBRC協力店）、または大洗、鉾田、水戸環境組合への搬入のいずれかで処分する。",
+      "allowed": [
+        "乾電池、ボタン電池"
+      ],
+      "not_allowed": [
+        "充電式電池（モバイルバッテリー等）は乾電池と同じコンテナには出さず、専用の電池回収箱・店頭回収・専門業者へ"
+      ],
+      "tips": [
+        "リチウムイオン電池は衝撃で発火する恐れがあるため、必ず電子機器から取り外し、透明・半透明の袋に入れて青色の電池回収箱へ出す",
+        "回収曜日は東地区・西地区内の回収場所（ルート）によって火〜金曜のいずれか、地区ごとに月2回（隔週）"
+      ],
+      "how_steps": [
+        "乾電池・ボタン電池は回収場所の電池コンテナへ入れる",
+        "充電式電池は青色電池回収箱・役場ロビー・店頭回収のいずれかへ出す"
+      ]
+    },
+    "spraycan": {
+      "label": "資源物（スプレー缶）",
+      "how": "屋外の火の気のない場所で、缶を振って中身を確認し、付属のガスキャップでガスを完全に出し切ってから資源物として出す。",
+      "allowed": [
+        "スプレー缶（中身を使い切ったもの）",
+        "カセットボンベ（卓上用、使い切ったもの）"
+      ],
+      "not_allowed": [
+        "穴を開けない",
+        "中身が残ったまま出さない"
+      ],
+      "tips": [
+        "回収曜日は東地区・西地区内の回収場所（ルート）によって火〜金曜のいずれか、地区ごとに月2回（隔週）"
+      ],
+      "how_steps": [
+        "屋外の火の気のない場所で中身を確認する",
+        "付属のキャップでガスを完全に出し切る",
+        "資源物として回収場所へ出す"
+      ]
+    },
+    "unknown": {
+      "label": "町で収集できないごみ・家電リサイクル品・パソコン",
+      "how": "家電4品目（テレビ・冷蔵冷凍庫・洗濯機・衣類乾燥機・エアコン）は家電リサイクル法対象のため、購入店・町内小売業者協力店・町と連携協定を締結した事業者（リネットジャパンリサイクル、SGムービング）への依頼、または大洗、鉾田、水戸環境組合への自己搬入（要リサイクル券）で処分する。パソコン・ディスプレイはメーカーの窓口（パソコン3R推進協会）またはリネットジャパンリサイクルの宅配便回収（1箱分まで無料）を利用する。その他、タイヤ・バッテリー・ガスボンベ・ピアノ・農機具・建築資材・断熱材・消火器・農薬・農業用ビニール等は町では収集せず、販売店・専門業者・許可業者へ依頼する。",
+      "allowed": [],
+      "not_allowed": [
+        "家電4品目（テレビ・冷蔵冷凍庫・洗濯機・衣類乾燥機・エアコン）",
+        "パソコン・ディスプレイ",
+        "タイヤ・タイヤホイール・バッテリー・自動車部品、オートバイ・原付バイク",
+        "建築資材・石・土砂・コンクリート・瓦・ブロック・断熱材・レンガ",
+        "ガスボンベ・プロパンボンベ、消火器、灯油・ガソリン・混合油・塗料（中身が残ったもの）",
+        "ピアノ、農機具、農薬・農業用ビニール、産業廃棄物、一時多量ごみ"
+      ],
+      "tips": [
+        "家電リサイクル料金はメーカー・大きさにより異なる（家電リサイクル券センター 0120-319-640）",
+        "引越し等で一度に多量のごみが出る場合は大洗、鉾田、水戸環境組合へ自己搬入するか、大洗地区一般廃棄物収集運搬業許可業者に依頼する"
+      ],
+      "how_steps": [
+        "品目を確認し該当する処分方法を選ぶ",
+        "販売店・協定事業者・専門業者・環境組合のいずれかへ連絡する",
+        "案内に従って処分する"
+      ]
+    }
+  },
+  "garbage_db": [
+    {"name": "IHコンロ", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": []},
+    {"name": "ICレコーダー", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "アイロン", "category": "moenai", "note": "", "tags": []},
+    {"name": "アイロン台", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": ["あいろんだい"]},
+    {"name": "空き缶", "category": "can", "note": "中身を空にして洗浄する", "tags": ["あきかん"]},
+    {"name": "空きびん", "category": "bin", "note": "キャップ・ふたを外す。飲食用以外は燃えないごみ", "tags": ["あきびん"]},
+    {"name": "あぜ波板（農業用）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["あぜなみいた"]},
+    {"name": "食用油", "category": "moeru", "note": "紙等に浸み込ませるか凝固剤で固める", "tags": ["しょくようあぶら"]},
+    {"name": "油（食用以外）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["あぶら"]},
+    {"name": "アルミホイル", "category": "moenai", "note": "", "tags": []},
+    {"name": "網戸", "category": "sodai", "note": "", "tags": ["あみど"]},
+    {"name": "アンテナ", "category": "sodai", "note": "BS・CS・アナログ・パラボラ", "tags": []},
+    {"name": "アンプ（ステレオ）", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": []},
+    {"name": "石（石製品）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["いし"]},
+    {"name": "衣装ケース（プラスチック製）", "category": "moeru", "note": "1m以上は粗大ごみ", "tags": ["いしょうけーす"]},
+    {"name": "いす", "category": "sodai", "note": "", "tags": []},
+    {"name": "一輪車", "category": "sodai", "note": "", "tags": ["いちりんしゃ"]},
+    {"name": "一斗缶", "category": "moenai", "note": "中身を空にする", "tags": ["いっとかん"]},
+    {"name": "イヤホン", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "衣類", "category": "moeru", "note": "", "tags": ["いるい"]},
+    {"name": "衣類乾燥機", "category": "unknown", "note": "家電リサイクル法対象", "tags": ["いるいかんそうき"]},
+    {"name": "インクカートリッジ", "category": "moeru", "note": "", "tags": []},
+    {"name": "植木鉢（陶器）", "category": "moenai", "note": "土は取り除く。プラスチック製は燃えるごみ", "tags": ["うえきばち"]},
+    {"name": "腕時計", "category": "moenai", "note": "", "tags": ["うでどけい"]},
+    {"name": "うす（木製）", "category": "sodai", "note": "石製のものは回収不可", "tags": ["もくせい"]},
+    {"name": "エアコン", "category": "unknown", "note": "家電リサイクル法対象", "tags": []},
+    {"name": "エアーコンプレッサー", "category": "unknown", "note": "販売店・専門業者に相談", "tags": []},
+    {"name": "ACアダプタ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "LED電球", "category": "moenai", "note": "", "tags": ["でんきゅう"]},
+    {"name": "エレクトーン", "category": "sodai", "note": "", "tags": []},
+    {"name": "エンジンオイル", "category": "unknown", "note": "販売店・専門業者に相談", "tags": []},
+    {"name": "オイルヒーター", "category": "sodai", "note": "燃料は抜き取る", "tags": []},
+    {"name": "オートバイ・原付バイク", "category": "unknown", "note": "二輪車リサイクルコールセンター（050-3000-0727）へ", "tags": ["おーとばい", "げんつきばいく"]},
+    {"name": "オーブントースター", "category": "moenai", "note": "", "tags": []},
+    {"name": "オーブンレンジ", "category": "sodai", "note": "", "tags": []},
+    {"name": "落ち葉", "category": "moeru", "note": "", "tags": ["おちば"]},
+    {"name": "紙おむつ", "category": "moeru", "note": "汚物を取り除く", "tags": ["かみおむつ", "おむつ"]},
+    {"name": "おもちゃ（木製・プラスチック製）", "category": "moeru", "note": "電池を外す。金属製は燃えないごみ", "tags": ["おもちゃ"]},
+    {"name": "オルガン", "category": "sodai", "note": "", "tags": []},
+    {"name": "温度計", "category": "moenai", "note": "", "tags": ["おんどけい"]},
+    {"name": "温風ヒーター", "category": "sodai", "note": "", "tags": ["おんぷうひーたー"]},
+    {"name": "カーステレオ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "カーテン", "category": "moeru", "note": "", "tags": []},
+    {"name": "カーナビ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "カーペット", "category": "moeru", "note": "1m以内に紐で十字に縛り処理券を貼る", "tags": []},
+    {"name": "貝殻", "category": "moeru", "note": "", "tags": ["かいがら"]},
+    {"name": "懐中電灯", "category": "moenai", "note": "電池を外す。使用済み小型家電回収ボックス利用可", "tags": ["かいちゅうでんとう"]},
+    {"name": "カイロ（使い捨て）", "category": "moeru", "note": "", "tags": ["かいろ"]},
+    {"name": "鏡", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": ["かがみ"]},
+    {"name": "学習机", "category": "sodai", "note": "", "tags": ["がくしゅうづくえ"]},
+    {"name": "傘", "category": "moenai", "note": "紐で5本程度の束にして処理券を貼る", "tags": ["かさ"]},
+    {"name": "加湿器", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": ["かしつき"]},
+    {"name": "ガスコンロ（ガス台）", "category": "sodai", "note": "", "tags": ["がすだい"]},
+    {"name": "ガスボンベ（プロパン）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["がすぼんべ"]},
+    {"name": "カセットコンロ", "category": "moenai", "note": "", "tags": []},
+    {"name": "カセットボンベ（卓上用）", "category": "spraycan", "note": "使い切ってから出す", "tags": ["たくじょうよう"]},
+    {"name": "ガソリン", "category": "unknown", "note": "販売店・専門業者に相談", "tags": []},
+    {"name": "活性炭（家庭用消臭剤）", "category": "moeru", "note": "", "tags": ["かっせいたん"]},
+    {"name": "カッター", "category": "moenai", "note": "紙等に包む", "tags": []},
+    {"name": "金づち", "category": "moenai", "note": "", "tags": ["かなづち"]},
+    {"name": "加熱式たばこ", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["かねつしきたばこ"]},
+    {"name": "花瓶（ガラス製・金属製）", "category": "moenai", "note": "プラスチック製は燃えるごみ", "tags": ["かびん"]},
+    {"name": "鎌", "category": "moenai", "note": "紙等に包む", "tags": ["かま"]},
+    {"name": "カミソリ", "category": "moenai", "note": "紙等に包む", "tags": []},
+    {"name": "カメラ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "カラーボックス", "category": "sodai", "note": "", "tags": []},
+    {"name": "ガラス", "category": "moenai", "note": "", "tags": []},
+    {"name": "刈払機", "category": "sodai", "note": "", "tags": ["かりばらいき"]},
+    {"name": "瓦", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["かわら"]},
+    {"name": "換気扇（台所用）", "category": "moenai", "note": "プラスチック部分は燃えるごみ", "tags": ["かんきせん"]},
+    {"name": "乾燥剤", "category": "moeru", "note": "", "tags": ["かんそうざい"]},
+    {"name": "缶詰", "category": "can", "note": "汚れが取れないものは燃えないごみ", "tags": ["かんづめ"]},
+    {"name": "缶詰のふた", "category": "moenai", "note": "", "tags": ["かんづめのふた"]},
+    {"name": "乾電池", "category": "kanden", "note": "ボタン電池も同様。充電式電池は販売店・専門業者に相談", "tags": ["かんでんち"]},
+    {"name": "キーボード（楽器）", "category": "sodai", "note": "", "tags": ["がっき"]},
+    {"name": "キーボード（パソコン周辺機器）", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["しゅうへんきき"]},
+    {"name": "脚立", "category": "sodai", "note": "", "tags": ["きゃたつ"]},
+    {"name": "キャリーバッグ", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": []},
+    {"name": "キャンバス（絵画用品）", "category": "moeru", "note": "", "tags": ["かいがようひん"]},
+    {"name": "急須（陶器）", "category": "moenai", "note": "プラスチック製は燃えるごみ", "tags": ["きゅうす"]},
+    {"name": "牛乳パック", "category": "kami", "note": "中を洗い開くか平らにつぶす", "tags": ["ぎゅうにゅうぱっく"]},
+    {"name": "教科書", "category": "kami", "note": "", "tags": ["きょうかしょ"]},
+    {"name": "鏡台", "category": "sodai", "note": "", "tags": ["きょうだい"]},
+    {"name": "金庫", "category": "unknown", "note": "販売店・専門業者に相談。手提げ式は燃えないごみ", "tags": ["きんこ"]},
+    {"name": "空気入れ（自転車用）", "category": "moenai", "note": "", "tags": ["くうきいれ"]},
+    {"name": "空気清浄機", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": ["くうきせいじょうき"]},
+    {"name": "クーラーボックス", "category": "moeru", "note": "1m以上は粗大ごみ", "tags": []},
+    {"name": "釘", "category": "moenai", "note": "袋等に入れて出す", "tags": ["くぎ"]},
+    {"name": "草花", "category": "moeru", "note": "土を落とす", "tags": ["くさばな"]},
+    {"name": "薬（常備薬等）", "category": "moeru", "note": "", "tags": ["くすり"]},
+    {"name": "口紅", "category": "moenai", "note": "プラスチック製は燃えるごみ", "tags": ["くちべに"]},
+    {"name": "靴", "category": "moeru", "note": "鉄板が入っている物は燃えないごみ", "tags": ["くつ"]},
+    {"name": "クッション", "category": "moeru", "note": "", "tags": []},
+    {"name": "クリスマスツリー", "category": "moeru", "note": "1m以上は粗大ごみ", "tags": []},
+    {"name": "車椅子", "category": "sodai", "note": "", "tags": ["くるまいす"]},
+    {"name": "車椅子（電動式）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["くるまいす"]},
+    {"name": "くわ", "category": "moenai", "note": "", "tags": []},
+    {"name": "蛍光管・蛍光灯", "category": "moenai", "note": "紙等に包む", "tags": ["けいこうかん", "けいこうとう"]},
+    {"name": "珪藻土マット", "category": "moenai", "note": "", "tags": ["けいそうどまっと"]},
+    {"name": "携帯電話", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["けいたいでんわ"]},
+    {"name": "ゲーム機（据置・携帯型）", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["げーむき", "すえおき", "けいたいがた"]},
+    {"name": "ゲームソフト", "category": "moeru", "note": "", "tags": []},
+    {"name": "血圧計", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["けつあつけい"]},
+    {"name": "剣山", "category": "moenai", "note": "", "tags": ["けんざん"]},
+    {"name": "碁盤・将棋盤", "category": "moeru", "note": "", "tags": ["ごばん", "しょうぎばん"]},
+    {"name": "碁石", "category": "moeru", "note": "", "tags": ["ごいし"]},
+    {"name": "高圧洗浄機", "category": "sodai", "note": "", "tags": ["こうあつせんじょうき"]},
+    {"name": "コーヒーメーカー", "category": "moenai", "note": "プラスチック部分は燃えるごみ", "tags": []},
+    {"name": "こたつ", "category": "sodai", "note": "", "tags": []},
+    {"name": "コップ（ガラス製）", "category": "moenai", "note": "プラスチック製は燃えるごみ", "tags": ["がらすせい"]},
+    {"name": "コピー機（家庭用）", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": ["こぴーき"]},
+    {"name": "戸別受信機（防災無線）", "category": "unknown", "note": "生活環境課に返却", "tags": ["こべつじゅしんき"]},
+    {"name": "ゴム製品", "category": "moeru", "note": "", "tags": ["ごむせいひん"]},
+    {"name": "米袋", "category": "kami", "note": "資源物として出す", "tags": ["こめぶくろ"]},
+    {"name": "ゴルフクラブ（アイアン・ウッド）", "category": "moenai", "note": "紐で5本程度の束にして処理券を貼る", "tags": []},
+    {"name": "ゴルフセット", "category": "sodai", "note": "クラブ・バッグ一式", "tags": []},
+    {"name": "ゴルフバッグ", "category": "sodai", "note": "", "tags": []},
+    {"name": "ゴルフボール", "category": "moenai", "note": "", "tags": []},
+    {"name": "コンクリート", "category": "unknown", "note": "販売店・専門業者に相談", "tags": []},
+    {"name": "混合油", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["こんごうゆ"]},
+    {"name": "コンポスト", "category": "moeru", "note": "1m以上は粗大ごみ", "tags": []},
+    {"name": "サーフボード", "category": "sodai", "note": "", "tags": []},
+    {"name": "座椅子", "category": "sodai", "note": "", "tags": ["ざいす"]},
+    {"name": "サイドボード", "category": "sodai", "note": "", "tags": []},
+    {"name": "座卓", "category": "sodai", "note": "", "tags": ["ざたく"]},
+    {"name": "雑誌", "category": "kami", "note": "紐で十字に縛る", "tags": ["ざっし"]},
+    {"name": "座布団", "category": "moeru", "note": "", "tags": ["ざぶとん"]},
+    {"name": "皿（陶磁器・金属製）", "category": "moenai", "note": "", "tags": ["さら"]},
+    {"name": "ざる（金属製）", "category": "moenai", "note": "", "tags": ["きんぞくせい"]},
+    {"name": "三脚", "category": "moenai", "note": "", "tags": ["さんきゃく"]},
+    {"name": "三輪車", "category": "sodai", "note": "", "tags": ["さんりんしゃ"]},
+    {"name": "CD", "category": "moeru", "note": "", "tags": []},
+    {"name": "シーツ", "category": "moeru", "note": "", "tags": []},
+    {"name": "辞書（紙製）", "category": "kami", "note": "", "tags": ["じしょ"]},
+    {"name": "自転車", "category": "sodai", "note": "電動自転車はバッテリーを外す。バッテリーは販売店・専門業者に相談", "tags": ["じてんしゃ"]},
+    {"name": "自動車部品", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["じどうしゃぶひん"]},
+    {"name": "ジャッキ（手回し式）", "category": "moenai", "note": "", "tags": ["じゃっき"]},
+    {"name": "ジャッキ（油圧式）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["じゃっき"]},
+    {"name": "砂利", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["じゃり"]},
+    {"name": "じゅうたん", "category": "moeru", "note": "1m以内に紐で十字に縛り処理券を貼る", "tags": []},
+    {"name": "充電器（家庭用）", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["じゅうでんき"]},
+    {"name": "充電器（携帯電話用）", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["じゅうでんき"]},
+    {"name": "充電式電池", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["じゅうでんしきでんち"]},
+    {"name": "シュレッダー", "category": "moenai", "note": "", "tags": []},
+    {"name": "消火器", "category": "unknown", "note": "リサイクルシールを貼付し茨城県消防設備協会等へ相談", "tags": ["しょうかき"]},
+    {"name": "浄水器", "category": "moenai", "note": "", "tags": ["じょうすいき"]},
+    {"name": "照明器具", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": ["しょうめいきぐ"]},
+    {"name": "じょうろ（プラスチック製）", "category": "moeru", "note": "金属製のものは燃えないごみ", "tags": ["ぷらすちっくせい"]},
+    {"name": "除湿機", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": ["じょしつき"]},
+    {"name": "食品トレイ", "category": "moeru", "note": "", "tags": ["しょくひんとれい"]},
+    {"name": "食器（陶磁器・ガラス製）", "category": "moenai", "note": "", "tags": ["しょっき"]},
+    {"name": "食器洗い乾燥機", "category": "sodai", "note": "ビルトイン型は販売店に相談", "tags": ["しょっきあらいかんそうき"]},
+    {"name": "食器棚", "category": "sodai", "note": "", "tags": ["しょっきだな"]},
+    {"name": "新聞紙", "category": "kami", "note": "紐で十字に縛る", "tags": ["しんぶんし"]},
+    {"name": "水槽（プラスチック製）", "category": "moeru", "note": "1m以上は粗大ごみ", "tags": ["すいそう"]},
+    {"name": "水槽（ガラス製）", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": ["すいそう"]},
+    {"name": "水筒（金属製）", "category": "moenai", "note": "", "tags": ["すいとう"]},
+    {"name": "炊飯器", "category": "moenai", "note": "", "tags": ["すいはんき"]},
+    {"name": "スーツケース", "category": "sodai", "note": "", "tags": []},
+    {"name": "姿見", "category": "sodai", "note": "", "tags": ["すがたみ"]},
+    {"name": "スキー板", "category": "sodai", "note": "", "tags": ["すきーいた"]},
+    {"name": "スキー靴", "category": "moenai", "note": "", "tags": ["すきーぐつ"]},
+    {"name": "スキーストック", "category": "moenai", "note": "束ねて処理券を貼る", "tags": []},
+    {"name": "スキーセット", "category": "sodai", "note": "靴・板・ストック一式", "tags": []},
+    {"name": "スキャナ", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": []},
+    {"name": "スクーター（原付バイク）", "category": "unknown", "note": "二輪車リサイクルコールセンターへ", "tags": ["げんつきばいく"]},
+    {"name": "スケートボード", "category": "moenai", "note": "", "tags": []},
+    {"name": "すずり", "category": "unknown", "note": "販売店・専門業者に相談。プラスチック製は燃えるごみ", "tags": ["すずり"]},
+    {"name": "すだれ", "category": "moeru", "note": "", "tags": []},
+    {"name": "スチール棚", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": ["すちーるだな"]},
+    {"name": "ステレオ", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": []},
+    {"name": "ストーブ", "category": "sodai", "note": "タンクは空にする", "tags": []},
+    {"name": "砂", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["すな"]},
+    {"name": "スノーボード板", "category": "sodai", "note": "", "tags": ["すのーぼーどいた"]},
+    {"name": "スノーボード靴", "category": "moenai", "note": "", "tags": ["すのーぼーどぐつ"]},
+    {"name": "スノーボードセット", "category": "sodai", "note": "板・靴一式", "tags": []},
+    {"name": "スピーカー", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": []},
+    {"name": "スプレー缶", "category": "spraycan", "note": "使い切ってから出す", "tags": ["すぷれーかん"]},
+    {"name": "炭", "category": "moeru", "note": "", "tags": ["すみ"]},
+    {"name": "石膏ボード", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["せっこうぼーど"]},
+    {"name": "接着剤", "category": "moeru", "note": "", "tags": ["せっちゃくざい"]},
+    {"name": "せともの・陶磁器", "category": "moenai", "note": "", "tags": ["せともの", "とうじき"]},
+    {"name": "洗濯機", "category": "unknown", "note": "家電リサイクル法対象", "tags": ["せんたくき"]},
+    {"name": "洗濯バサミ（金属製）", "category": "moenai", "note": "", "tags": ["せんたくばさみ"]},
+    {"name": "剪定枝", "category": "moeru", "note": "長さ50cm以下・太さ5cm以下", "tags": ["せんていえだ"]},
+    {"name": "扇風機", "category": "moenai", "note": "", "tags": ["せんぷうき"]},
+    {"name": "洗面台", "category": "sodai", "note": "", "tags": ["せんめんだい"]},
+    {"name": "双眼鏡", "category": "moenai", "note": "", "tags": ["そうがんきょう"]},
+    {"name": "掃除機", "category": "moenai", "note": "", "tags": ["そうじき"]},
+    {"name": "外付けハードディスクドライブ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["そとづけ"]},
+    {"name": "ソファー", "category": "sodai", "note": "", "tags": []},
+    {"name": "体温計（水銀式）", "category": "moenai", "note": "", "tags": ["たいおんけい"]},
+    {"name": "体温計（電子式）", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["たいおんけい"]},
+    {"name": "体重計", "category": "moenai", "note": "", "tags": ["たいじゅうけい"]},
+    {"name": "タイヤ", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["たいや"]},
+    {"name": "タイヤホイール", "category": "unknown", "note": "販売店・専門業者に相談", "tags": []},
+    {"name": "タイル", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["たいる"]},
+    {"name": "畳", "category": "sodai", "note": "", "tags": ["たたみ"]},
+    {"name": "脱臭剤", "category": "moeru", "note": "", "tags": ["だっしゅうざい"]},
+    {"name": "タブレット型端末", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["たぶれっとがたたんまつ"]},
+    {"name": "タンス", "category": "sodai", "note": "", "tags": []},
+    {"name": "ダンベル（鉄アレイ）", "category": "moenai", "note": "", "tags": ["だんべる"]},
+    {"name": "ダンボール", "category": "kami", "note": "1m以内にたたむ", "tags": []},
+    {"name": "チャイルドシート", "category": "sodai", "note": "", "tags": []},
+    {"name": "茶箱", "category": "sodai", "note": "", "tags": ["ちゃばこ"]},
+    {"name": "茶碗（せともの）", "category": "moenai", "note": "プラスチック製は燃えるごみ", "tags": ["ちゃわん"]},
+    {"name": "注射器・注射針", "category": "unknown", "note": "専門業者に相談", "tags": ["ちゅうしゃき", "ちゅうしゃばり"]},
+    {"name": "彫刻刀", "category": "moenai", "note": "紙等に包む", "tags": ["ちょうこくとう"]},
+    {"name": "チラシ類", "category": "kami", "note": "", "tags": ["ちらしるい"]},
+    {"name": "ちりとり", "category": "moeru", "note": "金属製のものは燃えないごみ", "tags": []},
+    {"name": "机", "category": "sodai", "note": "", "tags": ["つくえ"]},
+    {"name": "漬物石", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["つけものいし"]},
+    {"name": "土", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["つち"]},
+    {"name": "釣りリール", "category": "moenai", "note": "", "tags": ["つりりーる"]},
+    {"name": "釣竿", "category": "moenai", "note": "", "tags": ["つりざお"]},
+    {"name": "ディスプレイ", "category": "unknown", "note": "メーカー回収・宅配便回収を利用", "tags": []},
+    {"name": "DVD", "category": "moeru", "note": "", "tags": []},
+    {"name": "DVDプレイヤー", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "テーブル", "category": "sodai", "note": "", "tags": []},
+    {"name": "テーブルクロス", "category": "moeru", "note": "", "tags": []},
+    {"name": "デジタルカメラ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "テレビ", "category": "unknown", "note": "家電リサイクル法対象", "tags": []},
+    {"name": "テレビ台", "category": "sodai", "note": "", "tags": ["てれびだい"]},
+    {"name": "電気カーペット", "category": "moenai", "note": "畳んで縛る", "tags": ["でんきかーぺっと"]},
+    {"name": "電気カミソリ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["でんきかみそり"]},
+    {"name": "電気コード類", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["でんきこーどるい"]},
+    {"name": "電気式生ごみ処理機", "category": "moenai", "note": "", "tags": ["でんきしきなまごみしょりき"]},
+    {"name": "電気ポット", "category": "moenai", "note": "", "tags": ["でんきぽっと"]},
+    {"name": "電気毛布", "category": "moenai", "note": "", "tags": ["でんきもうふ"]},
+    {"name": "電球", "category": "moenai", "note": "新聞紙等に包む", "tags": ["でんきゅう"]},
+    {"name": "電子辞書・手帳", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["でんしじしょ", "でんしてちょう"]},
+    {"name": "電子ピアノ", "category": "sodai", "note": "", "tags": ["でんしぴあの"]},
+    {"name": "電子レンジ", "category": "sodai", "note": "", "tags": ["でんしれんじ"]},
+    {"name": "電卓", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["でんたく"]},
+    {"name": "電動のこぎり", "category": "moenai", "note": "", "tags": ["でんどうのこぎり"]},
+    {"name": "電池", "category": "kanden", "note": "乾電池・ボタン電池は資源物、充電式は販売店・専門業者に相談", "tags": ["でんち"]},
+    {"name": "電動歯ブラシ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["でんどうはぶらし"]},
+    {"name": "テントセット", "category": "sodai", "note": "", "tags": []},
+    {"name": "電話機", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["でんわき"]},
+    {"name": "灯油", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["とうゆ"]},
+    {"name": "トースター", "category": "moenai", "note": "", "tags": []},
+    {"name": "時計", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["とけい"]},
+    {"name": "戸棚", "category": "sodai", "note": "", "tags": ["とだな"]},
+    {"name": "トタン板", "category": "sodai", "note": "", "tags": ["とたんいた"]},
+    {"name": "土鍋", "category": "moenai", "note": "", "tags": ["どなべ"]},
+    {"name": "ドライバー", "category": "moenai", "note": "", "tags": []},
+    {"name": "ドライヤー", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "ドラム缶", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["どらむかん"]},
+    {"name": "塗料", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["とりょう"]},
+    {"name": "塗料缶", "category": "moenai", "note": "中身を使い切ったものに限る", "tags": ["とりょうかん"]},
+    {"name": "トレーニング機器", "category": "sodai", "note": "", "tags": ["とれーにんぐきき"]},
+    {"name": "ドレッサー", "category": "sodai", "note": "", "tags": []},
+    {"name": "ナイフ（金属製）", "category": "moenai", "note": "紙等に包む", "tags": ["ないふ"]},
+    {"name": "流し台", "category": "sodai", "note": "", "tags": ["ながしだい"]},
+    {"name": "鍋", "category": "moenai", "note": "", "tags": ["なべ"]},
+    {"name": "生ごみ", "category": "moeru", "note": "よく水を切る", "tags": ["なまごみ"]},
+    {"name": "人形（布製・プラスチック製）", "category": "moeru", "note": "1m以上は粗大ごみ", "tags": ["にんぎょう"]},
+    {"name": "ねじ（金属製）", "category": "moenai", "note": "プラスチック製は燃えるごみ", "tags": ["ねじ"]},
+    {"name": "寝袋", "category": "moeru", "note": "", "tags": ["ねぶくろ"]},
+    {"name": "粘土（紙粘土）", "category": "moeru", "note": "", "tags": ["ねんど"]},
+    {"name": "粘土（油粘土）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["ねんど"]},
+    {"name": "農業用ビニール", "category": "unknown", "note": "大洗町農林水産課（029-267-5111）へ相談", "tags": ["のうぎょうようびにーる"]},
+    {"name": "農薬びん・缶", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["のうやくびん"]},
+    {"name": "農機具", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["のうきぐ"]},
+    {"name": "ノート", "category": "kami", "note": "", "tags": []},
+    {"name": "農薬", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["のうやく"]},
+    {"name": "のこぎり", "category": "moenai", "note": "刃を布等で養生する", "tags": []},
+    {"name": "バーベキューセット（網・鉄板）", "category": "sodai", "note": "", "tags": ["あみ", "てっぱん"]},
+    {"name": "灰", "category": "unknown", "note": "専門業者に相談", "tags": ["はい"]},
+    {"name": "バイク", "category": "unknown", "note": "二輪車リサイクルコールセンターへ", "tags": []},
+    {"name": "バインダー", "category": "moeru", "note": "金属部分は燃えないごみ", "tags": []},
+    {"name": "剥製", "category": "moeru", "note": "1m以上は粗大ごみ", "tags": ["はくせい"]},
+    {"name": "バケツ（金属製）", "category": "moenai", "note": "", "tags": ["きんぞくせい"]},
+    {"name": "ハサミ", "category": "moenai", "note": "刃を布等で養生する", "tags": []},
+    {"name": "パソコン", "category": "unknown", "note": "メーカー回収またはリネットジャパンの宅配便回収（1箱分まで無料）", "tags": ["ぱそこん"]},
+    {"name": "バッグ（布製・プラスチック製・皮製）", "category": "moeru", "note": "", "tags": ["ぬのせい", "ぷらすちっくせい", "かわせい"]},
+    {"name": "発煙筒", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["はつえんとう"]},
+    {"name": "バッテリー（小型家電用）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["ばってりー"]},
+    {"name": "バッテリー（バイク・自動車等用）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["ばってりー"]},
+    {"name": "発泡スチロール", "category": "moeru", "note": "", "tags": ["はっぽうすちろーる"]},
+    {"name": "花火", "category": "moeru", "note": "水につけ引火しないようにする", "tags": ["はなび"]},
+    {"name": "針（縫い針）", "category": "moenai", "note": "先端をテープ等で養生する", "tags": ["はり"]},
+    {"name": "針金", "category": "moenai", "note": "束ねる", "tags": ["はりがね"]},
+    {"name": "ハロゲンヒーター", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": []},
+    {"name": "ハンガー（針金・金属製）", "category": "moenai", "note": "木製・プラスチック製は燃えるごみ", "tags": ["はりがね", "きんぞくせい"]},
+    {"name": "ピアノ", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["ぴあの"]},
+    {"name": "ビーチパラソル", "category": "sodai", "note": "", "tags": []},
+    {"name": "ピクニックテーブル", "category": "sodai", "note": "", "tags": []},
+    {"name": "ビデオカメラ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "ビデオテープ", "category": "moeru", "note": "", "tags": []},
+    {"name": "ビデオデッキ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "ビニールプール", "category": "moeru", "note": "", "tags": []},
+    {"name": "肥料", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["ひりょう"]},
+    {"name": "ファクシミリ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "ファンヒーター", "category": "sodai", "note": "タンクは空にする", "tags": []},
+    {"name": "ふすま", "category": "sodai", "note": "", "tags": []},
+    {"name": "仏壇", "category": "sodai", "note": "", "tags": ["ぶつだん"]},
+    {"name": "布団乾燥機", "category": "moenai", "note": "", "tags": ["ふとんかんそうき"]},
+    {"name": "布団類", "category": "moeru", "note": "1m以内に紐で十字に縛り処理券を貼る", "tags": ["ふとんるい"]},
+    {"name": "腐葉土", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["ふようど"]},
+    {"name": "フライパン", "category": "moenai", "note": "", "tags": []},
+    {"name": "プランター", "category": "moeru", "note": "陶器製は燃えないごみ", "tags": ["ぷらんたー"]},
+    {"name": "プリンター", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": []},
+    {"name": "ブルーシート", "category": "moeru", "note": "", "tags": []},
+    {"name": "ブルーレイディスク", "category": "moeru", "note": "", "tags": []},
+    {"name": "風呂釜", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["ふろがま"]},
+    {"name": "風呂のふた", "category": "moeru", "note": "1m以上は粗大ごみ", "tags": ["ふろのふた"]},
+    {"name": "ブロック", "category": "unknown", "note": "販売店・専門業者に相談", "tags": []},
+    {"name": "文鎮", "category": "moenai", "note": "", "tags": ["ぶんちん"]},
+    {"name": "ヘアアイロン", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "ベッド（金属製・木製等）", "category": "sodai", "note": "介護用は回収不可", "tags": ["きんぞくせい", "もくせい"]},
+    {"name": "ペットの砂（紙製）", "category": "moeru", "note": "鉱物性は収集不可", "tags": ["ぺっとのすな"]},
+    {"name": "ペットのふん", "category": "moeru", "note": "", "tags": ["ぺっとのふん"]},
+    {"name": "ペットボトル", "category": "pet", "note": "キャップ・ラベルを外し洗い流す", "tags": []},
+    {"name": "ヘッドホン", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "ベビーカー", "category": "sodai", "note": "", "tags": []},
+    {"name": "便器", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["べんき"]},
+    {"name": "望遠鏡", "category": "moenai", "note": "", "tags": ["ぼうえんきょう"]},
+    {"name": "ほうき", "category": "moeru", "note": "", "tags": []},
+    {"name": "包丁", "category": "moenai", "note": "刃を布等で養生する", "tags": ["ほうちょう"]},
+    {"name": "ボウリングの球", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["ぼうりんぐのたま"]},
+    {"name": "ホース", "category": "moeru", "note": "", "tags": []},
+    {"name": "ポータブルトイレ", "category": "sodai", "note": "", "tags": []},
+    {"name": "ホームベーカリー", "category": "moenai", "note": "", "tags": []},
+    {"name": "ボールペン", "category": "moeru", "note": "金属製は燃えないごみ", "tags": []},
+    {"name": "補聴器", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["ほちょうき"]},
+    {"name": "ポット", "category": "moenai", "note": "", "tags": []},
+    {"name": "ホットカーペット", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": []},
+    {"name": "ホットプレート", "category": "moenai", "note": "", "tags": []},
+    {"name": "ポリタンク", "category": "moeru", "note": "中身は空にする", "tags": ["ぽりたんく"]},
+    {"name": "保冷剤", "category": "moeru", "note": "", "tags": ["ほれいざい"]},
+    {"name": "本", "category": "kami", "note": "", "tags": ["ほん"]},
+    {"name": "本棚", "category": "sodai", "note": "", "tags": ["ほんだな"]},
+    {"name": "マイク", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "マウス（パソコン用）", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["ぱそこんよう"]},
+    {"name": "マッサージチェアー", "category": "sodai", "note": "", "tags": []},
+    {"name": "マッチ（使用済）", "category": "moeru", "note": "未使用は収集不可", "tags": ["しようずみ"]},
+    {"name": "マットレス", "category": "moeru", "note": "1m以内に紐で十字に縛り処理券を貼る", "tags": []},
+    {"name": "マットレス（スプリング入り）", "category": "sodai", "note": "", "tags": ["すぷりんぐいり"]},
+    {"name": "まな板", "category": "moeru", "note": "", "tags": ["まないた"]},
+    {"name": "豆電球", "category": "moenai", "note": "", "tags": ["まめでんきゅう"]},
+    {"name": "マルチ（農業用）", "category": "unknown", "note": "農林水産課へ相談", "tags": ["まるち"]},
+    {"name": "万年筆", "category": "moeru", "note": "金属製は燃えないごみ", "tags": ["まんねんひつ"]},
+    {"name": "ミキサー", "category": "moenai", "note": "", "tags": []},
+    {"name": "ミシン（ポータブル式）", "category": "moenai", "note": "50cm以上は粗大ごみ", "tags": ["ぽーたぶるしき"]},
+    {"name": "眼鏡", "category": "moenai", "note": "プラスチック製は燃えるごみ", "tags": ["めがね"]},
+    {"name": "メモリースティック", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "毛布", "category": "moeru", "note": "", "tags": ["もうふ"]},
+    {"name": "木材・木片", "category": "moeru", "note": "1本の太さ10cm以内、長さ50cm以下", "tags": ["もくざい", "もくへん"]},
+    {"name": "餅つき機", "category": "sodai", "note": "", "tags": ["もちつきき"]},
+    {"name": "物置（金属製）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["ものおき"]},
+    {"name": "物干し竿（金属）", "category": "sodai", "note": "数本程度", "tags": ["ものほしざお"]},
+    {"name": "物干し台（支柱）", "category": "sodai", "note": "土台のコンクリートを除去", "tags": ["ものほしだい"]},
+    {"name": "物干し台（土台・コンクリート製）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["ものほしだい"]},
+    {"name": "モバイルバッテリー", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["もばいるばってりー"]},
+    {"name": "やかん", "category": "moenai", "note": "", "tags": []},
+    {"name": "野球グローブ", "category": "moeru", "note": "", "tags": ["やきゅうぐろーぶ"]},
+    {"name": "薬品（農業用・工業用）", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["やくひん"]},
+    {"name": "湯沸かし器・ケトル", "category": "moenai", "note": "", "tags": ["ゆわかしき", "けとる"]},
+    {"name": "湯たんぽ", "category": "moeru", "note": "金属製は燃えないごみ", "tags": ["ゆたんぽ"]},
+    {"name": "よしず", "category": "sodai", "note": "", "tags": []},
+    {"name": "ライター", "category": "moenai", "note": "屋外の火の気のない場所でガスを抜く", "tags": ["らいたー"]},
+    {"name": "ラケット（カーボン製・プラスチック製）", "category": "moeru", "note": "", "tags": ["らけっと"]},
+    {"name": "ラジオ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "ラジカセ", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "ラジコン", "category": "moenai", "note": "電池を外す", "tags": []},
+    {"name": "ランチジャー", "category": "moenai", "note": "プラスチック製は燃えるごみ", "tags": ["らんちじゃー"]},
+    {"name": "ランドセル", "category": "moeru", "note": "金属部分は燃えないごみ", "tags": []},
+    {"name": "リチウム電池（ボタン電池）", "category": "kanden", "note": "透明・半透明の袋に入れ青色の電池回収箱へ", "tags": ["りちうむでんち"]},
+    {"name": "リモコン", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": []},
+    {"name": "ルーター", "category": "moenai", "note": "使用済み小型家電回収ボックス利用可", "tags": ["るーたー"]},
+    {"name": "ルームランナー", "category": "sodai", "note": "", "tags": []},
+    {"name": "冷蔵庫・冷凍庫", "category": "unknown", "note": "家電リサイクル法対象", "tags": ["れいぞうこ", "れいとうこ"]},
+    {"name": "レジャーテーブル", "category": "sodai", "note": "", "tags": ["れじゃーてーぶる"]},
+    {"name": "レンガ", "category": "unknown", "note": "販売店・専門業者に相談", "tags": ["れんが"]},
+    {"name": "練炭", "category": "moeru", "note": "", "tags": ["れんたん"]},
+    {"name": "ロウソク", "category": "moeru", "note": "", "tags": ["ろうそく"]},
+    {"name": "ローラースケート", "category": "moenai", "note": "", "tags": []},
+    {"name": "ロッカー", "category": "sodai", "note": "", "tags": []},
+    {"name": "ワープロ", "category": "moenai", "note": "", "tags": []},
+    {"name": "ティッシュペーパー", "category": "moeru", "note": "資源物としては回収できないため燃やせるごみへ", "tags": []},
+    {"name": "シュレッダーごみ（断裁紙）", "category": "moeru", "note": "資源物としては回収できないため燃やせるごみへ", "tags": ["だんさいし"]},
+    {"name": "割れたびん", "category": "moenai", "note": "資源物にはできないため燃えないごみへ", "tags": ["われたびん"]},
+    {"name": "錆びた缶", "category": "moenai", "note": "資源物にはできないため燃えないごみへ", "tags": ["さびたかん"]},
+    {"name": "耐熱ガラス製品", "category": "moenai", "note": "資源物にはできないため燃えないごみへ", "tags": ["たいねつがらすせいひん"]},
+    {"name": "割り箸", "category": "moeru", "note": "", "tags": ["わりばし"], "source": "estimated"},
+    {"name": "輪ゴム", "category": "moeru", "note": "", "tags": ["わごむ"], "source": "estimated"},
+    {"name": "ストロー", "category": "moeru", "note": "", "tags": [], "source": "estimated"},
+    {"name": "マスク（使い捨て）", "category": "moeru", "note": "", "tags": ["つかいすて"], "source": "estimated"}
+  ],
+  "contact": [
+    {
+      "name": "大洗町役場 生活環境課 生活環境係",
+      "note": "分別方法・収集日・粗大ごみの予約に関すること",
+      "tel": "0292675111",
+      "hours": "月〜金 8:30〜17:15（水曜のみ18:30まで、土日・祝日・年末年始を除く）"
+    },
+    {
+      "name": "大洗、鉾田、水戸環境組合（クリーンセンター）",
+      "note": "ごみの自己搬入・家電リサイクル品の持込みに関すること",
+      "tel": "0292672898",
+      "hours": "平日 8:30〜16:30、第2・4土曜日・祝日 8:30〜11:30（日曜日は休み）"
+    }
+  ],
+  "features": {
+    "notice": true,
+    "faq": true,
+    "vendor": false,
+    "contact": true,
+    "language": true,
+    "affiliate": true
+  },
+  "notices": [
+    {
+      "id": 1,
+      "date": "2026-06-16",
+      "title": "「ごみの分け方」ページを更新",
+      "body": "家庭ごみの正しい分別ルール（分別表）が更新され、資源物として回収できない紙・びん・缶の具体例などが明記されました。",
+      "source": "大洗町公式ホームページ"
+    },
+    {
+      "id": 2,
+      "date": "2026-04-01",
+      "title": "令和8年度 家庭ごみ収集カレンダーを公開",
+      "body": "令和8年度（2026年4月〜2027年3月）の家庭ごみ収集カレンダーが公開されました。4月のみ収集が変則となり、第1週目の燃やせないごみ・粗大ごみ収集、資源物回収は行われません。",
+      "source": "大洗町公式ホームページ"
+    },
+    {
+      "id": 3,
+      "date": "2026-01-15",
+      "title": "リチウムイオン電池の分別にご注意ください",
+      "body": "リチウムイオン電池は衝撃で発火する恐れがあり、ごみ処理施設での火災事故も発生しています。電子機器から取り外し、資源ごみ回収場所の青色電池回収箱、役場ロビーの回収ボックス、または店頭回収（JBRC協力店）をご利用ください。",
+      "source": "大洗町公式ホームページ"
+    }
+  ],
+  "rules": {
+    "title": "大洗町のごみ分別ルール",
+    "items": [
+      "ごみは収集日当日の午前8時までに指定の集積所（粗大ごみは自宅前）へ",
+      "燃やせるごみの収集曜日は東地区（月・木曜）と西地区（火・金曜）で異なる",
+      "燃やせないごみ・資源物（紙・びん・缶・ペットボトル・電池・スプレー缶）は水曜日、東地区・西地区で隔週交互",
+      "資源物の具体的な曜日（火〜金曜のいずれか）は回収場所（ルート）によって異なるため「資源回収場所」マップで確認する",
+      "粗大ごみは予約制。毎週水曜日（東地区・西地区共通、第5水曜日は休み）に自宅前へ",
+      "分別ルール違反のごみには警告シールが貼られ収集されません。出した人が持ち帰り適切に処理する"
+    ]
+  },
+  "affiliate_items": []
+}

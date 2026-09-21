@@ -285,11 +285,14 @@
     "空き缶等の不燃ごみに該当しない大型のごみ"
    ],
    "not_allowed": [
-    "大型家具が収集対象外となる場合がある"
+    "高さ180cm以上の大型家具類（洋服だんす・仏壇・茶だんす等）",
+    "成人男性2名で持ち上げることが困難なほど重い物",
+    "申請者が自宅の外に自力で運び出せない物（作業員が自宅内に上がって回収することはできません）"
    ],
    "tips": [
     "申請時に粗大ごみの写真を窓口へ持参またはご提示ください",
-    "収集日の前日・当日の申請は次回の収集となります"
+    "収集日の前日・当日の申請は次回の収集となります",
+    "上記の受付できない大型家具類は、町内対応の一般廃棄物収集運搬許可業者（(有)高原クリーンライフ 0287-45-2178、(有)塩谷環境整美 0287-43-1327）へ各自連絡し、費用等を相談のうえ処理を依頼してください"
    ],
    "how_steps": [
     "役場くらし安全課で事前申請（写真持参）",
@@ -656,7 +659,1146 @@
    "tags": [
     "せんたくき"
    ]
-  }
+  },
+  {
+   "name": "洋服だんす（高さ180cm以上）",
+   "category": "sodai",
+   "note": "高さ180cm以上・成人男性2名で持ち上げ困難・自力搬出不可のいずれかに該当するものは町では受付不可。一般廃棄物収集運搬許可業者（(有)高原クリーンライフ 0287-45-2178、(有)塩谷環境整美 0287-43-1327）へ相談",
+   "tags": [
+    "ようふくだんす"
+   ]
+  },
+  {
+   "name": "仏壇（高さ180cm以上）",
+   "category": "sodai",
+   "note": "高さ180cm以上・成人男性2名で持ち上げ困難・自力搬出不可のいずれかに該当するものは町では受付不可。一般廃棄物収集運搬許可業者（(有)高原クリーンライフ 0287-45-2178、(有)塩谷環境整美 0287-43-1327）へ相談",
+   "tags": [
+    "ぶつだん"
+   ]
+  },
+  {
+   "name": "茶だんす（高さ180cm以上）",
+   "category": "sodai",
+   "note": "高さ180cm以上・成人男性2名で持ち上げ困難・自力搬出不可のいずれかに該当するものは町では受付不可。一般廃棄物収集運搬許可業者（(有)高原クリーンライフ 0287-45-2178、(有)塩谷環境整美 0287-43-1327）へ相談",
+   "tags": [
+    "ちゃだんす"
+   ]
+  },
+  {
+   "name": "ティッシュペーパー",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "てぃっしゅぺーぱー"
+   ],
+   "source": "estimated"
+  },
+  {
+   "name": "割り箸",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "わりばし"
+   ],
+   "source": "estimated"
+  },
+  {
+   "name": "輪ゴム",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "わごむ"
+   ],
+   "source": "estimated"
+  },
+  {
+   "name": "使い捨てカイロ",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "つかいすてかいろ"
+   ],
+   "source": "estimated"
+  },
+  {
+   "name": "歯ブラシ",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "はぶらし"
+   ],
+   "source": "estimated"
+  },
+  {
+   "name": "CD・DVD（ケース含む）",
+   "category": "moenai",
+   "note": "",
+   "tags": [],
+   "source": "estimated"
+  },
+ {
+  "name": "アイスノン",
+  "category": "moeru",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "アイロン",
+  "category": "moenai",
+  "note": "電子式（コンセント式等）は小型家電として拠点回収へ。それ以外は不燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "アイロン台",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "あいろんだい"
+  ]
+ },
+ {
+  "name": "アダプター（小型）",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "網戸",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "あみど"
+  ]
+ },
+ {
+  "name": "アルバム",
+  "category": "moeru",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "アルミ缶",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "あるみかん"
+  ]
+ },
+ {
+  "name": "アルミサッシ",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "アルミホイル（箔）",
+  "category": "moeru",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "アンテナ",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "アンプ（ステレオ用）",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の大きいものは粗大ごみへ",
+  "tags": []
+ },
+ {
+  "name": "衣装ケース・衣装箱",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "いしょうけーすいしょうばこ"
+  ]
+ },
+ {
+  "name": "いす",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "一輪車",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "いちりんしゃ"
+  ]
+ },
+ {
+  "name": "一升ビン",
+  "category": "bin",
+  "note": "有価物として買取業者・販売店の回収に出せる場合があります。通常の資源びんとして出すことも可",
+  "tags": [
+   "いっしょうびん"
+  ]
+ },
+ {
+  "name": "衣類乾燥機",
+  "category": "unknown",
+  "note": "家電リサイクル法対象品のため町では収集できません。購入店等へ相談してください",
+  "tags": [
+   "いるいかんそうき"
+  ]
+ },
+ {
+  "name": "印鑑",
+  "category": "moeru",
+  "note": "",
+  "tags": [
+   "いんかん"
+  ]
+ },
+ {
+  "name": "インクカートリッジ",
+  "category": "moeru",
+  "note": "販売店にリサイクルボックスがあればそちらへ。なければ可燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "植木鉢（陶器製）",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "うえきばち"
+  ]
+ },
+ {
+  "name": "腕時計",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": [
+   "うでどけい"
+  ]
+ },
+ {
+  "name": "乳母車（ベビーカー）",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "うばぐるま"
+  ]
+ },
+ {
+  "name": "栄養ドリンクのビン（フタは外す）",
+  "category": "bin",
+  "note": "",
+  "tags": [
+   "えいようどりんくのびん"
+  ]
+ },
+ {
+  "name": "液晶テレビ",
+  "category": "unknown",
+  "note": "家電リサイクル法対象品のため町では収集できません。購入店等へ相談してください",
+  "tags": [
+   "えきしょうてれび"
+  ]
+ },
+ {
+  "name": "絵の具のチューブ（金属）",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "えのぐのちゅーぶ"
+  ]
+ },
+ {
+  "name": "MD（ミニ・ディスク）",
+  "category": "moeru",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "MDプレーヤー",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "エレクトーン",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "鉛筆削り（電機製）",
+  "category": "unknown",
+  "note": "電動のものは小型家電回収ボックスへ",
+  "tags": [
+   "えんぴつけずり"
+  ]
+ },
+ {
+  "name": "オイルヒーター",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "オートバイ",
+  "category": "unknown",
+  "note": "町では収集できません。購入店等へ相談してください",
+  "tags": []
+ },
+ {
+  "name": "オーブントースター",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "押入れタンス",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "おしいれたんす"
+  ]
+ },
+ {
+  "name": "おたま（金属製）",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "折りたたみイス",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "おりたたみいす"
+  ]
+ },
+ {
+  "name": "おろしがね（金属製）",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "温度計",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "おんどけい"
+  ]
+ },
+ {
+  "name": "温度計（水銀計）",
+  "category": "yugai",
+  "note": "水銀使用のため拠点回収ボックスへ",
+  "tags": [
+   "おんどけい"
+  ]
+ },
+ {
+  "name": "カセットデッキ",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": []
+ },
+ {
+  "name": "かなづち",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "カミソリ（プラ製）",
+  "category": "moeru",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "カミソリ（金属製）",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "カメラ（フィルム）",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "カラーボックス",
+  "category": "moeru",
+  "note": "指定袋に入る大きさなら可燃ごみ、入らない場合は粗大ごみへ",
+  "tags": []
+ },
+ {
+  "name": "換気扇",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": [
+   "かんきせん"
+  ]
+ },
+ {
+  "name": "感熱紙",
+  "category": "moeru",
+  "note": "",
+  "tags": [
+   "かんねつし"
+  ]
+ },
+ {
+  "name": "キーボード（楽器）",
+  "category": "sodai",
+  "note": "電子式のもの（電子キーボード等）は小型家電回収ボックスへ",
+  "tags": []
+ },
+ {
+  "name": "ギター",
+  "category": "sodai",
+  "note": "エレキギター等電子式のものは小型家電回収ボックスへ",
+  "tags": []
+ },
+ {
+  "name": "脚立",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "きゃたつ"
+  ]
+ },
+ {
+  "name": "牛乳ビン",
+  "category": "bin",
+  "note": "",
+  "tags": [
+   "ぎゅうにゅうびん"
+  ]
+ },
+ {
+  "name": "給油ポンプ（プラ製）",
+  "category": "moeru",
+  "note": "電動のものは小型家電回収ボックスへ",
+  "tags": [
+   "きゅうゆポンプ"
+  ]
+ },
+ {
+  "name": "クーラーボックス",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "空気清浄機",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": [
+   "くうきせいじょうき"
+  ]
+ },
+ {
+  "name": "草刈かま",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "くさかりかま"
+  ]
+ },
+ {
+  "name": "薬ビン",
+  "category": "bin",
+  "note": "",
+  "tags": [
+   "くすりびん"
+  ]
+ },
+ {
+  "name": "車イス",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "くるまいす"
+  ]
+ },
+ {
+  "name": "グローブ（野球）",
+  "category": "moeru",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "ケーブル",
+  "category": "moeru",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "化粧品のビン",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "けしょうひんのびん"
+  ]
+ },
+ {
+  "name": "下駄箱",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "げたばこ"
+  ]
+ },
+ {
+  "name": "血圧計",
+  "category": "moenai",
+  "note": "水銀計は拠点回収ボックスへ",
+  "tags": [
+   "けつあつけい"
+  ]
+ },
+ {
+  "name": "コーヒーメーカー",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。手動式（電子式でないもの）は不燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "こたつ",
+  "category": "sodai",
+  "note": "電気ヒーター部分（電子式）は小型家電回収ボックスへ",
+  "tags": []
+ },
+ {
+  "name": "ゴルフクラブ",
+  "category": "moenai",
+  "note": "指定コンテナに入らない大きさのものは粗大ごみへ",
+  "tags": []
+ },
+ {
+  "name": "ゴルフバッグ",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "ゴルフボール",
+  "category": "moeru",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "座イス",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "ざいす"
+  ]
+ },
+ {
+  "name": "サイドボード",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "殺虫剤スプレー缶",
+  "category": "moenai",
+  "note": "必ず穴をあけてから出す",
+  "tags": [
+   "さっちゅうざいスプレーかん"
+  ]
+ },
+ {
+  "name": "座布団",
+  "category": "moeru",
+  "note": "",
+  "tags": [
+   "ざぶとん"
+  ]
+ },
+ {
+  "name": "皿（陶器・ガラス製）",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "さら"
+  ]
+ },
+ {
+  "name": "三輪車",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "さんりんしゃ"
+  ]
+ },
+ {
+  "name": "CDプレーヤー",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "自転車",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "じてんしゃ"
+  ]
+ },
+ {
+  "name": "消火器",
+  "category": "unknown",
+  "note": "町では収集していません。購入店や消火器リサイクル推進センター等へ相談してください",
+  "tags": [
+   "しょうかき"
+  ]
+ },
+ {
+  "name": "じゅうたん",
+  "category": "moeru",
+  "note": "指定袋に入る大きさなら可燃ごみ、入らない場合は粗大ごみへ",
+  "tags": []
+ },
+ {
+  "name": "除湿器",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": [
+   "じょしつき"
+  ]
+ },
+ {
+  "name": "食器洗浄乾燥機",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": [
+   "しょっきせんじょうかんそうき"
+  ]
+ },
+ {
+  "name": "スーツケース",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "スキー板",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "すきーいた"
+  ]
+ },
+ {
+  "name": "スキー靴",
+  "category": "moeru",
+  "note": "",
+  "tags": [
+   "すきーぐつ"
+  ]
+ },
+ {
+  "name": "すずり（硯）",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "ステレオ",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": []
+ },
+ {
+  "name": "ストーブ",
+  "category": "sodai",
+  "note": "電子着火式のものは小型家電回収ボックスへ",
+  "tags": []
+ },
+ {
+  "name": "すのこ",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "スノーボード",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "スプリングマット",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "線香及び箱",
+  "category": "moeru",
+  "note": "",
+  "tags": [
+   "せんこうおよびはこ"
+  ]
+ },
+ {
+  "name": "扇風機",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": [
+   "せんぷうき"
+  ]
+ },
+ {
+  "name": "掃除機",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": [
+   "そうじき"
+  ]
+ },
+ {
+  "name": "ソファ",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "ソファベッド",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "体温計",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": [
+   "たいおんけい"
+  ]
+ },
+ {
+  "name": "体温計（水銀計、有害）",
+  "category": "yugai",
+  "note": "水銀使用のため拠点回収ボックスへ",
+  "tags": [
+   "たいおんけい"
+  ]
+ },
+ {
+  "name": "体重計",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": [
+   "たいじゅうけい"
+  ]
+ },
+ {
+  "name": "台車",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "だいしゃ"
+  ]
+ },
+ {
+  "name": "耐熱ガラス製品",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "たいねつがらすせいひん"
+  ]
+ },
+ {
+  "name": "タイヤ",
+  "category": "unknown",
+  "note": "町では収集していません。購入店やタイヤ販売店へ相談してください",
+  "tags": []
+ },
+ {
+  "name": "タイヤホイール",
+  "category": "unknown",
+  "note": "町では収集していません。購入店やタイヤ販売店へ相談してください",
+  "tags": []
+ },
+ {
+  "name": "タイル",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "卓上コンロ",
+  "category": "sodai",
+  "note": "電子着火式のものは小型家電回収ボックスへ",
+  "tags": [
+   "たくじょうこんろ"
+  ]
+ },
+ {
+  "name": "畳",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "たたみ"
+  ]
+ },
+ {
+  "name": "たわし",
+  "category": "moeru",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "タンス",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "チャイルドシート",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "机",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "つくえ"
+  ]
+ },
+ {
+  "name": "爪切り",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "つめきり"
+  ]
+ },
+ {
+  "name": "釣り竿（カーボン）",
+  "category": "moeru",
+  "note": "",
+  "tags": [
+   "つりざお"
+  ]
+ },
+ {
+  "name": "つるはし",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "DVDプレーヤー",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "デジタルカメラ",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "テレビゲーム機",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "電気カーペット",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": [
+   "でんきかーぺっと"
+  ]
+ },
+ {
+  "name": "電気カミソリ",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": [
+   "でんきかみそり"
+  ]
+ },
+ {
+  "name": "電気コード",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は可燃ごみへ",
+  "tags": [
+   "でんきこーど"
+  ]
+ },
+ {
+  "name": "電気ストーブ",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": [
+   "でんきすとーぶ"
+  ]
+ },
+ {
+  "name": "電気ポット",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": [
+   "でんきぽっと"
+  ]
+ },
+ {
+  "name": "電気毛布",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": [
+   "でんきもうふ"
+  ]
+ },
+ {
+  "name": "電子レンジ",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は粗大ごみへ",
+  "tags": [
+   "でんしれんじ"
+  ]
+ },
+ {
+  "name": "電卓・電子辞書",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": [
+   "でんたく",
+   "でんしじしょ"
+  ]
+ },
+ {
+  "name": "電動歯ブラシ",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": [
+   "でんどうはぶらし"
+  ]
+ },
+ {
+  "name": "電話機",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": [
+   "でんわき"
+  ]
+ },
+ {
+  "name": "電話台",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "でんわだい"
+  ]
+ },
+ {
+  "name": "トースター",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "時計",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": [
+   "とけい"
+  ]
+ },
+ {
+  "name": "トタン板",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "とたんいた"
+  ]
+ },
+ {
+  "name": "土鍋",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "どなべ"
+  ]
+ },
+ {
+  "name": "ドライヤー",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。対象外の場合は不燃ごみへ",
+  "tags": []
+ },
+ {
+  "name": "ドレッサー",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "ナイフ",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "南京錠",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "なんきんじょう"
+  ]
+ },
+ {
+  "name": "二段ベッド",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "にだんべっど"
+  ]
+ },
+ {
+  "name": "人形",
+  "category": "moeru",
+  "note": "",
+  "tags": [
+   "にんぎょう"
+  ]
+ },
+ {
+  "name": "ぬいぐるみ",
+  "category": "moeru",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "ネガフィルム",
+  "category": "moeru",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "ネジ",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "寝袋",
+  "category": "moeru",
+  "note": "",
+  "tags": [
+   "ねぶくろ"
+  ]
+ },
+ {
+  "name": "粘土",
+  "category": "moeru",
+  "note": "石膏粘土は不燃ごみへ",
+  "tags": [
+   "ねんど"
+  ]
+ },
+ {
+  "name": "ノート",
+  "category": "zasshi",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "のこぎり",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "ノミ",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "バーベキューコンロ",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "ハーモニカ",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "バイオリン",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "灰皿",
+  "category": "moenai",
+  "note": "",
+  "tags": [
+   "はいざら"
+  ]
+ },
+ {
+  "name": "パイプ椅子",
+  "category": "sodai",
+  "note": "",
+  "tags": [
+   "ぱいぷいす"
+  ]
+ },
+ {
+  "name": "パイプベッド",
+  "category": "sodai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "はさみ",
+  "category": "moenai",
+  "note": "",
+  "tags": []
+ },
+ {
+  "name": "パソコン",
+  "category": "unknown",
+  "note": "小型家電回収ボックスへ。または家電量販店・PCメーカーの回収サービスをご利用ください",
+  "tags": []
+ },
+ {
+  "name": "発煙筒",
+  "category": "unknown",
+  "note": "町では収集していません。販売店やJAF等へ相談してください",
+  "tags": [
+   "はつえんとう"
+  ]
+ },
+ {
+  "name": "バッテリー",
+  "category": "unknown",
+  "note": "町では収集していません。購入店やカー用品店へ相談してください",
+  "tags": []
+ },
+ {
+  "name": "花火（水につけたもの）",
+  "category": "moeru",
+  "note": "",
+  "tags": [
+   "はなび"
+  ]
+ }
  ],
  "contact": [
   {
@@ -718,6 +1860,14 @@
    "title": "生ごみ処理機器購入費補助金制度",
    "body": "家庭から出る生ごみの減量のため、生ごみ処理機（購入価格の3分の2、上限3万円、1世帯1個まで）・生ごみ処理容器（コンポスト容器、購入価格の3分の2、上限4千円、1世帯2個まで）の購入費補助を実施。申請には交付申請書・カタログ写しまたは取扱説明書の写し・領収書の写しが必要。予算がなくなり次第終了するため事前に役場くらし安全課（0287-45-1115）へ要問合せ。",
    "url": "https://www.town.shioya.tochigi.jp/info/52"
+  },
+  {
+   "id": 4,
+   "type": "warning",
+   "date": "2020年7月17日",
+   "title": "町では回収できない大型家具類があります",
+   "body": "高さ180cm以上のもの（洋服だんす・仏壇・茶だんす等）、成人男性2名で持ち上げることが困難なほど重い物、自宅の外に自力で運び出せない物は、粗大ごみとして町では受付できません。該当する場合は一般廃棄物収集運搬許可業者（(有)高原クリーンライフ 0287-45-2178、(有)塩谷環境整美 0287-43-1327）へ各自連絡し、費用等を相談のうえ処理を依頼してください。",
+   "url": "https://www.town.shioya.tochigi.jp/info/1480"
   }
  ],
  "affiliate_items": [

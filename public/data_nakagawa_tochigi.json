@@ -285,11 +285,10 @@
   {
    "name": "鏡",
    "category": "moenai",
-   "note": "",
+   "note": "コンテナに入らなければ粗大ゴミ",
    "tags": [
     "かがみ"
-   ],
-   "source": "estimated"
+   ]
   },
   {
    "name": "スチール缶",
@@ -512,8 +511,7 @@
    "note": "汚物は取り除いてから出す",
    "tags": [
     "かみおむつ"
-   ],
-   "source": "estimated"
+   ]
   },
   {
    "name": "生理用品",
@@ -566,11 +564,10 @@
    "source": "estimated"
   },
   {
-   "name": "おもちゃ（プラスチック製・小型）",
+   "name": "おもちゃ（プラスチック・木製）",
    "category": "moeru",
    "note": "電池を使用するものは電池を外してから出す",
-   "tags": [],
-   "source": "estimated"
+   "tags": []
   },
   {
    "name": "ゴム手袋",
@@ -578,8 +575,7 @@
    "note": "",
    "tags": [
     "ごむてぶくろ"
-   ],
-   "source": "estimated"
+   ]
   },
   {
    "name": "花瓶（陶器・ガラス製）",
@@ -675,6 +671,3973 @@
     "かみぶくろ"
    ],
    "source": "estimated"
+  },
+  {
+   "name": "アームスタンド",
+   "category": "moenai",
+   "note": "コンテナに入れば燃やさないゴミ、入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "アイスノン",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "アイスピック",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "アイスボックス",
+   "category": "moenai",
+   "note": "コンテナに入れば燃やさないゴミ、入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "アイロン",
+   "category": "moenai",
+   "note": "電動アイロンは小型家電として生活環境課・小川出張所窓口でも無料引き取り可",
+   "tags": []
+  },
+  {
+   "name": "アイロン台",
+   "category": "moenai",
+   "note": "コンテナに入れば燃やさないゴミ、入らなければ粗大ゴミ",
+   "tags": [
+    "あいろんだい"
+   ]
+  },
+  {
+   "name": "空き缶（アルミ・スチール缶の総称）",
+   "category": "can",
+   "note": "アルミ缶とスチール缶に分けて出す",
+   "tags": [
+    "あきかん"
+   ]
+  },
+  {
+   "name": "空きビン（茶色・無色・その他色の総称）",
+   "category": "bin",
+   "note": "茶色・無色・その他の色に分けて出す",
+   "tags": [
+    "あきびん"
+   ]
+  },
+  {
+   "name": "アコースティックギター",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "アコーディオン（楽器）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "がっき"
+   ]
+  },
+  {
+   "name": "アコーディオンカーテン",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "足ふきマット",
+   "category": "moeru",
+   "note": "30cm四方以下に切って出す",
+   "tags": [
+    "あしふきまっと"
+   ]
+  },
+  {
+   "name": "アタッシュケース",
+   "category": "moenai",
+   "note": "コンテナに入れば燃やさないゴミ、入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "アダプター（電源アダプター等）",
+   "category": "moenai",
+   "note": "小型家電として窓口でも無料引き取り可",
+   "tags": [
+    "でんげんあだぷたー"
+   ]
+  },
+  {
+   "name": "厚紙（靴箱・菓子箱・贈答箱等）",
+   "category": "zasshi",
+   "note": "束ねてひもで縛って出す",
+   "tags": [
+    "あつがみ",
+    "くつばこ",
+    "ぞうとうばこ"
+   ]
+  },
+  {
+   "name": "圧力鍋",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "あつりょくなべ"
+   ]
+  },
+  {
+   "name": "食用油",
+   "category": "moeru",
+   "note": "新聞紙等に染み込ませてから出す",
+   "tags": [
+    "しょくようあぶら"
+   ]
+  },
+  {
+   "name": "油紙",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "あぶらがみ"
+   ]
+  },
+  {
+   "name": "油よけ",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "あぶらよけ"
+   ]
+  },
+  {
+   "name": "雨戸",
+   "category": "unknown",
+   "note": "町では収集していません。販売店・工務店等に相談してください",
+   "tags": [
+    "あまど"
+   ]
+  },
+  {
+   "name": "雨どい",
+   "category": "moenai",
+   "note": "コンテナに入れば燃やさないゴミ、入らなければ粗大ゴミ",
+   "tags": [
+    "あまどい"
+   ]
+  },
+  {
+   "name": "網（投網）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "あみ",
+    "とあみ"
+   ]
+  },
+  {
+   "name": "編み機",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "あみき"
+   ]
+  },
+  {
+   "name": "網戸",
+   "category": "sodai",
+   "note": "金網はそのまま、網が塩化ビニール製の場合は切って燃やすゴミへ",
+   "tags": [
+    "あみど"
+   ]
+  },
+  {
+   "name": "網戸の網（塩化ビニール製）",
+   "category": "moeru",
+   "note": "30cm四方以下に切る",
+   "tags": [
+    "あみどのあみ",
+    "えんかびにーる"
+   ]
+  },
+  {
+   "name": "編み針（金属製）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "あみばり",
+    "きんぞく"
+   ]
+  },
+  {
+   "name": "編み針（竹・プラスチック製）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "あみばり",
+    "たけ"
+   ]
+  },
+  {
+   "name": "雨ガッパ（レインコート）",
+   "category": "moeru",
+   "note": "30cm四方以下に切る",
+   "tags": [
+    "あまがっぱ"
+   ]
+  },
+  {
+   "name": "アルカリ電池",
+   "category": "yugai",
+   "note": "透明の袋に入れて出す",
+   "tags": [
+    "でんち"
+   ]
+  },
+  {
+   "name": "アルコール洗浄液カートリッジ（シェーバー用）",
+   "category": "moeru",
+   "note": "洗浄液を空にしてから出す",
+   "tags": [
+    "せんじょうえき"
+   ]
+  },
+  {
+   "name": "アルバム（写真）",
+   "category": "moeru",
+   "note": "金属製の留め具は外してから出す",
+   "tags": [
+    "しゃしん"
+   ]
+  },
+  {
+   "name": "アルミサッシ",
+   "category": "unknown",
+   "note": "町では収集していません。販売店・工務店等に相談してください",
+   "tags": []
+  },
+  {
+   "name": "アルミトレー",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "アルミ箔",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "あるみはく"
+   ]
+  },
+  {
+   "name": "アルミなべ",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "アルミホイール（自動車部品）",
+   "category": "unknown",
+   "note": "町では収集していません。販売業者等に相談してください",
+   "tags": [
+    "じどうしゃ"
+   ]
+  },
+  {
+   "name": "アルミホイルの外箱（紙製）",
+   "category": "zasshi",
+   "note": "束ねてひもで縛る",
+   "tags": [
+    "そとばこ",
+    "かみせい"
+   ]
+  },
+  {
+   "name": "泡立て器（手動）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "あわだてき",
+    "しゅどう"
+   ]
+  },
+  {
+   "name": "泡立て器（電動）",
+   "category": "moenai",
+   "note": "小型家電として窓口でも無料引き取り可",
+   "tags": [
+    "あわだてき",
+    "でんどう"
+   ]
+  },
+  {
+   "name": "安全カミソリ",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "あんぜんかみそり"
+   ]
+  },
+  {
+   "name": "安全靴",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "あんぜんぐつ"
+   ]
+  },
+  {
+   "name": "安全ピン",
+   "category": "moenai",
+   "note": "厚紙等で包み「キケン」と表示して出す",
+   "tags": [
+    "あんぜんぴん"
+   ]
+  },
+  {
+   "name": "テレビアンテナ",
+   "category": "moenai",
+   "note": "コンテナに入れば燃やさないゴミ、入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "アンテナ線（ケーブル）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "あんてなせん"
+   ]
+  },
+  {
+   "name": "アンプ（楽器用）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "がっき"
+   ]
+  },
+  {
+   "name": "按摩器（マッサージ器）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ。電動式は小型家電として窓口回収も可",
+   "tags": [
+    "あんまき"
+   ]
+  },
+  {
+   "name": "石（庭石等）",
+   "category": "unknown",
+   "note": "町では収集していません。販売業者等に相談してください",
+   "tags": [
+    "いし",
+    "にわいし"
+   ]
+  },
+  {
+   "name": "石臼",
+   "category": "unknown",
+   "note": "廃棄物処理業者等に相談してください",
+   "tags": [
+    "いしうす"
+   ]
+  },
+  {
+   "name": "衣装ケース（プラスチック製）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "いしょう"
+   ]
+  },
+  {
+   "name": "衣装ケース（木製）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "いしょう",
+    "もくせい"
+   ]
+  },
+  {
+   "name": "いす（家具用）",
+   "category": "sodai",
+   "note": "布類は外してから出す",
+   "tags": [
+    "かぐよう"
+   ]
+  },
+  {
+   "name": "板切れ",
+   "category": "moeru",
+   "note": "厚さ1cm、幅・長さ30cm以下に限る",
+   "tags": [
+    "いたぎれ"
+   ]
+  },
+  {
+   "name": "一斗缶",
+   "category": "moenai",
+   "note": "揮発性のものは中身を抜き取り、穴を空けてから出す",
+   "tags": [
+    "いっとかん"
+   ]
+  },
+  {
+   "name": "一輪車（乗用・競技用）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "いちりんしゃ",
+    "じょうよう",
+    "きょうぎ"
+   ]
+  },
+  {
+   "name": "一輪車（ネコ車、運搬用）",
+   "category": "sodai",
+   "note": "家庭用に限る",
+   "tags": [
+    "いちりんしゃ",
+    "ねこぐるま",
+    "うんぱん"
+   ]
+  },
+  {
+   "name": "一升瓶",
+   "category": "bin",
+   "note": "茶色・無色・その他の色に分別",
+   "tags": [
+    "いっしょうびん"
+   ]
+  },
+  {
+   "name": "井戸用ポンプ",
+   "category": "unknown",
+   "note": "町では収集していません。販売店等に相談してください",
+   "tags": [
+    "いどよう"
+   ]
+  },
+  {
+   "name": "犬小屋",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "いぬごや"
+   ]
+  },
+  {
+   "name": "鋳物（フライパン等の鋳物製品）",
+   "category": "moenai",
+   "note": "コンテナに入るものに限る",
+   "tags": [
+    "いもの"
+   ]
+  },
+  {
+   "name": "医療廃棄物（注射針等）",
+   "category": "unknown",
+   "note": "町では収集していません。医療機関に相談してください",
+   "tags": [
+    "いりょうはいきぶつ",
+    "ちゅうしゃばり"
+   ]
+  },
+  {
+   "name": "衣類乾燥機（ガス・電気）",
+   "category": "unknown",
+   "note": "家電リサイクル法対象品。郵便局でリサイクル券を購入し、町へ粗大ごみ回収を依頼するか保健衛生センターへ直接持込",
+   "tags": [
+    "いるいかんそうき"
+   ]
+  },
+  {
+   "name": "衣類乾燥機能付き除湿機",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "いるいかんそう",
+    "じょしつき"
+   ]
+  },
+  {
+   "name": "入れ歯",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "いれば"
+   ]
+  },
+  {
+   "name": "インクカートリッジ（プリンター用）",
+   "category": "moeru",
+   "note": "できるだけ販売店のリサイクル箱を利用",
+   "tags": []
+  },
+  {
+   "name": "インクリボン",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "インシュリン注射器",
+   "category": "unknown",
+   "note": "町では収集していません。医療機関に相談してください",
+   "tags": [
+    "ちゅうしゃき"
+   ]
+  },
+  {
+   "name": "飲料パック（内側が銀色製）",
+   "category": "moeru",
+   "note": "内側が銀色（アルミ蒸着）のものは資源にできないため燃やすゴミへ",
+   "tags": [
+    "いんりょう",
+    "うちがわ",
+    "ぎんいろ"
+   ]
+  },
+  {
+   "name": "イヤホン",
+   "category": "moenai",
+   "note": "小型家電として窓口でも無料引き取り可",
+   "tags": []
+  },
+  {
+   "name": "衣類",
+   "category": "fuku",
+   "note": "たたんで、ひもで縛って出す",
+   "tags": [
+    "いるい"
+   ]
+  },
+  {
+   "name": "インク",
+   "category": "moeru",
+   "note": "紙に含ませる",
+   "tags": []
+  },
+  {
+   "name": "飲料パック",
+   "category": "zasshi",
+   "note": "開いて中を洗い、ひもで縛って出す",
+   "tags": [
+    "いんりょうぱっく"
+   ]
+  },
+  {
+   "name": "ウイスキービン",
+   "category": "bin",
+   "note": "茶色、無色、その他のビンに分別",
+   "tags": []
+  },
+  {
+   "name": "植木",
+   "category": "moeru",
+   "note": "太さ1cm、長さ30cm以下に限る",
+   "tags": [
+    "うえき"
+   ]
+  },
+  {
+   "name": "植木バサミ",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "うえきばさみ"
+   ]
+  },
+  {
+   "name": "植木鉢（陶磁器）",
+   "category": "moenai",
+   "note": "コンテナに入れば燃やさないゴミ、入らなければ粗大ゴミ",
+   "tags": [
+    "うえきばち"
+   ]
+  },
+  {
+   "name": "ウォシュレット",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "浮き袋",
+   "category": "moeru",
+   "note": "30cm四方以下に切る",
+   "tags": [
+    "うきぶくろ"
+   ]
+  },
+  {
+   "name": "うす（木製）",
+   "category": "unknown",
+   "note": "町では収集していません。販売店・廃棄物処理業者等に相談してください",
+   "tags": [
+    "うす"
+   ]
+  },
+  {
+   "name": "うちわ",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ウッドカーペット",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "腕時計",
+   "category": "moenai",
+   "note": "小型家電として窓口でも無料引き取り可",
+   "tags": [
+    "うでどけい"
+   ]
+  },
+  {
+   "name": "乳母車",
+   "category": "sodai",
+   "note": "布類と、金属類とを分ける",
+   "tags": [
+    "うばぐるま"
+   ]
+  },
+  {
+   "name": "羽毛布団",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "うもうぶとん"
+   ]
+  },
+  {
+   "name": "LD",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "MD",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "MDコンポ・プレーヤー",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "エアーガン（おもちゃ）",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "エアロバイク（健康器具）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "けんこうきぐ"
+   ]
+  },
+  {
+   "name": "液晶ディスプレイ（パソコン用）",
+   "category": "unknown",
+   "note": "パソコンリサイクル対象。小型家電としての窓口回収も可",
+   "tags": [
+    "えきしょうでぃすぷれい"
+   ]
+  },
+  {
+   "name": "液晶ディスプレイ一体型パソコン",
+   "category": "unknown",
+   "note": "パソコンリサイクル対象",
+   "tags": [
+    "えきしょうでぃすぷれいいったいがたぱそこん"
+   ]
+  },
+  {
+   "name": "枝",
+   "category": "moeru",
+   "note": "太さ1cm、長さ30cm以下に限る",
+   "tags": [
+    "えだ"
+   ]
+  },
+  {
+   "name": "枝切りハサミ",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "えだきりはさみ"
+   ]
+  },
+  {
+   "name": "柄付きたわし",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "えつきたわし"
+   ]
+  },
+  {
+   "name": "絵の具チューブ",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "えのぐちゅーぶ"
+   ]
+  },
+  {
+   "name": "えもん掛け",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "えもんかけ"
+   ]
+  },
+  {
+   "name": "エレキギター",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "エレクトーン",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "塩化ビニール管",
+   "category": "sodai",
+   "note": "建築資材・農業用は不可",
+   "tags": [
+    "えんかびにーるかん"
+   ]
+  },
+  {
+   "name": "エンジンオイル",
+   "category": "unknown",
+   "note": "町では収集していません。ガソリンスタンド等に相談してください",
+   "tags": []
+  },
+  {
+   "name": "延長コード",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "えんちょうこーど"
+   ]
+  },
+  {
+   "name": "鉛筆",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "えんぴつ"
+   ]
+  },
+  {
+   "name": "鉛筆削り器（電動式含む）",
+   "category": "moenai",
+   "note": "電動式は小型家電として窓口回収も可",
+   "tags": [
+    "えんぴつけずりき"
+   ]
+  },
+  {
+   "name": "OAタップ",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "OA用紙",
+   "category": "zasshi",
+   "note": "束ねてひもで縛る",
+   "tags": [
+    "おーえーようし"
+   ]
+  },
+  {
+   "name": "オイルの空缶",
+   "category": "moenai",
+   "note": "中身を抜き取る",
+   "tags": [
+    "あきかん"
+   ]
+  },
+  {
+   "name": "オイルヒーター",
+   "category": "sodai",
+   "note": "中のオイルを抜く",
+   "tags": []
+  },
+  {
+   "name": "応接セット",
+   "category": "sodai",
+   "note": "布・皮をはがす、スプリングを外す、各々素材に分別",
+   "tags": [
+    "おうせつせっと"
+   ]
+  },
+  {
+   "name": "オーディオ製品",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "オーディオラック",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "オートバイ",
+   "category": "unknown",
+   "note": "町では収集していません。販売店等に相談してください",
+   "tags": []
+  },
+  {
+   "name": "オーブントースター",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "オーブンレンジ",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "置時計",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "おきどけい"
+   ]
+  },
+  {
+   "name": "おけ",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "お玉・杓子（金属製）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "おたま",
+    "しゃくし"
+   ]
+  },
+  {
+   "name": "お玉・杓子（プラスチック製）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "おたま",
+    "しゃくし"
+   ]
+  },
+  {
+   "name": "落ち葉",
+   "category": "moeru",
+   "note": "できるだけ肥料にする、小出しに出す",
+   "tags": [
+    "おちば"
+   ]
+  },
+  {
+   "name": "汚泥（雑排水浸透枡・側溝）",
+   "category": "unknown",
+   "note": "町では収集していません。廃棄物処理業者等に相談してください",
+   "tags": [
+    "おでい"
+   ]
+  },
+  {
+   "name": "斧",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "おの"
+   ]
+  },
+  {
+   "name": "帯",
+   "category": "fuku",
+   "note": "たたんで、ひもで縛って出す",
+   "tags": [
+    "おび"
+   ]
+  },
+  {
+   "name": "お盆（金属製）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "おぼん"
+   ]
+  },
+  {
+   "name": "お盆（プラスチック製）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "おぼん"
+   ]
+  },
+  {
+   "name": "おまる",
+   "category": "sodai",
+   "note": "洗う",
+   "tags": []
+  },
+  {
+   "name": "おもり（釣り用）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "おもり"
+   ]
+  },
+  {
+   "name": "折りたたみいす",
+   "category": "sodai",
+   "note": "布は分別し燃やすゴミへ",
+   "tags": [
+    "おりたたみいす"
+   ]
+  },
+  {
+   "name": "オルガン",
+   "category": "sodai",
+   "note": "なるべく購入店に引き取ってもらう",
+   "tags": []
+  },
+  {
+   "name": "温水器",
+   "category": "unknown",
+   "note": "町では収集していません。販売店等に相談してください",
+   "tags": [
+    "おんすいき"
+   ]
+  },
+  {
+   "name": "温度計",
+   "category": "moenai",
+   "note": "水銀の場合は有害ゴミ",
+   "tags": [
+    "おんどけい"
+   ]
+  },
+  {
+   "name": "温風ヒーター",
+   "category": "moenai",
+   "note": "電池・燃料を抜く",
+   "tags": [
+    "おんぷうひーたー"
+   ]
+  },
+  {
+   "name": "カーキャリア",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "カーステレオ",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "カーテン",
+   "category": "moeru",
+   "note": "30cm四方以下に切れば燃やすゴミ",
+   "tags": []
+  },
+  {
+   "name": "カーテンレール",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "カーナビゲーション",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "カーペット",
+   "category": "moeru",
+   "note": "30cm四方以下に切れば燃やすゴミ",
+   "tags": []
+  },
+  {
+   "name": "カーボン紙",
+   "category": "moeru",
+   "note": "表面加工のためリサイクルできない",
+   "tags": [
+    "かーぼんし"
+   ]
+  },
+  {
+   "name": "カーラー",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "貝殻",
+   "category": "moeru",
+   "note": "できるだけ砕いて栽培土にする",
+   "tags": [
+    "かいがら"
+   ]
+  },
+  {
+   "name": "懐中電灯",
+   "category": "moenai",
+   "note": "電池は外す（→電池）",
+   "tags": [
+    "かいちゅうでんとう"
+   ]
+  },
+  {
+   "name": "カイロ（金属製）",
+   "category": "moenai",
+   "note": "燃料は使い切る",
+   "tags": []
+  },
+  {
+   "name": "化学ぞうきん",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "かがくぞうきん"
+   ]
+  },
+  {
+   "name": "鍵",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "かぎ"
+   ]
+  },
+  {
+   "name": "家具",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "かぐ"
+   ]
+  },
+  {
+   "name": "学習机",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "がくしゅうづくえ"
+   ]
+  },
+  {
+   "name": "拡大鏡（ガラス製）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "かくだいきょう"
+   ]
+  },
+  {
+   "name": "拡大鏡（プラスチック製）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "かくだいきょう"
+   ]
+  },
+  {
+   "name": "額縁（木・プラスチック製）",
+   "category": "moeru",
+   "note": "大きなものは粗大ゴミ",
+   "tags": [
+    "がくぶち"
+   ]
+  },
+  {
+   "name": "額縁（金属・ガラス製）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "がくぶち"
+   ]
+  },
+  {
+   "name": "掛け軸",
+   "category": "moeru",
+   "note": "木・プラスチック部分は外す（→燃やさないゴミ）",
+   "tags": [
+    "かけじく"
+   ]
+  },
+  {
+   "name": "掛け時計",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "かけどけい"
+   ]
+  },
+  {
+   "name": "傘骨",
+   "category": "moenai",
+   "note": "布、ビニールははずして（→燃やすゴミ）",
+   "tags": [
+    "かさぼね"
+   ]
+  },
+  {
+   "name": "傘（布・ビニール製）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "かさ"
+   ]
+  },
+  {
+   "name": "傘立て",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "かさたて"
+   ]
+  },
+  {
+   "name": "菓子缶",
+   "category": "can",
+   "note": "アルミ缶、スチール缶に分別",
+   "tags": [
+    "かしかん"
+   ]
+  },
+  {
+   "name": "加湿器",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "かしつき"
+   ]
+  },
+  {
+   "name": "菓子箱（木製）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "かしばこ"
+   ]
+  },
+  {
+   "name": "ガスコンロ",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "ガスストーブ",
+   "category": "sodai",
+   "note": "ガスを抜く",
+   "tags": []
+  },
+  {
+   "name": "ガス台",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ガスホース",
+   "category": "moeru",
+   "note": "30cm以下に切る",
+   "tags": []
+  },
+  {
+   "name": "ガスボンベ",
+   "category": "unknown",
+   "note": "町では収集していません。販売店等に相談してください",
+   "tags": []
+  },
+  {
+   "name": "ガス湯沸器",
+   "category": "sodai",
+   "note": "電池は外す",
+   "tags": [
+    "がすゆわかしき"
+   ]
+  },
+  {
+   "name": "ガスレンジ（ガステーブル）",
+   "category": "sodai",
+   "note": "電池は外す",
+   "tags": []
+  },
+  {
+   "name": "カセットコンロ",
+   "category": "moenai",
+   "note": "ボンベ、電池を外す（→電池）",
+   "tags": []
+  },
+  {
+   "name": "カセットテープ",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "カセットデッキ",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "カセットボンベ",
+   "category": "can",
+   "note": "穴を開け、ガスを抜く",
+   "tags": []
+  },
+  {
+   "name": "ガソリン携行缶",
+   "category": "sodai",
+   "note": "中を空にする",
+   "tags": [
+    "けいこうかん"
+   ]
+  },
+  {
+   "name": "カタログ",
+   "category": "zasshi",
+   "note": "束ねてひもで縛る",
+   "tags": []
+  },
+  {
+   "name": "活性炭",
+   "category": "moeru",
+   "note": "少量に限る",
+   "tags": [
+    "かっせいたん"
+   ]
+  },
+  {
+   "name": "カッターナイフ",
+   "category": "moenai",
+   "note": "柄は素材によって分別、刃は厚紙に包み「キケン」と書く",
+   "tags": []
+  },
+  {
+   "name": "カッパ（合羽）",
+   "category": "moeru",
+   "note": "30cm四方以下に切る",
+   "tags": [
+    "かっぱ"
+   ]
+  },
+  {
+   "name": "カップ（陶器・ガラス製）",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "カップ（木・紙・プラスチック製）",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "カップ酒のビン",
+   "category": "bin",
+   "note": "茶色、無色、その他のビンに分別",
+   "tags": []
+  },
+  {
+   "name": "カップ麺の容器",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "かつら",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "金網",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "かなあみ"
+   ]
+  },
+  {
+   "name": "金串",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "かなぐし"
+   ]
+  },
+  {
+   "name": "金づち",
+   "category": "moenai",
+   "note": "柄は素材によって分別",
+   "tags": [
+    "かなづち"
+   ]
+  },
+  {
+   "name": "かばん",
+   "category": "moeru",
+   "note": "大きなもの（ハンドバッグ以上）は粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "画鋲",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "がびょう"
+   ]
+  },
+  {
+   "name": "壁掛時計",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "かべかけどけい"
+   ]
+  },
+  {
+   "name": "壁紙",
+   "category": "moeru",
+   "note": "30cm四方に切る",
+   "tags": [
+    "かべがみ"
+   ]
+  },
+  {
+   "name": "かま（釜）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "かま"
+   ]
+  },
+  {
+   "name": "かま（草刈鎌）",
+   "category": "moenai",
+   "note": "柄は素材によって分別",
+   "tags": [
+    "くさかりがま"
+   ]
+  },
+  {
+   "name": "紙おむつ（医療機関・感染性）",
+   "category": "unknown",
+   "note": "医療機関に相談してください",
+   "tags": []
+  },
+  {
+   "name": "紙おむつ（医療機関・非感染性）",
+   "category": "moeru",
+   "note": "医師判断のうえ、汚物はトイレに流す",
+   "tags": []
+  },
+  {
+   "name": "紙コップ",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "紙粘土",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "かみねんど"
+   ]
+  },
+  {
+   "name": "紙やすり",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "かみやすり"
+   ]
+  },
+  {
+   "name": "カメラ",
+   "category": "moenai",
+   "note": "電池は有害ゴミ",
+   "tags": []
+  },
+  {
+   "name": "カメラネガ・フィルム",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "蚊帳",
+   "category": "sodai",
+   "note": "金具を外す",
+   "tags": [
+    "かや"
+   ]
+  },
+  {
+   "name": "カラーボックス",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "カラオケ機器",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "からおけきき"
+   ]
+  },
+  {
+   "name": "ガラス製食器",
+   "category": "moenai",
+   "note": "割れた場合は厚紙で包み「キケン」と書く",
+   "tags": [
+    "がらすせいしょっき"
+   ]
+  },
+  {
+   "name": "ガラス戸",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "がらすど"
+   ]
+  },
+  {
+   "name": "軽石",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "かるいし"
+   ]
+  },
+  {
+   "name": "カレンダー",
+   "category": "zasshi",
+   "note": "金属（リング等）部分は外し、伸ばしてひもで縛れば資源ごみに。表面がビニールコーティングのものは燃やすゴミ",
+   "tags": []
+  },
+  {
+   "name": "革靴",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "かわぐつ"
+   ]
+  },
+  {
+   "name": "革製品",
+   "category": "moeru",
+   "note": "金属部分は外す（大きいものは粗大ゴミ）",
+   "tags": [
+    "かわせいひん"
+   ]
+  },
+  {
+   "name": "皮手袋",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "かわてぶくろ"
+   ]
+  },
+  {
+   "name": "革ベルト",
+   "category": "moeru",
+   "note": "金属部分は外す。30cm以下に切る",
+   "tags": [
+    "かわべると"
+   ]
+  },
+  {
+   "name": "皮むき器（ピーラー、調理器具）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "かわむきき"
+   ]
+  },
+  {
+   "name": "かわら（瓦）",
+   "category": "unknown",
+   "note": "町では収集していません。販売店・廃棄物処理業者等に相談してください",
+   "tags": [
+    "かわら"
+   ]
+  },
+  {
+   "name": "缶（飲料用）",
+   "category": "can",
+   "note": "アルミ缶、スチール缶に分別",
+   "tags": [
+    "かん"
+   ]
+  },
+  {
+   "name": "換気扇",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "かんきせん"
+   ]
+  },
+  {
+   "name": "換気扇フィルター",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "かんきせんふぃるたー"
+   ]
+  },
+  {
+   "name": "缶切り",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "かんきり"
+   ]
+  },
+  {
+   "name": "乾燥機・洗浄（食器）",
+   "category": "sodai",
+   "note": "食器洗い乾燥機。小型家電としての窓口回収も可",
+   "tags": [
+    "かんそうき"
+   ]
+  },
+  {
+   "name": "乾燥剤",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "かんそうざい"
+   ]
+  },
+  {
+   "name": "缶詰缶（本体、フタ）",
+   "category": "can",
+   "note": "マークによりアルミ、スチールに分別",
+   "tags": [
+    "かんづめかん"
+   ]
+  },
+  {
+   "name": "かんな",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "感熱紙",
+   "category": "moeru",
+   "note": "表面処理のためリサイクル不可",
+   "tags": [
+    "かんねつし"
+   ]
+  },
+  {
+   "name": "燗のできる酒缶",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "かんのできるさかかん"
+   ]
+  },
+  {
+   "name": "唐紙（ふすま）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "からかみ"
+   ]
+  },
+  {
+   "name": "花びん（木、プラ製）",
+   "category": "moeru",
+   "note": "大きなものは粗大ゴミ",
+   "tags": [
+    "かびん"
+   ]
+  },
+  {
+   "name": "花びん（陶磁器、ガラス製）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "かびん"
+   ]
+  },
+  {
+   "name": "鏡台",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "きょうだい"
+   ]
+  },
+  {
+   "name": "木（太い）",
+   "category": "unknown",
+   "note": "廃棄物処理事業者へ相談",
+   "tags": [
+    "き"
+   ]
+  },
+  {
+   "name": "木（細い）",
+   "category": "moeru",
+   "note": "太さ1cm、長さ30cm以下に限る",
+   "tags": [
+    "き"
+   ]
+  },
+  {
+   "name": "キーボード（楽器）",
+   "category": "sodai",
+   "note": "コンテナに入れば燃やさないゴミ",
+   "tags": [
+    "がっき"
+   ]
+  },
+  {
+   "name": "キーボード（パソコン用）",
+   "category": "unknown",
+   "note": "パソコンリサイクル対象。小型家電としての窓口回収も可",
+   "tags": [
+    "きーぼーど"
+   ]
+  },
+  {
+   "name": "ギター（アコースティック・エレキギター）",
+   "category": "sodai",
+   "note": "エレキギターは小型家電としての窓口回収も可",
+   "tags": [
+    "ぎたー"
+   ]
+  },
+  {
+   "name": "キッチンガード（アルミ箔）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "あるみはく"
+   ]
+  },
+  {
+   "name": "キッチンタイマー",
+   "category": "moenai",
+   "note": "電池は有害ゴミ",
+   "tags": []
+  },
+  {
+   "name": "キッチンマット",
+   "category": "moeru",
+   "note": "30cm四方以下に切る",
+   "tags": []
+  },
+  {
+   "name": "きね",
+   "category": "unknown",
+   "note": "販売店・廃棄物処理業者等へ相談",
+   "tags": []
+  },
+  {
+   "name": "着物",
+   "category": "fuku",
+   "note": "たたんで、ひもで縛って出す",
+   "tags": [
+    "きもの"
+   ]
+  },
+  {
+   "name": "脚立",
+   "category": "sodai",
+   "note": "事業用、農業用は収集できません",
+   "tags": [
+    "きゃたつ"
+   ]
+  },
+  {
+   "name": "キャビネット",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "キャリア（車用）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "きゃりあ"
+   ]
+  },
+  {
+   "name": "急須",
+   "category": "moenai",
+   "note": "陶磁器製、金属製とも",
+   "tags": [
+    "きゅうす"
+   ]
+  },
+  {
+   "name": "給湯器（風呂用、台所用）",
+   "category": "sodai",
+   "note": "電池は種類によって外す",
+   "tags": [
+    "きゅうとうき"
+   ]
+  },
+  {
+   "name": "牛乳パック",
+   "category": "zasshi",
+   "note": "開いて中を洗い、ひもで縛って出す",
+   "tags": [
+    "ぎゅうにゅうぱっく"
+   ]
+  },
+  {
+   "name": "牛乳びん",
+   "category": "bin",
+   "note": "茶色、無色、その他のビンに分別",
+   "tags": [
+    "ぎゅうにゅうびん"
+   ]
+  },
+  {
+   "name": "教科書",
+   "category": "zasshi",
+   "note": "束ねてひもで縛る",
+   "tags": [
+    "きょうかしょ"
+   ]
+  },
+  {
+   "name": "強化耐熱ガラス鍋",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "きょうかたいねつがらすなべ"
+   ]
+  },
+  {
+   "name": "きり",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "金魚鉢",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "きんぎょばち"
+   ]
+  },
+  {
+   "name": "金庫（手さげ）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "きんこ"
+   ]
+  },
+  {
+   "name": "金庫（大型）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ。耐火金庫は販売店へ相談",
+   "tags": [
+    "きんこ"
+   ]
+  },
+  {
+   "name": "金属キャップ（飲料）",
+   "category": "can",
+   "note": "マークによりアルミ、スチールに分別",
+   "tags": [
+    "きんぞくきゃっぷ"
+   ]
+  },
+  {
+   "name": "金属バット",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "きんぞくばっと"
+   ]
+  },
+  {
+   "name": "魚網",
+   "category": "moenai",
+   "note": "金具をはずす",
+   "tags": [
+    "ぎょもう"
+   ]
+  },
+  {
+   "name": "空気入れ",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "くうきいれ"
+   ]
+  },
+  {
+   "name": "空気清浄機",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ。小型家電としての窓口回収も可",
+   "tags": [
+    "くうきせいじょうき"
+   ]
+  },
+  {
+   "name": "クーラーボックス",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "釘",
+   "category": "moenai",
+   "note": "厚紙で包み「キケン」と書く",
+   "tags": [
+    "くぎ"
+   ]
+  },
+  {
+   "name": "草",
+   "category": "moeru",
+   "note": "少量に分けて出す",
+   "tags": [
+    "くさ"
+   ]
+  },
+  {
+   "name": "草刈がま",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "くさかりがま"
+   ]
+  },
+  {
+   "name": "草刈機",
+   "category": "unknown",
+   "note": "販売店・廃棄物処理業者等へ相談",
+   "tags": [
+    "くさかりき"
+   ]
+  },
+  {
+   "name": "草刈機の刃",
+   "category": "moenai",
+   "note": "厚紙で包み「キケン」と書く",
+   "tags": [
+    "くさかりきのは"
+   ]
+  },
+  {
+   "name": "鎖（くさり）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "くさり"
+   ]
+  },
+  {
+   "name": "くし（櫛　木製・プラスチック）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "くし"
+   ]
+  },
+  {
+   "name": "くし（櫛　金属）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "くし"
+   ]
+  },
+  {
+   "name": "串（竹串）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "くし"
+   ]
+  },
+  {
+   "name": "串（金串）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "くし"
+   ]
+  },
+  {
+   "name": "薬（家庭用医薬品）",
+   "category": "moeru",
+   "note": "容器は素材で分別",
+   "tags": [
+    "くすり"
+   ]
+  },
+  {
+   "name": "口紅（金属製）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "くちべに"
+   ]
+  },
+  {
+   "name": "口紅（プラスチック製）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "くちべに"
+   ]
+  },
+  {
+   "name": "靴",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "くつ"
+   ]
+  },
+  {
+   "name": "靴下",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "くつした"
+   ]
+  },
+  {
+   "name": "クッション",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "首輪",
+   "category": "moeru",
+   "note": "金属部分は外し分別",
+   "tags": [
+    "くびわ"
+   ]
+  },
+  {
+   "name": "熊手",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "くまで"
+   ]
+  },
+  {
+   "name": "クリームの容器（プラスチック）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "ようき"
+   ]
+  },
+  {
+   "name": "クリームの容器（ビン）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "ようき"
+   ]
+  },
+  {
+   "name": "クレジットカード",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "クリップ（金属）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "きんぞく"
+   ]
+  },
+  {
+   "name": "クリップ（プラスチック）",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "車いす（家庭用）",
+   "category": "sodai",
+   "note": "ビニール、布類を取り分別",
+   "tags": [
+    "くるまいす"
+   ]
+  },
+  {
+   "name": "クレパス、クレヨン",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "グロー球（点灯管）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "ぐろーきゅう"
+   ]
+  },
+  {
+   "name": "グローブ",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "くわ（鍬）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "くわ"
+   ]
+  },
+  {
+   "name": "計算機（電卓）",
+   "category": "moenai",
+   "note": "電池は有害ゴミ",
+   "tags": [
+    "けいさんき"
+   ]
+  },
+  {
+   "name": "携帯電話",
+   "category": "moenai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": [
+    "けいたいでんわ"
+   ]
+  },
+  {
+   "name": "毛糸",
+   "category": "moeru",
+   "note": "30cm以下に切る",
+   "tags": [
+    "けいと"
+   ]
+  },
+  {
+   "name": "軽量カップ（プラスチック）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "けいりょうかっぷ"
+   ]
+  },
+  {
+   "name": "軽量カップ（金属）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "けいりょうかっぷ"
+   ]
+  },
+  {
+   "name": "計量はかり",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "けいりょうはかり"
+   ]
+  },
+  {
+   "name": "ゲーム機",
+   "category": "moenai",
+   "note": "電池は有害ゴミ",
+   "tags": [
+    "げーむき"
+   ]
+  },
+  {
+   "name": "ゲームソフト",
+   "category": "moeru",
+   "note": "CDロム、DVDロム、ロムカセット、半導体メモリー等",
+   "tags": [
+    "げーむそふと"
+   ]
+  },
+  {
+   "name": "化粧品容器（ガラス製）",
+   "category": "bin",
+   "note": "茶色、無色、その他のビンに分別",
+   "tags": [
+    "けしょうひんようき"
+   ]
+  },
+  {
+   "name": "化粧品容器（陶磁器製）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "けしょうひんようき"
+   ]
+  },
+  {
+   "name": "化粧品容器（プラスチック製）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "けしょうひんようき"
+   ]
+  },
+  {
+   "name": "下駄箱（家具系）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "げたばこ"
+   ]
+  },
+  {
+   "name": "下駄箱小（プラスチック系）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "げたばこ"
+   ]
+  },
+  {
+   "name": "ケチャップの容器",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "ようき"
+   ]
+  },
+  {
+   "name": "血圧計（水銀式）",
+   "category": "yugai",
+   "note": "家庭用のみ・直接持込のみ（事務所へ）",
+   "tags": [
+    "けつあつけい"
+   ]
+  },
+  {
+   "name": "血圧計（水銀式以外）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "けつあつけい"
+   ]
+  },
+  {
+   "name": "玄関マット（金属製）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "げんかんまっと"
+   ]
+  },
+  {
+   "name": "玄関マット（布製、プラ製）",
+   "category": "moeru",
+   "note": "30cm四方以下に切る。ゴミ袋に入らなければ粗大ゴミ",
+   "tags": [
+    "げんかんまっと"
+   ]
+  },
+  {
+   "name": "健康器具（ぶら下がり機）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "けんこうきぐ"
+   ]
+  },
+  {
+   "name": "剣山",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "けんざん"
+   ]
+  },
+  {
+   "name": "建築廃材",
+   "category": "unknown",
+   "note": "工務店・廃棄物処理業者等へ相談",
+   "tags": [
+    "けんちくはいざい"
+   ]
+  },
+  {
+   "name": "原付バイク",
+   "category": "unknown",
+   "note": "販売店へ相談",
+   "tags": [
+    "げんつきばいく"
+   ]
+  },
+  {
+   "name": "剣道の防具",
+   "category": "sodai",
+   "note": "金具をはずす",
+   "tags": [
+    "けんどうのぼうぐ"
+   ]
+  },
+  {
+   "name": "顕微鏡",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "けんびきょう"
+   ]
+  },
+  {
+   "name": "碁石",
+   "category": "moenai",
+   "note": "プラスチック製は燃やすゴミ",
+   "tags": [
+    "ごいし"
+   ]
+  },
+  {
+   "name": "こいのぼり、吹流し",
+   "category": "moeru",
+   "note": "30cm四方以下に切る。金属部分は燃やさないゴミ",
+   "tags": [
+    "ふきながし"
+   ]
+  },
+  {
+   "name": "工具箱",
+   "category": "moenai",
+   "note": "プラスチック製は燃やすゴミ。コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "こうぐばこ"
+   ]
+  },
+  {
+   "name": "広告チラシ",
+   "category": "zasshi",
+   "note": "束ねてひもで縛る",
+   "tags": [
+    "こうこくちらし"
+   ]
+  },
+  {
+   "name": "高周波治療器",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "こうしゅうはちりょうき"
+   ]
+  },
+  {
+   "name": "ゴーグル",
+   "category": "moeru",
+   "note": "レンズがガラス製は燃やさないゴミ",
+   "tags": []
+  },
+  {
+   "name": "コード",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "コードリール",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "コードレスアイロン",
+   "category": "moenai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": []
+  },
+  {
+   "name": "コードレス電話",
+   "category": "moenai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": [
+    "こーどれすでんわ"
+   ]
+  },
+  {
+   "name": "コーヒーメーカー",
+   "category": "moenai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": []
+  },
+  {
+   "name": "氷枕",
+   "category": "moeru",
+   "note": "金属部分は燃やさないゴミ。半分に切る",
+   "tags": [
+    "こおりまくら"
+   ]
+  },
+  {
+   "name": "こけし",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ござ",
+   "category": "moeru",
+   "note": "30cm四方以下に切る",
+   "tags": []
+  },
+  {
+   "name": "こたつ",
+   "category": "sodai",
+   "note": "機械部分は小型家電としての窓口回収も可",
+   "tags": []
+  },
+  {
+   "name": "こたつ布団",
+   "category": "sodai",
+   "note": "ひもで縛って出す",
+   "tags": [
+    "こたつぶとん"
+   ]
+  },
+  {
+   "name": "コップ（木、紙、プラスチック）",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "コップ（ガラス、陶器製）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "とうきせい"
+   ]
+  },
+  {
+   "name": "粉石けん",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "こなせっけん"
+   ]
+  },
+  {
+   "name": "粉ミルクの缶",
+   "category": "can",
+   "note": "アルミ缶、スチール缶に分別",
+   "tags": [
+    "こなみるくのかん"
+   ]
+  },
+  {
+   "name": "碁盤",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "ごばん"
+   ]
+  },
+  {
+   "name": "コピー機",
+   "category": "sodai",
+   "note": "業務用は販売店に相談",
+   "tags": [
+    "こぴーき"
+   ]
+  },
+  {
+   "name": "コピー用紙",
+   "category": "zasshi",
+   "note": "束ねてひもで縛る",
+   "tags": [
+    "こぴーようし"
+   ]
+  },
+  {
+   "name": "こま（駒）",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "こま（独楽）",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ごみ箱",
+   "category": "moeru",
+   "note": "ゴミ袋に入らなければ粗大ゴミ",
+   "tags": [
+    "ごみばこ"
+   ]
+  },
+  {
+   "name": "ゴム製手袋",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "ごむせいてぶくろ"
+   ]
+  },
+  {
+   "name": "ゴム長靴",
+   "category": "moeru",
+   "note": "30cm四方以下に切る",
+   "tags": [
+    "ごむながぐつ"
+   ]
+  },
+  {
+   "name": "ゴムホース",
+   "category": "moeru",
+   "note": "30cm四方以下に切る",
+   "tags": []
+  },
+  {
+   "name": "ゴムボート",
+   "category": "moeru",
+   "note": "30cm四方以下に切る",
+   "tags": []
+  },
+  {
+   "name": "米びつ（金属製）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "こめびつ"
+   ]
+  },
+  {
+   "name": "米びつ（プラスチック製）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "こめびつ"
+   ]
+  },
+  {
+   "name": "米びつ（木製）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "こめびつ"
+   ]
+  },
+  {
+   "name": "コルク抜き（コルクスクリュー）",
+   "category": "moenai",
+   "note": "先端を厚紙で包み「キケン」と書く",
+   "tags": [
+    "こるくぬき"
+   ]
+  },
+  {
+   "name": "コルクボード",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "コルセット",
+   "category": "moeru",
+   "note": "ゴミ袋に入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "ゴルフクラブ",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "ごるふくらぶ"
+   ]
+  },
+  {
+   "name": "ゴルフシューズ",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "ごるふしゅーず"
+   ]
+  },
+  {
+   "name": "ゴルフバック",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "ごるふばっく"
+   ]
+  },
+  {
+   "name": "ゴルフボール",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "ごるふぼーる"
+   ]
+  },
+  {
+   "name": "コンクリート（片）",
+   "category": "unknown",
+   "note": "廃棄物処理事業者へ相談",
+   "tags": [
+    "こんくりーと"
+   ]
+  },
+  {
+   "name": "コンタクトレンズ",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "こんたくとれんず"
+   ]
+  },
+  {
+   "name": "コンパクトディスク（CD）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "こんぱくとでぃすく"
+   ]
+  },
+  {
+   "name": "コンパクトミラー",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "こんぱくとみらー"
+   ]
+  },
+  {
+   "name": "コンパス",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "こんぱす"
+   ]
+  },
+  {
+   "name": "コンパス（両脚器、ぶんまわし）",
+   "category": "moenai",
+   "note": "先端を厚紙で包み「キケン」と書く",
+   "tags": [
+    "こんぱす",
+    "りょうきゃくき"
+   ]
+  },
+  {
+   "name": "コンベックス（スチール巻尺）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "こんべっくす",
+    "まきじゃく"
+   ]
+  },
+  {
+   "name": "コンロ",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "サーキュレーター（空気循環機）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "さーきゅれーたー"
+   ]
+  },
+  {
+   "name": "サーフボード",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "さーふぼーど"
+   ]
+  },
+  {
+   "name": "座いす",
+   "category": "sodai",
+   "note": "布・スポンジは分離（布類・燃やすゴミへ）",
+   "tags": [
+    "ざいす"
+   ]
+  },
+  {
+   "name": "サイドボード",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "さいどぼーど"
+   ]
+  },
+  {
+   "name": "財布",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "さいふ"
+   ]
+  },
+  {
+   "name": "裁縫箱",
+   "category": "moeru",
+   "note": "ゴミ袋に入らなければ粗大ゴミ",
+   "tags": [
+    "さいほうばこ"
+   ]
+  },
+  {
+   "name": "サインペン",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "さお（物干し）",
+   "category": "moeru",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "さお"
+   ]
+  },
+  {
+   "name": "さお（釣り）",
+   "category": "moeru",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "さお"
+   ]
+  },
+  {
+   "name": "座卓",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "ざたく"
+   ]
+  },
+  {
+   "name": "サッカーボール",
+   "category": "moeru",
+   "note": "空気を抜く",
+   "tags": [
+    "さっかーぼーる"
+   ]
+  },
+  {
+   "name": "サッシ（アルミ）",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "さっし"
+   ]
+  },
+  {
+   "name": "殺虫剤（スプレー缶）",
+   "category": "moenai",
+   "note": "穴を開け、ガスを抜く",
+   "tags": [
+    "さっちゅうざい"
+   ]
+  },
+  {
+   "name": "座布団",
+   "category": "moeru",
+   "note": "30cm四方以下に切る",
+   "tags": [
+    "ざぶとん"
+   ]
+  },
+  {
+   "name": "サマーベット",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "さまーべっと"
+   ]
+  },
+  {
+   "name": "皿（陶器・ガラス・金属）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "さら"
+   ]
+  },
+  {
+   "name": "皿（紙・木・アルミ・プラスチック）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "さら"
+   ]
+  },
+  {
+   "name": "サラダオイル",
+   "category": "moeru",
+   "note": "紙に含ませる、固形化する",
+   "tags": [
+    "さらだおいる"
+   ]
+  },
+  {
+   "name": "サラダボール（プラスチック）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "さらだぼーる"
+   ]
+  },
+  {
+   "name": "サラダボール（金属・陶器）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "さらだぼーるきんぞくとうき"
+   ]
+  },
+  {
+   "name": "ざる（竹・プラスチック）",
+   "category": "moeru",
+   "note": "ゴミ袋に入らなければ粗大ゴミ",
+   "tags": [
+    "ざるたけぷらすちっく"
+   ]
+  },
+  {
+   "name": "ざる（金属）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "ざるきんぞく"
+   ]
+  },
+  {
+   "name": "三脚",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "さんきゃく"
+   ]
+  },
+  {
+   "name": "サングラス",
+   "category": "moenai",
+   "note": "プラスチック製は燃やすゴミ",
+   "tags": []
+  },
+  {
+   "name": "サンダル",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "サンドペーパー",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "残飯",
+   "category": "moeru",
+   "note": "水切りをする",
+   "tags": [
+    "ざんぱん"
+   ]
+  },
+  {
+   "name": "三面鏡",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "さんめんかがみ"
+   ]
+  },
+  {
+   "name": "三輪車",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "さんりんしゃ"
+   ]
+  },
+  {
+   "name": "CDプレイヤー",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ。小型家電としての窓口回収も可",
+   "tags": []
+  },
+  {
+   "name": "CRT（パソコン用）",
+   "category": "unknown",
+   "note": "パソコンリサイクル対象。小型家電としての窓口回収も可",
+   "tags": [
+    "ぱそこんよう"
+   ]
+  },
+  {
+   "name": "シーツ",
+   "category": "fuku",
+   "note": "たたんで、ひもで縛って出す",
+   "tags": []
+  },
+  {
+   "name": "シール（ステッカー）",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ジーンズ",
+   "category": "fuku",
+   "note": "たたんで、ひもで縛って出す",
+   "tags": []
+  },
+  {
+   "name": "シェーバー",
+   "category": "moenai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": []
+  },
+  {
+   "name": "シェーバーアルコール洗浄液カートリッジ",
+   "category": "moeru",
+   "note": "洗浄液は空にする",
+   "tags": [
+    "しぇーばーあるこーるせんじょうえきかーとりっじ"
+   ]
+  },
+  {
+   "name": "死骸（犬・猫）",
+   "category": "unknown",
+   "note": "生活環境課まで相談してください",
+   "tags": [
+    "しがいいぬねこ"
+   ]
+  },
+  {
+   "name": "磁気マットレス",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "じきまっとれす"
+   ]
+  },
+  {
+   "name": "磁気毛布",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "じきもうふ"
+   ]
+  },
+  {
+   "name": "磁石",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "じしゃく"
+   ]
+  },
+  {
+   "name": "辞書、辞典",
+   "category": "zasshi",
+   "note": "束ねてひもで縛る",
+   "tags": [
+    "じしょじてん"
+   ]
+  },
+  {
+   "name": "下着",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "したぎ"
+   ]
+  },
+  {
+   "name": "下敷き",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "したじき"
+   ]
+  },
+  {
+   "name": "七輪",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "しちりん"
+   ]
+  },
+  {
+   "name": "湿気取り剤",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "しっけとりざい"
+   ]
+  },
+  {
+   "name": "室内物干し",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "しつないものほし"
+   ]
+  },
+  {
+   "name": "自転車",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "じてんしゃ"
+   ]
+  },
+  {
+   "name": "自転車の空気入れ",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "じてんしゃのくうきいれ"
+   ]
+  },
+  {
+   "name": "自動車",
+   "category": "unknown",
+   "note": "町では収集していません。販売店に相談してください",
+   "tags": [
+    "じどうしゃ"
+   ]
+  },
+  {
+   "name": "自動車部品（小物）",
+   "category": "unknown",
+   "note": "町では収集していません。タイヤ・バッテリー等は販売店等に相談してください",
+   "tags": [
+    "じどうしゃぶひんこもの"
+   ]
+  },
+  {
+   "name": "自動車用ベビーいす",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "じどうしゃようべびーいす"
+   ]
+  },
+  {
+   "name": "竹刀",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "しない"
+   ]
+  },
+  {
+   "name": "芝刈り機",
+   "category": "unknown",
+   "note": "町では収集していません。販売店・廃棄物処理業者等へ相談してください",
+   "tags": [
+    "しばかりき"
+   ]
+  },
+  {
+   "name": "ジャー",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "蛇口",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "じゃぐち"
+   ]
+  },
+  {
+   "name": "写真集",
+   "category": "zasshi",
+   "note": "束ねてひもで縛る",
+   "tags": [
+    "しゃしんしゅう"
+   ]
+  },
+  {
+   "name": "シャベル",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "シャンデリア",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "週刊誌",
+   "category": "zasshi",
+   "note": "束ねてひもで縛る",
+   "tags": [
+    "しゅうかんし"
+   ]
+  },
+  {
+   "name": "ジューサーミキサー",
+   "category": "moenai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": []
+  },
+  {
+   "name": "ジュースビン",
+   "category": "bin",
+   "note": "茶色、無色、その他のビンに分別",
+   "tags": []
+  },
+  {
+   "name": "じゅうたん",
+   "category": "moeru",
+   "note": "30cm四方以下に切る。切れなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "充電器",
+   "category": "moenai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": [
+    "じゅうでんき"
+   ]
+  },
+  {
+   "name": "朱肉（プラスチック製容器）",
+   "category": "moeru",
+   "note": "容器が金属の場合は燃やさないゴミ",
+   "tags": [
+    "しゅにくぷらすちっくせいようき"
+   ]
+  },
+  {
+   "name": "シュラフ",
+   "category": "moeru",
+   "note": "30cm四方以下に切る",
+   "tags": []
+  },
+  {
+   "name": "シュレッダー",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ（民生機に限る）",
+   "tags": []
+  },
+  {
+   "name": "シュレッダー排出用紙",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "しゅれっだーはいしゅつようし"
+   ]
+  },
+  {
+   "name": "瞬間湯沸かし器",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "しゅんかんゆわかしき"
+   ]
+  },
+  {
+   "name": "錠",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "じょう"
+   ]
+  },
+  {
+   "name": "消火器",
+   "category": "unknown",
+   "note": "販売店に相談してください",
+   "tags": [
+    "しょうかき"
+   ]
+  },
+  {
+   "name": "将棋駒",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "しょうぎこま"
+   ]
+  },
+  {
+   "name": "将棋盤（折たたみ式）",
+   "category": "moeru",
+   "note": "ゴミ袋に入らなければ粗大ゴミ",
+   "tags": [
+    "しょうぎばんおたたみしき"
+   ]
+  },
+  {
+   "name": "焼却灰（薪ストーブ）",
+   "category": "unknown",
+   "note": "生活環境課まで相談してください",
+   "tags": [
+    "しょうきゃくはいたきぎすとーぶ"
+   ]
+  },
+  {
+   "name": "障子",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "しょうじ"
+   ]
+  },
+  {
+   "name": "障子紙",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "しょうじかみ"
+   ]
+  },
+  {
+   "name": "浄水器",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "じょうすいき"
+   ]
+  },
+  {
+   "name": "浄水器フィルター",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "じょうすいきふぃるたー"
+   ]
+  },
+  {
+   "name": "ショウノウ（樟脳）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "しょうのう"
+   ]
+  },
+  {
+   "name": "照明器具",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ、蛍光管・電球は分けて有害ゴミへ",
+   "tags": [
+    "しょうめいきぐ"
+   ]
+  },
+  {
+   "name": "照明器具の笠（金属製）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "しょうめいきぐのかさきんぞくせい"
+   ]
+  },
+  {
+   "name": "照明器具の笠（プラ製）",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "しょうめいきぐのかさぷらせい"
+   ]
+  },
+  {
+   "name": "醤油びん",
+   "category": "bin",
+   "note": "茶色、無色、その他のビンに分別",
+   "tags": [
+    "しょうゆびん"
+   ]
+  },
+  {
+   "name": "ジョウロ",
+   "category": "moeru",
+   "note": "プラスチック製は燃やすゴミ、金属製は燃やさないゴミ",
+   "tags": []
+  },
+  {
+   "name": "食用油容器",
+   "category": "moeru",
+   "note": "空き容器。缶製の場合はスチール缶・アルミ缶で分別",
+   "tags": [
+    "しょくようゆようき"
+   ]
+  },
+  {
+   "name": "除湿器",
+   "category": "moenai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": [
+    "じょしつき"
+   ]
+  },
+  {
+   "name": "除湿剤",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "じょしつざい"
+   ]
+  },
+  {
+   "name": "食器（ガラス、陶磁器製）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "しょっきがらすとうじきせい"
+   ]
+  },
+  {
+   "name": "食器（木、プラ製）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "しょっききぷらせい"
+   ]
+  },
+  {
+   "name": "食器乾燥機",
+   "category": "sodai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": [
+    "しょっきかんそうき"
+   ]
+  },
+  {
+   "name": "食器洗浄機",
+   "category": "sodai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": [
+    "しょっきせんじょうき"
+   ]
+  },
+  {
+   "name": "食器棚",
+   "category": "sodai",
+   "note": "ガラスは外す",
+   "tags": [
+    "しょっきだな"
+   ]
+  },
+  {
+   "name": "食器戸棚",
+   "category": "sodai",
+   "note": "ガラスは外す",
+   "tags": [
+    "しょっきとだな"
+   ]
+  },
+  {
+   "name": "シリカゲル",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "シルバーカー",
+   "category": "sodai",
+   "note": "布類と金属類とを分別する",
+   "tags": []
+  },
+  {
+   "name": "人工芝",
+   "category": "moenai",
+   "note": "30cm四方以下に切れば燃やすゴミ",
+   "tags": [
+    "じんこうしば"
+   ]
+  },
+  {
+   "name": "人工肛門（ストマ）[家庭]",
+   "category": "moeru",
+   "note": "汚物はトイレに流す",
+   "tags": [
+    "じんこうこうもん"
+   ]
+  },
+  {
+   "name": "シンナー",
+   "category": "moeru",
+   "note": "紙に含ませる",
+   "tags": []
+  },
+  {
+   "name": "新聞",
+   "category": "zasshi",
+   "note": "束ねてひもで縛る",
+   "tags": [
+    "しんぶん"
+   ]
+  },
+  {
+   "name": "吸殻（たばこ）",
+   "category": "moeru",
+   "note": "水に浸し火が消えていることを確認",
+   "tags": [
+    "すいがらたばこ"
+   ]
+  },
+  {
+   "name": "水槽",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": [
+    "すいそう"
+   ]
+  },
+  {
+   "name": "水中ポンプ",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "すいちゅうぽんぷ"
+   ]
+  },
+  {
+   "name": "水中メガネ（ガラス）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "すいちゅうめがねがらす"
+   ]
+  },
+  {
+   "name": "水中メガネ（プラスチック）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "すいちゅうめがねぷらすちっく"
+   ]
+  },
+  {
+   "name": "水筒",
+   "category": "moenai",
+   "note": "全てプラスチック製は燃やすゴミ",
+   "tags": [
+    "すいとう"
+   ]
+  },
+  {
+   "name": "水道ホース",
+   "category": "moeru",
+   "note": "30cm以下に切る",
+   "tags": [
+    "すいどうほーす"
+   ]
+  },
+  {
+   "name": "炊飯器",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ。小型家電としての窓口回収も可",
+   "tags": [
+    "すいはんき"
+   ]
+  },
+  {
+   "name": "スーツケース",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "スキー板",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "すきーいた"
+   ]
+  },
+  {
+   "name": "スキーウェア",
+   "category": "fuku",
+   "note": "たたんで、ひもで縛って出す",
+   "tags": []
+  },
+  {
+   "name": "スキー靴",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "すきーくつ"
+   ]
+  },
+  {
+   "name": "スキーストック",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "スキー用手袋",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "すきーようてぶくろ"
+   ]
+  },
+  {
+   "name": "スキャナー",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "スケート靴",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "すけーとくつ"
+   ]
+  },
+  {
+   "name": "スケートボード",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "スケール（巻尺、コンベックス）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "すけーるまきじゃくこんべっくす"
+   ]
+  },
+  {
+   "name": "スケッチブック",
+   "category": "zasshi",
+   "note": "束ねてひもで縛る、金具は外す",
+   "tags": []
+  },
+  {
+   "name": "スコップ",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "すしおけ",
+   "category": "moeru",
+   "note": "ゴミ袋に入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "すずり（硯）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "すずり"
+   ]
+  },
+  {
+   "name": "すだれ",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "スタンドミラー",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "スタンプ台（金属製）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "すたんぷだいきんぞくせい"
+   ]
+  },
+  {
+   "name": "スタンプ台（プラ製）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "すたんぷだいぷらせい"
+   ]
+  },
+  {
+   "name": "スチールウール",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "スチール棚",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "すちーるたな"
+   ]
+  },
+  {
+   "name": "ステッキ",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "ステレオ",
+   "category": "sodai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": []
+  },
+  {
+   "name": "ストーブ",
+   "category": "sodai",
+   "note": "電池、燃料を抜く",
+   "tags": []
+  },
+  {
+   "name": "砂",
+   "category": "unknown",
+   "note": "販売店等に相談してください",
+   "tags": [
+    "すな"
+   ]
+  },
+  {
+   "name": "砂時計",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "すなどけい"
+   ]
+  },
+  {
+   "name": "スニーカー",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "スノーボード",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "すのこ",
+   "category": "sodai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "スパイクシューズ",
+   "category": "moeru",
+   "note": "スパイクは外す",
+   "tags": []
+  },
+  {
+   "name": "スパナ",
+   "category": "moenai",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "スピーカー",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ",
+   "tags": []
+  },
+  {
+   "name": "スプーン（金属）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "すぷーんきんぞく"
+   ]
+  },
+  {
+   "name": "スプーン（木・プラスチック）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "すぷーんきぷらすちっく"
+   ]
+  },
+  {
+   "name": "スプリングベッド・マットレス",
+   "category": "sodai",
+   "note": "布（→布類）とスプリング（→燃やさないゴミ）は分離すれば粗大ゴミでも可",
+   "tags": []
+  },
+  {
+   "name": "滑り台",
+   "category": "sodai",
+   "note": "家庭用に限る",
+   "tags": [
+    "すべりだい"
+   ]
+  },
+  {
+   "name": "スポンジ",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "ズボンプレッサー",
+   "category": "sodai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": []
+  },
+  {
+   "name": "炭",
+   "category": "unknown",
+   "note": "販売店等に相談してください",
+   "tags": [
+    "すみ"
+   ]
+  },
+  {
+   "name": "すりこ木",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "すりこき"
+   ]
+  },
+  {
+   "name": "スリッパ",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "すり鉢",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "すりはち"
+   ]
+  },
+  {
+   "name": "スレート瓦",
+   "category": "unknown",
+   "note": "工務店・廃棄物処理業者等へ相談してください",
+   "tags": [
+    "すれーとかわら"
+   ]
+  },
+  {
+   "name": "生花",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "せいか"
+   ]
+  },
+  {
+   "name": "精米機（家庭用）",
+   "category": "sodai",
+   "note": "コンテナに入れば燃やさないゴミでも可。小型家電としての窓口回収も可",
+   "tags": [
+    "せいまいきかていよう"
+   ]
+  },
+  {
+   "name": "セーター",
+   "category": "fuku",
+   "note": "たたんで、ひもで縛って出す",
+   "tags": []
+  },
+  {
+   "name": "石油",
+   "category": "unknown",
+   "note": "ガソリンスタンドに相談してください",
+   "tags": [
+    "せきゆ"
+   ]
+  },
+  {
+   "name": "石油ストーブ（ファンヒーター）",
+   "category": "sodai",
+   "note": "電池、燃料を抜く。小型家電としての窓口回収も可",
+   "tags": [
+    "せきゆすとーぶふぁんひーたー"
+   ]
+  },
+  {
+   "name": "石油タンク",
+   "category": "unknown",
+   "note": "販売店・廃棄物処理業者等へ相談してください",
+   "tags": [
+    "せきゆたんく"
+   ]
+  },
+  {
+   "name": "石鹸",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "せっけん"
+   ]
+  },
+  {
+   "name": "石鹸の箱",
+   "category": "moeru",
+   "note": "臭いが強いため燃やすゴミ",
+   "tags": [
+    "せっけんのはこ"
+   ]
+  },
+  {
+   "name": "石膏",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "せっこう"
+   ]
+  },
+  {
+   "name": "石膏ボード",
+   "category": "unknown",
+   "note": "販売店・廃棄物処理業者等へ相談してください",
+   "tags": [
+    "せっこうぼーど"
+   ]
+  },
+  {
+   "name": "接着剤",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "せっちゃくざい"
+   ]
+  },
+  {
+   "name": "接着剤チューブ",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "せっちゃくざいちゅーぶ"
+   ]
+  },
+  {
+   "name": "瀬戸物",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "せともの"
+   ]
+  },
+  {
+   "name": "セメント",
+   "category": "unknown",
+   "note": "販売店・廃棄物処理業者等へ相談してください",
+   "tags": []
+  },
+  {
+   "name": "セロテープ",
+   "category": "moeru",
+   "note": "",
+   "tags": []
+  },
+  {
+   "name": "線香の箱",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "せんこうのはこ"
+   ]
+  },
+  {
+   "name": "洗濯板",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "せんたくいた"
+   ]
+  },
+  {
+   "name": "洗濯かご",
+   "category": "sodai",
+   "note": "",
+   "tags": [
+    "せんたくかご"
+   ]
+  },
+  {
+   "name": "洗濯バサミ",
+   "category": "moeru",
+   "note": "素材で判断（プラスチック製は燃やすゴミ、金属製は燃やさないゴミ）",
+   "tags": [
+    "せんたくばさみ"
+   ]
+  },
+  {
+   "name": "剪定した枝・木",
+   "category": "moeru",
+   "note": "太さ1cm、長さ30cm以下に限る",
+   "tags": [
+    "せんていしたえだき"
+   ]
+  },
+  {
+   "name": "剪定はさみ",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "せんていはさみ"
+   ]
+  },
+  {
+   "name": "栓抜き",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "せんぬき"
+   ]
+  },
+  {
+   "name": "扇風機",
+   "category": "sodai",
+   "note": "小型家電としての窓口回収も可",
+   "tags": [
+    "せんぷうき"
+   ]
+  },
+  {
+   "name": "洗面器（木、プラ製）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "せんめんききぷらせい"
+   ]
+  },
+  {
+   "name": "洗面器（金属製）",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "せんめんききんぞくせい"
+   ]
+  },
+  {
+   "name": "洗面台",
+   "category": "unknown",
+   "note": "販売店・廃棄物処理業者等へ相談してください",
+   "tags": [
+    "せんめんだい"
+   ]
+  },
+  {
+   "name": "造花",
+   "category": "moeru",
+   "note": "軟鉄・針金入りは燃やさないゴミ",
+   "tags": [
+    "ぞうか"
+   ]
+  },
+  {
+   "name": "双眼鏡",
+   "category": "moenai",
+   "note": "",
+   "tags": [
+    "そうがんきょう"
+   ]
+  },
+  {
+   "name": "掃除機",
+   "category": "moenai",
+   "note": "コンテナに入らなければ粗大ゴミ。小型家電としての窓口回収も可",
+   "tags": [
+    "そうじき"
+   ]
+  },
+  {
+   "name": "ぞうり（草履）",
+   "category": "moeru",
+   "note": "",
+   "tags": [
+    "ぞうり"
+   ]
+  },
+  {
+   "name": "ソーラーシステム",
+   "category": "unknown",
+   "note": "販売店・廃棄物処理業者等へ相談してください",
+   "tags": []
+  },
+  {
+   "name": "側溝汚泥",
+   "category": "unknown",
+   "note": "廃棄物処理事業者へ相談してください",
+   "tags": [
+    "そっこうおでい"
+   ]
+  },
+  {
+   "name": "ソファー",
+   "category": "sodai",
+   "note": "革・布・スプリングを分離する",
+   "tags": []
   }
  ],
  "contact": [

@@ -11797,14 +11797,6 @@
       "source": "estimated"
     },
     {
-      "name": "靴",
-      "category": "moeru",
-      "note": "",
-      "tags": [
-        "くつ"
-      ]
-    },
-    {
       "name": "かばん",
       "category": "moeru",
       "note": "金具は外す",
@@ -12506,47 +12498,6 @@
       "category": "sodai",
       "note": "クリーンステーション那須へ要予約",
       "tags": []
-    },
-    {
-      "name": "ベッド",
-      "category": "sodai",
-      "note": "クリーンステーション那須へ要予約",
-      "tags": [],
-      "source": "estimated"
-    },
-    {
-      "name": "マットレス",
-      "category": "sodai",
-      "note": "クリーンステーション那須へ要予約",
-      "tags": [],
-      "source": "estimated"
-    },
-    {
-      "name": "机",
-      "category": "sodai",
-      "note": "クリーンステーション那須へ要予約",
-      "tags": [
-        "つくえ"
-      ],
-      "source": "estimated"
-    },
-    {
-      "name": "椅子",
-      "category": "sodai",
-      "note": "クリーンステーション那須へ要予約",
-      "tags": [
-        "いす"
-      ],
-      "source": "estimated"
-    },
-    {
-      "name": "本棚",
-      "category": "sodai",
-      "note": "クリーンステーション那須へ要予約",
-      "tags": [
-        "ほんだな"
-      ],
-      "source": "estimated"
     },
     {
       "name": "テレビ",

@@ -69,6 +69,8 @@ const CATEGORY_ICON: Record<string, string> = {
   pla_pet: '/icons/plastic.svg',
   kinzoku_gb: '/icons/metal.svg',
   fuku_zasshi: '/icons/fuku.svg',
+  // 茨城町・2026-09-16新設: 「ガラス・陶磁器類」独立区分（script.js側TYPE_STYLEと対）
+  glass: '/icons/bin.svg',
 };
 
 // 自治体別アイコン差し替え（v1.135新設・script.jsのCITY_ICON_OVERRIDEと対）。
