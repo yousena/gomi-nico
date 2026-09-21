@@ -689,11 +689,32 @@ function getGarbageForDate(areaKey, date) {
   const result = [];
   const cats   = DATA.categories;
 
-  if (area.burnable?.includes(day))
+  // burnable/recycle/plasticRecは志木市方式の固定フィールド名だが、他の自治体では
+  // 「毎週◯曜」ではなく「第n◯曜」の指定日制（{day,weeks}オブジェクト形式）で運用する
+  // ケースがある（例: 北本市・八街市・箱根町・龍ケ崎市・榛東村のrecycle）。
+  // 従来は配列専用の.includes()決め打ちだったため、オブジェクトが来ると
+  // 「area.recycle?.includes is not a function」で例外が発生し、以降の処理
+  // （地区選択モーダルを閉じる等）が丸ごと止まってしまっていた（v1.141で修正）。
+  // nonBurnable/hazardous等と同じ判定ロジックを共通化し、配列・オブジェクト両対応にする。
+  const matchesSchedule = (val) => {
+    if (val == null) return false;
+    if (Array.isArray(val)) return val.includes(day);
+    if (typeof val.day === 'number') {
+      if (day !== val.day) return false;
+      const weeksArr = val.weeks || (val.week != null ? [val.week] : []);
+      for (const wk of weeksArr) {
+        const d = getNthWeekday(year, month, day, wk);
+        if (d && d.getDate() === date.getDate()) return true;
+      }
+    }
+    return false;
+  };
+
+  if (matchesSchedule(area.burnable))
     result.push({ type:'moeru',      label: cats.moeru?.label       || '可燃ごみ',        how: cats.moeru?.how       || '' });
-  if (area.recycle?.includes(day))
+  if (matchesSchedule(area.recycle))
     result.push({ type:'recycle',    label: cats.recycle?.label     || 'リサイクル資源',   how: cats.recycle?.how     || '' });
-  if (area.plasticRec?.includes(day))
+  if (matchesSchedule(area.plasticRec))
     result.push({ type:'shigen-pla', label: cats['shigen-pla']?.label || '資源プラスチック', how: cats['shigen-pla']?.how || '' });
   if (day === area.nonBurnable?.day) {
     for (const wk of area.nonBurnable.weeks) {
