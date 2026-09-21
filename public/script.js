@@ -75,6 +75,20 @@ const TYPE_STYLE = {
   // びん類（bin）とは別に「ガラス・陶磁器類」を独立区分として収集する自治体向け。
   // 専用の新色は用意せず、視覚的に近いbinと同じ色・アイコンを流用している。
   glass:       { icon:'wine_bar',              img:'/icons/bin.svg',     bg:'var(--c-bin-bg)',     iconBg:'rgba(75,131,73,0.14)',   fg:'var(--c-bin)',     dotColor:'var(--c-bin)'     },
+  // ── 拡張（2026-09-21・複数自治体新規追加時に未定義のまま出荷されていたキーを追加）
+  // 剪定枝（愛川町・甘楽町・清川村・二宮町・野木町・大磯町の6市町村で使用）
+  sentei:      { icon:'grass',                 bg:'var(--c-sentei-bg)',  iconBg:'rgba(114,111,29,0.14)',  fg:'var(--c-sentei)',  dotColor:'var(--c-sentei)'  },
+  // 段ボール・紙パック（東吾妻町・片品村・勝浦市等8市町村で使用。雑紙(zasshi)とは別区分）
+  danball:     { icon:'inventory_2',           img:'/icons/kami_other.svg', bg:'var(--c-danball-bg)', iconBg:'rgba(93,44,109,0.14)',  fg:'var(--c-danball)', dotColor:'var(--c-danball)' },
+  // 以下は新規の色を起こさず、意味の近い既存カテゴリのスタイルをそのまま流用するエイリアス
+  dekinai:     { icon:'help',               img:'/icons/none.svg',        keepBg:true, bg:'var(--c-unknown-bg)', iconBg:'rgba(136,144,160,0.14)', fg:'var(--c-unknown)', dotColor:'var(--c-unknown)'  }, // 市で処理できないごみ（=unknownと同義）
+  kinzoku7:    { icon:'hardware', img:'/icons/metal.svg',       bg:'var(--c-metal-bg)',   iconBg:'rgba(92,107,115,0.14)',  fg:'var(--c-metal)',   dotColor:'var(--c-metal)'   }, // 金物7品目（=metalと同義）
+  kaden:       { icon:'hardware', img:'/icons/metal.svg',       bg:'var(--c-metal-bg)',   iconBg:'rgba(92,107,115,0.14)',  fg:'var(--c-metal)',   dotColor:'var(--c-metal)'   }, // 使用済小型家電
+  bin_brown:   { icon:'wine_bar',              img:'/icons/bin.svg',     bg:'var(--c-bin-bg)',     iconBg:'rgba(75,131,73,0.14)',   fg:'var(--c-bin)',     dotColor:'var(--c-bin)'     }, // 茶色ビン（=binと同色、色分別のみ自治体側の実務）
+  bin_other:   { icon:'wine_bar',              img:'/icons/bin.svg',     bg:'var(--c-bin-bg)',     iconBg:'rgba(75,131,73,0.14)',   fg:'var(--c-bin)',     dotColor:'var(--c-bin)'     }, // その他ビン
+  tray:        { icon:'water_bottle',          img:'/icons/plastic.svg', bg:'var(--c-pla-bg)',     iconBg:'rgba(58,58,60,0.14)',    fg:'var(--c-pla)',     dotColor:'var(--c-pla)'     }, // 白色トレイ・発泡スチロール（=shigen-plaと同義）
+  sonota_pla:  { icon:'water_bottle',          img:'/icons/plastic.svg', bg:'var(--c-pla-bg)',     iconBg:'rgba(58,58,60,0.14)',    fg:'var(--c-pla)',     dotColor:'var(--c-pla)'     }, // その他製品プラスチック
+  pla_other:   { icon:'water_bottle',          img:'/icons/plastic.svg', bg:'var(--c-pla-bg)',     iconBg:'rgba(58,58,60,0.14)',    fg:'var(--c-pla)',     dotColor:'var(--c-pla)'     }, // その他プラスチック
 };
 
 /**
