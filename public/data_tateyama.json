@@ -188,6 +188,7 @@
       "allowed": [
         "タンス、机、ソファー、本棚、食器棚、テレビ台",
         "自転車、じゅうたん（長さ2mまで）、物干し竿（2mまで）",
+        "ゴルフクラブ・ゴルフバッグ（大型のものは粗大ごみ、小型の部品は金属類へ）",
         "ストーブ・ファンヒーター（石油・ガス・電気式、燃料は必ず抜き取る）、こたつ（天板含む）、扇風機、掃除機",
         "布団、毛布、座布団（各5枚まで）、ベッド・マットレス（セミダブルまで）",
         "トタン（金属製のみ、直径30cm・長さ2mまでの束）"
@@ -389,7 +390,29 @@
     { "name": "サーフボード", "category": "unknown", "note": "市で収集・処理できません", "tags": ["さーふぼーど"] },
     { "name": "スノーボード", "category": "unknown", "note": "市で収集・処理できません", "tags": ["すのーぼーど"] },
     { "name": "スキー板", "category": "unknown", "note": "市で収集・処理できません", "tags": ["すきーいた"] },
-    { "name": "注射針", "category": "unknown", "note": "市で収集・処理できません", "tags": ["ちゅうしゃばり"] }
+    { "name": "注射針", "category": "unknown", "note": "市で収集・処理できません", "tags": ["ちゅうしゃばり"] },
+    { "name": "ゴルフクラブ・ゴルフバッグ", "category": "sodai", "note": "大型のものは粗大ごみ処理券（500円）を貼って出す。小型の部品は金属類へ", "tags": [] },
+    { "name": "生丸太", "category": "unknown", "note": "太さ10cm以上、または長さ2m以上のものは市で収集・処理できません", "tags": ["なままるた"] },
+    { "name": "雨どい", "category": "unknown", "note": "市で収集・処理できません", "tags": ["あまどい"] },
+    { "name": "水道管（塩ビ管）", "category": "unknown", "note": "市で収集・処理できません", "tags": ["すいどうかん", "えんびかん"] },
+    { "name": "ビニールトタン", "category": "unknown", "note": "市で収集・処理できません", "tags": [] },
+    { "name": "自動車部品", "category": "unknown", "note": "市で収集・処理できません", "tags": ["じどうしゃぶひん"] },
+    { "name": "耐火金庫", "category": "unknown", "note": "市で収集・処理できません", "tags": ["たいかきんこ"] },
+    { "name": "ステンレス製品・ホーロー製品", "category": "unknown", "note": "調理器具・物干し竿を除く。市で収集・処理できません", "tags": ["せいひん"] },
+    { "name": "除湿機", "category": "unknown", "note": "フロンを使用しているものは市で収集・処理できません", "tags": ["じょしつき"] },
+    { "name": "冷風機", "category": "unknown", "note": "フロンを使用しているものは市で収集・処理できません", "tags": ["れいふうき"] },
+    { "name": "農機具", "category": "unknown", "note": "市で収集・処理できません", "tags": ["のうきぐ"] },
+    { "name": "農業用ビニール", "category": "unknown", "note": "市で収集・処理できません", "tags": ["のうぎょうようびにーる"] },
+    { "name": "かわら", "category": "unknown", "note": "市で収集・処理できません", "tags": ["かわら"] },
+    { "name": "コンクリート", "category": "unknown", "note": "市で収集・処理できません", "tags": [] },
+    { "name": "ブロック", "category": "unknown", "note": "市で収集・処理できません", "tags": [] },
+    { "name": "ペンキ缶", "category": "unknown", "note": "空にしても市で収集・処理できません。販売店等へ", "tags": ["ぺんきかん"] },
+    { "name": "石", "category": "unknown", "note": "市で収集・処理できません", "tags": ["いし"] },
+    { "name": "砂", "category": "unknown", "note": "市で収集・処理できません", "tags": ["すな"] },
+    { "name": "薬品", "category": "unknown", "note": "市で収集・処理できません", "tags": ["やくひん"] },
+    { "name": "建築廃材", "category": "unknown", "note": "市で収集・処理できません", "tags": ["けんちくはいざい"] },
+    { "name": "浴槽", "category": "unknown", "note": "市で収集・処理できません", "tags": ["よくそう"] },
+    { "name": "土", "category": "unknown", "note": "市で収集・処理できません", "tags": ["つち"] }
   ],
   "contact": [
     { "name": "館山市役所 市民生活部環境課 一般廃棄物係", "note": "分別方法・収集日・粗大ごみ処理券に関すること", "tel": "0470223354", "hours": "平日 9:00〜16:30" },
@@ -404,6 +427,14 @@
     "affiliate": true
   },
   "notices": [
+    {
+      "id": 2,
+      "type": "info",
+      "date": "2026-09-24",
+      "title": "処理困難物の一覧を追加しました",
+      "body": "生丸太・雨どい・農機具・浴槽・建築廃材など、市で収集・処理できない処理困難物を市公式ページで確認し、検索対象に追加しました。該当する品目は販売店・専門業者・許可業者へご相談ください。",
+      "url": "https://www.city.tateyama.chiba.jp/kankyou/page000524.html"
+    },
     {
       "id": 1,
       "type": "info",

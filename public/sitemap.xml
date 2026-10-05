@@ -642,6 +642,86 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- つくばみらい市（茨城県） -->
+  <url>
+    <loc>https://gomi-nico.jp/tsukubamirai/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 笠間市（茨城県） -->
+  <url>
+    <loc>https://gomi-nico.jp/kasama/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 富岡市（群馬県） -->
+  <url>
+    <loc>https://gomi-nico.jp/tomioka/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- みどり市（群馬県） -->
+  <url>
+    <loc>https://gomi-nico.jp/midori/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 大月市（山梨県） -->
+  <url>
+    <loc>https://gomi-nico.jp/otsuki/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 高萩市（茨城県） -->
+  <url>
+    <loc>https://gomi-nico.jp/takahagi/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 君津市（千葉県） -->
+  <url>
+    <loc>https://gomi-nico.jp/kimitsu/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 山梨市（山梨県） -->
+  <url>
+    <loc>https://gomi-nico.jp/yamanashi/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 南アルプス市（山梨県） -->
+  <url>
+    <loc>https://gomi-nico.jp/minamialps/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 市川三郷町（山梨県） -->
+  <url>
+    <loc>https://gomi-nico.jp/ichikawamisato/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- 記事コンテンツ -->
   <url>
     <loc>https://gomi-nico.jp/articles/</loc>
@@ -698,6 +778,126 @@
     <lastmod>2026-07-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
+  </url>
+
+  <!-- 昭和町（山梨県） -->
+  <url>
+    <loc>https://gomi-nico.jp/showa_yamanashi/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 小山町（静岡県） -->
+  <url>
+    <loc>https://gomi-nico.jp/oyama_shizuoka/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 東御市（長野県） -->
+  <url>
+    <loc>https://gomi-nico.jp/tomi/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 箕輪町（長野県） -->
+  <url>
+    <loc>https://gomi-nico.jp/minowa/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 東浦町（愛知県） -->
+  <url>
+    <loc>https://gomi-nico.jp/higashiura/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 神戸町（岐阜県） -->
+  <url>
+    <loc>https://gomi-nico.jp/godo/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 滑川町（埼玉県） -->
+  <url>
+    <loc>https://gomi-nico.jp/namegawa/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 鳩山町（埼玉県） -->
+  <url>
+    <loc>https://gomi-nico.jp/hatoyama/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 川西町（山形県） -->
+  <url>
+    <loc>https://gomi-nico.jp/kawanishi_yamagata/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 富士見町（長野県） -->
+  <url>
+    <loc>https://gomi-nico.jp/fujimi_nagano/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 伊豆市（静岡県） -->
+  <url>
+    <loc>https://gomi-nico.jp/izu/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 田上町（新潟県） -->
+  <url>
+    <loc>https://gomi-nico.jp/tagami/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 垂井町（岐阜県） -->
+  <url>
+    <loc>https://gomi-nico.jp/tarui/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 上野原市（山梨県） -->
+  <url>
+    <loc>https://gomi-nico.jp/uenohara/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 亘理町（宮城県） -->
+  <url>
+    <loc>https://gomi-nico.jp/watari/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>
