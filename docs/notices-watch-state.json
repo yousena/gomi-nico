@@ -30,9 +30,10 @@
         "https://www.city.shiki.lg.jp/soshiki/16/1195.html",
         "https://www.city.shiki.lg.jp/soshiki/16/1686.html",
         "https://www.city.shiki.lg.jp/soshiki/16/1229.html",
-        "https://www.city.shiki.lg.jp/soshiki/16/1153.html"
+        "https://www.city.shiki.lg.jp/soshiki/16/1153.html",
+        "https://www.city.shiki.lg.jp/soshiki/16/24688.html"
       ],
-      "last_checked": "2026-10-12T09:00:00+09:00"
+      "last_checked": "2026-10-22T09:00:00+09:00"
     },
     "warabi": {
       "label": "蕨市",
@@ -65,9 +66,10 @@
         "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1001329.html",
         "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1003940.html",
         "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1011586.html",
-        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1006458.html"
+        "https://www.city.warabi.saitama.jp/kurashi/gomi/dashikata/1006458.html",
+        "https://www.city.warabi.saitama.jp/kurashi/kankyo/eco/1010868.html"
       ],
-      "last_checked": "2026-10-12T09:00:00+09:00"
+      "last_checked": "2026-10-22T09:00:00+09:00"
     },
     "toda": {
       "label": "戸田市",
@@ -88,7 +90,7 @@
         "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-rinjisyaryoutodoke.html",
         "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-henkoutodoke.html"
       ],
-      "last_checked": "2026-10-12T09:00:00+09:00"
+      "last_checked": "2026-10-22T09:00:00+09:00"
     }
   }
 }
