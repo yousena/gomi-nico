@@ -1035,5 +1035,44 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- 桑折町（福島県） -->
+  <url>
+    <loc>https://gomi-nico.jp/koori/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 国見町（福島県） -->
+  <url>
+    <loc>https://gomi-nico.jp/kunimi/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 西郷村（福島県） -->
+  <url>
+    <loc>https://gomi-nico.jp/nishigo/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 小豆島町（香川県） -->
+  <url>
+    <loc>https://gomi-nico.jp/shodoshima/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 土庄町（香川県） -->
+  <url>
+    <loc>https://gomi-nico.jp/tonosho/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
 </urlset>

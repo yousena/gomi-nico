@@ -900,14 +900,16 @@
   }
  ],
  "features": {
-  "notice": false,
+  "notice": true,
   "faq": true,
   "vendor": false,
   "contact": true,
   "language": true,
   "affiliate": true
  },
- "notices": [],
+ "notices": [
+  {"id": 1, "type": "info", "date": "2026-04-01", "title": "草・枯葉類の試験回収（令和9年3月まで・持ち込み無料）", "body": "脱炭素の取り組みとして、草・枯葉類の試験回収が令和8年4月から令和9年3月まで行われています。毎週月・水・金曜日の9時〜12時に、共和化工株式会社 益子事業所（益子町塙3680-7）へ持ち込みます（無料。土日祝日・年末年始は受付なし）。ビニール袋に入れて持ち込み、袋は持ち帰ります。草・枯葉類のみが対象で、他のごみの混入、枝木、除草剤を散布した草類は回収できません。問い合わせは町民くらし課（0285-72-8849）。", "url": "https://www.town.mashiko.lg.jp/page/page004495.html"}
+ ],
  "rules": {
   "title": "益子町のごみ出しの基本ルール",
   "items": [

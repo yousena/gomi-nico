@@ -847,14 +847,16 @@
   }
  ],
  "features": {
-  "notice": false,
+  "notice": true,
   "faq": true,
   "vendor": false,
   "contact": true,
   "language": true,
   "affiliate": true
  },
- "notices": [],
+ "notices": [
+  {"id": 1, "type": "warn", "date": "2025-11-10", "title": "小型充電式電池・ボタン電池・電子たばこはごみステーションに出せません", "body": "モバイルバッテリー等の小型充電式電池は、端子部にビニールテープを貼って絶縁し、役場環境課窓口の回収ボックスへ（破損・膨張・リサイクルマークのない電池は窓口で職員へ手渡し）。ボタン電池は役場環境課窓口の回収ボックスか家電量販店等の回収缶へ。電子たばこは役場環境課へ持参するか、芳賀地区エコステーションへ直接持ち込み、他のごみと混載せず係員に渡します。乾電池（マンガン・アルカリ）はビニール袋に入れて「もえないごみ」で出せます。", "url": "https://www.town.tochigi-haga.lg.jp/kurashi/kurashi/mobilebattery.html"}
+ ],
  "rules": {
   "title": "芳賀町のごみ出しの基本ルール",
   "items": [

@@ -4,17 +4,16 @@
 
 ## プロジェクト概要
 
-ごみニコ（gomi-nico.jp）は、株式会社ユウセナが運営する、日本の各自治体向けごみ分別情報サイトです。**現状は**静的サイトで、素のHTML＋Tailwind Play CDNのみを使用（ビルド不要、`package.json`もなし）。ホスティングはCloudflare Pages＋GitHub自動デプロイで、`main`ブランチへのpushで1〜2分後に自動公開されます。それ以外のブランチにpushすると `<hash>.gomi-nico.pages.dev` にプレビューが自動発行されます。
-
-※ 新規コンテンツ（記事・新自治体）からAstro導入を検討中。既存ページ（`index.html`・`shiki/index.html`）も将来的にはAstro化の対象だが、本番稼働中の主力ページであることと、`?city=`方式からビルド時静的生成への設計変更が伴うため、新規コンテンツでパターンを検証してから着手する順序（対象外ではなく後回し）。詳細・進捗は`docs/やることリスト.md`参照。
+ごみニコ（gomi-nico.jp）は、株式会社ユウセナが運営する、日本の各自治体向けごみ分別情報サイトです。**Astro採用済み（2026-08-21に本番切り替え完了）**。自治体ページ（`/{city}/`）は`src/pages/[city]/index.astro`が`public/data_{city}.json`を自動検出（`getAllCityData()`、ファイル名のglobマッチのみ。コード側の登録作業は不要）してビルド時に静的生成します。トップページ（`public/index.html`）・記事（`public/articles/*.html`）・about/privacy/ads等は現在も素のHTML（Astro未使用）。ホスティングはCloudflare Pages＋GitHub自動デプロイで、`main`ブランチへのpushで1〜2分後に自動公開されます。それ以外のブランチにpushすると `<hash>.gomi-nico.pages.dev` にプレビューが自動発行されます。2026年9月〜10月にかけて自治体数が急増し、2026-10時点で100自治体超（埼玉・千葉・茨城・栃木・群馬・神奈川・山梨・長野・静岡・新潟・富山・岐阜・愛知・宮城・青森・香川など）。
 
 ## コマンド
 
-ビルド・lint・テストの仕組みはありません。HTML/CSS/JSを直接編集します。
-
-- **ローカル確認**: VS CodeのLive Server拡張機能で開く（例: `http://127.0.0.1:5500/shiki/`。フォルダ内の`<meta name="city">`で自治体を判定。`?city=xxx`クエリパラメータは、まだ`{city}/index.html`を作っていない自治体データを試し読みする場合のみ使う補助手段）。`script.js`が`fetch()`で`data_{city}.json`を読み込むため、`file://`での直接オープンでは動きません。DevToolsのデバイスツールバーでスマホ幅（375〜430px）を確認すること。
+- **ビルド**: `npm run build`（`tailwindcss`のCSSビルド→`astro build`の順。`dist/`に出力）。`npm run dev`でローカル開発サーバー。
+- **ローカル確認（Astro化前の静的ページ: トップ・記事・about等）**: VS CodeのLive Server拡張機能で直接開ける。
+- **ローカル確認（自治体ページ `/{city}/`）**: Astroのビルド・dev結果を経由する必要がある（`public/{city}/index.html`という静的ファイルは存在しない）。`npm run dev`で確認するのが基本。
 - **デプロイ**: `git commit` → `git push` → Cloudflare Pagesが`main`を自動ビルド。
 - **編集のたびに、必ずgitコミット用メッセージを作成すること**。プッシュは太平さんが手動で行うため、編集の区切りごとにそのまま使えるコミットメッセージを添えること。
+- **自動実行環境（スケジュールタスク等）からのgit commit/pushは行わない**: サンドボックス環境は`.git`内のロックファイルを自分で削除できない構造的制約があり、commit/pushを試みると失敗して後続のgit操作を妨げる。ファイルの作成・編集だけを行い、コミットメッセージ案を添えて太平さんのレビュー・コミットに委ねること。
 
 ## 重要な制約：シェル経由でのファイル書き込み禁止
 
@@ -22,9 +21,11 @@
 
 ## アーキテクチャ
 
-**マルチテナント構成（ハイブリッド）。** 自治体の判定はフォルダ単位（`/shiki/`など）が基本で、各`{city}/index.html`に埋め込んだ`<meta name="city" content="shiki">`をscript.jsが最優先で読み取ります（フォールバックとしてURLパスの`/xxx/`部分、さらに`?city=`クエリパラメータの順で判定。`?city=`は本番の仕組みではなく、ローカルLive Server確認時などの補助手段）。判定したcityで`public/data_{city}.json`を取得し、収集カレンダー・FAQ表示・カテゴリ凡例などの本文を動的に描画します（この部分はどの自治体でも同じコンポーネント）。一方で、`<title>`・`<meta>`タグ・JSON-LD構造化データ（FAQ・所在地など）はSEO都合上ファイルに直接ハードコードされており、自治体ごとに手動で書き換える必要があります。つまり新しい自治体を追加するときは、`public/shiki/index.html`をコピーして`public/{city}/index.html`を作り、cityメタタグと静的メタ情報部分を差し替える、という運用になります。script.js内の`TYPE_STYLE`は、ごみカテゴリのキー（`moeru`・`moenai`・`recycle`・`kiken`など）とアイコン・カラートークン・画像を紐づける固定マッピングです。カテゴリカラーは意味を持つ色なので、自治体ごとに割り当てを変えてはいけません。
+**データ駆動のAstro構成。** 自治体ページは`src/pages/[city]/index.astro`が`getAllCityData()`（`src/lib/renderCityPage.ts`）で`public/data_*.json`を全件globし、各ファイルの`municipality_id`からルート（`/{city}/`）をビルド時に自動生成します。**新しい自治体を追加する作業は、原則`public/data_{city}.json`を1つ新規作成するだけでよく、ルーティングやページファイルのコピーは不要**（`public/shiki/index.html`のような静的ファイルはもう存在しない）。`<title>`・`<meta>`・JSON-LD等のSEO情報も、`data_{city}.json`内の`seo{}`フィールド（title/description/keywords/h1Title/contactCardNote/calDayWeight/serviceName/orgName/orgTelephone/addressLocality/addressRegion/faq[]）からAstro側が注入する。本文の共通シェル（カレンダー・カテゴリ凡例・品目検索等）は全自治体で完全に同一のコンポーネントを使う。
 
-**自治体ごとのデータファイル**（`public/data_{city}.json`）には、`municipality_id`・`name`・`population`・`brand_color`・`official_url`・`citation_date`・`faq[]`・`contact[]`、そして地区別の収集スケジュールが入ります。新しい自治体を追加する際は、`data_{city}.json`の新規作成＋`{city}/index.html`のコピー＋`sitemap.xml`へのエントリ追加＋トップページのカルーセルへの追加が必要です。**構造・コンポーネントは自治体ごとに変更せず**、`brand_color`とJSONの中身、および上記の静的メタ情報のみで差別化すること（`docs/ごみニコDS.md` §5-5参照）。収集スケジュールのデータ収集時は、地区ごとの例外を一次資料（PDF・自治体サイト）と全数照合すること（過去に特定の細分化地区で収集曜日を誤って実装したバグの教訓）。
+`public/script.js`の`TYPE_STYLE`と`src/lib/renderCityPage.ts`の`CATEGORY_ICON`は、ごみカテゴリのキー（`moeru`・`moenai`・`recycle`・`pet`・`bin`・`can`・`kami`・`fuku`・`sodai`・`yugai`・`kiken`・`unknown`等）とアイコン・カラートークンを紐づける、全自治体共有の固定マッピングです。**新しい自治体を追加するときは、この既存キー体系に分類をマッピングし、新規キーの追加は原則避ける**（既存キーで表現できない分別区分がある場合のみ新規キー追加を検討し、その場合は`docs/やることリスト.md`に変更内容を明記する）。カテゴリカラーは意味を持つ色なので、自治体ごとに割り当てを変えてはいけません（一部自治体限定でアイコン画像のみ差し替える`CITY_ICON_OVERRIDE`という例外機構はある）。
+
+**自治体ごとのデータファイル**（`public/data_{city}.json`）には、`municipality_id`・`name`・`prefecture`・`population`・`brand_color`・`official_url`・`citation_date`・`cityLogo`・`seo{}`（faq[]含む）・`area_groups[]`・`areas{}`（地区別収集スケジュール）・`categories{}`・`garbage_db[]`・`contact[]`・`features{}`・`notices[]`・`rules{}`・`affiliate_items[]`が入ります（詳細なキー構成は既存の`data_okegawa.json`等を参照）。新しい自治体を追加する際は、①`data_{city}.json`の新規作成、②`public/sitemap.xml`へのエントリ追加、③トップページ（`public/index.html`）の都道府県アコーディオン（`.pref-acc`内の`<details class="pref-item">`、該当県が無ければ新設し、あれば既存`<div class="pref-grid">`内に`<a href="/{city}/" class="pref-chip">`を追加して`.pref-cnt`の件数も更新）への追加、④`public/sw.js`の`CACHE_NAME`インクリメントと`SHELL_ASSETS`への`/{city}/`・`data_{city}.json`追加、が必要です。**構造・コンポーネントは自治体ごとに変更せず**、`brand_color`とJSONの中身のみで差別化すること（`docs/ごみニコDS.md` §5-5参照）。収集スケジュールのデータ収集時は、地区ごとの例外を一次資料（PDF・自治体サイト）と全数照合すること（過去に特定の細分化地区で収集曜日を誤って実装したバグの教訓）。
 
 **`garbage_db`（検索用品目データ）に品目を追加・更新する際のルール**（`docs/ごみニコDS.md` §4・§5-6にも明文化。志木市・今後追加する自治体すべてに共通で適用）：
 1. 自治体の公式資料（配布冊子PDF・公式サイトの「判断に迷うごみ一覧表」等）に明記がある品目は、そのまま出典どおりに追加する。
@@ -33,9 +34,9 @@
 4. 品目を追加したら、`tags[]`に想定される検索語を追加する。特に**カタカナのみの品目名**は`script.js`の`toHiragana()`正規化で自動的にひらがな入力ともマッチするため追加のタグ不要だが、**漢字を含む品目名**は自動変換できないため、ひらがな読みをタグに手動で追加すること（例: `"電池"`だけでなく`"でんち"`も追加）。読みは推測せず正しい読みを確認してから追加する。
 
 **ページの種類**：
-- `public/index.html` — トップのランディングページ（LP）
-- `public/shiki/index.html` — 自治体ごとのアプリ本体（住民が日常的に使う本体機能。上記のマルチテナント構成を参照）
-- `public/articles/*.html` — 独立した読み物記事（例: `kaden.html`）とその一覧ページ（`articles/index.html`＝記事トップ）。サイト共通のフッター・法的リンクも含む自己完結型ページ（2026-07-22: `school/`から`articles/`へ改名。旧URLは`public/_redirects`で301リダイレクト）
+- `public/index.html` — トップのランディングページ（LP）。対応自治体は都道府県アコーディオン形式（`.pref-acc`）
+- `/{city}/`（`src/pages/[city]/index.astro`経由でビルド時生成） — 自治体ごとのアプリ本体（住民が日常的に使う本体機能。上記アーキテクチャ節を参照）
+- `src/content/articles/*.md` — コラム記事（frontmatterスキーマは`src/content.config.ts`。`.md`ファイルを1つ置くだけでURLが自動生成され、一覧ページ等への手動登録は不要）。`public/articles/*.html`は旧形式の静的記事（例: `kaden.html`）
 - `public/about.html`、`privacy.html`、`ads.html` — 運営者情報・プライバシーポリシー・広告についてなどの静的ページ
 - `public/sw.js` — サービスワーカー。ファイル冒頭のコメントは「アプリシェル→キャッシュ優先／データ→ネットワーク優先」を意図しているが、**実際のfetchハンドラはCDN・フォント以外（`data_{city}.json`を含む）を一律キャッシュ優先で処理しており、データ専用のネットワーク優先分岐は実装されていない**（コメントと実装が不一致。要対応・`docs/やることリスト.md`参照）。**見た目・CSS・JSに関わる変更をリリースするたびに`CACHE_NAME`を上げること**。上げ忘れると、再訪ユーザーに古いUIや古い収集データが表示され続けます。
 
