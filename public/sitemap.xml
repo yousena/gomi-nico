@@ -690,6 +690,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- 利根町（茨城県） -->
+  <url>
+    <loc>https://gomi-nico.jp/tone/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- 君津市（千葉県） -->
   <url>
     <loc>https://gomi-nico.jp/kimitsu/</loc>
