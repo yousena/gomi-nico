@@ -91,6 +91,90 @@
         "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-henkoutodoke.html"
       ],
       "last_checked": "2026-10-22T09:00:00+09:00"
+    },
+    "aikawa": {
+      "label": "愛川町",
+      "check_url": "https://www.town.aikawa.kanagawa.jp/news_ichiran.html",
+      "known_urls": [],
+      "last_checked": "2026-10-31T09:00:00+09:00"
+    },
+    "ami": {
+      "label": "阿見町",
+      "check_url": "https://www.town.ami.lg.jp/news/0001.html",
+      "known_urls": ["https://www.town.ami.lg.jp/0000016998.html"],
+      "last_checked": "2026-10-31T09:00:00+09:00"
+    },
+    "bando": {
+      "label": "坂東市",
+      "check_url": "https://www.city.bando.lg.jp/news.php?type=0",
+      "known_urls": ["https://www.city.bando.lg.jp/page/page011401.html"],
+      "last_checked": "2026-10-31T09:00:00+09:00"
+    },
+    "choshi": {
+      "label": "銚子市",
+      "check_url": "https://www.city.choshi.chiba.jp/news.html",
+      "known_urls": [
+        "https://www.city.choshi.chiba.jp/business/page1501_00051.html",
+        "https://www.city.choshi.chiba.jp/business/page1501_00050.html",
+        "https://www.city.choshi.chiba.jp/business/page1501_00056.html"
+      ],
+      "last_checked": "2026-10-31T09:00:00+09:00"
+    },
+    "godo": {
+      "label": "神戸町",
+      "check_url": "https://www.town.godo.gifu.jp/contents/news_bn/",
+      "known_urls": [
+        "https://www.town.godo.gifu.jp/life/gimi_ri/pdf/gomi_guide.pdf?20260402",
+        "https://www.town.godo.gifu.jp/wp/wp-content/uploads/2026/10/7a4bfd35e5818221926fb55c4d17d74c.pdf"
+      ],
+      "last_checked": "2026-10-31T09:00:00+09:00"
+    },
+    "goka": {
+      "label": "五霞町",
+      "check_url": "https://www.town.goka.lg.jp/",
+      "check_note": "トップページから新着情報欄を読み取れず、一覧ページのURLも特定できていない。次回、サイト内の新着一覧の特定が必要。",
+      "known_urls": [],
+      "last_checked": "2026-10-31T09:00:00+09:00"
+    },
+    "haga": {
+      "label": "芳賀町",
+      "check_url": "https://www.town.tochigi-haga.lg.jp/shinchaku/index.html",
+      "known_urls": [],
+      "last_checked": "2026-10-31T09:00:00+09:00"
+    },
+    "hakone": {
+      "label": "箱根町",
+      "check_url": "https://www.town.hakone.kanagawa.jp/www/sitemap.html",
+      "check_note": "新着情報一覧ページのURLが未特定。トップページの新着欄を起点にする。",
+      "known_urls": [
+        "https://www.town.hakone.kanagawa.jp/www/contents/1100000000830/index.html",
+        "https://www.town.hakone.kanagawa.jp/www/contents/1791523032821/index.html"
+      ],
+      "last_checked": "2026-10-31T09:00:00+09:00"
+    },
+    "hashikami": {
+      "label": "階上町",
+      "check_url": "https://www.town.hashikami.lg.jp/news/index.cfm/view.1.-.-.html",
+      "known_urls": ["https://www.town.hashikami.lg.jp/index.cfm/7,26289,27,html"],
+      "last_checked": "2026-10-31T09:00:00+09:00"
+    },
+    "hatoyama": {
+      "label": "鳩山町",
+      "check_url": "https://www.town.hatoyama.saitama.jp/news.php?type=0",
+      "known_urls": [],
+      "last_checked": "2026-10-31T09:00:00+09:00"
+    },
+    "higashiagatsuma": {
+      "label": "東吾妻町",
+      "check_url": "https://www.town.higashiagatsuma.gunma.jp/www/genre/1202933047658/index.html",
+      "known_urls": [],
+      "last_checked": "2026-10-31T09:00:00+09:00"
+    },
+    "higashiura": {
+      "label": "東浦町",
+      "check_url": "https://www.town.aichi-higashiura.lg.jp/news.html",
+      "known_urls": [],
+      "last_checked": "2026-10-31T09:00:00+09:00"
     }
   }
 }
