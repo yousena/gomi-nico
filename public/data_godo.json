@@ -1736,6 +1736,14 @@
       "title": "ルールが守られないゴミは収集されません",
       "body": "分別が守られずに出されたゴミには警告シールを貼って収集しません。シールの注意事項に従って、次回の収集日に出し直してください。",
       "url": "https://www.town.godo.gifu.jp/life/gimi_ri/gimi_ri01.html"
+    },
+    {
+      "id": 5,
+      "type": "info",
+      "date": "2026-09-01",
+      "title": "町の「家庭ごみガイドブック」が公開されています",
+      "body": "町公式サイトで、家庭ごみの出し方をまとめたガイドブック（PDF）が公開されています。分別や出し方で迷ったときは、あわせてご確認ください。",
+      "url": "https://www.town.godo.gifu.jp/life/gimi_ri/pdf/gomi_guide.pdf?20260402"
     }
   ],
   "rules": {

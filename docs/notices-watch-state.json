@@ -1,6 +1,106 @@
 {
   "_readme": "お知らせ（notices）定期監視タスク用の状態ファイル。週次スケジュールタスクが読み書きする。known_urlsは『既に把握済み＝新着として報告しない』URLの一覧。手動でdata_{city}.jsonにnoticesを追加した際は、このファイルのknown_urlsにもそのURLを追記しておくこと（忘れると次回の巡回で「新着候補」として二重報告される）。",
   "cities": {
+    "aikawa": {
+      "label": "愛川町",
+      "check_url": "https://www.town.aikawa.kanagawa.jp/news_ichiran.html",
+      "known_urls": [],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "新着情報にごみ関連なし（町からのお知らせは0件）"
+    },
+    "ami": {
+      "label": "阿見町",
+      "check_url": "https://www.town.ami.lg.jp/category/13-2-2-0-0-0-0-0-0-0.html",
+      "known_urls": [
+        "https://www.town.ami.lg.jp/0000016244.html",
+        "https://www.town.ami.lg.jp/0000015654.html",
+        "https://www.town.ami.lg.jp/0000002055.html",
+        "https://www.town.ami.lg.jp/0000014422.html",
+        "https://www.town.ami.lg.jp/0000014174.html"
+      ],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "ごみの収集・搬入カテゴリの最新は2026-04-23（GW混雑情報）。直近2か月に新着なし"
+    },
+    "bando": {
+      "label": "坂東市",
+      "check_url": "https://www.city.bando.lg.jp/page/dir009035.html",
+      "known_urls": ["https://www.city.bando.lg.jp/page/page000257.html"],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "トップページは2回目で取得でき、ごみ関連の新着なし（1回目は503）。専用の新着一覧URLは未特定"
+    },
+    "choshi": {
+      "label": "銚子市",
+      "check_url": "https://www.city.choshi.chiba.jp/news.html",
+      "known_urls": [
+        "https://www.city.choshi.chiba.jp/business/page1501_00056.html",
+        "https://www.city.choshi.chiba.jp/kurashi/page150029.html",
+        "https://www.city.choshi.chiba.jp/business/page1501_00053.html",
+        "https://www.city.choshi.chiba.jp/business/page1501_00051.html",
+        "https://www.city.choshi.chiba.jp/business/page1501_00050.html"
+      ],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "台貫復旧(10/28)と許可取消し終了(10/1)をnoticesに反映。指定ごみ袋取扱所一覧表(10/16)は一覧のため対象外"
+    },
+    "fujimi_nagano": {
+      "label": "富士見町",
+      "check_url": "https://www.town.fujimi.lg.jp/soshiki/list1-1.html",
+      "known_urls": [],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "お知らせ一覧の1ページ目のみ確認、ごみ関連なし（2〜4ページ目は未確認）"
+    },
+    "godo": {
+      "label": "神戸町",
+      "check_url": "https://www.town.godo.gifu.jp/contents/news_bn/",
+      "known_urls": [
+        "https://www.town.godo.gifu.jp/life/gimi_ri/pdf/gomi_guide.pdf?20260402",
+        "https://www.town.godo.gifu.jp/wp/wp-content/uploads/2026/10/7a4bfd35e5818221926fb55c4d17d74c.pdf",
+        "https://www.town.godo.gifu.jp/wp/wp-content/uploads/2026/10/ab9a825e079904f189e4389f3ed32f11.pdf"
+      ],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "家庭ごみガイドブック(9/1)を追加。ガイドブックPDFは本文を機械的に読めず内容は未確認。ダンボールコンポスト講座・交流会はイベントのため対象外"
+    },
+    "goka": {
+      "label": "五霞町",
+      "check_url": "https://www.town.goka.lg.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "トップページにお知らせ一覧がなく、ごみ関連の新着一覧URLを特定できなかった。要手動確認"
+    },
+    "gosen": {
+      "label": "五泉市",
+      "check_url": "https://www.city.gosen.lg.jp/info",
+      "known_urls": [],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "トップのお知らせにごみ関連なし。/new.htmlは2017年更新の空ページ"
+    },
+    "haga": {
+      "label": "芳賀町",
+      "check_url": "https://www.town.tochigi-haga.lg.jp/shinchaku/index.html",
+      "known_urls": [],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "トップの新着情報（10/28〜11/1）にごみ関連なし"
+    },
+    "hakone": {
+      "label": "箱根町",
+      "check_url": "https://www.town.hakone.kanagawa.jp/www/genre/1000100000036/index.html",
+      "known_urls": [],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "トップページは503で取得不可。ごみの分け方ページ(更新日2026-10-15)のみ確認し、お知らせ一覧は未確認。要再確認"
+    },
+    "hashikami": {
+      "label": "階上町",
+      "check_url": "https://www.town.hashikami.lg.jp/index.cfm/7,0,27,html",
+      "known_urls": ["https://www.town.hashikami.lg.jp/index.cfm/7,26289,27,html"],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "家庭用コンポスト購入費補助(10/28)は分別ルールに直接関係しないため反映せず（判断に迷う案件として報告）"
+    },
+    "hatoyama": {
+      "label": "鳩山町",
+      "check_url": "https://www.town.hatoyama.saitama.jp/kurashi/gomi_seikatsukankyo/gomi_recycle/gomi_recycling.html",
+      "known_urls": [],
+      "last_checked": "2026-11-01T12:00:00+09:00",
+      "check_note": "トップページにごみ関連の新着なし"
+    },
     "shiki": {
       "label": "志木市",
       "check_url": "https://www.city.shiki.lg.jp/life/1/12/73/",
