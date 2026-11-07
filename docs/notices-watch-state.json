@@ -1,6 +1,18 @@
 {
   "_readme": "お知らせ（notices）定期監視タスク用の状態ファイル。週次スケジュールタスクが読み書きする。known_urlsは『既に把握済み＝新着として報告しない』URLの一覧。手動でdata_{city}.jsonにnoticesを追加した際は、このファイルのknown_urlsにもそのURLを追記しておくこと（忘れると次回の巡回で「新着候補」として二重報告される）。",
   "cities": {
+    "aikawa": {"label": "愛川町", "check_url": "https://www.town.aikawa.kanagawa.jp/soshiki/kankyou_keizai/kankyo/haikibutsu/info/gomi/1422274722367.html", "check_note": "2026-11-07 HTTP 503で取得不可。新着情報一覧ページの特定も未了。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
+    "ami": {"label": "阿見町", "check_url": "https://www.town.ami.lg.jp/0000009806.html", "check_note": "ごみ関連ページのため新着一覧ではない。新着一覧ページの特定が必要。2026-09以降の新着なし。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
+    "bando": {"label": "坂東市", "check_url": "https://www.city.bando.lg.jp/page/page000257.html", "check_note": "ごみ関連ページのため新着一覧ではない。新着一覧ページの特定が必要。2026-09以降の新着なし。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
+    "choshi": {"label": "銚子市", "check_url": "https://www.city.choshi.chiba.jp/business/page1501_00031.html", "check_note": "ごみ関連ページのため新着一覧ではない。新着一覧ページの特定が必要。2026-09以降の新着なし。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
+    "fujimi_nagano": {"label": "富士見町", "check_url": "https://www.town.fujimi.lg.jp/page/fujimi-garbage.html", "check_note": "ごみ関連ページのため新着一覧ではない。新着一覧ページの特定が必要。2026-09以降の新着なし。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
+    "godo": {"label": "神戸町", "check_url": "https://www.town.godo.gifu.jp/life/gimi_ri/index.html", "check_note": "2026-11-07 HTTP 404で取得不可。check_urlの再特定が必要。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
+    "goka": {"label": "五霞町", "check_url": "https://www.town.goka.lg.jp/kurashi-machi-shigoto/kurashi/kurashi-tetsuzuki/sumai-kankyou/gomi/kaateigomi/page000433.html", "check_note": "ごみ関連ページのため新着一覧ではない。新着一覧ページの特定が必要。2026-09以降の新着なし。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
+    "gosen": {"label": "五泉市", "check_url": "https://www.city.gosen.lg.jp/organization/7/1/index.html", "check_note": "一覧に日付がなく新着判定不可。新着一覧ページの特定が必要。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
+    "haga": {"label": "芳賀町", "check_url": "https://www.town.tochigi-haga.lg.jp/kurashi/kurashi/gomi/shushubi.html", "check_note": "ごみ関連ページのため新着一覧ではない。新着一覧ページの特定が必要。2026-09以降の新着なし。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
+    "hakone": {"label": "箱根町", "check_url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000002184/index.html", "check_note": "ページ更新日2026-10-15だが新着お知らせは確認できず（既存noticesの手数料改定は反映済み）。新着一覧ページの特定が必要。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
+    "hashikami": {"label": "階上町", "check_url": "https://www.town.hashikami.lg.jp/index.cfm/7,708,27,131,html", "check_note": "ごみ関連ページのため新着一覧ではない。新着一覧ページの特定が必要。2026-09以降の新着なし。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
+    "hatoyama": {"label": "鳩山町", "check_url": "https://www.town.hatoyama.saitama.jp/kurashi/gomi_seikatsukankyo/gomi_recycle/gomi_recycling.html", "check_note": "一覧に日付がなく新着判定不可。新着一覧ページの特定が必要。", "known_urls": [], "last_checked": "2026-11-07T12:00:00+09:00"},
     "shiki": {
       "label": "志木市",
       "check_url": "https://www.city.shiki.lg.jp/life/1/12/73/",
