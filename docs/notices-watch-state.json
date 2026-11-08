@@ -91,6 +91,104 @@
         "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-henkoutodoke.html"
       ],
       "last_checked": "2026-10-22T09:00:00+09:00"
+    },
+    "ranzan": {
+      "label": "嵐山町",
+      "check_url": "https://www.town.ranzan.saitama.jp/",
+      "check_note": "トップページの新着情報で確認。ごみ関連は広域化協議会(11/2)・排出量公表(10/16)のみで、収集ルールに影響しないため反映せず",
+      "known_urls": [
+        "https://www.town.ranzan.saitama.jp/0000008037.html",
+        "https://www.town.ranzan.saitama.jp/0000006015.html",
+        "https://www.town.ranzan.saitama.jp/0000007713.html",
+        "https://www.town.ranzan.saitama.jp/0000005478.html"
+      ],
+      "last_checked": "2026-11-08T09:00:00+09:00"
+    },
+    "nasu": {
+      "label": "那須町",
+      "check_url": "https://www.town.nasu.lg.jp/0075/",
+      "check_note": "official_urlのページ・0075/配下のトップが404/403で取得不可。要確認のURL",
+      "known_urls": [],
+      "last_checked": "2026-11-08T09:00:00+09:00"
+    },
+    "hayashima": {
+      "label": "早島町",
+      "check_url": "https://www.town.hayashima.lg.jp/soshiki/jogesuido/gyomu/gomi/katei_gomi/bunbetsu/1638.html",
+      "check_note": "お知らせ一覧のURL未特定。分別ページに新着なし(更新日2026-04-01)",
+      "known_urls": [],
+      "last_checked": "2026-11-08T09:00:00+09:00"
+    },
+    "showa_gunma": {
+      "label": "昭和村",
+      "check_url": "https://www.vill.showa.gunma.jp/kurashi/kurashi/gomi/",
+      "check_note": "お知らせ一覧のURL未特定。ごみページに9月以降の新着なし",
+      "known_urls": [],
+      "last_checked": "2026-11-08T09:00:00+09:00"
+    },
+    "shinto": {
+      "label": "榛東村",
+      "check_url": "https://www.vill.shinto.gunma.jp/life/000034/000035/p000127.html",
+      "known_urls": [
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p001493.html",
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p001411.html",
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p001376.html",
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p001247.html",
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p001245.html",
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p000908.html"
+      ],
+      "last_checked": "2026-11-08T09:00:00+09:00"
+    },
+    "toyoyama": {
+      "label": "豊山町",
+      "check_url": "https://www.town.toyoyama.lg.jp/kurashi/sigen/index.html",
+      "check_note": "お知らせ一覧のURL未特定。ごみページに新着なし",
+      "known_urls": [],
+      "last_checked": "2026-11-08T09:00:00+09:00"
+    },
+    "choshi": {
+      "label": "銚子市",
+      "check_url": "https://www.city.choshi.chiba.jp/business/page1501_00031.html",
+      "check_note": "お知らせ一覧のURL未特定。ページ更新日2025-10-20のため新着確認できず",
+      "known_urls": [],
+      "last_checked": "2026-11-08T09:00:00+09:00"
+    },
+    "ushiku": {
+      "label": "牛久市",
+      "check_url": "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/gomi-recycle/",
+      "known_urls": [
+        "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/page014796.html",
+        "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/page011149.html",
+        "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/page014331.html"
+      ],
+      "last_checked": "2026-11-08T09:00:00+09:00"
+    },
+    "tomi": {
+      "label": "東御市",
+      "check_url": "https://www.city.tomi.nagano.jp/category/gomi/index.html",
+      "check_note": "一覧に日付表示なし。9月以降の新着は判別できず",
+      "known_urls": [],
+      "last_checked": "2026-11-08T09:00:00+09:00"
+    },
+    "takahagi": {
+      "label": "高萩市",
+      "check_url": "https://www.city.takahagi.ibaraki.jp/kurashi/gomi_recycle/",
+      "check_note": "一覧に日付表示なし。新着は判別できず",
+      "known_urls": [],
+      "last_checked": "2026-11-08T09:00:00+09:00"
+    },
+    "tateyama": {
+      "label": "館山市",
+      "check_url": "https://www.city.tateyama.chiba.jp/kurashi/cate000085.html",
+      "check_note": "一覧に日付表示なし。新着は判別できず",
+      "known_urls": [],
+      "last_checked": "2026-11-08T09:00:00+09:00"
+    },
+    "watari": {
+      "label": "亘理町",
+      "check_url": "https://www.town.watari.miyagi.jp/life/category/?category=124",
+      "check_note": "「環境・ごみの新着情報」に新着なし",
+      "known_urls": [],
+      "last_checked": "2026-11-08T09:00:00+09:00"
     }
   }
 }
