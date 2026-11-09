@@ -91,6 +91,93 @@
         "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-henkoutodoke.html"
       ],
       "last_checked": "2026-10-22T09:00:00+09:00"
+    },
+    "aikawa": {
+      "label": "愛川町",
+      "check_url": "https://www.town.aikawa.kanagawa.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-09T12:00:00+09:00",
+      "check_note": "トップページは取得できたが、ごみ関連の新着リンクは見当たらなかった（新着一覧ページ未特定）。"
+    },
+    "ami": {
+      "label": "阿見町",
+      "check_url": "https://www.town.ami.lg.jp/",
+      "known_urls": ["https://www.town.ami.lg.jp/0000017172.html"],
+      "last_checked": "2026-11-09T12:00:00+09:00",
+      "check_note": "0000017172（生ごみの水切り啓発、2026-11-05）は減量の啓発のみで実害に関わらないため反映せず。"
+    },
+    "bando": {
+      "label": "坂東市",
+      "check_url": "https://www.city.bando.lg.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-09T12:00:00+09:00",
+      "check_note": "トップページにごみ関連の新着なし。新着一覧ページ未特定。"
+    },
+    "choshi": {
+      "label": "銚子市",
+      "check_url": "https://www.city.choshi.chiba.jp/",
+      "known_urls": ["https://www.city.choshi.chiba.jp/business/page1501_00059.html"],
+      "last_checked": "2026-11-09T12:00:00+09:00",
+      "check_note": "page1501_00059は収集カレンダーの広告掲載募集（事業者向け）のため対象外。"
+    },
+    "fujimi_nagano": {
+      "label": "富士見町",
+      "check_url": "https://www.town.fujimi.lg.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-09T12:00:00+09:00",
+      "check_note": "トップページにごみ関連の新着なし。新着一覧ページ未特定。"
+    },
+    "godo": {
+      "label": "神戸町",
+      "check_url": "https://www.town.godo.gifu.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-09T12:00:00+09:00",
+      "check_note": "トップページにごみ関連の新着なし。新着一覧ページ未特定。"
+    },
+    "goka": {
+      "label": "五霞町",
+      "check_url": "https://www.town.goka.lg.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-09T12:00:00+09:00",
+      "check_note": "トップページの取得内容が少なく（約3KB、JS表示の可能性）、新着を判定できなかった。要手動確認。"
+    },
+    "gosen": {
+      "label": "五泉市",
+      "check_url": "https://www.city.gosen.lg.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-09T12:00:00+09:00",
+      "check_note": "トップページからはごみ関連の新着リンクを抽出できなかった。新着一覧ページ未特定。"
+    },
+    "haga": {
+      "label": "芳賀町",
+      "check_url": "https://www.town.tochigi-haga.lg.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-09T12:00:00+09:00",
+      "check_note": "トップページにごみ関連の新着なし。新着一覧ページ未特定。"
+    },
+    "hakone": {
+      "label": "箱根町",
+      "check_url": "https://www.town.hakone.kanagawa.jp/",
+      "known_urls": [
+        "https://www.town.hakone.kanagawa.jp/www/contents/1785303310520/index.html",
+        "https://www.town.hakone.kanagawa.jp/www/contents/1698367052563/index.html",
+        "https://www.town.hakone.kanagawa.jp/www/contents/1772684826888/index.html"
+      ],
+      "last_checked": "2026-11-09T12:00:00+09:00"
+    },
+    "hashikami": {
+      "label": "階上町",
+      "check_url": "https://www.town.hashikami.lg.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-09T12:00:00+09:00",
+      "check_note": "トップページにごみ関連の新着なし（収集カレンダーへの常設リンクのみ）。"
+    },
+    "hatoyama": {
+      "label": "鳩山町",
+      "check_url": "https://www.town.hatoyama.saitama.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-09T12:00:00+09:00",
+      "check_note": "トップページにごみ関連の新着なし。新着一覧ページ未特定。"
     }
   }
 }
