@@ -230,6 +230,11 @@ function getAreaKey() {
 /* =====================================================
    ENTRY POINT
 ===================================================== */
+document.addEventListener('click', function(e) {
+  var a = e.target && e.target.closest && e.target.closest('a[href="#"]');
+  if (a) e.preventDefault();
+});
+
 (async function init() {
   const city = getCityId();
   showLoading(true);
@@ -237,7 +242,8 @@ function getAreaKey() {
   try {
     const res = await fetch(`/data_${city}.json`);
     if (!res.ok) throw new Error(`data_${city}.json が見つかりません (HTTP ${res.status})`);
-    DATA = await res.json();
+    // データ内の href="javascript:void(0)" はクロール不可リンクになるため href="#" に正規化（遷移は下のclickハンドラで抑止）
+    DATA = JSON.parse((await res.text()).replace(/href=\\"javascript:void\(0\)\\"/g, 'href=\\"#\\"'));
   } catch (err) {
     showError(err.message);
     return;
@@ -262,7 +268,10 @@ function getAreaKey() {
   renderAffiliate();
   renderFAQ();
   renderQuickTags();
-  document.getElementById('search-body').innerHTML = renderSearchIndex();
+  // 品目一覧（約4,000要素）は検索タブを開いた時にshowPanel('search')で生成する（初期表示の高速化）
+
+  // 翻訳中の言語がある場合のみ、起動時にGoogle翻訳を読み込む
+  if (/googtrans=\/ja\/[^;]+/.test(document.cookie)) loadGoogleTranslate();
 
   // 言語インジケーター初期化
   updateLangIndicator(getCurrentLangCode());
@@ -424,7 +433,7 @@ function applyMunicipalityMeta() {
   if (DATA.brand_color) {
     var brand = DATA.brand_color;
     document.documentElement.style.setProperty('--brand', brand);
-    document.documentElement.style.setProperty('--brand-strong', shadeHex(brand, 0.82));
+    document.documentElement.style.setProperty('--brand-strong', shadeHex(brand, 0.74));
     document.documentElement.style.setProperty('--brand-soft', hexToRgba(brand, 0.08));
     document.documentElement.style.setProperty('--brand-soft-strong', hexToRgba(brand, 0.15));
     document.documentElement.style.setProperty('--brand-border', hexToRgba(brand, 0.35));
@@ -976,7 +985,7 @@ function buildDayDetailHTML(areaKey, date) {
     return `<div class="text-center py-10 px-6">
       <p class="text-base font-bold text-[var(--text)]">地区を選択してください</p>
       <button onclick="closeDayDetail();openSheet();"
-              class="mt-4 inline-flex items-center gap-1 bg-[var(--brand)] text-white
+              class="mt-4 inline-flex items-center gap-1 bg-[var(--brand-strong)] text-white
                      border-none rounded-full px-5 h-11 font-sans text-sm font-bold cursor-pointer"
               type="button">地区を選択する</button>
     </div>`;
@@ -1633,7 +1642,7 @@ function openItemDetail(name) {
       } else {
         html += '<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;padding:14px 16px;background:var(--bg-neutral-soft);border-radius:12px">' +
           '<span class="ms-nav" style="font-size:16px;color:var(--muted);flex-shrink:0">event_busy</span>' +
-          '<p style="font-size:13.5px;color:var(--text);line-height:1.5;margin:0">収集日の情報を確認できませんでした。<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="color:var(--brand);text-decoration:underline;font-weight:700">お問い合わせ先</a>へご確認ください</p>' +
+          '<p style="font-size:13.5px;color:var(--text);line-height:1.5;margin:0">収集日の情報を確認できませんでした。<a href="#" onclick="closeItemDetail();openContact();return false" style="color:var(--brand);text-decoration:underline;font-weight:700">お問い合わせ先</a>へご確認ください</p>' +
         '</div>';
       }
     }
@@ -1649,7 +1658,7 @@ function openItemDetail(name) {
   if (item.source === 'estimated') {
     html += '<div style="display:flex;align-items:flex-start;gap:6px;margin-bottom:16px;padding:10px 12px;background:var(--bg-neutral-soft);border-radius:10px;border:1px dashed rgba(0,0,0,0.15)">' +
       '<span class="ms-nav" style="font-size:16px;color:var(--muted);flex-shrink:0;line-height:1.4">info</span>' +
-      '<p style="font-size:12px;color:var(--muted);line-height:1.6;margin:0">' + DATA.name + 'の公式資料に記載がないため、一般的な分別ルールをもとにした参考情報です。正式な確認は<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="color:var(--brand);text-decoration:underline;font-weight:700">問い合わせ先</a>へ</p>' +
+      '<p style="font-size:12px;color:var(--muted);line-height:1.6;margin:0">' + DATA.name + 'の公式資料に記載がないため、一般的な分別ルールをもとにした参考情報です。正式な確認は<a href="#" onclick="closeItemDetail();openContact();return false" style="color:var(--brand);text-decoration:underline;font-weight:700">問い合わせ先</a>へ</p>' +
     '</div>';
   }
 
@@ -1666,7 +1675,7 @@ function openItemDetail(name) {
       '<p style="font-size:14px;color:var(--ink);line-height:1.7;margin:0 0 12px">' + guide.body + '</p>' +
       '<div style="display:flex;flex-wrap:wrap;gap:8px">' +
         linkChips +
-        '<a href="javascript:void(0)" onclick="closeItemDetail();openContact()" style="display:inline-flex;align-items:center;gap:4px;background:#fff;color:var(--brand-strong);border:1px solid var(--brand-border);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:700;text-decoration:none">' +
+        '<a href="#" onclick="closeItemDetail();openContact();return false" style="display:inline-flex;align-items:center;gap:4px;background:#fff;color:var(--brand-strong);border:1px solid var(--brand-border);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:700;text-decoration:none">' +
           '<span class="ms-nav" style="font-size:14px">call</span>問い合わせ先' +
         '</a>' +
       '</div>' +
@@ -1849,6 +1858,16 @@ function getCurrentLangCode() {
   return localStorage.getItem('gc_lang') || 'ja';
 }
 
+/* Google翻訳スクリプトの遅延読み込み（googleTranslateElementInitはHTML側で定義） */
+function loadGoogleTranslate() {
+  if (window._gtLoading) return;
+  window._gtLoading = true;
+  var s = document.createElement('script');
+  s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+  s.async = true;
+  document.head.appendChild(s);
+}
+
 function changeLanguage(code) {
   if (code === 'ja') {
     document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
@@ -1858,6 +1877,7 @@ function changeLanguage(code) {
     location.reload();
     return;
   }
+  loadGoogleTranslate();
   function trySwitch() {
     var select = document.querySelector('.goog-te-combo');
     if (select) {

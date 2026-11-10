@@ -3,10 +3,13 @@
 <head>
   <base href="/">
   <!-- Google Tag Manager -->
+  <!-- 表示速度のため、GTM本体の読み込みはページ描画後（loadの後・最大4秒、または最初の操作）まで遅らせる -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  new Date().getTime(),event:'gtm.js'});var loaded=false;
+  function load(){if(loaded)return;loaded=true;var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);}
+  ['pointerdown','keydown','scroll','touchstart'].forEach(function(e){w.addEventListener(e,load,{once:true,passive:true});});
+  w.addEventListener('load',function(){setTimeout(load,4000);});
   })(window,document,'script','dataLayer','GTM-MNH8H4L2');</script>
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">

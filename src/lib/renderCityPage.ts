@@ -306,5 +306,7 @@ ${faqBlock}
     .replace('__CONTACT_NOTE__', seo.contactCardNote)
     .replace('__ITEM_INDEX_SECTION__', buildItemIndexSection(data));
 
-  return headBefore + seoBlock + afterRendered;
+  // データ内の href="javascript:void(0)" はクロール不可リンクになる（Lighthouse SEO）ため
+  // href="#" に正規化する。遷移はpublic/script.jsのclickハンドラで抑止している。
+  return (headBefore + seoBlock + afterRendered).replace(/href="javascript:void\(0\)"/g, 'href="#"');
 }
