@@ -1,6 +1,105 @@
 {
   "_readme": "お知らせ（notices）定期監視タスク用の状態ファイル。週次スケジュールタスクが読み書きする。known_urlsは『既に把握済み＝新着として報告しない』URLの一覧。手動でdata_{city}.jsonにnoticesを追加した際は、このファイルのknown_urlsにもそのURLを追記しておくこと（忘れると次回の巡回で「新着候補」として二重報告される）。",
   "cities": {
+    "aikawa": {
+      "label": "愛川町",
+      "check_url": "https://www.town.aikawa.kanagawa.jp/news_ichiran.html",
+      "check_note": "新着情報一覧ページは2023年から更新されておらず「新着なし」表示。実質巡回不可のため、トップページ等での確認が必要",
+      "known_urls": [],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
+    "ami": {
+      "label": "阿見町",
+      "check_url": "https://www.town.ami.lg.jp/news/0001.html",
+      "known_urls": [
+        "https://www.town.ami.lg.jp/0000017172.html"
+      ],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
+    "bando": {
+      "label": "坂東市",
+      "check_url": "https://www.city.bando.lg.jp/news.php?type=0",
+      "known_urls": [
+        "https://www.city.bando.lg.jp/page/page009611.html",
+        "https://www.city.bando.lg.jp/page/page010655.html",
+        "https://www.city.bando.lg.jp/page/page010173.html",
+        "https://www.city.bando.lg.jp/page/page009470.html",
+        "https://www.city.bando.lg.jp/page/page005968.html"
+      ],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
+    "choshi": {
+      "label": "銚子市",
+      "check_url": "https://www.city.choshi.chiba.jp/news.html",
+      "known_urls": [
+        "https://www.city.choshi.chiba.jp/business/page1501_00059.html",
+        "https://www.city.choshi.chiba.jp/business/page1501_00056.html",
+        "https://www.city.choshi.chiba.jp/business/page1501_00053.html",
+        "https://www.city.choshi.chiba.jp/business/page1501_00051.html",
+        "https://www.city.choshi.chiba.jp/business/page1501_00050.html",
+        "https://www.city.choshi.chiba.jp/shobo/page1701_00044.html",
+        "https://www.city.choshi.chiba.jp/kurashi/page150029.html"
+      ],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
+    "fujimi_nagano": {
+      "label": "富士見町",
+      "check_url": "https://www.town.fujimi.lg.jp/soshiki/list1-1.html",
+      "known_urls": [],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
+    "godo": {
+      "label": "神戸町",
+      "check_url": "https://www.town.godo.gifu.jp/contents/news_bn/",
+      "check_note": "お知らせ一覧のURLはトップ連動のバックナンバー形式。ごみ関連は家庭ごみガイドブック公開（2026-09-01頃）のみ確認",
+      "known_urls": [
+        "https://www.town.godo.gifu.jp/life/gimi_ri/pdf/gomi_guide.pdf"
+      ],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
+    "goka": {
+      "label": "五霞町",
+      "check_url": "https://www.town.goka.lg.jp/",
+      "check_note": "トップページがJavaScript描画で新着一覧を取得できなかった。お知らせ一覧URLの特定が必要",
+      "known_urls": [],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
+    "gosen": {
+      "label": "五泉市",
+      "check_url": "https://www.city.gosen.lg.jp/info",
+      "check_note": "新着一覧(new.html)は2017年から更新なし。/info は日付なしの一覧で直近のごみ関連なし",
+      "known_urls": [],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
+    "haga": {
+      "label": "芳賀町",
+      "check_url": "https://www.town.tochigi-haga.lg.jp/shinchaku/index.html",
+      "known_urls": [],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
+    "hakone": {
+      "label": "箱根町",
+      "check_url": "https://www.town.hakone.kanagawa.jp/",
+      "check_note": "お知らせ一覧URL未特定。トップの注目情報のみ確認（リチウムイオン電池の火災注意ページあり、日付不明のため未反映）",
+      "known_urls": [
+        "https://www.town.hakone.kanagawa.jp/www/contents/1698367052563/index.html"
+      ],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
+    "hashikami": {
+      "label": "階上町",
+      "check_url": "https://www.town.hashikami.lg.jp/news/index.cfm/view.1.-.-.html",
+      "known_urls": [],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
+    "hatoyama": {
+      "label": "鳩山町",
+      "check_url": "https://www.town.hatoyama.saitama.jp/news.php?type=0",
+      "known_urls": [
+        "https://www.town.hatoyama.saitama.jp/kurashi/gomi_seikatsukankyo/gomi_recycle/page004461.html"
+      ],
+      "last_checked": "2026-11-10T12:00:00+09:00"
+    },
     "shiki": {
       "label": "志木市",
       "check_url": "https://www.city.shiki.lg.jp/life/1/12/73/",
