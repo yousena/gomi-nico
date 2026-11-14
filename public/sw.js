@@ -3,7 +3,7 @@
    戦略: アプリシェル → キャッシュ優先 / データ → ネットワーク優先
 ===================================================== */
 
-const CACHE_NAME   = 'gomi-nico-v269';
+const CACHE_NAME   = 'gomi-nico-v270';
 const SHELL_ASSETS = [
   '/shiki/',
   '/shiki/index.html',
@@ -110,6 +110,7 @@ const SHELL_ASSETS = [
   '/fujimi_nagano/',
   '/izu/',
   '/tagami/',
+  '/kamisato/',
   '/tarui/',
   '/uenohara/',
   '/watari/',
@@ -239,6 +240,7 @@ const SHELL_ASSETS = [
   '/data_fujimi_nagano.json',
   '/data_izu.json',
   '/data_tagami.json',
+  '/data_kamisato.json',
   '/data_tarui.json',
   '/data_uenohara.json',
   '/data_watari.json',
