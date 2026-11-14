@@ -190,6 +190,98 @@
         "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-henkoutodoke.html"
       ],
       "last_checked": "2026-10-22T09:00:00+09:00"
+    },
+    "hayashima": {
+      "label": "早島町",
+      "check_url": "https://www.town.hayashima.lg.jp/news_list.html",
+      "known_urls": [],
+      "last_checked": "2026-11-14T12:00:00+09:00"
+    },
+    "higashiagatsuma": {
+      "label": "東吾妻町",
+      "check_url": "https://www.town.higashiagatsuma.gunma.jp/www/news.html",
+      "known_urls": [],
+      "check_note": "トップは直近10件のみ表示。ごみ分類ページ https://www.town.higashiagatsuma.gunma.jp/www/genre/1202932861555/index.html も要確認",
+      "last_checked": "2026-11-14T12:00:00+09:00"
+    },
+    "higashiura": {
+      "label": "東浦町",
+      "check_url": "https://www.town.aichi-higashiura.lg.jp/juyo/index.html",
+      "known_urls": [
+        "https://www.town.aichi-higashiura.lg.jp/juyo/16501.html",
+        "https://www.town.aichi-higashiura.lg.jp/juyo/16407.html"
+      ],
+      "last_checked": "2026-11-14T12:00:00+09:00"
+    },
+    "hitachiota": {
+      "label": "常陸太田市",
+      "check_url": "https://www.city.hitachiota.ibaraki.jp/news.php?type=0",
+      "known_urls": [
+        "https://www.city.hitachiota.ibaraki.jp/kurashi/news/page011421.html",
+        "https://www.city.hitachiota.ibaraki.jp/kurashi/gomi-kankyo/pet-animal/page003242.html",
+        "https://www.city.hitachiota.ibaraki.jp/kurashi/gomi-kankyo/page011034.html"
+      ],
+      "last_checked": "2026-11-14T12:00:00+09:00"
+    },
+    "hokota": {
+      "label": "鉾田市",
+      "check_url": "https://www.city.hokota.lg.jp/news.php?type=0",
+      "known_urls": [],
+      "last_checked": "2026-11-14T12:00:00+09:00"
+    },
+    "ibaraki_machi": {
+      "label": "茨城町",
+      "check_url": "https://www.town.ibaraki.lg.jp/viewer/list-notice.html?idSubTop=1&id=1",
+      "known_urls": [
+        "https://www.town.ibaraki.lg.jp/gyousei/kurashitetuduki/ibasunhall/004135.html"
+      ],
+      "check_note": "古着・古布回収BOX（生涯学習課、〜11/30）は工作素材の募集でごみ分別とは別のため反映見送り",
+      "last_checked": "2026-11-14T12:00:00+09:00"
+    },
+    "ichikai": {
+      "label": "市貝町",
+      "check_url": "https://www.town.ichikai.tochigi.jp/alllist/topic",
+      "known_urls": [],
+      "check_note": "トップページのみ確認。日付が見えず、ごみ関連か判別できる新着なし",
+      "last_checked": "2026-11-14T12:00:00+09:00"
+    },
+    "ichikawamisato": {
+      "label": "市川三郷町",
+      "check_url": "https://www.town.ichikawamisato.yamanashi.jp/01news/index.html",
+      "known_urls": [
+        "https://www.town.ichikawamisato.yamanashi.jp/02topics/2026-0601-1837-23.html"
+      ],
+      "last_checked": "2026-11-14T12:00:00+09:00"
+    },
+    "ikeda_gifu": {
+      "label": "池田町",
+      "check_url": "https://www.town.gifu-ikeda.lg.jp/news/0001.html",
+      "known_urls": [],
+      "last_checked": "2026-11-14T12:00:00+09:00"
+    },
+    "inashiki": {
+      "label": "稲敷市",
+      "check_url": "https://www.city.inashiki.lg.jp/news.php?type=0",
+      "known_urls": [
+        "https://www.city.inashiki.lg.jp/page/page011446.html"
+      ],
+      "check_note": "使用済み食用油の拠点回収（2026-07-30）は期間外のため未反映。必要なら次回検討",
+      "last_checked": "2026-11-14T12:00:00+09:00"
+    },
+    "ishioka": {
+      "label": "石岡市",
+      "check_url": "https://www.city.ishioka.lg.jp/news.php?type=0",
+      "known_urls": [],
+      "last_checked": "2026-11-14T12:00:00+09:00"
+    },
+    "isumi": {
+      "label": "いすみ市",
+      "check_url": "https://www.city.isumi.lg.jp/gyosei/index.html",
+      "known_urls": [
+        "https://www.city.isumi.lg.jp/soshikikarasagasu/kankyosuidoka/kurashi_tetsuzuki/1/1/1354.html"
+      ],
+      "check_note": "お知らせ一覧のURLを特定できず（リンクが#）。トップ経由で確認",
+      "last_checked": "2026-11-14T12:00:00+09:00"
     }
   }
 }
