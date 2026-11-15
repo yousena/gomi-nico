@@ -190,6 +190,95 @@
         "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-henkoutodoke.html"
       ],
       "last_checked": "2026-10-22T09:00:00+09:00"
+    },
+    "ranzan": {
+      "label": "嵐山町",
+      "check_url": "https://www.town.ranzan.saitama.jp/",
+      "check_note": "トップの新着にはごみ関連なし（ごみ以外の2件を対象外として記録）。新着専用一覧のURLは未特定",
+      "known_urls": [
+        "https://www.town.ranzan.saitama.jp/emergencyinfo/0000000060.html",
+        "https://www.town.ranzan.saitama.jp/0000008018.html"
+      ],
+      "last_checked": "2026-11-15T12:00:00+09:00"
+    },
+    "nasu": {
+      "label": "那須町",
+      "check_url": "https://www.town.nasu.lg.jp/",
+      "check_note": "トップページに新着一覧が含まれず確認できず。新着一覧のURL要特定",
+      "known_urls": [],
+      "last_checked": "2026-11-15T12:00:00+09:00"
+    },
+    "hayashima": {
+      "label": "早島町",
+      "check_url": "https://www.town.hayashima.lg.jp/",
+      "check_note": "トップの新着欄は「新着情報なし」表示（初回アクセスは503）",
+      "known_urls": [],
+      "last_checked": "2026-11-15T12:00:00+09:00"
+    },
+    "showa_gunma": {
+      "label": "昭和村",
+      "check_url": "https://www.vill.showa.gunma.jp/",
+      "check_note": "トップは県ポータル型で新着一覧なし。新着一覧のURL要特定",
+      "known_urls": [],
+      "last_checked": "2026-11-15T12:00:00+09:00"
+    },
+    "shinto": {
+      "label": "榛東村",
+      "check_url": "https://www.vill.shinto.gunma.jp/viewer/list-notice.html?id=1",
+      "known_urls": [
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p001493.html"
+      ],
+      "last_checked": "2026-11-15T12:00:00+09:00"
+    },
+    "toyoyama": {
+      "label": "豊山町",
+      "check_url": "https://www.town.toyoyama.lg.jp/",
+      "check_note": "トップの新着（11/11〜13）にごみ関連なし",
+      "known_urls": [],
+      "last_checked": "2026-11-15T12:00:00+09:00"
+    },
+    "ushiku": {
+      "label": "牛久市",
+      "check_url": "https://www.city.ushiku.lg.jp/news.php?type=0",
+      "known_urls": [],
+      "last_checked": "2026-11-15T12:00:00+09:00"
+    },
+    "tomi": {
+      "label": "東御市",
+      "check_url": "https://www.city.tomi.nagano.jp/contents/newinfo/index.html",
+      "check_note": "「焼却灰等の放射能測定結果を更新」は日付不明のため反映せず",
+      "known_urls": [
+        "https://www.city.tomi.nagano.jp/category/biomass/151921.html"
+      ],
+      "last_checked": "2026-11-15T12:00:00+09:00"
+    },
+    "takahagi": {
+      "label": "高萩市",
+      "check_url": "https://www.city.takahagi.ibaraki.jp/",
+      "check_note": "curlは接続不可。WebFetchではごみ関連の新着なし",
+      "known_urls": [],
+      "last_checked": "2026-11-15T12:00:00+09:00"
+    },
+    "tateyama": {
+      "label": "館山市",
+      "check_url": "https://www.city.tateyama.chiba.jp/news.html",
+      "known_urls": [
+        "https://www.city.tateyama.chiba.jp/kankyou-center/page100057.html"
+      ],
+      "last_checked": "2026-11-15T12:00:00+09:00"
+    },
+    "watari": {
+      "label": "亘理町",
+      "check_url": "https://www.town.watari.miyagi.jp/news/",
+      "known_urls": [],
+      "last_checked": "2026-11-15T12:00:00+09:00"
+    },
+    "takanezawa": {
+      "label": "高根沢町",
+      "check_url": "https://www.town.takanezawa.tochigi.jp/",
+      "check_note": "トップに新着一覧が含まれず確認できず。新着一覧のURL要特定",
+      "known_urls": [],
+      "last_checked": "2026-11-15T12:00:00+09:00"
     }
   }
 }
