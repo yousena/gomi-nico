@@ -190,6 +190,96 @@
         "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-henkoutodoke.html"
       ],
       "last_checked": "2026-10-22T09:00:00+09:00"
+    },
+    "ranzan": {
+      "label": "嵐山町",
+      "check_url": "https://www.town.ranzan.saitama.jp/category/15-12-0-0-0-0-0-0-0-0.html",
+      "check_note": "ごみカテゴリページは日付付きのお知らせ一覧が無く、新着を判定できない。既存noticesのみ把握",
+      "known_urls": [],
+      "last_checked": "2026-11-16T12:00:00+09:00"
+    },
+    "nasu": {
+      "label": "那須町",
+      "check_url": "https://www.town.nasu.lg.jp/",
+      "check_note": "ごみ関連ページに日付付きお知らせ一覧が無く、新着を判定できない（取得できたページに新着なし）",
+      "known_urls": [],
+      "last_checked": "2026-11-16T12:00:00+09:00"
+    },
+    "hayashima": {
+      "label": "早島町",
+      "check_url": "https://www.town.hayashima.lg.jp/",
+      "check_note": "接続が不安定（プロキシ経由で切断されることがある）。トップから新着のごみ情報は拾えず。再確認が必要",
+      "known_urls": [],
+      "last_checked": "2026-11-16T12:00:00+09:00"
+    },
+    "showa_gunma": {
+      "label": "昭和村",
+      "check_url": "https://www.vill.showa.gunma.jp/kurashi/kurashi/gomi/",
+      "check_note": "ごみページは固定ページ中心で日付付きお知らせ無し。新着なし",
+      "known_urls": [],
+      "last_checked": "2026-11-16T12:00:00+09:00"
+    },
+    "shinto": {
+      "label": "榛東村",
+      "check_url": "https://www.vill.shinto.gunma.jp/life/000034/000035/index.html",
+      "known_urls": [
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p001493.html"
+      ],
+      "last_checked": "2026-11-16T12:00:00+09:00"
+    },
+    "toyoyama": {
+      "label": "豊山町",
+      "check_url": "https://www.town.toyoyama.lg.jp/kurashi/sigen/index.html",
+      "check_note": "ごみページに日付付きお知らせ一覧が無く、新着を判定できない",
+      "known_urls": [],
+      "last_checked": "2026-11-16T12:00:00+09:00"
+    },
+    "ushiku": {
+      "label": "牛久市",
+      "check_url": "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/",
+      "check_note": "一覧に個別の日付なし。年末年始の収集案内(page011149)が既存noticesに未掲載の可能性あり、要確認",
+      "known_urls": [
+        "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/page014796.html",
+        "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/page011149.html",
+        "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/page014331.html"
+      ],
+      "last_checked": "2026-11-16T12:00:00+09:00"
+    },
+    "tomi": {
+      "label": "東御市",
+      "check_url": "https://www.city.tomi.nagano.jp/category/gomirisaikuru/index.html",
+      "check_note": "トップ・カテゴリに新着のごみ情報なし",
+      "known_urls": [],
+      "last_checked": "2026-11-16T12:00:00+09:00"
+    },
+    "takahagi": {
+      "label": "高萩市",
+      "check_url": "https://www.city.takahagi.ibaraki.jp/kurashi/gomi_recycle/",
+      "check_note": "トップ・カテゴリに新着のごみ情報なし（簡易確認）",
+      "known_urls": [],
+      "last_checked": "2026-11-16T12:00:00+09:00"
+    },
+    "tateyama": {
+      "label": "館山市",
+      "check_url": "https://www.city.tateyama.chiba.jp/",
+      "known_urls": [
+        "https://www.city.tateyama.chiba.jp/kankyou-center/page100057.html"
+      ],
+      "last_checked": "2026-11-16T12:00:00+09:00"
+    },
+    "watari": {
+      "label": "亘理町",
+      "check_url": "https://www.town.watari.miyagi.jp/life/category/?category=124",
+      "check_note": "トップに新着のごみ情報なし（簡易確認）",
+      "known_urls": [],
+      "last_checked": "2026-11-16T12:00:00+09:00"
+    },
+    "takanezawa": {
+      "label": "高根沢町",
+      "check_url": "https://www.town.takanezawa.tochigi.jp/",
+      "check_note": "トップページから新着のごみ情報を拾えず（簡易確認）",
+      "known_urls": [],
+      "last_checked": "2026-11-16T12:00:00+09:00"
     }
   }
 }
