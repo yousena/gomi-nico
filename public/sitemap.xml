@@ -298,6 +298,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- 松田町 -->
+  <url>
+    <loc>https://gomi-nico.jp/matsuda/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- 山北町 -->
   <url>
     <loc>https://gomi-nico.jp/yamakita/</loc>
