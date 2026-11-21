@@ -190,6 +190,86 @@
         "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-henkoutodoke.html"
       ],
       "last_checked": "2026-10-22T09:00:00+09:00"
+    },
+    "ranzan": {
+      "label": "嵐山町",
+      "check_url": "https://www.town.ranzan.saitama.jp/",
+      "check_note": "トップページのみ確認。新着一覧ページのURLは未特定（トップの新着にごみ関連なし）。次回は一覧URLを特定する",
+      "known_urls": [],
+      "last_checked": "2026-11-21T12:00:00+09:00"
+    },
+    "nasu": {
+      "label": "那須町",
+      "check_url": "https://www.town.nasu.lg.jp/",
+      "check_note": "トップページにお知らせ一覧が出ず確認不可。RSS（rss/rss10-1204020.xml）が候補。次回要調査",
+      "known_urls": [],
+      "last_checked": "2026-11-21T12:00:00+09:00"
+    },
+    "hayashima": {
+      "label": "早島町",
+      "check_url": "https://www.town.hayashima.lg.jp/news_list.html",
+      "known_urls": [],
+      "last_checked": "2026-11-21T12:00:00+09:00"
+    },
+    "showa_gunma": {
+      "label": "昭和村",
+      "check_url": "https://www.vill.showa.gunma.jp/",
+      "check_note": "トップページから一覧URLを特定できず確認不可。次回要調査",
+      "known_urls": [],
+      "last_checked": "2026-11-21T12:00:00+09:00"
+    },
+    "shinto": {
+      "label": "榛東村",
+      "check_url": "https://www.vill.shinto.gunma.jp/viewer/list-notice.html?id=1",
+      "known_urls": [
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p001493.html"
+      ],
+      "last_checked": "2026-11-21T12:00:00+09:00"
+    },
+    "toyoyama": {
+      "label": "豊山町",
+      "check_url": "https://www.town.toyoyama.lg.jp/newslist.html",
+      "known_urls": [],
+      "last_checked": "2026-11-21T12:00:00+09:00"
+    },
+    "ushiku": {
+      "label": "牛久市",
+      "check_url": "https://www.city.ushiku.lg.jp/news.php?type=0",
+      "known_urls": [],
+      "last_checked": "2026-11-21T12:00:00+09:00"
+    },
+    "tomi": {
+      "label": "東御市",
+      "check_url": "https://www.city.tomi.nagano.jp/contents/newinfo/index.html",
+      "known_urls": [],
+      "last_checked": "2026-11-21T12:00:00+09:00"
+    },
+    "takahagi": {
+      "label": "高萩市",
+      "check_url": "https://www.city.takahagi.ibaraki.jp/update.php",
+      "known_urls": [],
+      "last_checked": "2026-11-21T12:00:00+09:00"
+    },
+    "tateyama": {
+      "label": "館山市",
+      "check_url": "https://www.city.tateyama.chiba.jp/news.html",
+      "known_urls": [
+        "https://www.city.tateyama.chiba.jp/kankyou-center/page100057.html"
+      ],
+      "last_checked": "2026-11-21T12:00:00+09:00"
+    },
+    "watari": {
+      "label": "亘理町",
+      "check_url": "https://www.town.watari.miyagi.jp/news/",
+      "known_urls": [],
+      "last_checked": "2026-11-21T12:00:00+09:00"
+    },
+    "takanezawa": {
+      "label": "高根沢町",
+      "check_url": "https://www.town.takanezawa.tochigi.jp/",
+      "check_note": "トップページから一覧URLを特定できず確認不可。次回要調査",
+      "known_urls": [],
+      "last_checked": "2026-11-21T12:00:00+09:00"
     }
   }
 }
