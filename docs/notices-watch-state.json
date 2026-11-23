@@ -190,6 +190,101 @@
         "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-henkoutodoke.html"
       ],
       "last_checked": "2026-10-22T09:00:00+09:00"
+    },
+    "hayashima": {
+      "label": "早島町",
+      "check_url": "https://www.town.hayashima.lg.jp/news_list.html",
+      "known_urls": [],
+      "last_checked": "2026-11-23T12:00:00+09:00"
+    },
+    "higashiagatsuma": {
+      "label": "東吾妻町",
+      "check_url": "https://www.town.higashiagatsuma.gunma.jp/www/genre/1202933047658/index.html",
+      "known_urls": [],
+      "last_checked": "2026-11-23T12:00:00+09:00"
+    },
+    "higashiura": {
+      "label": "東浦町",
+      "check_url": "https://www.town.aichi-higashiura.lg.jp/news.html",
+      "known_urls": [
+        "https://www.town.aichi-higashiura.lg.jp/juyo/16501.html"
+      ],
+      "last_checked": "2026-11-23T12:00:00+09:00"
+    },
+    "hitachiota": {
+      "label": "常陸太田市",
+      "check_url": "https://www.city.hitachiota.ibaraki.jp/news.php?type=0",
+      "known_urls": [
+        "https://www.city.hitachiota.ibaraki.jp/kurashi/news/page011421.html"
+      ],
+      "last_checked": "2026-11-23T12:00:00+09:00"
+    },
+    "hokota": {
+      "label": "鉾田市",
+      "check_url": "https://www.city.hokota.lg.jp/news.php?type=0",
+      "known_urls": [
+        "https://www.city.hokota.lg.jp/page/page007543.html",
+        "https://www.city.hokota.lg.jp/page/page004729.html"
+      ],
+      "last_checked": "2026-11-23T12:00:00+09:00"
+    },
+    "ibaraki_machi": {
+      "label": "茨城町",
+      "check_url": "https://www.town.ibaraki.lg.jp/viewer/list-notice.html?idSubTop=1&id=1",
+      "known_urls": [
+        "https://www.town.ibaraki.lg.jp/gyousei/kurashitetuduki/ibasunhall/004135.html"
+      ],
+      "last_checked": "2026-11-23T12:00:00+09:00"
+    },
+    "ichikai": {
+      "label": "市貝町",
+      "check_url": "https://www.town.ichikai.tochigi.jp/alllist/whatsnew",
+      "known_urls": [],
+      "last_checked": "2026-11-23T12:00:00+09:00"
+    },
+    "ichikawamisato": {
+      "label": "市川三郷町",
+      "check_url": "https://www.town.ichikawamisato.yamanashi.jp/01news/index.html",
+      "known_urls": [
+        "https://www.town.ichikawamisato.yamanashi.jp/02topics/2026-0601-1837-23.html"
+      ],
+      "last_checked": "2026-11-23T12:00:00+09:00"
+    },
+    "ikeda_gifu": {
+      "label": "池田町",
+      "check_url": "https://www.town.gifu-ikeda.lg.jp/news/0001.html",
+      "known_urls": [],
+      "last_checked": "2026-11-23T12:00:00+09:00"
+    },
+    "inashiki": {
+      "label": "稲敷市",
+      "check_url": "https://www.city.inashiki.lg.jp/news.php",
+      "known_urls": [
+        "https://www.city.inashiki.lg.jp/page/page011446.html"
+      ],
+      "last_checked": "2026-11-23T12:00:00+09:00"
+    },
+    "ishioka": {
+      "label": "石岡市",
+      "check_url": "https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/gomi_recycle/gomi/",
+      "check_note": "新着一覧ではなく「ごみ」カテゴリページを巡回。各項目に日付が表示されないため、新着判定はURLの増減で行う。",
+      "known_urls": [
+        "https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/gomi_recycle/gomi/page012850.html",
+        "https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/gomi_recycle/gomi/page012842.html",
+        "https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/gomi_recycle/gomi/page012636.html",
+        "https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/gomi_recycle/gomi/page012606.html",
+        "https://www.city.ishioka.lg.jp/kurashi_tetsuzuki/gomi_recycle/gomi/page012296.html"
+      ],
+      "last_checked": "2026-11-23T12:00:00+09:00"
+    },
+    "isumi": {
+      "label": "いすみ市",
+      "check_url": "https://www.city.isumi.lg.jp/gyosei/index.html#news",
+      "check_note": "お知らせ一覧の専用URLが不明（トップのトピックスのみ確認）。日付も表示されない。",
+      "known_urls": [
+        "https://www.city.isumi.lg.jp/soshikikarasagasu/kankyosuidoka/kurashi_tetsuzuki/1/1/1354.html"
+      ],
+      "last_checked": "2026-11-23T12:00:00+09:00"
     }
   }
 }
