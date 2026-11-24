@@ -190,6 +190,96 @@
         "https://www.city.toda.saitama.jp/soshiki/212/kankyo-cl-henkoutodoke.html"
       ],
       "last_checked": "2026-10-22T09:00:00+09:00"
+    },
+    "hayashima": {
+      "label": "早島町",
+      "check_url": "https://www.town.hayashima.lg.jp/news_list.html",
+      "known_urls": [],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "新着情報は「なし」表示。ごみ関連の新着なし。"
+    },
+    "higashiagatsuma": {
+      "label": "東吾妻町",
+      "check_url": "https://www.town.higashiagatsuma.gunma.jp/www/genre/1202933047658/index.html",
+      "known_urls": [],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "トップページの範囲では新着なし。一覧ページ本体は未確認。"
+    },
+    "higashiura": {
+      "label": "東浦町",
+      "check_url": "https://www.town.aichi-higashiura.lg.jp/news.html",
+      "known_urls": [],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "新着情報なし。重要なお知らせ（資源物持ち去り、2026-06-24）は期間外。"
+    },
+    "hitachiota": {
+      "label": "常陸太田市",
+      "check_url": "https://www.city.hitachiota.ibaraki.jp/news.php?type=0",
+      "known_urls": [
+        "https://www.city.hitachiota.ibaraki.jp/kurashi/news/page011421.html"
+      ],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "指定ごみ袋の無料配布をnoticesに追加。さかなクン講演会（page011034）はごみ無関係と判断し対象外。"
+    },
+    "hokota": {
+      "label": "鉾田市",
+      "check_url": "https://www.city.hokota.lg.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "取得失敗（HTTP 503）。次回再試行。"
+    },
+    "ibaraki_machi": {
+      "label": "茨城町",
+      "check_url": "https://www.town.ibaraki.lg.jp/viewer/list-notice.html?idSubTop=1&id=1",
+      "known_urls": [
+        "https://www.town.ibaraki.lg.jp/gyousei/kurashitetuduki/ibasunhall/004135.html"
+      ],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "古着・古布回収BOXは目標枚数に達し募集終了、生涯学習課の案件のため対象外。"
+    },
+    "ichikai": {
+      "label": "市貝町",
+      "check_url": "https://www.town.ichikai.tochigi.jp/alllist/whatsnew",
+      "known_urls": [],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "ごみ関連の新着なし。"
+    },
+    "ichikawamisato": {
+      "label": "市川三郷町",
+      "check_url": "https://www.town.ichikawamisato.yamanashi.jp/01news/index.html",
+      "known_urls": [],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "トップ表示範囲では期間内のごみ関連新着なし。"
+    },
+    "ikeda_gifu": {
+      "label": "池田町",
+      "check_url": "https://www.town.gifu-ikeda.lg.jp/news/0001.html",
+      "known_urls": [],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "ごみ関連の新着なし。"
+    },
+    "inashiki": {
+      "label": "稲敷市",
+      "check_url": "https://www.city.inashiki.lg.jp/news.php",
+      "known_urls": [],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "期間内のごみ関連新着なし。"
+    },
+    "ishioka": {
+      "label": "石岡市",
+      "check_url": "https://www.city.ishioka.lg.jp/news.php?type=0",
+      "known_urls": [],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "ごみ関連の新着なし。"
+    },
+    "isumi": {
+      "label": "いすみ市",
+      "check_url": "https://www.city.isumi.lg.jp/gyosei/index.html",
+      "known_urls": [
+        "https://www.city.isumi.lg.jp/soshikikarasagasu/kankyosuidoka/kurashi_tetsuzuki/1/1/1354.html"
+      ],
+      "last_checked": "2026-11-24T12:00:00+09:00",
+      "check_note": "9月の収集日変更は既にnoticesに反映済み。一覧ページURLは未確認。"
     }
   }
 }
