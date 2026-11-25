@@ -654,6 +654,41 @@ function isLastWeekdayOfMonth(date) {
   return date.getDate() > daysInMonth - 7;
 }
 
+/**
+ * 拡張スケジュール表現（2026-11-25新設・隔週／月ごとの特定日方式の自治体向け）。
+ * areas[地区][カテゴリキー] に次のオブジェクトを指定できる（既存の配列・{day,weeks}と併存。後方互換）。
+ *   ① 隔週（基準日＋周期）: { "every": 2, "anchor": "2026-04-15" }
+ *      anchorの曜日を収集曜日とし、anchorから (7 × every) 日ごとの日だけ該当する。
+ *      anchorは「実際に収集がある日」を1つ選ぶ（年度初日付近が望ましい）。every省略時は2。
+ *   ② 特定日リスト: { "dates": ["2026-04-08", "2026-04-22", ...] }
+ *      収集日をYYYY-MM-DD形式で列挙する。第n曜日で表せない不規則な日程（月ごとの特定日）用。
+ *   ①と②は同じオブジェクトに併記でき、どちらかに一致すれば該当（OR）。
+ * 年末年始・固定祝日の休止は呼び出し元のgetGarbageForDate()側で先に判定される。
+ */
+function isExtendedSchedule(val) {
+  return !!val && typeof val === 'object' && !Array.isArray(val) &&
+         (val.anchor != null || Array.isArray(val.dates));
+}
+
+function matchesExtendedSchedule(val, date) {
+  const pad = n => String(n).padStart(2, '0');
+  if (Array.isArray(val.dates)) {
+    const key = date.getFullYear() + '-' + pad(date.getMonth() + 1) + '-' + pad(date.getDate());
+    if (val.dates.includes(key)) return true;
+  }
+  if (val.anchor != null) {
+    const m = /^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(String(val.anchor));
+    if (!m) return false;
+    const every = Number(val.every) > 0 ? Number(val.every) : 2;
+    const DAY_MS = 86400000;
+    const a = Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+    const t = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
+    const diffDays = Math.round((t - a) / DAY_MS);
+    if (diffDays % (7 * every) === 0) return true;
+  }
+  return false;
+}
+
 function isYearEnd(date) {
   if (!DATA?.collection_settings?.yearend_enabled) return false;
   const m = date.getMonth(), dd = date.getDate();
@@ -761,6 +796,13 @@ function getGarbageForDate(areaKey, date) {
     if (addedTypes.has(catKey)) return;
     const val = area[catKey];
     if (val == null) return;
+    if (isExtendedSchedule(val)) {
+      if (matchesExtendedSchedule(val, date)) {
+        result.push({ type: catKey, label: cats[catKey]?.label || catKey, how: cats[catKey]?.how || '' });
+        addedTypes.add(catKey);
+      }
+      return;
+    }
     if (Array.isArray(val)) {
       if (val.includes(day)) {
         result.push({ type: catKey, label: cats[catKey]?.label || catKey, how: cats[catKey]?.how || '' });
