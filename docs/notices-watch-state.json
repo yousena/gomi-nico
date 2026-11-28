@@ -1,6 +1,109 @@
 {
   "_readme": "お知らせ（notices）定期監視タスク用の状態ファイル。週次スケジュールタスクが読み書きする。known_urlsは『既に把握済み＝新着として報告しない』URLの一覧。手動でdata_{city}.jsonにnoticesを追加した際は、このファイルのknown_urlsにもそのURLを追記しておくこと（忘れると次回の巡回で「新着候補」として二重報告される）。",
   "cities": {
+    "ranzan": {
+      "label": "嵐山町",
+      "check_url": "https://www.town.ranzan.saitama.jp/category/15-12-0-0-0-0-0-0-0-0.html",
+      "known_urls": [],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
+    "nasu": {
+      "label": "那須町",
+      "check_url": "https://www.town.nasu.lg.jp/",
+      "check_note": "トップページは取得できるがごみ関連のリンクが見つからず、既存の公式URL（/0075/…）は404を返す。お知らせ一覧のURL要再特定。",
+      "known_urls": [],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
+    "hayashima": {
+      "label": "早島町",
+      "check_url": "https://www.town.hayashima.lg.jp/",
+      "known_urls": [],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
+    "showa_gunma": {
+      "label": "昭和村",
+      "check_url": "https://www.vill.showa.gunma.jp/kurashi/kurashi/gomi/",
+      "known_urls": [
+        "https://www.vill.showa.gunma.jp/2026-0115-1607-24.html",
+        "https://www.vill.showa.gunma.jp/2025-1003-1346-24.html",
+        "https://www.vill.showa.gunma.jp/2026-0312-1724-24.html"
+      ],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
+    "shinto": {
+      "label": "榛東村",
+      "check_url": "https://www.vill.shinto.gunma.jp/life/000034/000035/index.html",
+      "known_urls": [
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p001493.html",
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p001247.html",
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p000908.html",
+        "https://www.vill.shinto.gunma.jp/life/000034/000035/p000127.html"
+      ],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
+    "toyoyama": {
+      "label": "豊山町",
+      "check_url": "https://www.town.toyoyama.lg.jp/kurashi/sigen/index.html",
+      "known_urls": [],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
+    "ushiku": {
+      "label": "牛久市",
+      "check_url": "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/gomi-recycle/",
+      "check_note": "トップページ（/）は接続できなかったが、ごみ・リサイクルのニュースページは取得可。",
+      "known_urls": [
+        "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/page014796.html",
+        "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/page014331.html",
+        "https://www.city.ushiku.lg.jp/kurashi-tetsuduki/seikatsu/gomi-recycle/page011149.html"
+      ],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
+    "tomi": {
+      "label": "東御市",
+      "check_url": "https://www.city.tomi.nagano.jp/category/gomirisaikuru/index.html",
+      "known_urls": [],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
+    "takahagi": {
+      "label": "高萩市",
+      "check_url": "https://www.city.takahagi.ibaraki.jp/kurashi/gomi_recycle/",
+      "known_urls": [
+        "https://www.city.takahagi.ibaraki.jp/kurashi/gomi_recycle/page008062.html",
+        "https://www.city.takahagi.ibaraki.jp/kurashi/gomi_recycle/page008052.html",
+        "https://www.city.takahagi.ibaraki.jp/kurashi/gomi_recycle/page007958.html"
+      ],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
+    "tateyama": {
+      "label": "館山市",
+      "check_url": "https://www.city.tateyama.chiba.jp/kankyou/index.html",
+      "known_urls": [
+        "https://www.city.tateyama.chiba.jp/kankyou-center/page100057.html",
+        "https://www.city.tateyama.chiba.jp/kankyou/page000524.html",
+        "https://www.city.tateyama.chiba.jp/kankyou/page100017.html"
+      ],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
+    "watari": {
+      "label": "亘理町",
+      "check_url": "https://www.town.watari.miyagi.jp/life/category/?category=124",
+      "check_note": "指定ごみ袋の供給状況(content=2392)は掲載日不明のため未反映。",
+      "known_urls": [
+        "https://www.town.watari.miyagi.jp/life/detail.php?content=221",
+        "https://www.town.watari.miyagi.jp/detail.php?content=2392",
+        "https://www.town.watari.miyagi.jp/detail.php?content=2221",
+        "https://www.town.watari.miyagi.jp/detail.php?content=1958",
+        "https://www.town.watari.miyagi.jp/detail.php?content=2324"
+      ],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
+    "takanezawa": {
+      "label": "高根沢町",
+      "check_url": "https://www.town.takanezawa.tochigi.jp/",
+      "check_note": "トップの新着リンク（2026-1009-1500-83等）が404を返し内容未確認。プラスチック製品のステーション回収開始（10/1）等の案内がある可能性があり、要再確認。",
+      "known_urls": [],
+      "last_checked": "2026-11-28T12:00:00+09:00"
+    },
     "aikawa": {
       "label": "愛川町",
       "check_url": "https://www.town.aikawa.kanagawa.jp/news_ichiran.html",
